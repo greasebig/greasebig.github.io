@@ -267,6 +267,73 @@
       width: 14px; height: 14px;
     }
 
+    /* articles section */
+    .article-card {
+      display: block;
+      padding: 24px 22px;
+      border-radius: 18px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      margin-bottom: 14px;
+    }
+    .article-card:last-child { margin-bottom: 0; }
+    .article-card:hover {
+      background: var(--glass-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+    .article-card .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .article-card .article-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: rgba(99,102,241,0.12);
+      color: #4f46e5;
+    }
+    .article-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 6px;
+      line-height: 1.3;
+    }
+    .article-card .article-desc {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0;
+      line-height: 1.55;
+    }
+    .article-card .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .article-card .read-more svg {
+      width: 13px; height: 13px;
+    }
+
     /* links section */
     .link-list {
       display: flex;
@@ -321,6 +388,24 @@
           Tone & Color
         </a>
       </div>
+    </div>
+
+    <!-- Articles -->
+    <div class="section">
+      <h2>Articles</h2>
+      <p class="subtitle">Thoughts on AI engineering and tooling</p>
+      <a class="article-card" href="./articles/harness-engineering.html" target="_blank">
+        <div class="article-meta">
+          <span class="article-tag">Harness Engineering</span>
+          <span>2026-05-24</span>
+        </div>
+        <h3>Harness Engineering：驾驭 AI Agent 的工程艺术</h3>
+        <p class="article-desc">从 Mitchell Hashimoto 的定义出发，深入探讨 Agent = Model + Harness 范式。分析 WorkBuddy 如何作为一套完整的 Harness 运行，以及自建 OpenClaw 如何集成 OpenHarness 构建可靠的 AI 编码 Agent。</p>
+        <span class="read-more">
+          Read Article
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
     </div>
 
     <!-- Projects -->

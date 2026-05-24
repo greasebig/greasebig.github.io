@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harness Engineering：驾驭 AI Agent 的工程艺术 — greasebig</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    :root {
+      --ink: #1a1a2e;
+      --muted: #5a6075;
+      --glass: rgba(255,255,255,0.58);
+      --glass-hover: rgba(255,255,255,0.78);
+      --border: rgba(18,22,40,0.10);
+      --accent: #6366f1;
+      --accent-2: #ec4899;
+      --shadow: 0 4px 24px rgba(15,23,42,0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.13), transparent 50%),
+        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
+        radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
+        linear-gradient(175deg, #f8f9ff, #f0f2fe 40%, #f5f3ff 70%, #faf9fe);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* nav */
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 32px;
+      transition: all 0.2s;
+    }
+    .nav-back:hover { background: var(--glass-hover); color: var(--ink); }
+
+    /* article header */
+    .article-header {
+      margin-bottom: 36px;
+    }
+    .article-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(99,102,241,0.12);
+      color: #4f46e5;
+      margin-bottom: 16px;
+    }
+    .article-header h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--ink) 30%, #4338ca 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .article-meta {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* content */
+    .content {
+      font-size: 15px;
+    }
+    .content blockquote {
+      margin: 24px 0;
+      padding: 16px 20px;
+      border-radius: 12px;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      font-style: italic;
+      color: var(--muted);
+    }
+    .content blockquote strong {
+      color: var(--ink);
+      font-style: normal;
+    }
+    .content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 40px 0 16px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    .content h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 28px 0 10px;
+      color: var(--ink);
+    }
+    .content p {
+      margin: 12px 0;
+    }
+    .content ul, .content ol {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
+    .content li {
+      margin: 6px 0;
+    }
+    .content strong {
+      font-weight: 700;
+    }
+
+    /* code */
+    .content code {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 13px;
+      background: rgba(99,102,241,0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #4f46e5;
+    }
+    .content pre {
+      margin: 16px 0;
+      padding: 16px 18px;
+      border-radius: 12px;
+      background: rgba(15,23,42,0.92);
+      color: #e2e8f0;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      overflow-x: auto;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .content pre code {
+      background: none;
+      color: inherit;
+      padding: 0;
+      border-radius: 0;
+    }
+
+    /* table */
+    .content table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 16px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .content th {
+      background: rgba(99,102,241,0.08);
+      text-align: left;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+    }
+    .content td {
+      padding: 10px 14px;
+      font-size: 13px;
+      border-bottom: 1px solid var(--border);
+      background: var(--glass);
+    }
+    .content tr:last-child td { border-bottom: none; }
+
+    /* hr */
+    .content hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    .content a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .content a:hover { color: #4f46e5; }
+
+    /* footer */
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="nav-back" href="../index.html">← 返回主页</a>
+
+    <div class="article-header">
+      <span class="article-tag">Harness Engineering</span>
+      <h1>Harness Engineering：驾驭 AI Agent 的工程艺术</h1>
+      <p class="article-meta">2026-05-24</p>
+    </div>
+
+    <div class="content">
+      <blockquote>
+        <strong>核心公式：Agent = Model + Harness</strong><br><br>
+        <em>"Harness engineering is the idea that anytime you find an agent makes a mistake, you take the time to engineer a solution such that the agent will not make that mistake again in the future."</em><br>
+        — Mitchell Hashimoto (HashiCorp 创始人、Terraform 共同开发者)，2026 年 2 月
+      </blockquote>
+
+      <h2>一、什么是 Harness Engineering？</h2>
+      <p>2026 年 AI 领域最重要的范式转移，不是更大的模型，而是 <strong>Harness Engineering（驾驭工程）</strong>—— 围绕 AI Agent 构建系统、工具、约束和反馈回路，让强大但不可预测的 AI 模型能够<strong>可靠地</strong>完成复杂任务。</p>
+      <p><strong>Harness 不是 Prompt Engineering。</strong> Prompt Engineering 关心的是"对模型说什么"，而 Harness Engineering 关心的是"在模型周围构建什么"。前者脆弱且依赖特定模型，后者稳健且模型无关。</p>
+      <p>用一个比喻来理解：</p>
+      <blockquote><strong>LLM 是大脑，Harness 是身体。</strong> 没有 Harness，模型只能"纸上谈兵"；有了 Harness，AI 才是真正的"实干家"。</blockquote>
+
+      <h2>二、Agent = Model + Harness</h2>
+      <p>这个公式正在成为行业共识：</p>
+      <table>
+        <tr><th>组件</th><th>职责</th><th>示例</th></tr>
+        <tr><td><strong>Model</strong></td><td>提供智能、推理、决策</td><td>Claude、GPT-4、DeepSeek</td></tr>
+        <tr><td><strong>Harness</strong></td><td>提供双手、眼睛、记忆、安全边界</td><td>工具、权限、记忆、验证循环</td></tr>
+      </table>
+      <p><strong>关键洞察：一个优秀的 Harness 往往比一个更好的 Model 更重要。</strong></p>
+      <p>LangChain Terminal Bench 2.0 的对比实验证明了这一点：</p>
+      <ul>
+        <li>无 Harness 优化：<strong>52.8%</strong> 准确率</li>
+        <li>仅添加 Harness 优化（同一模型）：<strong>66.5%</strong> 准确率</li>
+        <li><strong>提升幅度：26%</strong></li>
+      </ul>
+      <p>优化内容仅为：更好的上下文文件（AGENTS.md）、结构化输出约束、自我验证循环、工具优化。没有换模型，没有改 prompt。</p>
+
+      <h2>三、Harness 的七大核心组件</h2>
+
+      <h3>1. Context Engineering（上下文工程）</h3>
+      <p>给 Agent 一份代码库的"地图"，而不是"1000 页手册"。</p>
+      <p><strong>核心原则：上下文文件 ≤ 60 行。</strong> 过长会导致 Agent 注意力涣散。</p>
+      <pre><code># CLAUDE.md / AGENTS.md 示例
+## Architecture
+- src/app/ — 主应用逻辑
+- src/lib/ — 共享工具库
+- src/components/ — React 组件
+
+## Rules
+- API 调用统一走 src/lib/api.ts
+- 不在组件中直接引用 node_modules
+- 提交信息用英文</code></pre>
+
+      <h3>2. Architectural Constraints（架构约束）</h3>
+      <p><strong>不靠 hope，靠 enforce。</strong> 用 lint 规则、测试、类型系统强制约束 Agent 的行为，而不是期望它"自觉"遵守。</p>
+      <ul>
+        <li>ESLint <code>no-restricted-imports</code> 防止错误的依赖引用</li>
+        <li>分层架构验证，禁止跨层调用</li>
+        <li>结构化测试在模式违反时报错</li>
+      </ul>
+      <blockquote><em>"Constrain the solution space — don't expand it. Fewer valid options means fewer wrong answers."</em></blockquote>
+
+      <h3>3. Tools & MCP Servers（工具与协议）</h3>
+      <p>Agent 的手和脚。赋予模型与外部世界交互的能力。</p>
+      <ul>
+        <li><strong>文件操作</strong>：Read / Write / Edit / Glob / Grep</li>
+        <li><strong>Shell 执行</strong>：Bash 命令（带权限控制）</li>
+        <li><strong>Web 交互</strong>：WebFetch / WebSearch</li>
+        <li><strong>MCP 协议</strong>：连接任意外部服务和 API</li>
+        <li><strong>Agent 协作</strong>：子 Agent 派发与协调</li>
+      </ul>
+
+      <h3>4. Sub-Agents & Context Firewalls（子 Agent 与上下文防火墙）</h3>
+      <p><strong>上下文是消耗品。</strong> 长会话中模型性能会随上下文积累而下降（context rot）。</p>
+      <p>解决方案：</p>
+      <ul>
+        <li>复杂任务拆分为独立子任务</li>
+        <li>每个子任务在独立会话中运行</li>
+        <li><strong>只传递结构化结果</strong>，不传递原始对话</li>
+      </ul>
+      <p>Anthropic 的双 Agent 架构：</p>
+      <ol>
+        <li><strong>Initializer Agent</strong> — 制定计划，生成功能列表</li>
+        <li><strong>Coding Agent</strong> — 逐个执行每个功能</li>
+      </ol>
+
+      <h3>5. Hooks & Back-Pressure（钩子与背压）</h3>
+      <p>自动化反馈回路，在错误累积之前捕获它们。</p>
+      <ul>
+        <li><strong>Pre-commit hooks</strong>：类型检查、lint、格式化</li>
+        <li><strong>Test runners</strong>：每次修改后自动运行测试</li>
+        <li><strong>Build verification</strong>：快速失败</li>
+      </ul>
+      <blockquote><em>"Success should be silent; failure should be loud."</em> — 只把错误推给 Agent 上下文，不要用冗余的成功日志淹没它。</blockquote>
+
+      <h3>6. Self-Verification Loops（自我验证循环）</h3>
+      <p>强迫 Agent 在标记任务完成之前验证自己的工作：</p>
+      <ul>
+        <li>运行测试套件</li>
+        <li>确认构建通过</li>
+        <li>验证输出符合规格</li>
+        <li>UI 工作：截图并做 diff 对比</li>
+      </ul>
+      <blockquote><em>"This is the difference between an agent that 'thinks it's done' and one that actually is."</em></blockquote>
+
+      <h3>7. Progress Documentation（进度记录）</h3>
+      <p>对于超过 ~30 分钟的任务，维护结构化进度记录，确保<strong>替换会话可以无缝恢复</strong>。</p>
+
+      <hr>
+
+      <h2>四、WorkBuddy 能用 Harness 吗？</h2>
+      <p><strong>能，而且 WorkBuddy 本身就是一套 Harness。</strong></p>
+      <p>WorkBuddy（CodeBuddy）实现了 Harness Engineering 的多个核心组件：</p>
+
+      <table>
+        <tr><th>Harness 组件</th><th>WorkBuddy 对应实现</th></tr>
+        <tr><td>Context Engineering</td><td>SOUL.md / IDENTITY.md / USER.md / MEMORY.md 工作记忆系统</td></tr>
+        <tr><td>Tools</td><td>完整的工具集（文件 I/O、Shell、Web、Agent、Task）</td></tr>
+        <tr><td>Hooks</td><td>自动化 triggers、定时任务</td></tr>
+        <tr><td>Permissions</td><td>安全策略（content_policy、personal_files_safety、working_modes）</td></tr>
+        <tr><td>Sub-Agents</td><td>Agent 工具（子 Agent 派发、TeamCreate）</td></tr>
+        <tr><td>Self-Verification</td><td>Agent Loop 中的迭代验证</td></tr>
+        <tr><td>Progress</td><td>TaskCreate/Update/List 任务管理系统</td></tr>
+        <tr><td>Memory</td><td>跨会话持久记忆（MEMORY.md + daily logs）</td></tr>
+      </table>
+
+      <p><strong>作为 WorkBuddy 用户，你可以直接利用的 Harness 能力：</strong></p>
+      <ol>
+        <li><strong>编写 AGENTS.md / SOUL.md</strong>：定义 Agent 的行为规范、项目架构、编码规则</li>
+        <li><strong>使用 Skills 系统</strong>：按需加载领域知识</li>
+        <li><strong>利用 Task 管理</strong>：复杂任务拆分、进度追踪</li>
+        <li><strong>构建 MEMORY.md</strong>：积累跨会话知识，让 Agent "越用越懂你"</li>
+        <li><strong>自定义 Automations</strong>：定时任务和事件驱动的自动化</li>
+      </ol>
+      <p><strong>进阶建议</strong>：WorkBuddy 用户可以通过优质的 SOUL.md + MEMORY.md 配置，在不写一行代码的情况下构建强大的个人 Harness。</p>
+
+      <hr>
+
+      <h2>五、自建 OpenClaw 如何用 Harness？</h2>
+
+      <h3>方案一：集成 OpenHarness</h3>
+      <p><a href="https://github.com/HKUDS/OpenHarness" target="_blank">OpenHarness</a> 是港大开源的一个轻量级 Agent Harness 框架（12.2K+ Stars），用 1.1 万行 Python 代码实现了 Claude Code 核心架构的 80%。</p>
+      <pre><code># 1. 安装 OpenHarness
+pip install openharness-ai
+
+# 2. 配置模型提供商
+oh setup
+# Provider: anthropic → Claude 系列
+# Provider: openai → GPT-4
+# Provider: deepseek → DeepSeek
+# Provider: ollama → 本地开源模型
+
+# 3. 创建项目的 CLAUDE.md
+cat &gt; CLAUDE.md &lt;&lt; 'EOF'
+## Project: OpenClaw Custom Agent
+## Architecture
+- src/core/ — Agent loop & tool execution
+- src/tools/ — Custom tools
+- src/memory/ — Persistent memory
+
+## Rules
+- All API calls go through src/lib/gateway.ts
+- Commit messages in English
+- Tests required for new tools
+EOF
+
+# 4. 启动 Harness
+oh</code></pre>
+
+      <h3>方案二：自建 Harness 核心组件</h3>
+      <pre><code># 最小可用的 Harness 实现
+class AgentHarness:
+    def __init__(self, model, tools, memory_path="MEMORY.md"):
+        self.model = model
+        self.tools = tools          # 工具注册表
+        self.memory = self.load_memory(memory_path)
+        self.constraints = []       # 架构约束规则
+        self.hooks = {"pre": [], "post": []}  # 生命周期钩子
+    
+    def run(self, task):
+        # 1. 注入上下文
+        context = self.build_context(task)
+        
+        # 2. Agent Loop
+        while not done:
+            response = self.model.stream(messages, self.tools)
+            
+            if response.has_tool_calls:
+                # 权限检查 → 钩子 → 执行 → 结果
+                for tool_call in response.tool_calls:
+                    if self.check_permission(tool_call):
+                        self.run_hooks("pre", tool_call)
+                        result = self.execute(tool_call)
+                        self.run_hooks("post", tool_call, result)
+                        messages.append(result)
+            else:
+                done = True
+        
+        # 3. 自我验证
+        self.verify(result)
+        
+        # 4. 更新记忆
+        self.save_memory()
+        
+        return result</code></pre>
+
+      <h3>关键实践清单</h3>
+      <table>
+        <tr><th>实践</th><th>怎么做</th></tr>
+        <tr><td>上下文</td><td>维护 ≤60 行的 CLAUDE.md，放在项目根目录</td></tr>
+        <tr><td>记忆</td><td>自动维护 MEMORY.md，记录偏好、已知问题、架构决策</td></tr>
+        <tr><td>工具</td><td>优先使用标准 CLI（git、npm），代理天然熟悉</td></tr>
+        <tr><td>权限</td><td>白名单路径 + 禁止危险命令（rm -rf、git push --force）</td></tr>
+        <tr><td>验证</td><td>每次代码修改后自动运行 lint + test</td></tr>
+        <tr><td>拆分</td><td>复杂任务用子 Agent，每个子 Agent 在独立会话中</td></tr>
+        <tr><td>进度</td><td>结构化任务列表 + 频繁 commit</td></tr>
+      </table>
+
+      <hr>
+
+      <h2>六、Harness vs. Prompt Engineering</h2>
+      <table>
+        <tr><th></th><th>Prompt Engineering</th><th>Harness Engineering</th></tr>
+        <tr><td><strong>焦点</strong></td><td>对模型说什么</td><td>在模型周围构建什么</td></tr>
+        <tr><td><strong>持久性</strong></td><td>脆弱，模型相关</td><td>稳健，模型无关</td></tr>
+        <tr><td><strong>复利效应</strong></td><td>不随时间改进</td><td>每次迭代都更强</td></tr>
+        <tr><td><strong>范围</strong></td><td>单次交互</td><td>整个工作流</td></tr>
+        <tr><td><strong>技能类型</strong></td><td>写作</td><td>系统工程</td></tr>
+      </table>
+
+      <hr>
+
+      <h2>七、结论</h2>
+      <p>2026 年的 AI 竞争已从"谁的模型更强"转向"谁的 Harness 更好"。Mitchell Hashimoto 的洞察改变了一切：</p>
+      <blockquote><em>"The model is the engine; the harness is the car. No one wins a race with just an engine."</em></blockquote>
+      <p>对于 WorkBuddy 用户：你今天就在使用一套 Harness —— 通过优化 SOUL.md、MEMORY.md 和 Skills，可以持续提升它的能力。</p>
+      <p>对于 OpenClaw 自建用户：OpenHarness 提供了一个经过验证的起点。核心原则只有一个：<strong>每次 Agent 犯错，花时间设计一个工程方案，让它不再犯同样的错误。</strong></p>
+      <p>这就是 Harness Engineering —— 让 AI 从"能用"走向"可靠"的工程艺术。</p>
+
+      <div class="article-footer">
+        <p>参考来源：Mitchell Hashimoto (2026.2), Y Build Harness Guide, LangChain Terminal Bench 2.0, OpenHarness (HKUDS), OpenAI Codex Team Report, Anthropic Dual-Agent Architecture, Stripe Minions System</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
