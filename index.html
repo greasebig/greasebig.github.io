@@ -365,20 +365,20 @@
     @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
     .hero .badge{animation:fadeInDown .8s ease-out}
     .hero h1{animation:fadeInUp .8s ease-out .1s both;position:relative}
-    .hero h1::after{content:\x27greasebig\x27;position:absolute;left:0;top:0;font-family:inherit;font-size:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;background:linear-gradient(90deg,transparent 0%,rgba(99,102,241,.25) 50%,transparent 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 4s ease-in-out infinite}
+    .hero h1::after{content:'greasebig';position:absolute;left:0;top:0;font-family:inherit;font-size:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;background:linear-gradient(90deg,transparent 0%,rgba(99,102,241,.25) 50%,transparent 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 4s ease-in-out infinite}
     .hero .tagline{animation:fadeInUp .8s ease-out .2s both}
     .hero .links-row{animation:fadeInUp .8s ease-out .3s both}
     .reveal{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.4,0,.2,1),transform .7s cubic-bezier(.4,0,.2,1)}
     .reveal.visible{opacity:1;transform:translateY(0)}
     .gls-btn{position:relative;overflow:hidden}
-    .gls-btn::before{content:\x27\x27;position:absolute;top:50%;left:50%;width:0;height:0;background:rgba(99,102,241,.08);border-radius:50%;transition:width .4s ease,height .4s ease;transform:translate(-50%,-50%)}
+    .gls-btn::before{content:'';position:absolute;top:50%;left:50%;width:0;height:0;background:rgba(99,102,241,.08);border-radius:50%;transition:width .4s ease,height .4s ease;transform:translate(-50%,-50%)}
     .gls-btn:hover::before{width:300px;height:300px}
     .gls-btn.primary::before{background:rgba(255,255,255,.1)}
     .gls-btn svg{position:relative;z-index:1}
-    .card::before{content:\x27\x27;position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2));opacity:0;transition:opacity .25s ease}
+    .card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2));opacity:0;transition:opacity .25s ease}
     .card:hover::before{opacity:1}
     .article-card{position:relative;overflow:hidden}
-    .article-card::before{content:\x27\x27;position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(180deg,var(--accent),var(--accent-2));opacity:0;transition:opacity .25s ease}
+    .article-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(180deg,var(--accent),var(--accent-2));opacity:0;transition:opacity .25s ease}
     .article-card:hover::before{opacity:1}
     .card .card-footer{transition:gap .25s ease}
     .card:hover .card-footer{gap:10px}
@@ -574,7 +574,7 @@
     </div>
   </div>
 
-  <a class="back-to-top" href="#" onclick="window.scrollTo({top:0,behavior:\x27smooth\x27});return false;" title="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></a>
-  <script>var reveals=document.querySelectorAll(\x27.reveal\x27);var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(\x27visible\x27);obs.unobserve(e.target)}})},{threshold:.1});reveals.forEach(function(el){obs.observe(el)});var btt=document.querySelector(\x27.back-to-top\x27);window.addEventListener(\x27scroll\x27,function(){btt.classList.toggle(\x27visible\x27,window.scrollY>300)});(function(){var c=document.getElementById(\x27particles\x27),x=c.getContext(\x272d\x27),W,H,ps=[];function r(){W=c.width=innerWidth;H=c.height=innerHeight}r();addEventListener(\x27resize\x27,r);var rm=matchMedia(\x27(prefers-reduced-motion:reduce)\x27).matches,N=rm?0:40;for(var i=0;i<N;i++)ps.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.5+.5,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,a:Math.random()*.3+.1});function d(){x.clearRect(0,0,W,H);ps.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fillStyle=\x27rgba(99,102,241,\x27+p.a+\x27)\x27;x.fill()});for(var i=0;i<ps.length;i++)for(var j=i+1;j<ps.length;j++){var dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,dd=Math.sqrt(dx*dx+dy*dy);if(dd<120){x.beginPath();x.moveTo(ps[i].x,ps[i].y);x.lineTo(ps[j].x,ps[j].y);x.strokeStyle=\x27rgba(99,102,241,\x27+(0.06*(1-dd/120))+\x27)\x27;x.lineWidth=.5;x.stroke()}}requestAnimationFrame(d)}if(N>0)d()})();</script>
+  <a class="back-to-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" title="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></a>
+  <script>var reveals=document.querySelectorAll('.reveal');var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1});reveals.forEach(function(el){obs.observe(el)});var btt=document.querySelector('.back-to-top');window.addEventListener('scroll',function(){btt.classList.toggle('visible',window.scrollY>300)});(function(){var c=document.getElementById('particles'),x=c.getContext('2d'),W,H,ps=[];function r(){W=c.width=innerWidth;H=c.height=innerHeight}r();addEventListener('resize',r);var rm=matchMedia('(prefers-reduced-motion:reduce)').matches,N=rm?0:40;for(var i=0;i<N;i++)ps.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.5+.5,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,a:Math.random()*.3+.1});function d(){x.clearRect(0,0,W,H);ps.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fillStyle='rgba(99,102,241,'+p.a+')';x.fill()});for(var i=0;i<ps.length;i++)for(var j=i+1;j<ps.length;j++){var dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,dd=Math.sqrt(dx*dx+dy*dy);if(dd<120){x.beginPath();x.moveTo(ps[i].x,ps[i].y);x.lineTo(ps[j].x,ps[j].y);x.strokeStyle='rgba(99,102,241,'+(0.06*(1-dd/120))+')';x.lineWidth=.5;x.stroke()}}requestAnimationFrame(d)}if(N>0)d()})();</script>
 </body>
 </html>
