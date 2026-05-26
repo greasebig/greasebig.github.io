@@ -4,9 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>greasebig</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 100 100&apos;><rect width=&apos;100&apos; height=&apos;100&apos; rx=&apos;20&apos; fill=&apos;%236366f1&apos;/><text x=&apos;50&apos; y=&apos;68&apos; font-size=&apos;52&apos; text-anchor=&apos;middle&apos; fill=&apos;white&apos; font-family=&apos;system-ui&apos; font-weight=&apos;bold&apos;>G</text></svg>" type="image/svg+xml" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 100 100&apos;><rect width=&apos;100&apos; height=&apos;100&apos; rx=&apos;20&apos; fill=&apos;%236366f1&apos;/><text x=&apos;50&apos; y=&apos;68&apos; font-size=&apos;52&apos; text-anchor=&apos;middle&apos; fill=&apos;white&apos; font-family=&apos;system-ui&apos; font-weight=&apos;bold&apos;>G</text></svg>" type="image/svg+xml" />
-  <!-- Favicon: SVG emoji-style icon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui' font-weight='bold'>G</text></svg>" type="image/svg+xml" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
@@ -37,6 +34,230 @@
       min-height: 100vh;
       overflow-x: hidden;
       line-height: 1.6;
+    }
+
+    /* ========== 开屏大门动画 ========== */
+    .gate-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: all;
+      perspective: 1200px;
+    }
+
+    /* 门缝光芒 */
+    .gate-light {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.6) 20%,
+        rgba(255,255,255,1) 50%,
+        rgba(255,255,255,0.6) 80%,
+        rgba(255,255,255,0) 100%
+      );
+      z-index: 1;
+      opacity: 0;
+      animation: gateLightPulse 2s ease-in-out 0.5s forwards;
+    }
+    @keyframes gateLightPulse {
+      0% { opacity: 0; width: 2px; }
+      60% { opacity: 0.8; width: 4px; }
+      100% { opacity: 1; width: 6px; }
+    }
+
+    /* 门缝光芒扩散晕 */
+    .gate-light-glow {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 100%;
+      background: radial-gradient(ellipse at center,
+        rgba(255,255,255,0.3) 0%,
+        rgba(99,102,241,0.15) 30%,
+        rgba(236,72,153,0.08) 60%,
+        transparent 100%
+      );
+      z-index: 0;
+      opacity: 0;
+      animation: gateLightGlow 2s ease-in-out 0.8s forwards;
+    }
+    @keyframes gateLightGlow {
+      0% { opacity: 0; width: 20px; }
+      100% { opacity: 1; width: 80px; }
+    }
+
+    /* 门板 */
+    .gate-door {
+      position: absolute;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(135deg, #1a1a2e 0%, #2d2b55 30%, #1a1a2e 60%, #1e1e3f 100%);
+      z-index: 2;
+      transition: transform 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    /* 门板纹理 */
+    .gate-door::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        /* 边框装饰线 */
+        linear-gradient(90deg, transparent 8%, rgba(99,102,241,0.08) 8%, rgba(99,102,241,0.08) 8.5%, transparent 8.5%) 0 0 / 100% 100%,
+        linear-gradient(90deg, transparent 92%, rgba(99,102,241,0.08) 92%, rgba(99,102,241,0.08) 92.5%, transparent 92.5%) 0 0 / 100% 100%,
+        /* 竖向中线装饰 */
+        linear-gradient(90deg, transparent 50%, rgba(99,102,241,0.05) 50%, rgba(99,102,241,0.05) 50.3%, transparent 50.3%) 0 0 / 100% 100%,
+        /* 横向装饰线 */
+        linear-gradient(0deg, transparent 25%, rgba(99,102,241,0.05) 25%, rgba(99,102,241,0.05) 25.3%, transparent 25.3%) 0 0 / 100% 100%,
+        linear-gradient(0deg, transparent 50%, rgba(99,102,241,0.05) 50%, rgba(99,102,241,0.05) 50.3%, transparent 50.3%) 0 0 / 100% 100%,
+        linear-gradient(0deg, transparent 75%, rgba(99,102,241,0.05) 75%, rgba(99,102,241,0.05) 75.3%, transparent 75.3%) 0 0 / 100% 100%;
+    }
+
+    /* 门板把手区域 */
+    .gate-door::after {
+      content: '';
+      position: absolute;
+      top: 45%;
+      width: 12px; height: 60px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(139,92,246,0.2), rgba(99,102,241,0.3));
+      border: 1px solid rgba(99,102,241,0.2);
+      box-shadow: 0 0 15px rgba(99,102,241,0.15), inset 0 0 8px rgba(139,92,246,0.1);
+    }
+
+    .gate-door-left {
+      left: 0;
+      transform-origin: left center;
+      transform: perspective(1200px) rotateY(0deg);
+    }
+    .gate-door-left::after {
+      right: 30px;
+    }
+
+    .gate-door-right {
+      right: 0;
+      transform-origin: right center;
+      transform: perspective(1200px) rotateY(0deg);
+    }
+    .gate-door-right::after {
+      left: 30px;
+    }
+
+    /* 门板上的铰链 */
+    .gate-hinge {
+      position: absolute;
+      width: 14px; height: 30px;
+      border-radius: 4px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.25), rgba(139,92,246,0.15));
+      border: 1px solid rgba(99,102,241,0.15);
+      z-index: 3;
+    }
+
+    /* 门板上的符号 - G字母徽章 */
+    .gate-emblem {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      border: 2px solid rgba(99,102,241,0.25);
+      background: radial-gradient(circle, rgba(99,102,241,0.12), transparent 70%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 4;
+    }
+    .gate-emblem span {
+      font-family: "Playfair Display", serif;
+      font-size: 42px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* 开门动画状态 */
+    .gate-overlay.opening .gate-door-left {
+      transform: perspective(1200px) rotateY(-110deg);
+    }
+    .gate-overlay.opening .gate-door-right {
+      transform: perspective(1200px) rotateY(110deg);
+    }
+
+    /* 光芒爆发 - 门开到一定程度时触发 */
+    .gate-burst {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0; height: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.6) 20%,
+        rgba(99,102,241,0.2) 50%,
+        rgba(236,72,153,0.1) 70%,
+        transparent 100%
+      );
+      z-index: 1;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .gate-overlay.burst .gate-burst {
+      animation: lightBurst 1.2s ease-out forwards;
+    }
+    @keyframes lightBurst {
+      0% { width: 0; height: 0; opacity: 0; }
+      30% { opacity: 1; }
+      100% { width: 200vmax; height: 200vmax; opacity: 0; }
+    }
+
+    /* 飘散粒子 */
+    .gate-spark {
+      position: absolute;
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.9);
+      z-index: 5;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* 整个overlay淡出 */
+    .gate-overlay.fade-out {
+      animation: gateFadeOut 0.8s ease-out forwards;
+    }
+    @keyframes gateFadeOut {
+      0% { opacity: 1; }
+      100% { opacity: 0; pointer-events: none; }
+    }
+
+    /* 页面内容初始隐藏，等门开完再显示 */
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      transform: scale(0.98);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .wrap.revealed {
+      opacity: 1;
+      transform: scale(1);
     }
 
     /* floating orbs */
@@ -88,15 +309,6 @@
       z-index: 0;
     }
 
-    /* layout */
-    .wrap {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 60px 24px 80px;
-      position: relative;
-      z-index: 1;
-    }
-
     /* hero */
     .hero {
       text-align: center;
@@ -118,7 +330,14 @@
       letter-spacing: 0.3px;
       box-shadow: var(--shadow);
       margin-bottom: 20px;
-      animation: fadeInDown 0.8s ease-out;
+      opacity: 0;
+      transform: translateY(-16px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .wrap.revealed .hero .badge {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.1s;
     }
     .hero .badge .dot {
       width: 7px; height: 7px;
@@ -141,8 +360,15 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      animation: fadeInUp 0.8s ease-out 0.1s both;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
       position: relative;
+    }
+    .wrap.revealed .hero h1 {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.2s;
     }
     /* Animated gradient shimmer on h1 */
     .hero h1::after {
@@ -171,28 +397,28 @@
       max-width: 560px;
       margin: 0 auto 28px;
       font-weight: 400;
-      animation: fadeInUp 0.8s ease-out 0.2s both;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .wrap.revealed .hero .tagline {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.3s;
     }
     .hero .links-row {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
-      animation: fadeInUp 0.8s ease-out 0.3s both;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     }
-
-    /* Animations */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-16px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    .wrap.revealed .hero .links-row {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.4s;
     }
 
     /* Scroll reveal */
@@ -544,102 +770,54 @@
     }
 
     @media (max-width: 640px) {
-      .back-to-top { bottom: 20px; right: 20px; }
-      .back-to-top { bottom: 20px; right: 20px; }
       .wrap { padding: 40px 16px 60px; }
       .hero { padding: 20px 0 36px; }
       .grid { grid-template-columns: 1fr; }
       .back-to-top { bottom: 20px; right: 20px; }
+      .gate-emblem { width: 70px; height: 70px; }
+      .gate-emblem span { font-size: 30px; }
     }
-  
-    #particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
-    @keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-    .hero .badge { animation: fadeInDown 0.8s ease-out; }
-    .hero h1 { animation: fadeInUp 0.8s ease-out 0.1s both; position: relative; }
-    .hero h1::after { content: \x27greasebig\x27; position: absolute; left: 0; top: 0; font-family: inherit; font-size: inherit; font-weight: inherit; letter-spacing: inherit; line-height: inherit; background: linear-gradient(90deg, transparent 0%, rgba(99,102,241,0.25) 50%, transparent 100%); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: shimmer 4s ease-in-out infinite; }
-    .hero .tagline { animation: fadeInUp 0.8s ease-out 0.2s both; }
-    .hero .links-row { animation: fadeInUp 0.8s ease-out 0.3s both; }
-    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .gls-btn { position: relative; overflow: hidden; }
-    .gls-btn::before { content: \x27\x27; position: absolute; top: 50%; left: 50%; width: 0; height: 0; background: rgba(99,102,241,0.08); border-radius: 50%; transition: width 0.4s ease, height 0.4s ease; transform: translate(-50%, -50%); }
-    .gls-btn:hover::before { width: 300px; height: 300px; }
-    .gls-btn.primary::before { background: rgba(255,255,255,0.1); }
-    .gls-btn svg { position: relative; z-index: 1; }
-    .card::before { content: \x27\x27; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); opacity: 0; transition: opacity 0.25s ease; }
-    .card:hover::before { opacity: 1; }
-    .article-card { position: relative; overflow: hidden; }
-    .article-card::before { content: \x27\x27; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: linear-gradient(180deg, var(--accent), var(--accent-2)); opacity: 0; transition: opacity 0.25s ease; }
-    .article-card:hover::before { opacity: 1; }
-    .card .card-footer { transition: gap 0.25s ease; }
-    .card:hover .card-footer { gap: 10px; }
-    .article-card .read-more { transition: gap 0.25s ease; }
-    .article-card:hover .read-more { gap: 10px; }
-    .section h2 { display: flex; align-items: center; gap: 10px; }
-    .section h2 .section-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(139,92,246,0.12)); font-size: 18px; }
-    .footer .footer-heart { display: inline-block; animation: heartbeat 1.5s ease-in-out infinite; }
-    @keyframes heartbeat { 0%, 100% { transform: scale(1); } 15% { transform: scale(1.15); } 30% { transform: scale(1); } 45% { transform: scale(1.1); } }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.25); border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: rgba(99,102,241,0.4); }
-    .back-to-top { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 14px; background: var(--glass); border: 1px solid var(--border); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--shadow); display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; transform: translateY(16px); transition: all 0.3s ease; z-index: 99; color: var(--ink); text-decoration: none; }
-    .back-to-top.visible { opacity: 1; transform: translateY(0); }
-    .back-to-top:hover { background: var(--glass-hover); transform: translateY(-2px); box-shadow: var(--shadow-hover); }
-    .back-to-top svg { width: 20px; height: 20px; }
 
-  
-    #particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
-    @keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes fadeInDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
-    .hero .badge{animation:fadeInDown .8s ease-out}
-    .hero h1{animation:fadeInUp .8s ease-out .1s both;position:relative}
-    .hero h1::after{content:\x27greasebig\x27;position:absolute;left:0;top:0;font-family:inherit;font-size:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;background:linear-gradient(90deg,transparent 0%,rgba(99,102,241,.25) 50%,transparent 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 4s ease-in-out infinite}
-    .hero .tagline{animation:fadeInUp .8s ease-out .2s both}
-    .hero .links-row{animation:fadeInUp .8s ease-out .3s both}
-    .reveal{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.4,0,.2,1),transform .7s cubic-bezier(.4,0,.2,1)}
-    .reveal.visible{opacity:1;transform:translateY(0)}
-    .gls-btn{position:relative;overflow:hidden}
-    .gls-btn::before{content:\x27\x27;position:absolute;top:50%;left:50%;width:0;height:0;background:rgba(99,102,241,.08);border-radius:50%;transition:width .4s ease,height .4s ease;transform:translate(-50%,-50%)}
-    .gls-btn:hover::before{width:300px;height:300px}
-    .gls-btn.primary::before{background:rgba(255,255,255,.1)}
-    .gls-btn svg{position:relative;z-index:1}
-    .card::before{content:\x27\x27;position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2));opacity:0;transition:opacity .25s ease}
-    .card:hover::before{opacity:1}
-    .article-card{position:relative;overflow:hidden}
-    .article-card::before{content:\x27\x27;position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(180deg,var(--accent),var(--accent-2));opacity:0;transition:opacity .25s ease}
-    .article-card:hover::before{opacity:1}
-    .card .card-footer{transition:gap .25s ease}
-    .card:hover .card-footer{gap:10px}
-    .article-card .read-more{transition:gap .25s ease}
-    .article-card:hover .read-more{gap:10px}
-    .section h2{display:flex;align-items:center;gap:10px}
-    .section h2 .section-icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,rgba(99,102,241,.12),rgba(139,92,246,.12));font-size:18px}
-    .footer .footer-heart{display:inline-block;animation:heartbeat 1.5s ease-in-out infinite}
-    @keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.15)}30%{transform:scale(1)}45%{transform:scale(1.1)}}
-    ::-webkit-scrollbar{width:6px}
-    ::-webkit-scrollbar-track{background:transparent}
-    ::-webkit-scrollbar-thumb{background:rgba(99,102,241,.25);border-radius:3px}
-    ::-webkit-scrollbar-thumb:hover{background:rgba(99,102,241,.4)}
-    .back-to-top{position:fixed;bottom:32px;right:32px;width:44px;height:44px;border-radius:14px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transform:translateY(16px);transition:all .3s ease;z-index:99;color:var(--ink);text-decoration:none}
-    .back-to-top.visible{opacity:1;transform:translateY(0)}
-    .back-to-top:hover{background:var(--glass-hover);transform:translateY(-2px);box-shadow:var(--shadow-hover)}
-    .back-to-top svg{width:20px;height:20px}
-
+    /* prefers-reduced-motion: 跳过开屏动画 */
+    @media (prefers-reduced-motion: reduce) {
+      .gate-overlay { display: none !important; }
+      .wrap { opacity: 1; transform: none; }
+    }
   </style>
 </head>
 <body>
-  <canvas id="particles"></canvas>
-  <canvas id="particles"></canvas>
+  <!-- ========== 开屏大门动画 ========== -->
+  <div class="gate-overlay" id="gateOverlay">
+    <!-- 门缝光芒 -->
+    <div class="gate-light-glow"></div>
+    <div class="gate-light"></div>
+
+    <!-- 左门 -->
+    <div class="gate-door gate-door-left">
+      <div class="gate-hinge" style="top: 12%; left: 8%;"></div>
+      <div class="gate-hinge" style="bottom: 12%; left: 8%;"></div>
+      <div class="gate-emblem"><span>G</span></div>
+    </div>
+
+    <!-- 右门 -->
+    <div class="gate-door gate-door-right">
+      <div class="gate-hinge" style="top: 12%; right: 8%;"></div>
+      <div class="gate-hinge" style="bottom: 12%; right: 8%;"></div>
+      <div class="gate-emblem"><span>G</span></div>
+    </div>
+
+    <!-- 光芒爆发 -->
+    <div class="gate-burst"></div>
+  </div>
+
+  <!-- ========== 背景层 ========== -->
   <canvas id="particles"></canvas>
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
   <div class="orb orb-3"></div>
   <div class="orb orb-4"></div>
 
+  <!-- ========== 主内容 ========== -->
   <div class="wrap">
     <!-- Hero -->
     <div class="hero">
@@ -725,7 +903,7 @@
           <span class="venue tool">Resource</span>
           <h3>Awesome Agent Everything</h3>
           <p>Meta-index of ALL awesome agent repos on GitHub — frameworks, skills, papers, MCP, harness &amp; more. Auto-updated every 3 days via GitHub Actions.</p>
-          <span class="card-cta">
+          <span class="card-footer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             View Project
           </span>
@@ -824,29 +1002,114 @@
   </a>
 
   <script>
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
+    // ========== 开屏大门动画控制 ==========
+    (function() {
+      var gate = document.getElementById('gateOverlay');
+      if (!gate) return;
+
+      // 1. 等待1.5秒让用户感受门的存在
+      setTimeout(function() {
+        // 2. 添加 opening 类 → 触发门板 CSS transition
+        gate.classList.add('opening');
+      }, 1500);
+
+      // 3. 门开到一半时，触发光芒爆发（1s后）
+      setTimeout(function() {
+        gate.classList.add('burst');
+
+        // 4. 生成飘散火花粒子
+        createSparks(gate, 30);
+      }, 2500);
+
+      // 5. 门完全打开后（3.3s），淡出 overlay 并显示内容
+      setTimeout(function() {
+        gate.classList.add('fade-out');
+
+        // 显示主内容
+        var wrap = document.querySelector('.wrap');
+        if (wrap) wrap.classList.add('revealed');
+
+        // 6. 动画结束后移除 overlay DOM
+        setTimeout(function() {
+          if (gate.parentNode) gate.parentNode.removeChild(gate);
+        }, 800);
+      }, 3300);
+    })();
+
+    // ========== 飘散火花粒子 ==========
+    function createSparks(container, count) {
+      for (var i = 0; i < count; i++) {
+        var spark = document.createElement('div');
+        spark.className = 'gate-spark';
+        var size = Math.random() * 4 + 2;
+        var angle = Math.random() * Math.PI * 2;
+        var distance = Math.random() * 300 + 100;
+        var duration = Math.random() * 800 + 600;
+
+        spark.style.width = size + 'px';
+        spark.style.height = size + 'px';
+        spark.style.left = '50%';
+        spark.style.top = '50%';
+        spark.style.opacity = '1';
+
+        // 随机颜色：白/紫/粉
+        var colors = [
+          'rgba(255,255,255,0.9)',
+          'rgba(99,102,241,0.8)',
+          'rgba(236,72,153,0.8)',
+          'rgba(139,92,246,0.8)'
+        ];
+        spark.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+        container.appendChild(spark);
+
+        // 动画：从中心向外扩散
+        var startX = 0, startY = 0;
+        var endX = Math.cos(angle) * distance;
+        var endY = Math.sin(angle) * distance;
+        var startTime = null;
+
+        function animateSpark(timestamp) {
+          if (!startTime) startTime = timestamp;
+          var progress = (timestamp - startTime) / duration;
+          if (progress > 1) {
+            if (spark.parentNode) spark.parentNode.removeChild(spark);
+            return;
+          }
+          var ease = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+          spark.style.transform = 'translate(' +
+            (startX + (endX - startX) * ease) + 'px, ' +
+            (startY + (endY - startY) * ease) + 'px)';
+          spark.style.opacity = String(1 - progress);
+          requestAnimationFrame(animateSpark);
+        }
+        requestAnimationFrame(animateSpark);
+      }
+    }
+
+    // ========== Scroll reveal ==========
+    var reveals = document.querySelectorAll('.reveal');
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
         if (e.isIntersecting) {
           e.target.classList.add('visible');
           observer.unobserve(e.target);
         }
       });
     }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
+    reveals.forEach(function(el) { observer.observe(el); });
 
-    // Back to top button visibility
-    const backBtn = document.querySelector('.back-to-top');
-    window.addEventListener('scroll', () => {
+    // ========== Back to top ==========
+    var backBtn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', function() {
       backBtn.classList.toggle('visible', window.scrollY > 300);
     });
 
-    // Particle system
+    // ========== Particle system ==========
     (function() {
-      const canvas = document.getElementById('particles');
-      const ctx = canvas.getContext('2d');
-      let W, H, particles = [];
+      var canvas = document.getElementById('particles');
+      var ctx = canvas.getContext('2d');
+      var W, H, particles = [];
       function resize() {
         W = canvas.width = window.innerWidth;
         H = canvas.height = window.innerHeight;
@@ -854,10 +1117,10 @@
       resize();
       window.addEventListener('resize', resize);
 
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      const PARTICLE_COUNT = prefersReduced ? 0 : 40;
+      var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var PARTICLE_COUNT = prefersReduced ? 0 : 40;
 
-      for (let i = 0; i < PARTICLE_COUNT; i++) {
+      for (var i = 0; i < PARTICLE_COUNT; i++) {
         particles.push({
           x: Math.random() * W,
           y: Math.random() * H,
@@ -870,7 +1133,7 @@
 
       function draw() {
         ctx.clearRect(0, 0, W, H);
-        particles.forEach(p => {
+        particles.forEach(function(p) {
           p.x += p.vx;
           p.y += p.vy;
           if (p.x < 0) p.x = W;
@@ -883,11 +1146,11 @@
           ctx.fill();
         });
         // Draw connections
-        for (let i = 0; i < particles.length; i++) {
-          for (let j = i + 1; j < particles.length; j++) {
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
-            const dist = Math.sqrt(dx*dx + dy*dy);
+        for (var i = 0; i < particles.length; i++) {
+          for (var j = i + 1; j < particles.length; j++) {
+            var dx = particles[i].x - particles[j].x;
+            var dy = particles[i].y - particles[j].y;
+            var dist = Math.sqrt(dx*dx + dy*dy);
             if (dist < 120) {
               ctx.beginPath();
               ctx.moveTo(particles[i].x, particles[i].y);
@@ -903,17 +1166,5 @@
       if (PARTICLE_COUNT > 0) draw();
     })();
   </script>
-
-  <a class="back-to-top" href="#" onclick="window.scrollTo({top:0,behavior:\x27smooth\x27});return false;" title="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
-  </a>
-  <script>
-    var reveals=document.querySelectorAll(\x27.reveal\x27);var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(\x27visible\x27);obs.unobserve(e.target)}})},{threshold:0.1});reveals.forEach(function(el){obs.observe(el)});
-    var btt=document.querySelector(\x27.back-to-top\x27);window.addEventListener(\x27scroll\x27,function(){btt.classList.toggle(\x27visible\x27,window.scrollY>300)});
-    (function(){var c=document.getElementById(\x27particles\x27),x=c.getContext(\x272d\x27),W,H,ps=[];function r(){W=c.width=innerWidth;H=c.height=innerHeight}r();addEventListener(\x27resize\x27,r);var rm=matchMedia(\x27(prefers-reduced-motion:reduce)\x27).matches,N=rm?0:40;for(var i=0;i<N;i++)ps.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.5+.5,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,a:Math.random()*.3+.1});function d(){x.clearRect(0,0,W,H);ps.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fillStyle=\x27rgba(99,102,241,\x27+p.a+\x27)\x27;x.fill()});for(var i=0;i<ps.length;i++)for(var j=i+1;j<ps.length;j++){var dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,dd=Math.sqrt(dx*dx+dy*dy);if(dd<120){x.beginPath();x.moveTo(ps[i].x,ps[i].y);x.lineTo(ps[j].x,ps[j].y);x.strokeStyle=\x27rgba(99,102,241,\x27+(0.06*(1-dd/120))+\x27)\x27;x.lineWidth=.5;x.stroke()}}requestAnimationFrame(d)}if(N>0)d()})();
-  </script>
-
-  <a class="back-to-top" href="#" onclick="window.scrollTo({top:0,behavior:\x27smooth\x27});return false;" title="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></a>
-  <script>var reveals=document.querySelectorAll(\x27.reveal\x27);var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add(\x27visible\x27);obs.unobserve(e.target)}})},{threshold:.1});reveals.forEach(function(el){obs.observe(el)});var btt=document.querySelector(\x27.back-to-top\x27);window.addEventListener(\x27scroll\x27,function(){btt.classList.toggle(\x27visible\x27,window.scrollY>300)});(function(){var c=document.getElementById(\x27particles\x27),x=c.getContext(\x272d\x27),W,H,ps=[];function r(){W=c.width=innerWidth;H=c.height=innerHeight}r();addEventListener(\x27resize\x27,r);var rm=matchMedia(\x27(prefers-reduced-motion:reduce)\x27).matches,N=rm?0:40;for(var i=0;i<N;i++)ps.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.5+.5,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,a:Math.random()*.3+.1});function d(){x.clearRect(0,0,W,H);ps.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fillStyle=\x27rgba(99,102,241,\x27+p.a+\x27)\x27;x.fill()});for(var i=0;i<ps.length;i++)for(var j=i+1;j<ps.length;j++){var dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,dd=Math.sqrt(dx*dx+dy*dy);if(dd<120){x.beginPath();x.moveTo(ps[i].x,ps[i].y);x.lineTo(ps[j].x,ps[j].y);x.strokeStyle=\x27rgba(99,102,241,\x27+(0.06*(1-dd/120))+\x27)\x27;x.lineWidth=.5;x.stroke()}}requestAnimationFrame(d)}if(N>0)d()})();</script>
 </body>
 </html>
