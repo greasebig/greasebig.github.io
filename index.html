@@ -406,6 +406,99 @@
       transform: translateY(0);
       transition-delay: 0.3s;
     }
+    /* ========== 三网站大卡片 ========== */
+    .site-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 720px;
+      margin: 18px auto 24px;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .wrap.revealed .hero .site-cards {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.15s;
+    }
+    .site-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .site-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .site-card:hover::before {
+      opacity: 1;
+    }
+    .site-card:hover {
+      background: var(--glass-hover);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(99,102,241,0.35);
+    }
+    .site-card-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.08));
+    }
+    .site-card-body h3 {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .site-card-body p {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 2px 0 0;
+      line-height: 1.3;
+    }
+    .site-card-arrow {
+      margin-left: auto;
+      font-size: 16px;
+      color: var(--muted);
+      transition: transform 0.2s ease, color 0.2s ease;
+      flex-shrink: 0;
+    }
+    .site-card:hover .site-card-arrow {
+      transform: translateX(4px);
+      color: var(--accent);
+    }
+
+    @media (max-width: 640px) {
+      .site-cards {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+      }
+    }
+
     .hero .links-row {
       display: flex;
       flex-wrap: wrap;
@@ -825,6 +918,35 @@
         <span class="dot"></span> Open Source · Computer Vision · AI
       </div>
       <h1>greasebig</h1>
+
+      <!-- 三个网站大卡片 — 名字正下方 -->
+      <div class="site-cards">
+        <a class="site-card" href="https://greasebig.github.io" target="_blank">
+          <div class="site-card-icon">🏠</div>
+          <div class="site-card-body">
+            <h3>greasebig.github.io</h3>
+            <p>Projects, articles &amp; links</p>
+          </div>
+          <span class="site-card-arrow">→</span>
+        </a>
+        <a class="site-card" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
+          <div class="site-card-icon">📚</div>
+          <div class="site-card-body">
+            <h3>Papers Hub</h3>
+            <p>Daily arXiv paper tracker</p>
+          </div>
+          <span class="site-card-arrow">→</span>
+        </a>
+        <a class="site-card" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
+          <div class="site-card-icon">🤖</div>
+          <div class="site-card-body">
+            <h3>Agent Index</h3>
+            <p>Meta-index of agent repos</p>
+          </div>
+          <span class="site-card-arrow">→</span>
+        </a>
+      </div>
+
       <p class="tagline">
         Building tools and models at the intersection of computer vision, generative AI, and video understanding.
       </p>
