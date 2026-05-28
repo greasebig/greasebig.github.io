@@ -46,9 +46,37 @@
     .content hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
     .content a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
     .article-footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
-  </style>
+  
+    /* Language switcher */
+    .lang-switch {
+      position: fixed; top: 20px; right: 20px; z-index: 100;
+      display: flex; gap: 4px;
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 4px;
+      box-shadow: var(--shadow);
+    }
+    .lang-switch a {
+      padding: 6px 12px; border-radius: 6px;
+      font-size: 12px; font-weight: 500;
+      color: var(--muted); text-decoration: none;
+      transition: all 0.2s;
+    }
+    .lang-switch a:hover { color: var(--ink); }
+    .lang-switch a.active {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: white;
+    }
+</style>
 </head>
 <body>
+<div class="lang-switch">
+  <a href="./harness-poc.html" class="active">中文</a>
+  <a href="./harness-poc-en.html">EN</a>
+</div>
+
   <div class="wrap">
     <a class="nav-back" href="../index.html">← 返回主页</a>
     <div class="article-header">
