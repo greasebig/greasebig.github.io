@@ -1,1300 +1,1292 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>greasebig</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui' font-weight='bold'>G</text></svg>" type="image/svg+xml" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
-
-    :root {
-      --ink: #1a1a2e;
-      --muted: #5a6075;
-      --glass: rgba(255,255,255,0.58);
-      --glass-hover: rgba(255,255,255,0.78);
-      --border: rgba(18,22,40,0.10);
-      --accent: #6366f1;
-      --accent-2: #ec4899;
-      --accent-3: #f59e0b;
-      --accent-4: #10b981;
-      --shadow: 0 4px 24px rgba(15,23,42,0.08);
-      --shadow-hover: 0 12px 40px rgba(15,23,42,0.14);
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: "Inter", system-ui, -apple-system, sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.13), transparent 50%),
-        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
-        radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
-        linear-gradient(175deg, #f8f9ff, #f0f2fe 40%, #f5f3ff 70%, #faf9fe);
-      min-height: 100vh;
-      overflow-x: hidden;
-      line-height: 1.6;
-    }
-
-    /* ========== 开屏大门动画 ========== */
-    .gate-overlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      z-index: 10000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      pointer-events: all;
-      perspective: 1200px;
-    }
-
-    /* 门缝光芒 */
-    .gate-light {
-      position: absolute;
-      top: 0; left: 50%;
-      transform: translateX(-50%);
-      width: 4px;
-      height: 100%;
-      background: linear-gradient(180deg,
-        rgba(255,255,255,0) 0%,
-        rgba(255,255,255,0.6) 20%,
-        rgba(255,255,255,1) 50%,
-        rgba(255,255,255,0.6) 80%,
-        rgba(255,255,255,0) 100%
-      );
-      z-index: 1;
-      opacity: 0;
-      animation: gateLightPulse 2s ease-in-out 0.5s forwards;
-    }
-    @keyframes gateLightPulse {
-      0% { opacity: 0; width: 2px; }
-      60% { opacity: 0.8; width: 4px; }
-      100% { opacity: 1; width: 6px; }
-    }
-
-    /* 门缝光芒扩散晕 */
-    .gate-light-glow {
-      position: absolute;
-      top: 0; left: 50%;
-      transform: translateX(-50%);
-      width: 60px;
-      height: 100%;
-      background: radial-gradient(ellipse at center,
-        rgba(255,255,255,0.3) 0%,
-        rgba(99,102,241,0.15) 30%,
-        rgba(236,72,153,0.08) 60%,
-        transparent 100%
-      );
-      z-index: 0;
-      opacity: 0;
-      animation: gateLightGlow 2s ease-in-out 0.8s forwards;
-    }
-    @keyframes gateLightGlow {
-      0% { opacity: 0; width: 20px; }
-      100% { opacity: 1; width: 80px; }
-    }
-
-    /* 门板 */
-    .gate-door {
-      position: absolute;
-      top: 0;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(135deg, #1a1a2e 0%, #2d2b55 30%, #1a1a2e 60%, #1e1e3f 100%);
-      z-index: 2;
-      transition: transform 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
-    /* 门板纹理 */
-    .gate-door::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background:
-        /* 边框装饰线 */
-        linear-gradient(90deg, transparent 8%, rgba(99,102,241,0.08) 8%, rgba(99,102,241,0.08) 8.5%, transparent 8.5%) 0 0 / 100% 100%,
-        linear-gradient(90deg, transparent 92%, rgba(99,102,241,0.08) 92%, rgba(99,102,241,0.08) 92.5%, transparent 92.5%) 0 0 / 100% 100%,
-        /* 竖向中线装饰 */
-        linear-gradient(90deg, transparent 50%, rgba(99,102,241,0.05) 50%, rgba(99,102,241,0.05) 50.3%, transparent 50.3%) 0 0 / 100% 100%,
-        /* 横向装饰线 */
-        linear-gradient(0deg, transparent 25%, rgba(99,102,241,0.05) 25%, rgba(99,102,241,0.05) 25.3%, transparent 25.3%) 0 0 / 100% 100%,
-        linear-gradient(0deg, transparent 50%, rgba(99,102,241,0.05) 50%, rgba(99,102,241,0.05) 50.3%, transparent 50.3%) 0 0 / 100% 100%,
-        linear-gradient(0deg, transparent 75%, rgba(99,102,241,0.05) 75%, rgba(99,102,241,0.05) 75.3%, transparent 75.3%) 0 0 / 100% 100%;
-    }
-
-    /* 门板把手区域 */
-    .gate-door::after {
-      content: '';
-      position: absolute;
-      top: 45%;
-      width: 12px; height: 60px;
-      border-radius: 6px;
-      background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(139,92,246,0.2), rgba(99,102,241,0.3));
-      border: 1px solid rgba(99,102,241,0.2);
-      box-shadow: 0 0 15px rgba(99,102,241,0.15), inset 0 0 8px rgba(139,92,246,0.1);
-    }
-
-    .gate-door-left {
-      left: 0;
-      transform-origin: left center;
-      transform: perspective(1200px) rotateY(0deg);
-    }
-    .gate-door-left::after {
-      right: 30px;
-    }
-
-    .gate-door-right {
-      right: 0;
-      transform-origin: right center;
-      transform: perspective(1200px) rotateY(0deg);
-    }
-    .gate-door-right::after {
-      left: 30px;
-    }
-
-    /* 门板上的铰链 */
-    .gate-hinge {
-      position: absolute;
-      width: 14px; height: 30px;
-      border-radius: 4px;
-      background: linear-gradient(135deg, rgba(99,102,241,0.25), rgba(139,92,246,0.15));
-      border: 1px solid rgba(99,102,241,0.15);
-      z-index: 3;
-    }
-
-    /* 门板上的符号 - G字母徽章 */
-    .gate-emblem {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100px; height: 100px;
-      border-radius: 50%;
-      border: 2px solid rgba(99,102,241,0.25);
-      background: radial-gradient(circle, rgba(99,102,241,0.12), transparent 70%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 4;
-    }
-    .gate-emblem span {
-      font-family: "Playfair Display", serif;
-      font-size: 42px;
-      font-weight: 700;
-      background: linear-gradient(135deg, #6366f1, #ec4899);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    /* 开门动画状态 */
-    .gate-overlay.opening .gate-door-left {
-      transform: perspective(1200px) rotateY(-110deg);
-    }
-    .gate-overlay.opening .gate-door-right {
-      transform: perspective(1200px) rotateY(110deg);
-    }
-
-    /* 光芒爆发 - 门开到一定程度时触发 */
-    .gate-burst {
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      width: 0; height: 0;
-      border-radius: 50%;
-      background: radial-gradient(circle,
-        rgba(255,255,255,0.95) 0%,
-        rgba(255,255,255,0.6) 20%,
-        rgba(99,102,241,0.2) 50%,
-        rgba(236,72,153,0.1) 70%,
-        transparent 100%
-      );
-      z-index: 1;
-      opacity: 0;
-      pointer-events: none;
-    }
-    .gate-overlay.burst .gate-burst {
-      animation: lightBurst 1.2s ease-out forwards;
-    }
-    @keyframes lightBurst {
-      0% { width: 0; height: 0; opacity: 0; }
-      30% { opacity: 1; }
-      100% { width: 200vmax; height: 200vmax; opacity: 0; }
-    }
-
-    /* 飘散粒子 */
-    .gate-spark {
-      position: absolute;
-      width: 4px; height: 4px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.9);
-      z-index: 5;
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    /* 整个overlay淡出 */
-    .gate-overlay.fade-out {
-      animation: gateFadeOut 0.8s ease-out forwards;
-    }
-    @keyframes gateFadeOut {
-      0% { opacity: 1; }
-      100% { opacity: 0; pointer-events: none; }
-    }
-
-    /* 页面内容初始隐藏，等门开完再显示 */
-    .wrap {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 60px 24px 80px;
-      position: relative;
-      z-index: 1;
-      opacity: 0;
-      transform: scale(0.98);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .wrap.revealed {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    /* floating orbs */
-    .orb {
-      position: fixed;
-      border-radius: 50%;
-      filter: blur(60px);
-      opacity: 0.55;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .orb-1 {
-      width: 360px; height: 360px;
-      left: -100px; top: -80px;
-      background: radial-gradient(circle, rgba(99,102,241,0.35), transparent 70%);
-      animation: drift 12s ease-in-out infinite;
-    }
-    .orb-2 {
-      width: 280px; height: 280px;
-      right: -60px; top: 200px;
-      background: radial-gradient(circle, rgba(236,72,153,0.28), transparent 70%);
-      animation: drift 14s ease-in-out infinite 2s;
-    }
-    .orb-3 {
-      width: 240px; height: 240px;
-      left: 40%; bottom: -80px;
-      background: radial-gradient(circle, rgba(16,185,129,0.22), transparent 70%);
-      animation: drift 16s ease-in-out infinite 4s;
-    }
-    .orb-4 {
-      width: 200px; height: 200px;
-      right: 20%; bottom: 100px;
-      background: radial-gradient(circle, rgba(245,158,11,0.20), transparent 70%);
-      animation: drift 11s ease-in-out infinite 3s;
-    }
-    @keyframes drift {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      25% { transform: translate(20px, -15px) scale(1.05); }
-      50% { transform: translate(-10px, 10px) scale(0.95); }
-      75% { transform: translate(15px, 5px) scale(1.02); }
-    }
-
-    /* Particle canvas */
-    #particles {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    /* hero */
-    .hero {
-      text-align: center;
-      padding: 40px 0 52px;
-    }
-    .hero .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      border-radius: 999px;
-      background: var(--glass);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.3px;
-      box-shadow: var(--shadow);
-      margin-bottom: 20px;
-      opacity: 0;
-      transform: translateY(-16px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .wrap.revealed .hero .badge {
-      opacity: 1;
-      transform: translateY(0);
-      transition-delay: 0.1s;
-    }
-    .hero .badge .dot {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: var(--accent-4);
-      animation: pulse 2s ease-in-out infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.8); }
-    }
-    .hero h1 {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(40px, 5vw, 68px);
-      font-weight: 700;
-      line-height: 1.08;
-      letter-spacing: -0.5px;
-      margin-bottom: 16px;
-      background: linear-gradient(135deg, var(--ink) 30%, #4338ca 70%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-      position: relative;
-    }
-    .wrap.revealed .hero h1 {
-      opacity: 1;
-      transform: translateY(0);
-      transition-delay: 0.2s;
-    }
-    /* Animated gradient shimmer on h1 */
-    .hero h1::after {
-      content: 'greasebig';
-      position: absolute;
-      left: 0; top: 0;
-      font-family: inherit;
-      font-size: inherit;
-      font-weight: inherit;
-      letter-spacing: inherit;
-      line-height: inherit;
-      background: linear-gradient(90deg, transparent 0%, rgba(99,102,241,0.25) 50%, transparent 100%);
-      background-size: 200% 100%;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: shimmer 4s ease-in-out infinite;
-    }
-    @keyframes shimmer {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
-    }
-    .hero .tagline {
-      color: var(--muted);
-      font-size: clamp(15px, 1.8vw, 18px);
-      max-width: 560px;
-      margin: 0 auto 28px;
-      font-weight: 400;
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .wrap.revealed .hero .tagline {
-      opacity: 1;
-      transform: translateY(0);
-      transition-delay: 0.3s;
-    }
-    /* ========== 三网站大卡片 ========== */
-    .site-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      max-width: 720px;
-      margin: 18px auto 24px;
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .wrap.revealed .hero .site-cards {
-      opacity: 1;
-      transform: translateY(0);
-      transition-delay: 0.15s;
-    }
-    .site-card {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 14px 18px;
-      border-radius: 16px;
-      background: var(--glass);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      box-shadow: var(--shadow);
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      overflow: hidden;
-    }
-    .site-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-    .site-card:hover::before {
-      opacity: 1;
-    }
-    .site-card:hover {
-      background: var(--glass-hover);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-hover);
-      border-color: rgba(99,102,241,0.35);
-    }
-    .site-card-icon {
-      font-size: 28px;
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.08));
-    }
-    .site-card-body h3 {
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 1.2;
-      margin: 0;
-    }
-    .site-card-body p {
-      font-size: 12px;
-      color: var(--muted);
-      margin: 2px 0 0;
-      line-height: 1.3;
-    }
-    .site-card-arrow {
-      margin-left: auto;
-      font-size: 16px;
-      color: var(--muted);
-      transition: transform 0.2s ease, color 0.2s ease;
-      flex-shrink: 0;
-    }
-    .site-card:hover .site-card-arrow {
-      transform: translateX(4px);
-      color: var(--accent);
-    }
-
-    @media (max-width: 640px) {
-      .site-cards {
-        grid-template-columns: 1fr;
-        max-width: 360px;
-      }
-    }
-
-    .hero .links-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .wrap.revealed .hero .links-row {
-      opacity: 1;
-      transform: translateY(0);
-      transition-delay: 0.4s;
-    }
-
-    /* Scroll reveal */
-    .reveal {
-      opacity: 0;
-      transform: translateY(32px);
-      transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* glass button */
-    .gls-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 11px 22px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      text-decoration: none;
-      color: var(--ink);
-      background: var(--glass);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      font-weight: 600;
-      font-size: 14px;
-      box-shadow: var(--shadow);
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      overflow: hidden;
-    }
-    .gls-btn::before {
-      content: '';
-      position: absolute;
-      top: 50%; left: 50%;
-      width: 0; height: 0;
-      background: rgba(99,102,241,0.08);
-      border-radius: 50%;
-      transition: width 0.4s ease, height 0.4s ease;
-      transform: translate(-50%, -50%);
-    }
-    .gls-btn:hover::before {
-      width: 300px;
-      height: 300px;
-    }
-    .gls-btn:hover {
-      background: var(--glass-hover);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-hover);
-      border-color: rgba(99,102,241,0.35);
-    }
-    .gls-btn.primary {
-      background: linear-gradient(135deg, #6366f1, #8b5cf6);
-      border-color: transparent;
-      color: #fff;
-      box-shadow: 0 4px 20px rgba(99,102,241,0.3);
-    }
-    .gls-btn.primary::before {
-      background: rgba(255,255,255,0.1);
-    }
-    .gls-btn.primary:hover {
-      box-shadow: 0 8px 32px rgba(99,102,241,0.4);
-      background: linear-gradient(135deg, #4f46e5, #7c3aed);
-    }
-    .gls-btn svg {
-      width: 18px; height: 18px;
-      flex-shrink: 0;
-      position: relative;
-      z-index: 1;
-    }
-    .gls-btn span {
-      position: relative;
-      z-index: 1;
-    }
-
-    /* section */
-    .section {
-      margin-top: 56px;
-    }
-    .section h2 {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(26px, 3vw, 36px);
-      font-weight: 600;
-      margin-bottom: 8px;
-      letter-spacing: -0.3px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .section h2 .section-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px; height: 36px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(139,92,246,0.12));
-      font-size: 18px;
-    }
-    .section .subtitle {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 28px;
-    }
-
-    /* project grid */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      padding: 22px 20px;
-      border-radius: 18px;
-      background: var(--glass);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-    }
-    .card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-    .card:hover::before {
-      opacity: 1;
-    }
-    .card:hover {
-      background: var(--glass-hover);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-hover);
-    }
-    .card .venue {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      width: fit-content;
-    }
-    .venue.cvpr { background: rgba(99,102,241,0.12); color: #4f46e5; }
-    .venue.iclr { background: rgba(236,72,153,0.12); color: #db2777; }
-    .venue.siggraph { background: rgba(245,158,11,0.14); color: #d97706; }
-    .venue.tool { background: rgba(16,185,129,0.12); color: #059669; }
-    .card h3 {
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1.25;
-      margin: 0;
-    }
-    .card p {
-      color: var(--muted);
-      font-size: 13px;
-      margin: 0;
-      flex: 1;
-    }
-    .card .card-footer {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--accent);
-      margin-top: auto;
-      transition: gap 0.25s ease;
-    }
-    .card:hover .card-footer {
-      gap: 10px;
-    }
-    .card .card-footer svg {
-      width: 14px; height: 14px;
-    }
-
-    /* articles section */
-    .article-card {
-      display: block;
-      padding: 24px 22px;
-      border-radius: 18px;
-      background: var(--glass);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      box-shadow: var(--shadow);
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      margin-bottom: 14px;
-      position: relative;
-      overflow: hidden;
-    }
-    .article-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 3px; height: 100%;
-      background: linear-gradient(180deg, var(--accent), var(--accent-2));
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-    .article-card:hover::before {
-      opacity: 1;
-    }
-    .article-card:last-child { margin-bottom: 0; }
-    .article-card:hover {
-      background: var(--glass-hover);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-hover);
-    }
-    .article-card .article-meta {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .article-card .article-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 3px 10px;
-      border-radius: 999px;
-      background: rgba(99,102,241,0.12);
-      color: #4f46e5;
-    }
-    .article-card h3 {
-      font-size: 18px;
-      font-weight: 700;
-      margin: 0 0 6px;
-      line-height: 1.3;
-    }
-    .article-card .article-desc {
-      color: var(--muted);
-      font-size: 13px;
-      margin: 0;
-      line-height: 1.55;
-    }
-    .article-card .read-more {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      margin-top: 10px;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--accent);
-      transition: gap 0.25s ease;
-    }
-    .article-card:hover .read-more {
-      gap: 10px;
-    }
-    .article-card .read-more svg {
-      width: 13px; height: 13px;
-    }
-
-    /* links section */
-    .link-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    /* footer */
-    .footer {
-      margin-top: 70px;
-      padding-top: 28px;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .footer .footer-heart {
-      display: inline-block;
-      animation: heartbeat 1.5s ease-in-out infinite;
-    }
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      15% { transform: scale(1.15); }
-      30% { transform: scale(1); }
-      45% { transform: scale(1.1); }
-    }
-
-    /* Scrollbar */
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb {
-      background: rgba(99,102,241,0.25);
-      border-radius: 3px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: rgba(99,102,241,0.4);
-    }
-
-    /* Back to top */
-    .back-to-top {
-      position: fixed;
-      bottom: 32px;
-      right: 32px;
-      width: 44px; height: 44px;
-      border-radius: 14px;
-      background: var(--glass);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      box-shadow: var(--shadow);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      opacity: 0;
-      transform: translateY(16px);
-      transition: all 0.3s ease;
-      z-index: 99;
-      color: var(--ink);
-      text-decoration: none;
-    }
-    .back-to-top.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .back-to-top:hover {
-      background: var(--glass-hover);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-hover);
-    }
-    .back-to-top svg {
-      width: 20px; height: 20px;
-    }
-
-    @media (max-width: 640px) {
-      .wrap { padding: 40px 16px 60px; }
-      .hero { padding: 20px 0 36px; }
-      .grid { grid-template-columns: 1fr; }
-      .back-to-top { bottom: 20px; right: 20px; }
-      .gate-emblem { width: 70px; height: 70px; }
-      .gate-emblem span { font-size: 30px; }
-    }
-
-    /* prefers-reduced-motion: 跳过开屏动画 */
-    @media (prefers-reduced-motion: reduce) {
-      .gate-overlay { display: none !important; }
-      .wrap { opacity: 1; transform: none; }
-    }
-  </style>
-</head>
-<body>
-  <!-- ========== 开屏大门动画 ========== -->
-  <div class="gate-overlay" id="gateOverlay">
-    <!-- 门缝光芒 -->
-    <div class="gate-light-glow"></div>
-    <div class="gate-light"></div>
-
-    <!-- 左门 -->
-    <div class="gate-door gate-door-left">
-      <div class="gate-hinge" style="top: 12%; left: 8%;"></div>
-      <div class="gate-hinge" style="bottom: 12%; left: 8%;"></div>
-      <div class="gate-emblem"><span>G</span></div>
-    </div>
-
-    <!-- 右门 -->
-    <div class="gate-door gate-door-right">
-      <div class="gate-hinge" style="top: 12%; right: 8%;"></div>
-      <div class="gate-hinge" style="bottom: 12%; right: 8%;"></div>
-      <div class="gate-emblem"><span>G</span></div>
-    </div>
-
-    <!-- 光芒爆发 -->
-    <div class="gate-burst"></div>
-  </div>
-
-  <!-- ========== 背景层 ========== -->
-  <canvas id="particles"></canvas>
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-  <div class="orb orb-4"></div>
-
-  <!-- ========== 主内容 ========== -->
-  <div class="wrap">
-    <!-- Hero -->
-    <div class="hero">
-      <div class="badge">
-        <span class="dot"></span> Open Source · Computer Vision · AI
-      </div>
-      <h1>greasebig</h1>
-
-      <!-- 三个网站大卡片 — 名字正下方 -->
-      <div class="site-cards">
-        <a class="site-card" href="https://greasebig.github.io" target="_blank">
-          <div class="site-card-icon">🏠</div>
-          <div class="site-card-body">
-            <h3>greasebig.github.io</h3>
-            <p>Projects, articles &amp; links</p>
-          </div>
-          <span class="site-card-arrow">→</span>
-        </a>
-        <a class="site-card" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
-          <div class="site-card-icon">📚</div>
-          <div class="site-card-body">
-            <h3>Papers Hub</h3>
-            <p>Daily arXiv paper tracker</p>
-          </div>
-          <span class="site-card-arrow">→</span>
-        </a>
-        <a class="site-card" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
-          <div class="site-card-icon">🤖</div>
-          <div class="site-card-body">
-            <h3>Agent Index</h3>
-            <p>Meta-index of agent repos</p>
-          </div>
-          <span class="site-card-arrow">→</span>
-        </a>
-      </div>
-
-      <p class="tagline">
-        Building tools and models at the intersection of computer vision, generative AI, and video understanding.
-      </p>
-      <div class="links-row">
-        <a class="gls-btn primary" href="https://github.com/greasebig" target="_blank">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          <span>GitHub</span>
-        </a>
-        <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-          <span>Papers Hub</span>
-        </a>
-        <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/tone-color/index.html" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-          <span>Tone & Color</span>
-        </a>
-        <a class="gls-btn" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          <span>Agent Index</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Articles -->
-    <div class="section reveal">
-      <h2><span class="section-icon">📝</span> Articles</h2>
-      <p class="subtitle">Thoughts on AI engineering and tooling</p>
-      <a class="article-card" href="./articles/harness-engineering.html" target="_blank">
-        <div class="article-meta">
-          <span class="article-tag">Harness Engineering</span>
-          <span>2026-05-24</span>
-        </div>
-        <h3>Harness Engineering：驾驭 AI Agent 的工程艺术</h3>
-        <p class="article-desc">从 Mitchell Hashimoto 的定义出发，深入探讨 Agent = Model + Harness 范式。分析 WorkBuddy 如何作为一套完整的 Harness 运行，以及自建 OpenClaw 如何集成 OpenHarness 构建可靠的 AI 编码 Agent。</p>
-        <span class="read-more">
-          Read Article
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </span>
-      </a>
-      <a class="article-card" href="./articles/harness-poc.html" target="_blank">
-        <div class="article-meta">
-          <span class="article-tag">Harness POC</span>
-          <span>2026-05-24</span>
-        </div>
-        <h3>Building a Harness from Scratch: ~300 Lines of Python</h3>
-        <p class="article-desc">动手实现了一个最小可用的 Agent Harness。多 provider 支持、Agent Loop、AGENTS.md 上下文注入、MEMORY.md 跨会话记忆、权限边界、生命周期钩子。附完整源码和三个示例。</p>
-        <span class="read-more">
-          Read Article
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </span>
-      </a>
-    </div>
-
-    <!-- Projects -->
-    <div class="section reveal">
-      <h2><span class="section-icon">⭐</span> Featured Projects</h2>
-      <p class="subtitle">Original open-source work</p>
-      <div class="grid">
-        <a class="card" href="https://github.com/greasebig/daily-video-papers" target="_blank">
-          <span class="venue tool">Tool</span>
-          <h3>Daily Video Papers</h3>
-          <p>Automated arXiv paper tracking hub for Video, World Models, Agents & Tone/Color research. Daily updates with translated abstracts.</p>
-          <span class="card-footer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View Project
-          </span>
-        </a>
-
-        <a class="card" href="https://github.com/greasebig/harness-poc" target="_blank">
-          <span class="venue tool">Tool</span>
-          <h3>harness-poc</h3>
-          <p>Minimal Agent Harness POC — Agent = Model + Harness. ~300 lines of Python with multi-provider support, memory, permissions, and hooks.</p>
-          <span class="card-footer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View Project
-          </span>
-        </a>
-
-        <a class="card" href="https://github.com/greasebig/awesome-agent-everything" target="_blank">
-          <span class="venue tool">Resource</span>
-          <h3>Awesome Agent Everything</h3>
-          <p>Meta-index of ALL awesome agent repos on GitHub — frameworks, skills, papers, MCP, harness &amp; more. Auto-updated every 3 days via GitHub Actions.</p>
-          <span class="card-footer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View Project
-          </span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Explored -->
-    <div class="section reveal">
-      <h2><span class="section-icon">🔬</span> Explored</h2>
-      <p class="subtitle">Reproductions and experiments — I've tried these</p>
-      <div class="grid">
-        <a class="card" href="https://github.com/greasebig/VideoCoF" target="_blank">
-          <span class="venue cvpr">CVPR 2026 Highlight</span>
-          <h3>VideoCoF</h3>
-          <p>Unified video editing with temporal reasoner. State-of-the-art framework for coherent video manipulation.</p>
-          <span class="card-footer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View Project
-          </span>
-        </a>
-
-        <a class="card" href="https://github.com/greasebig/LiveMoments" target="_blank">
-          <span class="venue iclr">ICLR 2026</span>
-          <h3>LiveMoments</h3>
-          <p>Key photo restoration in Live Photos via reference-guided diffusion. Reselect and restore your best moments.</p>
-          <span class="card-footer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View Project
-          </span>
-        </a>
-
-        <a class="card" href="https://github.com/greasebig/dynvfx" target="_blank">
-          <span class="venue siggraph">SIGGRAPH Asia 2025</span>
-          <h3>DynVFX</h3>
-          <p>Augmenting real videos with dynamic visual content. Seamlessly add effects to existing footage.</p>
-          <span class="card-footer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View Project
-          </span>
-        </a>
-
-        <a class="card" href="https://github.com/greasebig/ReCo" target="_blank">
-          <span class="venue cvpr">CVPR</span>
-          <h3>ReCo</h3>
-          <p>Region-constrained in-context generation for instructional video editing with precise spatial control.</p>
-          <span class="card-footer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View Project
-          </span>
-        </a>
-
-        <a class="card" href="https://github.com/greasebig/CVPR-2023-1st-foundation-model-challenge-Track-2-1th-solution" target="_blank">
-          <span class="venue cvpr">CVPR 2023 Challenge</span>
-          <h3>Foundation Model Challenge</h3>
-          <p>Reproduction and exploration of the CVPR 2023 Foundation Model Challenge, Track 2 — cross-modal track solution.</p>
-          <span class="card-footer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            View Project
-          </span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="section reveal">
-      <h2><span class="section-icon">🔗</span> Links</h2>
-      <div class="link-list">
-        <a class="gls-btn" href="https://github.com/greasebig" target="_blank">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          <span>GitHub Profile</span>
-        </a>
-        <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-          <span>Papers Hub</span>
-        </a>
-        <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/tone-color/index.html" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-          <span>Tone & Color Papers</span>
-        </a>
-        <a class="gls-btn" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          <span>Agent Index</span>
-        </a>
-        <a class="gls-btn" href="https://github.com/greasebig/claude-code" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          <span>claude-code</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="footer">
-      Built with <span class="footer-heart">♥</span> · © 2026
-    </div>
-  </div>
-
-  <!-- Back to Top -->
-  <a class="back-to-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" title="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
-  </a>
-
-  <script>
-    // ========== 开屏大门动画控制 ==========
-    (function() {
-      var gate = document.getElementById('gateOverlay');
-      if (!gate) return;
-
-      // 1. 等待1.5秒让用户感受门的存在
-      setTimeout(function() {
-        // 2. 添加 opening 类 → 触发门板 CSS transition
-        gate.classList.add('opening');
-      }, 1500);
-
-      // 3. 门开到一半时，触发光芒爆发（1s后）
-      setTimeout(function() {
-        gate.classList.add('burst');
-
-        // 4. 生成飘散火花粒子
-        createSparks(gate, 30);
-      }, 2500);
-
-      // 5. 门完全打开后（3.3s），淡出 overlay 并显示内容
-      setTimeout(function() {
-        gate.classList.add('fade-out');
-
-        // 显示主内容
-        var wrap = document.querySelector('.wrap');
-        if (wrap) wrap.classList.add('revealed');
-
-        // 6. 动画结束后移除 overlay DOM
-        setTimeout(function() {
-          if (gate.parentNode) gate.parentNode.removeChild(gate);
-        }, 800);
-      }, 3300);
-    })();
-
-    // ========== 飘散火花粒子 ==========
-    function createSparks(container, count) {
-      for (var i = 0; i < count; i++) {
-        var spark = document.createElement('div');
-        spark.className = 'gate-spark';
-        var size = Math.random() * 4 + 2;
-        var angle = Math.random() * Math.PI * 2;
-        var distance = Math.random() * 300 + 100;
-        var duration = Math.random() * 800 + 600;
-
-        spark.style.width = size + 'px';
-        spark.style.height = size + 'px';
-        spark.style.left = '50%';
-        spark.style.top = '50%';
-        spark.style.opacity = '1';
-
-        // 随机颜色：白/紫/粉
-        var colors = [
-          'rgba(255,255,255,0.9)',
-          'rgba(99,102,241,0.8)',
-          'rgba(236,72,153,0.8)',
-          'rgba(139,92,246,0.8)'
-        ];
-        spark.style.background = colors[Math.floor(Math.random() * colors.length)];
-
-        container.appendChild(spark);
-
-        // 动画：从中心向外扩散
-        var startX = 0, startY = 0;
-        var endX = Math.cos(angle) * distance;
-        var endY = Math.sin(angle) * distance;
-        var startTime = null;
-
-        function animateSpark(timestamp) {
-          if (!startTime) startTime = timestamp;
-          var progress = (timestamp - startTime) / duration;
-          if (progress > 1) {
-            if (spark.parentNode) spark.parentNode.removeChild(spark);
-            return;
-          }
-          var ease = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-          spark.style.transform = 'translate(' +
-            (startX + (endX - startX) * ease) + 'px, ' +
-            (startY + (endY - startY) * ease) + 'px)';
-          spark.style.opacity = String(1 - progress);
-          requestAnimationFrame(animateSpark);
-        }
-        requestAnimationFrame(animateSpark);
-      }
-    }
-
-    // ========== Scroll reveal ==========
-    var reveals = document.querySelectorAll('.reveal');
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(function(el) { observer.observe(el); });
-
-    // ========== Back to top ==========
-    var backBtn = document.querySelector('.back-to-top');
-    window.addEventListener('scroll', function() {
-      backBtn.classList.toggle('visible', window.scrollY > 300);
-    });
-
-    // ========== Particle system ==========
-    (function() {
-      var canvas = document.getElementById('particles');
-      var ctx = canvas.getContext('2d');
-      var W, H, particles = [];
-      function resize() {
-        W = canvas.width = window.innerWidth;
-        H = canvas.height = window.innerHeight;
-      }
-      resize();
-      window.addEventListener('resize', resize);
-
-      var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var PARTICLE_COUNT = prefersReduced ? 0 : 40;
-
-      for (var i = 0; i < PARTICLE_COUNT; i++) {
-        particles.push({
-          x: Math.random() * W,
-          y: Math.random() * H,
-          r: Math.random() * 1.5 + 0.5,
-          vx: (Math.random() - 0.5) * 0.3,
-          vy: (Math.random() - 0.5) * 0.3,
-          alpha: Math.random() * 0.3 + 0.1
-        });
-      }
-
-      function draw() {
-        ctx.clearRect(0, 0, W, H);
-        particles.forEach(function(p) {
-          p.x += p.vx;
-          p.y += p.vy;
-          if (p.x < 0) p.x = W;
-          if (p.x > W) p.x = 0;
-          if (p.y < 0) p.y = H;
-          if (p.y > H) p.y = 0;
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-          ctx.fillStyle = 'rgba(99,102,241,' + p.alpha + ')';
-          ctx.fill();
-        });
-        // Draw connections
-        for (var i = 0; i < particles.length; i++) {
-          for (var j = i + 1; j < particles.length; j++) {
-            var dx = particles[i].x - particles[j].x;
-            var dy = particles[i].y - particles[j].y;
-            var dist = Math.sqrt(dx*dx + dy*dy);
-            if (dist < 120) {
-              ctx.beginPath();
-              ctx.moveTo(particles[i].x, particles[i].y);
-              ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.strokeStyle = 'rgba(99,102,241,' + (0.06 * (1 - dist/120)) + ')';
-              ctx.lineWidth = 0.5;
-              ctx.stroke();
-            }
-          }
-        }
-        requestAnimationFrame(draw);
-      }
-      if (PARTICLE_COUNT > 0) draw();
-    })();
-  </script>
-</body>
-</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>greasebig</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui' font-weight='bold'>G</text></svg>" type="image/svg+xml" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+    :root {
+      --ink: #1a1a2e;
+      --muted: #5a6075;
+      --glass: rgba(255,255,255,0.58);
+      --glass-hover: rgba(255,255,255,0.78);
+      --border: rgba(18,22,40,0.10);
+      --accent: #6366f1;
+      --accent-2: #ec4899;
+      --accent-3: #f59e0b;
+      --accent-4: #10b981;
+      --shadow: 0 4px 24px rgba(15,23,42,0.08);
+      --shadow-hover: 0 12px 40px rgba(15,23,42,0.14);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.13), transparent 50%),
+        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
+        radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
+        linear-gradient(175deg, #f8f9ff, #f0f2fe 40%, #f5f3ff 70%, #faf9fe);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ========== 开屏大门动画 ========== */
+    .gate-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: all;
+      perspective: 1200px;
+    }
+
+    /* 门缝光芒 */
+    .gate-light {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.6) 20%,
+        rgba(255,255,255,1) 50%,
+        rgba(255,255,255,0.6) 80%,
+        rgba(255,255,255,0) 100%
+      );
+      z-index: 1;
+      opacity: 0;
+      animation: gateLightPulse 2s ease-in-out 0.5s forwards;
+    }
+    @keyframes gateLightPulse {
+      0% { opacity: 0; width: 2px; }
+      60% { opacity: 0.8; width: 4px; }
+      100% { opacity: 1; width: 6px; }
+    }
+
+    /* 门缝光芒扩散晕 */
+    .gate-light-glow {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 100%;
+      background: radial-gradient(ellipse at center,
+        rgba(255,255,255,0.3) 0%,
+        rgba(99,102,241,0.15) 30%,
+        rgba(236,72,153,0.08) 60%,
+        transparent 100%
+      );
+      z-index: 0;
+      opacity: 0;
+      animation: gateLightGlow 2s ease-in-out 0.8s forwards;
+    }
+    @keyframes gateLightGlow {
+      0% { opacity: 0; width: 20px; }
+      100% { opacity: 1; width: 80px; }
+    }
+
+    /* 门板 */
+    .gate-door {
+      position: absolute;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(135deg, #1a1a2e 0%, #2d2b55 30%, #1a1a2e 60%, #1e1e3f 100%);
+      z-index: 2;
+      transition: transform 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    /* 门板纹理 */
+    .gate-door::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        /* 边框装饰线 */
+        linear-gradient(90deg, transparent 8%, rgba(99,102,241,0.08) 8%, rgba(99,102,241,0.08) 8.5%, transparent 8.5%) 0 0 / 100% 100%,
+        linear-gradient(90deg, transparent 92%, rgba(99,102,241,0.08) 92%, rgba(99,102,241,0.08) 92.5%, transparent 92.5%) 0 0 / 100% 100%,
+        /* 竖向中线装饰 */
+        linear-gradient(90deg, transparent 50%, rgba(99,102,241,0.05) 50%, rgba(99,102,241,0.05) 50.3%, transparent 50.3%) 0 0 / 100% 100%,
+        /* 横向装饰线 */
+        linear-gradient(0deg, transparent 25%, rgba(99,102,241,0.05) 25%, rgba(99,102,241,0.05) 25.3%, transparent 25.3%) 0 0 / 100% 100%,
+        linear-gradient(0deg, transparent 50%, rgba(99,102,241,0.05) 50%, rgba(99,102,241,0.05) 50.3%, transparent 50.3%) 0 0 / 100% 100%,
+        linear-gradient(0deg, transparent 75%, rgba(99,102,241,0.05) 75%, rgba(99,102,241,0.05) 75.3%, transparent 75.3%) 0 0 / 100% 100%;
+    }
+
+    /* 门板把手区域 */
+    .gate-door::after {
+      content: '';
+      position: absolute;
+      top: 45%;
+      width: 12px; height: 60px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(139,92,246,0.2), rgba(99,102,241,0.3));
+      border: 1px solid rgba(99,102,241,0.2);
+      box-shadow: 0 0 15px rgba(99,102,241,0.15), inset 0 0 8px rgba(139,92,246,0.1);
+    }
+
+    .gate-door-left {
+      left: 0;
+      transform-origin: left center;
+      transform: perspective(1200px) rotateY(0deg);
+    }
+    .gate-door-left::after {
+      right: 30px;
+    }
+
+    .gate-door-right {
+      right: 0;
+      transform-origin: right center;
+      transform: perspective(1200px) rotateY(0deg);
+    }
+    .gate-door-right::after {
+      left: 30px;
+    }
+
+    /* 门板上的铰链 */
+    .gate-hinge {
+      position: absolute;
+      width: 14px; height: 30px;
+      border-radius: 4px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.25), rgba(139,92,246,0.15));
+      border: 1px solid rgba(99,102,241,0.15);
+      z-index: 3;
+    }
+
+    /* 门板上的符号 - G字母徽章 */
+    .gate-emblem {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      border: 2px solid rgba(99,102,241,0.25);
+      background: radial-gradient(circle, rgba(99,102,241,0.12), transparent 70%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 4;
+    }
+    .gate-emblem span {
+      font-family: "Playfair Display", serif;
+      font-size: 42px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* 开门动画状态 */
+    .gate-overlay.opening .gate-door-left {
+      transform: perspective(1200px) rotateY(-110deg);
+    }
+    .gate-overlay.opening .gate-door-right {
+      transform: perspective(1200px) rotateY(110deg);
+    }
+
+    /* 光芒爆发 - 门开到一定程度时触发 */
+    .gate-burst {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0; height: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.6) 20%,
+        rgba(99,102,241,0.2) 50%,
+        rgba(236,72,153,0.1) 70%,
+        transparent 100%
+      );
+      z-index: 1;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .gate-overlay.burst .gate-burst {
+      animation: lightBurst 1.2s ease-out forwards;
+    }
+    @keyframes lightBurst {
+      0% { width: 0; height: 0; opacity: 0; }
+      30% { opacity: 1; }
+      100% { width: 200vmax; height: 200vmax; opacity: 0; }
+    }
+
+    /* 飘散粒子 */
+    .gate-spark {
+      position: absolute;
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.9);
+      z-index: 5;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* 整个overlay淡出 */
+    .gate-overlay.fade-out {
+      animation: gateFadeOut 0.8s ease-out forwards;
+    }
+    @keyframes gateFadeOut {
+      0% { opacity: 1; }
+      100% { opacity: 0; pointer-events: none; }
+    }
+
+    /* 页面内容初始隐藏，等门开完再显示 */
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      transform: scale(0.98);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .wrap.revealed {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* floating orbs */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.55;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .orb-1 {
+      width: 360px; height: 360px;
+      left: -100px; top: -80px;
+      background: radial-gradient(circle, rgba(99,102,241,0.35), transparent 70%);
+      animation: drift 12s ease-in-out infinite;
+    }
+    .orb-2 {
+      width: 280px; height: 280px;
+      right: -60px; top: 200px;
+      background: radial-gradient(circle, rgba(236,72,153,0.28), transparent 70%);
+      animation: drift 14s ease-in-out infinite 2s;
+    }
+    .orb-3 {
+      width: 240px; height: 240px;
+      left: 40%; bottom: -80px;
+      background: radial-gradient(circle, rgba(16,185,129,0.22), transparent 70%);
+      animation: drift 16s ease-in-out infinite 4s;
+    }
+    .orb-4 {
+      width: 200px; height: 200px;
+      right: 20%; bottom: 100px;
+      background: radial-gradient(circle, rgba(245,158,11,0.20), transparent 70%);
+      animation: drift 11s ease-in-out infinite 3s;
+    }
+    @keyframes drift {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(20px, -15px) scale(1.05); }
+      50% { transform: translate(-10px, 10px) scale(0.95); }
+      75% { transform: translate(15px, 5px) scale(1.02); }
+    }
+
+    /* Particle canvas */
+    #particles {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* hero */
+    .hero {
+      text-align: center;
+      padding: 40px 0 52px;
+    }
+    .hero .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(-16px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .wrap.revealed .hero .badge {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.1s;
+    }
+    .hero .badge .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent-4);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(40px, 5vw, 68px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--ink) 30%, #4338ca 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      position: relative;
+    }
+    .wrap.revealed .hero h1 {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.2s;
+    }
+    /* Animated gradient shimmer on h1 */
+    .hero h1::after {
+      content: 'greasebig';
+      position: absolute;
+      left: 0; top: 0;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+      background: linear-gradient(90deg, transparent 0%, rgba(99,102,241,0.25) 50%, transparent 100%);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 4s ease-in-out infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    .hero .tagline {
+      color: var(--muted);
+      font-size: clamp(15px, 1.8vw, 18px);
+      max-width: 560px;
+      margin: 0 auto 28px;
+      font-weight: 400;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .wrap.revealed .hero .tagline {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.3s;
+    }
+    /* ========== 三网站大卡片 ========== */
+    .site-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 720px;
+      margin: 18px auto 24px;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .wrap.revealed .hero .site-cards {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.15s;
+    }
+    .site-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .site-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .site-card:hover::before {
+      opacity: 1;
+    }
+    .site-card:hover {
+      background: var(--glass-hover);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(99,102,241,0.35);
+    }
+    .site-card-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.08));
+    }
+    .site-card-body h3 {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .site-card-body p {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 2px 0 0;
+      line-height: 1.3;
+    }
+    .site-card-arrow {
+      margin-left: auto;
+      font-size: 16px;
+      color: var(--muted);
+      transition: transform 0.2s ease, color 0.2s ease;
+      flex-shrink: 0;
+    }
+    .site-card:hover .site-card-arrow {
+      transform: translateX(4px);
+      color: var(--accent);
+    }
+
+    @media (max-width: 640px) {
+      .site-cards {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+      }
+    }
+
+    .hero .links-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .wrap.revealed .hero .links-row {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.4s;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* glass button */
+    .gls-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 22px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--ink);
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: var(--shadow);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .gls-btn::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 0; height: 0;
+      background: rgba(99,102,241,0.08);
+      border-radius: 50%;
+      transition: width 0.4s ease, height 0.4s ease;
+      transform: translate(-50%, -50%);
+    }
+    .gls-btn:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+    .gls-btn:hover {
+      background: var(--glass-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(99,102,241,0.35);
+    }
+    .gls-btn.primary {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      border-color: transparent;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(99,102,241,0.3);
+    }
+    .gls-btn.primary::before {
+      background: rgba(255,255,255,0.1);
+    }
+    .gls-btn.primary:hover {
+      box-shadow: 0 8px 32px rgba(99,102,241,0.4);
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    }
+    .gls-btn svg {
+      width: 18px; height: 18px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .gls-btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* section */
+    .section {
+      margin-top: 56px;
+    }
+    .section h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(26px, 3vw, 36px);
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section h2 .section-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(139,92,246,0.12));
+      font-size: 18px;
+    }
+    .section .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    /* project grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      padding: 22px 20px;
+      border-radius: 18px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .card:hover::before {
+      opacity: 1;
+    }
+    .card:hover {
+      background: var(--glass-hover);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .card .venue {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      width: fit-content;
+    }
+    .venue.cvpr { background: rgba(99,102,241,0.12); color: #4f46e5; }
+    .venue.iclr { background: rgba(236,72,153,0.12); color: #db2777; }
+    .venue.siggraph { background: rgba(245,158,11,0.14); color: #d97706; }
+    .venue.tool { background: rgba(16,185,129,0.12); color: #059669; }
+    .card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin: 0;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0;
+      flex: 1;
+    }
+    .card .card-footer {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: auto;
+      transition: gap 0.25s ease;
+    }
+    .card:hover .card-footer {
+      gap: 10px;
+    }
+    .card .card-footer svg {
+      width: 14px; height: 14px;
+    }
+
+    /* articles section */
+    .article-card {
+      display: block;
+      padding: 24px 22px;
+      border-radius: 18px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      margin-bottom: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px; height: 100%;
+      background: linear-gradient(180deg, var(--accent), var(--accent-2));
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .article-card:hover::before {
+      opacity: 1;
+    }
+    .article-card:last-child { margin-bottom: 0; }
+    .article-card:hover {
+      background: var(--glass-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+    .article-card .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .article-card .article-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: rgba(99,102,241,0.12);
+      color: #4f46e5;
+    }
+    .article-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 6px;
+      line-height: 1.3;
+    }
+    .article-card .article-desc {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0;
+      line-height: 1.55;
+    }
+    .article-card .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      transition: gap 0.25s ease;
+    }
+    .article-card:hover .read-more {
+      gap: 10px;
+    }
+    .article-card .read-more svg {
+      width: 13px; height: 13px;
+    }
+
+    /* links section */
+    .link-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* footer */
+    .footer {
+      margin-top: 70px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer .footer-heart {
+      display: inline-block;
+      animation: heartbeat 1.5s ease-in-out infinite;
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      15% { transform: scale(1.15); }
+      30% { transform: scale(1); }
+      45% { transform: scale(1.1); }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(99,102,241,0.25);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(99,102,241,0.4);
+    }
+
+    /* Back to top */
+    .back-to-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 44px; height: 44px;
+      border-radius: 14px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: all 0.3s ease;
+      z-index: 99;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .back-to-top:hover {
+      background: var(--glass-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+    .back-to-top svg {
+      width: 20px; height: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .wrap { padding: 40px 16px 60px; }
+      .hero { padding: 20px 0 36px; }
+      .grid { grid-template-columns: 1fr; }
+      .back-to-top { bottom: 20px; right: 20px; }
+      .gate-emblem { width: 70px; height: 70px; }
+      .gate-emblem span { font-size: 30px; }
+    }
+
+    /* prefers-reduced-motion: 跳过开屏动画 */
+    @media (prefers-reduced-motion: reduce) {
+      .gate-overlay { display: none !important; }
+      .wrap { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== 开屏大门动画 ========== -->
+  <div class="gate-overlay" id="gateOverlay">
+    <!-- 门缝光芒 -->
+    <div class="gate-light-glow"></div>
+    <div class="gate-light"></div>
+
+    <!-- 左门 -->
+    <div class="gate-door gate-door-left">
+      <div class="gate-hinge" style="top: 12%; left: 8%;"></div>
+      <div class="gate-hinge" style="bottom: 12%; left: 8%;"></div>
+      <div class="gate-emblem"><span>G</span></div>
+    </div>
+
+    <!-- 右门 -->
+    <div class="gate-door gate-door-right">
+      <div class="gate-hinge" style="top: 12%; right: 8%;"></div>
+      <div class="gate-hinge" style="bottom: 12%; right: 8%;"></div>
+      <div class="gate-emblem"><span>G</span></div>
+    </div>
+
+    <!-- 光芒爆发 -->
+    <div class="gate-burst"></div>
+  </div>
+
+  <!-- ========== 背景层 ========== -->
+  <canvas id="particles"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="orb orb-4"></div>
+
+  <!-- ========== 主内容 ========== -->
+  <div class="wrap">
+    <!-- Hero -->
+    <div class="hero">
+      <div class="badge">
+        <span class="dot"></span> Open Source · Computer Vision · AI
+      </div>
+      <h1>greasebig</h1>
+
+      <!-- 三个网站大卡片 — 名字正下方 -->
+      <div class="site-cards">
+        <a class="site-card" href="https://greasebig.github.io" target="_blank">
+          <div class="site-card-icon">🏠</div>
+          <div class="site-card-body">
+            <h3>greasebig.github.io</h3>
+            <p>Projects, articles &amp; links</p>
+          </div>
+          <span class="site-card-arrow">→</span>
+        </a>
+        <a class="site-card" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
+          <div class="site-card-icon">📚</div>
+          <div class="site-card-body">
+            <h3>Papers Hub</h3>
+            <p>Daily arXiv paper tracker</p>
+          </div>
+          <span class="site-card-arrow">→</span>
+        </a>
+        <a class="site-card" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
+          <div class="site-card-icon">🤖</div>
+          <div class="site-card-body">
+            <h3>Agent Index</h3>
+            <p>Meta-index of agent repos</p>
+          </div>
+          <span class="site-card-arrow">→</span>
+        </a>
+      </div>
+
+      <p class="tagline">
+        Building tools and models at the intersection of computer vision, generative AI, and video understanding.
+      </p>
+      <div class="links-row">
+        <a class="gls-btn primary" href="https://github.com/greasebig" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          <span>Papers Hub</span>
+        </a>
+        <a class="gls-btn" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <span>Agent Index</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Articles -->
+    <div class="section reveal">
+      <h2><span class="section-icon">📝</span> Articles</h2>
+      <p class="subtitle">Thoughts on AI engineering and tooling</p>
+      <a class="article-card" href="./articles/harness-engineering.html" target="_blank">
+        <div class="article-meta">
+          <span class="article-tag">Harness Engineering</span>
+          <span>2026-05-24</span>
+        </div>
+        <h3>Harness Engineering：驾驭 AI Agent 的工程艺术</h3>
+        <p class="article-desc">从 Mitchell Hashimoto 的定义出发，深入探讨 Agent = Model + Harness 范式。分析 WorkBuddy 如何作为一套完整的 Harness 运行，以及自建 OpenClaw 如何集成 OpenHarness 构建可靠的 AI 编码 Agent。</p>
+        <span class="read-more">
+          Read Article
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
+      <a class="article-card" href="./articles/harness-poc.html" target="_blank">
+        <div class="article-meta">
+          <span class="article-tag">Harness POC</span>
+          <span>2026-05-24</span>
+        </div>
+        <h3>Building a Harness from Scratch: ~300 Lines of Python</h3>
+        <p class="article-desc">动手实现了一个最小可用的 Agent Harness。多 provider 支持、Agent Loop、AGENTS.md 上下文注入、MEMORY.md 跨会话记忆、权限边界、生命周期钩子。附完整源码和三个示例。</p>
+        <span class="read-more">
+          Read Article
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
+    </div>
+
+    <!-- Projects -->
+    <div class="section reveal">
+      <h2><span class="section-icon">⭐</span> Featured Projects</h2>
+      <p class="subtitle">Original open-source work</p>
+      <div class="grid">
+        <a class="card" href="https://github.com/greasebig/daily-video-papers" target="_blank">
+          <span class="venue tool">Tool</span>
+          <h3>Daily Video Papers</h3>
+          <p>Automated arXiv paper tracking hub for Video, World Models, Agents & Tone/Color research. Daily updates with translated abstracts.</p>
+          <span class="card-footer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Project
+          </span>
+        </a>
+
+        <a class="card" href="https://github.com/greasebig/harness-poc" target="_blank">
+          <span class="venue tool">Tool</span>
+          <h3>harness-poc</h3>
+          <p>Minimal Agent Harness POC — Agent = Model + Harness. ~300 lines of Python with multi-provider support, memory, permissions, and hooks.</p>
+          <span class="card-footer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Project
+          </span>
+        </a>
+
+        <a class="card" href="https://github.com/greasebig/awesome-agent-everything" target="_blank">
+          <span class="venue tool">Resource</span>
+          <h3>Awesome Agent Everything</h3>
+          <p>Meta-index of ALL awesome agent repos on GitHub — frameworks, skills, papers, MCP, harness &amp; more. Auto-updated every 3 days via GitHub Actions.</p>
+          <span class="card-footer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Project
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Explored -->
+    <div class="section reveal">
+      <h2><span class="section-icon">🔬</span> Explored</h2>
+      <p class="subtitle">Reproductions and experiments — I've tried these</p>
+      <div class="grid">
+        <a class="card" href="https://github.com/greasebig/VideoCoF" target="_blank">
+          <span class="venue cvpr">CVPR 2026 Highlight</span>
+          <h3>VideoCoF</h3>
+          <p>Unified video editing with temporal reasoner. State-of-the-art framework for coherent video manipulation.</p>
+          <span class="card-footer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Project
+          </span>
+        </a>
+
+        <a class="card" href="https://github.com/greasebig/LiveMoments" target="_blank">
+          <span class="venue iclr">ICLR 2026</span>
+          <h3>LiveMoments</h3>
+          <p>Key photo restoration in Live Photos via reference-guided diffusion. Reselect and restore your best moments.</p>
+          <span class="card-footer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Project
+          </span>
+        </a>
+
+        <a class="card" href="https://github.com/greasebig/dynvfx" target="_blank">
+          <span class="venue siggraph">SIGGRAPH Asia 2025</span>
+          <h3>DynVFX</h3>
+          <p>Augmenting real videos with dynamic visual content. Seamlessly add effects to existing footage.</p>
+          <span class="card-footer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Project
+          </span>
+        </a>
+
+        <a class="card" href="https://github.com/greasebig/ReCo" target="_blank">
+          <span class="venue cvpr">CVPR</span>
+          <h3>ReCo</h3>
+          <p>Region-constrained in-context generation for instructional video editing with precise spatial control.</p>
+          <span class="card-footer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Project
+          </span>
+        </a>
+
+        <a class="card" href="https://github.com/greasebig/CVPR-2023-1st-foundation-model-challenge-Track-2-1th-solution" target="_blank">
+          <span class="venue cvpr">CVPR 2023 Challenge</span>
+          <h3>Foundation Model Challenge</h3>
+          <p>Reproduction and exploration of the CVPR 2023 Foundation Model Challenge, Track 2 — cross-modal track solution.</p>
+          <span class="card-footer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Project
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="section reveal">
+      <h2><span class="section-icon">🔗</span> Links</h2>
+      <div class="link-list">
+        <a class="gls-btn" href="https://github.com/greasebig" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub Profile</span>
+        </a>
+        <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          <span>Papers Hub</span>
+        </a>
+        <a class="gls-btn" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <span>Agent Index</span>
+        </a>
+        <a class="gls-btn" href="https://github.com/greasebig/claude-code" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span>claude-code</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      Built with <span class="footer-heart">♥</span> · © 2026
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <a class="back-to-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+
+  <script>
+    // ========== 开屏大门动画控制 ==========
+    (function() {
+      var gate = document.getElementById('gateOverlay');
+      if (!gate) return;
+
+      // 1. 等待1.5秒让用户感受门的存在
+      setTimeout(function() {
+        // 2. 添加 opening 类 → 触发门板 CSS transition
+        gate.classList.add('opening');
+      }, 1500);
+
+      // 3. 门开到一半时，触发光芒爆发（1s后）
+      setTimeout(function() {
+        gate.classList.add('burst');
+
+        // 4. 生成飘散火花粒子
+        createSparks(gate, 30);
+      }, 2500);
+
+      // 5. 门完全打开后（3.3s），淡出 overlay 并显示内容
+      setTimeout(function() {
+        gate.classList.add('fade-out');
+
+        // 显示主内容
+        var wrap = document.querySelector('.wrap');
+        if (wrap) wrap.classList.add('revealed');
+
+        // 6. 动画结束后移除 overlay DOM
+        setTimeout(function() {
+          if (gate.parentNode) gate.parentNode.removeChild(gate);
+        }, 800);
+      }, 3300);
+    })();
+
+    // ========== 飘散火花粒子 ==========
+    function createSparks(container, count) {
+      for (var i = 0; i < count; i++) {
+        var spark = document.createElement('div');
+        spark.className = 'gate-spark';
+        var size = Math.random() * 4 + 2;
+        var angle = Math.random() * Math.PI * 2;
+        var distance = Math.random() * 300 + 100;
+        var duration = Math.random() * 800 + 600;
+
+        spark.style.width = size + 'px';
+        spark.style.height = size + 'px';
+        spark.style.left = '50%';
+        spark.style.top = '50%';
+        spark.style.opacity = '1';
+
+        // 随机颜色：白/紫/粉
+        var colors = [
+          'rgba(255,255,255,0.9)',
+          'rgba(99,102,241,0.8)',
+          'rgba(236,72,153,0.8)',
+          'rgba(139,92,246,0.8)'
+        ];
+        spark.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+        container.appendChild(spark);
+
+        // 动画：从中心向外扩散
+        var startX = 0, startY = 0;
+        var endX = Math.cos(angle) * distance;
+        var endY = Math.sin(angle) * distance;
+        var startTime = null;
+
+        function animateSpark(timestamp) {
+          if (!startTime) startTime = timestamp;
+          var progress = (timestamp - startTime) / duration;
+          if (progress > 1) {
+            if (spark.parentNode) spark.parentNode.removeChild(spark);
+            return;
+          }
+          var ease = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+          spark.style.transform = 'translate(' +
+            (startX + (endX - startX) * ease) + 'px, ' +
+            (startY + (endY - startY) * ease) + 'px)';
+          spark.style.opacity = String(1 - progress);
+          requestAnimationFrame(animateSpark);
+        }
+        requestAnimationFrame(animateSpark);
+      }
+    }
+
+    // ========== Scroll reveal ==========
+    var reveals = document.querySelectorAll('.reveal');
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(function(el) { observer.observe(el); });
+
+    // ========== Back to top ==========
+    var backBtn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', function() {
+      backBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+
+    // ========== Particle system ==========
+    (function() {
+      var canvas = document.getElementById('particles');
+      var ctx = canvas.getContext('2d');
+      var W, H, particles = [];
+      function resize() {
+        W = canvas.width = window.innerWidth;
+        H = canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var PARTICLE_COUNT = prefersReduced ? 0 : 40;
+
+      for (var i = 0; i < PARTICLE_COUNT; i++) {
+        particles.push({
+          x: Math.random() * W,
+          y: Math.random() * H,
+          r: Math.random() * 1.5 + 0.5,
+          vx: (Math.random() - 0.5) * 0.3,
+          vy: (Math.random() - 0.5) * 0.3,
+          alpha: Math.random() * 0.3 + 0.1
+        });
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        particles.forEach(function(p) {
+          p.x += p.vx;
+          p.y += p.vy;
+          if (p.x < 0) p.x = W;
+          if (p.x > W) p.x = 0;
+          if (p.y < 0) p.y = H;
+          if (p.y > H) p.y = 0;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(99,102,241,' + p.alpha + ')';
+          ctx.fill();
+        });
+        // Draw connections
+        for (var i = 0; i < particles.length; i++) {
+          for (var j = i + 1; j < particles.length; j++) {
+            var dx = particles[i].x - particles[j].x;
+            var dy = particles[i].y - particles[j].y;
+            var dist = Math.sqrt(dx*dx + dy*dy);
+            if (dist < 120) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = 'rgba(99,102,241,' + (0.06 * (1 - dist/120)) + ')';
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(draw);
+      }
+      if (PARTICLE_COUNT > 0) draw();
+    })();
+  </script>
+</body>
+</html>
