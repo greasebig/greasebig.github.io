@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claw Runtime & Agent Ecosystem 2026: From Concept to Production - greasebig</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui' font-weight='bold'>G</text></svg>" type="image/svg+xml" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+    :root {
+      --ink: #1a1a2e;
+      --muted: #5a6075;
+      --glass: rgba(255,255,255,0.58);
+      --glass-hover: rgba(255,255,255,0.78);
+      --border: rgba(18,22,40,0.10);
+      --accent: #6366f1;
+      --accent-2: #ec4899;
+      --accent-3: #f59e0b;
+      --accent-4: #10b981;
+      --shadow: 0 4px 24px rgba(15,23,42,0.08);
+      --shadow-hover: 0 12px 40px rgba(15,23,42,0.14);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.13), transparent 50%),
+        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
+        radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
+        linear-gradient(175deg, #f8f9ff, #f0f2fe 40%, #f5f3ff 70%, #faf9fe);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: center; padding: 1.2rem 2rem;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(20px) saturate(1.4);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner { display: flex; gap: 2rem; align-items: center; }
+    .nav a {
+      color: var(--muted); text-decoration: none; font-size: 0.9rem;
+      font-weight: 500; transition: color 0.3s;
+    }
+    .nav a:hover { color: var(--accent); }
+    .nav .logo { font-weight: 700; color: var(--accent); font-size: 1.1rem; }
+
+    /* Language Switcher */
+    .lang-switch {
+      position: fixed; top: 5rem; right: 2rem; z-index: 99;
+      display: flex; gap: 0.5rem;
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.4rem;
+      box-shadow: var(--shadow);
+    }
+    .lang-switch button {
+      border: none; background: none; padding: 0.4rem 0.8rem;
+      border-radius: 8px; cursor: pointer; font-size: 0.85rem;
+      font-weight: 500; color: var(--muted); transition: all 0.3s;
+    }
+    .lang-switch button:hover { color: var(--accent); }
+    .lang-switch button.active {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: white;
+    }
+
+    /* Article Container */
+    .article-wrap {
+      max-width: 780px; margin: 0 auto; padding: 6rem 2rem 4rem;
+    }
+
+    /* Header */
+    .article-header {
+      text-align: center; margin-bottom: 3rem;
+      animation: fadeInUp 0.8s ease-out;
+    }
+    .article-header .tag {
+      display: inline-block; padding: 0.35rem 1rem;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: white; border-radius: 20px; font-size: 0.8rem;
+      font-weight: 600; margin-bottom: 1.5rem; letter-spacing: 0.5px;
+    }
+    .article-header h1 {
+      font-family: "Playfair Display", serif; font-size: 2.6rem;
+      font-weight: 700; line-height: 1.2; margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--ink), #4a4a6a);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .article-header .subtitle {
+      color: var(--muted); font-size: 1.15rem; line-height: 1.6;
+      max-width: 600px; margin: 0 auto 1.5rem;
+    }
+    .article-header .meta {
+      color: var(--muted); font-size: 0.9rem;
+      display: flex; justify-content: center; gap: 1.5rem;
+    }
+    .article-header .meta span { display: flex; align-items: center; gap: 0.4rem; }
+
+    /* Content */
+    .article-content {
+      background: var(--glass);
+      backdrop-filter: blur(20px) saturate(1.3);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 3rem;
+      box-shadow: var(--shadow);
+      animation: fadeInUp 1s ease-out 0.2s both;
+    }
+
+    .article-content h2 {
+      font-family: "Playfair Display", serif; font-size: 1.8rem;
+      font-weight: 700; margin: 2.5rem 0 1rem;
+      color: var(--ink);
+    }
+    .article-content h2:first-child { margin-top: 0; }
+
+    .article-content h3 {
+      font-size: 1.25rem; font-weight: 600; margin: 2rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    .article-content p {
+      margin-bottom: 1.2rem; color: #3a3a4a;
+      font-size: 1.05rem; line-height: 1.8;
+    }
+
+    .article-content blockquote {
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.5rem; margin: 1.5rem 0;
+      background: rgba(99,102,241,0.06);
+      border-radius: 0 12px 12px 0;
+      font-style: italic; color: #4a4a5a;
+    }
+
+    .article-content ul, .article-content ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+    }
+    .article-content li {
+      margin-bottom: 0.6rem; color: #3a3a4a;
+      font-size: 1.02rem; line-height: 1.7;
+    }
+
+    /* Tables */
+    .article-content table {
+      width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+      font-size: 0.95rem; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 2px 12px rgba(15,23,42,0.06);
+    }
+    .article-content th {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: white; padding: 0.9rem 1rem; text-align: left;
+      font-weight: 600;
+    }
+    .article-content td {
+      padding: 0.8rem 1rem; border-bottom: 1px solid rgba(18,22,40,0.06);
+      background: rgba(255,255,255,0.5);
+    }
+    .article-content tr:last-child td { border-bottom: none; }
+    .article-content tr:hover td { background: rgba(99,102,241,0.04); }
+
+    /* Code */
+    .article-content code {
+      background: rgba(99,102,241,0.1); color: var(--accent);
+      padding: 0.2rem 0.5rem; border-radius: 6px;
+      font-family: "SF Mono", Monaco, monospace; font-size: 0.9em;
+    }
+
+    /* Highlight boxes */
+    .highlight-box {
+      padding: 1.5rem; border-radius: 16px; margin: 1.5rem 0;
+      border: 1px solid var(--border);
+    }
+    .highlight-box.purple {
+      background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(236,72,153,0.06));
+      border-left: 4px solid var(--accent);
+    }
+    .highlight-box.green {
+      background: linear-gradient(135deg, rgba(16,185,129,0.08), rgba(16,185,129,0.04));
+      border-left: 4px solid var(--accent-4);
+    }
+    .highlight-box.orange {
+      background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(245,158,11,0.04));
+      border-left: 4px solid var(--accent-3);
+    }
+    .highlight-box h4 {
+      font-size: 1.1rem; font-weight: 600; margin-bottom: 0.8rem;
+    }
+
+    /* Footer */
+    .article-footer {
+      margin-top: 3rem; padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center; color: var(--muted);
+    }
+    .article-footer .back-link {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--accent); text-decoration: none;
+      font-weight: 600; margin-bottom: 1rem;
+      transition: gap 0.3s;
+    }
+    .article-footer .back-link:hover { gap: 0.8rem; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      .article-header h1 { font-size: 1.9rem; }
+      .article-content { padding: 1.8rem; }
+      .article-content h2 { font-size: 1.5rem; }
+      .nav-inner { gap: 1rem; font-size: 0.85rem; }
+      .lang-switch { top: 4.5rem; right: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">greasebig</a>
+      <a href="/">Home</a>
+      <a href="/daily-video-papers/">Papers Hub</a>
+      <a href="/awesome-agent-everything/">Agent Index</a>
+    </div>
+  </nav>
+
+  <div class="lang-switch">
+    <button onclick="location.href='./claw-runtime.html'">中文</button>
+    <button class="active">EN</button>
+  </div>
+
+  <div class="article-wrap">
+    <header class="article-header">
+      <span class="tag">AGENT ECOSYSTEM 2026</span>
+      <h1>Claw Runtime & Agent Ecosystem 2026</h1>
+      <p class="subtitle">From OpenClaw's viral explosion to Harness Engineering practices, and the MCP/A2A/ACP protocol ecosystem — a comprehensive guide to the hottest concepts in AI Agent</p>
+      <div class="meta">
+        <span>📅 2026-05-28</span>
+        <span>⏱️ ~25 min read</span>
+        <span>🏷️ Agent / Runtime / Protocol</span>
+      </div>
+    </header>
+
+    <article class="article-content">
+      <h2>I. OpenClaw: How a Weekend Project Took Over GitHub</h2>
+      
+      <p>In November 2025, Austrian programmer <strong>Peter Steinberger</strong> (founder of PSPDFKit) started a weekend project called "Clawdbot." Four months later, it became <strong>OpenClaw</strong> and reached #1 on GitHub's all-time Stars leaderboard, surpassing both the Linux kernel and React.</p>
+
+      <div class="highlight-box purple">
+        <h4>📊 Key Metrics (as of March 2026)</h4>
+        <ul>
+          <li><strong>248,711 Stars</strong> — #1 on GitHub all-time</li>
+          <li><strong>34,168 new Stars in 48 hours</strong> — viral growth</li>
+          <li><strong>47,700 Forks</strong> — highly active community</li>
+          <li><strong>900+ contributors</strong> — thriving open source</li>
+          <li><strong>13,729 community Skills</strong> — rich extension ecosystem</li>
+        </ul>
+      </div>
+
+      <h3>1.1 From "Chat Assistant" to "Action Agent"</h3>
+      
+      <p>OpenClaw's core idea is simple: upgrade LLMs from "chatting dialogs" to "digital employees that get things done." It gives AI the ability to:</p>
+      
+      <ul>
+        <li><strong>File system access</strong> — read/write local files</li>
+        <li><strong>Shell terminal control</strong> — execute system commands</li>
+        <li><strong>Browser automation</strong> — web operations and data scraping</li>
+        <li><strong>24/7 daemon process</strong> — long-running, autonomous decisions</li>
+      </ul>
+
+      <blockquote>
+        "From late 2025 to early 2026, AI experienced a paradigm-level shift. LLMs were no longer satisfied with conversation — they began demanding file system access, Shell terminals, browser control, and a long-running 'exoskeleton' for autonomous decision-making."
+      </blockquote>
+
+      <h3>1.2 Four-Layer Architecture</h3>
+
+      <table>
+        <tr>
+          <th>Layer</th>
+          <th>Name</th>
+          <th>Responsibility</th>
+        </tr>
+        <tr>
+          <td><strong>L1</strong></td>
+          <td>Gateway</td>
+          <td>Session management, message routing, unified channel connection center</td>
+        </tr>
+        <tr>
+          <td><strong>L2</strong></td>
+          <td>Channels</td>
+          <td>Communication layer supporting 20+ platforms including Discord, Slack, Telegram, WhatsApp</td>
+        </tr>
+        <tr>
+          <td><strong>L3</strong></td>
+          <td>Agent Runtime</td>
+          <td>Core execution engine with multi-agent routing and isolation</td>
+        </tr>
+        <tr>
+          <td><strong>L4</strong></td>
+          <td>Skills</td>
+          <td>Skill system for file operations, Shell commands, web automation</td>
+        </tr>
+      </table>
+
+      <h3>1.3 Security Crisis & Lessons</h3>
+
+      <p>In February 2026, security researchers discovered the <strong>ClawHavoc</strong> incident: <strong>341 malicious Skills</strong> (11.3% of the marketplace) were stealing crypto keys and SSH credentials. This became the first large-scale supply chain attack warning for open-source AI Agent ecosystems.</p>
+
+      <p>On February 14, 2026, Sam Altman announced Peter Steinberger joined OpenAI to lead next-generation personal Agent development. OpenClaw was transferred to an open-source foundation to ensure community independence.</p>
+
+      <h2>II. Agent Harness: The Engineering Core</h2>
+
+      <p>If 2025 was the "Year of Agent," then 2026 is the "Year of Harness." A simple yet powerful formula is quickly becoming industry consensus:</p>
+
+      <div class="highlight-box green">
+        <h4>🔧 Core Formula</h4>
+        <p style="font-size: 1.3rem; text-align: center; margin: 1rem 0;"><strong>Agent = Model + Harness</strong></p>
+        <p>If you're not the model, what you're building is probably Harness. The model only provides reasoning and generation capabilities; Harness is the entire system beyond the model — system prompts, tool calling, file systems, sandbox environments, orchestration logic, feedback loops, constraint mechanisms.</p>
+      </div>
+
+      <h3>2.1 Three Layers of Engineering</h3>
+
+      <table>
+        <tr>
+          <th>Layer</th>
+          <th>Name</th>
+          <th>Problem Solved</th>
+          <th>Typical Work</th>
+        </tr>
+        <tr>
+          <td>L1</td>
+          <td>Prompt Engineering</td>
+          <td>How to communicate instructions clearly</td>
+          <td>System prompt design, few-shot examples, chain-of-thought guidance</td>
+        </tr>
+        <tr>
+          <td>L2</td>
+          <td>Context Engineering</td>
+          <td>What to show the Agent</td>
+          <td>Context management, RAG, memory injection, token optimization</td>
+        </tr>
+        <tr>
+          <td>L3</td>
+          <td><strong>Harness Engineering</strong></td>
+          <td>How the system executes, corrects, observes, and recovers</td>
+          <td>File systems, sandbox, constraint execution, feedback loops, observation</td>
+        </tr>
+      </table>
+
+      <h3>2.2 Six-Layer Architecture</h3>
+
+      <table>
+        <tr>
+          <th>Layer</th>
+          <th>Name</th>
+          <th>Problem Solved</th>
+        </tr>
+        <tr>
+          <td><strong>L1</strong></td>
+          <td>Information Boundary</td>
+          <td>What the Agent should/shouldn't know</td>
+        </tr>
+        <tr>
+          <td><strong>L2</strong></td>
+          <td>Tool System</td>
+          <td>How the Agent interacts with the external world</td>
+        </tr>
+        <tr>
+          <td><strong>L3</strong></td>
+          <td>Execution Orchestration</td>
+          <td>How multi-step tasks are chained together</td>
+        </tr>
+        <tr>
+          <td><strong>L4</strong></td>
+          <td>Memory & State</td>
+          <td>How intermediate results in long tasks are managed</td>
+        </tr>
+        <tr>
+          <td><strong>L5</strong></td>
+          <td>Evaluation & Observation</td>
+          <td>How the Agent knows if it did things right</td>
+        </tr>
+        <tr>
+          <td><strong>L6</strong></td>
+          <td>Constraint, Verification & Recovery</td>
+          <td>What to do when things go wrong</td>
+        </tr>
+      </table>
+
+      <h3>2.3 The 40% Context Threshold</h3>
+
+      <p>Dex Horthy observed: <strong>With a 168K token context window, Agent output quality starts declining noticeably at around 40% usage</strong>. Anthropic calls this "context anxiety" — Sonnet 4.5 becomes hesitant when context is nearly full, even倾向于提前收工.</p>
+
+      <p><strong>Solution: Context Resets</strong> — clear the context window but preserve key state through structured handoff documents. Treat 40% as an alert threshold; trigger compression, segmented execution, or task handoff when exceeded.</p>
+
+      <h3>2.4 Real-World Team Data</h3>
+
+      <div class="highlight-box orange">
+        <h4>📈 OpenAI Case: 3 People, 5 Months, 1M Lines, 0 Handwritten</h4>
+        <ul>
+          <li>Team size: 3 engineers → later expanded to 7</li>
+          <li>Code volume: ~1M lines, <strong>0 lines handwritten</strong> (pure design constraints)</li>
+          <li>PRs merged: ~1,500</li>
+          <li>PRs per person per day: 3.5</li>
+          <li>Efficiency gain: ~10x</li>
+        </ul>
+      </div>
+
+      <p><strong>Four Key Practices:</strong></p>
+      <ol>
+        <li><strong>Give Agent a map, not a thousand-page manual</strong> — AGENTS.md ~100 lines, acts as a directory; detailed rules loaded on demand</li>
+        <li><strong>Architectural constraints must be enforced by tools</strong> — "If it cannot be enforced mechanically, agents will deviate."</li>
+        <li><strong>Observability must be visible to Agent too</strong> — Chrome DevTools Protocol integrated into Agent runtime</li>
+        <li><strong>Entropy doesn't disappear on its own</strong> — background Agent periodically scans and auto-submits cleanup PRs</li>
+      </ol>
+
+      <h2>III. The Three Protocols: MCP, A2A, ACP</h2>
+
+      <p>As enterprise AI systems evolve from isolated tools to collaborative agent networks, a key question emerges: <strong>How do different AI agents communicate and collaborate effectively?</strong> In 2025-2026, three protocols are shaping the AI Agent ecosystem.</p>
+
+      <h3>3.1 MCP (Model Context Protocol)</h3>
+
+      <p><strong>Proposed by:</strong> Anthropic<br>
+      <strong>Positioning:</strong> AI's "data and tool interface," similar to USB protocol for computers</p>
+
+      <p>Core problems MCP solves:</p>
+      <ul>
+        <li>Token explosion — on-demand loading, field filtering, pagination</li>
+        <li>Inconsistent data formats — unified encapsulation for structured DB, semi-structured API, unstructured files</li>
+        <li>Uncontrollable security and permissions — fine-grained permissions, audit logs, data desensitization</li>
+        <li>High tool maintenance costs — hot-swappable tools, versioning, centralized management</li>
+      </ul>
+
+      <h3>3.2 A2A (Agent-to-Agent Protocol)</h3>
+
+      <p><strong>Proposed by:</strong> Google<br>
+      <strong>Positioning:</strong> The "international language" for agents — cross-platform, cross-organization, cross-domain collaboration standard</p>
+
+      <p>Core components:</p>
+      <ul>
+        <li><strong>Agent Card</strong> — each Agent's "ID + capability specification"</li>
+        <li><strong>Bidirectional communication interface</strong> — peer protocol where any Agent can be client or server</li>
+        <li><strong>Security and permission framework</strong> — based on OAuth2, API Key, scope authorization</li>
+      </ul>
+
+      <h3>3.3 ACP (Agent Communication Protocol)</h3>
+
+      <p><strong>Proposed by:</strong> BeeAI, IBM, and others<br>
+      <strong>Positioning:</strong> The "walkie-talkie" for local real-time collaboration on edge devices</p>
+
+      <p>Core characteristics:</p>
+      <ul>
+        <li>Millisecond-level response latency</li>
+        <li>Autonomous operation in weak/offline network conditions</li>
+        <li>Fully decentralized, no central server</li>
+        <li>Automatic device discovery and self-organizing networks</li>
+      </ul>
+
+      <h3>3.4 Comparison and Collaboration</h3>
+
+      <table>
+        <tr>
+          <th>Dimension</th>
+          <th>MCP</th>
+          <th>A2A</th>
+          <th>ACP</th>
+        </tr>
+        <tr>
+          <td>Core Positioning</td>
+          <td>Model-tool/data connection</td>
+          <td>Cross-platform agent collaboration</td>
+          <td>Edge device local real-time collaboration</td>
+        </tr>
+        <tr>
+          <td>Deployment</td>
+          <td>Cloud-native, enterprise intranet</td>
+          <td>Global, cross-cloud, cross-organization</td>
+          <td>Edge, embedded, industrial sites</td>
+        </tr>
+        <tr>
+          <td>Latency</td>
+          <td>~100ms</td>
+          <td>~100ms to seconds</td>
+          <td>Millisecond-level</td>
+        </tr>
+        <tr>
+          <td>Decentralized</td>
+          <td>No</td>
+          <td>Supported</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Typical Role</td>
+          <td>Data gateway, tool bus</td>
+          <td>Agent diplomacy, task chains</td>
+          <td>Device intercom, local networking</td>
+        </tr>
+      </table>
+
+      <p><strong>Cloud-Edge-Device Standard Architecture:</strong></p>
+      <ul>
+        <li><strong>Cloud agents</strong> — A2A collaboration; MCP for internal systems</li>
+        <li><strong>Edge layer</strong> — ACP for local device collaboration; A2A for Edge-to-Cloud communication</li>
+        <li><strong>Global architecture</strong> — A2A for cross-domain + MCP for data access + ACP for real-time control</li>
+      </ul>
+
+      <h2>IV. AI Agent vs Agentic AI: Concept Clarification</h2>
+
+      <p>A Cornell University research team clearly distinguished these two concepts in a comprehensive survey:</p>
+
+      <table>
+        <tr>
+          <th>Dimension</th>
+          <th>AI Agent</th>
+          <th>Agentic AI</th>
+        </tr>
+        <tr>
+          <td>Architecture Level</td>
+          <td>Single entity</td>
+          <td>Multi-agent network system</td>
+        </tr>
+        <tr>
+          <td>Goal Scope</td>
+          <td>Specific, well-defined single task</td>
+          <td>Complex, high-level overall goal</td>
+        </tr>
+        <tr>
+          <td>Intelligence Form</td>
+          <td>Individual intelligence (reactive)</td>
+          <td>System-level intelligence (collaborative)</td>
+        </tr>
+        <tr>
+          <td>Collaboration</td>
+          <td>Isolated operation, no collaboration</td>
+          <td>Multi-agent dynamic communication, shared memory, collaborative decisions</td>
+        </tr>
+        <tr>
+          <td>Typical Analogy</td>
+          <td>Single "employee"</td>
+          <td>Multiple "small teams" working together</td>
+        </tr>
+      </table>
+
+      <blockquote>
+        "Agentic AI is the natural extension of AI Agent. AI Agent is the building block of Agentic AI, and Agentic AI is the inevitable direction of AI Agent development."
+      </blockquote>
+
+      <h2>V. Technology Evolution Roadmap</h2>
+
+      <p>According to the Cornell survey and industry practice, AI Agent evolution can be divided into three stages:</p>
+
+      <h3>Stage 1: AI Agent (Individual Capability Breakthrough)</h3>
+      <ul>
+        <li>Proactive reasoning: from passive response → actively initiating tasks based on patterns/context</li>
+        <li>Tool integration: dynamically accessing databases, APIs for complex tasks</li>
+        <li>Causal reasoning: understanding cause-effect for diagnosis, planning, prediction</li>
+        <li>Continuous learning: adjusting behavior through feedback and situational memory</li>
+      </ul>
+
+      <h3>Stage 2: Agentic AI (System-Level Collaborative Evolution)</h3>
+      <ul>
+        <li>Multi-agent parallel collaboration: like human teams with coordination layer assigning roles</li>
+        <li>Persistent memory architecture: ensuring long task coordination and state awareness</li>
+        <li>Simulation planning: testing strategies, predicting outcomes, optimizing behavior before execution</li>
+        <li>Ethical governance framework: ensuring accountability and value alignment</li>
+      </ul>
+
+      <h3>Stage 3: Next-Gen AI (AZR Paradigm)</h3>
+      <ul>
+        <li>Autonomous generation, verification, and resolution of tasks → self-evolution (no external data needed)</li>
+        <li>Propose hypothesis → simulate experiment → verify results → adjust strategy for automatic research</li>
+      </ul>
+
+      <h2>VI. Five Unsolved Core Problems</h2>
+
+      <p>Despite the booming Agent ecosystem in 2026, these five problems remain unsolved:</p>
+
+      <table>
+        <tr>
+          <th>Problem</th>
+          <th>Current Status</th>
+        </tr>
+        <tr>
+          <td><strong>Brownfield project transformation</strong></td>
+          <td>Lack of mature methodology; public success cases are mostly greenfield projects</td>
+        </tr>
+        <tr>
+          <td><strong>How to verify Agent did things right</strong></td>
+          <td>Better at preventing wrongdoing than verifying correctness; "using AI-generated tests to verify AI-generated code" is like "checking your own homework with the same eyes"</td>
+        </tr>
+        <tr>
+          <td><strong>Long-term maintainability of AI-generated code</strong></td>
+          <td>LLMs often reimplement existing functions; long-term effects unclear</td>
+        </tr>
+        <tr>
+          <td><strong>Should Harness be thick or thin</strong></td>
+          <td>Manus rewrote five times, getting simpler each time; OpenAI's got more complex over five months — scenario-dependent</td>
+        </tr>
+        <tr>
+          <td><strong>Single Agent or multi-Agent</strong></td>
+          <td>Hashimoto insists on single Agent; Carlini used 16 parallel Agents — scale-dependent</td>
+        </tr>
+      </table>
+
+      <h2>VII. Conclusion</h2>
+
+      <p>In 2026, the AI Agent field is undergoing a critical transition from "proof of concept" to "production engineering." OpenClaw's viral explosion proved strong market demand for "action-oriented AI"; the rise of Harness Engineering signals the industry's focus on "how to make models perform stably in the right environment"; and the emergence of MCP/A2A/ACP protocols lays the foundation for interconnected Agent ecosystems.</p>
+
+      <blockquote>
+        "In 2026, the AI industry competition is no longer about 'whose Agent is smarter,' but about 'whose Harness is more complete.'"
+      </blockquote>
+
+      <p>For developers, there's no need to blindly pursue a "complete Harness Engineering system." Instead, start from the Information Boundary layer (L1) and Constraint/Recovery layer (L6) based on your business scenario, gradually building Agent infrastructure suitable for your team. After all, <strong>the core of Harness Engineering is not making the model stronger, but making the model perform stably in the right environment.</strong></p>
+
+    </article>
+
+    <footer class="article-footer">
+      <a href="/" class="back-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Homepage
+      </a>
+      <p>Built with 💜 · greasebig · 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
