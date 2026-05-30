@@ -2448,7 +2448,7 @@
 
           var discussion = item.discussion_url ? '<a href="' + escapeHtml(item.discussion_url) + '" target="_blank" rel="noopener">Discussion</a>' : '';
 
-          var extraClass = (hasMore && idx >= SHOW_COUNT) ? ' collapsed' : '';
+          var extraClass = (hasMore && idx >= SHOW_COUNT) ? ' collapsed older-repost' : '';
 
           return '<a class="article-card repost' + extraClass + '" href="' + url + '" target="_blank" rel="noopener">' +
 
@@ -2476,11 +2476,11 @@
 
             var expanded = btn.getAttribute('data-expanded') === 'true';
 
-            var collapsedCards = feed.querySelectorAll('.article-card.repost.collapsed');
+            var olderCards = feed.querySelectorAll('.article-card.repost.older-repost');
 
             if (expanded) {
 
-              collapsedCards.forEach(function(c) { c.classList.add('collapsed'); });
+              olderCards.forEach(function(c) { c.classList.add('collapsed'); });
 
               btn.setAttribute('data-expanded', 'false');
 
@@ -2488,9 +2488,11 @@
 
               btn.innerHTML = 'Show ' + (total - SHOW_COUNT) + ' older articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
 
+              btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
             } else {
 
-              collapsedCards.forEach(function(c) { c.classList.remove('collapsed'); });
+              olderCards.forEach(function(c) { c.classList.remove('collapsed'); });
 
               btn.setAttribute('data-expanded', 'true');
 
