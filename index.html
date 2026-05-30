@@ -1562,6 +1562,74 @@
 
     }
 
+    .article-card.repost.collapsed {
+
+      display: none;
+
+    }
+
+    .show-more-btn {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 6px;
+
+      width: 100%;
+
+      padding: 14px 0;
+
+      margin-top: 16px;
+
+      border: 1px dashed var(--border);
+
+      border-radius: 14px;
+
+      background: var(--glass);
+
+      color: var(--muted);
+
+      font-size: 14px;
+
+      font-weight: 500;
+
+      cursor: pointer;
+
+      transition: all 0.25s;
+
+      backdrop-filter: blur(12px);
+
+    }
+
+    .show-more-btn:hover {
+
+      color: var(--accent);
+
+      border-color: var(--accent);
+
+      background: rgba(99,102,241,0.06);
+
+    }
+
+    .show-more-btn svg {
+
+      width: 16px;
+
+      height: 16px;
+
+      transition: transform 0.3s;
+
+    }
+
+    .show-more-btn.expanded svg {
+
+      transform: rotate(180deg);
+
+    }
+
     /* links section */
 
     .link-list {
@@ -2347,13 +2415,13 @@
 
       }
 
+      var SHOW_COUNT = 10;
+
       function renderItems(items) {
 
         items = Array.isArray(items) ? items : [];
 
         items.sort(function(a, b) { return String(b.date || '').localeCompare(String(a.date || '')); });
-
-        items = items.slice(0, 8);
 
         if (!items.length) {
 
@@ -2363,7 +2431,10 @@
 
         }
 
-        feed.innerHTML = items.map(function(item) {
+        var total = items.length;
+        var hasMore = total > SHOW_COUNT;
+
+        feed.innerHTML = items.map(function(item, idx) {
 
           var title = escapeHtml(item.title);
 
@@ -2377,7 +2448,9 @@
 
           var discussion = item.discussion_url ? '<a href="' + escapeHtml(item.discussion_url) + '" target="_blank" rel="noopener">Discussion</a>' : '';
 
-          return '<a class="article-card repost" href="' + url + '" target="_blank" rel="noopener">' +
+          var extraClass = (hasMore && idx >= SHOW_COUNT) ? ' collapsed' : '';
+
+          return '<a class="article-card repost' + extraClass + '" href="' + url + '" target="_blank" rel="noopener">' +
 
             '<div class="article-meta"><span class="article-tag">转载 · Fresh Tech</span><span>' + source + '</span><span>' + date + '</span></div>' +
 
@@ -2388,6 +2461,50 @@
           '</a>';
 
         }).join('');
+
+        if (hasMore) {
+
+          var btn = document.createElement('button');
+
+          btn.className = 'show-more-btn';
+
+          btn.setAttribute('data-expanded', 'false');
+
+          btn.innerHTML = 'Show ' + (total - SHOW_COUNT) + ' older articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+
+          btn.addEventListener('click', function() {
+
+            var expanded = btn.getAttribute('data-expanded') === 'true';
+
+            var collapsedCards = feed.querySelectorAll('.article-card.repost.collapsed');
+
+            if (expanded) {
+
+              collapsedCards.forEach(function(c) { c.classList.add('collapsed'); });
+
+              btn.setAttribute('data-expanded', 'false');
+
+              btn.classList.remove('expanded');
+
+              btn.innerHTML = 'Show ' + (total - SHOW_COUNT) + ' older articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+
+            } else {
+
+              collapsedCards.forEach(function(c) { c.classList.remove('collapsed'); });
+
+              btn.setAttribute('data-expanded', 'true');
+
+              btn.classList.add('expanded');
+
+              btn.innerHTML = 'Collapse older articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+
+            }
+
+          });
+
+          feed.appendChild(btn);
+
+        }
 
       }
 
