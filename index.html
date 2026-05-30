@@ -16,8 +16,6 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
 
-
-
     :root {
 
       --ink: #1a1a2e;
@@ -43,8 +41,6 @@
       --shadow-hover: 0 12px 40px rgba(15,23,42,0.14);
 
     }
-
-
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -72,8 +68,6 @@
 
     }
 
-
-
     /* ========== 开屏大门动画 ========== */
 
     .gate-overlay {
@@ -97,8 +91,6 @@
       perspective: 1200px;
 
     }
-
-
 
     /* 门缝光芒 */
 
@@ -146,8 +138,6 @@
 
     }
 
-
-
     /* 门缝光芒扩散晕 */
 
     .gate-light-glow {
@@ -190,8 +180,6 @@
 
     }
 
-
-
     /* 门板 */
 
     .gate-door {
@@ -211,8 +199,6 @@
       transition: transform 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     }
-
-
 
     /* 门板纹理 */
 
@@ -248,8 +234,6 @@
 
     }
 
-
-
     /* 门板把手区域 */
 
     .gate-door::after {
@@ -272,8 +256,6 @@
 
     }
 
-
-
     .gate-door-left {
 
       left: 0;
@@ -290,8 +272,6 @@
 
     }
 
-
-
     .gate-door-right {
 
       right: 0;
@@ -307,8 +287,6 @@
       left: 30px;
 
     }
-
-
 
     /* 门板上的铰链 */
 
@@ -327,8 +305,6 @@
       z-index: 3;
 
     }
-
-
 
     /* 门板上的符号 - G字母徽章 */
 
@@ -378,8 +354,6 @@
 
     }
 
-
-
     /* 开门动画状态 */
 
     .gate-overlay.opening .gate-door-left {
@@ -393,8 +367,6 @@
       transform: perspective(1200px) rotateY(110deg);
 
     }
-
-
 
     /* 光芒爆发 - 门开到一定程度时触发 */
 
@@ -448,8 +420,6 @@
 
     }
 
-
-
     /* 飘散粒子 */
 
     .gate-spark {
@@ -470,8 +440,6 @@
 
     }
 
-
-
     /* 整个overlay淡出 */
 
     .gate-overlay.fade-out {
@@ -487,8 +455,6 @@
       100% { opacity: 0; pointer-events: none; }
 
     }
-
-
 
     /* 页面内容初始隐藏，等门开完再显示 */
 
@@ -519,8 +485,6 @@
       transform: scale(1);
 
     }
-
-
 
     /* floating orbs */
 
@@ -600,8 +564,6 @@
 
     }
 
-
-
     /* Particle canvas */
 
     #particles {
@@ -617,8 +579,6 @@
       z-index: 0;
 
     }
-
-
 
     /* hero */
 
@@ -918,13 +878,13 @@
 
     .site-card-icon {
 
-      font-size: 28px;
+      font-size: 26px;
 
       flex-shrink: 0;
 
-      width: 44px;
+      width: 48px;
 
-      height: 44px;
+      height: 48px;
 
       display: flex;
 
@@ -932,9 +892,19 @@
 
       justify-content: center;
 
-      border-radius: 12px;
+      border-radius: 14px;
 
-      background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(236,72,153,0.08));
+      background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(236,72,153,0.08));
+
+      transition: transform 0.25s ease, background 0.25s ease;
+
+    }
+
+    .site-card:hover .site-card-icon {
+
+      transform: scale(1.1);
+
+      background: linear-gradient(135deg, rgba(99,102,241,0.22), rgba(236,72,153,0.18));
 
     }
 
@@ -984,8 +954,6 @@
 
     }
 
-
-
     @media (max-width: 640px) {
 
       .site-cards {
@@ -997,8 +965,6 @@
       }
 
     }
-
-
 
     .hero .links-row {
 
@@ -1028,8 +994,6 @@
 
     }
 
-
-
     /* Scroll reveal */
 
     .reveal {
@@ -1049,8 +1013,6 @@
       transform: translateY(0);
 
     }
-
-
 
     /* glass button */
 
@@ -1178,8 +1140,6 @@
 
     }
 
-
-
     /* section */
 
     .section {
@@ -1235,8 +1195,6 @@
       margin-bottom: 28px;
 
     }
-
-
 
     /* project grid */
 
@@ -1405,8 +1363,6 @@
       width: 14px; height: 14px;
 
     }
-
-
 
     /* articles section */
 
@@ -1640,8 +1596,6 @@
 
     }
 
-
-
     /* links section */
 
     .link-list {
@@ -1653,8 +1607,6 @@
       gap: 12px;
 
     }
-
-
 
     /* footer */
 
@@ -1694,8 +1646,6 @@
 
     }
 
-
-
     /* Scrollbar */
 
     ::-webkit-scrollbar { width: 6px; }
@@ -1715,8 +1665,6 @@
       background: rgba(99,102,241,0.4);
 
     }
-
-
 
     /* Back to top */
 
@@ -1788,8 +1736,6 @@
 
     }
 
-
-
     @media (max-width: 640px) {
 
       .wrap { padding: 40px 16px 60px; }
@@ -1805,8 +1751,6 @@
       .gate-emblem span { font-size: 30px; }
 
     }
-
-
 
     /* prefers-reduced-motion: 跳过开屏动画 */
 
@@ -1834,8 +1778,6 @@
 
     <div class="gate-light"></div>
 
-
-
     <!-- 左门 -->
 
     <div class="gate-door gate-door-left">
@@ -1847,8 +1789,6 @@
       <div class="gate-emblem"><span>G</span></div>
 
     </div>
-
-
 
     <!-- 右门 -->
 
@@ -1862,15 +1802,11 @@
 
     </div>
 
-
-
     <!-- 光芒爆发 -->
 
     <div class="gate-burst"></div>
 
   </div>
-
-
 
   <!-- ========== 背景层 ========== -->
 
@@ -1883,8 +1819,6 @@
   <div class="orb orb-3"></div>
 
   <div class="orb orb-4"></div>
-
-
 
   <!-- ========== 主内容 ========== -->
 
@@ -1901,8 +1835,6 @@
       </div>
 
       <h1>greasebig</h1>
-
-
 
       <!-- 三个网站预览图卡片 — 名字正下方 -->
 
@@ -1958,8 +1890,6 @@
 
       </div>
 
-
-
       <p class="tagline">
 
         Building tools and models at the intersection of computer vision, generative AI, and video understanding.
@@ -1995,8 +1925,6 @@
       </div>
 
     </div>
-
-
 
     <!-- Articles -->
 
@@ -2076,8 +2004,6 @@
       </div>
     </div>
 
-
-
     <!-- Projects -->
 
     <div class="section reveal">
@@ -2106,8 +2032,6 @@
 
         </a>
 
-
-
         <a class="card" href="https://github.com/greasebig/harness-poc" target="_blank">
 
           <span class="venue tool">Tool</span>
@@ -2125,8 +2049,6 @@
           </span>
 
         </a>
-
-
 
         <a class="card" href="https://github.com/greasebig/awesome-agent-everything" target="_blank">
 
@@ -2149,8 +2071,6 @@
       </div>
 
     </div>
-
-
 
     <!-- Explored -->
 
@@ -2180,8 +2100,6 @@
 
         </a>
 
-
-
         <a class="card" href="https://github.com/greasebig/LiveMoments" target="_blank">
 
           <span class="venue iclr">ICLR 2026</span>
@@ -2199,8 +2117,6 @@
           </span>
 
         </a>
-
-
 
         <a class="card" href="https://github.com/greasebig/dynvfx" target="_blank">
 
@@ -2220,8 +2136,6 @@
 
         </a>
 
-
-
         <a class="card" href="https://github.com/greasebig/ReCo" target="_blank">
 
           <span class="venue cvpr">CVPR</span>
@@ -2239,8 +2153,6 @@
           </span>
 
         </a>
-
-
 
         <a class="card" href="https://github.com/greasebig/CVPR-2023-1st-foundation-model-challenge-Track-2-1th-solution" target="_blank">
 
@@ -2263,8 +2175,6 @@
       </div>
 
     </div>
-
-
 
     <!-- Quick Links -->
 
@@ -2310,8 +2220,6 @@
 
     </div>
 
-
-
     <div class="footer">
 
       Built with <span class="footer-heart">♥</span> · © 2026
@@ -2320,8 +2228,6 @@
 
   </div>
 
-
-
   <!-- Back to Top -->
 
   <a class="back-to-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" title="Back to top">
@@ -2329,8 +2235,6 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
 
   </a>
-
-
 
   <script>
 
@@ -2342,8 +2246,6 @@
 
       if (!gate) return;
 
-
-
       // 1. 等待1.5秒让用户感受门的存在
 
       setTimeout(function() {
@@ -2354,15 +2256,11 @@
 
       }, 1500);
 
-
-
       // 3. 门开到一半时，触发光芒爆发（1s后）
 
       setTimeout(function() {
 
         gate.classList.add('burst');
-
-
 
         // 4. 生成飘散火花粒子
 
@@ -2370,23 +2268,17 @@
 
       }, 2500);
 
-
-
       // 5. 门完全打开后（3.3s），淡出 overlay 并显示内容
 
       setTimeout(function() {
 
         gate.classList.add('fade-out');
 
-
-
         // 显示主内容
 
         var wrap = document.querySelector('.wrap');
 
         if (wrap) wrap.classList.add('revealed');
-
-
 
         // 6. 动画结束后移除 overlay DOM
 
@@ -2399,8 +2291,6 @@
       }, 3300);
 
     })();
-
-
 
     // ========== 飘散火花粒子 ==========
 
@@ -2420,8 +2310,6 @@
 
         var duration = Math.random() * 800 + 600;
 
-
-
         spark.style.width = size + 'px';
 
         spark.style.height = size + 'px';
@@ -2431,8 +2319,6 @@
         spark.style.top = '50%';
 
         spark.style.opacity = '1';
-
-
 
         // 随机颜色：白/紫/粉
 
@@ -2450,11 +2336,7 @@
 
         spark.style.background = colors[Math.floor(Math.random() * colors.length)];
 
-
-
         container.appendChild(spark);
-
-
 
         // 动画：从中心向外扩散
 
@@ -2465,8 +2347,6 @@
         var endY = Math.sin(angle) * distance;
 
         var startTime = null;
-
-
 
         function animateSpark(timestamp) {
 
@@ -2501,8 +2381,6 @@
       }
 
     }
-
-
 
     // ========== Daily reposted tech articles ==========
 
@@ -2582,8 +2460,6 @@
 
     })();
 
-
-
     // ========== Scroll reveal ==========
 
     var reveals = document.querySelectorAll('.reveal');
@@ -2606,8 +2482,6 @@
 
     reveals.forEach(function(el) { observer.observe(el); });
 
-
-
     // ========== Back to top ==========
 
     var backBtn = document.querySelector('.back-to-top');
@@ -2617,8 +2491,6 @@
       backBtn.classList.toggle('visible', window.scrollY > 300);
 
     });
-
-
 
     // ========== Particle system ==========
 
@@ -2642,13 +2514,9 @@
 
       window.addEventListener('resize', resize);
 
-
-
       var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       var PARTICLE_COUNT = prefersReduced ? 0 : 40;
-
-
 
       for (var i = 0; i < PARTICLE_COUNT; i++) {
 
@@ -2669,8 +2537,6 @@
         });
 
       }
-
-
 
       function draw() {
 
@@ -2745,5 +2611,3 @@
 </body>
 
 </html>
-
-
