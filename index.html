@@ -2388,7 +2388,7 @@
 
     }
 
-    // ========== Daily reposted tech articles (inline data for instant render) ==========
+    // ========== Daily reposted tech articles (inline fallback + async fetch) ==========
 
     (function() {
 
@@ -2406,51 +2406,68 @@
 
       }
 
-      var items = [{"title":"HeidiSQL – Lightweight MariaDB, MySQL, SQL Server, PostgreSQL and SQLite Manager","url":"https://github.com/HeidiSQL/HeidiSQL","source":"github.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from github.com. Hacker News score 64, 17 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48318568"},{"title":"Volkswagen blocks Home Assistant by requiring client assertion","url":"https://github.com/robinostlund/homeassistant-volkswagencarnet/issues/967","source":"github.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from github.com. Hacker News score 265, 137 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48319509"},{"title":"Is AI causing a repeat of Front end\u0027s Lost Decade?","url":"https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/","source":"mastrojs.github.io","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from mastrojs.github.io. Hacker News score 117, 115 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48321631"},{"title":"Claude Code – Everything You Can Configure That the Docs Don\u0027t Tell You","url":"https://buildingbetter.tech/p/i-read-the-claude-code-source-code","source":"buildingbetter.tech","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from buildingbetter.tech. Hacker News score 209, 45 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48318174"},{"title":"Real-time LLM Inference on Standard GPUs: 3k tokens/s per request","url":"https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/","source":"blog.kog.ai","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from blog.kog.ai. Hacker News score 77, 40 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48321076"},{"title":"We should be more tired than the model","url":"https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/","source":"vickiboykis.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from vickiboykis.com. Hacker News score 56, 53 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48322118"},{"title":"GitHub bans security researcher who posted zero-day Windows exploits","url":"https://www.tomshardware.com/tech-industry/cyber-security/microsofts-github-bans-security-researcher-who-posted-zero-day-windows-exploits-because-company-ruined-their-life-expert-claims-action-is-vindictive-and-promises-further-retaliation","source":"tomshardware.com","date":"2026-05-28","repost":true,"summary":"转载 / Curated repost from tomshardware.com. Hacker News score 473, 226 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48315968"},{"title":"Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue","url":"https://llmgame.scalex.dev","source":"llmgame.scalex.dev","date":"2026-05-28","repost":true,"summary":"转载 / Curated repost from llmgame.scalex.dev. Hacker News score 350, 142 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48308376"},{"title":"Claude Opus 4.8","url":"https://www.anthropic.com/news/claude-opus-4-8","source":"anthropic.com","date":"2026-05-28","repost":true,"summary":"转载 / Curated repost from anthropic.com. Hacker News score 1633, 1267 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48311647"},{"title":"Orchestrating AI code review at scale","url":"https://blog.cloudflare.com/ai-code-review/","source":"blog.cloudflare.com","date":"2026-05-26","repost":true,"summary":"转载 / Curated repost from blog.cloudflare.com. Hacker News score 50, 19 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48276152"}];
+      function renderItems(items) {
 
-      items = Array.isArray(items) ? items : [];
+        items = Array.isArray(items) ? items : [];
 
-      items.sort(function(a, b) { return String(b.date || '').localeCompare(String(a.date || '')); });
+        items.sort(function(a, b) { return String(b.date || '').localeCompare(String(a.date || '')); });
 
-      items = items.slice(0, 8);
+        items = items.slice(0, 8);
 
-      if (!items.length) {
+        if (!items.length) {
 
-        feed.innerHTML = '<p class="article-empty">No reposted articles yet.</p>';
+          feed.innerHTML = '<p class="article-empty">No reposted articles yet.</p>';
 
-        return;
+          return;
+
+        }
+
+        feed.innerHTML = items.map(function(item) {
+
+          var title = escapeHtml(item.title);
+
+          var summary = escapeHtml(item.summary);
+
+          var source = escapeHtml(item.source || 'Original source');
+
+          var date = escapeHtml(item.date);
+
+          var url = escapeHtml(item.url);
+
+          var discussion = item.discussion_url ? '<a href="' + escapeHtml(item.discussion_url) + '" target="_blank" rel="noopener">Discussion</a>' : '';
+
+          return '<a class="article-card repost" href="' + url + '" target="_blank" rel="noopener">' +
+
+            '<div class="article-meta"><span class="article-tag">转载 · Fresh Tech</span><span>' + date + '</span></div>' +
+
+            '<h3>' + title + '</h3>' +
+
+            '<p class="article-desc">' + summary + '</p>' +
+
+            '<p class="article-source">Source: ' + source + ' · Reposted with attribution. ' + discussion + '</p>' +
+
+            '<span class="read-more">Read Original <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>' +
+
+          '</a>';
+
+        }).join('');
 
       }
 
-      feed.innerHTML = items.map(function(item) {
+      // Inline fallback data — renders instantly, no network needed
+      var fallbackItems = [{"title":"HeidiSQL – Lightweight MariaDB, MySQL, SQL Server, PostgreSQL and SQLite Manager","url":"https://github.com/HeidiSQL/HeidiSQL","source":"github.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from github.com. Hacker News score 64, 17 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48318568"},{"title":"Volkswagen blocks Home Assistant by requiring client assertion","url":"https://github.com/robinostlund/homeassistant-volkswagencarnet/issues/967","source":"github.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from github.com. Hacker News score 265, 137 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48319509"},{"title":"Is AI causing a repeat of Front end\u0027s Lost Decade?","url":"https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/","source":"mastrojs.github.io","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from mastrojs.github.io. Hacker News score 117, 115 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48321631"},{"title":"Claude Code – Everything You Can Configure That the Docs Don\u0027t Tell You","url":"https://buildingbetter.tech/p/i-read-the-claude-code-source-code","source":"buildingbetter.tech","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from buildingbetter.tech. Hacker News score 209, 45 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48318174"},{"title":"Real-time LLM Inference on Standard GPUs: 3k tokens/s per request","url":"https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/","source":"blog.kog.ai","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from blog.kog.ai. Hacker News score 77, 40 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48321076"},{"title":"We should be more tired than the model","url":"https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/","source":"vickiboykis.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from vickiboykis.com. Hacker News score 56, 53 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48322118"},{"title":"GitHub bans security researcher who posted zero-day Windows exploits","url":"https://www.tomshardware.com/tech-industry/cyber-security/microsofts-github-bans-security-researcher-who-posted-zero-day-windows-exploits-because-company-ruined-their-life-expert-claims-action-is-vindictive-and-promises-further-retaliation","source":"tomshardware.com","date":"2026-05-28","repost":true,"summary":"转载 / Curated repost from tomshardware.com. Hacker News score 473, 226 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48315968"},{"title":"Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue","url":"https://llmgame.scalex.dev","source":"llmgame.scalex.dev","date":"2026-05-28","repost":true,"summary":"转载 / Curated repost from llmgame.scalex.dev. Hacker News score 350, 142 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48308376"},{"title":"Claude Opus 4.8","url":"https://www.anthropic.com/news/claude-opus-4-8","source":"anthropic.com","date":"2026-05-28","repost":true,"summary":"转载 / Curated repost from anthropic.com. Hacker News score 1633, 1267 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48311647"},{"title":"Orchestrating AI code review at scale","url":"https://blog.cloudflare.com/ai-code-review/","source":"blog.cloudflare.com","date":"2026-05-26","repost":true,"summary":"转载 / Curated repost from blog.cloudflare.com. Hacker News score 50, 19 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48276152"}];
 
-        var title = escapeHtml(item.title);
+      // Show fallback immediately so articles appear instantly
+      renderItems(fallbackItems);
 
-        var summary = escapeHtml(item.summary);
+      // Try fetching latest data in background; refresh if newer
+      fetch('./articles/tech-feed.json', { cache: 'no-store' })
 
-        var source = escapeHtml(item.source || 'Original source');
+        .then(function(r) { return r.ok ? r.json() : []; })
 
-        var date = escapeHtml(item.date);
+        .then(function(items) { if (items && items.length) renderItems(items); })
 
-        var url = escapeHtml(item.url);
-
-        var discussion = item.discussion_url ? '<a href="' + escapeHtml(item.discussion_url) + '" target="_blank" rel="noopener">Discussion</a>' : '';
-
-        return '<a class="article-card repost" href="' + url + '" target="_blank" rel="noopener">' +
-
-          '<div class="article-meta"><span class="article-tag">转载 · Fresh Tech</span><span>' + date + '</span></div>' +
-
-          '<h3>' + title + '</h3>' +
-
-          '<p class="article-desc">' + summary + '</p>' +
-
-          '<p class="article-source">Source: ' + source + ' · Reposted with attribution. ' + discussion + '</p>' +
-
-          '<span class="read-more">Read Original <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>' +
-
-        '</a>';
-
-      }).join('');
+        .catch(function() { /* fallback already rendered */ });
 
     })();
 
