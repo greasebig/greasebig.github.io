@@ -1520,6 +1520,70 @@
 
     }
 
+    .article-card.pinned .article-tag {
+
+      background: rgba(245,158,11,0.14);
+
+      color: #b45309;
+
+    }
+
+    .article-card.repost .article-tag {
+
+      background: rgba(16,185,129,0.14);
+
+      color: #047857;
+
+    }
+
+    .article-source {
+
+      color: var(--muted);
+
+      font-size: 12px;
+
+      margin-top: 8px;
+
+    }
+
+    .article-feed-heading {
+
+      display: flex;
+
+      align-items: end;
+
+      justify-content: space-between;
+
+      gap: 12px;
+
+      margin: 22px 0 12px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+    }
+
+    .article-feed-heading h3 {
+
+      margin: 0;
+
+      color: var(--ink);
+
+      font-size: 17px;
+
+    }
+
+    .article-empty {
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      margin: 0;
+
+    }
+
     .article-card h3 {
 
       font-size: 18px;
@@ -1940,13 +2004,26 @@
 
       <h2><span class="section-icon">📝</span> Articles</h2>
 
-      <p class="subtitle">Thoughts on AI engineering and tooling</p>
+      <p class="subtitle">Pinned essays first, followed by daily reposted technology reads in reverse chronological order.</p>
 
-      <a class="article-card" href="./articles/harness-engineering.html" target="_blank">
+      <a class="article-card pinned" href="./articles/claw-runtime.html" target="_blank">
+        <div class="article-meta">
+          <span class="article-tag">Pinned · Agent Ecosystem</span>
+          <span>2026-05-28</span>
+        </div>
+        <h3>Claw Runtime 与 Agent 生态 2026：从概念到落地</h3>
+        <p class="article-desc">全面解析 OpenClaw 病毒式爆发、Agent Harness 工程化实践、MCP/A2A/ACP 三大协议生态，以及 AI Agent 与 Agentic AI 的概念澄清与技术演进路线图。</p>
+        <span class="read-more">
+          Read Article
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
+
+      <a class="article-card pinned" href="./articles/harness-engineering.html" target="_blank">
 
         <div class="article-meta">
 
-          <span class="article-tag">Harness Engineering</span>
+          <span class="article-tag">Pinned · Harness Engineering</span>
 
           <span>2026-05-24</span>
 
@@ -1966,11 +2043,11 @@
 
       </a>
 
-      <a class="article-card" href="./articles/harness-poc.html" target="_blank">
+      <a class="article-card pinned" href="./articles/harness-poc.html" target="_blank">
 
         <div class="article-meta">
 
-          <span class="article-tag">Harness POC</span>
+          <span class="article-tag">Pinned · Harness POC</span>
 
           <span>2026-05-24</span>
 
@@ -1989,18 +2066,14 @@
         </span>
 
       </a>
-      <a class="article-card" href="./articles/claw-runtime.html" target="_blank">
-        <div class="article-meta">
-          <span class="article-tag">Agent Ecosystem</span>
-          <span>2026-05-28</span>
-        </div>
-        <h3>Claw Runtime 与 Agent 生态 2026：从概念到落地</h3>
-        <p class="article-desc">全面解析 OpenClaw 病毒式爆发、Agent Harness 工程化实践、MCP/A2A/ACP 三大协议生态，以及 AI Agent 与 Agentic AI 的概念澄清与技术演进路线图。</p>
-        <span class="read-more">
-          Read Article
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </span>
-      </a>
+
+      <div class="article-feed-heading">
+        <h3>Fresh Tech Reposts</h3>
+        <span>转载标注：只展示标题、摘要和原文链接，版权归原作者。</span>
+      </div>
+      <div id="dailyTechArticles">
+        <p class="article-empty">Loading daily curated technology articles…</p>
+      </div>
     </div>
 
 
@@ -2428,6 +2501,86 @@
       }
 
     }
+
+
+
+    // ========== Daily reposted tech articles ==========
+
+    (function() {
+
+      var feed = document.getElementById('dailyTechArticles');
+
+      if (!feed) return;
+
+      function escapeHtml(value) {
+
+        return String(value || '').replace(/[&<>"']/g, function(ch) {
+
+          return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[ch];
+
+        });
+
+      }
+
+      fetch('./articles/tech-feed.json', { cache: 'no-store' })
+
+        .then(function(response) { return response.ok ? response.json() : []; })
+
+        .then(function(items) {
+
+          items = Array.isArray(items) ? items : [];
+
+          items.sort(function(a, b) { return String(b.date || '').localeCompare(String(a.date || '')); });
+
+          items = items.slice(0, 8);
+
+          if (!items.length) {
+
+            feed.innerHTML = '<p class="article-empty">No reposted articles yet. The daily workflow will populate this section.</p>';
+
+            return;
+
+          }
+
+          feed.innerHTML = items.map(function(item) {
+
+            var title = escapeHtml(item.title);
+
+            var summary = escapeHtml(item.summary);
+
+            var source = escapeHtml(item.source || 'Original source');
+
+            var date = escapeHtml(item.date);
+
+            var url = escapeHtml(item.url);
+
+            var discussion = item.discussion_url ? '<a href="' + escapeHtml(item.discussion_url) + '" target="_blank" rel="noopener">Discussion</a>' : '';
+
+            return '<a class="article-card repost" href="' + url + '" target="_blank" rel="noopener">' +
+
+              '<div class="article-meta"><span class="article-tag">转载 · Fresh Tech</span><span>' + date + '</span></div>' +
+
+              '<h3>' + title + '</h3>' +
+
+              '<p class="article-desc">' + summary + '</p>' +
+
+              '<p class="article-source">Source: ' + source + ' · Reposted with attribution. ' + discussion + '</p>' +
+
+              '<span class="read-more">Read Original <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>' +
+
+            '</a>';
+
+          }).join('');
+
+        })
+
+        .catch(function() {
+
+          feed.innerHTML = '<p class="article-empty">Daily repost feed is temporarily unavailable.</p>';
+
+        });
+
+    })();
 
 
 

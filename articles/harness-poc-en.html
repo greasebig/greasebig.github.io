@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Building a Harness from Scratch: ~300 Lines of Python — greasebig</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+    :root{--ink:#1a1a2e;--muted:#5a6075;--glass:rgba(255,255,255,.7);--border:rgba(18,22,40,.10);--accent:#6366f1;--shadow:0 4px 24px rgba(15,23,42,.08)}
+    *{box-sizing:border-box} body{margin:0;font-family:"Inter",system-ui,sans-serif;color:var(--ink);line-height:1.7;background:radial-gradient(800px 500px at 15% 0%,rgba(99,102,241,.13),transparent 50%),linear-gradient(175deg,#f8f9ff,#f0f2fe 45%,#faf9fe)}
+    .wrap{max-width:820px;margin:0 auto;padding:72px 22px}.nav-back{display:inline-flex;margin-bottom:28px;padding:8px 16px;border-radius:12px;border:1px solid var(--border);background:var(--glass);color:var(--muted);text-decoration:none;font-size:13px;font-weight:600}
+    .article-header{margin-bottom:34px}.article-tag{display:inline-flex;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:4px 12px;border-radius:999px;background:rgba(99,102,241,.12);color:#4f46e5;margin-bottom:16px}
+    h1{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,44px);line-height:1.15;margin:0 0 12px;background:linear-gradient(135deg,var(--ink),#4338ca);-webkit-background-clip:text;-webkit-text-fill-color:transparent} h2{margin-top:34px;font-size:24px}
+    .meta,.footer{color:var(--muted);font-size:13px}.content{padding:30px;border-radius:24px;background:var(--glass);border:1px solid var(--border);box-shadow:var(--shadow)} blockquote{margin:0 0 24px;padding:20px;border-left:4px solid var(--accent);background:rgba(99,102,241,.08);border-radius:12px}
+    pre{overflow:auto;padding:16px;border-radius:14px;background:#111827;color:#e5e7eb} code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace} ul{padding-left:22px}.lang-switch{position:fixed;top:20px;right:20px;z-index:10;display:flex;gap:4px;background:var(--glass);border:1px solid var(--border);border-radius:10px;padding:4px;box-shadow:var(--shadow)}
+    .lang-switch a{padding:6px 12px;border-radius:6px;color:var(--muted);text-decoration:none;font-size:12px;font-weight:700}.lang-switch a.active{background:var(--accent);color:#fff}
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="./harness-poc.html">中文</a>
+    <a href="./harness-poc-en.html" class="active">EN</a>
+  </div>
+  <div class="wrap">
+    <a class="nav-back" href="../index.html">← Back to Home</a>
+    <header class="article-header">
+      <span class="article-tag">Harness Engineering · POC</span>
+      <h1>Building a Harness from Scratch: ~300 Lines of Python</h1>
+      <p class="meta">2026-05-24 · English reader version</p>
+    </header>
+    <article class="content">
+      <blockquote>This is the implementation follow-up to the Harness Engineering essay: a minimal but usable agent harness that proves the core loop.</blockquote>
+      <h2>Goal</h2>
+      <p>The prototype validates the smallest useful set of ideas: multi-provider model calls, an agent loop, automatic context loading from <code>AGENTS.md</code>, persistent memory, permission boundaries, and lifecycle hooks.</p>
+      <h2>Shape of the System</h2>
+      <pre><code>harness/
+├── agent.py       # agent loop
+├── context.py     # AGENTS.md discovery
+├── memory.py      # persistent MEMORY.md
+├── permissions.py # path and command checks
+├── tools.py       # tool definitions
+├── hooks.py       # PreToolUse / PostToolUse
+└── cli.py         # command-line entry</code></pre>
+      <h2>Agent Loop</h2>
+      <p>The loop is intentionally simple: send the user task and system context, stream the model response, execute tool calls if allowed, append tool results, and repeat until the model returns a final answer. Reliability comes from the boundary around the loop, not from making the loop complicated.</p>
+      <h2>Important Lessons</h2>
+      <ul>
+        <li>Context should be short and navigational, not encyclopedic.</li>
+        <li>Memory should be explicit and durable, not accidental prompt clutter.</li>
+        <li>Permissions must be enforced by code, not described as a suggestion.</li>
+        <li>Hooks are where teams add policy, logging, metrics, and recovery behavior.</li>
+      </ul>
+      <h2>Result</h2>
+      <p>The prototype is small enough to understand in one sitting but complete enough to show the real architecture: model + harness. The code lives at <a href="https://github.com/greasebig/harness-poc" target="_blank" rel="noopener">github.com/greasebig/harness-poc</a>.</p>
+      <p class="footer">This English page is a concise reader version of the original Chinese article.</p>
+    </article>
+  </div>
+</body>
+</html>

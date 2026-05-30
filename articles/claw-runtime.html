@@ -52,6 +52,31 @@
     .nav a:hover { color: var(--accent); }
     .nav .logo { font-weight: 700; color: var(--accent); font-size: 1.1rem; }
 
+    /* Language Switcher */
+    .lang-switch {
+      position: fixed; top: 5rem; right: 2rem; z-index: 99;
+      display: flex; gap: 0.5rem;
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.4rem;
+      box-shadow: var(--shadow);
+    }
+    .lang-switch a {
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .lang-switch a:hover { color: var(--accent); }
+    .lang-switch a.active {
+      background: var(--accent);
+      color: white;
+    }
+
     /* Article Container */
     .article-wrap {
       max-width: 780px; margin: 0 auto; padding: 6rem 2rem 4rem;
@@ -207,6 +232,7 @@
       .article-content { padding: 1.8rem; }
       .article-content h2 { font-size: 1.5rem; }
       .nav-inner { gap: 1rem; font-size: 0.85rem; }
+      .lang-switch { top: 4.5rem; right: 1rem; }
     }
   </style>
 </head>
@@ -219,6 +245,11 @@
       <a href="/awesome-agent-everything/">Agent Index</a>
     </div>
   </nav>
+
+  <div class="lang-switch">
+    <a href="./claw-runtime.html" class="active">中文</a>
+    <a href="./claw-runtime-en.html">EN</a>
+  </div>
 
   <div class="article-wrap">
     <header class="article-header">
