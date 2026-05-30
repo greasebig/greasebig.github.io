@@ -2504,7 +2504,13 @@
 
           });
 
-          feed.appendChild(btn);
+          // Insert button right after the 10th article card, not at feed end
+          var lastVisibleCard = feed.querySelectorAll('.article-card.repost')[SHOW_COUNT - 1];
+          if (lastVisibleCard && lastVisibleCard.nextSibling) {
+            feed.insertBefore(btn, lastVisibleCard.nextSibling);
+          } else {
+            feed.appendChild(btn);
+          }
 
         }
 
