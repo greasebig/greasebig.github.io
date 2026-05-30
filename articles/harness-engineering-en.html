@@ -2,52 +2,499 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui' font-weight='bold'>G</text></svg>" type="image/svg+xml" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Harness Engineering: The Engineering Art of Steering AI Agents — greasebig</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
-    :root{--ink:#1a1a2e;--muted:#5a6075;--glass:rgba(255,255,255,.7);--border:rgba(18,22,40,.10);--accent:#6366f1;--shadow:0 4px 24px rgba(15,23,42,.08)}
-    *{box-sizing:border-box} body{margin:0;font-family:"Inter",system-ui,sans-serif;color:var(--ink);line-height:1.7;background:radial-gradient(800px 500px at 15% 0%,rgba(99,102,241,.13),transparent 50%),linear-gradient(175deg,#f8f9ff,#f0f2fe 45%,#faf9fe)}
-    .wrap{max-width:820px;margin:0 auto;padding:72px 22px}.nav-back{display:inline-flex;margin-bottom:28px;padding:8px 16px;border-radius:12px;border:1px solid var(--border);background:var(--glass);color:var(--muted);text-decoration:none;font-size:13px;font-weight:600}
-    .article-header{margin-bottom:34px}.article-tag{display:inline-flex;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:4px 12px;border-radius:999px;background:rgba(99,102,241,.12);color:#4f46e5;margin-bottom:16px}
-    h1{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,44px);line-height:1.15;margin:0 0 12px;background:linear-gradient(135deg,var(--ink),#4338ca);-webkit-background-clip:text;-webkit-text-fill-color:transparent} h2{margin-top:34px;font-size:24px} h3{margin-top:24px;font-size:18px}
-    .meta,.footer{color:var(--muted);font-size:13px}.content{padding:30px;border-radius:24px;background:var(--glass);border:1px solid var(--border);box-shadow:var(--shadow)} blockquote{margin:0 0 24px;padding:20px;border-left:4px solid var(--accent);background:rgba(99,102,241,.08);border-radius:12px}
-    code{background:rgba(99,102,241,.1);padding:2px 6px;border-radius:6px} ul{padding-left:22px}.lang-switch{position:fixed;top:20px;right:20px;z-index:10;display:flex;gap:4px;background:var(--glass);border:1px solid var(--border);border-radius:10px;padding:4px;box-shadow:var(--shadow)}
-    .lang-switch a{padding:6px 12px;border-radius:6px;color:var(--muted);text-decoration:none;font-size:12px;font-weight:700}.lang-switch a.active{background:var(--accent);color:#fff}
-  </style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    :root {
+      --ink: #1a1a2e;
+      --muted: #5a6075;
+      --glass: rgba(255,255,255,0.58);
+      --glass-hover: rgba(255,255,255,0.78);
+      --border: rgba(18,22,40,0.10);
+      --accent: #6366f1;
+      --accent-2: #ec4899;
+      --shadow: 0 4px 24px rgba(15,23,42,0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.13), transparent 50%),
+        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
+        radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
+        linear-gradient(175deg, #f8f9ff, #f0f2fe 40%, #f5f3ff 70%, #faf9fe);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* nav */
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 32px;
+      transition: all 0.2s;
+    }
+    .nav-back:hover { background: var(--glass-hover); color: var(--ink); }
+
+    /* article header */
+    .article-header {
+      margin-bottom: 36px;
+    }
+    .article-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(99,102,241,0.12);
+      color: #4f46e5;
+      margin-bottom: 16px;
+    }
+    .article-header h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--ink) 30%, #4338ca 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .article-meta {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* content */
+    .content {
+      font-size: 15px;
+    }
+    .content blockquote {
+      margin: 24px 0;
+      padding: 16px 20px;
+      border-radius: 12px;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      font-style: italic;
+      color: var(--muted);
+    }
+    .content blockquote strong {
+      color: var(--ink);
+      font-style: normal;
+    }
+    .content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 40px 0 16px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    .content h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 28px 0 10px;
+      color: var(--ink);
+    }
+    .content p {
+      margin: 12px 0;
+    }
+    .content ul, .content ol {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
+    .content li {
+      margin: 6px 0;
+    }
+    .content strong {
+      font-weight: 700;
+    }
+
+    /* code */
+    .content code {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 13px;
+      background: rgba(99,102,241,0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #4f46e5;
+    }
+    .content pre {
+      margin: 16px 0;
+      padding: 16px 18px;
+      border-radius: 12px;
+      background: rgba(15,23,42,0.92);
+      color: #e2e8f0;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      overflow-x: auto;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .content pre code {
+      background: none;
+      color: inherit;
+      padding: 0;
+      border-radius: 0;
+    }
+
+    /* table */
+    .content table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 16px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .content th {
+      background: rgba(99,102,241,0.08);
+      text-align: left;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+    }
+    .content td {
+      padding: 10px 14px;
+      font-size: 13px;
+      border-bottom: 1px solid var(--border);
+      background: var(--glass);
+    }
+    .content tr:last-child td { border-bottom: none; }
+
+    /* hr */
+    .content hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    .content a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .content a:hover { color: #4f46e5; }
+
+    /* footer */
+    .article-footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* Language switcher */
+    .lang-switch {
+      position: fixed; top: 20px; right: 20px; z-index: 100;
+      display: flex; gap: 4px;
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 4px;
+      box-shadow: var(--shadow);
+    }
+    .lang-switch a {
+      padding: 6px 12px; border-radius: 6px;
+      font-size: 12px; font-weight: 500;
+      color: var(--muted); text-decoration: none;
+      transition: all 0.2s;
+    }
+    .lang-switch a:hover { color: var(--ink); }
+    .lang-switch a.active {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: white;
+    }
+</style>
 </head>
 <body>
-  <div class="lang-switch">
-    <a href="./harness-engineering.html">中文</a>
-    <a href="./harness-engineering-en.html" class="active">EN</a>
-  </div>
+<div class="lang-switch">
+  <a href="./harness-engineering.html">中文</a>
+  <a href="./harness-engineering-en.html" class="active">EN</a>
+</div>
+
   <div class="wrap">
-    <a class="nav-back" href="../index.html">← Back to Home</a>
-    <header class="article-header">
+    <a class="nav-back" href="../index.html">&larr; Back to Home</a>
+
+    <div class="article-header">
       <span class="article-tag">Harness Engineering</span>
       <h1>Harness Engineering: The Engineering Art of Steering AI Agents</h1>
-      <p class="meta">2026-05-24 · English reader version</p>
-    </header>
-    <article class="content">
-      <blockquote><strong>Core formula: Agent = Model + Harness.</strong><br><br>Harness engineering means turning every repeated agent failure into a system-level constraint, tool, feedback loop, or recovery path so the same failure is less likely to recur.</blockquote>
-      <h2>What Harness Engineering Means</h2>
-      <p>Prompt engineering asks what to say to a model. Harness engineering asks what to build around the model: context boundaries, tools, permissions, memory, verification, observability, and recovery loops. The goal is not to make the model look smarter in a demo; the goal is to make agent behavior reliable in production.</p>
-      <h2>The Practical Layers</h2>
+      <p class="article-meta">2026-05-24</p>
+    </div>
+
+    <div class="content">
+      <blockquote>
+        <strong>Core Formula: Agent = Model + Harness</strong><br><br>
+        <em>"Harness engineering is the idea that anytime you find an agent makes a mistake, you take the time to engineer a solution such that the agent will not make that mistake again in the future."</em><br>
+        &mdash; Mitchell Hashimoto (HashiCorp co-founder, Terraform co-creator), February 2026
+      </blockquote>
+
+      <h2>I. What is Harness Engineering?</h2>
+      <p>The most important paradigm shift in AI in 2026 isn't larger models &mdash; it's <strong>Harness Engineering</strong>: building systems, tools, constraints, and feedback loops around AI Agents so that powerful but unpredictable AI models can <strong>reliably</strong> accomplish complex tasks.</p>
+      <p><strong>Harness is not Prompt Engineering.</strong> Prompt Engineering cares about "what to say to the model," while Harness Engineering cares about "what to build around the model." The former is fragile and model-dependent; the latter is robust and model-agnostic.</p>
+      <p>An analogy to understand the distinction:</p>
+      <blockquote><strong>LLM is the brain; Harness is the body.</strong> Without Harness, the model can only "theorize"; with Harness, AI becomes a true "doer."</blockquote>
+
+      <h2>II. Agent = Model + Harness</h2>
+      <p>This formula is becoming industry consensus:</p>
+      <table>
+        <tr><th>Component</th><th>Responsibility</th><th>Example</th></tr>
+        <tr><td><strong>Model</strong></td><td>Intelligence, reasoning, decision-making</td><td>Claude, GPT-4, DeepSeek</td></tr>
+        <tr><td><strong>Harness</strong></td><td>Hands, eyes, memory, safety boundaries</td><td>Tools, permissions, memory, verification loops</td></tr>
+      </table>
+      <p><strong>Key Insight: An excellent Harness is often more important than a better Model.</strong></p>
+      <p>The LangChain Terminal Bench 2.0 comparison experiment proved this:</p>
       <ul>
-        <li><strong>Information boundary:</strong> give the agent a map, not a thousand-page manual.</li>
-        <li><strong>Tool surface:</strong> expose only the operations the agent needs, with clear schemas and failure modes.</li>
-        <li><strong>Constraint system:</strong> use tests, type checks, permissions, and review gates instead of hope.</li>
-        <li><strong>Memory:</strong> keep durable lessons outside the immediate prompt and load them deliberately.</li>
-        <li><strong>Self-verification:</strong> require the agent to prove work through focused checks before it declares completion.</li>
+        <li>Without Harness optimization: <strong>52.8%</strong> accuracy</li>
+        <li>With Harness optimization only (same model): <strong>66.5%</strong> accuracy</li>
+        <li><strong>Improvement: 26%</strong></li>
       </ul>
-      <h2>Why It Matters</h2>
-      <p>As models become stronger, the bottleneck shifts from raw intelligence to environment design. A good harness makes the correct path easy, the dangerous path hard, and failures visible. That is why serious agent work is increasingly about engineering the loop around the model.</p>
-      <h2>Applying It to OpenClaw</h2>
-      <p>For an OpenClaw-style coding agent, the harness should include concise repository instructions, safe shell/file permissions, clear tool schemas, lightweight persistent memory, and validation commands that are cheap enough to run repeatedly. Each time the agent makes a costly mistake, add a structural fix rather than another vague instruction.</p>
-      <h2>Bottom Line</h2>
-      <p>The durable advantage is not a clever prompt. It is a harness that compounds: every bug, failed run, and wrong assumption becomes a new guardrail or feedback signal.</p>
-      <p class="footer">References summarized from Mitchell Hashimoto's harness framing, agent engineering practice, OpenHarness-style systems, and current coding-agent workflows.</p>
-    </article>
+      <p>The optimizations included only: better context files (AGENTS.md), structured output constraints, self-verification loops, and tool optimization. No model change, no prompt change.</p>
+
+      <h2>III. Seven Core Components of a Harness</h2>
+
+      <h3>1. Context Engineering</h3>
+      <p>Give the Agent a "map" of the codebase, not a "1000-page manual."</p>
+      <p><strong>Core Principle: Context file &le; 60 lines.</strong> Anything longer causes Agent attention drift.</p>
+      <pre><code># CLAUDE.md / AGENTS.md example
+## Architecture
+- src/app/ &mdash; Main application logic
+- src/lib/ &mdash; Shared utility library
+- src/components/ &mdash; React components
+
+## Rules
+- All API calls go through src/lib/api.ts
+- No direct node_modules imports in components
+- Commit messages in English</code></pre>
+
+      <h3>2. Architectural Constraints</h3>
+      <p><strong>Don't rely on hope &mdash; rely on enforcement.</strong> Use lint rules, tests, and type systems to forcibly constrain Agent behavior, rather than expecting it to "voluntarily" comply.</p>
+      <ul>
+        <li>ESLint <code>no-restricted-imports</code> prevents incorrect dependency references</li>
+        <li>Layered architecture validation, prohibiting cross-layer calls</li>
+        <li>Structured tests that fail on pattern violations</li>
+      </ul>
+      <blockquote><em>"Constrain the solution space &mdash; don't expand it. Fewer valid options means fewer wrong answers."</em></blockquote>
+
+      <h3>3. Tools &amp; MCP Servers</h3>
+      <p>The Agent's hands and feet. Giving the model the ability to interact with the external world.</p>
+      <ul>
+        <li><strong>File operations</strong>: Read / Write / Edit / Glob / Grep</li>
+        <li><strong>Shell execution</strong>: Bash commands (with permission control)</li>
+        <li><strong>Web interaction</strong>: WebFetch / WebSearch</li>
+        <li><strong>MCP Protocol</strong>: Connect to any external service and API</li>
+        <li><strong>Agent collaboration</strong>: Sub-Agent dispatch and coordination</li>
+      </ul>
+
+      <h3>4. Sub-Agents &amp; Context Firewalls</h3>
+      <p><strong>Context is a consumable.</strong> In long sessions, model performance degrades as context accumulates (context rot).</p>
+      <p>Solutions:</p>
+      <ul>
+        <li>Break complex tasks into independent sub-tasks</li>
+        <li>Each sub-task runs in an independent session</li>
+        <li><strong>Only pass structured results</strong>, not raw conversation history</li>
+      </ul>
+      <p>Anthropic's dual-Agent architecture:</p>
+      <ol>
+        <li><strong>Initializer Agent</strong> &mdash; makes the plan, generates feature list</li>
+        <li><strong>Coding Agent</strong> &mdash; executes each feature one by one</li>
+      </ol>
+
+      <h3>5. Hooks &amp; Back-Pressure</h3>
+      <p>Automated feedback loops that catch errors before they compound.</p>
+      <ul>
+        <li><strong>Pre-commit hooks</strong>: type checking, lint, formatting</li>
+        <li><strong>Test runners</strong>: automatically run tests after each modification</li>
+        <li><strong>Build verification</strong>: fail fast</li>
+      </ul>
+      <blockquote><em>"Success should be silent; failure should be loud."</em> &mdash; Only push errors into Agent context; don't drown it in redundant success logs.</blockquote>
+
+      <h3>6. Self-Verification Loops</h3>
+      <p>Force the Agent to verify its own work before marking a task complete:</p>
+      <ul>
+        <li>Run the test suite</li>
+        <li>Confirm the build passes</li>
+        <li>Verify output meets specifications</li>
+        <li>For UI work: take screenshots and do diff comparison</li>
+      </ul>
+      <blockquote><em>"This is the difference between an agent that 'thinks it's done' and one that actually is."</em></blockquote>
+
+      <h3>7. Progress Documentation</h3>
+      <p>For tasks longer than ~30 minutes, maintain structured progress records to ensure <strong>replacement sessions can seamlessly resume</strong>.</p>
+
+      <hr>
+
+      <h2>IV. Can WorkBuddy Use a Harness?</h2>
+      <p><strong>Yes &mdash; and WorkBuddy itself is a Harness.</strong></p>
+      <p>WorkBuddy (CodeBuddy) implements multiple core components of Harness Engineering:</p>
+
+      <table>
+        <tr><th>Harness Component</th><th>WorkBuddy Implementation</th></tr>
+        <tr><td>Context Engineering</td><td>SOUL.md / IDENTITY.md / USER.md / MEMORY.md working memory system</td></tr>
+        <tr><td>Tools</td><td>Complete toolset (File I/O, Shell, Web, Agent, Task)</td></tr>
+        <tr><td>Hooks</td><td>Automated triggers, scheduled tasks</td></tr>
+        <tr><td>Permissions</td><td>Security policies (content_policy, personal_files_safety, working_modes)</td></tr>
+        <tr><td>Sub-Agents</td><td>Agent tool (sub-Agent dispatch, TeamCreate)</td></tr>
+        <tr><td>Self-Verification</td><td>Iterative verification in the Agent Loop</td></tr>
+        <tr><td>Progress</td><td>TaskCreate/Update/List task management system</td></tr>
+        <tr><td>Memory</td><td>Cross-session persistent memory (MEMORY.md + daily logs)</td></tr>
+      </table>
+
+      <p><strong>As a WorkBuddy user, you can directly leverage these Harness capabilities:</strong></p>
+      <ol>
+        <li><strong>Write AGENTS.md / SOUL.md</strong>: Define Agent behavior specs, project architecture, coding rules</li>
+        <li><strong>Use the Skills system</strong>: Load domain knowledge on demand</li>
+        <li><strong>Leverage Task management</strong>: Break down complex tasks, track progress</li>
+        <li><strong>Build MEMORY.md</strong>: Accumulate cross-session knowledge, making the Agent "understand you better over time"</li>
+        <li><strong>Custom Automations</strong>: Scheduled tasks and event-driven automation</li>
+      </ol>
+      <p><strong>Advanced tip</strong>: WorkBuddy users can build a powerful personal Harness through quality SOUL.md + MEMORY.md configuration, without writing a single line of code.</p>
+
+      <hr>
+
+      <h2>V. How to Use Harness for a Custom OpenClaw</h2>
+
+      <h3>Option 1: Integrate OpenHarness</h3>
+      <p><a href="https://github.com/HKUDS/OpenHarness" target="_blank">OpenHarness</a> is a lightweight Agent Harness framework open-sourced by HKU (12.2K+ Stars), implementing 80% of Claude Code's core architecture in 11,000 lines of Python.</p>
+      <pre><code># 1. Install OpenHarness
+pip install openharness-ai
+
+# 2. Configure model provider
+oh setup
+# Provider: anthropic &rarr; Claude series
+# Provider: openai &rarr; GPT-4
+# Provider: deepseek &rarr; DeepSeek
+# Provider: ollama &rarr; Local open-source models
+
+# 3. Create project CLAUDE.md
+cat &gt; CLAUDE.md &lt;&lt; 'EOF'
+## Project: OpenClaw Custom Agent
+## Architecture
+- src/core/ &mdash; Agent loop &amp; tool execution
+- src/tools/ &mdash; Custom tools
+- src/memory/ &mdash; Persistent memory
+
+## Rules
+- All API calls go through src/lib/gateway.ts
+- Commit messages in English
+- Tests required for new tools
+EOF
+
+# 4. Launch Harness
+oh</code></pre>
+
+      <h3>Option 2: Build Core Harness Components from Scratch</h3>
+      <pre><code># Minimal usable Harness implementation
+class AgentHarness:
+    def __init__(self, model, tools, memory_path="MEMORY.md"):
+        self.model = model
+        self.tools = tools          # Tool registry
+        self.memory = self.load_memory(memory_path)
+        self.constraints = []       # Architecture constraint rules
+        self.hooks = {"pre": [], "post": []}  # Lifecycle hooks
+
+    def run(self, task):
+        # 1. Inject context
+        context = self.build_context(task)
+
+        # 2. Agent Loop
+        while not done:
+            response = self.model.stream(messages, self.tools)
+
+            if response.has_tool_calls:
+                # Permission check &rarr; Hook &rarr; Execute &rarr; Result
+                for tool_call in response.tool_calls:
+                    if self.check_permission(tool_call):
+                        self.run_hooks("pre", tool_call)
+                        result = self.execute(tool_call)
+                        self.run_hooks("post", tool_call, result)
+                        messages.append(result)
+            else:
+                done = True
+
+        # 3. Self-verification
+        self.verify(result)
+
+        # 4. Update memory
+        self.save_memory()
+
+        return result</code></pre>
+
+      <h3>Key Practices Checklist</h3>
+      <table>
+        <tr><th>Practice</th><th>How</th></tr>
+        <tr><td>Context</td><td>Maintain a &le;60 line CLAUDE.md in project root</td></tr>
+        <tr><td>Memory</td><td>Auto-maintain MEMORY.md, recording preferences, known issues, architecture decisions</td></tr>
+        <tr><td>Tools</td><td>Prefer standard CLIs (git, npm) &mdash; agents are naturally familiar with them</td></tr>
+        <tr><td>Permissions</td><td>Path whitelist + block dangerous commands (rm -rf, git push --force)</td></tr>
+        <tr><td>Verification</td><td>Auto-run lint + test after every code change</td></tr>
+        <tr><td>Splitting</td><td>Use sub-Agents for complex tasks, each in an independent session</td></tr>
+        <tr><td>Progress</td><td>Structured task list + frequent commits</td></tr>
+      </table>
+
+      <hr>
+
+      <h2>VI. Harness vs. Prompt Engineering</h2>
+      <table>
+        <tr><th></th><th>Prompt Engineering</th><th>Harness Engineering</th></tr>
+        <tr><td><strong>Focus</strong></td><td>What to say to the model</td><td>What to build around the model</td></tr>
+        <tr><td><strong>Durability</strong></td><td>Fragile, model-dependent</td><td>Robust, model-agnostic</td></tr>
+        <tr><td><strong>Compound Effect</strong></td><td>Does not improve over time</td><td>Stronger with each iteration</td></tr>
+        <tr><td><strong>Scope</strong></td><td>Single interaction</td><td>Entire workflow</td></tr>
+        <tr><td><strong>Skill Type</strong></td><td>Writing</td><td>Systems engineering</td></tr>
+      </table>
+
+      <hr>
+
+      <h2>VII. Conclusion</h2>
+      <p>The AI competition in 2026 has shifted from "whose model is stronger" to "whose Harness is better." Mitchell Hashimoto's insight changed everything:</p>
+      <blockquote><em>"The model is the engine; the harness is the car. No one wins a race with just an engine."</em></blockquote>
+      <p>For WorkBuddy users: you're already using a Harness today &mdash; by optimizing SOUL.md, MEMORY.md, and Skills, you can continuously improve its capabilities.</p>
+      <p>For OpenClaw custom builders: OpenHarness provides a proven starting point. There's only one core principle: <strong>every time the Agent makes a mistake, invest time in designing an engineering solution so it won't make the same mistake again.</strong></p>
+      <p>That's Harness Engineering &mdash; the engineering art of taking AI from "works" to "reliable."</p>
+
+      <div class="article-footer">
+        <p>References: Mitchell Hashimoto (Feb 2026), Y Build Harness Guide, LangChain Terminal Bench 2.0, OpenHarness (HKUDS), OpenAI Codex Team Report, Anthropic Dual-Agent Architecture, Stripe Minions System</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
