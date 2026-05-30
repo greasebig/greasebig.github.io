@@ -2286,6 +2286,9 @@
 
         if (wrap) wrap.classList.add('revealed');
 
+        // Immediately activate scroll-reveal for sections already in viewport
+        activateReveals();
+
         // 6. 动画结束后移除 overlay DOM
 
         setTimeout(function() {
@@ -2475,23 +2478,45 @@
 
     var reveals = document.querySelectorAll('.reveal');
 
-    var observer = new IntersectionObserver(function(entries) {
+    var revealObserver = null;
 
-      entries.forEach(function(e) {
+    function activateReveals() {
 
-        if (e.isIntersecting) {
-
-          e.target.classList.add('visible');
-
-          observer.unobserve(e.target);
-
+      // Make visible any reveal elements already in viewport
+      reveals.forEach(function(el) {
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('visible');
         }
-
       });
 
-    }, { threshold: 0.1 });
+      // Set up observer for elements not yet in viewport
+      if (!revealObserver) {
+        revealObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('visible');
+              revealObserver.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.05 });
 
-    reveals.forEach(function(el) { observer.observe(el); });
+        reveals.forEach(function(el) {
+          if (!el.classList.contains('visible')) {
+            revealObserver.observe(el);
+          }
+        });
+      }
+
+    }
+
+    // Fallback: if gate animation somehow doesn't fire, activate after 4s
+    setTimeout(activateReveals, 4000);
+
+    // For reduced-motion users, activate immediately (no gate animation)
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      activateReveals();
+    }
 
     // ========== Back to top ==========
 
