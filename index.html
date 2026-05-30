@@ -1572,38 +1572,6 @@
 
     }
 
-    .article-card .read-more {
-
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 5px;
-
-      margin-top: 10px;
-
-      font-size: 13px;
-
-      font-weight: 600;
-
-      color: var(--accent);
-
-      transition: gap 0.25s ease;
-
-    }
-
-    .article-card:hover .read-more {
-
-      gap: 10px;
-
-    }
-
-    .article-card .read-more svg {
-
-      width: 14px; height: 14px;
-
-    }
-
     /* links section */
 
     .link-list {
@@ -1949,10 +1917,6 @@
         </div>
         <h3>Claw Runtime 与 Agent 生态 2026：从概念到落地</h3>
         <p class="article-desc">全面解析 OpenClaw 病毒式爆发、Agent Harness 工程化实践、MCP/A2A/ACP 三大协议生态，以及 AI Agent 与 Agentic AI 的概念澄清与技术演进路线图。</p>
-        <span class="read-more">
-          Read Article
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </span>
       </a>
 
       <a class="article-card pinned" href="./articles/harness-engineering.html" target="_blank">
@@ -1969,14 +1933,6 @@
 
         <p class="article-desc">从 Mitchell Hashimoto 的定义出发，深入探讨 Agent = Model + Harness 范式。分析 WorkBuddy 如何作为一套完整的 Harness 运行，以及自建 OpenClaw 如何集成 OpenHarness 构建可靠的 AI 编码 Agent。</p>
 
-        <span class="read-more">
-
-          Read Article
-
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-
-        </span>
-
       </a>
 
       <a class="article-card pinned" href="./articles/harness-poc.html" target="_blank">
@@ -1992,14 +1948,6 @@
         <h3>Building a Harness from Scratch: ~300 Lines of Python</h3>
 
         <p class="article-desc">动手实现了一个最小可用的 Agent Harness。多 provider 支持、Agent Loop、AGENTS.md 上下文注入、MEMORY.md 跨会话记忆、权限边界、生命周期钩子。附完整源码和三个示例。</p>
-
-        <span class="read-more">
-
-          Read Article
-
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-
-        </span>
 
       </a>
 
@@ -2448,8 +2396,6 @@
             '<p class="article-desc">' + summary + '</p>' +
 
             '<p class="article-source">Source: ' + source + ' · Reposted with attribution. ' + discussion + '</p>' +
-
-            '<span class="read-more">Read Original <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>' +
 
           '</a>';
 
