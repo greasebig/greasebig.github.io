@@ -1500,16 +1500,6 @@
 
     }
 
-    .article-source {
-
-      color: var(--muted);
-
-      font-size: 12px;
-
-      margin-top: 8px;
-
-    }
-
     .article-feed-heading {
 
       display: flex;
@@ -2389,13 +2379,11 @@
 
           return '<a class="article-card repost" href="' + url + '" target="_blank" rel="noopener">' +
 
-            '<div class="article-meta"><span class="article-tag">转载 · Fresh Tech</span><span>' + date + '</span></div>' +
+            '<div class="article-meta"><span class="article-tag">转载 · Fresh Tech</span><span>' + source + '</span><span>' + date + '</span></div>' +
 
             '<h3>' + title + '</h3>' +
 
             '<p class="article-desc">' + summary + '</p>' +
-
-            '<p class="article-source">Source: ' + source + ' · Reposted with attribution. ' + discussion + '</p>' +
 
           '</a>';
 
