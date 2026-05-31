@@ -1,5 +1,75 @@
 [
   {
+    "title": "WH proposes rules giving political appointees final approval on research grants",
+    "url": "https://www.scientificamerican.com/article/white-house-proposes-new-rules-giving-political-appointees-final-say-on-research-grants/",
+    "source": "scientificamerican.com",
+    "date": "2026-05-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from scientificamerican.com. Hacker News score 225, 519 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48331511",
+    "fetched_at": "2026-05-31T05:48:49Z"
+  },
+  {
+    "title": "Microcode inside the Intel 8087 floating-point chip: register exchange",
+    "url": "https://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
+    "source": "righto.com",
+    "date": "2026-05-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from righto.com. Hacker News score 101, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48338656",
+    "fetched_at": "2026-05-31T05:48:48Z"
+  },
+  {
+    "title": "Rotary GPU: Exploring Local Execution for Large MoE Models Under Limited VRAM",
+    "url": "https://arxiv.org/abs/2605.29135",
+    "source": "arxiv.org",
+    "date": "2026-05-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 34, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48340616",
+    "fetched_at": "2026-05-31T05:48:48Z"
+  },
+  {
+    "title": "AI job grief: A psychological crisis hitting tech workers",
+    "url": "https://jackmaguire.org/blog/ai-job-grief/",
+    "source": "jackmaguire.org",
+    "date": "2026-05-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from jackmaguire.org. Hacker News score 137, 130 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48336760",
+    "fetched_at": "2026-05-31T05:48:48Z"
+  },
+  {
+    "title": "The AV2 Video Standard Has Released (Final v1.0 Specification)",
+    "url": "https://av2.aomedia.org",
+    "source": "av2.aomedia.org",
+    "date": "2026-05-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from av2.aomedia.org. Hacker News score 106, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48340910",
+    "fetched_at": "2026-05-31T05:48:47Z"
+  },
+  {
+    "title": "wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack",
+    "url": "https://github.com/wolfSSL/wolfCOSE",
+    "source": "github.com",
+    "date": "2026-05-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 79, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48340422",
+    "fetched_at": "2026-05-31T05:48:47Z"
+  },
+  {
+    "title": "Openrsync: An implementation of rsync, by the OpenBSD team",
+    "url": "https://github.com/kristapsdz/openrsync",
+    "source": "github.com",
+    "date": "2026-05-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 354, 148 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48334854",
+    "fetched_at": "2026-05-31T05:48:47Z"
+  },
+  {
     "title": "SQLite Turns 25: What We Can Learn from the World's Most Deployed Database",
     "url": "https://sqlite.org/mostdeployed.html",
     "source": "sqlite.org",
@@ -7,6 +77,16 @@
     "repost": true,
     "summary": "转载 / Curated repost from sqlite.org. A retrospective on SQLite's 25-year journey and the engineering decisions that made it the most widely deployed database engine in history.",
     "fetched_at": "2026-05-30T14:00:00Z"
+  },
+  {
+    "title": "I found a seashell in the middle of the desert",
+    "url": "https://github.com/Hawzen/I-found-a-seashell-in-the-middle-of-the-desert",
+    "source": "github.com",
+    "date": "2026-05-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 277, 72 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48318402",
+    "fetched_at": "2026-05-31T05:48:47Z"
   },
   {
     "title": "HeidiSQL – Lightweight MariaDB, MySQL, SQL Server, PostgreSQL and SQLite Manager",
@@ -67,6 +147,26 @@
     "summary": "转载 / Curated repost from vickiboykis.com. Hacker News score 56, 53 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48322118",
     "fetched_at": "2026-05-29T13:42:28Z"
+  },
+  {
+    "title": "Tsplat – Run Gaussian splatting in your terminal",
+    "url": "https://github.com/darshanmakwana412/tsplat",
+    "source": "github.com",
+    "date": "2026-05-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 32, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48307851",
+    "fetched_at": "2026-05-31T05:48:49Z"
+  },
+  {
+    "title": "Show HN: Open Envelope – an open schema for defining AI agent teams",
+    "url": "https://openenvelope.org/docs/schema/",
+    "source": "openenvelope.org",
+    "date": "2026-05-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from openenvelope.org. Hacker News score 40, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48315016",
+    "fetched_at": "2026-05-31T05:48:48Z"
   },
   {
     "title": "GitHub bans security researcher who posted zero-day Windows exploits",
