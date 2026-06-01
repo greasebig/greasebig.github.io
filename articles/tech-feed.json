@@ -1,5 +1,65 @@
 [
   {
+    "title": "Karpathy LLM Wiki pattern integrated into Obsidian agenic workflow",
+    "url": "https://github.com/pssah4/vault-operator",
+    "source": "github.com",
+    "date": "2026-06-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 13, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48351115",
+    "fetched_at": "2026-06-01T06:21:44Z"
+  },
+  {
+    "title": "Odysseus – self-hosted AI workspace",
+    "url": "https://github.com/pewdiepie-archdaemon/odysseus",
+    "source": "github.com",
+    "date": "2026-05-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 154, 74 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48346693",
+    "fetched_at": "2026-06-01T06:21:43Z"
+  },
+  {
+    "title": "Show HN: Streambed – Stream Postgres to Iceberg on S3, Supports Postgres Wire",
+    "url": "https://github.com/viggy28/streambed",
+    "source": "github.com",
+    "date": "2026-05-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 89, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48348429",
+    "fetched_at": "2026-06-01T06:21:42Z"
+  },
+  {
+    "title": "Codex just found a \"workaround\" of not having sudo on my PC",
+    "url": "https://twitter.com/i/status/2060746160558543217",
+    "source": "twitter.com",
+    "date": "2026-05-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 481, 229 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48348578",
+    "fetched_at": "2026-06-01T06:21:41Z"
+  },
+  {
+    "title": "The Speed of Prototyping in the Age of AI",
+    "url": "https://darylcecile.net/notes/speed-of-prototyping-age-of-ai",
+    "source": "darylcecile.net",
+    "date": "2026-05-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from darylcecile.net. Hacker News score 141, 71 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48347153",
+    "fetched_at": "2026-06-01T06:21:40Z"
+  },
+  {
+    "title": "ChatGPT for Google Sheets exfiltrates workbooks",
+    "url": "https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration",
+    "source": "promptarmor.com",
+    "date": "2026-05-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from promptarmor.com. Hacker News score 165, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48349487",
+    "fetched_at": "2026-06-01T06:21:39Z"
+  },
+  {
     "title": "WH proposes rules giving political appointees final approval on research grants",
     "url": "https://www.scientificamerican.com/article/white-house-proposes-new-rules-giving-political-appointees-final-say-on-research-grants/",
     "source": "scientificamerican.com",
@@ -79,6 +139,36 @@
     "fetched_at": "2026-05-30T14:00:00Z"
   },
   {
+    "title": "Security Envelope Pattern collection – S.E.C.R.E.T",
+    "url": "https://secret-archive.org/",
+    "source": "secret-archive.org",
+    "date": "2026-05-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from secret-archive.org. Hacker News score 91, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48321089",
+    "fetched_at": "2026-06-01T06:21:43Z"
+  },
+  {
+    "title": "Finding success in industry as a chip designer",
+    "url": "https://spectrum.ieee.org/chip-design-academic-vs-industry",
+    "source": "spectrum.ieee.org",
+    "date": "2026-05-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 17, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48322134",
+    "fetched_at": "2026-06-01T06:21:40Z"
+  },
+  {
+    "title": "What if remote working, not AI, is to blame for weak junior hiring?",
+    "url": "https://www.ft.com/content/2205e2d0-50dc-4e80-9bf7-78d0272276c0",
+    "source": "ft.com",
+    "date": "2026-05-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from ft.com. Hacker News score 140, 190 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48326721",
+    "fetched_at": "2026-06-01T06:21:40Z"
+  },
+  {
     "title": "I found a seashell in the middle of the desert",
     "url": "https://github.com/Hawzen/I-found-a-seashell-in-the-middle-of-the-desert",
     "source": "github.com",
@@ -149,6 +239,16 @@
     "fetched_at": "2026-05-29T13:42:28Z"
   },
   {
+    "title": "The four programming questions from my 1994 Microsoft internship interview (2023)",
+    "url": "https://www.computerenhance.com/p/the-four-programming-questions-from",
+    "source": "computerenhance.com",
+    "date": "2026-05-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from computerenhance.com. Hacker News score 114, 44 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48306225",
+    "fetched_at": "2026-06-01T06:21:40Z"
+  },
+  {
     "title": "Tsplat – Run Gaussian splatting in your terminal",
     "url": "https://github.com/darshanmakwana412/tsplat",
     "source": "github.com",
@@ -197,15 +297,5 @@
     "summary": "转载 / Curated repost from anthropic.com. Hacker News score 1633, 1267 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48311647",
     "fetched_at": "2026-05-29T13:42:26Z"
-  },
-  {
-    "title": "Orchestrating AI code review at scale",
-    "url": "https://blog.cloudflare.com/ai-code-review/",
-    "source": "blog.cloudflare.com",
-    "date": "2026-05-26",
-    "repost": true,
-    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 50, 19 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48276152",
-    "fetched_at": "2026-05-29T13:42:33Z"
   }
 ]
