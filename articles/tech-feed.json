@@ -1,5 +1,85 @@
 [
   {
+    "title": "Anthropic confidentially submits draft S-1 to the SEC",
+    "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+    "source": "anthropic.com",
+    "date": "2026-06-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 473, 385 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48358646",
+    "fetched_at": "2026-06-02T06:06:50Z"
+  },
+  {
+    "title": "Florida sues OpenAI and Sam Altman over AI risks",
+    "url": "https://www.politico.com/news/2026/06/01/openai-hit-with-florida-lawsuit-00944215",
+    "source": "politico.com",
+    "date": "2026-06-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from politico.com. Hacker News score 202, 168 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48358667",
+    "fetched_at": "2026-06-02T06:06:49Z"
+  },
+  {
+    "title": "Flipper Zero Zig Template",
+    "url": "https://github.com/NishantJoshi00/flipper-template",
+    "source": "github.com",
+    "date": "2026-06-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 136, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48356490",
+    "fetched_at": "2026-06-02T06:06:49Z"
+  },
+  {
+    "title": "Alphabet announces $80B equity capital raise to expand AI infra and compute",
+    "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Proposed-80-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure-and-Compute-2026-b0myAMewCa/default.aspx",
+    "source": "abc.xyz",
+    "date": "2026-06-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from abc.xyz. Hacker News score 154, 141 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48362515",
+    "fetched_at": "2026-06-02T06:06:48Z"
+  },
+  {
+    "title": "Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",
+    "url": "https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai",
+    "source": "economist.com",
+    "date": "2026-06-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from economist.com. Hacker News score 232, 443 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48364055",
+    "fetched_at": "2026-06-02T06:06:47Z"
+  },
+  {
+    "title": "OpenAI frontier models and Codex are now available on AWS",
+    "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
+    "source": "openai.com",
+    "date": "2026-06-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 216, 73 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48363132",
+    "fetched_at": "2026-06-02T06:06:47Z"
+  },
+  {
+    "title": "Chipotlai Max",
+    "url": "https://github.com/cyberpapiii/chipotlai-max",
+    "source": "github.com",
+    "date": "2026-06-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 154, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48363765",
+    "fetched_at": "2026-06-02T06:06:47Z"
+  },
+  {
+    "title": "AI Agent Guidelines for CS336 at Stanford",
+    "url": "https://github.com/stanford-cs336/assignment1-basics/blob/main/CLAUDE.md",
+    "source": "github.com",
+    "date": "2026-06-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 375, 124 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48359232",
+    "fetched_at": "2026-06-02T06:06:47Z"
+  },
+  {
     "title": "Karpathy LLM Wiki pattern integrated into Obsidian agenic workflow",
     "url": "https://github.com/pssah4/vault-operator",
     "source": "github.com",
@@ -58,6 +138,26 @@
     "summary": "转载 / Curated repost from promptarmor.com. Hacker News score 165, 49 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48349487",
     "fetched_at": "2026-06-01T06:21:39Z"
+  },
+  {
+    "title": "Show HN: AI Simulaionen Based on FEP",
+    "url": "https://aic-ai-lab.site/login",
+    "source": "aic-ai-lab.site",
+    "date": "2026-05-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from aic-ai-lab.site. Hacker News score 4, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48339824",
+    "fetched_at": "2026-06-02T06:06:49Z"
+  },
+  {
+    "title": "A new way to build chips: Sequentially stacking silicon to extend Moore's Law",
+    "url": "https://matse.illinois.edu/news/85775",
+    "source": "matse.illinois.edu",
+    "date": "2026-05-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from matse.illinois.edu. Hacker News score 37, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48341285",
+    "fetched_at": "2026-06-02T06:06:48Z"
   },
   {
     "title": "WH proposes rules giving political appointees final approval on research grants",
@@ -197,105 +297,5 @@
     "summary": "转载 / Curated repost from github.com. Hacker News score 265, 137 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48319509",
     "fetched_at": "2026-05-29T13:42:37Z"
-  },
-  {
-    "title": "Is AI causing a repeat of Front end's Lost Decade?",
-    "url": "https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/",
-    "source": "mastrojs.github.io",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from mastrojs.github.io. Hacker News score 117, 115 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48321631",
-    "fetched_at": "2026-05-29T13:42:34Z"
-  },
-  {
-    "title": "Claude Code – Everything You Can Configure That the Docs Don't Tell You",
-    "url": "https://buildingbetter.tech/p/i-read-the-claude-code-source-code",
-    "source": "buildingbetter.tech",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from buildingbetter.tech. Hacker News score 209, 45 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48318174",
-    "fetched_at": "2026-05-29T13:42:30Z"
-  },
-  {
-    "title": "Real-time LLM Inference on Standard GPUs: 3k tokens/s per request",
-    "url": "https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/",
-    "source": "blog.kog.ai",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from blog.kog.ai. Hacker News score 77, 40 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48321076",
-    "fetched_at": "2026-05-29T13:42:29Z"
-  },
-  {
-    "title": "We should be more tired than the model",
-    "url": "https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/",
-    "source": "vickiboykis.com",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from vickiboykis.com. Hacker News score 56, 53 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48322118",
-    "fetched_at": "2026-05-29T13:42:28Z"
-  },
-  {
-    "title": "The four programming questions from my 1994 Microsoft internship interview (2023)",
-    "url": "https://www.computerenhance.com/p/the-four-programming-questions-from",
-    "source": "computerenhance.com",
-    "date": "2026-05-28",
-    "repost": true,
-    "summary": "转载 / Curated repost from computerenhance.com. Hacker News score 114, 44 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48306225",
-    "fetched_at": "2026-06-01T06:21:40Z"
-  },
-  {
-    "title": "Tsplat – Run Gaussian splatting in your terminal",
-    "url": "https://github.com/darshanmakwana412/tsplat",
-    "source": "github.com",
-    "date": "2026-05-28",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 32, 8 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48307851",
-    "fetched_at": "2026-05-31T05:48:49Z"
-  },
-  {
-    "title": "Show HN: Open Envelope – an open schema for defining AI agent teams",
-    "url": "https://openenvelope.org/docs/schema/",
-    "source": "openenvelope.org",
-    "date": "2026-05-28",
-    "repost": true,
-    "summary": "转载 / Curated repost from openenvelope.org. Hacker News score 40, 4 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48315016",
-    "fetched_at": "2026-05-31T05:48:48Z"
-  },
-  {
-    "title": "GitHub bans security researcher who posted zero-day Windows exploits",
-    "url": "https://www.tomshardware.com/tech-industry/cyber-security/microsofts-github-bans-security-researcher-who-posted-zero-day-windows-exploits-because-company-ruined-their-life-expert-claims-action-is-vindictive-and-promises-further-retaliation",
-    "source": "tomshardware.com",
-    "date": "2026-05-28",
-    "repost": true,
-    "summary": "转载 / Curated repost from tomshardware.com. Hacker News score 473, 226 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48315968",
-    "fetched_at": "2026-05-29T13:42:50Z"
-  },
-  {
-    "title": "Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue",
-    "url": "https://llmgame.scalex.dev",
-    "source": "llmgame.scalex.dev",
-    "date": "2026-05-28",
-    "repost": true,
-    "summary": "转载 / Curated repost from llmgame.scalex.dev. Hacker News score 350, 142 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48308376",
-    "fetched_at": "2026-05-29T13:42:45Z"
-  },
-  {
-    "title": "Claude Opus 4.8",
-    "url": "https://www.anthropic.com/news/claude-opus-4-8",
-    "source": "anthropic.com",
-    "date": "2026-05-28",
-    "repost": true,
-    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 1633, 1267 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48311647",
-    "fetched_at": "2026-05-29T13:42:26Z"
   }
 ]
