@@ -1,5 +1,75 @@
 [
   {
+    "title": "U of T researchers demonstrate AI worm could target any online device",
+    "url": "https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device",
+    "source": "utoronto.ca",
+    "date": "2026-06-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from utoronto.ca. Hacker News score 9, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48379664",
+    "fetched_at": "2026-06-03T06:20:07Z"
+  },
+  {
+    "title": "The advertising cartel coming to your web browser",
+    "url": "https://blog.zgp.org/the-advertising-cartel-coming-to-your-web-browser/",
+    "source": "blog.zgp.org",
+    "date": "2026-06-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.zgp.org. Hacker News score 188, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48375175",
+    "fetched_at": "2026-06-03T06:20:09Z"
+  },
+  {
+    "title": "Trump signs downsized AI order after weeks of reversals",
+    "url": "https://www.politico.com/news/2026/06/02/trump-signs-downsized-ai-order-00946389",
+    "source": "politico.com",
+    "date": "2026-06-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from politico.com. Hacker News score 200, 147 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48372628",
+    "fetched_at": "2026-06-03T06:20:08Z"
+  },
+  {
+    "title": "Show HN: Paseo – Beautiful open-source coding agent interface",
+    "url": "https://github.com/getpaseo/paseo",
+    "source": "github.com",
+    "date": "2026-06-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 55, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48377250",
+    "fetched_at": "2026-06-03T06:20:08Z"
+  },
+  {
+    "title": "AI outperforms law professors in Stanford Law study",
+    "url": "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/",
+    "source": "law.stanford.edu",
+    "date": "2026-06-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from law.stanford.edu. Hacker News score 178, 144 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48377761",
+    "fetched_at": "2026-06-03T06:20:06Z"
+  },
+  {
+    "title": "1-Click GitHub Token Stealing via a VSCode Bug",
+    "url": "https://blog.ammaraskar.com/github-token-stealing/",
+    "source": "blog.ammaraskar.com",
+    "date": "2026-06-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.ammaraskar.com. Hacker News score 245, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48371562",
+    "fetched_at": "2026-06-03T06:20:05Z"
+  },
+  {
+    "title": "Use your Nvidia GPU's VRAM as swap space on Linux",
+    "url": "https://github.com/c0dejedi/nbd-vram",
+    "source": "github.com",
+    "date": "2026-06-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 235, 65 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48377404",
+    "fetched_at": "2026-06-03T06:20:05Z"
+  },
+  {
     "title": "Anthropic confidentially submits draft S-1 to the SEC",
     "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
     "source": "anthropic.com",
@@ -88,6 +158,36 @@
     "summary": "转载 / Curated repost from github.com. Hacker News score 13, 5 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48351115",
     "fetched_at": "2026-06-01T06:21:44Z"
+  },
+  {
+    "title": "Muxcard, a DIY credit card size computer",
+    "url": "https://github.com/krauseler/muxcard",
+    "source": "github.com",
+    "date": "2026-05-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 244, 84 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48342399",
+    "fetched_at": "2026-06-03T06:20:10Z"
+  },
+  {
+    "title": "Loading Sega Games Off a Vinyl Record [video]",
+    "url": "https://www.youtube.com/watch?v=c744iD0_fWU",
+    "source": "youtube.com",
+    "date": "2026-05-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 30, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48346766",
+    "fetched_at": "2026-06-03T06:20:08Z"
+  },
+  {
+    "title": "Show HN: I reverse-engineered the world maps of Test Drive III (1990 DOS game)",
+    "url": "https://github.com/s-macke/Test-Drive-3-Maps",
+    "source": "github.com",
+    "date": "2026-05-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 19, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48344327",
+    "fetched_at": "2026-06-03T06:20:05Z"
   },
   {
     "title": "Odysseus – self-hosted AI workspace",
@@ -198,104 +298,5 @@
     "summary": "转载 / Curated repost from jackmaguire.org. Hacker News score 137, 130 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48336760",
     "fetched_at": "2026-05-31T05:48:48Z"
-  },
-  {
-    "title": "The AV2 Video Standard Has Released (Final v1.0 Specification)",
-    "url": "https://av2.aomedia.org",
-    "source": "av2.aomedia.org",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from av2.aomedia.org. Hacker News score 106, 19 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48340910",
-    "fetched_at": "2026-05-31T05:48:47Z"
-  },
-  {
-    "title": "wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack",
-    "url": "https://github.com/wolfSSL/wolfCOSE",
-    "source": "github.com",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 79, 14 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48340422",
-    "fetched_at": "2026-05-31T05:48:47Z"
-  },
-  {
-    "title": "Openrsync: An implementation of rsync, by the OpenBSD team",
-    "url": "https://github.com/kristapsdz/openrsync",
-    "source": "github.com",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 354, 148 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48334854",
-    "fetched_at": "2026-05-31T05:48:47Z"
-  },
-  {
-    "title": "SQLite Turns 25: What We Can Learn from the World's Most Deployed Database",
-    "url": "https://sqlite.org/mostdeployed.html",
-    "source": "sqlite.org",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from sqlite.org. A retrospective on SQLite's 25-year journey and the engineering decisions that made it the most widely deployed database engine in history.",
-    "fetched_at": "2026-05-30T14:00:00Z"
-  },
-  {
-    "title": "Security Envelope Pattern collection – S.E.C.R.E.T",
-    "url": "https://secret-archive.org/",
-    "source": "secret-archive.org",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from secret-archive.org. Hacker News score 91, 9 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48321089",
-    "fetched_at": "2026-06-01T06:21:43Z"
-  },
-  {
-    "title": "Finding success in industry as a chip designer",
-    "url": "https://spectrum.ieee.org/chip-design-academic-vs-industry",
-    "source": "spectrum.ieee.org",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 17, 2 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48322134",
-    "fetched_at": "2026-06-01T06:21:40Z"
-  },
-  {
-    "title": "What if remote working, not AI, is to blame for weak junior hiring?",
-    "url": "https://www.ft.com/content/2205e2d0-50dc-4e80-9bf7-78d0272276c0",
-    "source": "ft.com",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from ft.com. Hacker News score 140, 190 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48326721",
-    "fetched_at": "2026-06-01T06:21:40Z"
-  },
-  {
-    "title": "I found a seashell in the middle of the desert",
-    "url": "https://github.com/Hawzen/I-found-a-seashell-in-the-middle-of-the-desert",
-    "source": "github.com",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 277, 72 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48318402",
-    "fetched_at": "2026-05-31T05:48:47Z"
-  },
-  {
-    "title": "HeidiSQL – Lightweight MariaDB, MySQL, SQL Server, PostgreSQL and SQLite Manager",
-    "url": "https://github.com/HeidiSQL/HeidiSQL",
-    "source": "github.com",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 64, 17 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48318568",
-    "fetched_at": "2026-05-29T13:42:41Z"
-  },
-  {
-    "title": "Volkswagen blocks Home Assistant by requiring client assertion",
-    "url": "https://github.com/robinostlund/homeassistant-volkswagencarnet/issues/967",
-    "source": "github.com",
-    "date": "2026-05-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 265, 137 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48319509",
-    "fetched_at": "2026-05-29T13:42:37Z"
   }
 ]
