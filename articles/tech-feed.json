@@ -1,5 +1,95 @@
 [
   {
+    "title": "The ways we contain Claude across products",
+    "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+    "source": "anthropic.com",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 92, 42 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48392082",
+    "fetched_at": "2026-06-04T06:11:52Z"
+  },
+  {
+    "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+    "url": "https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/article_16fad0bf-02cb-4b8c-8d88-888ffd9f8608.html",
+    "source": "dailycal.org",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from dailycal.org. Hacker News score 154, 85 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48392004",
+    "fetched_at": "2026-06-04T06:11:51Z"
+  },
+  {
+    "title": "Mathematicians issue warning as AI rapidly gains ground",
+    "url": "https://www.science.org/content/article/mathematicians-issue-warning-ai-rapidly-gains-ground",
+    "source": "science.org",
+    "date": "2026-06-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from science.org. Hacker News score 210, 252 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48382052",
+    "fetched_at": "2026-06-04T06:11:55Z"
+  },
+  {
+    "title": "Self-hosted dev sandboxes with preview URLs (Docker, Go, no K8s)",
+    "url": "https://github.com/tastyeffectco/sandboxes",
+    "source": "github.com",
+    "date": "2026-06-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 74, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48388909",
+    "fetched_at": "2026-06-04T06:11:55Z"
+  },
+  {
+    "title": "Gooey: A GPU-accelerated UI framework for Zig",
+    "url": "https://github.com/duanebester/gooey",
+    "source": "github.com",
+    "date": "2026-06-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 156, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48386725",
+    "fetched_at": "2026-06-04T06:11:54Z"
+  },
+  {
+    "title": "Journey to JPEG XL: open-source experiments shaped the future of image coding",
+    "url": "https://opensource.googleblog.com/2026/06/journey-to-jpeg-xl-how-open-source-experiments-shaped-the-future-of-image-coding.html",
+    "source": "opensource.googleblog.com",
+    "date": "2026-06-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from opensource.googleblog.com. Hacker News score 61, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48390688",
+    "fetched_at": "2026-06-04T06:11:54Z"
+  },
+  {
+    "title": "Artificial intelligence is not conscious – Ted Chiang",
+    "url": "https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/",
+    "source": "theatlantic.com",
+    "date": "2026-06-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from theatlantic.com. Hacker News score 349, 605 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48387270",
+    "fetched_at": "2026-06-04T06:11:52Z"
+  },
+  {
+    "title": "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
+    "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+    "source": "simonwillison.net",
+    "date": "2026-06-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from simonwillison.net. Hacker News score 434, 543 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48383056",
+    "fetched_at": "2026-06-04T06:11:52Z"
+  },
+  {
+    "title": "Gemma 4 12B: A unified, encoder-free multimodal model",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
+    "source": "blog.google",
+    "date": "2026-06-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.google. Hacker News score 781, 314 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48385906",
+    "fetched_at": "2026-06-04T06:11:51Z"
+  },
+  {
     "title": "U of T researchers demonstrate AI worm could target any online device",
     "url": "https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device",
     "source": "utoronto.ca",
@@ -160,6 +250,16 @@
     "fetched_at": "2026-06-01T06:21:44Z"
   },
   {
+    "title": "CP/M-86 & MS-DOS Cross Development Environment",
+    "url": "https://github.com/tsupplis/cpm86-crossdev",
+    "source": "github.com",
+    "date": "2026-05-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 22, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48348040",
+    "fetched_at": "2026-06-04T06:11:53Z"
+  },
+  {
     "title": "Muxcard, a DIY credit card size computer",
     "url": "https://github.com/krauseler/muxcard",
     "source": "github.com",
@@ -198,105 +298,5 @@
     "summary": "转载 / Curated repost from github.com. Hacker News score 154, 74 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48346693",
     "fetched_at": "2026-06-01T06:21:43Z"
-  },
-  {
-    "title": "Show HN: Streambed – Stream Postgres to Iceberg on S3, Supports Postgres Wire",
-    "url": "https://github.com/viggy28/streambed",
-    "source": "github.com",
-    "date": "2026-05-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 89, 19 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48348429",
-    "fetched_at": "2026-06-01T06:21:42Z"
-  },
-  {
-    "title": "Codex just found a \"workaround\" of not having sudo on my PC",
-    "url": "https://twitter.com/i/status/2060746160558543217",
-    "source": "twitter.com",
-    "date": "2026-05-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from twitter.com. Hacker News score 481, 229 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48348578",
-    "fetched_at": "2026-06-01T06:21:41Z"
-  },
-  {
-    "title": "The Speed of Prototyping in the Age of AI",
-    "url": "https://darylcecile.net/notes/speed-of-prototyping-age-of-ai",
-    "source": "darylcecile.net",
-    "date": "2026-05-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from darylcecile.net. Hacker News score 141, 71 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48347153",
-    "fetched_at": "2026-06-01T06:21:40Z"
-  },
-  {
-    "title": "ChatGPT for Google Sheets exfiltrates workbooks",
-    "url": "https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration",
-    "source": "promptarmor.com",
-    "date": "2026-05-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from promptarmor.com. Hacker News score 165, 49 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48349487",
-    "fetched_at": "2026-06-01T06:21:39Z"
-  },
-  {
-    "title": "Show HN: AI Simulaionen Based on FEP",
-    "url": "https://aic-ai-lab.site/login",
-    "source": "aic-ai-lab.site",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from aic-ai-lab.site. Hacker News score 4, 1 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48339824",
-    "fetched_at": "2026-06-02T06:06:49Z"
-  },
-  {
-    "title": "A new way to build chips: Sequentially stacking silicon to extend Moore's Law",
-    "url": "https://matse.illinois.edu/news/85775",
-    "source": "matse.illinois.edu",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from matse.illinois.edu. Hacker News score 37, 15 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48341285",
-    "fetched_at": "2026-06-02T06:06:48Z"
-  },
-  {
-    "title": "WH proposes rules giving political appointees final approval on research grants",
-    "url": "https://www.scientificamerican.com/article/white-house-proposes-new-rules-giving-political-appointees-final-say-on-research-grants/",
-    "source": "scientificamerican.com",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from scientificamerican.com. Hacker News score 225, 519 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48331511",
-    "fetched_at": "2026-05-31T05:48:49Z"
-  },
-  {
-    "title": "Microcode inside the Intel 8087 floating-point chip: register exchange",
-    "url": "https://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
-    "source": "righto.com",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from righto.com. Hacker News score 101, 18 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48338656",
-    "fetched_at": "2026-05-31T05:48:48Z"
-  },
-  {
-    "title": "Rotary GPU: Exploring Local Execution for Large MoE Models Under Limited VRAM",
-    "url": "https://arxiv.org/abs/2605.29135",
-    "source": "arxiv.org",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 34, 4 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48340616",
-    "fetched_at": "2026-05-31T05:48:48Z"
-  },
-  {
-    "title": "AI job grief: A psychological crisis hitting tech workers",
-    "url": "https://jackmaguire.org/blog/ai-job-grief/",
-    "source": "jackmaguire.org",
-    "date": "2026-05-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from jackmaguire.org. Hacker News score 137, 130 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48336760",
-    "fetched_at": "2026-05-31T05:48:48Z"
   }
 ]
