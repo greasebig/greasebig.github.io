@@ -353,6 +353,8 @@
       var loadingTimeout;
       var hasSwitchedTo4K = false;
 
+      video.loop = true;  // force loop on in JS (HTML attr may not survive src swap)
+
       function showLoading(text) {
         loading.textContent = text;
         loading.classList.add('visible');
@@ -363,6 +365,12 @@
           loading.classList.remove('visible');
         }, 2500);
       }
+
+      // Guarantee seamless loop — re-play if video ever reaches the end
+      video.addEventListener('ended', function() {
+        video.currentTime = 0;
+        video.play();
+      });
 
       // Step 1: wait for small video to start playing
       video.addEventListener('playing', function onFirstPlay() {
@@ -405,6 +413,7 @@
               video.style.opacity = '0';
               setTimeout(function() {
                 video.src = blobUrl;
+                video.loop = true;          // ensure loop survives src swap
                 video.currentTime = targetTime;
                 video.play().then(function() {
                   video.style.opacity = '1';
