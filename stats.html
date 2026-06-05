@@ -344,12 +344,14 @@
       String(now.getMinutes()).padStart(2,'0');
 
     // ===== Progressive Video Loading =====
+    // Strategy: 720p plays immediately, then silently download 4K in background.
+    // When 4K blob is fully downloaded and verified playable, switch once.
+    // No 1080p step — eliminates the flicker caused by two rapid switches.
     (function() {
       var video = document.getElementById('bgVideo');
       var loading = document.getElementById('videoLoading');
       var loadingTimeout;
-      var currentQuality = 'small'; // track current quality to prevent re-switching
-      var switched = { medium: false, large: false }; // ensure each quality only switches once
+      var hasSwitchedTo4K = false;
 
       function showLoading(text) {
         loading.textContent = text;
@@ -359,95 +361,80 @@
       function hideLoading() {
         loadingTimeout = setTimeout(function() {
           loading.classList.remove('visible');
-        }, 2000);
+        }, 2500);
       }
 
-      // Preload video into a hidden <video>, then switch when ready
-      function preloadAndSwitch(src, quality, label, nextFn) {
-        var hidden = document.createElement('video');
-        hidden.muted = true;
-        hidden.preload = 'auto';
-        hidden.playsInline = true;
+      // Step 1: wait for small video to start playing
+      video.addEventListener('playing', function onFirstPlay() {
+        video.style.opacity = '1';
+        video.removeEventListener('playing', onFirstPlay);
+        showLoading('720p ✓ · Loading 4K…');
+        startDownloading4K();
+      });
 
+      video.addEventListener('error', function() {
+        showLoading('Loading 4K…');
+        startDownloading4K();
+      });
+
+      function startDownloading4K() {
+        if (hasSwitchedTo4K) return;
         var req = new XMLHttpRequest();
-        req.open('GET', src, true);
+        req.open('GET', 'assets/videos/bg-large.mp4', true);
         req.responseType = 'blob';
         req.onprogress = function(e) {
           if (e.lengthComputable) {
             var pct = Math.round(e.loaded / e.total * 100);
-            showLoading('Loading ' + label + '… ' + pct + '%');
+            showLoading('Loading 4K… ' + pct + '%');
           }
         };
         req.onload = function() {
-          if (req.status === 200 && !switched[quality]) {
+          if (req.status === 200 && !hasSwitchedTo4K) {
             var blobUrl = URL.createObjectURL(req.response);
-            hidden.src = blobUrl;
-            hidden.addEventListener('canplaythrough', function onReady() {
-              hidden.removeEventListener('canplaythrough', onReady);
-              if (switched[quality]) return; // already switched
-              switched[quality] = true;
-              // Sync timestamp: place new video at the same relative position
+            // Verify the blob is actually playable before switching
+            var probe = document.createElement('video');
+            probe.muted = true;
+            probe.src = blobUrl;
+            probe.addEventListener('canplaythrough', function() {
+              if (hasSwitchedTo4K) return;
+              hasSwitchedTo4K = true;
+              // Calculate the same playback position in the 4K video
               var ratio = video.currentTime / video.duration;
-              var targetTime = ratio * hidden.duration;
-              // Brief crossfade
-              video.style.opacity = '0.3';
+              var targetTime = ratio * probe.duration;
+              // Switch: brief fade out, swap source, fade in
+              video.style.opacity = '0';
               setTimeout(function() {
                 video.src = blobUrl;
                 video.currentTime = targetTime;
                 video.play().then(function() {
                   video.style.opacity = '1';
-                  currentQuality = quality;
-                  if (nextFn) nextFn();
+                  showLoading('4K ✓');
+                  hideLoading();
                 }).catch(function() {
                   video.style.opacity = '1';
-                  currentQuality = quality;
-                  if (nextFn) nextFn();
+                  showLoading('4K ✓');
+                  hideLoading();
                 });
-              }, 200);
+              }, 300);
             }, { once: true });
-            hidden.load();
-          } else if (!switched[quality]) {
-            // Download failed, skip this quality
-            if (nextFn) nextFn();
+            probe.addEventListener('error', function() {
+              // 4K blob not playable, stay on 720p
+              showLoading('720p (4K unavailable)');
+              hideLoading();
+            }, { once: true });
+            probe.load();
+          } else if (!hasSwitchedTo4K) {
+            // Download failed, stay on 720p
+            showLoading('720p ✓');
+            hideLoading();
           }
         };
         req.onerror = function() {
-          if (nextFn) nextFn();
+          showLoading('720p ✓');
+          hideLoading();
         };
         req.send();
       }
-
-      // Phase 1: Small video already playing, wait for it
-      video.addEventListener('playing', function onFirstPlay() {
-        video.style.opacity = '1';
-        video.removeEventListener('playing', onFirstPlay);
-        showLoading('720p ✓ · Loading 1080p…');
-        // Phase 2: load medium
-        preloadAndSwitch('assets/videos/bg-medium.mp4', 'medium', '1080p', function() {
-          if (switched.medium) {
-            showLoading('1080p ✓ · Loading 4K…');
-          }
-          // Phase 3: load large
-          preloadAndSwitch('assets/videos/bg-large.mp4', 'large', '4K', function() {
-            if (switched.large) {
-              showLoading('4K ✓');
-              hideLoading();
-            } else {
-              hideLoading();
-            }
-          });
-        });
-      });
-
-      // Fallback if small video fails
-      video.addEventListener('error', function() {
-        showLoading('Loading 1080p…');
-        preloadAndSwitch('assets/videos/bg-medium.mp4', 'medium', '1080p', function() {
-          preloadAndSwitch('assets/videos/bg-large.mp4', 'large', '4K', function() {
-            hideLoading();
-          });
-        });
-      });
     })();
   </script>
 </body>
