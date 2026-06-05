@@ -70,6 +70,49 @@ def normalize_title(title: str) -> str:
     return " ".join((title or "").split())
 
 
+# --- Translation (Google Translate + MyMemory fallback) ---
+
+def translate_google(text: str) -> str | None:
+    """Translate text via Google Translate free API."""
+    try:
+        url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=" + urllib.parse.quote(text)
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            return "".join([part[0] for part in data[0]])
+    except Exception as e:
+        print(f"  Google Translate failed: {e}")
+        return None
+
+
+def translate_mymemory(text: str) -> str | None:
+    """Translate text via MyMemory free API."""
+    try:
+        params = {"q": text, "langpair": "en|zh-CN"}
+        url = "https://api.mymemory.translated.net/get?" + urllib.parse.urlencode(params)
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            if data.get("responseStatus") == 200:
+                return data.get("responseData", {}).get("translatedText")
+        return None
+    except Exception as e:
+        print(f"  MyMemory failed: {e}")
+        return None
+
+
+def translate_title(text: str) -> str:
+    """Translate English title to Chinese, with fallback chain."""
+    if not text or not text.strip():
+        return ""
+    res = translate_google(text)
+    if res:
+        return res
+    time.sleep(0.5)
+    res = translate_mymemory(text)
+    return res or ""
+
+
 def is_interesting(item: dict) -> bool:
     title = normalize_title(item.get("title", ""))
     title_lower = title.lower()
@@ -101,8 +144,13 @@ def to_feed_item(item: dict) -> dict:
     comments = int(item.get("descendants") or 0)
     published = datetime.fromtimestamp(int(item.get("time") or time.time()), timezone.utc)
     source = source_name(url)
-    return {
-        "title": normalize_title(item.get("title", "")),
+    title = normalize_title(item.get("title", ""))
+    print(f"  Translating: {title[:60]}...")
+    title_zh = translate_title(title)
+    if title_zh:
+        print(f"  -> {title_zh[:60]}")
+    result = {
+        "title": title,
         "url": url,
         "source": source,
         "date": published.strftime("%Y-%m-%d"),
@@ -111,6 +159,9 @@ def to_feed_item(item: dict) -> dict:
         "discussion_url": f"https://news.ycombinator.com/item?id={item_id}",
         "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
+    if title_zh:
+        result["title_zh"] = title_zh
+    return result
 
 
 def load_existing() -> list[dict]:
@@ -144,11 +195,23 @@ def main() -> None:
         time.sleep(0.08)
 
     existing = load_existing()
+    # Build existing lookup for title_zh preservation
+    existing_by_key: dict[str, dict] = {}
+    for item in existing:
+        key = item.get("url") or item.get("title")
+        if key:
+            existing_by_key[key] = item
+
     merged: dict[str, dict] = {}
     for item in fresh + existing:
         key = item.get("url") or item.get("title")
         if key and key not in merged:
             merged[key] = item
+
+    # Preserve title_zh from existing items if the fresh item lacks it
+    for key, item in merged.items():
+        if "title_zh" not in item and key in existing_by_key and "title_zh" in existing_by_key[key]:
+            item["title_zh"] = existing_by_key[key]["title_zh"]
 
     feed = [item for item in merged.values() if is_feed_item_tech(item)]
     feed = sorted(feed, key=lambda item: (item.get("date", ""), item.get("fetched_at", "")), reverse=True)
