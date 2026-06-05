@@ -1,5 +1,95 @@
 [
   {
+    "title": "Azure Linux 4.0 is Microsoft's first general-purpose Linux",
+    "url": "https://www.boxofcables.dev/azure-linux-4-0-is-microsofts-first-general-purpose-linux/",
+    "source": "boxofcables.dev",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from boxofcables.dev. Hacker News score 67, 42 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48407499",
+    "fetched_at": "2026-06-05T05:51:39Z"
+  },
+  {
+    "title": "Meta enables ADB on deprecated Portal devices [video]",
+    "url": "https://fb.watch/HxPu0fSyeH/",
+    "source": "fb.watch",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from fb.watch. Hacker News score 157, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48406640",
+    "fetched_at": "2026-06-05T05:51:39Z"
+  },
+  {
+    "title": "Open Code Review – An AI-powered code review CLI tool",
+    "url": "https://github.com/alibaba/open-code-review",
+    "source": "github.com",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 114, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48406358",
+    "fetched_at": "2026-06-05T05:51:39Z"
+  },
+  {
+    "title": "Magenta RealTime 2: Open and Local Live Music Models",
+    "url": "https://magenta.withgoogle.com/magenta-realtime-2",
+    "source": "magenta.withgoogle.com",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from magenta.withgoogle.com. Hacker News score 9, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48407815",
+    "fetched_at": "2026-06-05T05:51:39Z"
+  },
+  {
+    "title": "When AI Builds Itself: Our progress toward recursive self-improvement",
+    "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+    "source": "anthropic.com",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 409, 539 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48400842",
+    "fetched_at": "2026-06-05T05:51:40Z"
+  },
+  {
+    "title": "KVarN: Native vLLM backend for KV-cache quantization by Huawei",
+    "url": "https://github.com/huawei-csl/KVarN",
+    "source": "github.com",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 126, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48399974",
+    "fetched_at": "2026-06-05T05:51:40Z"
+  },
+  {
+    "title": "VoidZero Is Joining Cloudflare",
+    "url": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 607, 267 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48398055",
+    "fetched_at": "2026-06-05T05:51:40Z"
+  },
+  {
+    "title": "South Korean Forums Will Need to Scan Every Images with AI Censorship Tools",
+    "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
+    "source": "discuss.privacyguides.net",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from discuss.privacyguides.net. Hacker News score 95, 76 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48406198",
+    "fetched_at": "2026-06-05T05:51:40Z"
+  },
+  {
+    "title": "Anthropic's open-source framework for AI-powered vulnerability discovery",
+    "url": "https://github.com/anthropics/defending-code-reference-harness",
+    "source": "github.com",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 353, 108 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48403980",
+    "fetched_at": "2026-06-05T05:51:39Z"
+  },
+  {
     "title": "The ways we contain Claude across products",
     "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
     "source": "anthropic.com",
@@ -100,6 +190,16 @@
     "fetched_at": "2026-06-03T06:20:07Z"
   },
   {
+    "title": "Reverse-Engineered Userspace Driver for Asus ZenVision Lid OLED on Linux\"",
+    "url": "https://github.com/tarpediem/zenvision-linux",
+    "source": "github.com",
+    "date": "2026-06-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 41, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48368338",
+    "fetched_at": "2026-06-05T05:51:39Z"
+  },
+  {
     "title": "The advertising cartel coming to your web browser",
     "url": "https://blog.zgp.org/the-advertising-cartel-coming-to-your-web-browser/",
     "source": "blog.zgp.org",
@@ -198,105 +298,5 @@
     "summary": "转载 / Curated repost from abc.xyz. Hacker News score 154, 141 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48362515",
     "fetched_at": "2026-06-02T06:06:48Z"
-  },
-  {
-    "title": "Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",
-    "url": "https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai",
-    "source": "economist.com",
-    "date": "2026-06-01",
-    "repost": true,
-    "summary": "转载 / Curated repost from economist.com. Hacker News score 232, 443 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48364055",
-    "fetched_at": "2026-06-02T06:06:47Z"
-  },
-  {
-    "title": "OpenAI frontier models and Codex are now available on AWS",
-    "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
-    "source": "openai.com",
-    "date": "2026-06-01",
-    "repost": true,
-    "summary": "转载 / Curated repost from openai.com. Hacker News score 216, 73 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48363132",
-    "fetched_at": "2026-06-02T06:06:47Z"
-  },
-  {
-    "title": "Chipotlai Max",
-    "url": "https://github.com/cyberpapiii/chipotlai-max",
-    "source": "github.com",
-    "date": "2026-06-01",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 154, 27 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48363765",
-    "fetched_at": "2026-06-02T06:06:47Z"
-  },
-  {
-    "title": "AI Agent Guidelines for CS336 at Stanford",
-    "url": "https://github.com/stanford-cs336/assignment1-basics/blob/main/CLAUDE.md",
-    "source": "github.com",
-    "date": "2026-06-01",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 375, 124 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48359232",
-    "fetched_at": "2026-06-02T06:06:47Z"
-  },
-  {
-    "title": "Karpathy LLM Wiki pattern integrated into Obsidian agenic workflow",
-    "url": "https://github.com/pssah4/vault-operator",
-    "source": "github.com",
-    "date": "2026-06-01",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 13, 5 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48351115",
-    "fetched_at": "2026-06-01T06:21:44Z"
-  },
-  {
-    "title": "CP/M-86 & MS-DOS Cross Development Environment",
-    "url": "https://github.com/tsupplis/cpm86-crossdev",
-    "source": "github.com",
-    "date": "2026-05-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 22, 1 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48348040",
-    "fetched_at": "2026-06-04T06:11:53Z"
-  },
-  {
-    "title": "Muxcard, a DIY credit card size computer",
-    "url": "https://github.com/krauseler/muxcard",
-    "source": "github.com",
-    "date": "2026-05-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 244, 84 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48342399",
-    "fetched_at": "2026-06-03T06:20:10Z"
-  },
-  {
-    "title": "Loading Sega Games Off a Vinyl Record [video]",
-    "url": "https://www.youtube.com/watch?v=c744iD0_fWU",
-    "source": "youtube.com",
-    "date": "2026-05-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from youtube.com. Hacker News score 30, 7 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48346766",
-    "fetched_at": "2026-06-03T06:20:08Z"
-  },
-  {
-    "title": "Show HN: I reverse-engineered the world maps of Test Drive III (1990 DOS game)",
-    "url": "https://github.com/s-macke/Test-Drive-3-Maps",
-    "source": "github.com",
-    "date": "2026-05-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 19, 6 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48344327",
-    "fetched_at": "2026-06-03T06:20:05Z"
-  },
-  {
-    "title": "Odysseus – self-hosted AI workspace",
-    "url": "https://github.com/pewdiepie-archdaemon/odysseus",
-    "source": "github.com",
-    "date": "2026-05-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 154, 74 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48346693",
-    "fetched_at": "2026-06-01T06:21:43Z"
   }
 ]
