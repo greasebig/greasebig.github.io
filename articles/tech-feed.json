@@ -7,7 +7,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from boxofcables.dev. Hacker News score 67, 42 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48407499",
-    "fetched_at": "2026-06-05T05:51:39Z"
+    "fetched_at": "2026-06-05T05:51:39Z",
+    "title_zh": "Azure Linux 4.0 是微软首个通用 Linux 发行版"
   },
   {
     "title": "Meta enables ADB on deprecated Portal devices [video]",
@@ -17,7 +18,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from fb.watch. Hacker News score 157, 36 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48406640",
-    "fetched_at": "2026-06-05T05:51:39Z"
+    "fetched_at": "2026-06-05T05:51:39Z",
+    "title_zh": "Meta 在已弃用的 Portal 设备上启用 ADB [视频]"
   },
   {
     "title": "Open Code Review – An AI-powered code review CLI tool",
@@ -27,7 +29,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from github.com. Hacker News score 114, 26 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48406358",
-    "fetched_at": "2026-06-05T05:51:39Z"
+    "fetched_at": "2026-06-05T05:51:39Z",
+    "title_zh": "Open Code Review – AI 驱动的代码审查 CLI 工具"
   },
   {
     "title": "Magenta RealTime 2: Open and Local Live Music Models",
@@ -37,7 +40,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from magenta.withgoogle.com. Hacker News score 9, 1 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48407815",
-    "fetched_at": "2026-06-05T05:51:39Z"
+    "fetched_at": "2026-06-05T05:51:39Z",
+    "title_zh": "Magenta RealTime 2：开源本地实时音乐模型"
   },
   {
     "title": "When AI Builds Itself: Our progress toward recursive self-improvement",
@@ -47,7 +51,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from anthropic.com. Hacker News score 409, 539 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48400842",
-    "fetched_at": "2026-06-05T05:51:40Z"
+    "fetched_at": "2026-06-05T05:51:40Z",
+    "title_zh": "当 AI 自我构建：我们向递归自改进的进展"
   },
   {
     "title": "KVarN: Native vLLM backend for KV-cache quantization by Huawei",
@@ -57,7 +62,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from github.com. Hacker News score 126, 13 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48399974",
-    "fetched_at": "2026-06-05T05:51:40Z"
+    "fetched_at": "2026-06-05T05:51:40Z",
+    "title_zh": "KVarN：华为原生的 vLLM KV 缓存量化后端"
   },
   {
     "title": "VoidZero Is Joining Cloudflare",
@@ -67,7 +73,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 607, 267 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48398055",
-    "fetched_at": "2026-06-05T05:51:40Z"
+    "fetched_at": "2026-06-05T05:51:40Z",
+    "title_zh": "VoidZero 加入 Cloudflare"
   },
   {
     "title": "South Korean Forums Will Need to Scan Every Images with AI Censorship Tools",
@@ -77,7 +84,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from discuss.privacyguides.net. Hacker News score 95, 76 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48406198",
-    "fetched_at": "2026-06-05T05:51:40Z"
+    "fetched_at": "2026-06-05T05:51:40Z",
+    "title_zh": "韩国论坛将需要用 AI 审查工具扫描每张图片"
   },
   {
     "title": "Anthropic's open-source framework for AI-powered vulnerability discovery",
@@ -87,7 +95,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from github.com. Hacker News score 353, 108 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48403980",
-    "fetched_at": "2026-06-05T05:51:39Z"
+    "fetched_at": "2026-06-05T05:51:39Z",
+    "title_zh": "Anthropic 的 AI 驱动漏洞发现开源框架"
   },
   {
     "title": "The ways we contain Claude across products",
@@ -97,7 +106,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from anthropic.com. Hacker News score 92, 42 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48392082",
-    "fetched_at": "2026-06-04T06:11:52Z"
+    "fetched_at": "2026-06-04T06:11:52Z",
+    "title_zh": "我们在各产品中约束 Claude 的方式"
   },
   {
     "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
@@ -107,7 +117,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from dailycal.org. Hacker News score 154, 85 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48392004",
-    "fetched_at": "2026-06-04T06:11:51Z"
+    "fetched_at": "2026-06-04T06:11:51Z",
+    "title_zh": "伯克利 CS 课程中 AI 使用增加，数学能力下降，不及格率飙升"
   },
   {
     "title": "Mathematicians issue warning as AI rapidly gains ground",
@@ -117,7 +128,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from science.org. Hacker News score 210, 252 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48382052",
-    "fetched_at": "2026-06-04T06:11:55Z"
+    "fetched_at": "2026-06-04T06:11:55Z",
+    "title_zh": "数学家发出警告：AI 正快速占据阵地"
   },
   {
     "title": "Self-hosted dev sandboxes with preview URLs (Docker, Go, no K8s)",
@@ -127,7 +139,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from github.com. Hacker News score 74, 20 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48388909",
-    "fetched_at": "2026-06-04T06:11:55Z"
+    "fetched_at": "2026-06-04T06:11:55Z",
+    "title_zh": "自托管开发沙箱，带预览 URL（Docker、Go、无需 K8s）"
   },
   {
     "title": "Gooey: A GPU-accelerated UI framework for Zig",
@@ -137,7 +150,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from github.com. Hacker News score 156, 57 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48386725",
-    "fetched_at": "2026-06-04T06:11:54Z"
+    "fetched_at": "2026-06-04T06:11:54Z",
+    "title_zh": "Gooey：Zig 的 GPU 加速 UI 框架"
   },
   {
     "title": "Journey to JPEG XL: open-source experiments shaped the future of image coding",
@@ -147,7 +161,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from opensource.googleblog.com. Hacker News score 61, 32 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48390688",
-    "fetched_at": "2026-06-04T06:11:54Z"
+    "fetched_at": "2026-06-04T06:11:54Z",
+    "title_zh": "JPEG XL 之旅：开源实验塑造了图像编码的未来"
   },
   {
     "title": "Artificial intelligence is not conscious – Ted Chiang",
@@ -157,7 +172,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from theatlantic.com. Hacker News score 349, 605 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48387270",
-    "fetched_at": "2026-06-04T06:11:52Z"
+    "fetched_at": "2026-06-04T06:11:52Z",
+    "title_zh": "人工智能没有意识 — 特德·姜"
   },
   {
     "title": "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
@@ -167,7 +183,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from simonwillison.net. Hacker News score 434, 543 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48383056",
-    "fetched_at": "2026-06-04T06:11:52Z"
+    "fetched_at": "2026-06-04T06:11:52Z",
+    "title_zh": "Uber 每月 1500 美元的 AI 限额是 AI 工具定价的有用信号"
   },
   {
     "title": "Gemma 4 12B: A unified, encoder-free multimodal model",
@@ -177,7 +194,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from blog.google. Hacker News score 781, 314 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48385906",
-    "fetched_at": "2026-06-04T06:11:51Z"
+    "fetched_at": "2026-06-04T06:11:51Z",
+    "title_zh": "Gemma 4 12B：统一的、无编码器的多模态模型"
   },
   {
     "title": "U of T researchers demonstrate AI worm could target any online device",
@@ -187,7 +205,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from utoronto.ca. Hacker News score 9, 1 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48379664",
-    "fetched_at": "2026-06-03T06:20:07Z"
+    "fetched_at": "2026-06-03T06:20:07Z",
+    "title_zh": "多伦多大学研究人员演示 AI 蠕虫可攻击任何在线设备"
   },
   {
     "title": "Reverse-Engineered Userspace Driver for Asus ZenVision Lid OLED on Linux\"",
@@ -197,7 +216,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from github.com. Hacker News score 41, 7 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48368338",
-    "fetched_at": "2026-06-05T05:51:39Z"
+    "fetched_at": "2026-06-05T05:51:39Z",
+    "title_zh": "Linux 上华硕 ZenVision 笔盖 OLED 的逆向工程用户态驱动"
   },
   {
     "title": "The advertising cartel coming to your web browser",
@@ -207,7 +227,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from blog.zgp.org. Hacker News score 188, 51 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48375175",
-    "fetched_at": "2026-06-03T06:20:09Z"
+    "fetched_at": "2026-06-03T06:20:09Z",
+    "title_zh": "即将来到你浏览器的广告卡特尔"
   },
   {
     "title": "Trump signs downsized AI order after weeks of reversals",
@@ -217,7 +238,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from politico.com. Hacker News score 200, 147 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48372628",
-    "fetched_at": "2026-06-03T06:20:08Z"
+    "fetched_at": "2026-06-03T06:20:08Z",
+    "title_zh": "特朗普在数周反复后签署缩小版 AI 行政令"
   },
   {
     "title": "Show HN: Paseo – Beautiful open-source coding agent interface",
@@ -227,7 +249,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from github.com. Hacker News score 55, 28 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48377250",
-    "fetched_at": "2026-06-03T06:20:08Z"
+    "fetched_at": "2026-06-03T06:20:08Z",
+    "title_zh": "Show HN: Paseo – 美观的开源编程代理界面"
   },
   {
     "title": "AI outperforms law professors in Stanford Law study",
@@ -237,7 +260,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from law.stanford.edu. Hacker News score 178, 144 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48377761",
-    "fetched_at": "2026-06-03T06:20:06Z"
+    "fetched_at": "2026-06-03T06:20:06Z",
+    "title_zh": "斯坦福法学院研究：AI 表现超越法学教授"
   },
   {
     "title": "1-Click GitHub Token Stealing via a VSCode Bug",
@@ -247,7 +271,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from blog.ammaraskar.com. Hacker News score 245, 32 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48371562",
-    "fetched_at": "2026-06-03T06:20:05Z"
+    "fetched_at": "2026-06-03T06:20:05Z",
+    "title_zh": "通过 VSCode 漏洞一键窃取 GitHub Token"
   },
   {
     "title": "Use your Nvidia GPU's VRAM as swap space on Linux",
@@ -257,7 +282,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from github.com. Hacker News score 235, 65 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48377404",
-    "fetched_at": "2026-06-03T06:20:05Z"
+    "fetched_at": "2026-06-03T06:20:05Z",
+    "title_zh": "在 Linux 上将 Nvidia GPU 显存用作交换空间"
   },
   {
     "title": "Anthropic confidentially submits draft S-1 to the SEC",
@@ -267,7 +293,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from anthropic.com. Hacker News score 473, 385 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48358646",
-    "fetched_at": "2026-06-02T06:06:50Z"
+    "fetched_at": "2026-06-02T06:06:50Z",
+    "title_zh": "Anthropic 向 SEC 机密提交 S-1 草案"
   },
   {
     "title": "Florida sues OpenAI and Sam Altman over AI risks",
@@ -277,7 +304,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from politico.com. Hacker News score 202, 168 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48358667",
-    "fetched_at": "2026-06-02T06:06:49Z"
+    "fetched_at": "2026-06-02T06:06:49Z",
+    "title_zh": "佛罗里达州因 AI 风险起诉 OpenAI 和 Sam Altman"
   },
   {
     "title": "Flipper Zero Zig Template",
@@ -287,7 +315,8 @@
     "repost": true,
     "summary": "转载 / Curated repost from github.com. Hacker News score 136, 11 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48356490",
-    "fetched_at": "2026-06-02T06:06:49Z"
+    "fetched_at": "2026-06-02T06:06:49Z",
+    "title_zh": "Flipper Zero Zig 模板"
   },
   {
     "title": "Alphabet announces $80B equity capital raise to expand AI infra and compute",
@@ -297,6 +326,7 @@
     "repost": true,
     "summary": "转载 / Curated repost from abc.xyz. Hacker News score 154, 141 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48362515",
-    "fetched_at": "2026-06-02T06:06:48Z"
+    "fetched_at": "2026-06-02T06:06:48Z",
+    "title_zh": "Alphabet 宣布 800 亿美元股权融资以扩展 AI 基础设施和算力"
   }
 ]

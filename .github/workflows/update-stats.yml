@@ -1,0 +1,70 @@
+name: Update Stats
+
+on:
+  schedule:
+    - cron: '5 16 * * *'  # UTC 16:05 = CST 00:05
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Count Fresh Tech articles
+        id: articles
+        run: |
+          COUNT=$(python3 -c "
+          import json
+          with open('articles/tech-feed.json') as f:
+              data = json.load(f)
+          print(3 + len(data))  # 3 pinned + reposts
+          ")
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Count Papers
+        id: papers
+        run: |
+          # Clone daily-video-papers to count
+          git clone --depth 1 https://github.com/greasebig/daily-video-papers.git /tmp/dvp
+          COUNT=$(grep -rh "^## " /tmp/dvp/papers/*.md | wc -l | tr -d ' ')
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Count Agent repos
+        id: agents
+        run: |
+          # Clone awesome-agent-everything to count
+          git clone --depth 1 https://github.com/greasebig/awesome-agent-everything.git /tmp/aae
+          COUNT=$(python3 -c "
+          import json
+          with open('/tmp/aae/data/repos.json') as f:
+              data = json.load(f)
+          print(sum(len(v) for v in data.values() if isinstance(v, list)))
+          ")
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Update stats.html
+        run: |
+          ARTICLES=${{ steps.articles.outputs.count }}
+          PAPERS=${{ steps.papers.outputs.count }}
+          AGENTS=${{ steps.agents.outputs.count }}
+
+          sed -i "s/articles: [0-9]*/articles: $ARTICLES/" stats.html
+          sed -i "s/papers: [0-9]*/papers: $PAPERS/" stats.html
+          sed -i "s/agents: [0-9]*/agents: $AGENTS/" stats.html
+
+          echo "Updated stats: Articles=$ARTICLES, Papers=$PAPERS, Agents=$AGENTS"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet stats.html || (
+            git add stats.html
+            git commit -m "chore: update stats numbers [skip ci]"
+            git push
+          )

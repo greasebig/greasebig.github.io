@@ -1562,6 +1562,16 @@
 
     }
 
+    .article-card .title-zh {
+
+      color: var(--muted);
+
+      font-weight: 400;
+
+      font-size: 0.88em;
+
+    }
+
     .article-card.repost.collapsed {
 
       display: none;
@@ -1915,6 +1925,22 @@
             <h3>Agent Index</h3>
 
             <p>Meta-index of agent repos</p>
+
+          </div>
+
+          <span class="site-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+
+        </a>
+
+        <a class="site-card" href="./stats.html">
+
+          <div class="site-card-icon">📊</div>
+
+          <div class="site-card-body">
+
+            <h3>Stats</h3>
+
+            <p>Live numbers &amp; metrics</p>
 
           </div>
 
@@ -2437,6 +2463,8 @@
         feed.innerHTML = items.map(function(item, idx) {
 
           var title = escapeHtml(item.title);
+          var titleZh = item.title_zh ? escapeHtml(item.title_zh) : '';
+          var displayTitle = titleZh ? title + ' <span class="title-zh">/ ' + titleZh + '</span>' : title;
 
           var summary = escapeHtml(item.summary);
 
@@ -2454,7 +2482,7 @@
 
             '<div class="article-meta"><span class="article-tag">转载 · Fresh Tech</span><span>' + source + '</span><span>' + date + '</span></div>' +
 
-            '<h3>' + title + '</h3>' +
+            '<h3>' + displayTitle + '</h3>' +
 
             '<p class="article-desc">' + summary + '</p>' +
 

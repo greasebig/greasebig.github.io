@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stats – greasebig</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui' font-weight='bold'>G</text></svg>" type="image/svg+xml" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+    :root {
+      --ink: #1a1a2e;
+      --muted: #a0a4b8;
+      --glass: rgba(255,255,255,0.12);
+      --glass-hover: rgba(255,255,255,0.20);
+      --accent: #6366f1;
+      --accent-2: #ec4899;
+      --accent-3: #f59e0b;
+      --accent-4: #10b981;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+      min-height: 100vh;
+      background: #0a0a1a;
+    }
+
+    /* ===== Video Background ===== */
+    .video-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      z-index: -2;
+      overflow: hidden;
+    }
+    .video-bg video {
+      position: absolute;
+      top: 50%; left: 50%;
+      min-width: 100%; min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+    .video-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(10,10,26,0.55) 0%,
+        rgba(10,10,26,0.35) 40%,
+        rgba(10,10,26,0.65) 100%
+      );
+      z-index: 1;
+    }
+
+    /* Loading indicator */
+    .video-loading {
+      position: fixed;
+      bottom: 20px; right: 20px;
+      z-index: 100;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      font-size: 12px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    .video-loading.visible { opacity: 1; }
+
+    /* ===== Main Content ===== */
+    .container {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    /* Back button */
+    .back-btn {
+      position: fixed;
+      top: 24px; left: 24px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.12);
+      transition: all 0.25s;
+    }
+    .back-btn:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+    }
+    .back-btn svg {
+      width: 16px; height: 16px;
+    }
+
+    /* Title */
+    .page-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #fff 0%, #c7c7ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .page-subtitle {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 48px;
+      font-weight: 400;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .stat-card {
+      background: var(--glass);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 32px 28px;
+      text-align: center;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent 60%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+    .stat-card:hover {
+      background: var(--glass-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .stat-icon {
+      font-size: 36px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .stat-number {
+      font-size: 56px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 4px;
+      font-variant-numeric: tabular-nums;
+    }
+    .stat-card:nth-child(1) .stat-number { color: var(--accent); }
+    .stat-card:nth-child(2) .stat-number { color: var(--accent-3); }
+    .stat-card:nth-child(3) .stat-number { color: var(--accent-4); }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 4px;
+    }
+    .stat-desc {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    /* Updated time */
+    .updated-at {
+      margin-top: 40px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    @media (max-width: 640px) {
+      .stats-grid { grid-template-columns: 1fr; gap: 16px; }
+      .stat-number { font-size: 42px; }
+      .stat-card { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background: progressive loading strategy -->
+  <div class="video-bg" id="videoBg">
+    <!-- Phase 1: small video loads immediately -->
+    <video id="bgVideo" autoplay muted loop playsinline
+           style="opacity:0; transition: opacity 1.5s ease;">
+      <source src="assets/videos/bg-small.mp4" type="video/mp4" data-quality="small">
+    </video>
+  </div>
+
+  <!-- Loading indicator -->
+  <div class="video-loading" id="videoLoading"></div>
+
+  <!-- Back button -->
+  <a class="back-btn" href="/">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    Back
+  </a>
+
+  <!-- Main content -->
+  <div class="container">
+    <h1 class="page-title">Stats</h1>
+    <p class="page-subtitle">Live numbers from the greasebig ecosystem</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">✍️</span>
+        <div class="stat-number" id="numArticles">0</div>
+        <div class="stat-label">Articles</div>
+        <div class="stat-desc">Fresh Tech Reposts &amp; original posts</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📚</span>
+        <div class="stat-number" id="numPapers">0</div>
+        <div class="stat-label">Papers Hub</div>
+        <div class="stat-desc">Daily arXiv paper tracker</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🤖</span>
+        <div class="stat-number" id="numAgents">0</div>
+        <div class="stat-label">Agent Index</div>
+        <div class="stat-desc">Meta-index of agent repos</div>
+      </div>
+    </div>
+
+    <p class="updated-at" id="updatedAt"></p>
+  </div>
+
+  <script>
+    // ===== Animated counter =====
+    function animateCount(el, target, duration) {
+      if (duration === undefined) duration = 2000;
+      var start = 0;
+      var startTime = null;
+      function step(ts) {
+        if (!startTime) startTime = ts;
+        var progress = Math.min((ts - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var current = Math.floor(eased * target);
+        el.textContent = current.toLocaleString();
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = target.toLocaleString();
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    // ===== Load stats from JSON =====
+    var statsData = {
+      articles: 33,
+      papers: 911,
+      agents: 355
+    };
+
+    // Try to fetch live stats
+    function loadLiveStats() {
+      // Count articles from tech-feed.json
+      fetch('./articles/tech-feed.json', { cache: 'no-store' })
+        .then(function(r) { return r.json(); })
+        .then(function(items) {
+          // 3 pinned articles + reposts
+          statsData.articles = 3 + items.length;
+          animateCount(document.getElementById('numArticles'), statsData.articles);
+        })
+        .catch(function() {
+          animateCount(document.getElementById('numArticles'), statsData.articles);
+        });
+
+      // Try fetching papers count from daily-video-papers
+      fetch('https://greasebig.github.io/daily-video-papers/', { cache: 'no-store' })
+        .then(function() { })
+        .catch(function() { });
+
+      // Try fetching agent count from awesome-agent-everything
+      fetch('https://greasebig.github.io/awesome-agent-everything/data/repos.min.json', { cache: 'no-store' })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          var total = 0;
+          Object.keys(data).forEach(function(k) {
+            if (Array.isArray(data[k])) total += data[k].length;
+          });
+          if (total > 0) statsData.agents = total;
+          animateCount(document.getElementById('numAgents'), statsData.agents);
+        })
+        .catch(function() {
+          animateCount(document.getElementById('numAgents'), statsData.agents);
+        });
+    }
+
+    // Start animation with fallback values
+    animateCount(document.getElementById('numArticles'), statsData.articles);
+    animateCount(document.getElementById('numPapers'), statsData.papers);
+    animateCount(document.getElementById('numAgents'), statsData.agents);
+
+    // Then try live
+    loadLiveStats();
+
+    // Show updated time
+    var now = new Date();
+    document.getElementById('updatedAt').textContent =
+      'Updated: ' + now.getFullYear() + '-' +
+      String(now.getMonth()+1).padStart(2,'0') + '-' +
+      String(now.getDate()).padStart(2,'0') + ' ' +
+      String(now.getHours()).padStart(2,'0') + ':' +
+      String(now.getMinutes()).padStart(2,'0');
+
+    // ===== Progressive Video Loading =====
+    (function() {
+      var video = document.getElementById('bgVideo');
+      var loading = document.getElementById('videoLoading');
+      var loadingTimeout;
+
+      function showLoading(text) {
+        loading.textContent = text;
+        loading.classList.add('visible');
+        clearTimeout(loadingTimeout);
+      }
+      function hideLoading() {
+        loadingTimeout = setTimeout(function() {
+          loading.classList.remove('visible');
+        }, 1500);
+      }
+
+      // Phase 1: Small video already in <source>, wait for it to play
+      video.addEventListener('playing', function onFirstPlay() {
+        video.style.opacity = '1';
+        showLoading('720p loaded ✓ · Loading 1080p…');
+        video.removeEventListener('playing', onFirstPlay);
+        // Start loading medium video in background
+        preloadVideo('assets/videos/bg-medium.mp4', '1080p', function() {
+          switchSource('assets/videos/bg-medium.mp4', '1080p', function() {
+            showLoading('1080p loaded ✓ · Loading 4K…');
+            preloadVideo('assets/videos/bg-large.mp4', '4K', function() {
+              switchSource('assets/videos/bg-large.mp4', '4K', function() {
+                showLoading('4K loaded ✓');
+                hideLoading();
+              });
+            });
+          });
+        });
+      });
+
+      // If small video fails to load, still try medium
+      video.addEventListener('error', function() {
+        showLoading('Loading 1080p…');
+        switchSource('assets/videos/bg-medium.mp4', '1080p', function() {
+          showLoading('1080p loaded ✓ · Loading 4K…');
+          switchSource('assets/videos/bg-large.mp4', '4K', function() {
+            showLoading('4K loaded ✓');
+            hideLoading();
+          });
+        });
+      });
+
+      function preloadVideo(src, label, callback) {
+        var req = new XMLHttpRequest();
+        req.open('GET', src, true);
+        req.responseType = 'blob';
+        req.onprogress = function(e) {
+          if (e.lengthComputable) {
+            var pct = Math.round(e.loaded / e.total * 100);
+            showLoading('Loading ' + label + '… ' + pct + '%');
+          }
+        };
+        req.onload = function() {
+          if (req.status === 200) {
+            callback();
+          }
+        };
+        req.onerror = function() {
+          // Skip this quality level
+          callback();
+        };
+        req.send();
+      }
+
+      function switchSource(src, label, callback) {
+        var currentTime = video.currentTime;
+        video.style.opacity = '0.3';
+        setTimeout(function() {
+          video.src = src;
+          video.currentTime = currentTime;
+          video.play().then(function() {
+            video.style.opacity = '1';
+            if (callback) callback();
+          }).catch(function() {
+            video.style.opacity = '1';
+            if (callback) callback();
+          });
+        }, 300);
+      }
+    })();
+  </script>
+</body>
+</html>
