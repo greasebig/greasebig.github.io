@@ -149,6 +149,9 @@
       transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
       position: relative;
       overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
     .stat-card::before {
       content: '';
@@ -216,7 +219,6 @@
 
   <!-- Video Background: progressive loading strategy -->
   <div class="video-bg" id="videoBg">
-    <!-- Phase 1: small video loads immediately -->
     <video id="bgVideo" autoplay muted loop playsinline
            style="opacity:0; transition: opacity 1.5s ease;">
       <source src="assets/videos/bg-small.mp4" type="video/mp4" data-quality="small">
@@ -238,24 +240,24 @@
     <p class="page-subtitle">Live numbers from the greasebig ecosystem</p>
 
     <div class="stats-grid">
-      <div class="stat-card">
+      <a class="stat-card" href="https://greasebig.github.io/" target="_blank" rel="noopener">
         <span class="stat-icon">✍️</span>
         <div class="stat-number" id="numArticles">0</div>
         <div class="stat-label">Articles</div>
         <div class="stat-desc">Fresh Tech Reposts &amp; original posts</div>
-      </div>
-      <div class="stat-card">
+      </a>
+      <a class="stat-card" href="https://github.com/greasebig/daily-video-papers" target="_blank" rel="noopener">
         <span class="stat-icon">📚</span>
         <div class="stat-number" id="numPapers">0</div>
         <div class="stat-label">Papers Hub</div>
         <div class="stat-desc">Daily arXiv paper tracker</div>
-      </div>
-      <div class="stat-card">
+      </a>
+      <a class="stat-card" href="https://github.com/greasebig/awesome-agent-everything" target="_blank" rel="noopener">
         <span class="stat-icon">🤖</span>
         <div class="stat-number" id="numAgents">0</div>
         <div class="stat-label">Agent Index</div>
         <div class="stat-desc">Meta-index of agent repos</div>
-      </div>
+      </a>
     </div>
 
     <p class="updated-at" id="updatedAt"></p>
@@ -346,6 +348,8 @@
       var video = document.getElementById('bgVideo');
       var loading = document.getElementById('videoLoading');
       var loadingTimeout;
+      var currentQuality = 'small'; // track current quality to prevent re-switching
+      var switched = { medium: false, large: false }; // ensure each quality only switches once
 
       function showLoading(text) {
         loading.textContent = text;
@@ -355,41 +359,16 @@
       function hideLoading() {
         loadingTimeout = setTimeout(function() {
           loading.classList.remove('visible');
-        }, 1500);
+        }, 2000);
       }
 
-      // Phase 1: Small video already in <source>, wait for it to play
-      video.addEventListener('playing', function onFirstPlay() {
-        video.style.opacity = '1';
-        showLoading('720p loaded ✓ · Loading 1080p…');
-        video.removeEventListener('playing', onFirstPlay);
-        // Start loading medium video in background
-        preloadVideo('assets/videos/bg-medium.mp4', '1080p', function() {
-          switchSource('assets/videos/bg-medium.mp4', '1080p', function() {
-            showLoading('1080p loaded ✓ · Loading 4K…');
-            preloadVideo('assets/videos/bg-large.mp4', '4K', function() {
-              switchSource('assets/videos/bg-large.mp4', '4K', function() {
-                showLoading('4K loaded ✓');
-                hideLoading();
-              });
-            });
-          });
-        });
-      });
+      // Preload video into a hidden <video>, then switch when ready
+      function preloadAndSwitch(src, quality, label, nextFn) {
+        var hidden = document.createElement('video');
+        hidden.muted = true;
+        hidden.preload = 'auto';
+        hidden.playsInline = true;
 
-      // If small video fails to load, still try medium
-      video.addEventListener('error', function() {
-        showLoading('Loading 1080p…');
-        switchSource('assets/videos/bg-medium.mp4', '1080p', function() {
-          showLoading('1080p loaded ✓ · Loading 4K…');
-          switchSource('assets/videos/bg-large.mp4', '4K', function() {
-            showLoading('4K loaded ✓');
-            hideLoading();
-          });
-        });
-      });
-
-      function preloadVideo(src, label, callback) {
         var req = new XMLHttpRequest();
         req.open('GET', src, true);
         req.responseType = 'blob';
@@ -400,32 +379,75 @@
           }
         };
         req.onload = function() {
-          if (req.status === 200) {
-            callback();
+          if (req.status === 200 && !switched[quality]) {
+            var blobUrl = URL.createObjectURL(req.response);
+            hidden.src = blobUrl;
+            hidden.addEventListener('canplaythrough', function onReady() {
+              hidden.removeEventListener('canplaythrough', onReady);
+              if (switched[quality]) return; // already switched
+              switched[quality] = true;
+              // Sync timestamp: place new video at the same relative position
+              var ratio = video.currentTime / video.duration;
+              var targetTime = ratio * hidden.duration;
+              // Brief crossfade
+              video.style.opacity = '0.3';
+              setTimeout(function() {
+                video.src = blobUrl;
+                video.currentTime = targetTime;
+                video.play().then(function() {
+                  video.style.opacity = '1';
+                  currentQuality = quality;
+                  if (nextFn) nextFn();
+                }).catch(function() {
+                  video.style.opacity = '1';
+                  currentQuality = quality;
+                  if (nextFn) nextFn();
+                });
+              }, 200);
+            }, { once: true });
+            hidden.load();
+          } else if (!switched[quality]) {
+            // Download failed, skip this quality
+            if (nextFn) nextFn();
           }
         };
         req.onerror = function() {
-          // Skip this quality level
-          callback();
+          if (nextFn) nextFn();
         };
         req.send();
       }
 
-      function switchSource(src, label, callback) {
-        var currentTime = video.currentTime;
-        video.style.opacity = '0.3';
-        setTimeout(function() {
-          video.src = src;
-          video.currentTime = currentTime;
-          video.play().then(function() {
-            video.style.opacity = '1';
-            if (callback) callback();
-          }).catch(function() {
-            video.style.opacity = '1';
-            if (callback) callback();
+      // Phase 1: Small video already playing, wait for it
+      video.addEventListener('playing', function onFirstPlay() {
+        video.style.opacity = '1';
+        video.removeEventListener('playing', onFirstPlay);
+        showLoading('720p ✓ · Loading 1080p…');
+        // Phase 2: load medium
+        preloadAndSwitch('assets/videos/bg-medium.mp4', 'medium', '1080p', function() {
+          if (switched.medium) {
+            showLoading('1080p ✓ · Loading 4K…');
+          }
+          // Phase 3: load large
+          preloadAndSwitch('assets/videos/bg-large.mp4', 'large', '4K', function() {
+            if (switched.large) {
+              showLoading('4K ✓');
+              hideLoading();
+            } else {
+              hideLoading();
+            }
           });
-        }, 300);
-      }
+        });
+      });
+
+      // Fallback if small video fails
+      video.addEventListener('error', function() {
+        showLoading('Loading 1080p…');
+        preloadAndSwitch('assets/videos/bg-medium.mp4', 'medium', '1080p', function() {
+          preloadAndSwitch('assets/videos/bg-large.mp4', 'large', '4K', function() {
+            hideLoading();
+          });
+        });
+      });
     })();
   </script>
 </body>
