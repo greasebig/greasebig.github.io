@@ -29,13 +29,50 @@
       background: #0a0a1a;
     }
 
+    /* ===== 毛玻璃初始背景（和主页一致） ===== */
+    .bg-initial {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      z-index: -3;
+      background:
+        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.15), transparent 50%),
+        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
+        radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
+        linear-gradient(175deg, #0f0f23 0%, #1a1a2e 40%, #1e1e3f 70%, #0f0f23 100%);
+    }
+
+    /* floating orbs（和主页一致） */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.35;
+      pointer-events: none;
+      z-index: -2;
+    }
+    .orb-1 { width: 360px; height: 360px; left: -100px; top: -80px; background: radial-gradient(circle, rgba(99,102,241,0.35), transparent 70%); animation: drift 12s ease-in-out infinite; }
+    .orb-2 { width: 280px; height: 280px; right: -60px; top: 200px; background: radial-gradient(circle, rgba(236,72,153,0.28), transparent 70%); animation: drift 14s ease-in-out infinite 2s; }
+    .orb-3 { width: 240px; height: 240px; left: 40%; bottom: -80px; background: radial-gradient(circle, rgba(16,185,129,0.22), transparent 70%); animation: drift 16s ease-in-out infinite 4s; }
+    @keyframes drift {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(20px, -15px) scale(1.05); }
+      50% { transform: translate(-10px, 10px) scale(0.95); }
+      75% { transform: translate(15px, 5px) scale(1.02); }
+    }
+
     /* ===== Video Background ===== */
     .video-bg {
       position: fixed;
       top: 0; left: 0;
       width: 100vw; height: 100vh;
-      z-index: -2;
+      z-index: -1;
       overflow: hidden;
+      opacity: 0;
+      transition: opacity 1.5s ease;
+    }
+    .video-bg.visible {
+      opacity: 1;
     }
     .video-bg video {
       position: absolute;
@@ -63,16 +100,37 @@
       position: fixed;
       bottom: 20px; right: 20px;
       z-index: 100;
-      background: rgba(0,0,0,0.5);
-      backdrop-filter: blur(8px);
-      color: #fff;
-      font-size: 12px;
-      padding: 6px 14px;
+      background: rgba(15,15,35,0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(99,102,241,0.2);
+      color: #c7c7ff;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 8px 16px;
       border-radius: 20px;
       opacity: 0;
       transition: opacity 0.5s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
     .video-loading.visible { opacity: 1; }
+    .video-loading .vlb-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: vlbPulse 1.2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    .video-loading .vlb-dot.done {
+      background: var(--accent-4);
+      animation: none;
+    }
+    @keyframes vlbPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.7); }
+    }
 
     /* ===== Main Content ===== */
     .container {
@@ -214,20 +272,32 @@
       .stat-number { font-size: 42px; }
       .stat-card { padding: 24px 20px; }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      .video-bg { display: none; }
+      .video-loading { display: none; }
+      .orb { animation: none; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Video Background: progressive loading strategy -->
+  <!-- 毛玻璃初始背景 -->
+  <div class="bg-initial"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Video Background: 480p → large progressive loading -->
   <div class="video-bg" id="videoBg">
-    <video id="bgVideo" autoplay muted loop playsinline
-           style="opacity:0; transition: opacity 1.5s ease;">
-      <source src="assets/videos/bg-small.mp4" type="video/mp4" data-quality="small">
-    </video>
+    <video id="bgVideo" autoplay muted loop playsinline></video>
   </div>
 
   <!-- Loading indicator -->
-  <div class="video-loading" id="videoLoading"></div>
+  <div class="video-loading" id="videoLoading">
+    <span class="vlb-dot"></span>
+    <span class="vlb-text">Loading video…</span>
+  </div>
 
   <!-- Back button -->
   <a class="back-btn" href="/">
@@ -294,11 +364,9 @@
 
     // Try to fetch live stats
     function loadLiveStats() {
-      // Count articles from tech-feed.json
       fetch('./articles/tech-feed.json', { cache: 'no-store' })
         .then(function(r) { return r.json(); })
         .then(function(items) {
-          // 3 pinned articles + reposts
           statsData.articles = 3 + items.length;
           animateCount(document.getElementById('numArticles'), statsData.articles);
         })
@@ -306,12 +374,6 @@
           animateCount(document.getElementById('numArticles'), statsData.articles);
         });
 
-      // Try fetching papers count from daily-video-papers
-      fetch('https://greasebig.github.io/daily-video-papers/', { cache: 'no-store' })
-        .then(function() { })
-        .catch(function() { });
-
-      // Try fetching agent count from awesome-agent-everything
       fetch('https://greasebig.github.io/awesome-agent-everything/data/repos.min.json', { cache: 'no-store' })
         .then(function(r) { return r.json(); })
         .then(function(data) {
@@ -345,102 +407,139 @@
       String(now.getMinutes()).padStart(2,'0');
 
     // ===== Progressive Video Loading =====
-    // Strategy: 720p plays immediately, then silently download 4K in background.
-    // When 4K blob is fully downloaded and verified playable, switch once.
-    // No 1080p step — eliminates the flicker caused by two rapid switches.
+    // Strategy: Keep initial frosted-glass background → XHR download 480p → fade in video → XHR download large → switch at same timestamp
     (function() {
-      var video = document.getElementById('bgVideo');
-      var loading = document.getElementById('videoLoading');
-      var loadingTimeout;
-      var hasSwitchedTo4K = false;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-      video.loop = true;  // force loop on in JS (HTML attr may not survive src swap)
+      var video = document.getElementById('bgVideo');
+      var videoBg = document.getElementById('videoBg');
+      var loading = document.getElementById('videoLoading');
+      var loadingDot = loading ? loading.querySelector('.vlb-dot') : null;
+      var loadingText = loading ? loading.querySelector('.vlb-text') : null;
+      var loadingTimeout;
+      var hasSwitchedToLarge = false;
+
+      video.loop = true;
 
       function showLoading(text) {
-        loading.textContent = text;
+        if (loadingText) loadingText.textContent = text;
         loading.classList.add('visible');
         clearTimeout(loadingTimeout);
       }
       function hideLoading() {
         loadingTimeout = setTimeout(function() {
           loading.classList.remove('visible');
-        }, 2500);
+        }, 3000);
       }
 
-      // Guarantee seamless loop — re-play if video ever reaches the end
+      // Guarantee seamless loop
       video.addEventListener('ended', function() {
         video.currentTime = 0;
         video.play();
       });
 
-      // Step 1: wait for small video to start playing
-      video.addEventListener('playing', function onFirstPlay() {
-        video.style.opacity = '1';
-        video.removeEventListener('playing', onFirstPlay);
-        showLoading('720p ✓ · Loading 4K…');
-        startDownloading4K();
-      });
+      // Step 1: Download 480p video via XHR blob
+      var smallReq = new XMLHttpRequest();
+      smallReq.open('GET', 'assets/videos/bg-480p.mp4', true);
+      smallReq.responseType = 'blob';
+      smallReq.onprogress = function(e) {
+        if (e.lengthComputable) {
+          var pct = Math.round(e.loaded / e.total * 100);
+          showLoading('Loading 480p… ' + pct + '%');
+        }
+      };
+      smallReq.onload = function() {
+        if (smallReq.status !== 200) {
+          showLoading('Loading original…');
+          startDownloadingLarge();
+          return;
+        }
+        var smallBlob = URL.createObjectURL(smallReq.response);
+        var probe = document.createElement('video');
+        probe.muted = true;
+        probe.src = smallBlob;
+        probe.addEventListener('canplaythrough', function() {
+          video.loop = true;
+          video.src = smallBlob;
+          video.play().then(function() {
+            videoBg.classList.add('visible');
+            showLoading('480p ✓ · Loading original…');
+            startDownloadingLarge();
+          }).catch(function() {
+            videoBg.classList.add('visible');
+            showLoading('480p ✓ · Loading original…');
+            startDownloadingLarge();
+          });
+        }, { once: true });
+        probe.addEventListener('error', function() {
+          // 480p not playable, try large directly
+          showLoading('Loading original…');
+          startDownloadingLarge();
+        }, { once: true });
+        probe.load();
+      };
+      smallReq.onerror = function() {
+        showLoading('Loading original…');
+        startDownloadingLarge();
+      };
+      showLoading('Loading 480p…');
+      smallReq.send();
 
-      video.addEventListener('error', function() {
-        showLoading('Loading 4K…');
-        startDownloading4K();
-      });
-
-      function startDownloading4K() {
-        if (hasSwitchedTo4K) return;
+      // Step 2: Download large video in background
+      function startDownloadingLarge() {
+        if (hasSwitchedToLarge) return;
         var req = new XMLHttpRequest();
         req.open('GET', 'assets/videos/bg-large.mp4', true);
         req.responseType = 'blob';
         req.onprogress = function(e) {
           if (e.lengthComputable) {
             var pct = Math.round(e.loaded / e.total * 100);
-            showLoading('Loading 4K… ' + pct + '%');
+            showLoading('Loading original… ' + pct + '%');
           }
         };
         req.onload = function() {
-          if (req.status === 200 && !hasSwitchedTo4K) {
+          if (req.status === 200 && !hasSwitchedToLarge) {
             var blobUrl = URL.createObjectURL(req.response);
-            // Verify the blob is actually playable before switching
             var probe = document.createElement('video');
             probe.muted = true;
             probe.src = blobUrl;
             probe.addEventListener('canplaythrough', function() {
-              if (hasSwitchedTo4K) return;
-              hasSwitchedTo4K = true;
-              // Calculate the same playback position in the 4K video
+              if (hasSwitchedToLarge) return;
+              hasSwitchedToLarge = true;
+              // Calculate same playback position
               var ratio = video.currentTime / video.duration;
               var targetTime = ratio * probe.duration;
               // Switch: brief fade out, swap source, fade in
-              video.style.opacity = '0';
+              videoBg.classList.remove('visible');
               setTimeout(function() {
                 video.src = blobUrl;
-                video.loop = true;          // ensure loop survives src swap
+                video.loop = true;
                 video.currentTime = targetTime;
                 video.play().then(function() {
-                  video.style.opacity = '1';
-                  showLoading('4K ✓');
+                  videoBg.classList.add('visible');
+                  if (loadingDot) loadingDot.classList.add('done');
+                  showLoading('Original ✓');
                   hideLoading();
                 }).catch(function() {
-                  video.style.opacity = '1';
-                  showLoading('4K ✓');
+                  videoBg.classList.add('visible');
+                  if (loadingDot) loadingDot.classList.add('done');
+                  showLoading('Original ✓');
                   hideLoading();
                 });
-              }, 300);
+              }, 400);
             }, { once: true });
             probe.addEventListener('error', function() {
-              // 4K blob not playable, stay on 720p
-              showLoading('720p (4K unavailable)');
+              showLoading('480p (original unavailable)');
               hideLoading();
             }, { once: true });
             probe.load();
-          } else if (!hasSwitchedTo4K) {
-            // Download failed, stay on 720p
-            showLoading('720p ✓');
+          } else if (!hasSwitchedToLarge) {
+            showLoading('480p ✓');
             hideLoading();
           }
         };
         req.onerror = function() {
-          showLoading('720p ✓');
+          showLoading('480p ✓');
           hideLoading();
         };
         req.send();
