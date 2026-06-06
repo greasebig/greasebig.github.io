@@ -44,23 +44,15 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    html { scroll-behavior: smooth; }
+
     body {
 
       font-family: "Inter", system-ui, -apple-system, sans-serif;
 
       color: var(--ink);
 
-      background:
-
-        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.13), transparent 50%),
-
-        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
-
-        radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
-
-        linear-gradient(175deg, #f8f9ff, #f0f2fe 40%, #f5f3ff 70%, #faf9fe);
-
-      min-height: 100vh;
+      background: #0f0f23;
 
       overflow-x: hidden;
 
@@ -214,17 +206,11 @@
 
       background:
 
-        /* 边框装饰线 */
-
         linear-gradient(90deg, transparent 8%, rgba(99,102,241,0.08) 8%, rgba(99,102,241,0.08) 8.5%, transparent 8.5%) 0 0 / 100% 100%,
 
         linear-gradient(90deg, transparent 92%, rgba(99,102,241,0.08) 92%, rgba(99,102,241,0.08) 92.5%, transparent 92.5%) 0 0 / 100% 100%,
 
-        /* 竖向中线装饰 */
-
         linear-gradient(90deg, transparent 50%, rgba(99,102,241,0.05) 50%, rgba(99,102,241,0.05) 50.3%, transparent 50.3%) 0 0 / 100% 100%,
-
-        /* 横向装饰线 */
 
         linear-gradient(0deg, transparent 25%, rgba(99,102,241,0.05) 25%, rgba(99,102,241,0.05) 25.3%, transparent 25.3%) 0 0 / 100% 100%,
 
@@ -306,7 +292,7 @@
 
     }
 
-    /* 门板上的符号 - G字母徽章 */
+    /* 门板上的符号 */
 
     .gate-emblem {
 
@@ -354,8 +340,6 @@
 
     }
 
-    /* 开门动画状态 */
-
     .gate-overlay.opening .gate-door-left {
 
       transform: perspective(1200px) rotateY(-110deg);
@@ -367,8 +351,6 @@
       transform: perspective(1200px) rotateY(110deg);
 
     }
-
-    /* 光芒爆发 - 门开到一定程度时触发 */
 
     .gate-burst {
 
@@ -420,8 +402,6 @@
 
     }
 
-    /* 飘散粒子 */
-
     .gate-spark {
 
       position: absolute;
@@ -440,8 +420,6 @@
 
     }
 
-    /* 整个overlay淡出 */
-
     .gate-overlay.fade-out {
 
       animation: gateFadeOut 0.8s ease-out forwards;
@@ -456,9 +434,193 @@
 
     }
 
-    /* 页面内容初始隐藏，等门开完再显示 */
+    /* ========== 全屏视频版块 ========== */
 
-    .wrap {
+    .fullscreen-section {
+
+      position: relative;
+
+      width: 100%;
+
+      min-height: 100vh;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      overflow: hidden;
+
+    }
+
+    .fullscreen-section .video-layer {
+
+      position: absolute;
+
+      top: 0; left: 0;
+
+      width: 100%; height: 100%;
+
+      overflow: hidden;
+
+      z-index: 0;
+
+    }
+
+    .fullscreen-section .video-layer video {
+
+      position: absolute;
+
+      top: 50%; left: 50%;
+
+      min-width: 100%; min-height: 100%;
+
+      width: auto; height: auto;
+
+      transform: translate(-50%, -50%);
+
+      object-fit: cover;
+
+      opacity: 0;
+
+      transition: opacity 1.5s ease;
+
+    }
+
+    .fullscreen-section .video-layer video.visible {
+
+      opacity: 1;
+
+    }
+
+    /* 初始渐变背景 - 视频加载前的占位 */
+
+    .fullscreen-section .bg-fallback {
+
+      position: absolute;
+
+      top: 0; left: 0;
+
+      width: 100%; height: 100%;
+
+      z-index: -1;
+
+    }
+
+    .fs-hero .bg-fallback {
+
+      background:
+
+        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.13), transparent 50%),
+
+        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
+
+        linear-gradient(175deg, #f8f9ff, #f0f2fe 40%, #f5f3ff 70%, #faf9fe);
+
+    }
+
+    .fs-articles .bg-fallback {
+
+      background:
+
+        radial-gradient(700px 500px at 80% 20%, rgba(139,92,246,0.12), transparent 50%),
+
+        radial-gradient(600px 400px at 20% 80%, rgba(99,102,241,0.10), transparent 50%),
+
+        linear-gradient(170deg, #eef0ff, #e8eafc 40%, #f0edff 70%, #f5f3ff);
+
+    }
+
+    .fs-projects .bg-fallback {
+
+      background:
+
+        radial-gradient(700px 500px at 50% 10%, rgba(16,185,129,0.12), transparent 50%),
+
+        radial-gradient(600px 400px at 30% 90%, rgba(99,102,241,0.10), transparent 50%),
+
+        linear-gradient(170deg, #f0fdf4, #ecfdf5 40%, #f0f9ff 70%, #f5f3ff);
+
+    }
+
+    .fs-explored .bg-fallback {
+
+      background:
+
+        radial-gradient(700px 500px at 70% 30%, rgba(245,158,11,0.12), transparent 50%),
+
+        radial-gradient(600px 400px at 20% 70%, rgba(236,72,153,0.10), transparent 50%),
+
+        linear-gradient(170deg, #fffbeb, #fef3c7 40%, #fdf2f8 70%, #f5f3ff);
+
+    }
+
+    /* 视频上的半透明遮罩 - 确保文字可读 */
+
+    .fullscreen-section .video-overlay {
+
+      position: absolute;
+
+      top: 0; left: 0;
+
+      width: 100%; height: 100%;
+
+      background: linear-gradient(180deg,
+
+        rgba(248,249,255,0.55) 0%,
+
+        rgba(240,242,254,0.40) 30%,
+
+        rgba(245,243,255,0.45) 60%,
+
+        rgba(250,249,254,0.55) 100%
+
+      );
+
+      z-index: 1;
+
+      pointer-events: none;
+
+    }
+
+    /* 版块内容层 */
+
+    .fullscreen-section .section-content {
+
+      position: relative;
+
+      z-index: 2;
+
+      max-width: 960px;
+
+      width: 100%;
+
+      padding: 60px 24px;
+
+    }
+
+    /* 无视频的普通版块 */
+
+    .plain-section {
+
+      position: relative;
+
+      width: 100%;
+
+      background:
+
+        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.13), transparent 50%),
+
+        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
+
+        radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
+
+        linear-gradient(175deg, #f8f9ff, #f0f2fe 40%, #f5f3ff 70%, #faf9fe);
+
+    }
+
+    .plain-section .section-content {
 
       max-width: 960px;
 
@@ -466,27 +628,9 @@
 
       padding: 60px 24px 80px;
 
-      position: relative;
-
-      z-index: 1;
-
-      opacity: 0;
-
-      transform: scale(0.98);
-
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-
     }
 
-    .wrap.revealed {
-
-      opacity: 1;
-
-      transform: scale(1);
-
-    }
-
-    /* floating orbs */
+    /* floating orbs - global */
 
     .orb {
 
@@ -496,7 +640,7 @@
 
       filter: blur(60px);
 
-      opacity: 0.55;
+      opacity: 0.35;
 
       pointer-events: none;
 
@@ -504,53 +648,13 @@
 
     }
 
-    .orb-1 {
+    .orb-1 { width: 360px; height: 360px; left: -100px; top: -80px; background: radial-gradient(circle, rgba(99,102,241,0.35), transparent 70%); animation: drift 12s ease-in-out infinite; }
 
-      width: 360px; height: 360px;
+    .orb-2 { width: 280px; height: 280px; right: -60px; top: 200px; background: radial-gradient(circle, rgba(236,72,153,0.28), transparent 70%); animation: drift 14s ease-in-out infinite 2s; }
 
-      left: -100px; top: -80px;
+    .orb-3 { width: 240px; height: 240px; left: 40%; bottom: -80px; background: radial-gradient(circle, rgba(16,185,129,0.22), transparent 70%); animation: drift 16s ease-in-out infinite 4s; }
 
-      background: radial-gradient(circle, rgba(99,102,241,0.35), transparent 70%);
-
-      animation: drift 12s ease-in-out infinite;
-
-    }
-
-    .orb-2 {
-
-      width: 280px; height: 280px;
-
-      right: -60px; top: 200px;
-
-      background: radial-gradient(circle, rgba(236,72,153,0.28), transparent 70%);
-
-      animation: drift 14s ease-in-out infinite 2s;
-
-    }
-
-    .orb-3 {
-
-      width: 240px; height: 240px;
-
-      left: 40%; bottom: -80px;
-
-      background: radial-gradient(circle, rgba(16,185,129,0.22), transparent 70%);
-
-      animation: drift 16s ease-in-out infinite 4s;
-
-    }
-
-    .orb-4 {
-
-      width: 200px; height: 200px;
-
-      right: 20%; bottom: 100px;
-
-      background: radial-gradient(circle, rgba(245,158,11,0.20), transparent 70%);
-
-      animation: drift 11s ease-in-out infinite 3s;
-
-    }
+    .orb-4 { width: 200px; height: 200px; right: 20%; bottom: 100px; background: radial-gradient(circle, rgba(245,158,11,0.20), transparent 70%); animation: drift 11s ease-in-out infinite 3s; }
 
     @keyframes drift {
 
@@ -630,7 +734,7 @@
 
     }
 
-    .wrap.revealed .hero .badge {
+    .revealed .hero .badge {
 
       opacity: 1;
 
@@ -692,7 +796,7 @@
 
     }
 
-    .wrap.revealed .hero h1 {
+    .revealed .hero h1 {
 
       opacity: 1;
 
@@ -701,8 +805,6 @@
       transition-delay: 0.2s;
 
     }
-
-    /* Animated gradient shimmer on h1 */
 
     .hero h1::after {
 
@@ -764,7 +866,7 @@
 
     }
 
-    .wrap.revealed .hero .tagline {
+    .revealed .hero .tagline {
 
       opacity: 1;
 
@@ -774,7 +876,7 @@
 
     }
 
-    /* ========== 三网站大卡片 ========== */
+    /* ========== 四网站大卡片 ========== */
 
     .site-cards {
 
@@ -796,14 +898,13 @@
 
     }
 
-    /* Center the last card (Stats) in row 2 */
     .site-cards .site-card:last-child {
 
       grid-column: 2;
 
     }
 
-    .wrap.revealed .hero .site-cards {
+    .revealed .hero .site-cards {
 
       opacity: 1;
 
@@ -999,7 +1100,7 @@
 
     }
 
-    .wrap.revealed .hero .links-row {
+    .revealed .hero .links-row {
 
       opacity: 1;
 
@@ -1155,13 +1256,7 @@
 
     }
 
-    /* section */
-
-    .section {
-
-      margin-top: 56px;
-
-    }
+    /* section heading */
 
     .section h2 {
 
@@ -1787,11 +1882,65 @@
 
     }
 
+    /* Section scroll indicator */
+
+    .scroll-indicator {
+
+      position: absolute;
+
+      bottom: 30px;
+
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      z-index: 3;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      gap: 4px;
+
+      opacity: 0.5;
+
+      animation: scrollBounce 2s ease-in-out infinite;
+
+    }
+
+    .scroll-indicator span {
+
+      font-size: 11px;
+
+      color: var(--muted);
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+    }
+
+    .scroll-indicator svg {
+
+      width: 20px; height: 20px;
+
+      color: var(--muted);
+
+    }
+
+    @keyframes scrollBounce {
+
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+
+      50% { transform: translateX(-50%) translateY(8px); }
+
+    }
+
     @media (max-width: 640px) {
 
-      .wrap { padding: 40px 16px 60px; }
-
-      .hero { padding: 20px 0 36px; }
+      .site-cards { grid-template-columns: 1fr; max-width: 360px; }
 
       .grid { grid-template-columns: 1fr; }
 
@@ -1801,55 +1950,21 @@
 
       .gate-emblem span { font-size: 30px; }
 
+      .fullscreen-section .section-content { padding: 40px 16px; }
+
+      .plain-section .section-content { padding: 40px 16px 60px; }
+
     }
 
-    /* ========== Section Video Backgrounds ========== */
-    .section, .hero {
-      position: relative;
-    }
-    .section-video-bg {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      overflow: hidden;
-      z-index: -1;
-      border-radius: 18px;
-    }
-    .section-video-bg video {
-      position: absolute;
-      top: 50%; left: 50%;
-      min-width: 100%; min-height: 100%;
-      width: auto; height: auto;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-      opacity: 0;
-      transition: opacity 1.2s ease;
-    }
-    .section-video-bg video.visible {
-      opacity: 1;
-    }
-    .section-video-bg::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg,
-        rgba(248,249,255,0.70) 0%,
-        rgba(240,242,254,0.55) 40%,
-        rgba(245,243,255,0.65) 70%,
-        rgba(250,249,254,0.75) 100%
-      );
-      z-index: 1;
-    }
-
-    /* prefers-reduced-motion: 跳过开屏动画 */
+    /* prefers-reduced-motion */
 
     @media (prefers-reduced-motion: reduce) {
 
       .gate-overlay { display: none !important; }
 
-      .wrap { opacity: 1; transform: none; }
+      .fullscreen-section .video-layer video { display: none; }
 
-      .section-video-bg video { display: none; }
+      .scroll-indicator { animation: none; }
 
     }
 
@@ -1863,13 +1978,9 @@
 
   <div class="gate-overlay" id="gateOverlay">
 
-    <!-- 门缝光芒 -->
-
     <div class="gate-light-glow"></div>
 
     <div class="gate-light"></div>
-
-    <!-- 左门 -->
 
     <div class="gate-door gate-door-left">
 
@@ -1881,8 +1992,6 @@
 
     </div>
 
-    <!-- 右门 -->
-
     <div class="gate-door gate-door-right">
 
       <div class="gate-hinge" style="top: 12%; right: 8%;"></div>
@@ -1892,8 +2001,6 @@
       <div class="gate-emblem"><span>G</span></div>
 
     </div>
-
-    <!-- 光芒爆发 -->
 
     <div class="gate-burst"></div>
 
@@ -1911,139 +2018,159 @@
 
   <div class="orb orb-4"></div>
 
-  <!-- ========== 主内容 ========== -->
+  <!-- ========== 第1版: Hero ========== -->
 
-  <div class="wrap">
+  <section class="fullscreen-section fs-hero" id="heroSection">
 
-    <!-- Hero -->
+    <div class="bg-fallback"></div>
 
-    <div class="hero" id="heroSection">
+    <div class="video-layer" data-video="hero"><video muted loop playsinline></video></div>
 
-      <div class="section-video-bg" data-video="hero"><video muted loop playsinline></video></div>
+    <div class="video-overlay"></div>
 
-      <div class="badge">
+    <div class="section-content">
 
-        <span class="dot"></span> Open Source · Computer Vision · AI
+      <div class="hero">
 
-      </div>
+        <div class="badge">
 
-      <h1>greasebig</h1>
+          <span class="dot"></span> Open Source · Computer Vision · AI
 
-      <!-- 三个网站预览图卡片 — 名字正下方 -->
+        </div>
 
-      <div class="site-cards">
+        <h1>greasebig</h1>
 
-        <a class="site-card" href="https://github.com/greasebig" target="_blank">
+        <div class="site-cards">
 
-          <div class="site-card-icon">🏠</div>
+          <a class="site-card" href="https://github.com/greasebig" target="_blank">
 
-          <div class="site-card-body">
+            <div class="site-card-icon">🏠</div>
 
-            <h3>GitHub</h3>
+            <div class="site-card-body">
 
-            <p>Projects, articles &amp; links</p>
+              <h3>GitHub</h3>
 
-          </div>
+              <p>Projects, articles &amp; links</p>
 
-          <span class="site-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
 
-        </a>
+            <span class="site-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
 
-        <a class="site-card" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
+          </a>
 
-          <div class="site-card-icon">📚</div>
+          <a class="site-card" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
 
-          <div class="site-card-body">
+            <div class="site-card-icon">📚</div>
 
-            <h3>Papers Hub</h3>
+            <div class="site-card-body">
 
-            <p>Daily arXiv paper tracker</p>
+              <h3>Papers Hub</h3>
 
-          </div>
+              <p>Daily arXiv paper tracker</p>
 
-          <span class="site-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
 
-        </a>
+            <span class="site-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
 
-        <a class="site-card" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
+          </a>
 
-          <div class="site-card-icon">🤖</div>
+          <a class="site-card" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
 
-          <div class="site-card-body">
+            <div class="site-card-icon">🤖</div>
 
-            <h3>Agent Index</h3>
+            <div class="site-card-body">
 
-            <p>Meta-index of agent repos</p>
+              <h3>Agent Index</h3>
 
-          </div>
+              <p>Meta-index of agent repos</p>
 
-          <span class="site-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
 
-        </a>
+            <span class="site-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
 
-        <a class="site-card" href="./stats.html">
+          </a>
 
-          <div class="site-card-icon">📊</div>
+          <a class="site-card" href="./stats.html">
 
-          <div class="site-card-body">
+            <div class="site-card-icon">📊</div>
 
-            <h3>Stats</h3>
+            <div class="site-card-body">
 
-            <p>Live numbers &amp; metrics</p>
+              <h3>Stats</h3>
 
-          </div>
+              <p>Live numbers &amp; metrics</p>
 
-          <span class="site-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
 
-        </a>
+            <span class="site-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
 
-      </div>
+          </a>
 
-      <p class="tagline">
+        </div>
 
-        Building tools and models at the intersection of computer vision, generative AI, and video understanding.
+        <p class="tagline">
 
-      </p>
+          Building tools and models at the intersection of computer vision, generative AI, and video understanding.
 
-      <div class="links-row">
+        </p>
 
-        <a class="gls-btn primary" href="https://github.com/greasebig" target="_blank">
+        <div class="links-row">
 
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <a class="gls-btn primary" href="https://github.com/greasebig" target="_blank">
 
-          <span>GitHub</span>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
 
-        </a>
+            <span>GitHub</span>
 
-        <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
+          </a>
 
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
 
-          <span>Papers Hub</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
 
-        </a>
+            <span>Papers Hub</span>
 
-        <a class="gls-btn" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
+          </a>
 
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <a class="gls-btn" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
 
-          <span>Agent Index</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
 
-        </a>
+            <span>Agent Index</span>
+
+          </a>
+
+        </div>
 
       </div>
 
     </div>
 
-    <!-- Articles -->
+    <div class="scroll-indicator">
 
-    <div class="section reveal" id="articlesSection">
+      <span>Scroll</span>
 
-      <div class="section-video-bg" data-video="articles"><video muted loop playsinline></video></div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+
+    </div>
+
+  </section>
+
+  <!-- ========== 第2版: Articles ========== -->
+
+  <section class="fullscreen-section fs-articles reveal" id="articlesSection">
+
+    <div class="bg-fallback"></div>
+
+    <div class="video-layer" data-video="articles"><video muted loop playsinline></video></div>
+
+    <div class="video-overlay"></div>
+
+    <div class="section-content section">
 
       <h2><span class="section-icon">📝</span> Articles</h2>
 
-      <p class="subtitle">Pinned essays first, followed by daily reposted technology reads in reverse chronological order.</p>
+      <p class="subtitle">Pinned essays</p>
 
       <a class="article-card pinned" href="./articles/claw-runtime.html" target="_blank">
         <div class="article-meta">
@@ -2086,18 +2213,21 @@
 
       </a>
 
-      <div class="article-feed-heading">
-        <h3>Fresh Tech Reposts</h3>
-        <span>转载标注：只展示标题、摘要和原文链接，版权归原作者。</span>
-      </div>
-      <div id="dailyTechArticles"></div>
     </div>
 
-    <!-- Projects -->
+  </section>
 
-    <div class="section reveal" id="projectsSection">
+  <!-- ========== 第3版: Featured Projects ========== -->
 
-      <div class="section-video-bg" data-video="projects"><video muted loop playsinline></video></div>
+  <section class="fullscreen-section fs-projects reveal" id="projectsSection">
+
+    <div class="bg-fallback"></div>
+
+    <div class="video-layer" data-video="projects"><video muted loop playsinline></video></div>
+
+    <div class="video-overlay"></div>
+
+    <div class="section-content section">
 
       <h2><span class="section-icon">⭐</span> Featured Projects</h2>
 
@@ -2163,11 +2293,19 @@
 
     </div>
 
-    <!-- Explored -->
+  </section>
 
-    <div class="section reveal" id="exploredSection">
+  <!-- ========== 第4版: Explored ========== -->
 
-      <div class="section-video-bg" data-video="explored"><video muted loop playsinline></video></div>
+  <section class="fullscreen-section fs-explored reveal" id="exploredSection">
+
+    <div class="bg-fallback"></div>
+
+    <div class="video-layer" data-video="explored"><video muted loop playsinline></video></div>
+
+    <div class="video-overlay"></div>
+
+    <div class="section-content section">
 
       <h2><span class="section-icon">🔬</span> Explored</h2>
 
@@ -2269,53 +2407,73 @@
 
     </div>
 
-    <!-- Quick Links -->
+  </section>
 
-    <div class="section reveal">
+  <!-- ========== 第5版: Fresh Tech Reposts (无视频, 原背景) ========== -->
 
-      <h2><span class="section-icon">🔗</span> Links</h2>
+  <div class="plain-section" id="freshTechSection">
 
-      <div class="link-list">
+    <div class="section-content">
 
-        <a class="gls-btn" href="https://github.com/greasebig" target="_blank">
+      <div class="section reveal">
 
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <h2><span class="section-icon">🔥</span> Fresh Tech Reposts</h2>
 
-          <span>GitHub Profile</span>
+        <p class="subtitle">Daily reposted technology reads in reverse chronological order. 转载标注：只展示标题、摘要和原文链接，版权归原作者。</p>
 
-        </a>
-
-        <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
-
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-
-          <span>Papers Hub</span>
-
-        </a>
-
-        <a class="gls-btn" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
-
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-
-          <span>Agent Index</span>
-
-        </a>
-
-        <a class="gls-btn" href="https://github.com/greasebig/claude-code" target="_blank">
-
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-
-          <span>claude-code</span>
-
-        </a>
+        <div id="dailyTechArticles"></div>
 
       </div>
 
-    </div>
+      <!-- Quick Links -->
 
-    <div class="footer">
+      <div class="section reveal">
 
-      Built with <span class="footer-heart">♥</span> · © 2026
+        <h2><span class="section-icon">🔗</span> Links</h2>
+
+        <div class="link-list">
+
+          <a class="gls-btn" href="https://github.com/greasebig" target="_blank">
+
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+
+            <span>GitHub Profile</span>
+
+          </a>
+
+          <a class="gls-btn" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+
+            <span>Papers Hub</span>
+
+          </a>
+
+          <a class="gls-btn" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+
+            <span>Agent Index</span>
+
+          </a>
+
+          <a class="gls-btn" href="https://github.com/greasebig/claude-code" target="_blank">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+
+            <span>claude-code</span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="footer">
+
+        Built with <span class="footer-heart">♥</span> · © 2026
+
+      </div>
 
     </div>
 
@@ -2339,44 +2497,31 @@
 
       if (!gate) return;
 
-      // 1. 等待1.5秒让用户感受门的存在
-
       setTimeout(function() {
-
-        // 2. 添加 opening 类 → 触发门板 CSS transition
 
         gate.classList.add('opening');
 
       }, 1500);
 
-      // 3. 门开到一半时，触发光芒爆发（1s后）
-
       setTimeout(function() {
 
         gate.classList.add('burst');
-
-        // 4. 生成飘散火花粒子
 
         createSparks(gate, 30);
 
       }, 2500);
 
-      // 5. 门完全打开后（3.3s），淡出 overlay 并显示内容
-
       setTimeout(function() {
 
         gate.classList.add('fade-out');
 
-        // 显示主内容
+        // Mark hero section as revealed
 
-        var wrap = document.querySelector('.wrap');
+        var heroSection = document.getElementById('heroSection');
 
-        if (wrap) wrap.classList.add('revealed');
+        if (heroSection) heroSection.classList.add('revealed');
 
-        // Immediately activate scroll-reveal for sections already in viewport
         activateReveals();
-
-        // 6. 动画结束后移除 overlay DOM
 
         setTimeout(function() {
 
@@ -2416,8 +2561,6 @@
 
         spark.style.opacity = '1';
 
-        // 随机颜色：白/紫/粉
-
         var colors = [
 
           'rgba(255,255,255,0.9)',
@@ -2433,8 +2576,6 @@
         spark.style.background = colors[Math.floor(Math.random() * colors.length)];
 
         container.appendChild(spark);
-
-        // 动画：从中心向外扩散
 
         var startX = 0, startY = 0;
 
@@ -2458,7 +2599,7 @@
 
           }
 
-          var ease = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+          var ease = 1 - Math.pow(1 - progress, 3);
 
           spark.style.transform = 'translate(' +
 
@@ -2478,7 +2619,7 @@
 
     }
 
-    // ========== Daily reposted tech articles (inline fallback + async fetch) ==========
+    // ========== Daily reposted tech articles ==========
 
     (function() {
 
@@ -2513,12 +2654,15 @@
         }
 
         var total = items.length;
+
         var hasMore = total > SHOW_COUNT;
 
         feed.innerHTML = items.map(function(item, idx) {
 
           var title = escapeHtml(item.title);
+
           var titleZh = item.title_zh ? escapeHtml(item.title_zh) : '';
+
           var displayTitle = titleZh ? title + ' <span class="title-zh">/ ' + titleZh + '</span>' : title;
 
           var summary = escapeHtml(item.summary);
@@ -2587,25 +2731,28 @@
 
           });
 
-          // Insert button right after the 10th article card, not at feed end
           var lastVisibleCard = feed.querySelectorAll('.article-card.repost')[SHOW_COUNT - 1];
+
           if (lastVisibleCard && lastVisibleCard.nextSibling) {
+
             feed.insertBefore(btn, lastVisibleCard.nextSibling);
+
           } else {
+
             feed.appendChild(btn);
+
           }
 
         }
 
       }
 
-      // Inline fallback data — renders instantly, no network needed
-      var fallbackItems = [{"title":"HeidiSQL – Lightweight MariaDB, MySQL, SQL Server, PostgreSQL and SQLite Manager","url":"https://github.com/HeidiSQL/HeidiSQL","source":"github.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from github.com. Hacker News score 64, 17 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48318568"},{"title":"Volkswagen blocks Home Assistant by requiring client assertion","url":"https://github.com/robinostlund/homeassistant-volkswagencarnet/issues/967","source":"github.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from github.com. Hacker News score 265, 137 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48319509"},{"title":"Is AI causing a repeat of Front end\u0027s Lost Decade?","url":"https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/","source":"mastrojs.github.io","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from mastrojs.github.io. Hacker News score 117, 115 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48321631"},{"title":"Claude Code – Everything You Can Configure That the Docs Don\u0027t Tell You","url":"https://buildingbetter.tech/p/i-read-the-claude-code-source-code","source":"buildingbetter.tech","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from buildingbetter.tech. Hacker News score 209, 45 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48318174"},{"title":"Real-time LLM Inference on Standard GPUs: 3k tokens/s per request","url":"https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/","source":"blog.kog.ai","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from blog.kog.ai. Hacker News score 77, 40 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48321076"},{"title":"We should be more tired than the model","url":"https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/","source":"vickiboykis.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from vickiboykis.com. Hacker News score 56, 53 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48322118"},{"title":"GitHub bans security researcher who posted zero-day Windows exploits","url":"https://www.tomshardware.com/tech-industry/cyber-security/microsofts-github-bans-security-researcher-who-posted-zero-day-windows-exploits-because-company-ruined-their-life-expert-claims-action-is-vindictive-and-promises-further-retaliation","source":"tomshardware.com","date":"2026-05-28","repost":true,"summary":"转载 / Curated repost from tomshardware.com. Hacker News score 473, 226 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48315968"},{"title":"Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue","url":"https://llmgame.scalex.dev","source":"llmgame.scalex.dev","date":"2026-05-28","repost":true,"summary":"转载 / Curated repost from llmgame.scalex.dev. Hacker News score 350, 142 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48308376"},{"title":"Claude Opus 4.8","url":"https://www.anthropic.com/news/claude-opus-4-8","source":"anthropic.com","date":"2026-05-28","repost":true,"summary":"转载 / Curated repost from anthropic.com. Hacker News score 1633, 1267 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48311647"},{"title":"Orchestrating AI code review at scale","url":"https://blog.cloudflare.com/ai-code-review/","source":"blog.cloudflare.com","date":"2026-05-26","repost":true,"summary":"转载 / Curated repost from blog.cloudflare.com. Hacker News score 50, 19 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48276152"}];
+      // Inline fallback data
 
-      // Show fallback immediately so articles appear instantly
+      var fallbackItems = [{"title":"HeidiSQL – Lightweight MariaDB, MySQL, SQL Server, PostgreSQL and SQLite Manager","url":"https://github.com/HeidiSQL/HeidiSQL","source":"github.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from github.com. Hacker News score 64, 17 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48318568"},{"title":"Volkswagen blocks Home Assistant by requiring client assertion","url":"https://github.com/robinostlund/homeassistant-volkswagencarnet/issues/967","source":"github.com","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from github.com. Hacker News score 265, 137 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48319509"},{"title":"Is AI causing a repeat of Front end\u0027s Lost Decade?","url":"https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/","source":"mastrojs.github.io","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from mastrojs.github.io. Hacker News score 117, 115 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48321631"},{"title":"Claude Code – Everything You Can Configure That the Docs Don\u0027t Tell You","url":"https://buildingbetter.tech/p/i-read-the-claude-code-source-code","source":"buildingbetter.tech","date":"2026-05-29","repost":true,"summary":"转载 / Curated repost from buildingbetter.tech. Hacker News score 209, 45 comments. Click through to read the original article.","discussion_url":"https://news.ycombinator.com/item?id=48318174"}];
+
       renderItems(fallbackItems);
 
-      // Try fetching latest data in background; refresh if newer
       fetch('./articles/tech-feed.json', { cache: 'no-store' })
 
         .then(function(r) { return r.ok ? r.json() : []; })
@@ -2624,40 +2771,56 @@
 
     function activateReveals() {
 
-      // Make visible any reveal elements already in viewport
       reveals.forEach(function(el) {
+
         var rect = el.getBoundingClientRect();
+
         if (rect.top < window.innerHeight && rect.bottom > 0) {
+
           el.classList.add('visible');
+
         }
+
       });
 
-      // Set up observer for elements not yet in viewport
       if (!revealObserver) {
+
         revealObserver = new IntersectionObserver(function(entries) {
+
           entries.forEach(function(e) {
+
             if (e.isIntersecting) {
+
               e.target.classList.add('visible');
+
               revealObserver.unobserve(e.target);
+
             }
+
           });
+
         }, { threshold: 0.05 });
 
         reveals.forEach(function(el) {
+
           if (!el.classList.contains('visible')) {
+
             revealObserver.observe(el);
+
           }
+
         });
+
       }
 
     }
 
-    // Fallback: if gate animation somehow doesn't fire, activate after 4s
     setTimeout(activateReveals, 4000);
 
-    // For reduced-motion users, activate immediately (no gate animation)
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+
       activateReveals();
+
     }
 
     // ========== Back to top ==========
@@ -2744,8 +2907,6 @@
 
         });
 
-        // Draw connections
-
         for (var i = 0; i < particles.length; i++) {
 
           for (var j = i + 1; j < particles.length; j++) {
@@ -2784,110 +2945,184 @@
 
     })();
 
-    // ========== Section Video Backgrounds ==========
-    // Strategy: Keep current background on page load.
+    // ========== Fullscreen Video Backgrounds ==========
+
+    // Strategy: Each fullscreen section keeps its bg-fallback initially.
     // Load 480p in background → fade in when ready.
     // Then load large video → switch at same timestamp.
+
     (function() {
+
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
       var VIDEO_MAP = {
+
         hero:     { small: 'assets/videos/sections/hero-small.mp4',     large: 'assets/videos/sections/hero-large.mp4' },
+
         articles: { small: 'assets/videos/sections/articles-small.mp4', large: 'assets/videos/sections/articles-large.mp4' },
+
         projects: { small: 'assets/videos/sections/projects-small.mp4', large: 'assets/videos/sections/projects-large.mp4' },
+
         explored: { small: 'assets/videos/sections/explored-small.mp4', large: 'assets/videos/sections/explored-large.mp4' }
+
       };
 
-      var containers = document.querySelectorAll('.section-video-bg');
+      var videoLayers = document.querySelectorAll('.video-layer');
 
-      containers.forEach(function(container) {
-        var key = container.getAttribute('data-video');
+      videoLayers.forEach(function(layer) {
+
+        var key = layer.getAttribute('data-video');
+
         if (!key || !VIDEO_MAP[key]) return;
 
-        var video = container.querySelector('video');
+        var video = layer.querySelector('video');
+
         if (!video) return;
 
         var urls = VIDEO_MAP[key];
-        var hasLarge = false;
 
         // Step 1: Load 480p small video in background
+
         var smallReq = new XMLHttpRequest();
+
         smallReq.open('GET', urls.small, true);
+
         smallReq.responseType = 'blob';
+
         smallReq.onload = function() {
+
           if (smallReq.status !== 200) return;
+
           var smallBlob = URL.createObjectURL(smallReq.response);
 
-          // Verify playable
           var probe = document.createElement('video');
+
           probe.muted = true;
+
           probe.src = smallBlob;
+
           probe.addEventListener('canplaythrough', function() {
+
             video.loop = true;
+
             video.src = smallBlob;
+
             video.play().then(function() {
+
               video.classList.add('visible');
+
             }).catch(function() {
+
               video.classList.add('visible');
+
             });
 
             // Step 2: Start downloading large video
+
             loadLarge(urls.large, video);
+
           }, { once: true });
+
           probe.addEventListener('error', function() {
+
             // small video not playable, skip
+
           }, { once: true });
+
           probe.load();
+
         };
-        smallReq.onerror = function() { /* small video failed, stay on original bg */ };
+
+        smallReq.onerror = function() { /* stay on fallback bg */ };
+
         smallReq.send();
+
       });
 
       function loadLarge(url, video) {
+
         var req = new XMLHttpRequest();
+
         req.open('GET', url, true);
+
         req.responseType = 'blob';
+
         req.onload = function() {
+
           if (req.status !== 200) return;
+
           var largeBlob = URL.createObjectURL(req.response);
 
-          // Verify playable
           var probe = document.createElement('video');
+
           probe.muted = true;
+
           probe.src = largeBlob;
+
           probe.addEventListener('canplaythrough', function() {
+
             // Calculate same timestamp position
+
             var ratio = 0;
+
             if (video.duration && isFinite(video.duration) && video.duration > 0) {
+
               ratio = video.currentTime / video.duration;
+
             }
+
             var targetTime = ratio * probe.duration;
 
             // Switch: fade out, swap, fade in
+
             video.classList.remove('visible');
+
             setTimeout(function() {
+
               video.src = largeBlob;
+
               video.loop = true;
+
               video.currentTime = targetTime;
+
               video.addEventListener('ended', function() {
+
                 video.currentTime = 0;
+
                 video.play();
+
               });
+
               video.play().then(function() {
+
                 video.classList.add('visible');
+
               }).catch(function() {
+
                 video.classList.add('visible');
+
               });
+
             }, 400);
+
           }, { once: true });
+
           probe.addEventListener('error', function() {
+
             // Large video not playable, stay on small
+
           }, { once: true });
+
           probe.load();
+
         };
+
         req.onerror = function() { /* Large video failed, stay on small */ };
+
         req.send();
+
       }
+
     })();
 
   </script>
