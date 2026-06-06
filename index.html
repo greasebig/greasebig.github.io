@@ -1803,6 +1803,44 @@
 
     }
 
+    /* ========== Section Video Backgrounds ========== */
+    .section, .hero {
+      position: relative;
+    }
+    .section-video-bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      overflow: hidden;
+      z-index: -1;
+      border-radius: 18px;
+    }
+    .section-video-bg video {
+      position: absolute;
+      top: 50%; left: 50%;
+      min-width: 100%; min-height: 100%;
+      width: auto; height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1.2s ease;
+    }
+    .section-video-bg video.visible {
+      opacity: 1;
+    }
+    .section-video-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg,
+        rgba(248,249,255,0.70) 0%,
+        rgba(240,242,254,0.55) 40%,
+        rgba(245,243,255,0.65) 70%,
+        rgba(250,249,254,0.75) 100%
+      );
+      z-index: 1;
+    }
+
     /* prefers-reduced-motion: 跳过开屏动画 */
 
     @media (prefers-reduced-motion: reduce) {
@@ -1810,6 +1848,8 @@
       .gate-overlay { display: none !important; }
 
       .wrap { opacity: 1; transform: none; }
+
+      .section-video-bg video { display: none; }
 
     }
 
@@ -1877,7 +1917,9 @@
 
     <!-- Hero -->
 
-    <div class="hero">
+    <div class="hero" id="heroSection">
+
+      <div class="section-video-bg" data-video="hero"><video muted loop playsinline></video></div>
 
       <div class="badge">
 
@@ -1995,7 +2037,9 @@
 
     <!-- Articles -->
 
-    <div class="section reveal">
+    <div class="section reveal" id="articlesSection">
+
+      <div class="section-video-bg" data-video="articles"><video muted loop playsinline></video></div>
 
       <h2><span class="section-icon">📝</span> Articles</h2>
 
@@ -2051,7 +2095,9 @@
 
     <!-- Projects -->
 
-    <div class="section reveal">
+    <div class="section reveal" id="projectsSection">
+
+      <div class="section-video-bg" data-video="projects"><video muted loop playsinline></video></div>
 
       <h2><span class="section-icon">⭐</span> Featured Projects</h2>
 
@@ -2119,7 +2165,9 @@
 
     <!-- Explored -->
 
-    <div class="section reveal">
+    <div class="section reveal" id="exploredSection">
+
+      <div class="section-video-bg" data-video="explored"><video muted loop playsinline></video></div>
 
       <h2><span class="section-icon">🔬</span> Explored</h2>
 
@@ -2734,6 +2782,112 @@
 
       if (PARTICLE_COUNT > 0) draw();
 
+    })();
+
+    // ========== Section Video Backgrounds ==========
+    // Strategy: Keep current background on page load.
+    // Load 480p in background → fade in when ready.
+    // Then load large video → switch at same timestamp.
+    (function() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      var VIDEO_MAP = {
+        hero:     { small: 'assets/videos/sections/hero-small.mp4',     large: 'assets/videos/sections/hero-large.mp4' },
+        articles: { small: 'assets/videos/sections/articles-small.mp4', large: 'assets/videos/sections/articles-large.mp4' },
+        projects: { small: 'assets/videos/sections/projects-small.mp4', large: 'assets/videos/sections/projects-large.mp4' },
+        explored: { small: 'assets/videos/sections/explored-small.mp4', large: 'assets/videos/sections/explored-large.mp4' }
+      };
+
+      var containers = document.querySelectorAll('.section-video-bg');
+
+      containers.forEach(function(container) {
+        var key = container.getAttribute('data-video');
+        if (!key || !VIDEO_MAP[key]) return;
+
+        var video = container.querySelector('video');
+        if (!video) return;
+
+        var urls = VIDEO_MAP[key];
+        var hasLarge = false;
+
+        // Step 1: Load 480p small video in background
+        var smallReq = new XMLHttpRequest();
+        smallReq.open('GET', urls.small, true);
+        smallReq.responseType = 'blob';
+        smallReq.onload = function() {
+          if (smallReq.status !== 200) return;
+          var smallBlob = URL.createObjectURL(smallReq.response);
+
+          // Verify playable
+          var probe = document.createElement('video');
+          probe.muted = true;
+          probe.src = smallBlob;
+          probe.addEventListener('canplaythrough', function() {
+            video.loop = true;
+            video.src = smallBlob;
+            video.play().then(function() {
+              video.classList.add('visible');
+            }).catch(function() {
+              video.classList.add('visible');
+            });
+
+            // Step 2: Start downloading large video
+            loadLarge(urls.large, video);
+          }, { once: true });
+          probe.addEventListener('error', function() {
+            // small video not playable, skip
+          }, { once: true });
+          probe.load();
+        };
+        smallReq.onerror = function() { /* small video failed, stay on original bg */ };
+        smallReq.send();
+      });
+
+      function loadLarge(url, video) {
+        var req = new XMLHttpRequest();
+        req.open('GET', url, true);
+        req.responseType = 'blob';
+        req.onload = function() {
+          if (req.status !== 200) return;
+          var largeBlob = URL.createObjectURL(req.response);
+
+          // Verify playable
+          var probe = document.createElement('video');
+          probe.muted = true;
+          probe.src = largeBlob;
+          probe.addEventListener('canplaythrough', function() {
+            // Calculate same timestamp position
+            var ratio = 0;
+            if (video.duration && isFinite(video.duration) && video.duration > 0) {
+              ratio = video.currentTime / video.duration;
+            }
+            var targetTime = ratio * probe.duration;
+
+            // Switch: fade out, swap, fade in
+            video.classList.remove('visible');
+            setTimeout(function() {
+              video.src = largeBlob;
+              video.loop = true;
+              video.currentTime = targetTime;
+              video.addEventListener('ended', function() {
+                video.currentTime = 0;
+                video.play();
+              });
+              video.play().then(function() {
+                video.classList.add('visible');
+              }).catch(function() {
+                video.classList.add('visible');
+              });
+            }, 400);
+          }, { once: true });
+          probe.addEventListener('error', function() {
+            // Large video not playable, stay on small
+          }, { once: true });
+          probe.load();
+        };
+        req.onerror = function() { /* Large video failed, stay on small */ };
+        req.send();
+      }
     })();
 
   </script>
