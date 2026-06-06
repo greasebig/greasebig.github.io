@@ -1,5 +1,71 @@
 [
   {
+    "title": "Lockdown Mode",
+    "url": "https://help.openai.com/en/articles/20001061-lockdown-mode",
+    "source": "help.openai.com",
+    "date": "2026-06-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from help.openai.com. Hacker News score 25, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48421145",
+    "fetched_at": "2026-06-06T05:07:55Z",
+    "title_zh": "锁定模式"
+  },
+  {
+    "title": "C++: The Programming Language back cover raises questions not answered by front",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-06-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 16, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48421079",
+    "fetched_at": "2026-06-06T05:07:55Z",
+    "title_zh": "C++：编程语言封底提出了前面未回答的问题"
+  },
+  {
+    "title": "Did Claude increase bugs in rsync?",
+    "url": "https://alexispurslane.github.io/rsync-analysis/",
+    "source": "alexispurslane.github.io",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from alexispurslane.github.io. Hacker News score 355, 364 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48411635",
+    "fetched_at": "2026-06-06T05:07:56Z",
+    "title_zh": "Claude是否增加了rsync中的bug？"
+  },
+  {
+    "title": "Nordstjernen 1.0",
+    "url": "https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0",
+    "source": "github.com",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 30, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48419821",
+    "fetched_at": "2026-06-06T05:07:56Z",
+    "title_zh": "北街1.0"
+  },
+  {
+    "title": "pg_durable: Microsoft open sources in-database durable execution",
+    "url": "https://github.com/microsoft/pg_durable",
+    "source": "github.com",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 362, 83 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48414367",
+    "fetched_at": "2026-06-06T05:07:55Z",
+    "title_zh": "pg_durable：微软开源数据库内持久执行"
+  },
+  {
+    "title": "Gemma 4 QAT models: Optimizing compression for mobile and laptop efficiency",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+    "source": "blog.google",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.google. Hacker News score 310, 92 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48414653",
+    "fetched_at": "2026-06-06T05:07:55Z",
+    "title_zh": "Gemma 4 QAT 模型：优化压缩以提高移动和笔记本电脑的效率"
+  },
+  {
     "title": "Azure Linux 4.0 is Microsoft's first general-purpose Linux",
     "url": "https://www.boxofcables.dev/azure-linux-4-0-is-microsofts-first-general-purpose-linux/",
     "source": "boxofcables.dev",
@@ -44,6 +110,39 @@
     "title_zh": "Magenta RealTime 2：开源本地实时音乐模型"
   },
   {
+    "title": "South Korean forums will need to scan every images with AI censorship tools",
+    "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
+    "source": "discuss.privacyguides.net",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from discuss.privacyguides.net. Hacker News score 240, 142 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48406198",
+    "fetched_at": "2026-06-06T05:07:58Z",
+    "title_zh": "韩国论坛将需要使用人工智能审查工具扫描每张图片"
+  },
+  {
+    "title": "Show HN: Formally verified polygon intersection – Opus 4.8 oneshots, prev failed",
+    "url": "https://github.com/schildep/verified-polygon-intersection",
+    "source": "github.com",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 66, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48405264",
+    "fetched_at": "2026-06-06T05:07:57Z",
+    "title_zh": "Show HN：正式验证的多边形交集 – Opus 4.8 oneshots，上一个失败"
+  },
+  {
+    "title": "My Agent Skill for Test-Driven Development",
+    "url": "https://www.saturnci.com/my-agent-skill-for-test-driven-development.html",
+    "source": "saturnci.com",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from saturnci.com. Hacker News score 157, 63 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48398925",
+    "fetched_at": "2026-06-06T05:07:56Z",
+    "title_zh": "我的测试驱动开发代理技能"
+  },
+  {
     "title": "When AI Builds Itself: Our progress toward recursive self-improvement",
     "url": "https://www.anthropic.com/institute/recursive-self-improvement",
     "source": "anthropic.com",
@@ -77,17 +176,6 @@
     "title_zh": "VoidZero 加入 Cloudflare"
   },
   {
-    "title": "South Korean Forums Will Need to Scan Every Images with AI Censorship Tools",
-    "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
-    "source": "discuss.privacyguides.net",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from discuss.privacyguides.net. Hacker News score 95, 76 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48406198",
-    "fetched_at": "2026-06-05T05:51:40Z",
-    "title_zh": "韩国论坛将需要用 AI 审查工具扫描每张图片"
-  },
-  {
     "title": "Anthropic's open-source framework for AI-powered vulnerability discovery",
     "url": "https://github.com/anthropics/defending-code-reference-harness",
     "source": "github.com",
@@ -119,6 +207,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48392004",
     "fetched_at": "2026-06-04T06:11:51Z",
     "title_zh": "伯克利 CS 课程中 AI 使用增加，数学能力下降，不及格率飙升"
+  },
+  {
+    "title": "Nine Ways to Do Inheritance in Rust, a Language Without Inheritance",
+    "url": "https://medium.com/@carlmkadie/nine-ways-to-do-inheritance-in-rust-a-language-without-inheritance-14825bf1e215",
+    "source": "medium.com",
+    "date": "2026-06-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from medium.com. Hacker News score 22, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48383760",
+    "fetched_at": "2026-06-06T05:07:57Z",
+    "title_zh": "Rust 这种没有继承的语言中进行继承的九种方法"
   },
   {
     "title": "Mathematicians issue warning as AI rapidly gains ground",
@@ -229,104 +328,5 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48375175",
     "fetched_at": "2026-06-03T06:20:09Z",
     "title_zh": "即将来到你浏览器的广告卡特尔"
-  },
-  {
-    "title": "Trump signs downsized AI order after weeks of reversals",
-    "url": "https://www.politico.com/news/2026/06/02/trump-signs-downsized-ai-order-00946389",
-    "source": "politico.com",
-    "date": "2026-06-02",
-    "repost": true,
-    "summary": "转载 / Curated repost from politico.com. Hacker News score 200, 147 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48372628",
-    "fetched_at": "2026-06-03T06:20:08Z",
-    "title_zh": "特朗普在数周反复后签署缩小版 AI 行政令"
-  },
-  {
-    "title": "Show HN: Paseo – Beautiful open-source coding agent interface",
-    "url": "https://github.com/getpaseo/paseo",
-    "source": "github.com",
-    "date": "2026-06-02",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 55, 28 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48377250",
-    "fetched_at": "2026-06-03T06:20:08Z",
-    "title_zh": "Show HN: Paseo – 美观的开源编程代理界面"
-  },
-  {
-    "title": "AI outperforms law professors in Stanford Law study",
-    "url": "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/",
-    "source": "law.stanford.edu",
-    "date": "2026-06-02",
-    "repost": true,
-    "summary": "转载 / Curated repost from law.stanford.edu. Hacker News score 178, 144 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48377761",
-    "fetched_at": "2026-06-03T06:20:06Z",
-    "title_zh": "斯坦福法学院研究：AI 表现超越法学教授"
-  },
-  {
-    "title": "1-Click GitHub Token Stealing via a VSCode Bug",
-    "url": "https://blog.ammaraskar.com/github-token-stealing/",
-    "source": "blog.ammaraskar.com",
-    "date": "2026-06-02",
-    "repost": true,
-    "summary": "转载 / Curated repost from blog.ammaraskar.com. Hacker News score 245, 32 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48371562",
-    "fetched_at": "2026-06-03T06:20:05Z",
-    "title_zh": "通过 VSCode 漏洞一键窃取 GitHub Token"
-  },
-  {
-    "title": "Use your Nvidia GPU's VRAM as swap space on Linux",
-    "url": "https://github.com/c0dejedi/nbd-vram",
-    "source": "github.com",
-    "date": "2026-06-02",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 235, 65 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48377404",
-    "fetched_at": "2026-06-03T06:20:05Z",
-    "title_zh": "在 Linux 上将 Nvidia GPU 显存用作交换空间"
-  },
-  {
-    "title": "Anthropic confidentially submits draft S-1 to the SEC",
-    "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
-    "source": "anthropic.com",
-    "date": "2026-06-01",
-    "repost": true,
-    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 473, 385 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48358646",
-    "fetched_at": "2026-06-02T06:06:50Z",
-    "title_zh": "Anthropic 向 SEC 机密提交 S-1 草案"
-  },
-  {
-    "title": "Florida sues OpenAI and Sam Altman over AI risks",
-    "url": "https://www.politico.com/news/2026/06/01/openai-hit-with-florida-lawsuit-00944215",
-    "source": "politico.com",
-    "date": "2026-06-01",
-    "repost": true,
-    "summary": "转载 / Curated repost from politico.com. Hacker News score 202, 168 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48358667",
-    "fetched_at": "2026-06-02T06:06:49Z",
-    "title_zh": "佛罗里达州因 AI 风险起诉 OpenAI 和 Sam Altman"
-  },
-  {
-    "title": "Flipper Zero Zig Template",
-    "url": "https://github.com/NishantJoshi00/flipper-template",
-    "source": "github.com",
-    "date": "2026-06-01",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 136, 11 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48356490",
-    "fetched_at": "2026-06-02T06:06:49Z",
-    "title_zh": "Flipper Zero Zig 模板"
-  },
-  {
-    "title": "Alphabet announces $80B equity capital raise to expand AI infra and compute",
-    "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Proposed-80-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure-and-Compute-2026-b0myAMewCa/default.aspx",
-    "source": "abc.xyz",
-    "date": "2026-06-01",
-    "repost": true,
-    "summary": "转载 / Curated repost from abc.xyz. Hacker News score 154, 141 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48362515",
-    "fetched_at": "2026-06-02T06:06:48Z",
-    "title_zh": "Alphabet 宣布 800 亿美元股权融资以扩展 AI 基础设施和算力"
   }
 ]
