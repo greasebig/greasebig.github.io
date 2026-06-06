@@ -3034,9 +3034,10 @@
 
     // ========== Fullscreen Video Backgrounds ==========
 
-    // Strategy: Each fullscreen section keeps its bg-fallback initially.
-    // Load 480p in background → fade in when ready.
-    // Then load large video → switch at same timestamp.
+    // Loading sequence:
+    //   1. Load four 480p small videos -> fade in when ready
+    //   2. After ALL 480p ready -> load & start bgm.mp3 (loop)
+    //   3. After audio playing -> load four large videos in background
     // A global loading indicator in bottom-right shows progress.
 
     (function() {
@@ -3065,11 +3066,15 @@
 
       var loadingHideTimer = null;
 
-      var sectionStates = {};   // key → { small: 'loading'|'ready'|'fail', large: 'loading'|'ready'|'fail' }
+      var sectionStates = {};   // key -> { small: 'loading'|'ready'|'fail', large: 'loading'|'ready'|'fail' }
 
       var totalSections = Object.keys(VIDEO_MAP).length;
 
       var allLargeDone = false;
+
+      var audioStarted = false;
+
+      var largeVideosStarted = false;
 
       function updateLoadingUI() {
 
@@ -3093,7 +3098,7 @@
 
         if (allLargeDone) {
 
-          loadingText.textContent = 'All videos loaded ✓';
+          loadingText.textContent = 'All loaded ✓';
 
           if (loadingDot) loadingDot.classList.add('done');
 
@@ -3133,13 +3138,21 @@
 
           parts.push('480p ✓');
 
-          if (largeReady > 0 || largeLoading > 0) {
+          if (!audioStarted) {
 
-            parts.push('Original ' + largeReady + '/' + totalSections);
+            parts.push('Loading audio…');
 
           } else {
 
-            parts.push('Loading original…');
+            if (largeReady > 0 || largeLoading > 0) {
+
+              parts.push('Original ' + largeReady + '/' + totalSections);
+
+            } else if (largeVideosStarted) {
+
+              parts.push('Loading original…');
+
+            }
 
           }
 
@@ -3159,9 +3172,107 @@
 
         updateLoadingUI();
 
+        // Check if all small videos are ready -> trigger audio loading
+
+        if (phase === 'small' && state === 'ready') {
+
+          var smallReadyCount = 0;
+
+          Object.keys(sectionStates).forEach(function(k) {
+
+            if (sectionStates[k].small === 'ready') smallReadyCount++;
+
+          });
+
+          if (smallReadyCount === totalSections && !audioStarted) {
+
+            startAudioAndLargeVideos();
+
+          }
+
+        }
+
       }
 
-      // ---- Video loading logic ----
+      // ---- Audio + Large videos trigger ----
+
+      function startAudioAndLargeVideos() {
+
+        audioStarted = true;
+
+        updateLoadingUI();
+
+        // Load and play audio via XHR blob (same pattern as videos)
+
+        var audio = document.getElementById('bgm');
+
+        if (audio) {
+
+          var audioReq = new XMLHttpRequest();
+
+          audioReq.open('GET', 'assets/audio/bgm.mp3', true);
+
+          audioReq.responseType = 'blob';
+
+          audioReq.onload = function() {
+
+            if (audioReq.status === 200) {
+
+              var audioBlob = URL.createObjectURL(audioReq.response);
+
+              audio.src = audioBlob;
+
+              audio.volume = 0.6;
+
+              audio.play().then(function() {
+
+                var btn = document.getElementById('music-toggle');
+
+                if (btn) {
+
+                  btn.className = 'playing';
+
+                  btn.innerHTML = '<span class="music-icon">🎵</span>';
+
+                }
+
+                // Audio is playing, now start large videos
+
+                startLoadingLargeVideos();
+
+              }).catch(function() {
+
+                // Auto-play blocked, still load large videos
+
+                startLoadingLargeVideos();
+
+              });
+
+            } else {
+
+              startLoadingLargeVideos();
+
+            }
+
+          };
+
+          audioReq.onerror = function() {
+
+            startLoadingLargeVideos();
+
+          };
+
+          audioReq.send();
+
+        } else {
+
+          startLoadingLargeVideos();
+
+        }
+
+      }
+
+      // ---- Video loading logic: Step 1 - load 480p ----
 
       var videoLayers = document.querySelectorAll('.video-layer');
 
@@ -3179,7 +3290,7 @@
 
         sectionStates[key] = { small: 'loading', large: 'loading' };
 
-        // Step 1: Load 480p small video in background
+        // Load 480p small video in background
 
         var smallReq = new XMLHttpRequest();
 
@@ -3223,10 +3334,6 @@
 
             markState(key, 'small', 'ready');
 
-            // Step 2: Start downloading large video
-
-            loadLarge(urls.large, video, key);
-
           }, { once: true });
 
           probe.addEventListener('error', function() {
@@ -3248,6 +3355,40 @@
         smallReq.send();
 
       });
+
+      // ---- Step 2: load large videos (called after audio starts) ----
+
+      function startLoadingLargeVideos() {
+
+        if (largeVideosStarted) return;
+
+        largeVideosStarted = true;
+
+        updateLoadingUI();
+
+        videoLayers.forEach(function(layer) {
+
+          var key = layer.getAttribute('data-video');
+
+          if (!key || !VIDEO_MAP[key]) return;
+
+          var video = layer.querySelector('video');
+
+          if (!video) return;
+
+          var urls = VIDEO_MAP[key];
+
+          // Only load large if small is ready
+
+          if (sectionStates[key] && sectionStates[key].small === 'ready') {
+
+            loadLarge(urls.large, video, key);
+
+          }
+
+        });
+
+      }
 
       function loadLarge(url, video, key) {
 
@@ -3354,90 +3495,149 @@
   </script>
 
   <!-- Background Music Player -->
-  <audio id="bgm" loop preload="auto">
-    <source src="assets/audio/bgm.mp3" type="audio/mpeg">
-  </audio>
+
+  <audio id="bgm" loop preload="none"></audio>
 
   <style>
+
     #music-toggle {
+
       position: fixed;
+
       bottom: 24px;
+
       right: 24px;
+
       z-index: 9999;
+
       width: 48px;
+
       height: 48px;
+
       border-radius: 50%;
+
       border: none;
-      background: rgba(99, 102, 241, 0.85);
-      color: #fff;
-      font-size: 20px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
-      transition: all 0.3s ease;
-      backdrop-filter: blur(8px);
-    }
-    #music-toggle:hover {
-      transform: scale(1.1);
-      background: rgba(99, 102, 241, 1);
-      box-shadow: 0 6px 24px rgba(99, 102, 241, 0.6);
-    }
-    #music-toggle.muted {
+
       background: rgba(100, 100, 120, 0.6);
+
+      color: #fff;
+
+      font-size: 20px;
+
+      cursor: pointer;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+      transition: all 0.3s ease;
+
+      backdrop-filter: blur(8px);
+
     }
+
+    #music-toggle:hover {
+
+      background: rgba(99, 102, 241, 0.85);
+
+      box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+
+    }
+
+    #music-toggle.muted {
+
+      background: rgba(100, 100, 120, 0.6);
+
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+    }
+
     #music-toggle.muted:hover {
+
       background: rgba(100, 100, 120, 0.8);
+
     }
+
+    #music-toggle.playing {
+
+      background: rgba(99, 102, 241, 0.85);
+
+      box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+
+    }
+
     @keyframes music-spin {
+
       from { transform: rotate(0deg); }
+
       to { transform: rotate(360deg); }
+
     }
+
     #music-toggle.playing .music-icon {
+
       animation: music-spin 3s linear infinite;
+
       display: inline-block;
+
     }
+
   </style>
 
   <script>
+
     (function() {
-      const audio = document.getElementById('bgm');
-      const btn = document.createElement('button');
+
+      var audio = document.getElementById('bgm');
+
+      var btn = document.createElement('button');
+
       btn.id = 'music-toggle';
+
       btn.className = 'muted';
+
       btn.innerHTML = '<span class="music-icon">🎵</span>';
+
       btn.title = 'Play / Pause Music';
+
       document.body.appendChild(btn);
 
-      let isPlaying = false;
-
-      // Auto-play attempt (browsers may block)
-      audio.volume = 0.6;
-      audio.play().then(function() {
-        isPlaying = true;
-        btn.className = 'playing';
-      }).catch(function() {
-        // Auto-play blocked, user must click
-        isPlaying = false;
-      });
+      var isPlaying = false;
 
       btn.addEventListener('click', function() {
+
         if (isPlaying) {
+
           audio.pause();
+
           isPlaying = false;
+
           btn.className = 'muted';
+
           btn.innerHTML = '<span class="music-icon">🔇</span>';
+
         } else {
+
           audio.play().then(function() {
+
             isPlaying = true;
+
             btn.className = 'playing';
+
             btn.innerHTML = '<span class="music-icon">🎵</span>';
+
           });
+
         }
+
       });
+
     })();
+
   </script>
 
 </body>
