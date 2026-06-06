@@ -10,7 +10,7 @@
 
   <title>greasebig</title>
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='50%25' stop-color='%238b5cf6'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient><linearGradient id='g2' x1='100%25' y1='0%25' x2='0%25' y2='100%25'><stop offset='0%25' stop-color='%23ec4899'/><stop offset='100%25' stop-color='%236366f1'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='%230f0f23'/><rect x='4' y='4' width='92' height='92' rx='18' fill='url(%23g1)' opacity='0.9'/><circle cx='50' cy='38' r='14' fill='none' stroke='%23fff' stroke-width='3'/><line x1='50' y1='52' x2='50' y2='74' stroke='%23fff' stroke-width='3' stroke-linecap='round'/><line x1='38' y1='64' x2='62' y2='64' stroke='%23fff' stroke-width='3' stroke-linecap='round'/><circle cx='50' cy='38' r='5' fill='%23fff' opacity='0.9'/><circle cx='50' cy='38' r='2.5' fill='url(%23g2)'/></svg>" type="image/svg+xml" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='a' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient><filter id='g'><feGaussianBlur stdDeviation='2' result='b'/><feMerge><feMergeNode in='b'/><feMergeNode in='SourceGraphic'/></feMerge></filter></defs><rect width='100' height='100' rx='20' fill='%230a0a1a'/><circle cx='50' cy='50' r='38' fill='none' stroke='url(%23a)' stroke-width='2.5' opacity='0.4'/><circle cx='50' cy='50' r='28' fill='none' stroke='url(%23a)' stroke-width='1.5' opacity='0.6' stroke-dasharray='4 6'/><circle cx='50' cy='50' r='18' fill='none' stroke='%23fff' stroke-width='1' opacity='0.3'/><g filter='url(%23g)'><path d='M50 16 L56 34 L50 28 L44 34 Z' fill='%23fff' opacity='0.9'/><path d='M50 84 L44 66 L50 72 L56 66 Z' fill='%23fff' opacity='0.9'/><path d='M16 50 L34 44 L28 50 L34 56 Z' fill='%23fff' opacity='0.9'/><path d='M84 50 L66 56 L72 50 L66 44 Z' fill='%23fff' opacity='0.9'/></g><circle cx='50' cy='50' r='6' fill='url(%23a)'/><circle cx='50' cy='50' r='3' fill='%23fff'/><circle cx='50' cy='12' r='2.5' fill='%236366f1'/><circle cx='50' cy='88' r='2.5' fill='%23ec4899'/><circle cx='12' cy='50' r='2.5' fill='%238b5cf6'/><circle cx='88' cy='50' r='2.5' fill='%23f59e0b'/><circle cx='23' cy='23' r='2' fill='%2310b981' opacity='0.7'/><circle cx='77' cy='23' r='2' fill='%23ec4899' opacity='0.7'/><circle cx='23' cy='77' r='2' fill='%236366f1' opacity='0.7'/><circle cx='77' cy='77' r='2' fill='%238b5cf6' opacity='0.7'/></svg>" type="image/svg+xml" />
 
   <style>
 
@@ -1956,6 +1956,82 @@
 
     }
 
+    /* ========== 视频加载进度指示器 ========== */
+
+    .video-loading-bar {
+
+      position: fixed;
+
+      bottom: 20px; right: 20px;
+
+      z-index: 9999;
+
+      background: rgba(15,15,35,0.7);
+
+      backdrop-filter: blur(12px);
+
+      -webkit-backdrop-filter: blur(12px);
+
+      border: 1px solid rgba(99,102,241,0.2);
+
+      color: #c7c7ff;
+
+      font-size: 11px;
+
+      font-weight: 500;
+
+      padding: 8px 16px;
+
+      border-radius: 20px;
+
+      opacity: 0;
+
+      transition: opacity 0.5s;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      pointer-events: none;
+
+      max-width: 320px;
+
+    }
+
+    .video-loading-bar.visible { opacity: 1; }
+
+    .video-loading-bar .vlb-dot {
+
+      width: 6px; height: 6px;
+
+      border-radius: 50%;
+
+      background: var(--accent);
+
+      animation: vlbPulse 1.2s ease-in-out infinite;
+
+      flex-shrink: 0;
+
+    }
+
+    .video-loading-bar .vlb-dot.done {
+
+      background: var(--accent-4);
+
+      animation: none;
+
+    }
+
+    @keyframes vlbPulse {
+
+      0%, 100% { opacity: 1; transform: scale(1); }
+
+      50% { opacity: 0.4; transform: scale(0.7); }
+
+    }
+
     /* prefers-reduced-motion */
 
     @media (prefers-reduced-motion: reduce) {
@@ -1965,6 +2041,8 @@
       .fullscreen-section .video-layer video { display: none; }
 
       .scroll-indicator { animation: none; }
+
+      .video-loading-bar { display: none !important; }
 
     }
 
@@ -2009,6 +2087,16 @@
   <!-- ========== 背景层 ========== -->
 
   <canvas id="particles"></canvas>
+
+  <!-- 视频加载进度指示器 -->
+
+  <div class="video-loading-bar" id="videoLoadingBar">
+
+    <span class="vlb-dot"></span>
+
+    <span class="vlb-text">Loading videos…</span>
+
+  </div>
 
   <div class="orb orb-1"></div>
 
@@ -2110,7 +2198,7 @@
 
         <p class="tagline">
 
-          Building tools and models at the intersection of computer vision, generative AI, and video understanding.
+          修炼于天机阁，以像素炼丹，以算法御剑。窥破虚实之界，游走于生成与感知的裂缝之间——至于"理解视频"这等天劫，不过是渡劫时顺手捡的彩蛋罢了。
 
         </p>
 
@@ -2950,6 +3038,7 @@
     // Strategy: Each fullscreen section keeps its bg-fallback initially.
     // Load 480p in background → fade in when ready.
     // Then load large video → switch at same timestamp.
+    // A global loading indicator in bottom-right shows progress.
 
     (function() {
 
@@ -2967,6 +3056,114 @@
 
       };
 
+      // ---- Loading indicator ----
+
+      var loadingBar = document.getElementById('videoLoadingBar');
+
+      var loadingDot = loadingBar ? loadingBar.querySelector('.vlb-dot') : null;
+
+      var loadingText = loadingBar ? loadingBar.querySelector('.vlb-text') : null;
+
+      var loadingHideTimer = null;
+
+      var sectionStates = {};   // key → { small: 'loading'|'ready'|'fail', large: 'loading'|'ready'|'fail' }
+
+      var totalSections = Object.keys(VIDEO_MAP).length;
+
+      var allLargeDone = false;
+
+      function updateLoadingUI() {
+
+        if (!loadingBar || !loadingText) return;
+
+        var smallReady = 0, largeReady = 0, largeLoading = 0;
+
+        Object.keys(VIDEO_MAP).forEach(function(k) {
+
+          var s = sectionStates[k];
+
+          if (!s) return;
+
+          if (s.small === 'ready') smallReady++;
+
+          if (s.large === 'ready') largeReady++;
+
+          if (s.large === 'loading') largeLoading++;
+
+        });
+
+        if (allLargeDone) {
+
+          loadingText.textContent = 'All videos loaded ✓';
+
+          if (loadingDot) loadingDot.classList.add('done');
+
+          loadingBar.classList.add('visible');
+
+          clearTimeout(loadingHideTimer);
+
+          loadingHideTimer = setTimeout(function() {
+
+            loadingBar.classList.remove('visible');
+
+          }, 3000);
+
+          return;
+
+        }
+
+        if (largeReady === totalSections) {
+
+          allLargeDone = true;
+
+          updateLoadingUI();
+
+          return;
+
+        }
+
+        // Build status text
+
+        var parts = [];
+
+        if (smallReady < totalSections) {
+
+          parts.push('Loading 480p… ' + smallReady + '/' + totalSections);
+
+        } else {
+
+          parts.push('480p ✓');
+
+          if (largeReady > 0 || largeLoading > 0) {
+
+            parts.push('Original ' + largeReady + '/' + totalSections);
+
+          } else {
+
+            parts.push('Loading original…');
+
+          }
+
+        }
+
+        loadingText.textContent = parts.join(' · ');
+
+        loadingBar.classList.add('visible');
+
+      }
+
+      function markState(key, phase, state) {
+
+        if (!sectionStates[key]) sectionStates[key] = { small: 'loading', large: 'loading' };
+
+        sectionStates[key][phase] = state;
+
+        updateLoadingUI();
+
+      }
+
+      // ---- Video loading logic ----
+
       var videoLayers = document.querySelectorAll('.video-layer');
 
       videoLayers.forEach(function(layer) {
@@ -2981,6 +3178,8 @@
 
         var urls = VIDEO_MAP[key];
 
+        sectionStates[key] = { small: 'loading', large: 'loading' };
+
         // Step 1: Load 480p small video in background
 
         var smallReq = new XMLHttpRequest();
@@ -2991,7 +3190,13 @@
 
         smallReq.onload = function() {
 
-          if (smallReq.status !== 200) return;
+          if (smallReq.status !== 200) {
+
+            markState(key, 'small', 'fail');
+
+            return;
+
+          }
 
           var smallBlob = URL.createObjectURL(smallReq.response);
 
@@ -3017,15 +3222,17 @@
 
             });
 
+            markState(key, 'small', 'ready');
+
             // Step 2: Start downloading large video
 
-            loadLarge(urls.large, video);
+            loadLarge(urls.large, video, key);
 
           }, { once: true });
 
           probe.addEventListener('error', function() {
 
-            // small video not playable, skip
+            markState(key, 'small', 'fail');
 
           }, { once: true });
 
@@ -3033,13 +3240,17 @@
 
         };
 
-        smallReq.onerror = function() { /* stay on fallback bg */ };
+        smallReq.onerror = function() {
+
+          markState(key, 'small', 'fail');
+
+        };
 
         smallReq.send();
 
       });
 
-      function loadLarge(url, video) {
+      function loadLarge(url, video, key) {
 
         var req = new XMLHttpRequest();
 
@@ -3049,7 +3260,13 @@
 
         req.onload = function() {
 
-          if (req.status !== 200) return;
+          if (req.status !== 200) {
+
+            markState(key, 'large', 'fail');
+
+            return;
+
+          }
 
           var largeBlob = URL.createObjectURL(req.response);
 
@@ -3103,13 +3320,15 @@
 
               });
 
+              markState(key, 'large', 'ready');
+
             }, 400);
 
           }, { once: true });
 
           probe.addEventListener('error', function() {
 
-            // Large video not playable, stay on small
+            markState(key, 'large', 'fail');
 
           }, { once: true });
 
@@ -3117,11 +3336,19 @@
 
         };
 
-        req.onerror = function() { /* Large video failed, stay on small */ };
+        req.onerror = function() {
+
+          markState(key, 'large', 'fail');
+
+        };
 
         req.send();
 
       }
+
+      // Show initial loading state
+
+      updateLoadingUI();
 
     })();
 
