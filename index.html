@@ -3358,6 +3358,126 @@
 
   </script>
 
+  <!-- Background Music Player -->
+  <audio id="bgm" loop preload="auto">
+    <source src="assets/audio/bgm.mp3" type="audio/mpeg">
+  </audio>
+
+  <style>
+    #music-toggle {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(99, 102, 241, 0.85);
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(8px);
+    }
+    #music-toggle:hover {
+      transform: scale(1.1);
+      background: rgba(99, 102, 241, 1);
+      box-shadow: 0 6px 24px rgba(99, 102, 241, 0.6);
+    }
+    #music-toggle.muted {
+      background: rgba(100, 100, 120, 0.6);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    #music-toggle.muted:hover {
+      background: rgba(100, 100, 120, 0.8);
+    }
+    @keyframes music-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    #music-toggle.playing .music-icon {
+      animation: music-spin 3s linear infinite;
+      display: inline-block;
+    }
+    #music-tooltip {
+      position: fixed;
+      bottom: 80px;
+      right: 16px;
+      z-index: 9998;
+      background: rgba(10, 10, 26, 0.9);
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      backdrop-filter: blur(8px);
+    }
+    #music-tooltip.show {
+      opacity: 1;
+    }
+  </style>
+
+  <script>
+    (function() {
+      const audio = document.getElementById('bgm');
+      const btn = document.createElement('button');
+      btn.id = 'music-toggle';
+      btn.className = 'muted';
+      btn.innerHTML = '<span class="music-icon">🎵</span>';
+      btn.title = 'Play / Pause Music';
+      document.body.appendChild(btn);
+
+      const tooltip = document.createElement('div');
+      tooltip.id = 'music-tooltip';
+      tooltip.textContent = '🎵 一格格 — 卫兰';
+      document.body.appendChild(tooltip);
+
+      let isPlaying = false;
+
+      // Auto-play attempt (browsers may block)
+      audio.volume = 0.6;
+      audio.play().then(function() {
+        isPlaying = true;
+        btn.className = 'playing';
+        tooltip.className = 'show';
+        setTimeout(function() { tooltip.className = ''; }, 3000);
+      }).catch(function() {
+        // Auto-play blocked, user must click
+        isPlaying = false;
+        tooltip.textContent = '🎵 点击播放音乐';
+        tooltip.className = 'show';
+        setTimeout(function() { tooltip.className = ''; }, 4000);
+      });
+
+      btn.addEventListener('click', function() {
+        if (isPlaying) {
+          audio.pause();
+          isPlaying = false;
+          btn.className = 'muted';
+          btn.innerHTML = '<span class="music-icon">🔇</span>';
+          tooltip.textContent = '🔇 已静音';
+        } else {
+          audio.play().then(function() {
+            isPlaying = true;
+            btn.className = 'playing';
+            btn.innerHTML = '<span class="music-icon">🎵</span>';
+            tooltip.textContent = '🎵 一格格 — 卫兰';
+          });
+        }
+        tooltip.className = 'show';
+        setTimeout(function() { tooltip.className = ''; }, 2000);
+      });
+    })();
+  </script>
+
 </body>
 
 </html>
