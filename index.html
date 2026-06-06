@@ -3074,6 +3074,8 @@
 
       var audioStarted = false;
 
+      var audioReady = false;    // true when audio blob loaded and playing (or attempted)
+
       var largeVideosStarted = false;
 
       function updateLoadingUI() {
@@ -3132,7 +3134,7 @@
 
         if (smallReady < totalSections) {
 
-          parts.push('Loading 480p… ' + smallReady + '/' + totalSections);
+          parts.push('480p ' + smallReady + '/' + totalSections);
 
         } else {
 
@@ -3140,9 +3142,15 @@
 
           if (!audioStarted) {
 
-            parts.push('Loading audio…');
+            // waiting for audio to begin loading
+
+          } else if (!audioReady) {
+
+            parts.push('Audio loading…');
 
           } else {
+
+            parts.push('Audio ✓');
 
             if (largeReady > 0 || largeLoading > 0) {
 
@@ -3224,7 +3232,13 @@
 
               audio.volume = 0.6;
 
+              // Try autoplay
+
               audio.play().then(function() {
+
+                audioReady = true;
+
+                updateLoadingUI();
 
                 var btn = document.getElementById('music-toggle');
 
@@ -3238,15 +3252,15 @@
 
                 }
 
-                // Audio is playing, now start large videos
-
                 startLoadingLargeVideos();
 
               }).catch(function() {
 
-                // Auto-play blocked by browser policy
+                // Auto-play blocked by browser
 
-                // Show pulsing hint on music button so user knows to click
+                audioReady = true;
+
+                updateLoadingUI();
 
                 var btn = document.getElementById('music-toggle');
 
@@ -3254,13 +3268,17 @@
 
                   btn.className = 'muted waiting';
 
-                  btn.innerHTML = '<span class="music-icon">🎵</span>';
+                  btn.title = 'Click to play music';
 
                 }
 
-                // Listen for first user interaction to auto-start audio
+                // One-time global interaction listener (NOT on button click to avoid double-fire)
 
-                function resumeAudio() {
+                var resumeOnce = function(e) {
+
+                  // Don't steal the music button's own click
+
+                  if (e && e.target && e.target.id === 'music-toggle') return;
 
                   audio.play().then(function() {
 
@@ -3276,27 +3294,35 @@
 
                   }).catch(function() {});
 
-                  document.removeEventListener('click', resumeAudio);
+                  cleanup();
 
-                  document.removeEventListener('touchstart', resumeAudio);
+                };
 
-                  document.removeEventListener('keydown', resumeAudio);
+                function cleanup() {
+
+                  document.removeEventListener('click', resumeOnce, true);
+
+                  document.removeEventListener('touchstart', resumeOnce, true);
+
+                  document.removeEventListener('keydown', resumeOnce, true);
 
                 }
 
-                document.addEventListener('click', resumeAudio);
+                document.addEventListener('click', resumeOnce, true);
 
-                document.addEventListener('touchstart', resumeAudio);
+                document.addEventListener('touchstart', resumeOnce, true);
 
-                document.addEventListener('keydown', resumeAudio);
-
-                // Still load large videos in background
+                document.addEventListener('keydown', resumeOnce, true);
 
                 startLoadingLargeVideos();
 
               });
 
             } else {
+
+              audioReady = true;
+
+              updateLoadingUI();
 
               startLoadingLargeVideos();
 
@@ -3306,6 +3332,10 @@
 
           audioReq.onerror = function() {
 
+            audioReady = true;
+
+            updateLoadingUI();
+
             startLoadingLargeVideos();
 
           };
@@ -3313,6 +3343,10 @@
           audioReq.send();
 
         } else {
+
+          audioReady = true;
+
+          updateLoadingUI();
 
           startLoadingLargeVideos();
 
@@ -3552,11 +3586,11 @@
 
       position: fixed;
 
-      bottom: 24px;
+      bottom: 80px;
 
       right: 24px;
 
-      z-index: 9999;
+      z-index: 9998;
 
       width: 48px;
 
@@ -3682,33 +3716,31 @@
 
       }
 
-      btn.addEventListener('click', function() {
+      btn.addEventListener('click', function(e) {
 
-        if (isPlaying || (btn.dataset && btn.dataset.userPlaying === 'true')) {
+        e.stopPropagation();  // Prevent global resume listener from also firing
 
-          audio.pause();
-
-          isPlaying = false;
-
-          btn.dataset.userPlaying = 'false';
-
-          btn.className = 'muted';
-
-          btn.innerHTML = '<span class="music-icon">🔇</span>';
-
-        } else {
+        if (audio.paused) {
 
           audio.play().then(function() {
 
             isPlaying = true;
 
-            btn.dataset.userPlaying = 'true';
-
             btn.className = 'playing';
 
             btn.innerHTML = '<span class="music-icon">🎵</span>';
 
-          });
+          }).catch(function() {});
+
+        } else {
+
+          audio.pause();
+
+          isPlaying = false;
+
+          btn.className = 'muted';
+
+          btn.innerHTML = '<span class="music-icon">🔇</span>';
 
         }
 
