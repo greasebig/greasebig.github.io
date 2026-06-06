@@ -3234,6 +3234,8 @@
 
                   btn.innerHTML = '<span class="music-icon">🎵</span>';
 
+                  btn.dataset.userPlaying = 'true';
+
                 }
 
                 // Audio is playing, now start large videos
@@ -3242,7 +3244,53 @@
 
               }).catch(function() {
 
-                // Auto-play blocked, still load large videos
+                // Auto-play blocked by browser policy
+
+                // Show pulsing hint on music button so user knows to click
+
+                var btn = document.getElementById('music-toggle');
+
+                if (btn) {
+
+                  btn.className = 'muted waiting';
+
+                  btn.innerHTML = '<span class="music-icon">🎵</span>';
+
+                }
+
+                // Listen for first user interaction to auto-start audio
+
+                function resumeAudio() {
+
+                  audio.play().then(function() {
+
+                    if (btn) {
+
+                      btn.className = 'playing';
+
+                      btn.innerHTML = '<span class="music-icon">🎵</span>';
+
+                      btn.dataset.userPlaying = 'true';
+
+                    }
+
+                  }).catch(function() {});
+
+                  document.removeEventListener('click', resumeAudio);
+
+                  document.removeEventListener('touchstart', resumeAudio);
+
+                  document.removeEventListener('keydown', resumeAudio);
+
+                }
+
+                document.addEventListener('click', resumeAudio);
+
+                document.addEventListener('touchstart', resumeAudio);
+
+                document.addEventListener('keydown', resumeAudio);
+
+                // Still load large videos in background
 
                 startLoadingLargeVideos();
 
@@ -3570,6 +3618,20 @@
 
     }
 
+    #music-toggle.waiting {
+
+      animation: pulse-hint 1.5s ease-in-out infinite;
+
+    }
+
+    @keyframes pulse-hint {
+
+      0%, 100% { background: rgba(100, 100, 120, 0.6); transform: scale(1); }
+
+      50% { background: rgba(99, 102, 241, 0.7); transform: scale(1.1); box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4); }
+
+    }
+
     @keyframes music-spin {
 
       from { transform: rotate(0deg); }
@@ -3608,13 +3670,27 @@
 
       var isPlaying = false;
 
+      // Sync initial state with audio if already playing
+
+      if (audio && !audio.paused) {
+
+        isPlaying = true;
+
+        btn.className = 'playing';
+
+        btn.innerHTML = '<span class="music-icon">🎵</span>';
+
+      }
+
       btn.addEventListener('click', function() {
 
-        if (isPlaying) {
+        if (isPlaying || (btn.dataset && btn.dataset.userPlaying === 'true')) {
 
           audio.pause();
 
           isPlaying = false;
+
+          btn.dataset.userPlaying = 'false';
 
           btn.className = 'muted';
 
@@ -3625,6 +3701,8 @@
           audio.play().then(function() {
 
             isPlaying = true;
+
+            btn.dataset.userPlaying = 'true';
 
             btn.className = 'playing';
 
