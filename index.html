@@ -2264,6 +2264,15 @@
 
       <p class="subtitle">Pinned essays</p>
 
+      <a class="article-card pinned" href="./articles/mcp-deep-dive.html" target="_blank">
+        <div class="article-meta">
+          <span class="article-tag">Pinned · MCP Protocol</span>
+          <span>2026-06-06</span>
+        </div>
+        <h3>MCP 深度解析：从零到行业标准仅 15 个月的协议奇迹</h3>
+        <p class="article-desc">全面解析 MCP 诞生、三大原语、规范演进、OpenAI 采纳分水岭、与 A2A 协议的垂直/水平互补关系、A2A Task 生命周期、生产环境安全挑战与四层防御模型，以及 2026 年生态系统现状。</p>
+      </a>
+
       <a class="article-card pinned" href="./articles/claw-runtime.html" target="_blank">
         <div class="article-meta">
           <span class="article-tag">Pinned · Agent Ecosystem</span>
@@ -2274,51 +2283,21 @@
       </a>
 
       <a class="article-card pinned" href="./articles/harness-engineering.html" target="_blank">
-
         <div class="article-meta">
-
           <span class="article-tag">Pinned · Harness Engineering</span>
-
           <span>2026-05-24</span>
-
         </div>
-
         <h3>Harness Engineering：驾驭 AI Agent 的工程艺术</h3>
-
         <p class="article-desc">从 Mitchell Hashimoto 的定义出发，深入探讨 Agent = Model + Harness 范式。分析 WorkBuddy 如何作为一套完整的 Harness 运行，以及自建 OpenClaw 如何集成 OpenHarness 构建可靠的 AI 编码 Agent。</p>
-
       </a>
 
       <a class="article-card pinned" href="./articles/harness-poc.html" target="_blank">
-
         <div class="article-meta">
-
           <span class="article-tag">Pinned · Harness POC</span>
-
           <span>2026-05-24</span>
-
         </div>
-
         <h3>Building a Harness from Scratch: ~300 Lines of Python</h3>
-
         <p class="article-desc">动手实现了一个最小可用的 Agent Harness。多 provider 支持、Agent Loop、AGENTS.md 上下文注入、MEMORY.md 跨会话记忆、权限边界、生命周期钩子。附完整源码和三个示例。</p>
-
-      </a>
-
-      <a class="article-card pinned" href="./articles/mcp-deep-dive.html" target="_blank">
-
-        <div class="article-meta">
-
-          <span class="article-tag">Pinned · MCP Protocol</span>
-
-          <span>2026-06-06</span>
-
-        </div>
-
-        <h3>MCP 深度解析：从零到行业标准仅 15 个月的协议奇迹</h3>
-
-        <p class="article-desc">全面解析 MCP 诞生、三大原语、规范演进、OpenAI 采纳分水岭、与 A2A 协议的垂直/水平互补关系、A2A Task 生命周期、生产环境安全挑战与四层防御模型，以及 2026 年生态系统现状。</p>
-
       </a>
 
     </div>
@@ -3420,25 +3399,6 @@
       animation: music-spin 3s linear infinite;
       display: inline-block;
     }
-    #music-tooltip {
-      position: fixed;
-      bottom: 80px;
-      right: 16px;
-      z-index: 9998;
-      background: rgba(10, 10, 26, 0.9);
-      color: #fff;
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-size: 13px;
-      font-family: 'Inter', sans-serif;
-      pointer-events: none;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      backdrop-filter: blur(8px);
-    }
-    #music-tooltip.show {
-      opacity: 1;
-    }
   </style>
 
   <script>
@@ -3451,11 +3411,6 @@
       btn.title = 'Play / Pause Music';
       document.body.appendChild(btn);
 
-      const tooltip = document.createElement('div');
-      tooltip.id = 'music-tooltip';
-      tooltip.textContent = '🎵 一格格 — 卫兰';
-      document.body.appendChild(tooltip);
-
       let isPlaying = false;
 
       // Auto-play attempt (browsers may block)
@@ -3463,14 +3418,9 @@
       audio.play().then(function() {
         isPlaying = true;
         btn.className = 'playing';
-        tooltip.className = 'show';
-        setTimeout(function() { tooltip.className = ''; }, 3000);
       }).catch(function() {
         // Auto-play blocked, user must click
         isPlaying = false;
-        tooltip.textContent = '🎵 点击播放音乐';
-        tooltip.className = 'show';
-        setTimeout(function() { tooltip.className = ''; }, 4000);
       });
 
       btn.addEventListener('click', function() {
@@ -3479,17 +3429,13 @@
           isPlaying = false;
           btn.className = 'muted';
           btn.innerHTML = '<span class="music-icon">🔇</span>';
-          tooltip.textContent = '🔇 已静音';
         } else {
           audio.play().then(function() {
             isPlaying = true;
             btn.className = 'playing';
             btn.innerHTML = '<span class="music-icon">🎵</span>';
-            tooltip.textContent = '🎵 一格格 — 卫兰';
           });
         }
-        tooltip.className = 'show';
-        setTimeout(function() { tooltip.className = ''; }, 2000);
       });
     })();
   </script>
