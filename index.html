@@ -24,11 +24,11 @@
       font-display: swap;
     }
 
-    /* 2. 白舟草書教漢：日式草书，苍劲潦草，繁体极佳 — 自托管 WOFF2 */
+    /* 2. 衡山毛筆行書：日式行书，流畅飘逸，繁体完整 — 自托管 WOFF2 */
     @font-face {
-      font-family: 'HakusyuSousyo';
-      src: url('fonts/HakusyuSousyo_kk.woff2') format('woff2'),
-           url('fonts/HakusyuSousyo_kk.ttf') format('truetype');
+      font-family: 'KouzanGyousho';
+      src: url('fonts/KouzanGyousho.woff2') format('woff2'),
+           url('fonts/KouzanGyousho.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
@@ -938,7 +938,7 @@
 
     /* Tagline font families — rotated by JS synced with golden tide */
     .tagline-cn {
-      font-family: 'KouzanSousho', 'HakusyuSousyo', 'Noto Serif TC', cursive;
+      font-family: 'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive;
       letter-spacing: 0.12em;
       transition: opacity 0.6s ease;
     }
@@ -2249,7 +2249,7 @@
 
           <span class="tagline-cn">修煉於天機閣，融像素煉丹，以算法御劍</span><br>
           <span class="tagline-cn">窺破虚實之界，游走於生成與感知的裂縫之間</span><br>
-          <span class="tagline-cn">——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手撿的彩蛋</span><br>
+          <span class="tagline-cn">——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手揀的彩蛋</span><br>
           <span class="tagline-cn" style="display:block;text-align:center;">罷了</span>
 
           <span class="tagline-en" style="opacity:0.6; font-size:0.92em;">He who cultivateth within the Pavilion of Heavenly Secrets—forging elixirs from pixels, and wielding algorithms as his blade. He strideth through the rift 'twixt creation and perception. As for "the understanding of moving images," that celestial tribulation? 'Twas but a passing windfall, chanced upon amidst the storm. Let it be.</span>
@@ -3895,14 +3895,14 @@
     // 金潮流过时各行依次切换字体，配合淡入淡出过渡
     (function() {
       // 中文狂草字体轮换列表
-      // 只使用支持全部繁体字的字体：KouzanSousho 和 HakusyuSousyo 是日式草书，完整覆盖繁体
-      // Zhi Mang Xing / Liu Jian Mao Cao / Long Cang / ZCOOL XiaoWei 只有简体字符集，
-      // 排在前面时繁体字（煉於閣機窺實頻這級過撿罷）会显示空白，已删除
+      // KouzanSousho（衡山草書）：狂草风格，粗犷潦草，完整覆盖所有繁体字
+      // KouzanGyousho（衡山行書）：行书风格，流畅飘逸，完整覆盖（除—和揀/原撿已换为揀）
+      // HakusyuSousyo（白舟草書）已删除：27个繁体字glyph为空轮廓，显示透明
+      // ZhiMangXing等简体字体已删除：不支持繁体字
       // Noto Serif TC 支持繁体但非草书，作为兜底
-      // 两字体风格差异明显：KouzanSousho粗犷潦草，HakusyuSousyo细劲飘逸
       var cnFonts = [
-        "'KouzanSousho', 'HakusyuSousyo', 'Noto Serif TC', cursive",
-        "'HakusyuSousyo', 'KouzanSousho', 'Noto Serif TC', cursive"
+        "'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive",
+        "'KouzanGyousho', 'KouzanSousho', 'Noto Serif TC', cursive"
       ];
 
       // 英文古英语/黑体字字体轮换列表
