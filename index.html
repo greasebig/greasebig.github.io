@@ -34,6 +34,46 @@
       font-display: swap;
     }
 
+    /* 3. Cloister Black：中世纪古英语黑体字 — 自托管 WOFF2 */
+    @font-face {
+      font-family: 'CloisterBlack';
+      src: url('fonts/CloisterBlack.woff2') format('woff2'),
+           url('fonts/CloisterBlack.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* 4. Canterbury：古英语黑体字 — 自托管 WOFF2 */
+    @font-face {
+      font-family: 'Canterbury';
+      src: url('fonts/Canterbury.woff2') format('woff2'),
+           url('fonts/Canterbury.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* 5. Alte Schwabacher：古德式黑体字 — 自托管 WOFF2 */
+    @font-face {
+      font-family: 'AlteSchwabacher';
+      src: url('fonts/AlteSchwabacher.woff2') format('woff2'),
+           url('fonts/AlteSchwabacher.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* 6. Middle Saxony Text：中古撒克逊经文黑体字 — 自托管 WOFF2 */
+    @font-face {
+      font-family: 'MiddleSaxonyText';
+      src: url('fonts/MIDDST__.woff2') format('woff2'),
+           url('fonts/MIDDST__.TTF') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Zhi+Mang+Xing&family=Liu+Jian+Mao+Cao&family=Long+Cang&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=UnifrakturMaguntia&family=MedievalSharp&family=Pirata+One&family=Texturina:wght@400;700&family=IM+Fell+English&family=Cinzel+Decorative:wght@400;700&family=Grenze+Gotisch:wght@400;700&family=Metamorphous&display=swap');
 
     :root {
@@ -903,7 +943,7 @@
       transition: opacity 0.6s ease;
     }
     .tagline-en {
-      font-family: 'UnifrakturMaguntia', cursive;
+      font-family: 'UnifrakturMaguntia', 'CloisterBlack', 'Canterbury', cursive;
       letter-spacing: 0.03em;
       transition: opacity 0.6s ease;
     }
@@ -3862,16 +3902,20 @@
         "'Long Cang', 'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive"
       ];
 
-      // 英文古英语/黑体字字体轮换列表 — 全部都是中世纪/哥特/黑字体风格
+      // 英文古英语/黑体字字体轮换列表 — 自托管古字体优先，CDN字体兜底
       var enFonts = [
-        "'UnifrakturMaguntia', cursive",
-        "'MedievalSharp', 'UnifrakturMaguntia', cursive",
-        "'Pirata One', 'MedievalSharp', 'UnifrakturMaguntia', cursive",
-        "'Grenze Gotisch', 'UnifrakturMaguntia', 'MedievalSharp', cursive",
-        "'Cinzel Decorative', 'Grenze Gotisch', 'UnifrakturMaguntia', serif",
-        "'Texturina', 'Grenze Gotisch', 'UnifrakturMaguntia', serif",
-        "'IM Fell English', 'Texturina', 'UnifrakturMaguntia', serif",
-        "'Metamorphous', 'MedievalSharp', 'UnifrakturMaguntia', cursive"
+        "'CloisterBlack', 'UnifrakturMaguntia', cursive",
+        "'Canterbury', 'CloisterBlack', 'UnifrakturMaguntia', cursive",
+        "'AlteSchwabacher', 'Canterbury', 'CloisterBlack', cursive",
+        "'MiddleSaxonyText', 'AlteSchwabacher', 'Canterbury', cursive",
+        "'UnifrakturMaguntia', 'CloisterBlack', cursive",
+        "'MedievalSharp', 'CloisterBlack', 'UnifrakturMaguntia', cursive",
+        "'Pirata One', 'MedievalSharp', 'CloisterBlack', cursive",
+        "'Grenze Gotisch', 'CloisterBlack', 'UnifrakturMaguntia', cursive",
+        "'Cinzel Decorative', 'Grenze Gotisch', 'CloisterBlack', serif",
+        "'Texturina', 'Grenze Gotisch', 'CloisterBlack', serif",
+        "'IM Fell English', 'Texturina', 'CloisterBlack', serif",
+        "'Metamorphous', 'MedievalSharp', 'CloisterBlack', cursive"
       ];
 
       var cnIdx = 0, enIdx = 0;
