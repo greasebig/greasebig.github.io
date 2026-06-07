@@ -14,7 +14,7 @@
 
   <style>
 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Liu+Jian+Mao+Cao&family=UnifrakturMaguntia&display=swap');
 
     :root {
 
@@ -874,6 +874,60 @@
 
       transition-delay: 0.3s;
 
+    }
+
+    /* Tagline font families */
+    .tagline-cn {
+      font-family: 'Liu Jian Mao Cao', cursive;
+      letter-spacing: 0.08em;
+    }
+    .tagline-en {
+      font-family: 'UnifrakturMaguntia', cursive;
+      letter-spacing: 0.03em;
+    }
+
+    /* Golden tidal wave animation on tagline text */
+    .tagline-fx .tagline-cn,
+    .tagline-fx .tagline-en {
+      background: linear-gradient(
+        90deg,
+        var(--muted) 0%,
+        var(--muted) 30%,
+        #d4a843 45%,
+        #f5d98a 50%,
+        #d4a843 55%,
+        var(--muted) 70%,
+        var(--muted) 100%
+      );
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: golden-tide 6s ease-in-out infinite;
+    }
+
+    @keyframes golden-tide {
+      0% { background-position: 100% 50%; }
+      50% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    /* Random-direction secondary shimmer (CSS only, per-line offset) */
+    .tagline-fx .tagline-cn:nth-of-type(2) {
+      animation: golden-tide 7s ease-in-out infinite;
+      animation-delay: -2s;
+    }
+    .tagline-fx .tagline-cn:nth-of-type(3) {
+      animation: golden-tide 5.5s ease-in-out infinite;
+      animation-delay: -4s;
+    }
+    .tagline-fx .tagline-cn:nth-of-type(4) {
+      animation: golden-tide 8s ease-in-out infinite;
+      animation-delay: -1s;
+    }
+    .tagline-fx .tagline-en {
+      animation: golden-tide 9s ease-in-out infinite;
+      animation-delay: -3s;
     }
 
     /* ========== 四网站大卡片 ========== */
@@ -2128,14 +2182,14 @@
 
         <h1>greasebig</h1>
 
-        <p class="tagline" style="text-align: center;">
+        <p class="tagline tagline-fx" style="text-align: center;">
 
-          修炼于天机阁，融像素炼丹，以算法御剑<br>
-          窥破虚实之界，游走于生成与感知的裂缝之间<br>
-          ——至于"理解视频"这等仙级杀招，不过是渡天劫时顺手捡的彩蛋<br>
-          <span style="display:block;text-align:center;">罢了</span><br>
+          <span class="tagline-cn">修煉於天機閣，融像素煉丹，以算法御劍</span><br>
+          <span class="tagline-cn">窺破虛實之界，游走於生成與感知的裂縫之間</span><br>
+          <span class="tagline-cn">——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手撿的彩蛋</span><br>
+          <span class="tagline-cn" style="display:block;text-align:center;">罷了</span>
 
-          <span style="opacity:0.6; font-size:0.92em;">Cultivating at the Pavilion of Heavenly Secrets — forging elixirs from pixels, wielding algorithms as swords. Walking the rift between generation and perception. As for "video understanding," that heavenly tribulation? Just an Easter egg picked up along the way.</span>
+          <span class="tagline-en" style="opacity:0.6; font-size:0.92em;">Cultivating at the Pavilion of Heavenly Secrets — forging elixirs from pixels, wielding algorithms as swords. Walking the rift between generation and perception. As for "video understanding," that heavenly tribulation? Just an Easter egg picked up along the way.</span>
 
         </p>
 
