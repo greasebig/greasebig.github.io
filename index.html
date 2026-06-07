@@ -74,7 +74,7 @@
       font-display: swap;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Zhi+Mang+Xing&family=Liu+Jian+Mao+Cao&family=Long+Cang&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=UnifrakturMaguntia&family=MedievalSharp&family=Pirata+One&family=Texturina:wght@400;700&family=IM+Fell+English&family=Cinzel+Decorative:wght@400;700&family=Grenze+Gotisch:wght@400;700&family=Metamorphous&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=UnifrakturMaguntia&family=MedievalSharp&family=Pirata+One&family=Texturina:wght@400;700&family=IM+Fell+English&family=Cinzel+Decorative:wght@400;700&family=Grenze+Gotisch:wght@400;700&family=Metamorphous&display=swap');
 
     :root {
 
@@ -936,9 +936,9 @@
 
     }
 
-    /* Tagline font families — rotated by JS every 30s */
+    /* Tagline font families — rotated by JS synced with golden tide */
     .tagline-cn {
-      font-family: 'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive;
+      font-family: 'KouzanSousho', 'HakusyuSousyo', 'Noto Serif TC', cursive;
       letter-spacing: 0.12em;
       transition: opacity 0.6s ease;
     }
@@ -3895,13 +3895,14 @@
     // 金潮流过时各行依次切换字体，配合淡入淡出过渡
     (function() {
       // 中文狂草字体轮换列表
-      // KouzanSousho/HakusyuSousyo支持全部繁体字，必须始终排在简体字体之前
+      // 只使用支持全部繁体字的字体：KouzanSousho 和 HakusyuSousyo 是日式草书，完整覆盖繁体
+      // Zhi Mang Xing / Liu Jian Mao Cao / Long Cang / ZCOOL XiaoWei 只有简体字符集，
+      // 排在前面时繁体字（煉於閣機窺實頻這級過撿罷）会显示空白，已删除
+      // Noto Serif TC 支持繁体但非草书，作为兜底
+      // 两字体风格差异明显：KouzanSousho粗犷潦草，HakusyuSousyo细劲飘逸
       var cnFonts = [
-        "'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
-        "'HakusyuSousyo', 'KouzanSousho', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
-        "'KouzanSousho', 'HakusyuSousyo', 'Long Cang', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
-        "'HakusyuSousyo', 'KouzanSousho', 'Liu Jian Mao Cao', 'Zhi Mang Xing', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
-        "'KouzanSousho', 'HakusyuSousyo', 'ZCOOL XiaoWei', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'Noto Serif TC', 'Noto Serif SC', cursive"
+        "'KouzanSousho', 'HakusyuSousyo', 'Noto Serif TC', cursive",
+        "'HakusyuSousyo', 'KouzanSousho', 'Noto Serif TC', cursive"
       ];
 
       // 英文古英语/黑体字字体轮换列表
