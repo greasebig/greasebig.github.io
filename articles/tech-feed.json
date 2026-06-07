@@ -1,5 +1,71 @@
 [
   {
+    "title": "Show HN: TakoVM – Isolated model and tool execution used by enterprises",
+    "url": "https://github.com/las7/TakoVM",
+    "source": "github.com",
+    "date": "2026-06-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 12, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48431257",
+    "fetched_at": "2026-06-07T05:55:31Z",
+    "title_zh": "Show HN：TakoVM – 企业使用的隔离模型和工具执行"
+  },
+  {
+    "title": "Show HN: Oproxy – inspect and modify network traffic from the browser",
+    "url": "https://github.com/sauravrao637/oproxy",
+    "source": "github.com",
+    "date": "2026-06-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 26, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48431079",
+    "fetched_at": "2026-06-07T05:55:29Z",
+    "title_zh": "Show HN: Oproxy – 从浏览器检查和修改网络流量"
+  },
+  {
+    "title": "I design with Claude more than Figma now",
+    "url": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
+    "source": "blog.janestreet.com",
+    "date": "2026-06-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.janestreet.com. Hacker News score 4, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48431981",
+    "fetched_at": "2026-06-07T05:55:28Z",
+    "title_zh": "我现在和 Claude 一起设计比 Figma 还多"
+  },
+  {
+    "title": "Valve P2P networking broken for more than 2 months",
+    "url": "https://github.com/ValveSoftware/GameNetworkingSockets/issues/398",
+    "source": "github.com",
+    "date": "2026-06-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 90, 29 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48431461",
+    "fetched_at": "2026-06-07T05:55:27Z",
+    "title_zh": "Valve P2P网络断线2个多月"
+  },
+  {
+    "title": "Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot",
+    "url": "https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/",
+    "source": "this.weekinsecurity.com",
+    "date": "2026-06-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from this.weekinsecurity.com. Hacker News score 517, 188 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48427643",
+    "fetched_at": "2026-06-07T05:55:30Z",
+    "title_zh": "Meta 证实数千个 Instagram 账户因滥用人工智能聊天机器人而被黑客入侵"
+  },
+  {
+    "title": "Ntsc-rs – open-source video emulation of analog TV and VHS artifacts",
+    "url": "https://ntsc.rs/",
+    "source": "ntsc.rs",
+    "date": "2026-06-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from ntsc.rs. Hacker News score 312, 75 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48428025",
+    "fetched_at": "2026-06-07T05:55:27Z",
+    "title_zh": "Ntsc-rs – 模拟电视和 VHS 工件的开源视频仿真"
+  },
+  {
     "title": "Lockdown Mode",
     "url": "https://help.openai.com/en/articles/20001061-lockdown-mode",
     "source": "help.openai.com",
@@ -20,6 +86,39 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48421079",
     "fetched_at": "2026-06-06T05:07:55Z",
     "title_zh": "C++：编程语言封底提出了前面未回答的问题"
+  },
+  {
+    "title": "Google to pay SpaceX $920M a month for compute capacity at xAI data centers",
+    "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
+    "source": "cnbc.com",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from cnbc.com. Hacker News score 208, 784 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48417490",
+    "fetched_at": "2026-06-07T05:55:31Z",
+    "title_zh": "谷歌每月向 SpaceX 支付 9.2 亿美元，用于 xAI 数据中心的计算能力"
+  },
+  {
+    "title": "Harness engineering: Leveraging Codex in an agent-first world",
+    "url": "https://openai.com/index/harness-engineering/",
+    "source": "openai.com",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 146, 95 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48416264",
+    "fetched_at": "2026-06-07T05:55:28Z",
+    "title_zh": "线束工程：在代理优先的世界中利用 Codex"
+  },
+  {
+    "title": "Symbolica 2.0: Programmable Symbols for Python and Rust",
+    "url": "https://symbolica.io/posts/symbolica_2_0_release/",
+    "source": "symbolica.io",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from symbolica.io. Hacker News score 34, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48415457",
+    "fetched_at": "2026-06-07T05:55:28Z",
+    "title_zh": "Symbolica 2.0：Python 和 Rust 的可编程符号"
   },
   {
     "title": "Did Claude increase bugs in rsync?",
@@ -108,6 +207,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48407815",
     "fetched_at": "2026-06-05T05:51:39Z",
     "title_zh": "Magenta RealTime 2：开源本地实时音乐模型"
+  },
+  {
+    "title": "Biohub releases a world model of protein biology",
+    "url": "https://biohub.org/news/world-model-of-protein-biology/",
+    "source": "biohub.org",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from biohub.org. Hacker News score 33, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48393252",
+    "fetched_at": "2026-06-07T05:55:29Z",
+    "title_zh": "Biohub 发布蛋白质生物学世界模型"
   },
   {
     "title": "South Korean forums will need to scan every images with AI censorship tools",
@@ -218,115 +328,5 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48383760",
     "fetched_at": "2026-06-06T05:07:57Z",
     "title_zh": "Rust 这种没有继承的语言中进行继承的九种方法"
-  },
-  {
-    "title": "Mathematicians issue warning as AI rapidly gains ground",
-    "url": "https://www.science.org/content/article/mathematicians-issue-warning-ai-rapidly-gains-ground",
-    "source": "science.org",
-    "date": "2026-06-03",
-    "repost": true,
-    "summary": "转载 / Curated repost from science.org. Hacker News score 210, 252 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48382052",
-    "fetched_at": "2026-06-04T06:11:55Z",
-    "title_zh": "数学家发出警告：AI 正快速占据阵地"
-  },
-  {
-    "title": "Self-hosted dev sandboxes with preview URLs (Docker, Go, no K8s)",
-    "url": "https://github.com/tastyeffectco/sandboxes",
-    "source": "github.com",
-    "date": "2026-06-03",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 74, 20 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48388909",
-    "fetched_at": "2026-06-04T06:11:55Z",
-    "title_zh": "自托管开发沙箱，带预览 URL（Docker、Go、无需 K8s）"
-  },
-  {
-    "title": "Gooey: A GPU-accelerated UI framework for Zig",
-    "url": "https://github.com/duanebester/gooey",
-    "source": "github.com",
-    "date": "2026-06-03",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 156, 57 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48386725",
-    "fetched_at": "2026-06-04T06:11:54Z",
-    "title_zh": "Gooey：Zig 的 GPU 加速 UI 框架"
-  },
-  {
-    "title": "Journey to JPEG XL: open-source experiments shaped the future of image coding",
-    "url": "https://opensource.googleblog.com/2026/06/journey-to-jpeg-xl-how-open-source-experiments-shaped-the-future-of-image-coding.html",
-    "source": "opensource.googleblog.com",
-    "date": "2026-06-03",
-    "repost": true,
-    "summary": "转载 / Curated repost from opensource.googleblog.com. Hacker News score 61, 32 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48390688",
-    "fetched_at": "2026-06-04T06:11:54Z",
-    "title_zh": "JPEG XL 之旅：开源实验塑造了图像编码的未来"
-  },
-  {
-    "title": "Artificial intelligence is not conscious – Ted Chiang",
-    "url": "https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/",
-    "source": "theatlantic.com",
-    "date": "2026-06-03",
-    "repost": true,
-    "summary": "转载 / Curated repost from theatlantic.com. Hacker News score 349, 605 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48387270",
-    "fetched_at": "2026-06-04T06:11:52Z",
-    "title_zh": "人工智能没有意识 — 特德·姜"
-  },
-  {
-    "title": "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
-    "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
-    "source": "simonwillison.net",
-    "date": "2026-06-03",
-    "repost": true,
-    "summary": "转载 / Curated repost from simonwillison.net. Hacker News score 434, 543 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48383056",
-    "fetched_at": "2026-06-04T06:11:52Z",
-    "title_zh": "Uber 每月 1500 美元的 AI 限额是 AI 工具定价的有用信号"
-  },
-  {
-    "title": "Gemma 4 12B: A unified, encoder-free multimodal model",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
-    "source": "blog.google",
-    "date": "2026-06-03",
-    "repost": true,
-    "summary": "转载 / Curated repost from blog.google. Hacker News score 781, 314 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48385906",
-    "fetched_at": "2026-06-04T06:11:51Z",
-    "title_zh": "Gemma 4 12B：统一的、无编码器的多模态模型"
-  },
-  {
-    "title": "U of T researchers demonstrate AI worm could target any online device",
-    "url": "https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device",
-    "source": "utoronto.ca",
-    "date": "2026-06-03",
-    "repost": true,
-    "summary": "转载 / Curated repost from utoronto.ca. Hacker News score 9, 1 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48379664",
-    "fetched_at": "2026-06-03T06:20:07Z",
-    "title_zh": "多伦多大学研究人员演示 AI 蠕虫可攻击任何在线设备"
-  },
-  {
-    "title": "Reverse-Engineered Userspace Driver for Asus ZenVision Lid OLED on Linux\"",
-    "url": "https://github.com/tarpediem/zenvision-linux",
-    "source": "github.com",
-    "date": "2026-06-02",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 41, 7 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48368338",
-    "fetched_at": "2026-06-05T05:51:39Z",
-    "title_zh": "Linux 上华硕 ZenVision 笔盖 OLED 的逆向工程用户态驱动"
-  },
-  {
-    "title": "The advertising cartel coming to your web browser",
-    "url": "https://blog.zgp.org/the-advertising-cartel-coming-to-your-web-browser/",
-    "source": "blog.zgp.org",
-    "date": "2026-06-02",
-    "repost": true,
-    "summary": "转载 / Curated repost from blog.zgp.org. Hacker News score 188, 51 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48375175",
-    "fetched_at": "2026-06-03T06:20:09Z",
-    "title_zh": "即将来到你浏览器的广告卡特尔"
   }
 ]
