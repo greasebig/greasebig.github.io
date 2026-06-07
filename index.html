@@ -3675,6 +3675,8 @@
 
       backdrop-filter: blur(8px);
 
+      position: relative;
+
     }
 
     #music-toggle:hover {
@@ -3709,16 +3711,38 @@
 
     #music-toggle.waiting {
 
-      animation: pulse-hint 1.5s ease-in-out infinite;
+      animation: pulse-hint 2s ease-in-out infinite;
 
     }
 
     @keyframes pulse-hint {
 
-      0%, 100% { background: rgba(100, 100, 120, 0.6); transform: scale(1); }
+      0%, 100% { background: rgba(100, 100, 120, 0.6); transform: scale(1); box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
 
-      50% { background: rgba(99, 102, 241, 0.7); transform: scale(1.1); box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4); }
+      50% { background: rgba(99, 102, 241, 0.7); transform: scale(1.12); box-shadow: 0 4px 20px rgba(99, 102, 241, 0.5); }
 
+    }
+
+    #music-toggle.waiting::after {
+      content: '♪ Play';
+      position: absolute;
+      right: 56px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(99, 102, 241, 0.9);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+      pointer-events: none;
+      animation: tip-fade 2s ease-in-out infinite;
+    }
+
+    @keyframes tip-fade {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
     }
 
     @keyframes music-spin {
