@@ -949,24 +949,6 @@
     }
     .tagline-fading { opacity: 0 !important; }
 
-    /* Per-character/per-word span for tidal font wave
-       注意：不能用 display:inline-block，否则打断父元素的 background-clip:text，
-       导致文字全透明不可见 */
-    .tagline-cn .tc,
-    .tagline-en .te {
-      display: inline;
-      transition: opacity 0.35s ease, transform 0.35s ease;
-      will-change: opacity, transform;
-    }
-    .tagline-cn .tc.font-sweep,
-    .tagline-en .te.font-sweep {
-      opacity: 0.35;
-    }
-    .tagline-cn .tc.font-done,
-    .tagline-en .te.font-done {
-      opacity: 1;
-    }
-
     /* Golden tidal wave animation on tagline text — 金潮速度×3慢 */
     .tagline-fx .tagline-cn,
     .tagline-fx .tagline-en {
@@ -2265,12 +2247,12 @@
 
         <p class="tagline tagline-fx" style="text-align: center;">
 
-          <span class="tagline-cn"><span class="tc">修</span><span class="tc">煉</span><span class="tc">於</span><span class="tc">天</span><span class="tc">機</span><span class="tc">閣</span><span class="tc">，</span><span class="tc">融</span><span class="tc">像</span><span class="tc">素</span><span class="tc">煉</span><span class="tc">丹</span><span class="tc">，</span><span class="tc">以</span><span class="tc">算</span><span class="tc">法</span><span class="tc">御</span><span class="tc">劍</span></span><br>
-          <span class="tagline-cn"><span class="tc">窺</span><span class="tc">破</span><span class="tc">虚</span><span class="tc">實</span><span class="tc">之</span><span class="tc">界</span><span class="tc">，</span><span class="tc">游</span><span class="tc">走</span><span class="tc">於</span><span class="tc">生</span><span class="tc">成</span><span class="tc">與</span><span class="tc">感</span><span class="tc">知</span><span class="tc">的</span><span class="tc">裂</span><span class="tc">縫</span><span class="tc">之</span><span class="tc">間</span></span><br>
-          <span class="tagline-cn"><span class="tc">—</span><span class="tc">—</span><span class="tc">至</span><span class="tc">於</span><span class="tc">"</span><span class="tc">理</span><span class="tc">解</span><span class="tc">視</span><span class="tc">頻</span><span class="tc">"</span><span class="tc">這</span><span class="tc">等</span><span class="tc">仙</span><span class="tc">級</span><span class="tc">殺</span><span class="tc">招</span><span class="tc">，</span><span class="tc">不</span><span class="tc">過</span><span class="tc">是</span><span class="tc">渡</span><span class="tc">天</span><span class="tc">劫</span><span class="tc">時</span><span class="tc">順</span><span class="tc">手</span><span class="tc">撿</span><span class="tc">的</span><span class="tc">彩</span><span class="tc">蛋</span></span><br>
-          <span class="tagline-cn" style="display:block;text-align:center;"><span class="tc">罷</span><span class="tc">了</span></span>
+          <span class="tagline-cn">修煉於天機閣，融像素煉丹，以算法御劍</span><br>
+          <span class="tagline-cn">窺破虚實之界，游走於生成與感知的裂縫之間</span><br>
+          <span class="tagline-cn">——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手撿的彩蛋</span><br>
+          <span class="tagline-cn" style="display:block;text-align:center;">罷了</span>
 
-          <span class="tagline-en" style="opacity:0.6; font-size:0.92em;"><span class="te">He</span> <span class="te">who</span> <span class="te">cultivateth</span> <span class="te">within</span> <span class="te">the</span> <span class="te">Pavilion</span> <span class="te">of</span> <span class="te">Heavenly</span> <span class="te">Secrets</span><span class="te">—</span><span class="te">forging</span> <span class="te">elixirs</span> <span class="te">from</span> <span class="te">pixels,</span> <span class="te">and</span> <span class="te">wielding</span> <span class="te">algorithms</span> <span class="te">as</span> <span class="te">his</span> <span class="te">blade.</span> <span class="te">He</span> <span class="te">strideth</span> <span class="te">through</span> <span class="te">the</span> <span class="te">rift</span> <span class="te">'twixt</span> <span class="te">creation</span> <span class="te">and</span> <span class="te">perception.</span> <span class="te">As</span> <span class="te">for</span> <span class="te">"the</span> <span class="te">understanding</span> <span class="te">of</span> <span class="te">moving</span> <span class="te">images,"</span> <span class="te">that</span> <span class="te">celestial</span> <span class="te">tribulation?</span> <span class="te">'Twas</span> <span class="te">but</span> <span class="te">a</span> <span class="te">passing</span> <span class="te">windfall,</span> <span class="te">chanced</span> <span class="te">upon</span> <span class="te">amidst</span> <span class="te">the</span> <span class="te">storm.</span> <span class="te">Let</span> <span class="te">it</span> <span class="te">be.</span></span>
+          <span class="tagline-en" style="opacity:0.6; font-size:0.92em;">He who cultivateth within the Pavilion of Heavenly Secrets—forging elixirs from pixels, and wielding algorithms as his blade. He strideth through the rift 'twixt creation and perception. As for "the understanding of moving images," that celestial tribulation? 'Twas but a passing windfall, chanced upon amidst the storm. Let it be.</span>
 
 
         </p>
@@ -3909,12 +3891,11 @@
 
     })();
 
-    // ========== 狂草 / 古英语字体 — 随金潮逐字切换 ==========
+    // ========== 狂草 / 古英语字体 — 随金潮切换 ==========
+    // 金潮流过时各行依次切换字体，配合淡入淡出过渡
     (function() {
       // 中文狂草字体轮换列表
-      // 关键：KouzanSousho 和 HakusyuSousyo 支持全部繁体字，
-      // 必须始终排在 Zhi Mang Xing/Liu Jian Mao Cao/Long Cang 等简体字体之前，
-      // 否则繁体字（煉、於、閣、機、窺、實、頻、這、級、過、撿、罷）会显示空白
+      // KouzanSousho/HakusyuSousyo支持全部繁体字，必须始终排在简体字体之前
       var cnFonts = [
         "'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
         "'HakusyuSousyo', 'KouzanSousho', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
@@ -3943,7 +3924,6 @@
 
       // 金潮周期配置（与CSS一致）
       var GOLDEN_PERIOD = 54;
-      // 浪头宽度占全行的比例
       var TIDE_WIDTH = 0.25;
 
       var linePeriods = [54, 63, 49.5, 72];
@@ -3956,96 +3936,77 @@
       function initTaglineLines() {
         var cnEls = document.querySelectorAll('.tagline-cn');
         cnEls.forEach(function(el, lineIdx) {
-          var chars = el.querySelectorAll('.tc');
-          if (!chars.length) return;
           var period = lineIdx < linePeriods.length ? linePeriods[lineIdx] : 54;
           var delay = lineIdx < lineDelays.length ? lineDelays[lineIdx] : 0;
           taglineLines.push({
             el: el,
-            chars: Array.from(chars),
             period: period,
             delay: delay,
             type: 'cn',
-            maxSwept: 0 // 本轮已扫过的最远字符索引
+            hasSwitched: false
           });
         });
 
         var enEl = document.querySelector('.tagline-en');
         if (enEl) {
-          var words = enEl.querySelectorAll('.te');
           taglineLines.push({
             el: enEl,
-            chars: Array.from(words),
             period: enPeriod,
             delay: enDelay,
             type: 'en',
-            maxSwept: 0
+            hasSwitched: false
           });
         }
       }
 
-      // 根据金潮CSS动画，计算当前浪潮中心位置 (0=最左, 1=最右)
-      function getTidePosition(line, timestamp) {
+      // 计算金潮浪潮中心位置 (0=最左, 1=最右)
+      function getTideCenter(line, timestamp) {
         var period = line.period * 1000;
         var delay = Math.abs(line.delay) * 1000;
         var effectiveTime = (timestamp + delay) % period;
         var phase = effectiveTime / period;
 
         if (phase <= 0.5) {
-          return 1.0 - (phase / 0.5); // 从右到左: 1.0→0.0
+          return 1.0 - (phase / 0.5);
         } else {
-          return ((phase - 0.5) / 0.5); // 从左到右: 0.0→1.0
+          return ((phase - 0.5) / 0.5);
         }
       }
 
-      // 核心动画循环
-      var lastRotateTime = 0;
-      var rotateInterval = GOLDEN_PERIOD / 2 * 1000;
+      var lastHalfCycle = -1;
 
       function tidalSweep(timestamp) {
         if (!timestamp) timestamp = performance.now();
 
-        // 每半周期换一组新字体
-        if (timestamp - lastRotateTime > rotateInterval) {
+        var halfCycle = Math.floor(timestamp / (GOLDEN_PERIOD / 2 * 1000)) % 2;
+
+        if (halfCycle !== lastHalfCycle) {
+          lastHalfCycle = halfCycle;
           cnIdx = (cnIdx + 1) % cnFonts.length;
           enIdx = (enIdx + 1) % enFonts.length;
-          lastRotateTime = timestamp;
 
-          // 重置：先给整行换新字体（通过font-family在父元素上），
-          // 再把所有字符设为半透明，等待浪潮逐字"点亮"
           taglineLines.forEach(function(line) {
-            var fontList = line.type === 'cn' ? cnFonts[cnIdx] : enFonts[enIdx];
-            // 在父元素上切换字体（确保fallback链正常工作）
-            line.el.style.fontFamily = fontList;
-            line.maxSwept = 0;
-            // 所有字符先变暗，等浪潮经过才亮
-            line.chars.forEach(function(ch) {
-              ch.classList.remove('font-sweep', 'font-done');
-              ch.classList.add('font-sweep'); // 半透明等待
-            });
+            line.hasSwitched = false;
           });
         }
 
+        // 逐行检查：当金潮浪潮中心到达行中间(0.5)附近时切换该行字体
         taglineLines.forEach(function(line) {
-          var totalChars = line.chars.length;
-          if (totalChars === 0) return;
+          if (line.hasSwitched) return;
 
-          var tideCenter = getTidePosition(line, timestamp);
-          var tideLeft = tideCenter - TIDE_WIDTH / 2;
-          var tideRight = tideCenter + TIDE_WIDTH / 2;
+          var tideCenter = getTideCenter(line, timestamp);
 
-          // 找出浪潮当前覆盖到的最远字符
-          for (var i = 0; i < totalChars; i++) {
-            var charX = totalChars > 1 ? i / (totalChars - 1) : 0.5;
-            // 浪潮"已扫过"：浪潮中心已移过该字符位置
-            // 判断条件：浪潮的前沿(tideLeft)已经经过了该字符
-            if (tideLeft <= charX && i >= line.maxSwept) {
-              if (line.chars[i].classList.contains('font-sweep') && !line.chars[i].classList.contains('font-done')) {
-                line.chars[i].classList.remove('font-sweep');
-                line.chars[i].classList.add('font-done');
-                line.maxSwept = i + 1;
-              }
-            }
+          // 浪潮中心到达行中间时触发切换（0.45~0.55之间）
+          if (tideCenter >= 0.45 && tideCenter <= 0.55) {
+            line.hasSwitched = true;
+            var fontList = line.type === 'cn' ? cnFonts[cnIdx] : enFonts[enIdx];
+
+            // 淡出 → 换字体 → 淡入
+            line.el.classList.add('tagline-fading');
+            setTimeout(function() {
+              line.el.style.fontFamily = fontList;
+              line.el.classList.remove('tagline-fading');
+            }, 600);
           }
         });
 
@@ -4056,16 +4017,9 @@
         initTaglineLines();
         if (taglineLines.length === 0) return;
 
-        lastRotateTime = performance.now();
-
-        // 初始字体和状态
         taglineLines.forEach(function(line) {
           var fontList = line.type === 'cn' ? cnFonts[0] : enFonts[0];
           line.el.style.fontFamily = fontList;
-          // 初始所有字符都是可见的
-          line.chars.forEach(function(ch) {
-            ch.classList.add('font-done');
-          });
         });
 
         requestAnimationFrame(tidalSweep);
