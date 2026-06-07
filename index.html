@@ -34,6 +34,26 @@
       font-display: swap;
     }
 
+    /* 3. 繁体狂草：简繁同形字+正宗中国狂草风格（缺19繁体字由日式字体兜底） — 自托管 WOFF2 */
+    @font-face {
+      font-family: 'ZhiMangXing';
+      src: url('fonts/ZhiMangXing.woff2') format('woff2'),
+           url('fonts/ZhiMangXing.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* 4. 毛草：连写感强，增加变化（缺19繁体字由日式字体兜底） — 自托管 WOFF2 */
+    @font-face {
+      font-family: 'LiuJianMaoCao';
+      src: url('fonts/LiuJianMaoCao.woff2') format('woff2'),
+           url('fonts/LiuJianMaoCao.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
     /* 3. Cloister Black：中世纪古英语黑体字 — 自托管 WOFF2 */
     @font-face {
       font-family: 'CloisterBlack';
@@ -938,7 +958,7 @@
 
     /* Tagline font families — rotated by JS synced with golden tide */
     .tagline-cn {
-      font-family: 'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive;
+      font-family: 'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive;
       letter-spacing: 0.12em;
       transition: opacity 0.6s ease;
     }
@@ -3897,12 +3917,17 @@
       // 中文狂草字体轮换列表
       // KouzanSousho（衡山草書）：狂草风格，粗犷潦草，完整覆盖所有繁体字
       // KouzanGyousho（衡山行書）：行书风格，流畅飘逸，完整覆盖（除—和揀/原撿已换为揀）
-      // HakusyuSousyo（白舟草書）已删除：27个繁体字glyph为空轮廓，显示透明
-      // ZhiMangXing等简体字体已删除：不支持繁体字
-      // Noto Serif TC 支持繁体但非草书，作为兜底
+      // 中文狂草/行书字体轮换列表
+      // ZhiMangXing（繁体狂草）：支持40/59字（简繁同形字），缺19繁体字由日式字体兜底
+      // LiuJianMaoCao（毛草）：同上40/59字，连写感强
+      // KouzanSousho（衡山草書）：57/59字，日式狂草
+      // KouzanGyousho（衡山行書）：58/59字，日式行书
+      // Noto Serif TC 支持全部繁体但非草书，作为最终兜底
       var cnFonts = [
-        "'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive",
-        "'KouzanGyousho', 'KouzanSousho', 'Noto Serif TC', cursive"
+        "'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive",
+        "'LiuJianMaoCao', 'ZhiMangXing', 'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive",
+        "'KouzanSousho', 'ZhiMangXing', 'KouzanGyousho', 'LiuJianMaoCao', 'Noto Serif TC', cursive",
+        "'KouzanGyousho', 'LiuJianMaoCao', 'KouzanSousho', 'ZhiMangXing', 'Noto Serif TC', cursive"
       ];
 
       // 英文古英语/黑体字字体轮换列表
