@@ -949,22 +949,22 @@
     }
     .tagline-fading { opacity: 0 !important; }
 
-    /* Per-character/per-word span for tidal font wave */
+    /* Per-character/per-word span for tidal font wave
+       注意：不能用 display:inline-block，否则打断父元素的 background-clip:text，
+       导致文字全透明不可见 */
     .tagline-cn .tc,
     .tagline-en .te {
-      display: inline-block;
-      transition: font-family 0.5s ease, opacity 0.4s ease, transform 0.4s ease;
-      will-change: font-family, opacity, transform;
+      display: inline;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      will-change: opacity, transform;
     }
     .tagline-cn .tc.font-sweep,
     .tagline-en .te.font-sweep {
-      opacity: 0.4;
-      transform: translateY(2px);
+      opacity: 0.35;
     }
     .tagline-cn .tc.font-done,
     .tagline-en .te.font-done {
       opacity: 1;
-      transform: translateY(0);
     }
 
     /* Golden tidal wave animation on tagline text — 金潮速度×3慢 */
@@ -3912,12 +3912,15 @@
     // ========== 狂草 / 古英语字体 — 随金潮逐字切换 ==========
     (function() {
       // 中文狂草字体轮换列表
+      // 关键：KouzanSousho 和 HakusyuSousyo 支持全部繁体字，
+      // 必须始终排在 Zhi Mang Xing/Liu Jian Mao Cao/Long Cang 等简体字体之前，
+      // 否则繁体字（煉、於、閣、機、窺、實、頻、這、級、過、撿、罷）会显示空白
       var cnFonts = [
         "'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
-        "'HakusyuSousyo', 'KouzanSousho', 'Zhi Mang Xing', 'Long Cang', 'Liu Jian Mao Cao', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
-        "'Zhi Mang Xing', 'KouzanSousho', 'HakusyuSousyo', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
-        "'Liu Jian Mao Cao', 'Zhi Mang Xing', 'KouzanSousho', 'HakusyuSousyo', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
-        "'Long Cang', 'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive"
+        "'HakusyuSousyo', 'KouzanSousho', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
+        "'KouzanSousho', 'HakusyuSousyo', 'Long Cang', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
+        "'HakusyuSousyo', 'KouzanSousho', 'Liu Jian Mao Cao', 'Zhi Mang Xing', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
+        "'KouzanSousho', 'HakusyuSousyo', 'ZCOOL XiaoWei', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'Noto Serif TC', 'Noto Serif SC', cursive"
       ];
 
       // 英文古英语/黑体字字体轮换列表
@@ -3940,8 +3943,8 @@
 
       // 金潮周期配置（与CSS一致）
       var GOLDEN_PERIOD = 54;
-      // 浪头宽度占全行的比例（金潮高亮区域宽度）
-      var TIDE_WIDTH = 0.25; // 约25%行宽为金色浪潮区
+      // 浪头宽度占全行的比例
+      var TIDE_WIDTH = 0.25;
 
       var linePeriods = [54, 63, 49.5, 72];
       var lineDelays = [0, -18, -36, -9];
@@ -3963,7 +3966,7 @@
             period: period,
             delay: delay,
             type: 'cn',
-            lastSweptCount: 0 // 上一帧已经扫过的字符数
+            maxSwept: 0 // 本轮已扫过的最远字符索引
           });
         });
 
@@ -3976,32 +3979,23 @@
             period: enPeriod,
             delay: enDelay,
             type: 'en',
-            lastSweptCount: 0
+            maxSwept: 0
           });
         }
       }
 
       // 根据金潮CSS动画，计算当前浪潮中心位置 (0=最左, 1=最右)
-      // 返回值：{ tideCenter: 0~1, direction: 'rtl'|'ltr' }
       function getTidePosition(line, timestamp) {
         var period = line.period * 1000;
         var delay = Math.abs(line.delay) * 1000;
         var effectiveTime = (timestamp + delay) % period;
         var phase = effectiveTime / period;
 
-        // CSS keyframes:
-        // 0%   → bg-pos 100% (浪在右端)
-        // 50%  → bg-pos 0%   (浪在左端)
-        // 100% → bg-pos 100% (浪回右端)
-        var tideCenter, direction;
         if (phase <= 0.5) {
-          tideCenter = 1.0 - (phase / 0.5); // 1.0 → 0.0 (从右到左)
-          direction = 'rtl';
+          return 1.0 - (phase / 0.5); // 从右到左: 1.0→0.0
         } else {
-          tideCenter = ((phase - 0.5) / 0.5); // 0.0 → 1.0 (从左到右)
-          direction = 'ltr';
+          return ((phase - 0.5) / 0.5); // 从左到右: 0.0→1.0
         }
-        return { tideCenter: tideCenter, direction: direction };
       }
 
       // 核心动画循环
@@ -4017,11 +4011,17 @@
           enIdx = (enIdx + 1) % enFonts.length;
           lastRotateTime = timestamp;
 
-          // 重置所有字符状态
+          // 重置：先给整行换新字体（通过font-family在父元素上），
+          // 再把所有字符设为半透明，等待浪潮逐字"点亮"
           taglineLines.forEach(function(line) {
-            line.lastSweptCount = 0;
+            var fontList = line.type === 'cn' ? cnFonts[cnIdx] : enFonts[enIdx];
+            // 在父元素上切换字体（确保fallback链正常工作）
+            line.el.style.fontFamily = fontList;
+            line.maxSwept = 0;
+            // 所有字符先变暗，等浪潮经过才亮
             line.chars.forEach(function(ch) {
               ch.classList.remove('font-sweep', 'font-done');
+              ch.classList.add('font-sweep'); // 半透明等待
             });
           });
         }
@@ -4030,61 +4030,23 @@
           var totalChars = line.chars.length;
           if (totalChars === 0) return;
 
-          var tide = getTidePosition(line, timestamp);
-          var tideLeft = tide.tideCenter - TIDE_WIDTH / 2;
-          var tideRight = tide.tideCenter + TIDE_WIDTH / 2;
+          var tideCenter = getTidePosition(line, timestamp);
+          var tideLeft = tideCenter - TIDE_WIDTH / 2;
+          var tideRight = tideCenter + TIDE_WIDTH / 2;
 
-          // 统计当前被浪潮覆盖的字符数
-          var sweptCount = 0;
+          // 找出浪潮当前覆盖到的最远字符
           for (var i = 0; i < totalChars; i++) {
             var charX = totalChars > 1 ? i / (totalChars - 1) : 0.5;
-            if (charX >= tideLeft && charX <= tideRight) {
-              sweptCount = i + 1; // 包含当前字符
+            // 浪潮"已扫过"：浪潮中心已移过该字符位置
+            // 判断条件：浪潮的前沿(tideLeft)已经经过了该字符
+            if (tideLeft <= charX && i >= line.maxSwept) {
+              if (line.chars[i].classList.contains('font-sweep') && !line.chars[i].classList.contains('font-done')) {
+                line.chars[i].classList.remove('font-sweep');
+                line.chars[i].classList.add('font-done');
+                line.maxSwept = i + 1;
+              }
             }
           }
-
-          // 如果浪潮还没进入行范围，sweptCount为0
-          if (sweptCount === 0 && line.lastSweptCount > 0) {
-            // 浪潮已经离开这行，但之前扫过的字符应该保持完成状态
-            // 不需要额外操作，font-done已经加了
-          }
-
-          var fontList = line.type === 'cn' ? cnFonts[cnIdx] : enFonts[enIdx];
-
-          // 对新被扫过的字符应用字体切换
-          for (var i = line.lastSweptCount; i < sweptCount && i < totalChars; i++) {
-            var ch = line.chars[i];
-            if (!ch.classList.contains('font-done') && !ch.classList.contains('font-sweep')) {
-              ch.classList.add('font-sweep');
-              ch.style.fontFamily = fontList;
-
-              (function(charEl) {
-                setTimeout(function() {
-                  charEl.classList.remove('font-sweep');
-                  charEl.classList.add('font-done');
-                }, 350);
-              })(ch);
-            }
-          }
-
-          // 也处理浪潮从另一方向扫过的情况：浪潮可能扫过后面的字符又回到前面
-          // 为了简化，只要浪潮覆盖到某个字就标记
-          for (var i = 0; i < totalChars; i++) {
-            var charX = totalChars > 1 ? i / (totalChars - 1) : 0.5;
-            var inTide = charX >= tideLeft && charX <= tideRight;
-            if (inTide && !line.chars[i].classList.contains('font-done') && !line.chars[i].classList.contains('font-sweep')) {
-              line.chars[i].classList.add('font-sweep');
-              line.chars[i].style.fontFamily = fontList;
-              (function(charEl) {
-                setTimeout(function() {
-                  charEl.classList.remove('font-sweep');
-                  charEl.classList.add('font-done');
-                }, 350);
-              })(line.chars[i]);
-            }
-          }
-
-          line.lastSweptCount = sweptCount;
         });
 
         requestAnimationFrame(tidalSweep);
@@ -4096,11 +4058,13 @@
 
         lastRotateTime = performance.now();
 
-        // 初始字体
+        // 初始字体和状态
         taglineLines.forEach(function(line) {
           var fontList = line.type === 'cn' ? cnFonts[0] : enFonts[0];
+          line.el.style.fontFamily = fontList;
+          // 初始所有字符都是可见的
           line.chars.forEach(function(ch) {
-            ch.style.fontFamily = fontList;
+            ch.classList.add('font-done');
           });
         });
 
