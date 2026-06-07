@@ -14,7 +14,27 @@
 
   <style>
 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Zhi+Mang+Xing&family=Liu+Jian+Mao+Cao&family=Long+Cang&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@400;700&family=UnifrakturMaguntia&display=swap');
+    /* 1. 衡山草书：繁体狂草首选，潦草度拉满 — 自托管 WOFF2 */
+    @font-face {
+      font-family: 'KouzanSousho';
+      src: url('fonts/KouzanBrushFontSousyo.woff2') format('woff2'),
+           url('fonts/KouzanBrushFontSousyo.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* 2. 白舟草書教漢：日式草书，苍劲潦草，繁体极佳 — 自托管 WOFF2 */
+    @font-face {
+      font-family: 'HakusyuSousyo';
+      src: url('fonts/HakusyuSousyo_kk.woff2') format('woff2'),
+           url('fonts/HakusyuSousyo_kk.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Zhi+Mang+Xing&family=Liu+Jian+Mao+Cao&family=Long+Cang&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=UnifrakturMaguntia&display=swap');
 
     :root {
 
@@ -878,7 +898,7 @@
 
     /* Tagline font families */
     .tagline-cn {
-      font-family: 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'Ma Shan Zheng', 'ZCOOL XiaoWei', 'Noto Serif SC', cursive;
+      font-family: 'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive;
       letter-spacing: 0.12em;
     }
     .tagline-en {
@@ -2185,7 +2205,7 @@
         <p class="tagline tagline-fx" style="text-align: center;">
 
           <span class="tagline-cn">修煉於天機閣，融像素煉丹，以算法御劍</span><br>
-          <span class="tagline-cn">窺破虛實之界，游走於生成與感知的裂縫之間</span><br>
+          <span class="tagline-cn">窺破虚實之界，游走於生成與感知的裂縫之間</span><br>
           <span class="tagline-cn">——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手撿的彩蛋</span><br>
           <span class="tagline-cn" style="display:block;text-align:center;">罷了</span>
 
