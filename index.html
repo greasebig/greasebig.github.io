@@ -949,7 +949,7 @@
     }
     .tagline-fading { opacity: 0 !important; }
 
-    /* Golden tidal wave animation on tagline text */
+    /* Golden tidal wave animation on tagline text — 金潮速度×3慢 */
     .tagline-fx .tagline-cn,
     .tagline-fx .tagline-en {
       background: linear-gradient(
@@ -966,7 +966,7 @@
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: golden-tide 18s ease-in-out infinite;
+      animation: golden-tide 54s ease-in-out infinite;
     }
 
     @keyframes golden-tide {
@@ -977,20 +977,20 @@
 
     /* Random-direction secondary shimmer (CSS only, per-line offset) */
     .tagline-fx .tagline-cn:nth-of-type(2) {
-      animation: golden-tide 21s ease-in-out infinite;
-      animation-delay: -6s;
+      animation: golden-tide 63s ease-in-out infinite;
+      animation-delay: -18s;
     }
     .tagline-fx .tagline-cn:nth-of-type(3) {
-      animation: golden-tide 16.5s ease-in-out infinite;
-      animation-delay: -12s;
+      animation: golden-tide 49.5s ease-in-out infinite;
+      animation-delay: -36s;
     }
     .tagline-fx .tagline-cn:nth-of-type(4) {
-      animation: golden-tide 24s ease-in-out infinite;
-      animation-delay: -3s;
+      animation: golden-tide 72s ease-in-out infinite;
+      animation-delay: -9s;
     }
     .tagline-fx .tagline-en {
-      animation: golden-tide 27s ease-in-out infinite;
-      animation-delay: -9s;
+      animation: golden-tide 81s ease-in-out infinite;
+      animation-delay: -27s;
     }
 
     /* ========== 四网站大卡片 ========== */
@@ -3891,7 +3891,7 @@
 
     })();
 
-    // ========== 狂草 / 古英语字体 30秒轮换 ==========
+    // ========== 狂草 / 古英语字体 — 随金潮切换 ==========
     (function() {
       // 中文狂草字体轮换列表 — 全部都是狂草/草书风格，确保即使降级也是狂草兜底
       var cnFonts = [
@@ -3945,11 +3945,11 @@
 
           // 淡入
           allEls.forEach(function(el) { el.classList.remove('tagline-fading'); });
-        }, 600); // 与 CSS transition 时长一致
+        }, 600);
       }
 
-      // 每30秒轮换一次
-      setInterval(rotateFonts, 30000);
+      // 跟随金潮周期切换字体：金潮54s一周期，每半周期(27s)浪头过中点时换字体
+      setInterval(rotateFonts, 27000);
     })();
 
   </script>
