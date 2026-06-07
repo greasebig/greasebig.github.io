@@ -34,7 +34,7 @@
       font-display: swap;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Zhi+Mang+Xing&family=Liu+Jian+Mao+Cao&family=Long+Cang&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=UnifrakturMaguntia&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Zhi+Mang+Xing&family=Liu+Jian+Mao+Cao&family=Long+Cang&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=UnifrakturMaguntia&family=MedievalSharp&family=Pirata+One&family=Texturina:wght@400;700&family=IM+Fell+English&family=Cinzel+Decorative:wght@400;700&family=Grenze+Gotisch:wght@400;700&family=Metamorphous&display=swap');
 
     :root {
 
@@ -896,15 +896,18 @@
 
     }
 
-    /* Tagline font families */
+    /* Tagline font families — rotated by JS every 30s */
     .tagline-cn {
       font-family: 'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive;
       letter-spacing: 0.12em;
+      transition: opacity 0.6s ease;
     }
     .tagline-en {
       font-family: 'UnifrakturMaguntia', cursive;
       letter-spacing: 0.03em;
+      transition: opacity 0.6s ease;
     }
+    .tagline-fading { opacity: 0 !important; }
 
     /* Golden tidal wave animation on tagline text */
     .tagline-fx .tagline-cn,
@@ -3846,6 +3849,63 @@
 
       });
 
+    })();
+
+    // ========== 狂草 / 古英语字体 30秒轮换 ==========
+    (function() {
+      // 中文狂草字体轮换列表 — 全部都是狂草/草书风格，确保即使降级也是狂草兜底
+      var cnFonts = [
+        "'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
+        "'HakusyuSousyo', 'KouzanSousho', 'Zhi Mang Xing', 'Long Cang', 'Liu Jian Mao Cao', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
+        "'Zhi Mang Xing', 'KouzanSousho', 'HakusyuSousyo', 'Liu Jian Mao Cao', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
+        "'Liu Jian Mao Cao', 'Zhi Mang Xing', 'KouzanSousho', 'HakusyuSousyo', 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive",
+        "'Long Cang', 'KouzanSousho', 'HakusyuSousyo', 'Zhi Mang Xing', 'Liu Jian Mao Cao', 'ZCOOL XiaoWei', 'Noto Serif TC', 'Noto Serif SC', cursive"
+      ];
+
+      // 英文古英语/黑体字字体轮换列表 — 全部都是中世纪/哥特/黑字体风格
+      var enFonts = [
+        "'UnifrakturMaguntia', cursive",
+        "'MedievalSharp', 'UnifrakturMaguntia', cursive",
+        "'Pirata One', 'MedievalSharp', 'UnifrakturMaguntia', cursive",
+        "'Grenze Gotisch', 'UnifrakturMaguntia', 'MedievalSharp', cursive",
+        "'Cinzel Decorative', 'Grenze Gotisch', 'UnifrakturMaguntia', serif",
+        "'Texturina', 'Grenze Gotisch', 'UnifrakturMaguntia', serif",
+        "'IM Fell English', 'Texturina', 'UnifrakturMaguntia', serif",
+        "'Metamorphous', 'MedievalSharp', 'UnifrakturMaguntia', cursive"
+      ];
+
+      var cnIdx = 0, enIdx = 0;
+
+      function rotateFonts() {
+        var cnEls = document.querySelectorAll('.tagline-cn');
+        var enEls = document.querySelectorAll('.tagline-en');
+        var allEls = [];
+
+        cnEls.forEach(function(el) { allEls.push(el); });
+        enEls.forEach(function(el) { allEls.push(el); });
+
+        // 第一步：淡出
+        allEls.forEach(function(el) { el.classList.add('tagline-fading'); });
+
+        // 等淡出完成后换字体，再淡入
+        setTimeout(function() {
+          cnIdx = (cnIdx + 1) % cnFonts.length;
+          enIdx = (enIdx + 1) % enFonts.length;
+
+          cnEls.forEach(function(el) {
+            el.style.fontFamily = cnFonts[cnIdx];
+          });
+          enEls.forEach(function(el) {
+            el.style.fontFamily = enFonts[enIdx];
+          });
+
+          // 淡入
+          allEls.forEach(function(el) { el.classList.remove('tagline-fading'); });
+        }, 600); // 与 CSS transition 时长一致
+      }
+
+      // 每30秒轮换一次
+      setInterval(rotateFonts, 30000);
     })();
 
   </script>
