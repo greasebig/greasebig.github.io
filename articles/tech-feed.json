@@ -1,5 +1,71 @@
 [
   {
+    "title": "SDSU Wired Its Dorms with 1,300 AI Cameras Without Telling Students",
+    "url": "https://reclaimthenet.org/sdsu-adds-1300-ai-cameras-330-in-student-dorms",
+    "source": "reclaimthenet.org",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from reclaimthenet.org. Hacker News score 33, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48440994",
+    "fetched_at": "2026-06-08T06:11:16Z",
+    "title_zh": "SDSU 在不告诉学生的情况下在宿舍安装了 1,300 个人工智能摄像头"
+  },
+  {
+    "title": "A Matter Wi-Fi Light Bulb in Rust on the Raspberry Pi Pico 2 W",
+    "url": "https://github.com/melastmohican/rust-rpico2-embassy-examples",
+    "source": "github.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 90, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48440008",
+    "fetched_at": "2026-06-08T06:11:13Z",
+    "title_zh": "Raspberry Pi Pico 2 W 上生锈的 Matter Wi-Fi 灯泡"
+  },
+  {
+    "title": "The Smallest Brain You Can Build: A Perceptron in Python",
+    "url": "https://ranpara.net/posts/perceptron-explained-from-scratch/",
+    "source": "ranpara.net",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from ranpara.net. Hacker News score 145, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48440064",
+    "fetched_at": "2026-06-08T06:11:12Z",
+    "title_zh": "您可以构建的最小大脑：Python 中的感知器"
+  },
+  {
+    "title": "I design with Claude more than Figma now",
+    "url": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
+    "source": "blog.janestreet.com",
+    "date": "2026-06-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.janestreet.com. Hacker News score 282, 244 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48431981",
+    "fetched_at": "2026-06-08T06:11:16Z",
+    "title_zh": "我现在和 Claude 一起设计比 Figma 还多"
+  },
+  {
+    "title": "Firefox Merges Support for Vulkan Video Decoding",
+    "url": "https://www.phoronix.com/news/Firefox-Vulkan-Video-Merged",
+    "source": "phoronix.com",
+    "date": "2026-06-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from phoronix.com. Hacker News score 96, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48439348",
+    "fetched_at": "2026-06-08T06:11:16Z",
+    "title_zh": "Firefox 合并了对 Vulkan 视频解码的支持"
+  },
+  {
+    "title": "Show HN: Lathe – Use LLMs to learn a new domain, not skip past it",
+    "url": "https://github.com/devenjarvis/lathe",
+    "source": "github.com",
+    "date": "2026-06-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 285, 54 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48433756",
+    "fetched_at": "2026-06-08T06:11:15Z",
+    "title_zh": "Show HN: Lathe – 使用法学硕士学习新领域，而不是跳过它"
+  },
+  {
     "title": "Show HN: TakoVM – Isolated model and tool execution used by enterprises",
     "url": "https://github.com/las7/TakoVM",
     "source": "github.com",
@@ -20,17 +86,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48431079",
     "fetched_at": "2026-06-07T05:55:29Z",
     "title_zh": "Show HN: Oproxy – 从浏览器检查和修改网络流量"
-  },
-  {
-    "title": "I design with Claude more than Figma now",
-    "url": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
-    "source": "blog.janestreet.com",
-    "date": "2026-06-07",
-    "repost": true,
-    "summary": "转载 / Curated repost from blog.janestreet.com. Hacker News score 4, 0 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48431981",
-    "fetched_at": "2026-06-07T05:55:28Z",
-    "title_zh": "我现在和 Claude 一起设计比 Figma 还多"
   },
   {
     "title": "Valve P2P networking broken for more than 2 months",
@@ -86,6 +141,39 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48421079",
     "fetched_at": "2026-06-06T05:07:55Z",
     "title_zh": "C++：编程语言封底提出了前面未回答的问题"
+  },
+  {
+    "title": "What is the purpose of the lost+found folder in Linux and Unix? (2014)",
+    "url": "https://unix.stackexchange.com/questions/18154/what-is-the-purpose-of-the-lostfound-folder-in-linux-and-unix",
+    "source": "unix.stackexchange.com",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from unix.stackexchange.com. Hacker News score 173, 58 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48409474",
+    "fetched_at": "2026-06-08T06:11:15Z",
+    "title_zh": "Linux 和 Unix 中 Lost+Found 文件夹的用途是什么？ (2014)"
+  },
+  {
+    "title": "Playing with Vision Embeddings",
+    "url": "https://prestonbjensen.com/posts/playing-with-vision-embeddings",
+    "source": "prestonbjensen.com",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from prestonbjensen.com. Hacker News score 4, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48413366",
+    "fetched_at": "2026-06-08T06:11:14Z",
+    "title_zh": "玩转视觉嵌入"
+  },
+  {
+    "title": "Tiny hackable CUDA language model implementation",
+    "url": "https://github.com/markusheimerl/gpt",
+    "source": "github.com",
+    "date": "2026-06-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 11, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48415828",
+    "fetched_at": "2026-06-08T06:11:13Z",
+    "title_zh": "微型可破解 CUDA 语言模型实现"
   },
   {
     "title": "Google to pay SpaceX $920M a month for compute capacity at xAI data centers",
@@ -209,6 +297,17 @@
     "title_zh": "Magenta RealTime 2：开源本地实时音乐模型"
   },
   {
+    "title": "A discovery about GCC's unidirectional rotation algorithm",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260603-00/?p=112378",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-06-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 13, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48394587",
+    "fetched_at": "2026-06-08T06:11:14Z",
+    "title_zh": "关于GCC单向旋转算法的一个发现"
+  },
+  {
     "title": "Biohub releases a world model of protein biology",
     "url": "https://biohub.org/news/world-model-of-protein-biology/",
     "source": "biohub.org",
@@ -229,104 +328,5 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48406198",
     "fetched_at": "2026-06-06T05:07:58Z",
     "title_zh": "韩国论坛将需要使用人工智能审查工具扫描每张图片"
-  },
-  {
-    "title": "Show HN: Formally verified polygon intersection – Opus 4.8 oneshots, prev failed",
-    "url": "https://github.com/schildep/verified-polygon-intersection",
-    "source": "github.com",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 66, 14 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48405264",
-    "fetched_at": "2026-06-06T05:07:57Z",
-    "title_zh": "Show HN：正式验证的多边形交集 – Opus 4.8 oneshots，上一个失败"
-  },
-  {
-    "title": "My Agent Skill for Test-Driven Development",
-    "url": "https://www.saturnci.com/my-agent-skill-for-test-driven-development.html",
-    "source": "saturnci.com",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from saturnci.com. Hacker News score 157, 63 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48398925",
-    "fetched_at": "2026-06-06T05:07:56Z",
-    "title_zh": "我的测试驱动开发代理技能"
-  },
-  {
-    "title": "When AI Builds Itself: Our progress toward recursive self-improvement",
-    "url": "https://www.anthropic.com/institute/recursive-self-improvement",
-    "source": "anthropic.com",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 409, 539 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48400842",
-    "fetched_at": "2026-06-05T05:51:40Z",
-    "title_zh": "当 AI 自我构建：我们向递归自改进的进展"
-  },
-  {
-    "title": "KVarN: Native vLLM backend for KV-cache quantization by Huawei",
-    "url": "https://github.com/huawei-csl/KVarN",
-    "source": "github.com",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 126, 13 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48399974",
-    "fetched_at": "2026-06-05T05:51:40Z",
-    "title_zh": "KVarN：华为原生的 vLLM KV 缓存量化后端"
-  },
-  {
-    "title": "VoidZero Is Joining Cloudflare",
-    "url": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
-    "source": "blog.cloudflare.com",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 607, 267 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48398055",
-    "fetched_at": "2026-06-05T05:51:40Z",
-    "title_zh": "VoidZero 加入 Cloudflare"
-  },
-  {
-    "title": "Anthropic's open-source framework for AI-powered vulnerability discovery",
-    "url": "https://github.com/anthropics/defending-code-reference-harness",
-    "source": "github.com",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 353, 108 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48403980",
-    "fetched_at": "2026-06-05T05:51:39Z",
-    "title_zh": "Anthropic 的 AI 驱动漏洞发现开源框架"
-  },
-  {
-    "title": "The ways we contain Claude across products",
-    "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
-    "source": "anthropic.com",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 92, 42 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48392082",
-    "fetched_at": "2026-06-04T06:11:52Z",
-    "title_zh": "我们在各产品中约束 Claude 的方式"
-  },
-  {
-    "title": "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
-    "url": "https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/article_16fad0bf-02cb-4b8c-8d88-888ffd9f8608.html",
-    "source": "dailycal.org",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from dailycal.org. Hacker News score 154, 85 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48392004",
-    "fetched_at": "2026-06-04T06:11:51Z",
-    "title_zh": "伯克利 CS 课程中 AI 使用增加，数学能力下降，不及格率飙升"
-  },
-  {
-    "title": "Nine Ways to Do Inheritance in Rust, a Language Without Inheritance",
-    "url": "https://medium.com/@carlmkadie/nine-ways-to-do-inheritance-in-rust-a-language-without-inheritance-14825bf1e215",
-    "source": "medium.com",
-    "date": "2026-06-03",
-    "repost": true,
-    "summary": "转载 / Curated repost from medium.com. Hacker News score 22, 0 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48383760",
-    "fetched_at": "2026-06-06T05:07:57Z",
-    "title_zh": "Rust 这种没有继承的语言中进行继承的九种方法"
   }
 ]
