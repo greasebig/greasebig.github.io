@@ -15,6 +15,10 @@
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='a' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient><filter id='g'><feGaussianBlur stdDeviation='2' result='b'/><feMerge><feMergeNode in='b'/><feMergeNode in='SourceGraphic'/></feMerge></filter></defs><rect width='100' height='100' rx='20' fill='%230a0a1a'/><circle cx='50' cy='50' r='38' fill='none' stroke='url(%23a)' stroke-width='2.5' opacity='0.4'/><circle cx='50' cy='50' r='28' fill='none' stroke='url(%23a)' stroke-width='1.5' opacity='0.6' stroke-dasharray='4 6'/><circle cx='50' cy='50' r='18' fill='none' stroke='%23fff' stroke-width='1' opacity='0.3'/><g filter='url(%23g)'><path d='M50 16 L56 34 L50 28 L44 34 Z' fill='%23fff' opacity='0.9'/><path d='M50 84 L44 66 L50 72 L56 66 Z' fill='%23fff' opacity='0.9'/><path d='M16 50 L34 44 L28 50 L34 56 Z' fill='%23fff' opacity='0.9'/><path d='M84 50 L66 56 L72 50 L66 44 Z' fill='%23fff' opacity='0.9'/></g><circle cx='50' cy='50' r='6' fill='url(%23a)'/><circle cx='50' cy='50' r='3' fill='%23fff'/><circle cx='50' cy='12' r='2.5' fill='%236366f1'/><circle cx='50' cy='88' r='2.5' fill='%23ec4899'/><circle cx='12' cy='50' r='2.5' fill='%238b5cf6'/><circle cx='88' cy='50' r='2.5' fill='%23f59e0b'/><circle cx='23' cy='23' r='2' fill='%2310b981' opacity='0.7'/><circle cx='77' cy='23' r='2' fill='%23ec4899' opacity='0.7'/><circle cx='23' cy='77' r='2' fill='%236366f1' opacity='0.7'/><circle cx='77' cy='77' r='2' fill='%238b5cf6' opacity='0.7'/></svg>" type="image/svg+xml" />
 
+  <!-- 预加载中文狂草字体（最高优先级，消除首次加载闪烁） -->
+  <link rel="preload" href="fonts/ZhiMangXing.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/KouzanBrushFontSousyo.woff2" as="font" type="font/woff2" crossorigin />
+
   <style>
 
     /* 1. 衡山草书：繁体狂草首选，潦草度拉满 — 自托管 WOFF2 */
@@ -24,7 +28,7 @@
            url('fonts/KouzanBrushFontSousyo.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
-      font-display: swap;
+      font-display: block;
     }
 
     /* 2. 衡山毛筆行書：日式行书，流畅飘逸，繁体完整 — 自托管 WOFF2 */
@@ -34,7 +38,7 @@
            url('fonts/KouzanGyousho.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
-      font-display: swap;
+      font-display: block;
     }
 
     /* 3. 繁体狂草：简繁同形字+正宗中国狂草风格（缺19繁体字由日式字体兜底） — 自托管 WOFF2 */
@@ -44,7 +48,7 @@
            url('fonts/ZhiMangXing.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
-      font-display: swap;
+      font-display: block;
     }
 
     /* 4. 毛草：连写感强，增加变化（缺19繁体字由日式字体兜底） — 自托管 WOFF2 */
@@ -54,7 +58,7 @@
            url('fonts/LiuJianMaoCao.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
-      font-display: swap;
+      font-display: block;
     }
 
     /* 3. Cloister Black：中世纪古英语黑体字 — 自托管 WOFF2 */
@@ -959,11 +963,15 @@
 
     }
 
-    /* Tagline font families — rotated by JS synced with golden tide */
+    /* 中文自我介绍：字体未就绪时隐藏，避免楷书闪烁 */
     .tagline-cn {
       font-family: 'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive;
       letter-spacing: 0.12em;
       transition: opacity 0.6s ease;
+      visibility: hidden;
+    }
+    .fonts-cn-ready .tagline-cn {
+      visibility: visible;
     }
     .tagline-en {
       font-family: 'UnifrakturMaguntia', 'CloisterBlack', 'Canterbury', cursive;
@@ -2717,6 +2725,45 @@
   </a>
 
   <script>
+
+    // ========== 中文字体就绪检测：狂草未加载完不显示中文自我介绍 ==========
+    (function() {
+      // 需要等待的关键中文字体
+      var criticalFonts = ['ZhiMangXing', 'KouzanSousho'];
+
+      function checkFontsReady() {
+        if (document.fonts && document.fonts.check) {
+          // 检查关键字体是否全部就绪
+          var allReady = criticalFonts.every(function(f) {
+            return document.fonts.check('16px ' + f);
+          });
+          if (allReady) {
+            document.documentElement.classList.add('fonts-cn-ready');
+            return true;
+          }
+          return false;
+        }
+        // 降级：如果浏览器不支持 document.fonts，直接显示
+        document.documentElement.classList.add('fonts-cn-ready');
+        return true;
+      }
+
+      // 立即检查一次（可能已缓存）
+      if (!checkFontsReady()) {
+        // 使用 document.fonts.ready 等待所有字体加载完成
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(function() {
+            // 再检查一次关键字体是否真的可用
+            checkFontsReady();
+            // 兜底：即使 check 返回 false，3 秒后也强制显示
+          });
+        }
+        // 最终兜底：3 秒后强制显示（防止字体加载失败导致永久隐藏）
+        setTimeout(function() {
+          document.documentElement.classList.add('fonts-cn-ready');
+        }, 3000);
+      }
+    })();
 
     // ========== 开屏大门动画控制 ==========
 
