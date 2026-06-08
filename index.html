@@ -965,7 +965,7 @@
 
     /* 中文自我介绍：字体未就绪时隐藏，避免楷书闪烁 */
     .tagline-cn {
-      font-family: 'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive;
+      font-family: 'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', cursive;
       letter-spacing: 0.12em;
       transition: opacity 0.6s ease;
       visibility: hidden;
@@ -2728,53 +2728,63 @@
 
     // ========== 中文字体就绪检测：狂草未加载完不显示中文自我介绍 ==========
     (function() {
-      // 需要等待的关键中文字体
+      // 需要等待的关键中文字体（只要有一个就绪即可显示）
       var criticalFonts = ['ZhiMangXing', 'KouzanSousho'];
 
       function markReady() {
         document.documentElement.classList.add('fonts-cn-ready');
       }
 
-      function checkFontsReady() {
-        if (document.fonts && document.fonts.check) {
-          var allReady = criticalFonts.every(function(f) {
-            return document.fonts.check('16px ' + f);
-          });
-          if (allReady) {
-            markReady();
-            return true;
-          }
-          return false;
-        }
-        // 降级：浏览器不支持 document.fonts，直接显示
-        markReady();
-        return true;
+      function areFontsReady() {
+        if (!document.fonts || !document.fonts.check) return false;
+        return criticalFonts.some(function(f) {
+          return document.fonts.check('16px ' + f);
+        });
       }
 
       // 立即检查一次（可能已缓存）
-      if (!checkFontsReady()) {
-        // 主动加载关键字体：用 FontFace API 确保浏览器下载
-        if (typeof FontFace !== 'undefined') {
-          var fontPromises = [
-            new FontFace('ZhiMangXing', "url('fonts/ZhiMangXing.woff2')").load(),
-            new FontFace('KouzanSousho', "url('fonts/KouzanBrushFontSousyo.woff2')").load()
-          ];
-          Promise.all(fontPromises).then(function(faces) {
-            faces.forEach(function(f) { document.fonts.add(f); });
-            markReady();
-          }).catch(function() {
-            // 加载失败也标记就绪，避免永久隐藏
-            markReady();
-          });
-        } else if (document.fonts && document.fonts.ready) {
-          // 降级：用 document.fonts.ready 等待
-          document.fonts.ready.then(function() {
-            checkFontsReady();
-          });
-        }
-        // 最终兜底：8 秒后强制显示（防止字体加载失败导致永久隐藏，中文字体2-3MB需预留足够时间）
-        setTimeout(markReady, 8000);
+      if (areFontsReady()) {
+        markReady();
+        return;
       }
+
+      // 主动加载关键字体：用 FontFace API 确保浏览器下载
+      if (typeof FontFace !== 'undefined') {
+        var fontPromises = [
+          new FontFace('ZhiMangXing', "url('fonts/ZhiMangXing.woff2')").load(),
+          new FontFace('KouzanSousho', "url('fonts/KouzanBrushFontSousyo.woff2')").load()
+        ];
+        Promise.all(fontPromises).then(function(faces) {
+          faces.forEach(function(f) { document.fonts.add(f); });
+          markReady();
+        }).catch(function() {
+          // 部分字体加载失败，检查是否有至少一个可用
+          if (areFontsReady()) {
+            markReady();
+          }
+          // 否则继续等待兜底超时
+        });
+      } else if (document.fonts && document.fonts.ready) {
+        // 降级：用 document.fonts.ready 等待
+        document.fonts.ready.then(function() {
+          if (areFontsReady()) markReady();
+        });
+      }
+
+      // 最终兜底：10 秒后强制检查，字体可用才显示，不可用则继续等
+      var fallbackChecks = [10, 15, 20, 30];
+      fallbackChecks.forEach(function(sec) {
+        setTimeout(function() {
+          if (!document.documentElement.classList.contains('fonts-cn-ready')) {
+            if (areFontsReady()) {
+              markReady();
+            } else if (sec >= 30) {
+              // 30 秒还是不行，强制显示（此时浏览器会用 cursive 通用字体，绝不是楷书）
+              markReady();
+            }
+          }
+        }, sec * 1000);
+      });
     })();
 
     // ========== 开屏大门动画控制 ==========
@@ -3984,12 +3994,12 @@
       // LiuJianMaoCao（毛草）：同上40/59字，连写感强
       // KouzanSousho（衡山草書）：57/59字，日式狂草
       // KouzanGyousho（衡山行書）：58/59字，日式行书
-      // Noto Serif TC 支持全部繁体但非草书，作为最终兜底
+      // Noto Serif TC 已从回退链移除，绝不出现楷书
       var cnFonts = [
-        "'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive",
-        "'LiuJianMaoCao', 'ZhiMangXing', 'KouzanSousho', 'KouzanGyousho', 'Noto Serif TC', cursive",
-        "'KouzanSousho', 'ZhiMangXing', 'KouzanGyousho', 'LiuJianMaoCao', 'Noto Serif TC', cursive",
-        "'KouzanGyousho', 'LiuJianMaoCao', 'KouzanSousho', 'ZhiMangXing', 'Noto Serif TC', cursive"
+        "'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', cursive",
+        "'LiuJianMaoCao', 'ZhiMangXing', 'KouzanSousho', 'KouzanGyousho', cursive",
+        "'KouzanSousho', 'ZhiMangXing', 'KouzanGyousho', 'LiuJianMaoCao', cursive",
+        "'KouzanGyousho', 'LiuJianMaoCao', 'KouzanSousho', 'ZhiMangXing', cursive"
       ];
 
       // 英文古英语/黑体字字体轮换列表
