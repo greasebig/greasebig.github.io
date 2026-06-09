@@ -1019,34 +1019,6 @@
       animation: golden-tide 72s ease-in-out infinite;
       animation-delay: -9s;
     }
-    /* ========== 中文自我介绍 逐行渐入 ========== */
-.hero .tagline .tagline-cn,
-.hero .tagline .tagline-en {
-  display: block;
-  opacity: 0;
-  transform: translateY(10px);
-  filter: blur(6px);
-  transition: none;
-}
-.revealed .hero .tagline .tagline-cn:nth-child(1) {
-  animation: cnLineFadeIn 0.75s cubic-bezier(0.22,1,0.36,1) 0.5s forwards;
-}
-.revealed .hero .tagline .tagline-cn:nth-child(2) {
-  animation: cnLineFadeIn 0.75s cubic-bezier(0.22,1,0.36,1) 0.9s forwards;
-}
-.revealed .hero .tagline .tagline-cn:nth-child(3) {
-  animation: cnLineFadeIn 0.75s cubic-bezier(0.22,1,0.36,1) 1.3s forwards;
-}
-.revealed .hero .tagline .tagline-cn:nth-child(4) {
-  animation: cnLineFadeIn 0.75s cubic-bezier(0.22,1,0.36,1) 1.7s forwards;
-}
-.revealed .hero .tagline .tagline-en {
-  animation: cnLineFadeIn 0.75s cubic-bezier(0.22,1,0.36,1) 2.1s forwards;
-}
-@keyframes cnLineFadeIn {
-  from { opacity: 0; transform: translateY(10px); filter: blur(6px); }
-  to   { opacity: 1; transform: translateY(0);    filter: blur(0);   }
-           }
     .tagline-fx .tagline-en {
       animation: golden-tide 81s ease-in-out infinite;
       animation-delay: -27s;
