@@ -1,5 +1,115 @@
 [
   {
+    "title": "AI is slowing down",
+    "url": "https://www.wheresyoured.at/ai-is-slowing-down/",
+    "source": "wheresyoured.at",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from wheresyoured.at. Hacker News score 469, 498 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48446893",
+    "fetched_at": "2026-06-09T05:36:53Z",
+    "title_zh": "人工智能正在放缓"
+  },
+  {
+    "title": "Apple bets cheaper AI will woo small developers",
+    "url": "https://techcrunch.com/2026/06/08/apple-bets-cheaper-ai-will-woo-small-developers/",
+    "source": "techcrunch.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from techcrunch.com. Hacker News score 43, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48452000",
+    "fetched_at": "2026-06-09T05:36:53Z",
+    "title_zh": "苹果押注更便宜的人工智能将吸引小型开发者"
+  },
+  {
+    "title": "Confidential submission of draft S-1 to the SEC",
+    "url": "https://openai.com/index/openai-submits-confidential-s-1/",
+    "source": "openai.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 325, 249 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48452317",
+    "fetched_at": "2026-06-09T05:36:53Z",
+    "title_zh": "向 SEC 秘密提交 S-1 草案"
+  },
+  {
+    "title": "Are you expected to run five Python type-checkers now?",
+    "url": "https://pyrefly.org/blog/too-many-type-checkers/",
+    "source": "pyrefly.org",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from pyrefly.org. Hacker News score 143, 160 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48444442",
+    "fetched_at": "2026-06-09T05:36:53Z",
+    "title_zh": "您现在预计要运行五个 Python 类型检查器吗？"
+  },
+  {
+    "title": "Apple Core AI Framework",
+    "url": "https://developer.apple.com/documentation/coreai/",
+    "source": "developer.apple.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from developer.apple.com. Hacker News score 244, 59 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48449665",
+    "fetched_at": "2026-06-09T05:36:52Z",
+    "title_zh": "苹果核心人工智能框架"
+  },
+  {
+    "title": "Show HN: Gitdot – a better GitHub. Open-source, written in Rust",
+    "url": "https://gitdot.io/",
+    "source": "gitdot.io",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from gitdot.io. Hacker News score 204, 161 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48447806",
+    "fetched_at": "2026-06-09T05:36:52Z",
+    "title_zh": "显示 HN：Gitdot – 更好的 GitHub。开源，用 Rust 编写"
+  },
+  {
+    "title": "Launch HN: Intuned (YC S22) – Build and run reliable browser automations as code",
+    "url": "https://intunedhq.com",
+    "source": "intunedhq.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from intunedhq.com. Hacker News score 104, 45 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48445171",
+    "fetched_at": "2026-06-09T05:36:52Z",
+    "title_zh": "启动 HN：Intuned (YC S22) – 以代码形式构建和运行可靠的浏览器自动化"
+  },
+  {
+    "title": "Apple reveals new AI architecture built around Google Gemini models",
+    "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
+    "source": "macrumors.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from macrumors.com. Hacker News score 472, 376 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48450142",
+    "fetched_at": "2026-06-09T05:36:51Z",
+    "title_zh": "Apple 展示了围绕 Google Gemini 模型构建的新 AI 架构"
+  },
+  {
+    "title": "Siri AI",
+    "url": "https://www.apple.com/apple-intelligence/",
+    "source": "apple.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from apple.com. Hacker News score 505, 437 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48449084",
+    "fetched_at": "2026-06-09T05:36:51Z",
+    "title_zh": "Siri人工智能"
+  },
+  {
+    "title": "MiMo-v2.5-Pro-UltraSpeed: 1T model with 1000 tokens per second",
+    "url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+    "source": "mimo.xiaomi.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from mimo.xiaomi.com. Hacker News score 528, 382 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48446639",
+    "fetched_at": "2026-06-09T05:36:51Z",
+    "title_zh": "MiMo-v2.5-Pro-UltraSpeed：1T 型号，每秒 1000 个代币"
+  },
+  {
     "title": "SDSU Wired Its Dorms with 1,300 AI Cameras Without Telling Students",
     "url": "https://reclaimthenet.org/sdsu-adds-1300-ai-cameras-330-in-student-dorms",
     "source": "reclaimthenet.org",
@@ -218,115 +328,5 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48411635",
     "fetched_at": "2026-06-06T05:07:56Z",
     "title_zh": "Claude是否增加了rsync中的bug？"
-  },
-  {
-    "title": "Nordstjernen 1.0",
-    "url": "https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0",
-    "source": "github.com",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 30, 11 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48419821",
-    "fetched_at": "2026-06-06T05:07:56Z",
-    "title_zh": "北街1.0"
-  },
-  {
-    "title": "pg_durable: Microsoft open sources in-database durable execution",
-    "url": "https://github.com/microsoft/pg_durable",
-    "source": "github.com",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 362, 83 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48414367",
-    "fetched_at": "2026-06-06T05:07:55Z",
-    "title_zh": "pg_durable：微软开源数据库内持久执行"
-  },
-  {
-    "title": "Gemma 4 QAT models: Optimizing compression for mobile and laptop efficiency",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
-    "source": "blog.google",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from blog.google. Hacker News score 310, 92 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48414653",
-    "fetched_at": "2026-06-06T05:07:55Z",
-    "title_zh": "Gemma 4 QAT 模型：优化压缩以提高移动和笔记本电脑的效率"
-  },
-  {
-    "title": "Azure Linux 4.0 is Microsoft's first general-purpose Linux",
-    "url": "https://www.boxofcables.dev/azure-linux-4-0-is-microsofts-first-general-purpose-linux/",
-    "source": "boxofcables.dev",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from boxofcables.dev. Hacker News score 67, 42 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48407499",
-    "fetched_at": "2026-06-05T05:51:39Z",
-    "title_zh": "Azure Linux 4.0 是微软首个通用 Linux 发行版"
-  },
-  {
-    "title": "Meta enables ADB on deprecated Portal devices [video]",
-    "url": "https://fb.watch/HxPu0fSyeH/",
-    "source": "fb.watch",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from fb.watch. Hacker News score 157, 36 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48406640",
-    "fetched_at": "2026-06-05T05:51:39Z",
-    "title_zh": "Meta 在已弃用的 Portal 设备上启用 ADB [视频]"
-  },
-  {
-    "title": "Open Code Review – An AI-powered code review CLI tool",
-    "url": "https://github.com/alibaba/open-code-review",
-    "source": "github.com",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 114, 26 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48406358",
-    "fetched_at": "2026-06-05T05:51:39Z",
-    "title_zh": "Open Code Review – AI 驱动的代码审查 CLI 工具"
-  },
-  {
-    "title": "Magenta RealTime 2: Open and Local Live Music Models",
-    "url": "https://magenta.withgoogle.com/magenta-realtime-2",
-    "source": "magenta.withgoogle.com",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from magenta.withgoogle.com. Hacker News score 9, 1 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48407815",
-    "fetched_at": "2026-06-05T05:51:39Z",
-    "title_zh": "Magenta RealTime 2：开源本地实时音乐模型"
-  },
-  {
-    "title": "A discovery about GCC's unidirectional rotation algorithm",
-    "url": "https://devblogs.microsoft.com/oldnewthing/20260603-00/?p=112378",
-    "source": "devblogs.microsoft.com",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 13, 3 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48394587",
-    "fetched_at": "2026-06-08T06:11:14Z",
-    "title_zh": "关于GCC单向旋转算法的一个发现"
-  },
-  {
-    "title": "Biohub releases a world model of protein biology",
-    "url": "https://biohub.org/news/world-model-of-protein-biology/",
-    "source": "biohub.org",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from biohub.org. Hacker News score 33, 0 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48393252",
-    "fetched_at": "2026-06-07T05:55:29Z",
-    "title_zh": "Biohub 发布蛋白质生物学世界模型"
-  },
-  {
-    "title": "South Korean forums will need to scan every images with AI censorship tools",
-    "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
-    "source": "discuss.privacyguides.net",
-    "date": "2026-06-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from discuss.privacyguides.net. Hacker News score 240, 142 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48406198",
-    "fetched_at": "2026-06-06T05:07:58Z",
-    "title_zh": "韩国论坛将需要使用人工智能审查工具扫描每张图片"
   }
 ]
