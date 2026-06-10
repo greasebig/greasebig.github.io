@@ -1,5 +1,104 @@
 [
   {
+    "title": "Rich Sutton on AI creativity and discovery",
+    "url": "https://twitter.com/RichardSSutton/status/2061216087744946656",
+    "source": "twitter.com",
+    "date": "2026-06-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 69, 34 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48470581",
+    "fetched_at": "2026-06-10T05:52:05Z",
+    "title_zh": "Rich Sutton 谈人工智能创造力和发现"
+  },
+  {
+    "title": "German ruling declares Google liable for false answers in AI Overviews",
+    "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+    "source": "the-decoder.com",
+    "date": "2026-06-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from the-decoder.com. Hacker News score 269, 163 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48470248",
+    "fetched_at": "2026-06-10T05:52:05Z",
+    "title_zh": "德国裁决宣布谷歌对人工智能概述中的错误答案承担责任"
+  },
+  {
+    "title": "macOS Container Machines",
+    "url": "https://github.com/apple/container/blob/main/docs/container-machine.md",
+    "source": "github.com",
+    "date": "2026-06-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 495, 176 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48469658",
+    "fetched_at": "2026-06-10T05:52:04Z",
+    "title_zh": "macOS 容器机"
+  },
+  {
+    "title": "Grit: Rewriting Git in Rust with agents",
+    "url": "https://blog.gitbutler.com/true-grit",
+    "source": "blog.gitbutler.com",
+    "date": "2026-06-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.gitbutler.com. Hacker News score 113, 157 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48466812",
+    "fetched_at": "2026-06-10T05:52:07Z",
+    "title_zh": "Grit：使用代理在 Rust 中重写 Git"
+  },
+  {
+    "title": "Exif Smuggling (2025)",
+    "url": "https://github.com/signalblur/exifsmugglingpoc",
+    "source": "github.com",
+    "date": "2026-06-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 76, 24 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48467759",
+    "fetched_at": "2026-06-10T05:52:07Z",
+    "title_zh": "Exif 走私 (2025)"
+  },
+  {
+    "title": "If Claude Fable stops helping you, you'll never know",
+    "url": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
+    "source": "jonready.com",
+    "date": "2026-06-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from jonready.com. Hacker News score 681, 341 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48467896",
+    "fetched_at": "2026-06-10T05:52:06Z",
+    "title_zh": "如果克劳德寓言不再帮助你，你永远不会知道"
+  },
+  {
+    "title": "CEOs who think AI replaces their employees are just bad CEOs",
+    "url": "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/",
+    "source": "techdirt.com",
+    "date": "2026-06-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from techdirt.com. Hacker News score 560, 220 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48465675",
+    "fetched_at": "2026-06-10T05:52:06Z",
+    "title_zh": "认为人工智能取代员工的首席执行官都是糟糕的首席执行官"
+  },
+  {
+    "title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks",
+    "url": "https://aarushgupta.io/posts/kan-fpga/",
+    "source": "aarushgupta.io",
+    "date": "2026-06-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from aarushgupta.io. Hacker News score 194, 29 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48466277",
+    "fetched_at": "2026-06-10T05:52:05Z",
+    "title_zh": "通过 Kolmogorov-Arnold 网络在 FPGA 上进行超快机器学习"
+  },
+  {
+    "title": "Claude Fable 5",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "source": "anthropic.com",
+    "date": "2026-06-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 1997, 1547 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48463808",
+    "fetched_at": "2026-06-10T05:52:04Z",
+    "title_zh": "克劳德寓言5"
+  },
+  {
     "title": "AI is slowing down",
     "url": "https://www.wheresyoured.at/ai-is-slowing-down/",
     "source": "wheresyoured.at",
@@ -209,6 +308,17 @@
     "title_zh": "Valve P2P网络断线2个多月"
   },
   {
+    "title": "OpenCV 5 Is Here: The Biggest Leap in Years for Computer Vision",
+    "url": "https://opencv.org/opencv-5/",
+    "source": "opencv.org",
+    "date": "2026-06-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from opencv.org. Hacker News score 729, 128 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48421858",
+    "fetched_at": "2026-06-10T05:52:06Z",
+    "title_zh": "OpenCV 5 来了：计算机视觉多年来最大的飞跃"
+  },
+  {
     "title": "Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot",
     "url": "https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/",
     "source": "this.weekinsecurity.com",
@@ -218,115 +328,5 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48427643",
     "fetched_at": "2026-06-07T05:55:30Z",
     "title_zh": "Meta 证实数千个 Instagram 账户因滥用人工智能聊天机器人而被黑客入侵"
-  },
-  {
-    "title": "Ntsc-rs – open-source video emulation of analog TV and VHS artifacts",
-    "url": "https://ntsc.rs/",
-    "source": "ntsc.rs",
-    "date": "2026-06-06",
-    "repost": true,
-    "summary": "转载 / Curated repost from ntsc.rs. Hacker News score 312, 75 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48428025",
-    "fetched_at": "2026-06-07T05:55:27Z",
-    "title_zh": "Ntsc-rs – 模拟电视和 VHS 工件的开源视频仿真"
-  },
-  {
-    "title": "Lockdown Mode",
-    "url": "https://help.openai.com/en/articles/20001061-lockdown-mode",
-    "source": "help.openai.com",
-    "date": "2026-06-06",
-    "repost": true,
-    "summary": "转载 / Curated repost from help.openai.com. Hacker News score 25, 7 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48421145",
-    "fetched_at": "2026-06-06T05:07:55Z",
-    "title_zh": "锁定模式"
-  },
-  {
-    "title": "C++: The Programming Language back cover raises questions not answered by front",
-    "url": "https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391",
-    "source": "devblogs.microsoft.com",
-    "date": "2026-06-06",
-    "repost": true,
-    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 16, 0 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48421079",
-    "fetched_at": "2026-06-06T05:07:55Z",
-    "title_zh": "C++：编程语言封底提出了前面未回答的问题"
-  },
-  {
-    "title": "What is the purpose of the lost+found folder in Linux and Unix? (2014)",
-    "url": "https://unix.stackexchange.com/questions/18154/what-is-the-purpose-of-the-lostfound-folder-in-linux-and-unix",
-    "source": "unix.stackexchange.com",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from unix.stackexchange.com. Hacker News score 173, 58 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48409474",
-    "fetched_at": "2026-06-08T06:11:15Z",
-    "title_zh": "Linux 和 Unix 中 Lost+Found 文件夹的用途是什么？ (2014)"
-  },
-  {
-    "title": "Playing with Vision Embeddings",
-    "url": "https://prestonbjensen.com/posts/playing-with-vision-embeddings",
-    "source": "prestonbjensen.com",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from prestonbjensen.com. Hacker News score 4, 0 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48413366",
-    "fetched_at": "2026-06-08T06:11:14Z",
-    "title_zh": "玩转视觉嵌入"
-  },
-  {
-    "title": "Tiny hackable CUDA language model implementation",
-    "url": "https://github.com/markusheimerl/gpt",
-    "source": "github.com",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 11, 1 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48415828",
-    "fetched_at": "2026-06-08T06:11:13Z",
-    "title_zh": "微型可破解 CUDA 语言模型实现"
-  },
-  {
-    "title": "Google to pay SpaceX $920M a month for compute capacity at xAI data centers",
-    "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
-    "source": "cnbc.com",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from cnbc.com. Hacker News score 208, 784 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48417490",
-    "fetched_at": "2026-06-07T05:55:31Z",
-    "title_zh": "谷歌每月向 SpaceX 支付 9.2 亿美元，用于 xAI 数据中心的计算能力"
-  },
-  {
-    "title": "Harness engineering: Leveraging Codex in an agent-first world",
-    "url": "https://openai.com/index/harness-engineering/",
-    "source": "openai.com",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from openai.com. Hacker News score 146, 95 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48416264",
-    "fetched_at": "2026-06-07T05:55:28Z",
-    "title_zh": "线束工程：在代理优先的世界中利用 Codex"
-  },
-  {
-    "title": "Symbolica 2.0: Programmable Symbols for Python and Rust",
-    "url": "https://symbolica.io/posts/symbolica_2_0_release/",
-    "source": "symbolica.io",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from symbolica.io. Hacker News score 34, 1 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48415457",
-    "fetched_at": "2026-06-07T05:55:28Z",
-    "title_zh": "Symbolica 2.0：Python 和 Rust 的可编程符号"
-  },
-  {
-    "title": "Did Claude increase bugs in rsync?",
-    "url": "https://alexispurslane.github.io/rsync-analysis/",
-    "source": "alexispurslane.github.io",
-    "date": "2026-06-05",
-    "repost": true,
-    "summary": "转载 / Curated repost from alexispurslane.github.io. Hacker News score 355, 364 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48411635",
-    "fetched_at": "2026-06-06T05:07:56Z",
-    "title_zh": "Claude是否增加了rsync中的bug？"
   }
 ]
