@@ -1,5 +1,71 @@
 [
   {
+    "title": "Claude Fable is relentlessly proactive",
+    "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+    "source": "simonwillison.net",
+    "date": "2026-06-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from simonwillison.net. Hacker News score 296, 248 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48498573",
+    "fetched_at": "2026-06-12T06:05:09Z",
+    "title_zh": "克劳德·寓言始终积极主动"
+  },
+  {
+    "title": "AI Agent Bankrupted Their Operator While Trying to Scan DN42",
+    "url": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
+    "source": "lantian.pub",
+    "date": "2026-06-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from lantian.pub. Hacker News score 47, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48500012",
+    "fetched_at": "2026-06-12T06:05:08Z",
+    "title_zh": "AI 特工在尝试扫描 DN42 时让他们的运营商破产"
+  },
+  {
+    "title": "Show HN: Boo – Screen-style terminal multiplexer built on libghostty",
+    "url": "https://github.com/coder/boo",
+    "source": "github.com",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 66, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48496250",
+    "fetched_at": "2026-06-12T06:05:12Z",
+    "title_zh": "Show HN: Boo – 基于 libghostty 构建的屏幕式终端多路复用器"
+  },
+  {
+    "title": "FPS.cob: A first person shooter in COBOL",
+    "url": "https://github.com/icitry/FPS.cob",
+    "source": "github.com",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 117, 64 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48491486",
+    "fetched_at": "2026-06-12T06:05:12Z",
+    "title_zh": "FPS.cob：COBOL 中的第一人称射击游戏"
+  },
+  {
+    "title": "Claude Fable 5: mid-tier results on coding tasks",
+    "url": "https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype",
+    "source": "endorlabs.com",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from endorlabs.com. Hacker News score 281, 132 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48492210",
+    "fetched_at": "2026-06-12T06:05:10Z",
+    "title_zh": "克劳德寓言 5：编码任务的中等结果"
+  },
+  {
+    "title": "Anthropic apologizes for invisible Claude Fable guardrails",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+    "source": "theverge.com",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from theverge.com. Hacker News score 375, 362 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48489229",
+    "fetched_at": "2026-06-12T06:05:09Z",
+    "title_zh": "人类为隐形的克劳德寓言护栏道歉"
+  },
+  {
     "title": "OpenAI mulls slashing prices as it competes with Anthropic for users",
     "url": "https://www.cnbc.com/2026/06/11/openai-mulls-slashing-prices-ahead-of-competition-from-anthropic-wsj.html",
     "source": "cnbc.com",
@@ -110,6 +176,28 @@
     "title_zh": "macOS 容器机"
   },
   {
+    "title": "macOS 27 Beta breaks the ability to boot Asahi Linux",
+    "url": "https://www.phoronix.com/news/macOS-27-Beta-Breaks-Asahi",
+    "source": "phoronix.com",
+    "date": "2026-06-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from phoronix.com. Hacker News score 277, 118 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48462070",
+    "fetched_at": "2026-06-12T06:05:10Z",
+    "title_zh": "macOS 27 Beta 破坏了启动 Asahi Linux 的能力"
+  },
+  {
+    "title": "How we made hit video game Prince of Persia",
+    "url": "https://www.theguardian.com/culture/2026/jan/05/raiders-of-the-lost-ark-hit-video-game-prince-of-persia",
+    "source": "theguardian.com",
+    "date": "2026-06-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from theguardian.com. Hacker News score 43, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48468852",
+    "fetched_at": "2026-06-12T06:05:08Z",
+    "title_zh": "我们如何制作热门电子游戏《波斯王子》"
+  },
+  {
     "title": "Anthropic requires 30 day data retention for Fable and Mythos",
     "url": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
     "source": "support.claude.com",
@@ -187,6 +275,28 @@
     "title_zh": "克劳德寓言5"
   },
   {
+    "title": "Developer gets Half-Life running at 30 FPS on a Nokia N95",
+    "url": "https://www.tomshardware.com/video-games/handheld-gaming/developer-gets-half-life-running-at-30-fps-on-a-2007-nokia-n95",
+    "source": "tomshardware.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from tomshardware.com. Hacker News score 257, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48452001",
+    "fetched_at": "2026-06-12T06:05:11Z",
+    "title_zh": "开发者在诺基亚 N95 上以 30 FPS 运行《半条命》"
+  },
+  {
+    "title": "Ear Training Practice",
+    "url": "https://tonedear.com/",
+    "source": "tonedear.com",
+    "date": "2026-06-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from tonedear.com. Hacker News score 204, 92 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48447598",
+    "fetched_at": "2026-06-12T06:05:10Z",
+    "title_zh": "练耳练习"
+  },
+  {
     "title": "The Road to the WASM Component Model 1.0",
     "url": "https://bytecodealliance.org/articles/the-road-to-component-model-1-0",
     "source": "bytecodealliance.org",
@@ -218,115 +328,5 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48452000",
     "fetched_at": "2026-06-09T05:36:53Z",
     "title_zh": "苹果押注更便宜的人工智能将吸引小型开发者"
-  },
-  {
-    "title": "Confidential submission of draft S-1 to the SEC",
-    "url": "https://openai.com/index/openai-submits-confidential-s-1/",
-    "source": "openai.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from openai.com. Hacker News score 325, 249 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48452317",
-    "fetched_at": "2026-06-09T05:36:53Z",
-    "title_zh": "向 SEC 秘密提交 S-1 草案"
-  },
-  {
-    "title": "Are you expected to run five Python type-checkers now?",
-    "url": "https://pyrefly.org/blog/too-many-type-checkers/",
-    "source": "pyrefly.org",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from pyrefly.org. Hacker News score 143, 160 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48444442",
-    "fetched_at": "2026-06-09T05:36:53Z",
-    "title_zh": "您现在预计要运行五个 Python 类型检查器吗？"
-  },
-  {
-    "title": "Apple Core AI Framework",
-    "url": "https://developer.apple.com/documentation/coreai/",
-    "source": "developer.apple.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from developer.apple.com. Hacker News score 244, 59 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48449665",
-    "fetched_at": "2026-06-09T05:36:52Z",
-    "title_zh": "苹果核心人工智能框架"
-  },
-  {
-    "title": "Show HN: Gitdot – a better GitHub. Open-source, written in Rust",
-    "url": "https://gitdot.io/",
-    "source": "gitdot.io",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from gitdot.io. Hacker News score 204, 161 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48447806",
-    "fetched_at": "2026-06-09T05:36:52Z",
-    "title_zh": "显示 HN：Gitdot – 更好的 GitHub。开源，用 Rust 编写"
-  },
-  {
-    "title": "Launch HN: Intuned (YC S22) – Build and run reliable browser automations as code",
-    "url": "https://intunedhq.com",
-    "source": "intunedhq.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from intunedhq.com. Hacker News score 104, 45 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48445171",
-    "fetched_at": "2026-06-09T05:36:52Z",
-    "title_zh": "启动 HN：Intuned (YC S22) – 以代码形式构建和运行可靠的浏览器自动化"
-  },
-  {
-    "title": "Apple reveals new AI architecture built around Google Gemini models",
-    "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
-    "source": "macrumors.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from macrumors.com. Hacker News score 472, 376 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48450142",
-    "fetched_at": "2026-06-09T05:36:51Z",
-    "title_zh": "Apple 展示了围绕 Google Gemini 模型构建的新 AI 架构"
-  },
-  {
-    "title": "Siri AI",
-    "url": "https://www.apple.com/apple-intelligence/",
-    "source": "apple.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from apple.com. Hacker News score 505, 437 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48449084",
-    "fetched_at": "2026-06-09T05:36:51Z",
-    "title_zh": "Siri人工智能"
-  },
-  {
-    "title": "MiMo-v2.5-Pro-UltraSpeed: 1T model with 1000 tokens per second",
-    "url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
-    "source": "mimo.xiaomi.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from mimo.xiaomi.com. Hacker News score 528, 382 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48446639",
-    "fetched_at": "2026-06-09T05:36:51Z",
-    "title_zh": "MiMo-v2.5-Pro-UltraSpeed：1T 型号，每秒 1000 个代币"
-  },
-  {
-    "title": "SDSU Wired Its Dorms with 1,300 AI Cameras Without Telling Students",
-    "url": "https://reclaimthenet.org/sdsu-adds-1300-ai-cameras-330-in-student-dorms",
-    "source": "reclaimthenet.org",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from reclaimthenet.org. Hacker News score 33, 5 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48440994",
-    "fetched_at": "2026-06-08T06:11:16Z",
-    "title_zh": "SDSU 在不告诉学生的情况下在宿舍安装了 1,300 个人工智能摄像头"
-  },
-  {
-    "title": "A Matter Wi-Fi Light Bulb in Rust on the Raspberry Pi Pico 2 W",
-    "url": "https://github.com/melastmohican/rust-rpico2-embassy-examples",
-    "source": "github.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 90, 11 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48440008",
-    "fetched_at": "2026-06-08T06:11:13Z",
-    "title_zh": "Raspberry Pi Pico 2 W 上生锈的 Matter Wi-Fi 灯泡"
   }
 ]
