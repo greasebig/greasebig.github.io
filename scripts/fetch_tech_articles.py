@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "articles" / "tech-feed.json"
 MAX_ITEMS = int(os.environ.get("TECH_FEED_MAX_ITEMS", "10"))
-KEEP_ITEMS = int(os.environ.get("TECH_FEED_KEEP_ITEMS", "30"))
+KEEP_ITEMS = int(os.environ.get("TECH_FEED_KEEP_ITEMS", "0"))  # 0 = keep all
 HN_TOP_STORIES = "https://hacker-news.firebaseio.com/v0/topstories.json"
 HN_ITEM = "https://hacker-news.firebaseio.com/v0/item/{id}.json"
 
@@ -216,8 +216,9 @@ def main() -> None:
     feed = [item for item in merged.values() if is_feed_item_tech(item)]
     feed = sorted(feed, key=lambda item: (item.get("date", ""), item.get("fetched_at", "")), reverse=True)
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(feed[:KEEP_ITEMS], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {min(len(feed), KEEP_ITEMS)} reposted technology links to {OUT}")
+    kept = feed if KEEP_ITEMS == 0 else feed[:KEEP_ITEMS]
+    OUT.write_text(json.dumps(kept, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Wrote {len(kept)} reposted technology links to {OUT}")
 
 
 if __name__ == "__main__":

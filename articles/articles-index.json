@@ -1,0 +1,6 @@
+[
+  { "id": "claw-runtime", "title": "Claw Runtime", "zh": "claw-runtime.html", "en": "claw-runtime-en.html" },
+  { "id": "harness-engineering", "title": "Harness Engineering", "zh": "harness-engineering.html", "en": "harness-engineering-en.html" },
+  { "id": "harness-poc", "title": "Harness PoC", "zh": "harness-poc.html", "en": "harness-poc-en.html" },
+  { "id": "mcp-deep-dive", "title": "MCP Deep Dive", "zh": "mcp-deep-dive.html", "en": "mcp-deep-dive-en.html" }
+]

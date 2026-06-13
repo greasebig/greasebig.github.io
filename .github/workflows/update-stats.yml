@@ -20,9 +20,11 @@ jobs:
         run: |
           COUNT=$(python3 -c "
           import json
+          with open('articles/articles-index.json') as f:
+              orig = json.load(f)
           with open('articles/tech-feed.json') as f:
-              data = json.load(f)
-          print(3 + len(data))  # 3 pinned + reposts
+              reposts = json.load(f)
+          print(len(orig) + len(reposts))
           ")
           echo "count=$COUNT" >> "$GITHUB_OUTPUT"
 

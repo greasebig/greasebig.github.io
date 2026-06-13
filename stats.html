@@ -369,12 +369,23 @@
     }
 
     // ===== Load stats from JSON =====
-    var statsData = { articles: 33, papers: 1035, agents: 674 };
+    var statsData = { articles: 0, papers: 1035, agents: 674 };
     function loadLiveStats() {
-      fetch('./articles/tech-feed.json', { cache: 'no-store' }).then(function(r) { return r.json(); }).then(function(items) {
-        statsData.articles = 3 + items.length;
+      // Fetch original articles count from articles-index.json
+      var origCount = 0;
+      fetch('./articles/articles-index.json', { cache: 'no-store' }).then(function(r) { return r.json(); }).then(function(orig) {
+        origCount = orig.length;
+        return fetch('./articles/tech-feed.json', { cache: 'no-store' });
+      }).then(function(r) { return r.json(); }).then(function(reposts) {
+        statsData.articles = origCount + reposts.length;
         animateCount(document.getElementById('numArticles'), statsData.articles);
-      }).catch(function() { animateCount(document.getElementById('numArticles'), statsData.articles); });
+      }).catch(function() {
+        // Fallback: try tech-feed only
+        fetch('./articles/tech-feed.json', { cache: 'no-store' }).then(function(r) { return r.json(); }).then(function(items) {
+          statsData.articles = 4 + items.length;  // 4 original articles fallback
+          animateCount(document.getElementById('numArticles'), statsData.articles);
+        }).catch(function() { animateCount(document.getElementById('numArticles'), statsData.articles || 34); });
+      });
       fetch('https://greasebig.github.io/awesome-agent-everything/data/repos.min.json', { cache: 'no-store' }).then(function(r) { return r.json(); }).then(function(data) {
         var total = 0; Object.keys(data).forEach(function(k) { if (Array.isArray(data[k])) total += data[k].length; });
         if (total > 0) statsData.agents = total;
@@ -956,5 +967,90 @@
 
     })();
   </script>
+
+    <!-- ===== Visitor Tracking Methods ===== -->
+    <section id="tracking-methods" style="max-width:960px;margin:60px auto 0;padding:0 24px 40px;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:10px;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,rgba(99,102,241,0.12),rgba(139,92,246,0.12));font-size:18px;">📊</span>
+        Visitor Tracking Methods
+      </h2>
+      <p style="color:var(--muted);font-size:14px;margin-bottom:28px;">How to add analytics to your GitHub Pages site or GitHub Profile README</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+
+        <!-- Method 1: Google Analytics / Baidu -->
+        <div class="method-card" style="padding:22px 20px;border-radius:18px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(15,23,42,0.08);">
+          <div style="font-size:28px;margin-bottom:10px;">🔬</div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 6px;">Professional Analytics</h3>
+          <p style="color:var(--muted);font-size:13px;margin:0 0 12px;line-height:1.55;">Google Analytics or Baidu Tongji — the most thorough approach. Track IP-derived geolocation, visit duration, device type, and more.</p>
+          <ol style="color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 12px;padding-left:18px;">
+            <li>Register a <strong>Google Analytics</strong> or <strong>百度统计</strong> account</li>
+            <li>Add your GitHub Pages URL to get a JavaScript tracking snippet</li>
+            <li>Paste the snippet into every HTML <code>&lt;head&gt;</code> tag and push</li>
+          </ol>
+          <div style="background:rgba(99,102,241,0.06);border-radius:10px;padding:10px 12px;font-size:11px;color:var(--muted);">
+            ✅ IP → geolocation, duration, device, browser<br>
+            ⚠️ Requires account setup &amp; GDPR notice
+          </div>
+        </div>
+
+        <!-- Method 2: Lightweight IP Counter -->
+        <div class="method-card" style="padding:22px 20px;border-radius:18px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(15,23,42,0.08);">
+          <div style="font-size:28px;margin-bottom:10px;">🗺️</div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 6px;">Lightweight IP Counter</h3>
+          <p style="color:var(--muted);font-size:13px;margin:0 0 12px;line-height:1.55;">Quick &amp; easy — embed a visitor map or counter from services like FreeCounterStat, RevolverMaps, or ClustrMaps.</p>
+          <ol style="color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 12px;padding-left:18px;">
+            <li>Visit <strong>freecounterstat.com</strong> or <strong>revolvermaps.com</strong></li>
+            <li>Configure your site URL, get an HTML/JS embed code</li>
+            <li>Paste into your site — done!</li>
+          </ol>
+          <div style="background:rgba(16,185,129,0.06);border-radius:10px;padding:10px 12px;font-size:11px;color:var(--muted);">
+            ✅ Zero config, instant visitor globe/counter<br>
+            ⚠️ Less detailed than professional analytics
+          </div>
+        </div>
+
+        <!-- Method 3: GitHub Profile README -->
+        <div class="method-card" style="padding:22px 20px;border-radius:18px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(15,23,42,0.08);">
+          <div style="font-size:28px;margin-bottom:10px;">👤</div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 6px;">GitHub Profile Tracking</h3>
+          <p style="color:var(--muted);font-size:13px;margin:0 0 12px;line-height:1.55;">For your GitHub profile README — no JS allowed, so use image-based tracking. The browser loads the image and the server captures the IP.</p>
+          <ol style="color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 12px;padding-left:18px;">
+            <li>Get a Markdown image tag from <strong>RevolverMaps</strong> or <strong>Visitor Badge</strong></li>
+            <li>Paste <code>![visitors](https://ids.revolvermaps.com/...)</code> into README.md</li>
+            <li>A globe appears on your profile showing visitor locations</li>
+          </ol>
+          <div style="background:rgba(245,158,11,0.06);border-radius:10px;padding:10px 12px;font-size:11px;color:var(--muted);">
+            ✅ Works on GitHub README (no JS needed)<br>
+            ⚠️ No duration/interaction tracking
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Embed Snippets -->
+      <div style="margin-top:24px;padding:22px 20px;border-radius:18px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(15,23,42,0.08);">
+        <h3 style="font-size:16px;font-weight:700;margin:0 0 12px;">📋 Quick Embed Snippets</h3>
+        <div style="margin-bottom:16px;">
+          <div style="font-size:13px;font-weight:600;margin-bottom:6px;">RevolverMaps Globe (for HTML pages):</div>
+          <pre style="background:rgba(15,15,35,0.7);color:#c7c7ff;padding:14px;border-radius:12px;font-size:12px;overflow-x:auto;margin:0;line-height:1.6;"><code>&lt;script type="text/javascript" src="https://rf.revolvermaps.com/0/0/8.js?i=YOUR_ID&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33"&gt;&lt;/script&gt;</code></pre>
+        </div>
+        <div style="margin-bottom:16px;">
+          <div style="font-size:13px;font-weight:600;margin-bottom:6px;">Visitor Badge (for GitHub README):</div>
+          <pre style="background:rgba(15,15,35,0.7);color:#c7c7ff;padding:14px;border-radius:12px;font-size:12px;overflow-x:auto;margin:0;line-height:1.6;"><code>![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fgreasebig&amp;label=VISITORS&amp;countColor=%236366f1)</code></pre>
+        </div>
+        <div>
+          <div style="font-size:13px;font-weight:600;margin-bottom:6px;">Google Analytics gtag.js (replace GA_MEASUREMENT_ID):</div>
+          <pre style="background:rgba(15,15,35,0.7);color:#c7c7ff;padding:14px;border-radius:12px;font-size:12px;overflow-x:auto;margin:0;line-height:1.6;"><code>&lt;script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+&lt;/script&gt;</code></pre>
+        </div>
+      </div>
+    </section>
+
 </body>
 </html>
