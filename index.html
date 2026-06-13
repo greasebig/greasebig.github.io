@@ -102,7 +102,7 @@
       font-display: block;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=UnifrakturMaguntia&family=MedievalSharp&family=Pirata+One&family=Texturina:wght@400;700&family=IM+Fell+English&family=Cinzel+Decorative:wght@400;700&family=Grenze+Gotisch:wght@400;700&family=Metamorphous&display=block');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=UnifrakturMaguntia&family=MedievalSharp&family=Pirata+One&family=Texturina:wght@400;700&family=IM+Fell+English&family=Cinzel+Decorative:wght@400;700&family=Grenze+Gotisch:wght@400;700&family=Metamorphous&display=block');
 
     :root {
 
@@ -935,14 +935,12 @@
     }
 
     .hero .tagline {
-
       color: var(--muted);
-
       font-size: clamp(15px, 1.8vw, 18px);
-
       max-width: 560px;
-
       margin: 0 auto 28px;
+      /* 字体未就绪时整段隐藏，绝不允许正楷/楷书出现 */
+      visibility: hidden;
 
       font-weight: 400;
 
@@ -978,7 +976,8 @@
       visibility: hidden;
     }
     .fonts-all-ready .tagline-cn,
-    .fonts-all-ready .tagline-en {
+    .fonts-all-ready .tagline-en,
+    .fonts-all-ready .hero .tagline {
       visibility: visible;
     }
     .tagline-fading { opacity: 0 !important; }
@@ -2739,14 +2738,15 @@
         document.documentElement.classList.add('fonts-all-ready');
       }
 
-      function areFontsReady() {
+      function isFontAvailable(fontName) {
         if (!document.fonts || !document.fonts.check) return false;
-        var cnOk = cnFonts.some(function(f) {
-          return document.fonts.check('16px ' + f);
-        });
-        var enOk = enFonts.some(function(f) {
-          return document.fonts.check('16px ' + f);
-        });
+        return document.fonts.check('48px ' + fontName);
+      }
+
+      function areFontsReady() {
+        // 中文至少一个狂草就绪 + 英文至少一个古体就绪
+        var cnOk = cnFonts.some(isFontAvailable);
+        var enOk = enFonts.some(isFontAvailable);
         return cnOk && enOk;
       }
 
@@ -2758,35 +2758,43 @@
 
       // 主动加载关键字体：用 FontFace API 确保浏览器下载
       if (typeof FontFace !== 'undefined') {
-        var allPromises = [
+        var loadTasks = [
           new FontFace('ZhiMangXing', "url('fonts/ZhiMangXing.woff2')").load(),
           new FontFace('KouzanSousho', "url('fonts/KouzanBrushFontSousyo.woff2')").load(),
           new FontFace('CloisterBlack', "url('fonts/CloisterBlack.woff2')").load(),
           new FontFace('UnifrakturMaguntia', "url('https://fonts.gstatic.com/s/unifrakturmaguntia/v16/WWXPluV8XUxT2LEmYVP9X5y7TTg.woff2')").load()
         ];
-        Promise.all(allPromises).then(function(faces) {
-          faces.forEach(function(f) { document.fonts.add(f); });
-          markReady();
-        }).catch(function() {
-          // 部分字体加载失败，检查是否有足够字体可用
-          if (areFontsReady()) {
-            markReady();
-          }
+
+        // 任一字体加载成功就检查一次
+        loadTasks.forEach(function(p) {
+          p.then(function(face) {
+            document.fonts.add(face);
+            if (areFontsReady()) markReady();
+          }).catch(function() {});
         });
-      } else if (document.fonts && document.fonts.ready) {
+
+        // 全部完成后再检查一次
+        Promise.allSettled(loadTasks).then(function() {
+          if (areFontsReady()) markReady();
+        });
+      }
+
+      // 也监听 document.fonts.ready
+      if (document.fonts && document.fonts.ready) {
         document.fonts.ready.then(function() {
           if (areFontsReady()) markReady();
         });
       }
 
-      // 渐进兜底检查
-      var fallbackChecks = [8, 12, 18, 30];
+      // 渐进兜底检查：只在字体真正可用时才显示
+      var fallbackChecks = [5, 10, 15, 20, 30, 45, 60];
       fallbackChecks.forEach(function(sec) {
         setTimeout(function() {
           if (!document.documentElement.classList.contains('fonts-all-ready')) {
             if (areFontsReady()) {
               markReady();
-            } else if (sec >= 30) {
+            } else if (sec >= 60) {
+              // 60秒超时强制显示，但 cursive 回退绝不是楷书
               markReady();
             }
           }
@@ -4019,9 +4027,9 @@
         "'MedievalSharp', 'CloisterBlack', 'UnifrakturMaguntia', cursive",
         "'Pirata One', 'MedievalSharp', 'CloisterBlack', cursive",
         "'Grenze Gotisch', 'CloisterBlack', 'UnifrakturMaguntia', cursive",
-        "'Cinzel Decorative', 'Grenze Gotisch', 'CloisterBlack', serif",
-        "'Texturina', 'Grenze Gotisch', 'CloisterBlack', serif",
-        "'IM Fell English', 'Texturina', 'CloisterBlack', serif",
+        "'Cinzel Decorative', 'Grenze Gotisch', 'CloisterBlack', cursive",
+        "'Texturina', 'Grenze Gotisch', 'CloisterBlack', cursive",
+        "'IM Fell English', 'Texturina', 'CloisterBlack', cursive",
         "'Metamorphous', 'MedievalSharp', 'CloisterBlack', cursive"
       ];
 

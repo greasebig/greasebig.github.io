@@ -31,25 +31,15 @@
 
     /* ===== 毛玻璃初始背景（和主页一致） ===== */
     .bg-initial {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      z-index: -3;
+      position: fixed; top: 0; left: 0;
+      width: 100vw; height: 100vh; z-index: -3;
       background:
         radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.15), transparent 50%),
         radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
         radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
         linear-gradient(175deg, #0f0f23 0%, #1a1a2e 40%, #1e1e3f 70%, #0f0f23 100%);
     }
-
-    .orb {
-      position: fixed;
-      border-radius: 50%;
-      filter: blur(60px);
-      opacity: 0.35;
-      pointer-events: none;
-      z-index: -2;
-    }
+    .orb { position: fixed; border-radius: 50%; filter: blur(60px); opacity: 0.35; pointer-events: none; z-index: -2; }
     .orb-1 { width: 360px; height: 360px; left: -100px; top: -80px; background: radial-gradient(circle, rgba(99,102,241,0.35), transparent 70%); animation: drift 12s ease-in-out infinite; }
     .orb-2 { width: 280px; height: 280px; right: -60px; top: 200px; background: radial-gradient(circle, rgba(236,72,153,0.28), transparent 70%); animation: drift 14s ease-in-out infinite 2s; }
     .orb-3 { width: 240px; height: 240px; left: 40%; bottom: -80px; background: radial-gradient(circle, rgba(16,185,129,0.22), transparent 70%); animation: drift 16s ease-in-out infinite 4s; }
@@ -61,165 +51,33 @@
     }
 
     /* ===== Video Background ===== */
-    .video-bg {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      z-index: -1;
-      overflow: hidden;
-      opacity: 0;
-      transition: opacity 1.5s ease;
-    }
+    .video-bg { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; overflow: hidden; opacity: 0; transition: opacity 1.5s ease; }
     .video-bg.visible { opacity: 1; }
-    .video-bg video {
-      position: absolute;
-      top: 50%; left: 50%;
-      min-width: 100%; min-height: 100%;
-      width: auto; height: auto;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-    }
-    .video-bg::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg,
-        rgba(10,10,26,0.55) 0%,
-        rgba(10,10,26,0.35) 40%,
-        rgba(10,10,26,0.65) 100%
-      );
-      z-index: 1;
-    }
-
-    .video-loading {
-      position: fixed;
-      bottom: 20px; right: 20px;
-      z-index: 100;
-      background: rgba(15,15,35,0.7);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(99,102,241,0.2);
-      color: #c7c7ff;
-      font-size: 11px;
-      font-weight: 500;
-      padding: 8px 16px;
-      border-radius: 20px;
-      opacity: 0;
-      transition: opacity 0.5s;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .video-bg video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); object-fit: cover; }
+    .video-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,10,26,0.55) 0%, rgba(10,10,26,0.35) 40%, rgba(10,10,26,0.65) 100%); z-index: 1; }
+    .video-loading { position: fixed; bottom: 20px; right: 20px; z-index: 100; background: rgba(15,15,35,0.7); backdrop-filter: blur(12px); border: 1px solid rgba(99,102,241,0.2); color: #c7c7ff; font-size: 11px; font-weight: 500; padding: 8px 16px; border-radius: 20px; opacity: 0; transition: opacity 0.5s; display: flex; align-items: center; gap: 8px; }
     .video-loading.visible { opacity: 1; }
-    .video-loading .vlb-dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-      animation: vlbPulse 1.2s ease-in-out infinite;
-      flex-shrink: 0;
-    }
+    .video-loading .vlb-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: vlbPulse 1.2s ease-in-out infinite; flex-shrink: 0; }
     .video-loading .vlb-dot.done { background: var(--accent-4); animation: none; }
-    @keyframes vlbPulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.7); }
-    }
+    @keyframes vlbPulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
 
     /* ===== Main Content ===== */
-    .container {
-      position: relative;
-      z-index: 2;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 60px 20px 40px;
-    }
+    .container { position: relative; z-index: 2; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px 40px; }
 
-    .back-btn {
-      position: fixed;
-      top: 24px; left: 24px;
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      color: rgba(255,255,255,0.7);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      padding: 8px 16px;
-      border-radius: 10px;
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.12);
-      transition: all 0.25s;
-    }
+    .back-btn { position: fixed; top: 24px; left: 24px; z-index: 10; display: flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: 10px; background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.12); transition: all 0.25s; }
     .back-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
     .back-btn svg { width: 16px; height: 16px; }
 
-    .page-title {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(28px, 5vw, 42px);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-      background: linear-gradient(135deg, #fff 0%, #c7c7ff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .page-subtitle {
-      color: var(--muted);
-      font-size: 15px;
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
+    .page-title { font-family: "Playfair Display", serif; font-size: clamp(28px, 5vw, 42px); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; background: linear-gradient(135deg, #fff 0%, #c7c7ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .page-subtitle { color: var(--muted); font-size: 15px; margin-bottom: 48px; font-weight: 400; }
 
     /* Stats Grid */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-      max-width: 900px;
-      width: 100%;
-    }
-    .stat-card {
-      background: var(--glass);
-      backdrop-filter: blur(24px);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 20px;
-      padding: 32px 28px;
-      text-align: center;
-      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-    }
-    .stat-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: 20px;
-      padding: 1px;
-      background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent 60%);
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      pointer-events: none;
-    }
-    .stat-card:hover {
-      background: var(--glass-hover);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 900px; width: 100%; }
+    .stat-card { background: var(--glass); backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 32px 28px; text-align: center; transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; text-decoration: none; color: inherit; display: block; }
+    .stat-card::before { content: ''; position: absolute; inset: 0; border-radius: 20px; padding: 1px; background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent 60%); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
+    .stat-card:hover { background: var(--glass-hover); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
     .stat-icon { font-size: 36px; margin-bottom: 16px; display: block; }
-    .stat-number {
-      font-size: 56px;
-      font-weight: 900;
-      letter-spacing: -0.03em;
-      line-height: 1;
-      margin-bottom: 4px;
-      font-variant-numeric: tabular-nums;
-    }
+    .stat-number { font-size: 56px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; margin-bottom: 4px; font-variant-numeric: tabular-nums; }
     .stat-card:nth-child(1) .stat-number { color: var(--accent); }
     .stat-card:nth-child(2) .stat-number { color: var(--accent-3); }
     .stat-card:nth-child(3) .stat-number { color: var(--accent-4); }
@@ -228,200 +86,114 @@
     .updated-at { margin-top: 40px; font-size: 12px; color: rgba(255,255,255,0.3); }
 
     /* ===== Visitor Tracker Section ===== */
-    .tracker-section {
-      margin-top: 64px;
-      width: 100%;
-      max-width: 1200px;
-    }
-    .tracker-title {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(22px, 3vw, 32px);
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 8px;
-      background: linear-gradient(135deg, #6366f1, #ec4899);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .tracker-subtitle {
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 32px;
-    }
+    .tracker-section { margin-top: 64px; width: 100%; max-width: 1400px; }
+    .tracker-title { font-family: "Playfair Display", serif; font-size: clamp(22px, 3vw, 32px); font-weight: 700; text-align: center; margin-bottom: 8px; background: linear-gradient(135deg, #6366f1, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .tracker-subtitle { text-align: center; color: var(--muted); font-size: 14px; margin-bottom: 32px; }
 
-    .tracker-layout {
+    .tracker-top-row {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 420px 1fr;
       gap: 24px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 1000px) {
+      .tracker-top-row { grid-template-columns: 1fr; }
     }
 
-    @media (max-width: 900px) {
-      .tracker-layout { grid-template-columns: 1fr; }
-    }
-
-    /* Globe container */
+    /* Globe panel — left side, globe centered inside */
     .globe-panel {
       background: var(--glass);
       backdrop-filter: blur(24px);
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: 20px;
-      padding: 24px;
-      min-height: 440px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      min-height: 480px;
     }
-    .globe-panel h3 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 16px;
-      color: rgba(255,255,255,0.85);
-    }
-    #globeCanvas {
-      width: 100%;
-      max-width: 400px;
-      aspect-ratio: 1;
-      border-radius: 16px;
-      cursor: grab;
-    }
+    .globe-panel h3 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: rgba(255,255,255,0.85); }
+    #globeCanvas { width: 380px; height: 380px; border-radius: 16px; cursor: grab; }
     #globeCanvas:active { cursor: grabbing; }
-    .globe-legend {
+    .globe-legend { display: flex; gap: 16px; margin-top: 12px; font-size: 11px; color: var(--muted); }
+    .globe-legend span { display: flex; align-items: center; gap: 4px; }
+    .globe-legend .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+    /* Right side: two stacked tickers */
+    .right-tickers {
       display: flex;
-      gap: 16px;
-      margin-top: 12px;
-      font-size: 11px;
-      color: var(--muted);
-    }
-    .globe-legend span {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .globe-legend .dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      display: inline-block;
+      flex-direction: column;
+      gap: 24px;
     }
 
-    /* Scroll ticker */
+    /* Ticker panel */
     .ticker-panel {
       background: var(--glass);
       backdrop-filter: blur(24px);
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: 20px;
-      padding: 24px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
-      min-height: 440px;
-    }
-    .ticker-panel h3 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 16px;
-      color: rgba(255,255,255,0.85);
-    }
-    .ticker-list {
       flex: 1;
-      overflow: hidden;
-      position: relative;
-      mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+      min-height: 200px;
     }
-    .ticker-inner {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      animation: tickerScroll 40s linear infinite;
-    }
-    .ticker-inner:hover { animation-play-state: paused; }
-    @keyframes tickerScroll {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-50%); }
-    }
+    .ticker-panel h3 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: rgba(255,255,255,0.85); display: flex; align-items: center; gap: 8px; }
+    .ticker-panel h3 .src-badge { font-size: 10px; padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+    .src-ipapi { background: rgba(99,102,241,0.2); color: #818cf8; }
+    .src-ipapi2 { background: rgba(16,185,129,0.2); color: #34d399; }
+    .src-ipinfo { background: rgba(236,72,153,0.2); color: #f472b6; }
 
-    .visit-row {
-      display: grid;
-      grid-template-columns: 28px 1fr auto;
-      gap: 10px;
-      align-items: center;
-      padding: 10px 14px;
-      border-radius: 12px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.06);
-      transition: background 0.2s;
-      min-height: 52px;
-    }
+    .ticker-list { flex: 1; overflow: hidden; position: relative; mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%); }
+    .ticker-inner { display: flex; flex-direction: column; gap: 6px; animation: tickerScroll 50s linear infinite; }
+    .ticker-inner:hover { animation-play-state: paused; }
+    @keyframes tickerScroll { 0% { transform: translateY(0); } 100% { transform: translateY(-50%); } }
+
+    .visit-row { display: grid; grid-template-columns: 28px 1fr auto; gap: 10px; align-items: center; padding: 8px 12px; border-radius: 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); transition: background 0.2s; }
     .visit-row:hover { background: rgba(255,255,255,0.08); }
-    .visit-flag { font-size: 20px; text-align: center; }
+    .visit-flag { font-size: 18px; text-align: center; }
     .visit-info { min-width: 0; }
-    .visit-location {
-      font-size: 13px;
-      font-weight: 600;
-      color: rgba(255,255,255,0.9);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .visit-meta {
-      font-size: 11px;
-      color: var(--muted);
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 2px;
-    }
-    .visit-meta .vpn-badge {
-      background: rgba(236,72,153,0.2);
-      color: #ec4899;
-      padding: 1px 6px;
-      border-radius: 4px;
-      font-size: 10px;
-      font-weight: 600;
-    }
-    .visit-right {
-      text-align: right;
-      font-size: 11px;
-      color: var(--muted);
-      white-space: nowrap;
-    }
-    .visit-ip {
-      font-family: "SF Mono", "Fira Code", monospace;
-      font-size: 11px;
-      color: rgba(255,255,255,0.5);
-    }
-    .visit-duration {
-      margin-top: 2px;
-      color: var(--accent-4);
-      font-weight: 500;
-    }
+    .visit-location { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.9); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .visit-meta { font-size: 10px; color: var(--muted); display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
+    .visit-meta .vpn-badge { background: rgba(236,72,153,0.2); color: #ec4899; padding: 1px 6px; border-radius: 4px; font-size: 9px; font-weight: 600; }
+    .visit-meta .count-badge { background: rgba(99,102,241,0.2); color: #818cf8; padding: 1px 6px; border-radius: 4px; font-size: 9px; font-weight: 600; }
+    .visit-right { text-align: right; font-size: 11px; color: var(--muted); white-space: nowrap; }
+    .visit-ip { font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace; font-size: 10px; color: rgba(255,255,255,0.6); }
+    .visit-duration { margin-top: 2px; color: var(--accent-4); font-weight: 500; font-size: 10px; }
 
     /* Summary bar */
-    .summary-bar {
-      display: flex;
+    .summary-bar { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 24px; padding: 16px 24px; background: var(--glass); backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; }
+    .summary-item { text-align: center; }
+    .summary-value { font-size: 22px; font-weight: 800; color: #fff; }
+    .summary-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    /* Bottom row: IP ranking */
+    .bottom-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 24px;
-      justify-content: center;
-      flex-wrap: wrap;
       margin-top: 24px;
-      padding: 16px 24px;
+    }
+    @media (max-width: 1000px) {
+      .bottom-row { grid-template-columns: 1fr; }
+    }
+    .rank-panel {
       background: var(--glass);
       backdrop-filter: blur(24px);
       border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px;
+      border-radius: 20px;
+      padding: 20px;
     }
-    .summary-item {
-      text-align: center;
-    }
-    .summary-value {
-      font-size: 22px;
-      font-weight: 800;
-      color: #fff;
-    }
-    .summary-label {
-      font-size: 11px;
-      color: var(--muted);
-      margin-top: 2px;
-    }
+    .rank-panel h3 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: rgba(255,255,255,0.85); }
+    .rank-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .rank-num { font-size: 14px; font-weight: 800; color: var(--accent); width: 24px; text-align: center; }
+    .rank-row:nth-child(2) .rank-num { color: #f59e0b; }
+    .rank-row:nth-child(3) .rank-num { color: #10b981; }
+    .rank-info { flex: 1; min-width: 0; }
+    .rank-label { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.9); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .rank-sub { font-size: 10px; color: var(--muted); }
+    .rank-count { font-size: 16px; font-weight: 800; color: var(--accent-2); }
 
     @media (max-width: 640px) {
       .stats-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -429,6 +201,7 @@
       .stat-card { padding: 24px 20px; }
       .summary-bar { gap: 16px; padding: 12px 16px; }
       .summary-value { font-size: 18px; }
+      #globeCanvas { width: 300px; height: 300px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -451,8 +224,6 @@
   <div class="video-bg" id="videoBg">
     <video id="bgVideo" autoplay muted loop playsinline></video>
   </div>
-
-  <!-- Loading indicator -->
   <div class="video-loading" id="videoLoading">
     <span class="vlb-dot"></span>
     <span class="vlb-text">Loading video…</span>
@@ -495,13 +266,13 @@
     <!-- ===== Visitor Tracker ===== -->
     <div class="tracker-section">
       <h2 class="tracker-title">Visitor Globe</h2>
-      <p class="tracker-subtitle">Real-time visitor tracking — globe + live ticker</p>
+      <p class="tracker-subtitle">Real-time visitor tracking — globe + live tickers from multiple sources</p>
 
-      <div class="tracker-layout">
-        <!-- Globe -->
+      <div class="tracker-top-row">
+        <!-- Globe — left side, centered -->
         <div class="globe-panel">
           <h3>🌍 3D Globe</h3>
-          <canvas id="globeCanvas" width="400" height="400"></canvas>
+          <canvas id="globeCanvas" width="760" height="760"></canvas>
           <div class="globe-legend">
             <span><span class="dot" style="background:#6366f1"></span> You</span>
             <span><span class="dot" style="background:#10b981"></span> Recent</span>
@@ -509,14 +280,42 @@
           </div>
         </div>
 
-        <!-- Ticker -->
-        <div class="ticker-panel">
-          <h3>📊 Live Visitor Log</h3>
-          <div class="ticker-list">
-            <div class="ticker-inner" id="tickerInner">
-              <!-- Populated by JS -->
+        <!-- Right: two stacked tickers -->
+        <div class="right-tickers">
+          <!-- Ticker 1: ipapi.co -->
+          <div class="ticker-panel">
+            <h3>📡 ipapi.co <span class="src-badge src-ipapi">Source 1</span></h3>
+            <div class="ticker-list">
+              <div class="ticker-inner" id="ticker1"></div>
             </div>
           </div>
+          <!-- Ticker 2: ip-api.com -->
+          <div class="ticker-panel">
+            <h3>📡 ip-api.com <span class="src-badge src-ipapi2">Source 2</span></h3>
+            <div class="ticker-list">
+              <div class="ticker-inner" id="ticker2"></div>
+            </div>
+          </div>
+          <!-- Ticker 3: ipinfo.io -->
+          <div class="ticker-panel">
+            <h3>📡 ipinfo.io <span class="src-badge src-ipinfo">Source 3</span></h3>
+            <div class="ticker-list">
+              <div class="ticker-inner" id="ticker3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom row: Rankings -->
+      <div class="bottom-row">
+        <div class="rank-panel" id="rankCountries">
+          <h3>🏆 Top Countries</h3>
+        </div>
+        <div class="rank-panel" id="rankIPs">
+          <h3>🔢 Top IPs (visits)</h3>
+        </div>
+        <div class="rank-panel" id="rankISPs">
+          <h3>🌐 Top ISPs</h3>
         </div>
       </div>
 
@@ -527,12 +326,16 @@
           <div class="summary-label">Total Visits</div>
         </div>
         <div class="summary-item">
+          <div class="summary-value" id="sumUnique">0</div>
+          <div class="summary-label">Unique IPs</div>
+        </div>
+        <div class="summary-item">
           <div class="summary-value" id="sumCountries">0</div>
           <div class="summary-label">Countries</div>
         </div>
         <div class="summary-item">
           <div class="summary-value" id="sumVpn">0</div>
-          <div class="summary-label">VPN/Tor</div>
+          <div class="summary-label">VPN/Proxy</div>
         </div>
         <div class="summary-item">
           <div class="summary-value" id="sumAvgDuration">—</div>
@@ -546,58 +349,37 @@
     // ===== Animated counter =====
     function animateCount(el, target, duration) {
       if (duration === undefined) duration = 2000;
-      var start = 0;
       var startTime = null;
       function step(ts) {
         if (!startTime) startTime = ts;
         var progress = Math.min((ts - startTime) / duration, 1);
         var eased = 1 - Math.pow(1 - progress, 3);
-        var current = Math.floor(eased * target);
-        el.textContent = current.toLocaleString();
-        if (progress < 1) {
-          requestAnimationFrame(step);
-        } else {
-          el.textContent = target.toLocaleString();
-        }
+        el.textContent = Math.floor(eased * target).toLocaleString();
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = target.toLocaleString();
       }
       requestAnimationFrame(step);
     }
 
     // ===== Load stats from JSON =====
     var statsData = { articles: 33, papers: 1035, agents: 674 };
-
     function loadLiveStats() {
-      fetch('./articles/tech-feed.json', { cache: 'no-store' })
-        .then(function(r) { return r.json(); })
-        .then(function(items) {
-          statsData.articles = 3 + items.length;
-          animateCount(document.getElementById('numArticles'), statsData.articles);
-        })
-        .catch(function() { animateCount(document.getElementById('numArticles'), statsData.articles); });
-
-      fetch('https://greasebig.github.io/awesome-agent-everything/data/repos.min.json', { cache: 'no-store' })
-        .then(function(r) { return r.json(); })
-        .then(function(data) {
-          var total = 0;
-          Object.keys(data).forEach(function(k) { if (Array.isArray(data[k])) total += data[k].length; });
-          if (total > 0) statsData.agents = total;
-          animateCount(document.getElementById('numAgents'), statsData.agents);
-        })
-        .catch(function() { animateCount(document.getElementById('numAgents'), statsData.agents); });
+      fetch('./articles/tech-feed.json', { cache: 'no-store' }).then(function(r) { return r.json(); }).then(function(items) {
+        statsData.articles = 3 + items.length;
+        animateCount(document.getElementById('numArticles'), statsData.articles);
+      }).catch(function() { animateCount(document.getElementById('numArticles'), statsData.articles); });
+      fetch('https://greasebig.github.io/awesome-agent-everything/data/repos.min.json', { cache: 'no-store' }).then(function(r) { return r.json(); }).then(function(data) {
+        var total = 0; Object.keys(data).forEach(function(k) { if (Array.isArray(data[k])) total += data[k].length; });
+        if (total > 0) statsData.agents = total;
+        animateCount(document.getElementById('numAgents'), statsData.agents);
+      }).catch(function() { animateCount(document.getElementById('numAgents'), statsData.agents); });
     }
-
     animateCount(document.getElementById('numArticles'), statsData.articles);
     animateCount(document.getElementById('numPapers'), statsData.papers);
     animateCount(document.getElementById('numAgents'), statsData.agents);
     loadLiveStats();
-
     var now = new Date();
-    document.getElementById('updatedAt').textContent =
-      'Updated: ' + now.getFullYear() + '-' +
-      String(now.getMonth()+1).padStart(2,'0') + '-' +
-      String(now.getDate()).padStart(2,'0') + ' ' +
-      String(now.getHours()).padStart(2,'0') + ':' +
-      String(now.getMinutes()).padStart(2,'0');
+    document.getElementById('updatedAt').textContent = 'Updated: ' + now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0') + '-' + String(now.getDate()).padStart(2,'0') + ' ' + String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
 
     // ===== Progressive Video Loading =====
     (function() {
@@ -610,12 +392,9 @@
       var loadingTimeout;
       var hasSwitchedToLarge = false;
       video.loop = true;
-
       function showLoading(text) { if (loadingText) loadingText.textContent = text; loading.classList.add('visible'); clearTimeout(loadingTimeout); }
       function hideLoading() { loadingTimeout = setTimeout(function() { loading.classList.remove('visible'); }, 3000); }
-
       video.addEventListener('ended', function() { video.currentTime = 0; video.play(); });
-
       var smallReq = new XMLHttpRequest();
       smallReq.open('GET', 'assets/videos/bg-480p.mp4', true);
       smallReq.responseType = 'blob';
@@ -623,8 +402,7 @@
       smallReq.onload = function() {
         if (smallReq.status !== 200) { showLoading('Loading original…'); startDownloadingLarge(); return; }
         var smallBlob = URL.createObjectURL(smallReq.response);
-        var probe = document.createElement('video');
-        probe.muted = true; probe.src = smallBlob;
+        var probe = document.createElement('video'); probe.muted = true; probe.src = smallBlob;
         probe.addEventListener('canplaythrough', function() {
           video.loop = true; video.src = smallBlob;
           video.play().then(function() { videoBg.classList.add('visible'); showLoading('480p ✓ · Loading original…'); startDownloadingLarge(); })
@@ -634,25 +412,18 @@
         probe.load();
       };
       smallReq.onerror = function() { showLoading('Loading original…'); startDownloadingLarge(); };
-      showLoading('Loading 480p…');
-      smallReq.send();
-
+      showLoading('Loading 480p…'); smallReq.send();
       function startDownloadingLarge() {
         if (hasSwitchedToLarge) return;
-        var req = new XMLHttpRequest();
-        req.open('GET', 'assets/videos/bg-large.mp4', true);
-        req.responseType = 'blob';
+        var req = new XMLHttpRequest(); req.open('GET', 'assets/videos/bg-large.mp4', true); req.responseType = 'blob';
         req.onprogress = function(e) { if (e.lengthComputable) showLoading('Loading original… ' + Math.round(e.loaded / e.total * 100) + '%'); };
         req.onload = function() {
           if (req.status === 200 && !hasSwitchedToLarge) {
             var blobUrl = URL.createObjectURL(req.response);
-            var probe = document.createElement('video');
-            probe.muted = true; probe.src = blobUrl;
+            var probe = document.createElement('video'); probe.muted = true; probe.src = blobUrl;
             probe.addEventListener('canplaythrough', function() {
-              if (hasSwitchedToLarge) return;
-              hasSwitchedToLarge = true;
-              var ratio = video.currentTime / video.duration;
-              var targetTime = ratio * probe.duration;
+              if (hasSwitchedToLarge) return; hasSwitchedToLarge = true;
+              var ratio = video.currentTime / video.duration; var targetTime = ratio * probe.duration;
               videoBg.classList.remove('visible');
               setTimeout(function() {
                 video.src = blobUrl; video.loop = true; video.currentTime = targetTime;
@@ -660,415 +431,408 @@
                   .catch(function() { videoBg.classList.add('visible'); if (loadingDot) loadingDot.classList.add('done'); showLoading('Original ✓'); hideLoading(); });
               }, 400);
             }, { once: true });
-            probe.addEventListener('error', function() { showLoading('480p (original unavailable)'); hideLoading(); }, { once: true });
+            probe.addEventListener('error', function() { showLoading('480p ✓'); hideLoading(); }, { once: true });
             probe.load();
           } else if (!hasSwitchedToLarge) { showLoading('480p ✓'); hideLoading(); }
         };
-        req.onerror = function() { showLoading('480p ✓'); hideLoading(); };
-        req.send();
+        req.onerror = function() { showLoading('480p ✓'); hideLoading(); }; req.send();
       }
     })();
 
-    // ===== Visitor IP Tracking System =====
+    // ===== Visitor IP Tracking System (multi-source, with IP visit counting) =====
     (function() {
-      var STORAGE_KEY = 'greasebig_visits';
-      var MAX_VISITS = 200;
+      var STORAGE_KEY = 'greasebig_visits_v2';
+      var MAX_VISITS = 500;
 
-      function getVisits() {
-        try {
-          var data = localStorage.getItem(STORAGE_KEY);
-          return data ? JSON.parse(data) : [];
-        } catch(e) { return []; }
-      }
-      function saveVisits(visits) {
-        try {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(visits.slice(0, MAX_VISITS)));
-        } catch(e) {}
-      }
+      function getVisits() { try { var d = localStorage.getItem(STORAGE_KEY); return d ? JSON.parse(d) : []; } catch(e) { return []; } }
+      function saveVisits(visits) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(visits.slice(0, MAX_VISITS))); } catch(e) {} }
 
-      // Multi-source IP geolocation (try multiple APIs for robustness)
-      function fetchGeoData() {
-        var apis = [
-          {
-            url: 'https://ipapi.co/json/',
-            parse: function(d) {
-              return {
-                ip: d.ip || '?',
-                country: d.country_name || d.country || '?',
-                city: d.city || '?',
-                region: d.region || '?',
-                lat: d.latitude || 0,
-                lon: d.longitude || 0,
-                country_code: (d.country_code || '').toLowerCase(),
-                isp: d.org || '?',
-                vpn: false,
-                timezone: d.timezone || '?'
-              };
-            }
-          },
-          {
-            url: 'http://ip-api.com/json/?fields=status,message,country,countryCode,region,regionName,city,lat,lon,isp,org,timezone,query',
-            parse: function(d) {
-              return {
-                ip: d.query || '?',
-                country: d.country || '?',
-                city: d.city || '?',
-                region: d.regionName || '?',
-                lat: d.lat || 0,
-                lon: d.lon || 0,
-                country_code: (d.countryCode || '').toLowerCase(),
-                isp: d.isp || d.org || '?',
-                vpn: false,
-                timezone: d.timezone || '?'
-              };
-            }
-          },
-          {
-            url: 'https://ipinfo.io/json',
-            parse: function(d) {
-              var loc = (d.loc || '0,0').split(',');
-              return {
-                ip: d.ip || '?',
-                country: d.country || '?',
-                city: d.city || '?',
-                region: d.region || '?',
-                lat: parseFloat(loc[0]) || 0,
-                lon: parseFloat(loc[1]) || 0,
-                country_code: (d.country || '').toLowerCase(),
-                isp: d.org || '?',
-                vpn: false,
-                timezone: d.timezone || '?'
-              };
-            }
+      // Three geo API sources — each returns standardized data
+      var geoSources = [
+        {
+          name: 'ipapi.co',
+          url: 'https://ipapi.co/json/',
+          parse: function(d) {
+            return { ip: d.ip || '?', country: d.country_name || d.country || '?', city: d.city || '?', region: d.region || '?', lat: d.latitude || 0, lon: d.longitude || 0, country_code: (d.country_code || '').toLowerCase(), isp: d.org || '?', timezone: d.timezone || '?', source: 'ipapi.co' };
           }
-        ];
+        },
+        {
+          name: 'ip-api.com',
+          url: 'http://ip-api.com/json/?fields=status,message,country,countryCode,region,regionName,city,lat,lon,isp,org,timezone,query',
+          parse: function(d) {
+            return { ip: d.query || '?', country: d.country || '?', city: d.city || '?', region: d.regionName || '?', lat: d.lat || 0, lon: d.lon || 0, country_code: (d.countryCode || '').toLowerCase(), isp: d.isp || d.org || '?', timezone: d.timezone || '?', source: 'ip-api.com' };
+          }
+        },
+        {
+          name: 'ipinfo.io',
+          url: 'https://ipinfo.io/json',
+          parse: function(d) {
+            var loc = (d.loc || '0,0').split(',');
+            return { ip: d.ip || '?', country: d.country || '?', city: d.city || '?', region: d.region || '?', lat: parseFloat(loc[0]) || 0, lon: parseFloat(loc[1]) || 0, country_code: (d.country || '').toLowerCase(), isp: d.org || '?', timezone: d.timezone || '?', source: 'ipinfo.io' };
+          }
+        }
+      ];
 
+      // Fetch from a single API
+      function fetchOne(source) {
         return new Promise(function(resolve) {
-          var resolved = false;
-          function tryApi(idx) {
-            if (idx >= apis.length) {
-              if (!resolved) resolve({ ip: '?', country: 'Unknown', city: '', region: '', lat: 0, lon: 0, country_code: '', isp: '?', vpn: false, timezone: '?' });
-              return;
-            }
-            var api = apis[idx];
-            var controller = new AbortController();
-            var timeout = setTimeout(function() { controller.abort(); }, 5000);
-            fetch(api.url, { signal: controller.signal })
-              .then(function(r) { return r.json(); })
-              .then(function(d) {
-                clearTimeout(timeout);
-                if (!resolved) {
-                  resolved = true;
-                  var result = api.parse(d);
-                  // Try VPN detection with a separate API
-                  fetch('https://ipqualityscore.com/api/json/ip/free/' + result.ip)
-                    .then(function(r2) { return r2.json(); })
-                    .then(function(vpnData) {
-                      result.vpn = !!(vpnData.vpn || vpnData.tor || vpnData.proxy);
-                      resolve(result);
-                    })
-                    .catch(function() { resolve(result); });
-                }
-              })
-              .catch(function() {
-                clearTimeout(timeout);
-                tryApi(idx + 1);
-              });
-          }
-          tryApi(0);
+          var controller = new AbortController();
+          var timeout = setTimeout(function() { controller.abort(); }, 6000);
+          fetch(source.url, { signal: controller.signal })
+            .then(function(r) { clearTimeout(timeout); return r.json(); })
+            .then(function(d) { resolve(source.parse(d)); })
+            .catch(function() { clearTimeout(timeout); resolve(null); });
         });
       }
 
-      // Record current visit
+      // Fetch from ALL sources simultaneously, collect all results
+      async function fetchAllSources() {
+        var results = await Promise.all(geoSources.map(fetchOne));
+        return results.filter(Boolean);
+      }
+
+      // VPN detection
+      async function detectVPN(ip) {
+        try {
+          var r = await fetch('https://ipqualityscore.com/api/json/ip/free/' + ip);
+          var d = await r.json();
+          return !!(d.vpn || d.tor || d.proxy);
+        } catch(e) { return false; }
+      }
+
+      // Record visit — every page load is a new record (no session dedup)
       async function recordVisit() {
+        var allGeo = await fetchAllSources();
+        if (allGeo.length === 0) return null;
+
+        // Use first source as primary
+        var primary = allGeo[0];
+        var vpn = await detectVPN(primary.ip);
+
+        // Enrich with VPN
+        allGeo.forEach(function(g) { g.vpn = vpn; });
+
         var visits = getVisits();
-        var sessionId = sessionStorage.getItem('greasebig_sid');
-        if (!sessionId) {
-          sessionId = Date.now().toString(36) + Math.random().toString(36).substr(2, 6);
-          sessionStorage.setItem('greasebig_sid', sessionId);
-        }
 
-        // Check if this session already recorded
-        var existing = visits.find(function(v) { return v.sid === sessionId; });
-        if (existing) {
-          existing.lastSeen = Date.now();
-          existing.duration = Math.round((Date.now() - existing.firstSeen) / 1000);
-          saveVisits(visits);
-          return existing;
-        }
+        // Count how many times this IP has visited
+        var ipCount = visits.filter(function(v) { return v.ip === primary.ip; }).length + 1;
 
-        var geo = await fetchGeoData();
         var visit = {
-          sid: sessionId,
-          ip: geo.ip,
-          country: geo.country,
-          city: geo.city,
-          region: geo.region,
-          lat: geo.lat,
-          lon: geo.lon,
-          country_code: geo.country_code,
-          isp: geo.isp,
-          vpn: geo.vpn,
-          timezone: geo.timezone,
-          firstSeen: Date.now(),
-          lastSeen: Date.now(),
-          duration: 0,
+          id: Date.now().toString(36) + Math.random().toString(36).substr(2, 6),
+          ip: primary.ip,
+          country: primary.country,
+          city: primary.city,
+          region: primary.region,
+          lat: primary.lat,
+          lon: primary.lon,
+          country_code: primary.country_code,
+          isp: primary.isp,
+          vpn: vpn,
+          timezone: primary.timezone,
+          time: Date.now(),
+          ipVisitCount: ipCount,
           ua: navigator.userAgent.substring(0, 80),
           screen: screen.width + 'x' + screen.height,
-          lang: navigator.language || '?'
+          lang: navigator.language || '?',
+          // Store all source results
+          sources: allGeo.map(function(g) { return { source: g.source, city: g.city, region: g.region, lat: g.lat, lon: g.lon, isp: g.isp }; })
         };
+
         visits.unshift(visit);
         if (visits.length > MAX_VISITS) visits = visits.slice(0, MAX_VISITS);
         saveVisits(visits);
+
+        // Also update all previous records for this IP with the latest count
+        var cnt = 1;
+        for (var i = visits.length - 1; i >= 0; i--) {
+          if (visits[i].ip === primary.ip) {
+            visits[i].ipVisitCount = cnt;
+            cnt++;
+          }
+        }
+        saveVisits(visits);
+
         return visit;
       }
 
-      // Update duration periodically
-      function startDurationTracker() {
-        setInterval(function() {
-          var visits = getVisits();
-          var sid = sessionStorage.getItem('greasebig_sid');
-          var v = visits.find(function(x) { return x.sid === sid; });
-          if (v) {
-            v.lastSeen = Date.now();
-            v.duration = Math.round((Date.now() - v.firstSeen) / 1000);
-            saveVisits(visits);
-          }
-        }, 10000);
-      }
-
-      // Country code to flag emoji
       function countryFlag(code) {
         if (!code || code.length !== 2) return '🌐';
-        var base = 127397;
-        return String.fromCodePoint(base + code.charCodeAt(0)) + String.fromCodePoint(base + code.charCodeAt(1));
+        return String.fromCodePoint(127397 + code.charCodeAt(0)) + String.fromCodePoint(127397 + code.charCodeAt(1));
       }
-
-      // Format duration
       function fmtDuration(sec) {
+        if (!sec || sec < 0) return '0s';
         if (sec < 60) return sec + 's';
         if (sec < 3600) return Math.floor(sec / 60) + 'm ' + (sec % 60) + 's';
         return Math.floor(sec / 3600) + 'h ' + Math.floor((sec % 3600) / 60) + 'm';
       }
+      function fmtTime(ts) { var d = new Date(ts); return String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0'); }
+      function fmtDate(ts) { var d = new Date(ts); return (d.getMonth()+1) + '/' + d.getDate() + ' ' + fmtTime(ts); }
 
-      // Format time
-      function fmtTime(ts) {
-        var d = new Date(ts);
-        return String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0');
-      }
+      // ===== Render tickers (three separate sources) =====
+      function renderTicker(containerId, visits, sourceFilter) {
+        var container = document.getElementById(containerId);
+        var filtered = sourceFilter ? visits.filter(function(v) {
+          return v.sources && v.sources.some(function(s) { return s.source === sourceFilter; });
+        }) : visits;
 
-      // ===== Render Ticker =====
-      function renderTicker(visits, currentSid) {
-        var container = document.getElementById('tickerInner');
+        // If no source-specific data, show all
+        if (filtered.length === 0) filtered = visits.slice(0, 20);
+
         var html = '';
-        visits.forEach(function(v, i) {
-          var isCurrent = v.sid === currentSid;
-          var age = Date.now() - v.firstSeen;
-          var borderColor = isCurrent ? 'rgba(99,102,241,0.4)' : (age < 3600000 ? 'rgba(16,185,129,0.2)' : 'rgba(255,255,255,0.04)');
+        filtered.slice(0, 20).forEach(function(v) {
+          var age = Date.now() - v.time;
+          var borderColor = age < 3600000 ? 'rgba(16,185,129,0.2)' : 'rgba(255,255,255,0.04)';
+          // Find the source-specific data
+          var srcData = null;
+          if (v.sources && sourceFilter) {
+            srcData = v.sources.find(function(s) { return s.source === sourceFilter; });
+          }
+          var displayCity = srcData ? srcData.city : v.city;
+          var displayRegion = srcData ? srcData.region : v.region;
+          var displayISP = srcData ? srcData.isp : v.isp;
+
           html += '<div class="visit-row" style="border-color:' + borderColor + '">' +
             '<span class="visit-flag">' + countryFlag(v.country_code) + '</span>' +
             '<div class="visit-info">' +
-              '<div class="visit-location">' + (isCurrent ? '⭐ ' : '') + (v.city && v.city !== '?' ? v.city + ', ' : '') + v.country + '</div>' +
+              '<div class="visit-location">' + (displayCity && displayCity !== '?' ? displayCity + ', ' : '') + (displayRegion && displayRegion !== '?' ? displayRegion + ', ' : '') + v.country + '</div>' +
               '<div class="visit-meta">' +
-                '<span>' + fmtTime(v.firstSeen) + '</span>' +
-                '<span>' + (v.isp && v.isp !== '?' ? v.isp.substring(0, 20) : '') + '</span>' +
-                (v.vpn ? '<span class="vpn-badge">VPN/Proxy</span>' : '') +
+                '<span>' + fmtDate(v.time) + '</span>' +
+                (v.ipVisitCount > 1 ? '<span class="count-badge">×' + v.ipVisitCount + '</span>' : '') +
+                (v.vpn ? '<span class="vpn-badge">VPN</span>' : '') +
               '</div>' +
             '</div>' +
             '<div class="visit-right">' +
               '<div class="visit-ip">' + v.ip + '</div>' +
-              '<div class="visit-duration">' + fmtDuration(v.duration) + '</div>' +
+              '<div class="visit-duration">' + (displayISP && displayISP !== '?' ? displayISP.substring(0, 18) : '') + '</div>' +
             '</div>' +
           '</div>';
         });
-
-        // Double for seamless scroll
         container.innerHTML = html + html;
       }
 
-      // ===== Render Summary =====
-      function renderSummary(visits) {
-        document.getElementById('sumTotal').textContent = visits.length;
-        var countries = {};
-        var vpnCount = 0;
-        var totalDuration = 0;
-        var durationCount = 0;
-        visits.forEach(function(v) {
-          countries[v.country] = true;
-          if (v.vpn) vpnCount++;
-          if (v.duration > 0) { totalDuration += v.duration; durationCount++; }
+      // ===== Render rankings =====
+      function renderRankings(visits) {
+        // Top countries
+        var countryMap = {};
+        visits.forEach(function(v) { var k = v.country || '?'; countryMap[k] = (countryMap[k] || 0) + 1; });
+        var countries = Object.keys(countryMap).map(function(k) { return { name: k, count: countryMap[k] }; }).sort(function(a, b) { return b.count - a.count; });
+
+        var countryHTML = '<h3>🏆 Top Countries</h3>';
+        countries.slice(0, 8).forEach(function(c, i) {
+          var flag = visits.find(function(v) { return v.country === c.name; });
+          flag = flag ? countryFlag(flag.country_code) : '🌐';
+          countryHTML += '<div class="rank-row"><span class="rank-num">' + (i+1) + '</span><div class="rank-info"><div class="rank-label">' + flag + ' ' + c.name + '</div></div><span class="rank-count">' + c.count + '</span></div>';
         });
-        document.getElementById('sumCountries').textContent = Object.keys(countries).length;
-        document.getElementById('sumVpn').textContent = vpnCount;
-        document.getElementById('sumAvgDuration').textContent = durationCount > 0 ? fmtDuration(Math.round(totalDuration / durationCount)) : '—';
+        document.getElementById('rankCountries').innerHTML = countryHTML;
+
+        // Top IPs by visit count
+        var ipMap = {};
+        visits.forEach(function(v) {
+          if (v.ip && v.ip !== '?') {
+            if (!ipMap[v.ip]) ipMap[v.ip] = { ip: v.ip, count: 0, city: v.city, country: v.country, country_code: v.country_code };
+            ipMap[v.ip].count++;
+          }
+        });
+        var ips = Object.keys(ipMap).map(function(k) { return ipMap[k]; }).sort(function(a, b) { return b.count - a.count; });
+
+        var ipHTML = '<h3>🔢 Top IPs (visits)</h3>';
+        ips.slice(0, 8).forEach(function(ip, i) {
+          ipHTML += '<div class="rank-row"><span class="rank-num">' + (i+1) + '</span><div class="rank-info"><div class="rank-label">' + countryFlag(ip.country_code) + ' ' + ip.ip + '</div><div class="rank-sub">' + (ip.city && ip.city !== '?' ? ip.city + ', ' : '') + ip.country + '</div></div><span class="rank-count">' + ip.count + '</span></div>';
+        });
+        document.getElementById('rankIPs').innerHTML = ipHTML;
+
+        // Top ISPs
+        var ispMap = {};
+        visits.forEach(function(v) {
+          if (v.isp && v.isp !== '?') {
+            var k = v.isp.substring(0, 30);
+            ispMap[k] = (ispMap[k] || 0) + 1;
+          }
+        });
+        var isps = Object.keys(ispMap).map(function(k) { return { name: k, count: ispMap[k] }; }).sort(function(a, b) { return b.count - a.count; });
+
+        var ispHTML = '<h3>🌐 Top ISPs</h3>';
+        isps.slice(0, 8).forEach(function(isp, i) {
+          ispHTML += '<div class="rank-row"><span class="rank-num">' + (i+1) + '</span><div class="rank-info"><div class="rank-label">' + isp.name + '</div></div><span class="rank-count">' + isp.count + '</span></div>';
+        });
+        document.getElementById('rankISPs').innerHTML = ispHTML;
       }
 
-      // ===== 3D Globe (Canvas-based, no Three.js dependency) =====
-      function initGlobe(visits, currentSid) {
+      // ===== Render summary =====
+      function renderSummary(visits) {
+        var countries = {}, ips = {}, vpnCount = 0;
+        visits.forEach(function(v) {
+          countries[v.country] = true;
+          if (v.ip && v.ip !== '?') ips[v.ip] = true;
+          if (v.vpn) vpnCount++;
+        });
+        document.getElementById('sumTotal').textContent = visits.length;
+        document.getElementById('sumUnique').textContent = Object.keys(ips).length;
+        document.getElementById('sumCountries').textContent = Object.keys(countries).length;
+        document.getElementById('sumVpn').textContent = vpnCount;
+        document.getElementById('sumAvgDuration').textContent = '—';
+      }
+
+      // ===== Simplified continent outlines (lat/lon arrays for major landmasses) =====
+      var continentOutlines = [
+        // North America (simplified)
+        [[70,-168],[72,-140],[70,-100],[65,-65],[50,-55],[45,-65],[30,-80],[25,-80],[25,-100],[30,-118],[48,-125],[55,-130],[60,-148],[65,-168],[70,-168]],
+        // South America
+        [[12,-72],[5,-77],[-5,-80],[-15,-76],[-23,-70],[-35,-58],[-50,-70],[-55,-68],[-55,-64],[-40,-62],[-22,-40],[-5,-50],[5,-60],[12,-72]],
+        // Europe
+        [[70,25],[72,30],[70,40],[65,42],[60,30],[55,28],[50,40],[45,40],[42,30],[38,25],[36,-5],[38,-10],[43,-9],[48,-5],[50,2],[52,5],[55,10],[57,10],[60,5],[63,10],[65,15],[68,18],[70,25]],
+        // Africa
+        [[37,-10],[37,10],[32,32],[25,35],[15,42],[10,42],[5,40],[0,42],[-5,40],[-10,40],[-15,42],[-25,35],[-35,20],[-35,18],[-25,15],[-15,12],[-5,10],[5,2],[5,-5],[10,-15],[15,-18],[20,-17],[25,-15],[30,-10],[35,-2],[37,-10]],
+        // Asia (simplified)
+        [[70,40],[75,70],[73,90],[72,110],[70,140],[65,170],[60,165],[55,160],[50,143],[45,142],[40,132],[35,130],[30,122],[25,120],[22,114],[20,110],[15,108],[10,106],[5,103],[0,100],[-8,115],[-8,105],[0,98],[5,98],[8,80],[20,73],[25,68],[25,60],[30,48],[35,35],[40,28],[42,30],[45,40],[50,40],[55,28],[60,30],[65,42],[70,40]],
+        // Australia
+        [[-12,132],[-15,140],[-20,148],[-28,153],[-35,150],[-38,145],[-35,137],[-32,132],[-25,114],[-20,114],[-15,125],[-12,132]]
+      ];
+
+      // ===== 3D Globe (Canvas with continent outlines) =====
+      function initGlobe(visits) {
         var canvas = document.getElementById('globeCanvas');
         var ctx = canvas.getContext('2d');
-        var W = canvas.width;
-        var H = canvas.height;
-        var cx = W / 2;
-        var cy = H / 2;
-        var radius = Math.min(W, H) * 0.38;
+        var W, H, cx, cy, radius;
         var rotation = 0;
-        var autoRotateSpeed = 0.003;
+        var autoRotateSpeed = 0.004;
         var isDragging = false;
         var lastX = 0;
+        var currentIP = null;
 
-        // Lat/lon to 3D
+        // Find current IP
+        if (visits.length > 0) currentIP = visits[0].ip;
+
+        function resize() {
+          var rect = canvas.getBoundingClientRect();
+          var dpr = window.devicePixelRatio || 1;
+          canvas.width = rect.width * dpr;
+          canvas.height = rect.height * dpr;
+          W = canvas.width; H = canvas.height;
+          cx = W / 2; cy = H / 2;
+          radius = Math.min(W, H) * 0.40;
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
         function latLonTo3D(lat, lon) {
           var phi = (90 - lat) * Math.PI / 180;
           var theta = (lon + 180) * Math.PI / 180;
-          return {
-            x: -radius * Math.sin(phi) * Math.cos(theta),
-            y: radius * Math.cos(phi),
-            z: radius * Math.sin(phi) * Math.sin(theta)
-          };
+          return { x: -radius * Math.sin(phi) * Math.cos(theta), y: radius * Math.cos(phi), z: radius * Math.sin(phi) * Math.sin(theta) };
         }
-
-        // Rotate Y axis
         function rotateY(p, angle) {
-          var cos = Math.cos(angle);
-          var sin = Math.sin(angle);
+          var cos = Math.cos(angle), sin = Math.sin(angle);
           return { x: p.x * cos - p.z * sin, y: p.y, z: p.x * sin + p.z * cos };
         }
-
-        // Project
         function project(p) {
           var fov = 600;
           var scale = fov / (fov + p.z);
           return { x: cx + p.x * scale, y: cy - p.y * scale, scale: scale, z: p.z };
         }
 
-        // Draw grid
         function drawGlobe() {
           ctx.clearRect(0, 0, W, H);
 
-          // Globe body
-          var grad = ctx.createRadialGradient(cx - radius * 0.2, cy - radius * 0.2, 0, cx, cy, radius);
-          grad.addColorStop(0, 'rgba(99,102,241,0.15)');
-          grad.addColorStop(0.7, 'rgba(99,102,241,0.06)');
+          // Globe body gradient
+          var grad = ctx.createRadialGradient(cx - radius * 0.15, cy - radius * 0.15, 0, cx, cy, radius);
+          grad.addColorStop(0, 'rgba(99,102,241,0.12)');
+          grad.addColorStop(0.7, 'rgba(99,102,241,0.05)');
           grad.addColorStop(1, 'rgba(99,102,241,0.02)');
-          ctx.beginPath();
-          ctx.arc(cx, cy, radius, 0, Math.PI * 2);
-          ctx.fillStyle = grad;
-          ctx.fill();
+          ctx.beginPath(); ctx.arc(cx, cy, radius, 0, Math.PI * 2); ctx.fillStyle = grad; ctx.fill();
 
           // Border glow
-          ctx.beginPath();
-          ctx.arc(cx, cy, radius, 0, Math.PI * 2);
-          ctx.strokeStyle = 'rgba(99,102,241,0.25)';
-          ctx.lineWidth = 1.5;
-          ctx.stroke();
+          ctx.beginPath(); ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+          ctx.strokeStyle = 'rgba(99,102,241,0.2)'; ctx.lineWidth = 1.5; ctx.stroke();
 
           // Latitude lines
           for (var lat = -60; lat <= 60; lat += 30) {
-            ctx.beginPath();
-            var first = true;
+            ctx.beginPath(); var first = true;
             for (var lon = 0; lon <= 360; lon += 3) {
-              var p3 = latLonTo3D(lat, lon);
-              var r = rotateY(p3, rotation);
-              if (r.z > -radius * 0.1) {
-                var p2 = project(r);
-                if (first) { ctx.moveTo(p2.x, p2.y); first = false; }
-                else ctx.lineTo(p2.x, p2.y);
-              } else { first = true; }
+              var r = rotateY(latLonTo3D(lat, lon), rotation);
+              if (r.z > -radius * 0.05) { var p = project(r); if (first) { ctx.moveTo(p.x, p.y); first = false; } else ctx.lineTo(p.x, p.y); }
+              else first = true;
             }
-            ctx.strokeStyle = 'rgba(99,102,241,0.1)';
-            ctx.lineWidth = 0.5;
-            ctx.stroke();
+            ctx.strokeStyle = 'rgba(99,102,241,0.08)'; ctx.lineWidth = 0.5; ctx.stroke();
           }
 
           // Longitude lines
           for (var lon = 0; lon < 360; lon += 30) {
-            ctx.beginPath();
-            var first = true;
+            ctx.beginPath(); var first = true;
             for (var lat = -90; lat <= 90; lat += 3) {
-              var p3 = latLonTo3D(lat, lon);
-              var r = rotateY(p3, rotation);
-              if (r.z > -radius * 0.1) {
-                var p2 = project(r);
-                if (first) { ctx.moveTo(p2.x, p2.y); first = false; }
-                else ctx.lineTo(p2.x, p2.y);
-              } else { first = true; }
+              var r = rotateY(latLonTo3D(lat, lon), rotation);
+              if (r.z > -radius * 0.05) { var p = project(r); if (first) { ctx.moveTo(p.x, p.y); first = false; } else ctx.lineTo(p.x, p.y); }
+              else first = true;
             }
-            ctx.strokeStyle = 'rgba(99,102,241,0.08)';
-            ctx.lineWidth = 0.5;
-            ctx.stroke();
+            ctx.strokeStyle = 'rgba(99,102,241,0.06)'; ctx.lineWidth = 0.5; ctx.stroke();
           }
 
-          // Plot visit points
+          // Continent outlines
+          continentOutlines.forEach(function(outline) {
+            ctx.beginPath(); var first = true;
+            outline.forEach(function(pt) {
+              var r = rotateY(latLonTo3D(pt[0], pt[1]), rotation);
+              if (r.z > 0) { var p = project(r); if (first) { ctx.moveTo(p.x, p.y); first = false; } else ctx.lineTo(p.x, p.y); }
+              else first = true;
+            });
+            ctx.strokeStyle = 'rgba(99,102,241,0.35)'; ctx.lineWidth = 1.2; ctx.stroke();
+            // Fill continents with faint color
+            ctx.fillStyle = 'rgba(99,102,241,0.04)'; ctx.fill();
+          });
+
+          // Visit points
           var points = [];
           visits.forEach(function(v) {
             if (v.lat === 0 && v.lon === 0) return;
-            var p3 = latLonTo3D(v.lat, v.lon);
-            var r = rotateY(p3, rotation);
+            var r = rotateY(latLonTo3D(v.lat, v.lon), rotation);
             if (r.z > 0) {
-              var p2 = project(r);
-              var age = Date.now() - v.firstSeen;
-              var isCurrent = v.sid === currentSid;
-              points.push({ x: p2.x, y: p2.y, scale: p2.scale, isCurrent: isCurrent, age: age });
+              var p = project(r);
+              var isCurrent = v.ip === currentIP;
+              var age = Date.now() - v.time;
+              points.push({ x: p.x, y: p.y, scale: p.scale, isCurrent: isCurrent, age: age, ip: v.ip, visitCount: v.ipVisitCount || 1 });
             }
           });
-
-          // Sort by z (draw far points first)
           points.sort(function(a, b) { return a.scale - b.scale; });
 
           points.forEach(function(pt) {
             var size = Math.max(2, 5 * pt.scale);
             if (pt.isCurrent) {
-              // Current user - bright pulsing
-              ctx.beginPath();
-              ctx.arc(pt.x, pt.y, size + 4, 0, Math.PI * 2);
-              ctx.fillStyle = 'rgba(99,102,241,0.3)';
-              ctx.fill();
-              ctx.beginPath();
-              ctx.arc(pt.x, pt.y, size, 0, Math.PI * 2);
-              ctx.fillStyle = '#6366f1';
-              ctx.fill();
-              // Pulse ring
-              var pulse = (Math.sin(Date.now() / 500) + 1) * 3 + size;
-              ctx.beginPath();
-              ctx.arc(pt.x, pt.y, pulse, 0, Math.PI * 2);
-              ctx.strokeStyle = 'rgba(99,102,241,0.4)';
-              ctx.lineWidth = 1;
-              ctx.stroke();
+              // Current user — bright pulsing
+              ctx.beginPath(); ctx.arc(pt.x, pt.y, size + 6, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(99,102,241,0.25)'; ctx.fill();
+              ctx.beginPath(); ctx.arc(pt.x, pt.y, size, 0, Math.PI * 2);
+              ctx.fillStyle = '#6366f1'; ctx.fill();
+              var pulse = (Math.sin(Date.now() / 500) + 1) * 4 + size;
+              ctx.beginPath(); ctx.arc(pt.x, pt.y, pulse, 0, Math.PI * 2);
+              ctx.strokeStyle = 'rgba(99,102,241,0.4)'; ctx.lineWidth = 1; ctx.stroke();
+              // Label
+              ctx.font = '10px Inter, sans-serif'; ctx.fillStyle = 'rgba(255,255,255,0.8)';
+              ctx.fillText('YOU', pt.x + size + 6, pt.y + 3);
             } else if (pt.age < 3600000) {
-              // Recent (< 1hr) - green
-              ctx.beginPath();
-              ctx.arc(pt.x, pt.y, size, 0, Math.PI * 2);
-              ctx.fillStyle = 'rgba(16,185,129,0.8)';
-              ctx.fill();
-              ctx.beginPath();
-              ctx.arc(pt.x, pt.y, size + 2, 0, Math.PI * 2);
-              ctx.strokeStyle = 'rgba(16,185,129,0.3)';
-              ctx.lineWidth = 1;
-              ctx.stroke();
+              ctx.beginPath(); ctx.arc(pt.x, pt.y, size, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(16,185,129,0.8)'; ctx.fill();
+              ctx.beginPath(); ctx.arc(pt.x, pt.y, size + 2, 0, Math.PI * 2);
+              ctx.strokeStyle = 'rgba(16,185,129,0.3)'; ctx.lineWidth = 1; ctx.stroke();
             } else {
-              // Older - amber
-              ctx.beginPath();
-              ctx.arc(pt.x, pt.y, size * 0.7, 0, Math.PI * 2);
-              ctx.fillStyle = 'rgba(245,158,11,0.6)';
-              ctx.fill();
+              ctx.beginPath(); ctx.arc(pt.x, pt.y, size * 0.7, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(245,158,11,0.6)'; ctx.fill();
+            }
+            // Visit count badge
+            if (pt.visitCount > 1) {
+              ctx.font = 'bold 8px Inter, sans-serif'; ctx.fillStyle = 'rgba(255,255,255,0.7)';
+              ctx.fillText('×' + pt.visitCount, pt.x + size + 3, pt.y - size - 2);
             }
           });
 
-          // Connection lines between recent visitors
+          // Connection lines between close visitors
           var recent = points.filter(function(p) { return p.age < 7200000; });
           for (var i = 0; i < recent.length; i++) {
             for (var j = i + 1; j < recent.length; j++) {
-              var dx = recent[i].x - recent[j].x;
-              var dy = recent[i].y - recent[j].y;
+              var dx = recent[i].x - recent[j].x, dy = recent[i].y - recent[j].y;
               var dist = Math.sqrt(dx * dx + dy * dy);
               if (dist < 150) {
-                ctx.beginPath();
-                ctx.moveTo(recent[i].x, recent[i].y);
-                ctx.lineTo(recent[j].x, recent[j].y);
-                ctx.strokeStyle = 'rgba(99,102,241,' + (0.12 * (1 - dist / 150)) + ')';
-                ctx.lineWidth = 0.5;
-                ctx.stroke();
+                ctx.beginPath(); ctx.moveTo(recent[i].x, recent[i].y); ctx.lineTo(recent[j].x, recent[j].y);
+                ctx.strokeStyle = 'rgba(99,102,241,' + (0.12 * (1 - dist / 150)) + ')'; ctx.lineWidth = 0.5; ctx.stroke();
               }
             }
           }
@@ -1083,45 +847,34 @@
         canvas.addEventListener('touchmove', function(e) { if (isDragging) { rotation += (e.touches[0].clientX - lastX) * 0.005; lastX = e.touches[0].clientX; } }, { passive: true });
         canvas.addEventListener('touchend', function() { isDragging = false; });
 
-        // Animation loop
         function animate() {
           if (!isDragging) rotation += autoRotateSpeed;
           drawGlobe();
           requestAnimationFrame(animate);
         }
         animate();
-
-        // Resize handler
-        function resize() {
-          var rect = canvas.getBoundingClientRect();
-          canvas.width = rect.width * (window.devicePixelRatio || 1);
-          canvas.height = rect.height * (window.devicePixelRatio || 1);
-          W = canvas.width;
-          H = canvas.height;
-          cx = W / 2;
-          cy = H / 2;
-          radius = Math.min(W, H) * 0.38;
-          ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
-        }
-        window.addEventListener('resize', resize);
-        setTimeout(resize, 100);
       }
 
       // ===== Initialize =====
-      recordVisit().then(function(currentVisit) {
+      recordVisit().then(function() {
         var visits = getVisits();
-        var currentSid = sessionStorage.getItem('greasebig_sid');
 
-        renderTicker(visits, currentSid);
+        // Three separate tickers from three sources
+        renderTicker('ticker1', visits, 'ipapi.co');
+        renderTicker('ticker2', visits, 'ip-api.com');
+        renderTicker('ticker3', visits, 'ipinfo.io');
+
+        renderRankings(visits);
         renderSummary(visits);
-        initGlobe(visits, currentSid);
-        startDurationTracker();
+        initGlobe(visits);
 
-        // Refresh ticker every 30s
+        // Refresh every 30s
         setInterval(function() {
           var visits = getVisits();
-          var currentSid = sessionStorage.getItem('greasebig_sid');
-          renderTicker(visits, currentSid);
+          renderTicker('ticker1', visits, 'ipapi.co');
+          renderTicker('ticker2', visits, 'ip-api.com');
+          renderTicker('ticker3', visits, 'ipinfo.io');
+          renderRankings(visits);
           renderSummary(visits);
         }, 30000);
       });
