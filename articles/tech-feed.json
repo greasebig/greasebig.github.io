@@ -1,5 +1,93 @@
 [
   {
+    "title": "A generic dynamic array in C that stores no capacity and needs no struct",
+    "url": "https://gist.github.com/alurm/2ca14be134d719fe7431217a6b18d91e",
+    "source": "gist.github.com",
+    "date": "2026-06-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 6, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48512286",
+    "fetched_at": "2026-06-13T05:49:37Z",
+    "title_zh": "C 中的通用动态数组，不存储容量且不需要结构"
+  },
+  {
+    "title": "TycoonLE: A Jax reinforcement learning environment for long-horizon planning",
+    "url": "https://github.com/vrtnis/tycoon-learning-environment",
+    "source": "github.com",
+    "date": "2026-06-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 8, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48511773",
+    "fetched_at": "2026-06-13T05:49:36Z",
+    "title_zh": "TycoonLE：用于长期规划的 Jax 强化学习环境"
+  },
+  {
+    "title": "Statement on US government directive to suspend access to Fable 5 and Mythos 5",
+    "url": "https://www.anthropic.com/news/fable-mythos-access",
+    "source": "anthropic.com",
+    "date": "2026-06-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 1677, 1286 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48511072",
+    "fetched_at": "2026-06-13T05:49:34Z",
+    "title_zh": "关于美国政府指示暂停访问《神鬼寓言 5》和《神话 5》的声明"
+  },
+  {
+    "title": "Open source AI must win",
+    "url": "https://opensourceaimustwin.com/?share=v2",
+    "source": "opensourceaimustwin.com",
+    "date": "2026-06-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from opensourceaimustwin.com. Hacker News score 594, 185 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48511908",
+    "fetched_at": "2026-06-13T05:49:34Z",
+    "title_zh": "开源人工智能必须获胜"
+  },
+  {
+    "title": "Launch HN: BitBoard (YC P25) – Analytics Workspace for Agents",
+    "url": "https://bitboard.work/",
+    "source": "bitboard.work",
+    "date": "2026-06-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from bitboard.work. Hacker News score 39, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48506545",
+    "fetched_at": "2026-06-13T05:49:38Z",
+    "title_zh": "启动 HN：BitBoard (YC P25) – 座席分析工作区"
+  },
+  {
+    "title": "SkillSpector",
+    "url": "https://github.com/NVIDIA/SkillSpector",
+    "source": "github.com",
+    "date": "2026-06-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 31, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48509844",
+    "fetched_at": "2026-06-13T05:49:37Z",
+    "title_zh": "技能光谱仪"
+  },
+  {
+    "title": "Slightly reducing the sloppiness of AI generated front end",
+    "url": "https://envs.net/~volpe/blog/posts/reduce-slop.html",
+    "source": "envs.net",
+    "date": "2026-06-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from envs.net. Hacker News score 178, 113 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48504912",
+    "fetched_at": "2026-06-13T05:49:36Z",
+    "title_zh": "稍微减少AI生成前端的马虎程度"
+  },
+  {
+    "title": "How to setup a local coding agent on macOS",
+    "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+    "source": "ikyle.me",
+    "date": "2026-06-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from ikyle.me. Hacker News score 330, 79 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48507020",
+    "fetched_at": "2026-06-13T05:49:35Z",
+    "title_zh": "如何在 macOS 上设置本地编码代理"
+  },
+  {
     "title": "Claude Fable is relentlessly proactive",
     "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
     "source": "simonwillison.net",
@@ -86,6 +174,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48484584",
     "fetched_at": "2026-06-11T06:09:43Z",
     "title_zh": "AI 代理在 Fedora 和其他地方横行"
+  },
+  {
+    "title": "A key remapping daemon for Linux",
+    "url": "https://github.com/rvaiya/keyd",
+    "source": "github.com",
+    "date": "2026-06-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 30, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48479652",
+    "fetched_at": "2026-06-13T05:49:37Z",
+    "title_zh": "Linux 的按键重新映射守护进程"
+  },
+  {
+    "title": "Show HN: Lightweight Task queue on Erlang/OTP, SQLite-backed, no overengineering",
+    "url": "https://github.com/entGriff/ezra",
+    "source": "github.com",
+    "date": "2026-06-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 6, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48476202",
+    "fetched_at": "2026-06-13T05:49:36Z",
+    "title_zh": "Show HN：Erlang/OTP 上的轻量级任务队列，SQLite 支持，无过度设计"
   },
   {
     "title": "Show HN: HelixDB – A graph database built on object storage",
@@ -218,115 +328,5 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48466812",
     "fetched_at": "2026-06-10T05:52:07Z",
     "title_zh": "Grit：使用代理在 Rust 中重写 Git"
-  },
-  {
-    "title": "Exif Smuggling (2025)",
-    "url": "https://github.com/signalblur/exifsmugglingpoc",
-    "source": "github.com",
-    "date": "2026-06-09",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 76, 24 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48467759",
-    "fetched_at": "2026-06-10T05:52:07Z",
-    "title_zh": "Exif 走私 (2025)"
-  },
-  {
-    "title": "If Claude Fable stops helping you, you'll never know",
-    "url": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
-    "source": "jonready.com",
-    "date": "2026-06-09",
-    "repost": true,
-    "summary": "转载 / Curated repost from jonready.com. Hacker News score 681, 341 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48467896",
-    "fetched_at": "2026-06-10T05:52:06Z",
-    "title_zh": "如果克劳德寓言不再帮助你，你永远不会知道"
-  },
-  {
-    "title": "CEOs who think AI replaces their employees are just bad CEOs",
-    "url": "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/",
-    "source": "techdirt.com",
-    "date": "2026-06-09",
-    "repost": true,
-    "summary": "转载 / Curated repost from techdirt.com. Hacker News score 560, 220 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48465675",
-    "fetched_at": "2026-06-10T05:52:06Z",
-    "title_zh": "认为人工智能取代员工的首席执行官都是糟糕的首席执行官"
-  },
-  {
-    "title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks",
-    "url": "https://aarushgupta.io/posts/kan-fpga/",
-    "source": "aarushgupta.io",
-    "date": "2026-06-09",
-    "repost": true,
-    "summary": "转载 / Curated repost from aarushgupta.io. Hacker News score 194, 29 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48466277",
-    "fetched_at": "2026-06-10T05:52:05Z",
-    "title_zh": "通过 Kolmogorov-Arnold 网络在 FPGA 上进行超快机器学习"
-  },
-  {
-    "title": "Claude Fable 5",
-    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-    "source": "anthropic.com",
-    "date": "2026-06-09",
-    "repost": true,
-    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 1997, 1547 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48463808",
-    "fetched_at": "2026-06-10T05:52:04Z",
-    "title_zh": "克劳德寓言5"
-  },
-  {
-    "title": "Developer gets Half-Life running at 30 FPS on a Nokia N95",
-    "url": "https://www.tomshardware.com/video-games/handheld-gaming/developer-gets-half-life-running-at-30-fps-on-a-2007-nokia-n95",
-    "source": "tomshardware.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from tomshardware.com. Hacker News score 257, 78 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48452001",
-    "fetched_at": "2026-06-12T06:05:11Z",
-    "title_zh": "开发者在诺基亚 N95 上以 30 FPS 运行《半条命》"
-  },
-  {
-    "title": "Ear Training Practice",
-    "url": "https://tonedear.com/",
-    "source": "tonedear.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from tonedear.com. Hacker News score 204, 92 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48447598",
-    "fetched_at": "2026-06-12T06:05:10Z",
-    "title_zh": "练耳练习"
-  },
-  {
-    "title": "The Road to the WASM Component Model 1.0",
-    "url": "https://bytecodealliance.org/articles/the-road-to-component-model-1-0",
-    "source": "bytecodealliance.org",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from bytecodealliance.org. Hacker News score 48, 16 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48448083",
-    "fetched_at": "2026-06-11T06:09:44Z",
-    "title_zh": "WASM组件模型1.0之路"
-  },
-  {
-    "title": "AI is slowing down",
-    "url": "https://www.wheresyoured.at/ai-is-slowing-down/",
-    "source": "wheresyoured.at",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from wheresyoured.at. Hacker News score 469, 498 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48446893",
-    "fetched_at": "2026-06-09T05:36:53Z",
-    "title_zh": "人工智能正在放缓"
-  },
-  {
-    "title": "Apple bets cheaper AI will woo small developers",
-    "url": "https://techcrunch.com/2026/06/08/apple-bets-cheaper-ai-will-woo-small-developers/",
-    "source": "techcrunch.com",
-    "date": "2026-06-08",
-    "repost": true,
-    "summary": "转载 / Curated repost from techcrunch.com. Hacker News score 43, 21 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48452000",
-    "fetched_at": "2026-06-09T05:36:53Z",
-    "title_zh": "苹果押注更便宜的人工智能将吸引小型开发者"
   }
 ]
