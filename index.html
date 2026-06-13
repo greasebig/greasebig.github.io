@@ -966,13 +966,15 @@
     .tagline-cn {
       font-family: 'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', cursive;
       letter-spacing: 0.12em;
-      transition: opacity 0.6s ease;
+      transition: opacity 0.3s ease;
       visibility: hidden;
     }
     .tagline-en {
       font-family: 'UnifrakturMaguntia', 'CloisterBlack', 'Canterbury', cursive;
       letter-spacing: 0.03em;
-      transition: opacity 0.6s ease;
+      font-size: 0.92em;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
       visibility: hidden;
     }
     .fonts-all-ready .tagline-cn,
@@ -2285,7 +2287,10 @@
           <span class="tagline-cn" style="white-space: nowrap">——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手揀的彩蛋</span><br>
           <span class="tagline-cn" style="display:block;text-align:center;">罷了</span>
 
-          <span class="tagline-en" style="opacity:0.6; font-size:0.92em;">He who cultivateth within the Pavilion of Heavenly Secrets—forging elixirs from pixels, and wielding algorithms as his blade. He strideth through the rift 'twixt creation and perception. As for "the understanding of moving images," that celestial tribulation? 'Twas but a passing windfall, chanced upon amidst the storm. Let it be.</span>
+          <span class="tagline-en">He who cultivateth within the Pavilion of Heavenly Secrets—forging elixirs from pixels, and wielding algorithms as his blade.</span><br>
+          <span class="tagline-en">He strideth through the rift 'twixt creation and perception.</span><br>
+          <span class="tagline-en">As for "the understanding of moving images," that celestial tribulation?</span><br>
+          <span class="tagline-en">'Twas but a passing windfall, chanced upon amidst the storm. Let it be.</span>
 
 
         </p>
@@ -4035,21 +4040,22 @@
 
       var cnIdx = 0, enIdx = 0;
 
-      // 金潮周期配置（与CSS一致）
-      var GOLDEN_PERIOD = 54;
+      // 金潮周期配置 — 速度×2快（原值减半）
+      var GOLDEN_PERIOD = 27;
       var TIDE_WIDTH = 0.25;
 
-      var linePeriods = [54, 63, 49.5, 72];
-      var lineDelays = [0, -18, -36, -9];
-      var enPeriod = 81;
-      var enDelay = -27;
+      var linePeriods = [27, 31.5, 24.75, 36];
+      var lineDelays = [0, -9, -18, -4.5];
+      // 英文各行的周期和延迟
+      var enPeriods = [27, 31.5, 24.75, 36];
+      var enDelays = [0, -9, -13.5, -4.5];
 
       var taglineLines = [];
 
       function initTaglineLines() {
         var cnEls = document.querySelectorAll('.tagline-cn');
         cnEls.forEach(function(el, lineIdx) {
-          var period = lineIdx < linePeriods.length ? linePeriods[lineIdx] : 54;
+          var period = lineIdx < linePeriods.length ? linePeriods[lineIdx] : 27;
           var delay = lineIdx < lineDelays.length ? lineDelays[lineIdx] : 0;
           taglineLines.push({
             el: el,
@@ -4060,16 +4066,18 @@
           });
         });
 
-        var enEl = document.querySelector('.tagline-en');
-        if (enEl) {
+        var enEls = document.querySelectorAll('.tagline-en');
+        enEls.forEach(function(el, lineIdx) {
+          var period = lineIdx < enPeriods.length ? enPeriods[lineIdx] : 27;
+          var delay = lineIdx < enDelays.length ? enDelays[lineIdx] : 0;
           taglineLines.push({
-            el: enEl,
-            period: enPeriod,
-            delay: enDelay,
+            el: el,
+            period: period,
+            delay: delay,
             type: 'en',
             hasSwitched: false
           });
-        }
+        });
       }
 
       // 计算金潮浪潮中心位置 (0=最左, 1=最右)
@@ -4114,12 +4122,12 @@
             line.hasSwitched = true;
             var fontList = line.type === 'cn' ? cnFonts[cnIdx] : enFonts[enIdx];
 
-            // 淡出 → 换字体 → 淡入
+            // 淡出 → 换字体 → 淡入（加速一倍）
             line.el.classList.add('tagline-fading');
             setTimeout(function() {
               line.el.style.fontFamily = fontList;
               line.el.classList.remove('tagline-fading');
-            }, 600);
+            }, 300);
           }
         });
 

@@ -280,7 +280,7 @@
           </div>
         </div>
 
-        <!-- Right: two stacked tickers -->
+        <!-- Right: stacked tickers from multiple sources -->
         <div class="right-tickers">
           <!-- Ticker 1: ipapi.co -->
           <div class="ticker-panel">
@@ -289,18 +289,25 @@
               <div class="ticker-inner" id="ticker1"></div>
             </div>
           </div>
-          <!-- Ticker 2: ip-api.com -->
+          <!-- Ticker 2: ipwho.is -->
           <div class="ticker-panel">
-            <h3>📡 ip-api.com <span class="src-badge src-ipapi2">Source 2</span></h3>
+            <h3>📡 ipwho.is <span class="src-badge src-ipapi2">Source 2</span></h3>
             <div class="ticker-list">
               <div class="ticker-inner" id="ticker2"></div>
             </div>
           </div>
-          <!-- Ticker 3: ipinfo.io -->
+          <!-- Ticker 3: freeipapi.com -->
           <div class="ticker-panel">
-            <h3>📡 ipinfo.io <span class="src-badge src-ipinfo">Source 3</span></h3>
+            <h3>📡 freeipapi.com <span class="src-badge src-ipinfo">Source 3</span></h3>
             <div class="ticker-list">
               <div class="ticker-inner" id="ticker3"></div>
+            </div>
+          </div>
+          <!-- Ticker 4: ip-api.com -->
+          <div class="ticker-panel">
+            <h3>📡 ip-api.com <span class="src-badge" style="background:rgba(245,158,11,0.2);color:#fbbf24;">Source 4</span></h3>
+            <div class="ticker-list">
+              <div class="ticker-inner" id="ticker4"></div>
             </div>
           </div>
         </div>
@@ -444,10 +451,28 @@
       var STORAGE_KEY = 'greasebig_visits_v2';
       var MAX_VISITS = 500;
 
-      function getVisits() { try { var d = localStorage.getItem(STORAGE_KEY); return d ? JSON.parse(d) : []; } catch(e) { return []; } }
+      function getVisits() {
+        try {
+          var d = localStorage.getItem(STORAGE_KEY);
+          if (d) return JSON.parse(d);
+          // Try migrating from old key
+          var old = localStorage.getItem('greasebig_visits');
+          if (old) {
+            try {
+              var oldData = JSON.parse(old);
+              if (Array.isArray(oldData) && oldData.length > 0) {
+                localStorage.setItem(STORAGE_KEY, old);
+                localStorage.removeItem('greasebig_visits');
+                return oldData;
+              }
+            } catch(e) {}
+          }
+          return [];
+        } catch(e) { return []; }
+      }
       function saveVisits(visits) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(visits.slice(0, MAX_VISITS))); } catch(e) {} }
 
-      // Three geo API sources — each returns standardized data
+      // Geo API sources — all HTTPS, no auth required, CORS-friendly
       var geoSources = [
         {
           name: 'ipapi.co',
@@ -457,18 +482,25 @@
           }
         },
         {
-          name: 'ip-api.com',
-          url: 'http://ip-api.com/json/?fields=status,message,country,countryCode,region,regionName,city,lat,lon,isp,org,timezone,query',
+          name: 'ipwho.is',
+          url: 'https://ipwho.is/',
           parse: function(d) {
-            return { ip: d.query || '?', country: d.country || '?', city: d.city || '?', region: d.regionName || '?', lat: d.lat || 0, lon: d.lon || 0, country_code: (d.countryCode || '').toLowerCase(), isp: d.isp || d.org || '?', timezone: d.timezone || '?', source: 'ip-api.com' };
+            return { ip: d.ip || '?', country: d.country || '?', city: d.city || '?', region: d.region || '?', lat: d.latitude || 0, lon: d.longitude || 0, country_code: (d.country_code || '').toLowerCase(), isp: d.connection ? d.connection.isp || '?' : '?', timezone: d.timezone ? d.timezone.id || '?' : '?', source: 'ipwho.is' };
           }
         },
         {
-          name: 'ipinfo.io',
-          url: 'https://ipinfo.io/json',
+          name: 'freeipapi.com',
+          url: 'https://freeipapi.com/api/json',
           parse: function(d) {
-            var loc = (d.loc || '0,0').split(',');
-            return { ip: d.ip || '?', country: d.country || '?', city: d.city || '?', region: d.region || '?', lat: parseFloat(loc[0]) || 0, lon: parseFloat(loc[1]) || 0, country_code: (d.country || '').toLowerCase(), isp: d.org || '?', timezone: d.timezone || '?', source: 'ipinfo.io' };
+            return { ip: d.ipAddress || '?', country: d.countryName || '?', city: d.cityName || '?', region: d.regionName || '?', lat: d.latitude || 0, lon: d.longitude || 0, country_code: (d.countryCode || '').toLowerCase(), isp: '?', timezone: d.timeZone || '?', source: 'freeipapi.com' };
+          }
+        },
+        {
+          name: 'ip-api.com',
+          url: 'https://pro.ip-api.com/json/?fields=status,message,country,countryCode,region,regionName,city,lat,lon,isp,org,timezone,query',
+          parse: function(d) {
+            if (d.status === 'fail') return null;
+            return { ip: d.query || '?', country: d.country || '?', city: d.city || '?', region: d.regionName || '?', lat: d.lat || 0, lon: d.lon || 0, country_code: (d.countryCode || '').toLowerCase(), isp: d.isp || d.org || '?', timezone: d.timezone || '?', source: 'ip-api.com' };
           }
         }
       ];
@@ -491,22 +523,42 @@
         return results.filter(Boolean);
       }
 
-      // VPN detection
+      // VPN/Proxy detection — use iphub.info (free, no key needed for basic)
       async function detectVPN(ip) {
         try {
-          var r = await fetch('https://ipqualityscore.com/api/json/ip/free/' + ip);
-          var d = await r.json();
-          return !!(d.vpn || d.tor || d.proxy);
-        } catch(e) { return false; }
+          var r = await fetch('https://v2.api.iphub.info/ip/' + ip, {
+            headers: { 'Accept': 'application/json' }
+          });
+          if (r.ok) {
+            var d = await r.json();
+            // block: 0=residential, 1=non-residential VPN/proxy, 2=non-residential (datacenter etc)
+            return d.block === 1 || d.block === 2;
+          }
+        } catch(e) {}
+        // Fallback: try ipqualityscore
+        try {
+          var r2 = await fetch('https://ipqualityscore.com/api/json/ip/free/' + ip);
+          if (r2.ok) {
+            var d2 = await r2.json();
+            return !!(d2.vpn || d2.tor || d2.proxy);
+          }
+        } catch(e) {}
+        return false;
       }
 
       // Record visit — every page load is a new record (no session dedup)
       async function recordVisit() {
         var allGeo = await fetchAllSources();
-        if (allGeo.length === 0) return null;
 
-        // Use first source as primary
-        var primary = allGeo[0];
+        // If all APIs fail, still record a minimal visit
+        var primary;
+        if (allGeo.length === 0) {
+          primary = { ip: '?', country: 'Unknown', city: '?', region: '?', lat: 0, lon: 0, country_code: '', isp: '?', timezone: '?', source: 'fallback' };
+          allGeo = [primary];
+        } else {
+          primary = allGeo[0];
+        }
+
         var vpn = await detectVPN(primary.ip);
 
         // Enrich with VPN
@@ -515,7 +567,7 @@
         var visits = getVisits();
 
         // Count how many times this IP has visited
-        var ipCount = visits.filter(function(v) { return v.ip === primary.ip; }).length + 1;
+        var ipCount = primary.ip !== '?' ? visits.filter(function(v) { return v.ip === primary.ip; }).length + 1 : 1;
 
         var visit = {
           id: Date.now().toString(36) + Math.random().toString(36).substr(2, 6),
@@ -568,14 +620,17 @@
       function fmtTime(ts) { var d = new Date(ts); return String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0'); }
       function fmtDate(ts) { var d = new Date(ts); return (d.getMonth()+1) + '/' + d.getDate() + ' ' + fmtTime(ts); }
 
-      // ===== Render tickers (three separate sources) =====
+      // ===== Render tickers (four separate sources) =====
       function renderTicker(containerId, visits, sourceFilter) {
         var container = document.getElementById(containerId);
-        var filtered = sourceFilter ? visits.filter(function(v) {
-          return v.sources && v.sources.some(function(s) { return s.source === sourceFilter; });
-        }) : visits;
+        if (!container) return;
 
-        // If no source-specific data, show all
+        // Filter by source if available, otherwise show all
+        var filtered = visits.filter(function(v) {
+          return v.sources && v.sources.some(function(s) { return s.source === sourceFilter; });
+        });
+
+        // If no source-specific data (old records), show all records
         if (filtered.length === 0) filtered = visits.slice(0, 20);
 
         var html = '';
@@ -856,24 +911,44 @@
       }
 
       // ===== Initialize =====
+      var globeInitialized = false;
+
+      // Show existing data immediately from localStorage
+      var existingVisits = getVisits();
+      if (existingVisits.length > 0) {
+        renderTicker('ticker1', existingVisits, 'ipapi.co');
+        renderTicker('ticker2', existingVisits, 'ipwho.is');
+        renderTicker('ticker3', existingVisits, 'freeipapi.com');
+        renderTicker('ticker4', existingVisits, 'ip-api.com');
+        renderRankings(existingVisits);
+        renderSummary(existingVisits);
+        initGlobe(existingVisits);
+        globeInitialized = true;
+      }
+
       recordVisit().then(function() {
         var visits = getVisits();
 
-        // Three separate tickers from three sources
+        // Four separate tickers from four sources
         renderTicker('ticker1', visits, 'ipapi.co');
-        renderTicker('ticker2', visits, 'ip-api.com');
-        renderTicker('ticker3', visits, 'ipinfo.io');
+        renderTicker('ticker2', visits, 'ipwho.is');
+        renderTicker('ticker3', visits, 'freeipapi.com');
+        renderTicker('ticker4', visits, 'ip-api.com');
 
         renderRankings(visits);
         renderSummary(visits);
-        initGlobe(visits);
+        if (!globeInitialized) {
+          initGlobe(visits);
+          globeInitialized = true;
+        }
 
         // Refresh every 30s
         setInterval(function() {
           var visits = getVisits();
           renderTicker('ticker1', visits, 'ipapi.co');
-          renderTicker('ticker2', visits, 'ip-api.com');
-          renderTicker('ticker3', visits, 'ipinfo.io');
+          renderTicker('ticker2', visits, 'ipwho.is');
+          renderTicker('ticker3', visits, 'freeipapi.com');
+          renderTicker('ticker4', visits, 'ip-api.com');
           renderRankings(visits);
           renderSummary(visits);
         }, 30000);
