@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Articles — greasebig</title>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6VD55179J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q6VD55179J');
+  </script>
+  <!-- SEO -->
+  <meta name="description" content="greasebig's article hub — Agent engineering, MCP deep dives, harness design, and curated tech feeds. 瀑布流式文章发现页。">
+  <meta name="keywords" content="AI Agent, MCP, Harness Engineering, Claw Runtime, tech articles, greasebig">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://greasebig.github.io/articles.html">
+  <meta property="og:title" content="Articles — greasebig">
+  <meta property="og:description" content="Agent engineering articles & curated tech feeds in a waterfall layout.">
+  <meta property="og:url" content="https://greasebig.github.io/articles.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui' font-weight='bold'>G</text></svg>" type="image/svg+xml" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    :root {
+      --ink: #1a1a2e;
+      --muted: #a0a4b8;
+      --glass: rgba(255,255,255,0.12);
+      --glass-hover: rgba(255,255,255,0.20);
+      --border: rgba(255,255,255,0.08);
+      --accent: #6366f1;
+      --accent-2: #ec4899;
+      --accent-3: #f59e0b;
+      --accent-4: #10b981;
+      --xhs-red: #E11D48;
+      --xhs-red-light: #FFF1F2;
+      --xhs-red-dark: #881337;
+      --radius: 14px;
+      --shadow: 0 4px 24px rgba(15,23,42,0.12);
+      --shadow-hover: 0 12px 40px rgba(15,23,42,0.2);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+      min-height: 100vh;
+      background: #0a0a1a;
+    }
+
+    /* ===== Background (matching site theme) ===== */
+    .bg-initial {
+      position: fixed; top: 0; left: 0;
+      width: 100vw; height: 100vh; z-index: -3;
+      background:
+        radial-gradient(800px 500px at 15% 0%, rgba(99,102,241,0.15), transparent 50%),
+        radial-gradient(700px 450px at 85% 10%, rgba(236,72,153,0.10), transparent 50%),
+        radial-gradient(600px 400px at 50% 80%, rgba(16,185,129,0.08), transparent 50%),
+        linear-gradient(175deg, #0f0f23 0%, #1a1a2e 40%, #1e1e3f 70%, #0f0f23 100%);
+    }
+    .orb { position: fixed; border-radius: 50%; filter: blur(60px); opacity: 0.35; pointer-events: none; z-index: -2; }
+    .orb-1 { width: 360px; height: 360px; left: -100px; top: -80px; background: radial-gradient(circle, rgba(99,102,241,0.35), transparent 70%); animation: drift 12s ease-in-out infinite; }
+    .orb-2 { width: 280px; height: 280px; right: -60px; top: 200px; background: radial-gradient(circle, rgba(236,72,153,0.28), transparent 70%); animation: drift 14s ease-in-out infinite 2s; }
+    .orb-3 { width: 240px; height: 240px; left: 40%; bottom: -80px; background: radial-gradient(circle, rgba(16,185,129,0.22), transparent 70%); animation: drift 16s ease-in-out infinite 4s; }
+    @keyframes drift {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(20px, -15px) scale(1.05); }
+      50% { transform: translate(-10px, 10px) scale(0.95); }
+      75% { transform: translate(15px, 5px) scale(1.02); }
+    }
+
+    /* ===== Header (PostHog-style: functional, dev-friendly) ===== */
+    .header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(10,10,26,0.75);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px; font-weight: 700; white-space: nowrap;
+      background: linear-gradient(135deg, #fff 30%, var(--accent) 70%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .header-logo .path { font-family: 'JetBrains Mono', monospace; font-size: 13px; opacity: 0.5; -webkit-text-fill-color: rgba(255,255,255,0.4); }
+    .header-nav { display: flex; gap: 8px; flex-wrap: wrap; }
+    .header-nav a {
+      color: rgba(255,255,255,0.55); text-decoration: none; font-size: 13px; font-weight: 500;
+      padding: 5px 12px; border-radius: 8px; transition: all 0.2s;
+    }
+    .header-nav a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+    .header-nav a.current { color: var(--accent); background: rgba(99,102,241,0.12); }
+
+    /* ===== Hero Section (PostHog: bold statement) ===== */
+    .hero-section {
+      max-width: 720px; margin: 0 auto; padding: 60px 24px 20px; text-align: center;
+    }
+    .hero-section h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 48px); font-weight: 700;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #fff 0%, var(--accent-2) 50%, var(--accent) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-section p {
+      color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 540px; margin: 0 auto;
+    }
+    .hero-section .file-tag {
+      display: inline-block; margin-top: 16px; padding: 4px 12px; border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace; font-size: 12px;
+      background: rgba(99,102,241,0.12); color: var(--accent); border: 1px solid rgba(99,102,241,0.2);
+    }
+
+    /* ===== Filter Tabs (XHS-style pills) ===== */
+    .filter-bar {
+      max-width: 1200px; margin: 0 auto; padding: 12px 24px;
+      display: flex; gap: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    }
+    .filter-bar::-webkit-scrollbar { display: none; }
+    .filter-tab {
+      padding: 8px 18px; border-radius: 20px; white-space: nowrap; font-size: 14px;
+      cursor: pointer; transition: all 0.25s; border: 1px solid transparent;
+      user-select: none; font-weight: 500;
+    }
+    .filter-tab.active {
+      background: var(--xhs-red); color: #fff; font-weight: 600;
+      border-color: var(--xhs-red); box-shadow: 0 4px 16px rgba(225,29,72,0.35);
+    }
+    .filter-tab:not(.active) {
+      background: var(--glass); color: rgba(255,255,255,0.65);
+      border-color: rgba(255,255,255,0.08);
+    }
+    .filter-tab:not(.active):hover {
+      background: var(--glass-hover); color: #fff;
+    }
+
+    /* ===== Search Box (XHS-style) ===== */
+    .search-row {
+      max-width: 1200px; margin: 0 auto; padding: 0 24px 8px;
+    }
+    .search-box {
+      display: flex; align-items: center; gap: 10px;
+      background: var(--glass); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px; padding: 0 16px; height: 44px; transition: all 0.2s;
+    }
+    .search-box:focus-within {
+      border-color: rgba(225,29,72,0.4); background: rgba(255,255,255,0.14);
+    }
+    .search-box svg { width: 18px; height: 18px; stroke: var(--xhs-red); fill: none; flex-shrink: 0; }
+    .search-box input {
+      flex: 1; background: none; border: none; outline: none;
+      color: #fff; font-size: 14px; font-family: inherit;
+    }
+    .search-box input::placeholder { color: rgba(255,255,255,0.3); }
+
+    /* ===== Waterfall Grid (XHS masonry) ===== */
+    .waterfall-wrap {
+      max-width: 1200px; margin: 0 auto; padding: 16px 24px 80px;
+    }
+    .waterfall {
+      display: flex; gap: 16px;
+    }
+    .waterfall-col {
+      flex: 1; display: flex; flex-direction: column; gap: 16px;
+    }
+
+    /* ===== Article Card (XHS + PostHog hybrid) ===== */
+    .article-card {
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer; text-decoration: none; color: #fff; display: block;
+    }
+    .article-card:hover {
+      transform: translateY(-4px);
+      background: var(--glass-hover);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(99,102,241,0.2);
+    }
+
+    /* Card cover area */
+    .card-cover {
+      width: 100%; position: relative; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 80px;
+    }
+    .card-cover .cover-gradient {
+      position: absolute; inset: 0; opacity: 0.85;
+    }
+    .card-cover .cover-icon {
+      position: relative; z-index: 1; font-size: 32px; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+    }
+    .card-cover .cover-tag {
+      position: absolute; top: 10px; right: 10px; z-index: 2;
+      padding: 3px 10px; border-radius: 12px; font-size: 10px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      backdrop-filter: blur(8px);
+    }
+    .tag-original { background: rgba(99,102,241,0.7); color: #fff; }
+    .tag-repost { background: rgba(245,158,11,0.7); color: #fff; }
+    .tag-series { background: rgba(225,29,72,0.7); color: #fff; }
+
+    /* Card body */
+    .card-body {
+      padding: 14px 14px 12px;
+    }
+    .card-title {
+      font-size: 14px; font-weight: 600; line-height: 1.5;
+      margin-bottom: 6px;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .card-desc {
+      font-size: 12px; color: var(--muted); line-height: 1.5;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    /* Card meta (XHS author row) */
+    .card-meta {
+      display: flex; align-items: center; gap: 6px;
+    }
+    .card-avatar {
+      width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-weight: 700; color: #fff;
+    }
+    .card-source {
+      font-size: 11px; color: var(--muted); flex: 1;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .card-likes {
+      display: flex; align-items: center; gap: 3px;
+    }
+    .card-likes svg { width: 12px; height: 12px; fill: var(--xhs-red); stroke: none; }
+    .card-likes span { font-size: 10px; color: rgba(255,255,255,0.4); }
+
+    /* Card footer (PostHog: file-tag style) */
+    .card-footer {
+      padding: 0 14px 12px; display: flex; gap: 6px; flex-wrap: wrap;
+    }
+    .card-tag {
+      font-family: 'JetBrains Mono', monospace; font-size: 10px;
+      padding: 2px 8px; border-radius: 4px;
+      background: rgba(99,102,241,0.1); color: rgba(99,102,241,0.8);
+      border: 1px solid rgba(99,102,241,0.15);
+    }
+    .card-date {
+      font-size: 10px; color: rgba(255,255,255,0.25); margin-left: auto; align-self: center;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* ===== Featured Card (larger, for original articles) ===== */
+    .article-card.featured .card-cover { min-height: 120px; }
+    .article-card.featured .card-title { font-size: 16px; }
+
+    /* ===== No Results ===== */
+    .no-results {
+      text-align: center; padding: 60px 20px; color: var(--muted);
+      display: none;
+    }
+    .no-results .emoji { font-size: 48px; margin-bottom: 12px; }
+    .no-results p { font-size: 14px; }
+
+    /* ===== Back to Top ===== */
+    .back-top {
+      position: fixed; bottom: 24px; right: 24px; z-index: 40;
+      width: 40px; height: 40px; border-radius: 12px;
+      background: rgba(99,102,241,0.2); backdrop-filter: blur(12px);
+      border: 1px solid rgba(99,102,241,0.3);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; opacity: 0; transition: all 0.3s; pointer-events: none;
+    }
+    .back-top.visible { opacity: 1; pointer-events: auto; }
+    .back-top:hover { background: rgba(99,102,241,0.4); transform: translateY(-2px); }
+    .back-top svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 2; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .waterfall { flex-direction: column; }
+      .waterfall-col { flex: none; }
+      .header { padding: 12px 16px; }
+      .filter-bar, .search-row, .waterfall-wrap { padding-left: 16px; padding-right: 16px; }
+      .hero-section { padding: 40px 16px 12px; }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .waterfall { gap: 14px; }
+    }
+
+    /* ===== Card entrance animation ===== */
+    .article-card {
+      opacity: 0; transform: translateY(20px);
+      animation: cardIn 0.5s ease-out forwards;
+    }
+    @keyframes cardIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="bg-initial"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-logo">greasebig <span class="path">/articles.html</span></div>
+    <nav class="header-nav">
+      <a href="./">Home</a>
+      <a href="https://github.com/greasebig" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://greasebig.github.io/daily-video-papers/" target="_blank" rel="noopener">Papers</a>
+      <a href="https://greasebig.github.io/awesome-agent-everything/" target="_blank" rel="noopener">Agents</a>
+      <a href="./stats.html">Stats</a>
+      <a href="./articles.html" class="current">Articles</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <h1>Articles & Discoveries</h1>
+    <p>Agent engineering deep dives, curated tech feeds, and open-source explorations — served in a waterfall.</p>
+    <span class="file-tag">open articles_index.md</span>
+  </section>
+
+  <!-- Search -->
+  <div class="search-row">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="searchInput" placeholder="Search articles, tags, sources..." autocomplete="off" aria-label="Search articles">
+    </div>
+  </div>
+
+  <!-- Filter Tabs -->
+  <div class="filter-bar" id="filterBar">
+    <div class="filter-tab active" data-cat="all">All</div>
+    <div class="filter-tab" data-cat="original">Original</div>
+    <div class="filter-tab" data-cat="repost">Curated</div>
+    <div class="filter-tab" data-cat="agent">Agent</div>
+    <div class="filter-tab" data-cat="mcp">MCP</div>
+    <div class="filter-tab" data-cat="harness">Harness</div>
+    <div class="filter-tab" data-cat="coding">Coding</div>
+    <div class="filter-tab" data-cat="ai">AI / ML</div>
+    <div class="filter-tab" data-cat="systems">Systems</div>
+  </div>
+
+  <!-- Waterfall Grid -->
+  <div class="waterfall-wrap">
+    <div class="waterfall" id="waterfall">
+      <div class="waterfall-col" id="colLeft"></div>
+      <div class="waterfall-col" id="colRight"></div>
+    </div>
+    <div class="no-results" id="noResults">
+      <div class="emoji">🔍</div>
+      <p>No articles found.</p>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <div class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg viewBox="0 0 24 24" stroke-linecap="round"><path d="m18 15-6-6-6 6"/></svg>
+  </div>
+
+<script>
+// ===== Article Data =====
+const ORIGINALS = [
+  {
+    id: 'claw-runtime',
+    title: 'Claw Runtime 与 Agent 生态 2026：从概念到落地',
+    titleEn: 'Claw Runtime & Agent Ecosystem 2026: From Concept to Production',
+    desc: '深入解析 Claw Runtime 如何将 AI Agent 从概念推向生产环境，涵盖架构设计与工程实践。',
+    tags: ['agent', 'harness', 'original'],
+    gradient: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+    icon: '🦀',
+    type: 'original',
+    date: '2026-06',
+    urlZh: './articles/claw-runtime.html',
+    urlEn: './articles/claw-runtime-en.html',
+  },
+  {
+    id: 'harness-engineering',
+    title: 'Harness Engineering：驾驭 AI Agent 的工程艺术',
+    titleEn: 'Harness Engineering: The Engineering Art of Steering AI Agents',
+    desc: '探索 Harness Engineering 的核心理念——如何像驭手一样精准驾驭 AI Agent 的行为与输出。',
+    tags: ['harness', 'agent', 'original'],
+    gradient: 'linear-gradient(135deg, #ec4899, #f43f5e)',
+    icon: '🏗️',
+    type: 'original',
+    date: '2026-06',
+    urlZh: './articles/harness-engineering.html',
+    urlEn: './articles/harness-engineering-en.html',
+  },
+  {
+    id: 'harness-poc',
+    title: '从零构建 Harness：~300 行 Python 的 PoC 实现',
+    titleEn: 'Building a Harness from Scratch: ~300 Lines of Python',
+    desc: '用最精简的代码实现一个完整的 Harness 原型，验证核心概念的可行性。',
+    tags: ['harness', 'coding', 'original'],
+    gradient: 'linear-gradient(135deg, #f59e0b, #f97316)',
+    icon: '⚡',
+    type: 'original',
+    date: '2026-06',
+    urlZh: './articles/harness-poc.html',
+    urlEn: './articles/harness-poc-en.html',
+  },
+  {
+    id: 'mcp-deep-dive',
+    title: 'MCP 深度解析：模型上下文协议的前世今生',
+    titleEn: 'MCP Deep Dive: Past, Present & Future of Model Context Protocol',
+    desc: '从协议设计哲学到工程实现细节，全面拆解 MCP 如何重塑 AI Agent 的工具调用范式。',
+    tags: ['mcp', 'agent', 'original'],
+    gradient: 'linear-gradient(135deg, #10b981, #06b6d4)',
+    icon: '🌐',
+    type: 'original',
+    date: '2026-06',
+    urlZh: './articles/mcp-deep-dive.html',
+    urlEn: './articles/mcp-deep-dive-en.html',
+  },
+];
+
+const TECH_FEED = []; // Will be loaded from tech-feed.json
+
+let allArticles = [];
+let currentCat = 'all';
+let searchQuery = '';
+
+// ===== Render Logic =====
+function getFiltered() {
+  let items = allArticles.slice();
+
+  // Filter by category
+  if (currentCat !== 'all') {
+    items = items.filter(a => {
+      if (currentCat === 'original') return a.type === 'original';
+      if (currentCat === 'repost') return a.type === 'repost';
+      return a.tags && a.tags.some(t => t === currentCat);
+    });
+  }
+
+  // Filter by search
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    items = items.filter(a =>
+      (a.title || '').toLowerCase().includes(q) ||
+      (a.titleEn || '').toLowerCase().includes(q) ||
+      (a.desc || '').toLowerCase().includes(q) ||
+      (a.source || '').toLowerCase().includes(q) ||
+      (a.tags || []).some(t => t.toLowerCase().includes(q))
+    );
+  }
+
+  // Sort: originals first, then by date
+  items.sort((a, b) => {
+    if (a.type === 'original' && b.type !== 'original') return -1;
+    if (a.type !== 'original' && b.type === 'original') return 1;
+    return (b.date || '').localeCompare(a.date || '');
+  });
+
+  return items;
+}
+
+function renderCard(a, idx) {
+  const isOriginal = a.type === 'original';
+  const isFeatured = isOriginal && idx < 4;
+
+  const tagClass = isOriginal ? 'tag-original' : 'tag-repost';
+  const tagLabel = isOriginal ? 'Original' : 'Curated';
+
+  const href = a.urlZh || a.url || '#';
+  const target = a.urlZh ? '' : (a.url ? ' target="_blank" rel="noopener"' : '');
+
+  const avatarColor = isOriginal
+    ? 'background: linear-gradient(135deg, #6366f1, #ec4899)'
+    : 'background: linear-gradient(135deg, #f59e0b, #f97316)';
+  const avatarLetter = isOriginal ? 'G' : ((a.source || '?')[0] || '?').toUpperCase();
+
+  const tagsHtml = (a.tags || []).filter(t => t !== 'original' && t !== 'repost').slice(0, 3)
+    .map(t => `<span class="card-tag">${t}</span>`).join('');
+
+  const coverHeight = isFeatured ? (140 + Math.random() * 40) : (80 + Math.random() * 60);
+
+  return `<a class="article-card${isFeatured ? ' featured' : ''}" href="${href}"${target} style="animation-delay: ${idx * 0.06}s">
+    <div class="card-cover" style="height:${coverHeight}px">
+      <div class="cover-gradient" style="background:${a.gradient || 'linear-gradient(135deg, #6366f1, #8b5cf6)'}"></div>
+      <div class="cover-icon">${a.icon || '📄'}</div>
+      <span class="cover-tag ${tagClass}">${tagLabel}</span>
+    </div>
+    <div class="card-body">
+      <div class="card-title">${a.title || a.titleEn || ''}</div>
+      ${a.desc ? `<div class="card-desc">${a.desc}</div>` : ''}
+      <div class="card-meta">
+        <div class="card-avatar" style="${avatarColor}">${avatarLetter}</div>
+        <span class="card-source">${isOriginal ? 'greasebig' : (a.source || '')}</span>
+        ${a.score ? `<div class="card-likes"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg><span>${a.score}</span></div>` : ''}
+      </div>
+    </div>
+    <div class="card-footer">
+      ${tagsHtml}
+      <span class="card-date">${a.date || ''}</span>
+    </div>
+  </a>`;
+}
+
+function renderWaterfall() {
+  const items = getFiltered();
+  const leftCol = document.getElementById('colLeft');
+  const rightCol = document.getElementById('colRight');
+  const noResults = document.getElementById('noResults');
+
+  if (items.length === 0) {
+    leftCol.innerHTML = '';
+    rightCol.innerHTML = '';
+    noResults.style.display = 'block';
+    return;
+  }
+  noResults.style.display = 'none';
+
+  // Distribute cards alternating between columns
+  let leftHtml = '', rightHtml = '';
+  items.forEach((a, i) => {
+    const card = renderCard(a, i);
+    if (i % 2 === 0) leftHtml += card;
+    else rightHtml += card;
+  });
+  leftCol.innerHTML = leftHtml;
+  rightCol.innerHTML = rightHtml;
+}
+
+// ===== Event Handlers =====
+document.addEventListener('DOMContentLoaded', () => {
+  // Load tech feed
+  fetch('./articles/tech-feed.json')
+    .then(r => r.json())
+    .then(feed => {
+      const feedArticles = feed.map(item => ({
+        title: item.title_zh || item.title,
+        titleEn: item.title,
+        desc: item.summary || '',
+        tags: classifyTags(item.title + ' ' + (item.source || '')),
+        gradient: getGradient(item.source),
+        icon: getIcon(item.source),
+        type: 'repost',
+        date: item.date || '',
+        url: item.url,
+        source: item.source,
+        score: item.hn_score || null,
+      }));
+      allArticles = [...ORIGINALS, ...feedArticles];
+      renderWaterfall();
+    })
+    .catch(() => {
+      allArticles = [...ORIGINALS];
+      renderWaterfall();
+    });
+
+  // Filter tabs
+  document.getElementById('filterBar').addEventListener('click', e => {
+    const tab = e.target.closest('.filter-tab');
+    if (!tab) return;
+    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    currentCat = tab.dataset.cat;
+    renderWaterfall();
+  });
+
+  // Search
+  document.getElementById('searchInput').addEventListener('input', e => {
+    searchQuery = e.target.value.trim().toLowerCase();
+    renderWaterfall();
+  });
+
+  // Back to top
+  const backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', () => {
+    backTop.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+});
+
+// ===== Helpers =====
+function classifyTags(text) {
+  const tags = ['repost'];
+  const lower = text.toLowerCase();
+  if (/agent|autonomous|multi-agent/i.test(lower)) tags.push('agent');
+  if (/mcp|model context protocol/i.test(lower)) tags.push('mcp');
+  if (/harness|steer|alignment/i.test(lower)) tags.push('harness');
+  if (/code|program|develop|software|rust|python|javascript/i.test(lower)) tags.push('coding');
+  if (/ai|ml|llm|gpt|neural|deep learning|model/i.test(lower)) tags.push('ai');
+  if (/system|os|kernel|database|infra|distributed/i.test(lower)) tags.push('systems');
+  return tags;
+}
+
+function getGradient(source) {
+  const map = {
+    'github.com': 'linear-gradient(135deg, #6e5494, #2ea44f)',
+    'news.ycombinator.com': 'linear-gradient(135deg, #f60, #fc0)',
+    'arxiv.org': 'linear-gradient(135deg, #b31b1b, #ec4899)',
+    'anthropic.com': 'linear-gradient(135deg, #d4a574, #8b5cf6)',
+    'openai.com': 'linear-gradient(135deg, #10a37f, #1a7f64)',
+  };
+  for (const [key, val] of Object.entries(map)) {
+    if (source && source.includes(key)) return val;
+  }
+  const gradients = [
+    'linear-gradient(135deg, #6366f1, #8b5cf6)',
+    'linear-gradient(135deg, #ec4899, #f43f5e)',
+    'linear-gradient(135deg, #10b981, #06b6d4)',
+    'linear-gradient(135deg, #f59e0b, #f97316)',
+    'linear-gradient(135deg, #8b5cf6, #6366f1)',
+  ];
+  return gradients[Math.abs(hashCode(source || '')) % gradients.length];
+}
+
+function getIcon(source) {
+  const map = {
+    'github.com': '📦',
+    'news.ycombinator.com': '🔶',
+    'arxiv.org': '📄',
+    'anthropic.com': '🤖',
+    'openai.com': '🧠',
+  };
+  for (const [key, val] of Object.entries(map)) {
+    if (source && source.includes(key)) return val;
+  }
+  return '🔗';
+}
+
+function hashCode(str) {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash |= 0;
+  }
+  return hash;
+}
+</script>
+
+</body>
+</html>
