@@ -966,7 +966,7 @@
     .tagline-cn {
       font-family: 'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', cursive;
       letter-spacing: 0.12em;
-      transition: opacity 0.15s ease;
+      transition: opacity 0.6s ease;
       visibility: hidden;
     }
     .tagline-en {
@@ -974,7 +974,7 @@
       letter-spacing: 0.03em;
       font-size: 0.92em;
       opacity: 0.6;
-      transition: opacity 0.15s ease;
+      transition: opacity 0.6s ease;
       visibility: hidden;
     }
     .fonts-all-ready .tagline-cn,
@@ -4122,12 +4122,12 @@
             line.hasSwitched = true;
             var fontList = line.type === 'cn' ? cnFonts[cnIdx] : enFonts[enIdx];
 
-            // 淡出 → 换字体 → 淡入（加速一倍）
+            // 淡出 → 换字体 → 淡入
             line.el.classList.add('tagline-fading');
             setTimeout(function() {
               line.el.style.fontFamily = fontList;
               line.el.classList.remove('tagline-fading');
-            }, 150);
+            }, 600);
           }
         });
 
