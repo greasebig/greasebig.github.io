@@ -42,7 +42,6 @@
         linear-gradient(175deg, #0f0f23 0%, #1a1a2e 40%, #1e1e3f 70%, #0f0f23 100%);
     }
 
-    /* floating orbs（和主页一致） */
     .orb {
       position: fixed;
       border-radius: 50%;
@@ -71,9 +70,7 @@
       opacity: 0;
       transition: opacity 1.5s ease;
     }
-    .video-bg.visible {
-      opacity: 1;
-    }
+    .video-bg.visible { opacity: 1; }
     .video-bg video {
       position: absolute;
       top: 50%; left: 50%;
@@ -86,8 +83,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-        180deg,
+      background: linear-gradient(180deg,
         rgba(10,10,26,0.55) 0%,
         rgba(10,10,26,0.35) 40%,
         rgba(10,10,26,0.65) 100%
@@ -95,14 +91,12 @@
       z-index: 1;
     }
 
-    /* Loading indicator */
     .video-loading {
       position: fixed;
       bottom: 20px; right: 20px;
       z-index: 100;
       background: rgba(15,15,35,0.7);
       backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(99,102,241,0.2);
       color: #c7c7ff;
       font-size: 11px;
@@ -123,10 +117,7 @@
       animation: vlbPulse 1.2s ease-in-out infinite;
       flex-shrink: 0;
     }
-    .video-loading .vlb-dot.done {
-      background: var(--accent-4);
-      animation: none;
-    }
+    .video-loading .vlb-dot.done { background: var(--accent-4); animation: none; }
     @keyframes vlbPulse {
       0%, 100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.4; transform: scale(0.7); }
@@ -140,11 +131,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
+      padding: 60px 20px 40px;
     }
 
-    /* Back button */
     .back-btn {
       position: fixed;
       top: 24px; left: 24px;
@@ -163,15 +152,9 @@
       border: 1px solid rgba(255,255,255,0.12);
       transition: all 0.25s;
     }
-    .back-btn:hover {
-      color: #fff;
-      background: rgba(255,255,255,0.15);
-    }
-    .back-btn svg {
-      width: 16px; height: 16px;
-    }
+    .back-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
+    .back-btn svg { width: 16px; height: 16px; }
 
-    /* Title */
     .page-title {
       font-family: "Playfair Display", serif;
       font-size: clamp(28px, 5vw, 42px);
@@ -197,7 +180,6 @@
       max-width: 900px;
       width: 100%;
     }
-
     .stat-card {
       background: var(--glass);
       backdrop-filter: blur(24px);
@@ -229,13 +211,7 @@
       transform: translateY(-4px);
       box-shadow: 0 20px 60px rgba(0,0,0,0.3);
     }
-
-    .stat-icon {
-      font-size: 36px;
-      margin-bottom: 16px;
-      display: block;
-    }
-
+    .stat-icon { font-size: 36px; margin-bottom: 16px; display: block; }
     .stat-number {
       font-size: 56px;
       font-weight: 900;
@@ -247,36 +223,219 @@
     .stat-card:nth-child(1) .stat-number { color: var(--accent); }
     .stat-card:nth-child(2) .stat-number { color: var(--accent-3); }
     .stat-card:nth-child(3) .stat-number { color: var(--accent-4); }
+    .stat-label { font-size: 16px; font-weight: 600; color: rgba(255,255,255,0.85); margin-bottom: 4px; }
+    .stat-desc { font-size: 13px; color: var(--muted); font-weight: 400; }
+    .updated-at { margin-top: 40px; font-size: 12px; color: rgba(255,255,255,0.3); }
 
-    .stat-label {
+    /* ===== Visitor Tracker Section ===== */
+    .tracker-section {
+      margin-top: 64px;
+      width: 100%;
+      max-width: 1200px;
+    }
+    .tracker-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tracker-subtitle {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+
+    .tracker-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .tracker-layout { grid-template-columns: 1fr; }
+    }
+
+    /* Globe container */
+    .globe-panel {
+      background: var(--glass);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 24px;
+      min-height: 440px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .globe-panel h3 {
       font-size: 16px;
       font-weight: 600;
+      margin-bottom: 16px;
       color: rgba(255,255,255,0.85);
-      margin-bottom: 4px;
     }
-    .stat-desc {
-      font-size: 13px;
+    #globeCanvas {
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1;
+      border-radius: 16px;
+      cursor: grab;
+    }
+    #globeCanvas:active { cursor: grabbing; }
+    .globe-legend {
+      display: flex;
+      gap: 16px;
+      margin-top: 12px;
+      font-size: 11px;
       color: var(--muted);
-      font-weight: 400;
+    }
+    .globe-legend span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .globe-legend .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      display: inline-block;
     }
 
-    /* Updated time */
-    .updated-at {
-      margin-top: 40px;
-      font-size: 12px;
-      color: rgba(255,255,255,0.3);
+    /* Scroll ticker */
+    .ticker-panel {
+      background: var(--glass);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      min-height: 440px;
+    }
+    .ticker-panel h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: rgba(255,255,255,0.85);
+    }
+    .ticker-list {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+    .ticker-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      animation: tickerScroll 40s linear infinite;
+    }
+    .ticker-inner:hover { animation-play-state: paused; }
+    @keyframes tickerScroll {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
+
+    .visit-row {
+      display: grid;
+      grid-template-columns: 28px 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: background 0.2s;
+      min-height: 52px;
+    }
+    .visit-row:hover { background: rgba(255,255,255,0.08); }
+    .visit-flag { font-size: 20px; text-align: center; }
+    .visit-info { min-width: 0; }
+    .visit-location {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .visit-meta {
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+    .visit-meta .vpn-badge {
+      background: rgba(236,72,153,0.2);
+      color: #ec4899;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .visit-right {
+      text-align: right;
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .visit-ip {
+      font-family: "SF Mono", "Fira Code", monospace;
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+    }
+    .visit-duration {
+      margin-top: 2px;
+      color: var(--accent-4);
+      font-weight: 500;
+    }
+
+    /* Summary bar */
+    .summary-bar {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+      padding: 16px 24px;
+      background: var(--glass);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+    }
+    .summary-item {
+      text-align: center;
+    }
+    .summary-value {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .summary-label {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 2px;
     }
 
     @media (max-width: 640px) {
       .stats-grid { grid-template-columns: 1fr; gap: 16px; }
       .stat-number { font-size: 42px; }
       .stat-card { padding: 24px 20px; }
+      .summary-bar { gap: 16px; padding: 12px 16px; }
+      .summary-value { font-size: 18px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
       .video-bg { display: none; }
       .video-loading { display: none; }
       .orb { animation: none; }
+      .ticker-inner { animation: none; }
     }
   </style>
 </head>
@@ -288,7 +447,7 @@
   <div class="orb orb-2"></div>
   <div class="orb orb-3"></div>
 
-  <!-- Video Background: 480p → large progressive loading -->
+  <!-- Video Background -->
   <div class="video-bg" id="videoBg">
     <video id="bgVideo" autoplay muted loop playsinline></video>
   </div>
@@ -332,6 +491,55 @@
     </div>
 
     <p class="updated-at" id="updatedAt"></p>
+
+    <!-- ===== Visitor Tracker ===== -->
+    <div class="tracker-section">
+      <h2 class="tracker-title">Visitor Globe</h2>
+      <p class="tracker-subtitle">Real-time visitor tracking — globe + live ticker</p>
+
+      <div class="tracker-layout">
+        <!-- Globe -->
+        <div class="globe-panel">
+          <h3>🌍 3D Globe</h3>
+          <canvas id="globeCanvas" width="400" height="400"></canvas>
+          <div class="globe-legend">
+            <span><span class="dot" style="background:#6366f1"></span> You</span>
+            <span><span class="dot" style="background:#10b981"></span> Recent</span>
+            <span><span class="dot" style="background:#f59e0b"></span> Older</span>
+          </div>
+        </div>
+
+        <!-- Ticker -->
+        <div class="ticker-panel">
+          <h3>📊 Live Visitor Log</h3>
+          <div class="ticker-list">
+            <div class="ticker-inner" id="tickerInner">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="summary-bar" id="summaryBar">
+        <div class="summary-item">
+          <div class="summary-value" id="sumTotal">0</div>
+          <div class="summary-label">Total Visits</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-value" id="sumCountries">0</div>
+          <div class="summary-label">Countries</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-value" id="sumVpn">0</div>
+          <div class="summary-label">VPN/Tor</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-value" id="sumAvgDuration">—</div>
+          <div class="summary-label">Avg Duration</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -356,13 +564,8 @@
     }
 
     // ===== Load stats from JSON =====
-    var statsData = {
-      articles: 33,
-      papers: 1035,
-      agents: 674
-    };
+    var statsData = { articles: 33, papers: 1035, agents: 674 };
 
-    // Try to fetch live stats
     function loadLiveStats() {
       fetch('./articles/tech-feed.json', { cache: 'no-store' })
         .then(function(r) { return r.json(); })
@@ -370,34 +573,24 @@
           statsData.articles = 3 + items.length;
           animateCount(document.getElementById('numArticles'), statsData.articles);
         })
-        .catch(function() {
-          animateCount(document.getElementById('numArticles'), statsData.articles);
-        });
+        .catch(function() { animateCount(document.getElementById('numArticles'), statsData.articles); });
 
       fetch('https://greasebig.github.io/awesome-agent-everything/data/repos.min.json', { cache: 'no-store' })
         .then(function(r) { return r.json(); })
         .then(function(data) {
           var total = 0;
-          Object.keys(data).forEach(function(k) {
-            if (Array.isArray(data[k])) total += data[k].length;
-          });
+          Object.keys(data).forEach(function(k) { if (Array.isArray(data[k])) total += data[k].length; });
           if (total > 0) statsData.agents = total;
           animateCount(document.getElementById('numAgents'), statsData.agents);
         })
-        .catch(function() {
-          animateCount(document.getElementById('numAgents'), statsData.agents);
-        });
+        .catch(function() { animateCount(document.getElementById('numAgents'), statsData.agents); });
     }
 
-    // Start animation with fallback values
     animateCount(document.getElementById('numArticles'), statsData.articles);
     animateCount(document.getElementById('numPapers'), statsData.papers);
     animateCount(document.getElementById('numAgents'), statsData.agents);
-
-    // Then try live
     loadLiveStats();
 
-    // Show updated time
     var now = new Date();
     document.getElementById('updatedAt').textContent =
       'Updated: ' + now.getFullYear() + '-' +
@@ -407,10 +600,8 @@
       String(now.getMinutes()).padStart(2,'0');
 
     // ===== Progressive Video Loading =====
-    // Strategy: Keep initial frosted-glass background → XHR download 480p → fade in video → XHR download large → switch at same timestamp
     (function() {
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
       var video = document.getElementById('bgVideo');
       var videoBg = document.getElementById('videoBg');
       var loading = document.getElementById('videoLoading');
@@ -418,132 +609,523 @@
       var loadingText = loading ? loading.querySelector('.vlb-text') : null;
       var loadingTimeout;
       var hasSwitchedToLarge = false;
-
       video.loop = true;
 
-      function showLoading(text) {
-        if (loadingText) loadingText.textContent = text;
-        loading.classList.add('visible');
-        clearTimeout(loadingTimeout);
-      }
-      function hideLoading() {
-        loadingTimeout = setTimeout(function() {
-          loading.classList.remove('visible');
-        }, 3000);
-      }
+      function showLoading(text) { if (loadingText) loadingText.textContent = text; loading.classList.add('visible'); clearTimeout(loadingTimeout); }
+      function hideLoading() { loadingTimeout = setTimeout(function() { loading.classList.remove('visible'); }, 3000); }
 
-      // Guarantee seamless loop
-      video.addEventListener('ended', function() {
-        video.currentTime = 0;
-        video.play();
-      });
+      video.addEventListener('ended', function() { video.currentTime = 0; video.play(); });
 
-      // Step 1: Download 480p video via XHR blob
       var smallReq = new XMLHttpRequest();
       smallReq.open('GET', 'assets/videos/bg-480p.mp4', true);
       smallReq.responseType = 'blob';
-      smallReq.onprogress = function(e) {
-        if (e.lengthComputable) {
-          var pct = Math.round(e.loaded / e.total * 100);
-          showLoading('Loading 480p… ' + pct + '%');
-        }
-      };
+      smallReq.onprogress = function(e) { if (e.lengthComputable) showLoading('Loading 480p… ' + Math.round(e.loaded / e.total * 100) + '%'); };
       smallReq.onload = function() {
-        if (smallReq.status !== 200) {
-          showLoading('Loading original…');
-          startDownloadingLarge();
-          return;
-        }
+        if (smallReq.status !== 200) { showLoading('Loading original…'); startDownloadingLarge(); return; }
         var smallBlob = URL.createObjectURL(smallReq.response);
         var probe = document.createElement('video');
-        probe.muted = true;
-        probe.src = smallBlob;
+        probe.muted = true; probe.src = smallBlob;
         probe.addEventListener('canplaythrough', function() {
-          video.loop = true;
-          video.src = smallBlob;
-          video.play().then(function() {
-            videoBg.classList.add('visible');
-            showLoading('480p ✓ · Loading original…');
-            startDownloadingLarge();
-          }).catch(function() {
-            videoBg.classList.add('visible');
-            showLoading('480p ✓ · Loading original…');
-            startDownloadingLarge();
-          });
+          video.loop = true; video.src = smallBlob;
+          video.play().then(function() { videoBg.classList.add('visible'); showLoading('480p ✓ · Loading original…'); startDownloadingLarge(); })
+            .catch(function() { videoBg.classList.add('visible'); showLoading('480p ✓ · Loading original…'); startDownloadingLarge(); });
         }, { once: true });
-        probe.addEventListener('error', function() {
-          // 480p not playable, try large directly
-          showLoading('Loading original…');
-          startDownloadingLarge();
-        }, { once: true });
+        probe.addEventListener('error', function() { showLoading('Loading original…'); startDownloadingLarge(); }, { once: true });
         probe.load();
       };
-      smallReq.onerror = function() {
-        showLoading('Loading original…');
-        startDownloadingLarge();
-      };
+      smallReq.onerror = function() { showLoading('Loading original…'); startDownloadingLarge(); };
       showLoading('Loading 480p…');
       smallReq.send();
 
-      // Step 2: Download large video in background
       function startDownloadingLarge() {
         if (hasSwitchedToLarge) return;
         var req = new XMLHttpRequest();
         req.open('GET', 'assets/videos/bg-large.mp4', true);
         req.responseType = 'blob';
-        req.onprogress = function(e) {
-          if (e.lengthComputable) {
-            var pct = Math.round(e.loaded / e.total * 100);
-            showLoading('Loading original… ' + pct + '%');
-          }
-        };
+        req.onprogress = function(e) { if (e.lengthComputable) showLoading('Loading original… ' + Math.round(e.loaded / e.total * 100) + '%'); };
         req.onload = function() {
           if (req.status === 200 && !hasSwitchedToLarge) {
             var blobUrl = URL.createObjectURL(req.response);
             var probe = document.createElement('video');
-            probe.muted = true;
-            probe.src = blobUrl;
+            probe.muted = true; probe.src = blobUrl;
             probe.addEventListener('canplaythrough', function() {
               if (hasSwitchedToLarge) return;
               hasSwitchedToLarge = true;
-              // Calculate same playback position
               var ratio = video.currentTime / video.duration;
               var targetTime = ratio * probe.duration;
-              // Switch: brief fade out, swap source, fade in
               videoBg.classList.remove('visible');
               setTimeout(function() {
-                video.src = blobUrl;
-                video.loop = true;
-                video.currentTime = targetTime;
-                video.play().then(function() {
-                  videoBg.classList.add('visible');
-                  if (loadingDot) loadingDot.classList.add('done');
-                  showLoading('Original ✓');
-                  hideLoading();
-                }).catch(function() {
-                  videoBg.classList.add('visible');
-                  if (loadingDot) loadingDot.classList.add('done');
-                  showLoading('Original ✓');
-                  hideLoading();
-                });
+                video.src = blobUrl; video.loop = true; video.currentTime = targetTime;
+                video.play().then(function() { videoBg.classList.add('visible'); if (loadingDot) loadingDot.classList.add('done'); showLoading('Original ✓'); hideLoading(); })
+                  .catch(function() { videoBg.classList.add('visible'); if (loadingDot) loadingDot.classList.add('done'); showLoading('Original ✓'); hideLoading(); });
               }, 400);
             }, { once: true });
-            probe.addEventListener('error', function() {
-              showLoading('480p (original unavailable)');
-              hideLoading();
-            }, { once: true });
+            probe.addEventListener('error', function() { showLoading('480p (original unavailable)'); hideLoading(); }, { once: true });
             probe.load();
-          } else if (!hasSwitchedToLarge) {
-            showLoading('480p ✓');
-            hideLoading();
-          }
+          } else if (!hasSwitchedToLarge) { showLoading('480p ✓'); hideLoading(); }
         };
-        req.onerror = function() {
-          showLoading('480p ✓');
-          hideLoading();
-        };
+        req.onerror = function() { showLoading('480p ✓'); hideLoading(); };
         req.send();
       }
+    })();
+
+    // ===== Visitor IP Tracking System =====
+    (function() {
+      var STORAGE_KEY = 'greasebig_visits';
+      var MAX_VISITS = 200;
+
+      function getVisits() {
+        try {
+          var data = localStorage.getItem(STORAGE_KEY);
+          return data ? JSON.parse(data) : [];
+        } catch(e) { return []; }
+      }
+      function saveVisits(visits) {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(visits.slice(0, MAX_VISITS)));
+        } catch(e) {}
+      }
+
+      // Multi-source IP geolocation (try multiple APIs for robustness)
+      function fetchGeoData() {
+        var apis = [
+          {
+            url: 'https://ipapi.co/json/',
+            parse: function(d) {
+              return {
+                ip: d.ip || '?',
+                country: d.country_name || d.country || '?',
+                city: d.city || '?',
+                region: d.region || '?',
+                lat: d.latitude || 0,
+                lon: d.longitude || 0,
+                country_code: (d.country_code || '').toLowerCase(),
+                isp: d.org || '?',
+                vpn: false,
+                timezone: d.timezone || '?'
+              };
+            }
+          },
+          {
+            url: 'http://ip-api.com/json/?fields=status,message,country,countryCode,region,regionName,city,lat,lon,isp,org,timezone,query',
+            parse: function(d) {
+              return {
+                ip: d.query || '?',
+                country: d.country || '?',
+                city: d.city || '?',
+                region: d.regionName || '?',
+                lat: d.lat || 0,
+                lon: d.lon || 0,
+                country_code: (d.countryCode || '').toLowerCase(),
+                isp: d.isp || d.org || '?',
+                vpn: false,
+                timezone: d.timezone || '?'
+              };
+            }
+          },
+          {
+            url: 'https://ipinfo.io/json',
+            parse: function(d) {
+              var loc = (d.loc || '0,0').split(',');
+              return {
+                ip: d.ip || '?',
+                country: d.country || '?',
+                city: d.city || '?',
+                region: d.region || '?',
+                lat: parseFloat(loc[0]) || 0,
+                lon: parseFloat(loc[1]) || 0,
+                country_code: (d.country || '').toLowerCase(),
+                isp: d.org || '?',
+                vpn: false,
+                timezone: d.timezone || '?'
+              };
+            }
+          }
+        ];
+
+        return new Promise(function(resolve) {
+          var resolved = false;
+          function tryApi(idx) {
+            if (idx >= apis.length) {
+              if (!resolved) resolve({ ip: '?', country: 'Unknown', city: '', region: '', lat: 0, lon: 0, country_code: '', isp: '?', vpn: false, timezone: '?' });
+              return;
+            }
+            var api = apis[idx];
+            var controller = new AbortController();
+            var timeout = setTimeout(function() { controller.abort(); }, 5000);
+            fetch(api.url, { signal: controller.signal })
+              .then(function(r) { return r.json(); })
+              .then(function(d) {
+                clearTimeout(timeout);
+                if (!resolved) {
+                  resolved = true;
+                  var result = api.parse(d);
+                  // Try VPN detection with a separate API
+                  fetch('https://ipqualityscore.com/api/json/ip/free/' + result.ip)
+                    .then(function(r2) { return r2.json(); })
+                    .then(function(vpnData) {
+                      result.vpn = !!(vpnData.vpn || vpnData.tor || vpnData.proxy);
+                      resolve(result);
+                    })
+                    .catch(function() { resolve(result); });
+                }
+              })
+              .catch(function() {
+                clearTimeout(timeout);
+                tryApi(idx + 1);
+              });
+          }
+          tryApi(0);
+        });
+      }
+
+      // Record current visit
+      async function recordVisit() {
+        var visits = getVisits();
+        var sessionId = sessionStorage.getItem('greasebig_sid');
+        if (!sessionId) {
+          sessionId = Date.now().toString(36) + Math.random().toString(36).substr(2, 6);
+          sessionStorage.setItem('greasebig_sid', sessionId);
+        }
+
+        // Check if this session already recorded
+        var existing = visits.find(function(v) { return v.sid === sessionId; });
+        if (existing) {
+          existing.lastSeen = Date.now();
+          existing.duration = Math.round((Date.now() - existing.firstSeen) / 1000);
+          saveVisits(visits);
+          return existing;
+        }
+
+        var geo = await fetchGeoData();
+        var visit = {
+          sid: sessionId,
+          ip: geo.ip,
+          country: geo.country,
+          city: geo.city,
+          region: geo.region,
+          lat: geo.lat,
+          lon: geo.lon,
+          country_code: geo.country_code,
+          isp: geo.isp,
+          vpn: geo.vpn,
+          timezone: geo.timezone,
+          firstSeen: Date.now(),
+          lastSeen: Date.now(),
+          duration: 0,
+          ua: navigator.userAgent.substring(0, 80),
+          screen: screen.width + 'x' + screen.height,
+          lang: navigator.language || '?'
+        };
+        visits.unshift(visit);
+        if (visits.length > MAX_VISITS) visits = visits.slice(0, MAX_VISITS);
+        saveVisits(visits);
+        return visit;
+      }
+
+      // Update duration periodically
+      function startDurationTracker() {
+        setInterval(function() {
+          var visits = getVisits();
+          var sid = sessionStorage.getItem('greasebig_sid');
+          var v = visits.find(function(x) { return x.sid === sid; });
+          if (v) {
+            v.lastSeen = Date.now();
+            v.duration = Math.round((Date.now() - v.firstSeen) / 1000);
+            saveVisits(visits);
+          }
+        }, 10000);
+      }
+
+      // Country code to flag emoji
+      function countryFlag(code) {
+        if (!code || code.length !== 2) return '🌐';
+        var base = 127397;
+        return String.fromCodePoint(base + code.charCodeAt(0)) + String.fromCodePoint(base + code.charCodeAt(1));
+      }
+
+      // Format duration
+      function fmtDuration(sec) {
+        if (sec < 60) return sec + 's';
+        if (sec < 3600) return Math.floor(sec / 60) + 'm ' + (sec % 60) + 's';
+        return Math.floor(sec / 3600) + 'h ' + Math.floor((sec % 3600) / 60) + 'm';
+      }
+
+      // Format time
+      function fmtTime(ts) {
+        var d = new Date(ts);
+        return String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0');
+      }
+
+      // ===== Render Ticker =====
+      function renderTicker(visits, currentSid) {
+        var container = document.getElementById('tickerInner');
+        var html = '';
+        visits.forEach(function(v, i) {
+          var isCurrent = v.sid === currentSid;
+          var age = Date.now() - v.firstSeen;
+          var borderColor = isCurrent ? 'rgba(99,102,241,0.4)' : (age < 3600000 ? 'rgba(16,185,129,0.2)' : 'rgba(255,255,255,0.04)');
+          html += '<div class="visit-row" style="border-color:' + borderColor + '">' +
+            '<span class="visit-flag">' + countryFlag(v.country_code) + '</span>' +
+            '<div class="visit-info">' +
+              '<div class="visit-location">' + (isCurrent ? '⭐ ' : '') + (v.city && v.city !== '?' ? v.city + ', ' : '') + v.country + '</div>' +
+              '<div class="visit-meta">' +
+                '<span>' + fmtTime(v.firstSeen) + '</span>' +
+                '<span>' + (v.isp && v.isp !== '?' ? v.isp.substring(0, 20) : '') + '</span>' +
+                (v.vpn ? '<span class="vpn-badge">VPN/Proxy</span>' : '') +
+              '</div>' +
+            '</div>' +
+            '<div class="visit-right">' +
+              '<div class="visit-ip">' + v.ip + '</div>' +
+              '<div class="visit-duration">' + fmtDuration(v.duration) + '</div>' +
+            '</div>' +
+          '</div>';
+        });
+
+        // Double for seamless scroll
+        container.innerHTML = html + html;
+      }
+
+      // ===== Render Summary =====
+      function renderSummary(visits) {
+        document.getElementById('sumTotal').textContent = visits.length;
+        var countries = {};
+        var vpnCount = 0;
+        var totalDuration = 0;
+        var durationCount = 0;
+        visits.forEach(function(v) {
+          countries[v.country] = true;
+          if (v.vpn) vpnCount++;
+          if (v.duration > 0) { totalDuration += v.duration; durationCount++; }
+        });
+        document.getElementById('sumCountries').textContent = Object.keys(countries).length;
+        document.getElementById('sumVpn').textContent = vpnCount;
+        document.getElementById('sumAvgDuration').textContent = durationCount > 0 ? fmtDuration(Math.round(totalDuration / durationCount)) : '—';
+      }
+
+      // ===== 3D Globe (Canvas-based, no Three.js dependency) =====
+      function initGlobe(visits, currentSid) {
+        var canvas = document.getElementById('globeCanvas');
+        var ctx = canvas.getContext('2d');
+        var W = canvas.width;
+        var H = canvas.height;
+        var cx = W / 2;
+        var cy = H / 2;
+        var radius = Math.min(W, H) * 0.38;
+        var rotation = 0;
+        var autoRotateSpeed = 0.003;
+        var isDragging = false;
+        var lastX = 0;
+
+        // Lat/lon to 3D
+        function latLonTo3D(lat, lon) {
+          var phi = (90 - lat) * Math.PI / 180;
+          var theta = (lon + 180) * Math.PI / 180;
+          return {
+            x: -radius * Math.sin(phi) * Math.cos(theta),
+            y: radius * Math.cos(phi),
+            z: radius * Math.sin(phi) * Math.sin(theta)
+          };
+        }
+
+        // Rotate Y axis
+        function rotateY(p, angle) {
+          var cos = Math.cos(angle);
+          var sin = Math.sin(angle);
+          return { x: p.x * cos - p.z * sin, y: p.y, z: p.x * sin + p.z * cos };
+        }
+
+        // Project
+        function project(p) {
+          var fov = 600;
+          var scale = fov / (fov + p.z);
+          return { x: cx + p.x * scale, y: cy - p.y * scale, scale: scale, z: p.z };
+        }
+
+        // Draw grid
+        function drawGlobe() {
+          ctx.clearRect(0, 0, W, H);
+
+          // Globe body
+          var grad = ctx.createRadialGradient(cx - radius * 0.2, cy - radius * 0.2, 0, cx, cy, radius);
+          grad.addColorStop(0, 'rgba(99,102,241,0.15)');
+          grad.addColorStop(0.7, 'rgba(99,102,241,0.06)');
+          grad.addColorStop(1, 'rgba(99,102,241,0.02)');
+          ctx.beginPath();
+          ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+          ctx.fillStyle = grad;
+          ctx.fill();
+
+          // Border glow
+          ctx.beginPath();
+          ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+          ctx.strokeStyle = 'rgba(99,102,241,0.25)';
+          ctx.lineWidth = 1.5;
+          ctx.stroke();
+
+          // Latitude lines
+          for (var lat = -60; lat <= 60; lat += 30) {
+            ctx.beginPath();
+            var first = true;
+            for (var lon = 0; lon <= 360; lon += 3) {
+              var p3 = latLonTo3D(lat, lon);
+              var r = rotateY(p3, rotation);
+              if (r.z > -radius * 0.1) {
+                var p2 = project(r);
+                if (first) { ctx.moveTo(p2.x, p2.y); first = false; }
+                else ctx.lineTo(p2.x, p2.y);
+              } else { first = true; }
+            }
+            ctx.strokeStyle = 'rgba(99,102,241,0.1)';
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+
+          // Longitude lines
+          for (var lon = 0; lon < 360; lon += 30) {
+            ctx.beginPath();
+            var first = true;
+            for (var lat = -90; lat <= 90; lat += 3) {
+              var p3 = latLonTo3D(lat, lon);
+              var r = rotateY(p3, rotation);
+              if (r.z > -radius * 0.1) {
+                var p2 = project(r);
+                if (first) { ctx.moveTo(p2.x, p2.y); first = false; }
+                else ctx.lineTo(p2.x, p2.y);
+              } else { first = true; }
+            }
+            ctx.strokeStyle = 'rgba(99,102,241,0.08)';
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+
+          // Plot visit points
+          var points = [];
+          visits.forEach(function(v) {
+            if (v.lat === 0 && v.lon === 0) return;
+            var p3 = latLonTo3D(v.lat, v.lon);
+            var r = rotateY(p3, rotation);
+            if (r.z > 0) {
+              var p2 = project(r);
+              var age = Date.now() - v.firstSeen;
+              var isCurrent = v.sid === currentSid;
+              points.push({ x: p2.x, y: p2.y, scale: p2.scale, isCurrent: isCurrent, age: age });
+            }
+          });
+
+          // Sort by z (draw far points first)
+          points.sort(function(a, b) { return a.scale - b.scale; });
+
+          points.forEach(function(pt) {
+            var size = Math.max(2, 5 * pt.scale);
+            if (pt.isCurrent) {
+              // Current user - bright pulsing
+              ctx.beginPath();
+              ctx.arc(pt.x, pt.y, size + 4, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(99,102,241,0.3)';
+              ctx.fill();
+              ctx.beginPath();
+              ctx.arc(pt.x, pt.y, size, 0, Math.PI * 2);
+              ctx.fillStyle = '#6366f1';
+              ctx.fill();
+              // Pulse ring
+              var pulse = (Math.sin(Date.now() / 500) + 1) * 3 + size;
+              ctx.beginPath();
+              ctx.arc(pt.x, pt.y, pulse, 0, Math.PI * 2);
+              ctx.strokeStyle = 'rgba(99,102,241,0.4)';
+              ctx.lineWidth = 1;
+              ctx.stroke();
+            } else if (pt.age < 3600000) {
+              // Recent (< 1hr) - green
+              ctx.beginPath();
+              ctx.arc(pt.x, pt.y, size, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(16,185,129,0.8)';
+              ctx.fill();
+              ctx.beginPath();
+              ctx.arc(pt.x, pt.y, size + 2, 0, Math.PI * 2);
+              ctx.strokeStyle = 'rgba(16,185,129,0.3)';
+              ctx.lineWidth = 1;
+              ctx.stroke();
+            } else {
+              // Older - amber
+              ctx.beginPath();
+              ctx.arc(pt.x, pt.y, size * 0.7, 0, Math.PI * 2);
+              ctx.fillStyle = 'rgba(245,158,11,0.6)';
+              ctx.fill();
+            }
+          });
+
+          // Connection lines between recent visitors
+          var recent = points.filter(function(p) { return p.age < 7200000; });
+          for (var i = 0; i < recent.length; i++) {
+            for (var j = i + 1; j < recent.length; j++) {
+              var dx = recent[i].x - recent[j].x;
+              var dy = recent[i].y - recent[j].y;
+              var dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 150) {
+                ctx.beginPath();
+                ctx.moveTo(recent[i].x, recent[i].y);
+                ctx.lineTo(recent[j].x, recent[j].y);
+                ctx.strokeStyle = 'rgba(99,102,241,' + (0.12 * (1 - dist / 150)) + ')';
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+              }
+            }
+          }
+        }
+
+        // Mouse/touch drag
+        canvas.addEventListener('mousedown', function(e) { isDragging = true; lastX = e.clientX; });
+        canvas.addEventListener('mousemove', function(e) { if (isDragging) { rotation += (e.clientX - lastX) * 0.005; lastX = e.clientX; } });
+        canvas.addEventListener('mouseup', function() { isDragging = false; });
+        canvas.addEventListener('mouseleave', function() { isDragging = false; });
+        canvas.addEventListener('touchstart', function(e) { isDragging = true; lastX = e.touches[0].clientX; }, { passive: true });
+        canvas.addEventListener('touchmove', function(e) { if (isDragging) { rotation += (e.touches[0].clientX - lastX) * 0.005; lastX = e.touches[0].clientX; } }, { passive: true });
+        canvas.addEventListener('touchend', function() { isDragging = false; });
+
+        // Animation loop
+        function animate() {
+          if (!isDragging) rotation += autoRotateSpeed;
+          drawGlobe();
+          requestAnimationFrame(animate);
+        }
+        animate();
+
+        // Resize handler
+        function resize() {
+          var rect = canvas.getBoundingClientRect();
+          canvas.width = rect.width * (window.devicePixelRatio || 1);
+          canvas.height = rect.height * (window.devicePixelRatio || 1);
+          W = canvas.width;
+          H = canvas.height;
+          cx = W / 2;
+          cy = H / 2;
+          radius = Math.min(W, H) * 0.38;
+          ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
+        }
+        window.addEventListener('resize', resize);
+        setTimeout(resize, 100);
+      }
+
+      // ===== Initialize =====
+      recordVisit().then(function(currentVisit) {
+        var visits = getVisits();
+        var currentSid = sessionStorage.getItem('greasebig_sid');
+
+        renderTicker(visits, currentSid);
+        renderSummary(visits);
+        initGlobe(visits, currentSid);
+        startDurationTracker();
+
+        // Refresh ticker every 30s
+        setInterval(function() {
+          var visits = getVisits();
+          var currentSid = sessionStorage.getItem('greasebig_sid');
+          renderTicker(visits, currentSid);
+          renderSummary(visits);
+        }, 30000);
+      });
+
     })();
   </script>
 </body>

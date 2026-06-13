@@ -15,9 +15,10 @@
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='a' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient><filter id='g'><feGaussianBlur stdDeviation='2' result='b'/><feMerge><feMergeNode in='b'/><feMergeNode in='SourceGraphic'/></feMerge></filter></defs><rect width='100' height='100' rx='20' fill='%230a0a1a'/><circle cx='50' cy='50' r='38' fill='none' stroke='url(%23a)' stroke-width='2.5' opacity='0.4'/><circle cx='50' cy='50' r='28' fill='none' stroke='url(%23a)' stroke-width='1.5' opacity='0.6' stroke-dasharray='4 6'/><circle cx='50' cy='50' r='18' fill='none' stroke='%23fff' stroke-width='1' opacity='0.3'/><g filter='url(%23g)'><path d='M50 16 L56 34 L50 28 L44 34 Z' fill='%23fff' opacity='0.9'/><path d='M50 84 L44 66 L50 72 L56 66 Z' fill='%23fff' opacity='0.9'/><path d='M16 50 L34 44 L28 50 L34 56 Z' fill='%23fff' opacity='0.9'/><path d='M84 50 L66 56 L72 50 L66 44 Z' fill='%23fff' opacity='0.9'/></g><circle cx='50' cy='50' r='6' fill='url(%23a)'/><circle cx='50' cy='50' r='3' fill='%23fff'/><circle cx='50' cy='12' r='2.5' fill='%236366f1'/><circle cx='50' cy='88' r='2.5' fill='%23ec4899'/><circle cx='12' cy='50' r='2.5' fill='%238b5cf6'/><circle cx='88' cy='50' r='2.5' fill='%23f59e0b'/><circle cx='23' cy='23' r='2' fill='%2310b981' opacity='0.7'/><circle cx='77' cy='23' r='2' fill='%23ec4899' opacity='0.7'/><circle cx='23' cy='77' r='2' fill='%236366f1' opacity='0.7'/><circle cx='77' cy='77' r='2' fill='%238b5cf6' opacity='0.7'/></svg>" type="image/svg+xml" />
 
-  <!-- 预加载中文狂草字体（最高优先级，消除首次加载闪烁） -->
+  <!-- 预加载关键字体（最高优先级，消除首次加载闪烁） -->
   <link rel="preload" href="fonts/ZhiMangXing.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/KouzanBrushFontSousyo.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/CloisterBlack.woff2" as="font" type="font/woff2" crossorigin />
 
   <style>
 
@@ -68,7 +69,7 @@
            url('fonts/CloisterBlack.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
-      font-display: swap;
+      font-display: block;
     }
 
     /* 4. Canterbury：古英语黑体字 — 自托管 WOFF2 */
@@ -78,7 +79,7 @@
            url('fonts/Canterbury.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
-      font-display: swap;
+      font-display: block;
     }
 
     /* 5. Alte Schwabacher：古德式黑体字 — 自托管 WOFF2 */
@@ -88,7 +89,7 @@
            url('fonts/AlteSchwabacher.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
-      font-display: swap;
+      font-display: block;
     }
 
     /* 6. Middle Saxony Text：中古撒克逊经文黑体字 — 自托管 WOFF2 */
@@ -98,7 +99,7 @@
            url('fonts/MIDDST__.TTF') format('truetype');
       font-weight: normal;
       font-style: normal;
-      font-display: swap;
+      font-display: block;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=UnifrakturMaguntia&family=MedievalSharp&family=Pirata+One&family=Texturina:wght@400;700&family=IM+Fell+English&family=Cinzel+Decorative:wght@400;700&family=Grenze+Gotisch:wght@400;700&family=Metamorphous&display=block');
@@ -963,20 +964,22 @@
 
     }
 
-    /* 中文自我介绍：字体未就绪时隐藏，避免楷书闪烁 */
+    /* 个人介绍文字：所有古体/狂草字体未就绪前不显示，避免任何闪烁 */
     .tagline-cn {
       font-family: 'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', cursive;
       letter-spacing: 0.12em;
       transition: opacity 0.6s ease;
       visibility: hidden;
     }
-    .fonts-cn-ready .tagline-cn {
-      visibility: visible;
-    }
     .tagline-en {
       font-family: 'UnifrakturMaguntia', 'CloisterBlack', 'Canterbury', cursive;
       letter-spacing: 0.03em;
       transition: opacity 0.6s ease;
+      visibility: hidden;
+    }
+    .fonts-all-ready .tagline-cn,
+    .fonts-all-ready .tagline-en {
+      visibility: visible;
     }
     .tagline-fading { opacity: 0 !important; }
 
@@ -2726,20 +2729,25 @@
 
   <script>
 
-    // ========== 中文字体就绪检测：狂草未加载完不显示中文自我介绍 ==========
+    // ========== 全部古体/狂草字体就绪检测：未加载完不显示个人介绍 ==========
     (function() {
-      // 需要等待的关键中文字体（只要有一个就绪即可显示）
-      var criticalFonts = ['ZhiMangXing', 'KouzanSousho'];
+      // 需要等待的关键字体：中文狂草 + 英文古体
+      var cnFonts = ['ZhiMangXing', 'KouzanSousho'];
+      var enFonts = ['CloisterBlack', 'UnifrakturMaguntia'];
 
       function markReady() {
-        document.documentElement.classList.add('fonts-cn-ready');
+        document.documentElement.classList.add('fonts-all-ready');
       }
 
       function areFontsReady() {
         if (!document.fonts || !document.fonts.check) return false;
-        return criticalFonts.some(function(f) {
+        var cnOk = cnFonts.some(function(f) {
           return document.fonts.check('16px ' + f);
         });
+        var enOk = enFonts.some(function(f) {
+          return document.fonts.check('16px ' + f);
+        });
+        return cnOk && enOk;
       }
 
       // 立即检查一次（可能已缓存）
@@ -2750,36 +2758,35 @@
 
       // 主动加载关键字体：用 FontFace API 确保浏览器下载
       if (typeof FontFace !== 'undefined') {
-        var fontPromises = [
+        var allPromises = [
           new FontFace('ZhiMangXing', "url('fonts/ZhiMangXing.woff2')").load(),
-          new FontFace('KouzanSousho', "url('fonts/KouzanBrushFontSousyo.woff2')").load()
+          new FontFace('KouzanSousho', "url('fonts/KouzanBrushFontSousyo.woff2')").load(),
+          new FontFace('CloisterBlack', "url('fonts/CloisterBlack.woff2')").load(),
+          new FontFace('UnifrakturMaguntia', "url('https://fonts.gstatic.com/s/unifrakturmaguntia/v16/WWXPluV8XUxT2LEmYVP9X5y7TTg.woff2')").load()
         ];
-        Promise.all(fontPromises).then(function(faces) {
+        Promise.all(allPromises).then(function(faces) {
           faces.forEach(function(f) { document.fonts.add(f); });
           markReady();
         }).catch(function() {
-          // 部分字体加载失败，检查是否有至少一个可用
+          // 部分字体加载失败，检查是否有足够字体可用
           if (areFontsReady()) {
             markReady();
           }
-          // 否则继续等待兜底超时
         });
       } else if (document.fonts && document.fonts.ready) {
-        // 降级：用 document.fonts.ready 等待
         document.fonts.ready.then(function() {
           if (areFontsReady()) markReady();
         });
       }
 
-      // 最终兜底：10 秒后强制检查，字体可用才显示，不可用则继续等
-      var fallbackChecks = [10, 15, 20, 30];
+      // 渐进兜底检查
+      var fallbackChecks = [8, 12, 18, 30];
       fallbackChecks.forEach(function(sec) {
         setTimeout(function() {
-          if (!document.documentElement.classList.contains('fonts-cn-ready')) {
+          if (!document.documentElement.classList.contains('fonts-all-ready')) {
             if (areFontsReady()) {
               markReady();
             } else if (sec >= 30) {
-              // 30 秒还是不行，强制显示（此时浏览器会用 cursive 通用字体，绝不是楷书）
               markReady();
             }
           }
