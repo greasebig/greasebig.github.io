@@ -1,5 +1,60 @@
 [
   {
+    "title": "Making Claude a Chemist",
+    "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+    "source": "anthropic.com",
+    "date": "2026-06-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 18, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48523752",
+    "fetched_at": "2026-06-14T06:09:21Z",
+    "title_zh": "让克劳德成为一名化学家"
+  },
+  {
+    "title": "Free SQL→ER diagram tool, runs in the browser, nothing uploaded",
+    "url": "https://sqltoerdiagram.com/",
+    "source": "sqltoerdiagram.com",
+    "date": "2026-06-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from sqltoerdiagram.com. Hacker News score 22, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48523992",
+    "fetched_at": "2026-06-14T06:09:20Z",
+    "title_zh": "免费的SQL→ER图工具，在浏览器中运行，无需上传任何内容"
+  },
+  {
+    "title": "Police officer investigated for using AI to 'create evidence' in multiple cases",
+    "url": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
+    "source": "news.sky.com",
+    "date": "2026-06-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from news.sky.com. Hacker News score 285, 134 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48520807",
+    "fetched_at": "2026-06-14T06:09:23Z",
+    "title_zh": "警察因在多起案件中使用人工智能“创造证据”而受到调查"
+  },
+  {
+    "title": "The adder at the heart of Intel's 8087 floating-point chip",
+    "url": "https://www.righto.com/2026/06/intel-8087-adder-reverse-engineered.html",
+    "source": "righto.com",
+    "date": "2026-06-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from righto.com. Hacker News score 106, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48519011",
+    "fetched_at": "2026-06-14T06:09:23Z",
+    "title_zh": "Intel 8087 浮点芯片核心的加法器"
+  },
+  {
+    "title": "Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models",
+    "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578?st=Yct6gx&reflink=desktopwebshare_permalink",
+    "source": "wsj.com",
+    "date": "2026-06-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from wsj.com. Hacker News score 628, 457 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48519092",
+    "fetched_at": "2026-06-14T06:09:21Z",
+    "title_zh": "亚马逊CEO与美国官员会谈引发对人择模型的打压"
+  },
+  {
     "title": "A generic dynamic array in C that stores no capacity and needs no struct",
     "url": "https://gist.github.com/alurm/2ca14be134d719fe7431217a6b18d91e",
     "source": "gist.github.com",
@@ -42,6 +97,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48511908",
     "fetched_at": "2026-06-13T05:49:34Z",
     "title_zh": "开源人工智能必须获胜"
+  },
+  {
+    "title": "Python 3.14 garbage collection rigamarole",
+    "url": "https://theconsensus.dev/p/2026/06/06/python-3-14-garbage-collection-rigamarole.html",
+    "source": "theconsensus.dev",
+    "date": "2026-06-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from theconsensus.dev. Hacker News score 35, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48503009",
+    "fetched_at": "2026-06-14T06:09:19Z",
+    "title_zh": "Python 3.14 垃圾收集 rigamarole"
   },
   {
     "title": "Launch HN: BitBoard (YC P25) – Analytics Workspace for Agents",
@@ -108,6 +174,39 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48500012",
     "fetched_at": "2026-06-12T06:05:08Z",
     "title_zh": "AI 特工在尝试扫描 DN42 时让他们的运营商破产"
+  },
+  {
+    "title": "Codex for open source",
+    "url": "https://openai.com/form/codex-for-oss/",
+    "source": "openai.com",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 210, 69 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48497195",
+    "fetched_at": "2026-06-14T06:09:21Z",
+    "title_zh": "开源法典"
+  },
+  {
+    "title": "(Re//Verse 2026) Taxonomy and Deobfuscation of a Real World Binary Obfuscator [pdf]",
+    "url": "https://github.com/AnalogCyberNuke/RE-Verse-2026-Slides/blob/main/Reverse26.pdf",
+    "source": "github.com",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 10, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48491376",
+    "fetched_at": "2026-06-14T06:09:20Z",
+    "title_zh": "(Re//Verse 2026) 现实世界二进制混淆器的分类和反混淆 [pdf]"
+  },
+  {
+    "title": "FreeOberon – Open-Source, Cross-Platform, Free Pascal/Turbo Pascal-Like Language",
+    "url": "https://github.com/kekcleader/FreeOberon",
+    "source": "github.com",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 62, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48490927",
+    "fetched_at": "2026-06-14T06:09:19Z",
+    "title_zh": "FreeOberon – 开源、跨平台、免费 Pascal/Turbo Pascal 类语言"
   },
   {
     "title": "Show HN: Boo – Screen-style terminal multiplexer built on libghostty",
@@ -284,6 +383,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48469658",
     "fetched_at": "2026-06-10T05:52:04Z",
     "title_zh": "macOS 容器机"
+  },
+  {
+    "title": "Pyodide 314.0: Python packages can now publish WebAssembly wheels to PyPI",
+    "url": "https://blog.pyodide.org/posts/314-release/",
+    "source": "blog.pyodide.org",
+    "date": "2026-06-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.pyodide.org. Hacker News score 108, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48462759",
+    "fetched_at": "2026-06-14T06:09:19Z",
+    "title_zh": "Pyodide 314.0：Python 包现在可以将 WebAssembly 轮子发布到 PyPI"
   },
   {
     "title": "macOS 27 Beta breaks the ability to boot Asahi Linux",
