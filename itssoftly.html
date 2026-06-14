@@ -579,7 +579,93 @@
       margin-left: 0;
     }
   }
-</style>
+    /* ========== ITSSOFTLY INTERACTIVE EFFECTS ========== */
+
+    /* Scroll reveal — Softly style */
+    .softly-reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .softly-reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Enhanced card with top gradient line — Softly style */
+    .softly-card {
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .softly-card::before {
+      content: '';
+      position: absolute;
+      inset-x: 0;
+      top: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(212,93,138,0.2), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+      border-radius: inherit;
+    }
+    .softly-card:hover::before { opacity: 1; }
+    .softly-card:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 24px rgba(212,93,138,0.08);
+    }
+    .softly-card:active {
+      transform: scale(0.96);
+    }
+
+    /* Sticker decoration */
+    .sticker {
+      display: inline-block;
+      font-size: 20px;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .sticker:hover {
+      transform: scale(1.2) rotate(-8deg);
+    }
+
+    /* Enhanced site-card — Softly style */
+    .site-card:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 24px rgba(212,93,138,0.08);
+      border-color: var(--border-hover);
+    }
+
+    .article-item:hover {
+      transform: translateY(-2px) scale(1.005);
+      box-shadow: 0 4px 16px rgba(212,93,138,0.06);
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 24px rgba(212,93,138,0.08);
+    }
+
+    /* Poem-style intro card */
+    .poem-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .poem-card::after {
+      content: '"';
+      position: absolute;
+      top: -10px; right: 16px;
+      font-size: 80px;
+      color: var(--accent);
+      opacity: 0.08;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+  </style>
 </head>
 
 <body>
@@ -598,15 +684,27 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero fade-in">
+  <section class="hero fade-in softly-reveal">
     <div class="hero-label">Studio &amp; Archive</div>
     <h1>greasebig</h1>
     <p class="hero-subtitle">Say hard things, gently.</p>
     <span class="hero-badge">Open Source · Computer Vision · AI</span>
+    <!-- Stickers — Softly style -->
+    <div class="softly-reveal" style="display:flex;gap:12px;justify-content:center;margin-top:16px;">
+      <span class="sticker">✨</span>
+      <span class="sticker">🌸</span>
+      <span class="sticker">🦋</span>
+      <span class="sticker">💫</span>
+    </div>
+    <div class="poem-card softly-reveal" style="margin-top:32px;max-width:480px;margin-left:auto;margin-right:auto;">
+      <p style="font-size:14px;color:var(--text-secondary);line-height:1.8;font-style:italic;">
+        修炼于天机阁<br>
+        融像素炼丹，以算法御剑<br>
+        窥破虚实之界
+      </p>
+    </div>
   </section>
-
-  <!-- Tagline Chinese -->
-  <div class="tagline-section fade-in" style="transition-delay: 100ms;">
+  <div class="tagline-section fade-in softly-reveal" style="transition-delay: 100ms;">
     <div class="tagline-zh">
       修煉於天機閣，融像素煉丹，以算法御劍<br>
       窺破虚實之界，游走於生成與感知的裂縫之間<br>
@@ -624,31 +722,31 @@
   <hr class="divider">
 
   <!-- Site Navigation -->
-  <section class="fade-in" style="transition-delay: 100ms;">
+  <section class="fade-in softly-reveal" style="transition-delay: 100ms;">
     <div class="section-label">Navigate</div>
     <h2 class="section-title">Places</h2>
     <div class="nav-cards">
-      <a href="https://github.com/greasebig" class="card" target="_blank" rel="noopener">
+      <a href="https://github.com/greasebig" class="card softly-card" target="_blank" rel="noopener">
         <span class="card-icon">⌘</span>
         <div class="card-name">GitHub</div>
         <div class="card-desc">Source code &amp; open projects</div>
       </a>
-      <a href="https://greasebig.github.io/daily-video-papers/" class="card" target="_blank" rel="noopener">
+      <a href="https://greasebig.github.io/daily-video-papers/" class="card softly-card" target="_blank" rel="noopener">
         <span class="card-icon">⊡</span>
         <div class="card-name">Papers Hub</div>
         <div class="card-desc">Daily curated video &amp; vision papers</div>
       </a>
-      <a href="https://greasebig.github.io/awesome-agent-everything/" class="card" target="_blank" rel="noopener">
+      <a href="https://greasebig.github.io/awesome-agent-everything/" class="card softly-card" target="_blank" rel="noopener">
         <span class="card-icon">◈</span>
         <div class="card-name">Agent Index</div>
         <div class="card-desc">Curated agent resources &amp; tools</div>
       </a>
-      <a href="./articles.html" class="card">
+      <a href="./articles.html" class="card softly-card">
         <span class="card-icon">◗</span>
         <div class="card-name">Articles</div>
         <div class="card-desc">Long-form writing &amp; deep dives</div>
       </a>
-      <a href="./stats.html" class="card">
+      <a href="./stats.html" class="card softly-card">
         <span class="card-icon">◫</span>
         <div class="card-name">Stats</div>
         <div class="card-desc">Activity &amp; contribution overview</div>
@@ -659,23 +757,23 @@
   <hr class="divider">
 
   <!-- Pinned Articles -->
-  <section class="fade-in" style="transition-delay: 100ms;">
+  <section class="fade-in softly-reveal" style="transition-delay: 100ms;">
     <div class="section-label">Writing</div>
     <h2 class="section-title">Pinned Articles</h2>
     <div class="article-list">
-      <a href="./articles/mcp-deep-dive.html" class="article-item">
+      <a href="./articles/mcp-deep-dive.html" class="article-item softly-card">
         <span class="article-title">MCP 深度解析</span>
         <span class="article-date">2026-06-06</span>
       </a>
-      <a href="./articles/claw-runtime.html" class="article-item">
+      <a href="./articles/claw-runtime.html" class="article-item softly-card">
         <span class="article-title">Claw Runtime 与 Agent 生态 2026</span>
         <span class="article-date">2026-05-28</span>
       </a>
-      <a href="./articles/harness-engineering.html" class="article-item">
+      <a href="./articles/harness-engineering.html" class="article-item softly-card">
         <span class="article-title">Harness Engineering</span>
         <span class="article-date">2026-05-24</span>
       </a>
-      <a href="./articles/harness-poc.html" class="article-item">
+      <a href="./articles/harness-poc.html" class="article-item softly-card">
         <span class="article-title">Building a Harness from Scratch</span>
         <span class="article-date">2026-05-24</span>
       </a>
@@ -685,21 +783,21 @@
   <hr class="divider">
 
   <!-- Featured Projects -->
-  <section class="fade-in" style="transition-delay: 100ms;">
+  <section class="fade-in softly-reveal" style="transition-delay: 100ms;">
     <div class="section-label">Craft</div>
     <h2 class="section-title">Featured Projects</h2>
     <div class="card-grid card-grid-3">
-      <a href="https://github.com/greasebig/daily-video-papers" class="card" target="_blank" rel="noopener">
+      <a href="https://github.com/greasebig/daily-video-papers" class="card softly-card" target="_blank" rel="noopener">
         <div class="card-name">Daily Video Papers</div>
         <div class="card-desc">Automated daily paper curation</div>
         <span class="card-tag">Tool</span>
       </a>
-      <a href="https://github.com/greasebig/harness-poc" class="card" target="_blank" rel="noopener">
+      <a href="https://github.com/greasebig/harness-poc" class="card softly-card" target="_blank" rel="noopener">
         <div class="card-name">harness-poc</div>
         <div class="card-desc">Agent harness proof of concept</div>
         <span class="card-tag">Tool</span>
       </a>
-      <a href="https://github.com/greasebig/awesome-agent-everything" class="card" target="_blank" rel="noopener">
+      <a href="https://github.com/greasebig/awesome-agent-everything" class="card softly-card" target="_blank" rel="noopener">
         <div class="card-name">Awesome Agent Everything</div>
         <div class="card-desc">Comprehensive agent resource list</div>
         <span class="card-tag">Resource</span>
@@ -710,7 +808,7 @@
   <hr class="divider">
 
   <!-- Explored Repos -->
-  <section class="fade-in" style="transition-delay: 100ms;">
+  <section class="fade-in softly-reveal" style="transition-delay: 100ms;">
     <div class="section-label">Research</div>
     <h2 class="section-title">Explored Repos</h2>
     <div class="repo-list">
@@ -764,6 +862,27 @@
 
     elements.forEach(function(el) {
       observer.observe(el);
+    });
+  })();
+
+  // ========== Softly-style scroll reveal ==========
+  (function() {
+    var reveals = document.querySelectorAll('.softly-reveal');
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function(el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('active');
+      } else {
+        observer.observe(el);
+      }
     });
   })();
 </script>

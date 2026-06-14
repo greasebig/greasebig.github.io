@@ -547,7 +547,7 @@
 
   <!-- ===== NAVIGATION ===== -->
   <nav id="mainNav">
-    <a href="#top" class="nav-logo">GREASEBIG.</a>
+    <a href="#top" class="nav-logo"><span class="brand-icon">🌿</span> <span class="brand-prompt">$</span> greasebig</a>
     <div class="nav-links">
       <a href="#articles">Articles</a>
       <a href="#projects">Projects</a>
@@ -582,7 +582,7 @@
     <div class="section-label reveal">NAVIGATE</div>
     <h2 class="reveal reveal-delay-1">ENTRY POINTS</h2>
   </div>
-  <div class="site-cards reveal reveal-delay-2" style="max-width:1200px;margin:0 auto;">
+  <div class="site-cards reveal reveal-delay-2 floria-reveal" style="max-width:1200px;margin:0 auto;">
     <a class="site-card" href="https://github.com/greasebig" target="_blank">
       <span class="site-card-number">01</span>
       <h3>GitHub</h3>
@@ -621,7 +621,7 @@
     <div class="section-label reveal">WRITING</div>
     <h2 class="reveal reveal-delay-1">PINNED ARTICLES</h2>
   </div>
-  <div class="articles-grid reveal reveal-delay-2" style="max-width:1200px;margin:0 auto;">
+  <div class="articles-grid reveal reveal-delay-2 floria-reveal" style="max-width:1200px;margin:0 auto;">
     <a class="article-card" href="./articles/mcp-deep-dive.html" target="_blank">
       <span class="article-watermark">01</span>
       <span class="article-tag">Pinned &middot; MCP Protocol</span>
@@ -659,7 +659,7 @@
     <div class="section-label reveal">CREATION</div>
     <h2 class="reveal reveal-delay-1">FEATURED PROJECTS</h2>
   </div>
-  <div class="projects-grid reveal reveal-delay-2" style="max-width:1200px;margin:0 auto;">
+  <div class="projects-grid reveal reveal-delay-2 floria-reveal" style="max-width:1200px;margin:0 auto;">
     <a class="project-card" href="https://github.com/greasebig/daily-video-papers" target="_blank">
       <span class="project-venue">Tool</span>
       <h3>Daily Video Papers</h3>
@@ -691,12 +691,44 @@
 
   <div class="divider"></div>
 
+  <!-- ========== FLORIA PRODUCT SHOWCASE ========== -->
+  <section class="section" style="max-width:960px;margin:0 auto;padding:60px 32px;">
+    <div class="floria-reveal">
+      <div class="section-num">&sect;1.5 &mdash; Showcase</div>
+      <h2 class="section-title">Digital Garden</h2>
+      <p class="section-subtitle">Cultivated projects, growing daily.</p>
+    </div>
+    <div class="product-grid floria-reveal">
+      <a class="product-card" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
+        <div class="product-visual">📄</div>
+        <div class="product-info">
+          <div class="product-name">Daily Papers</div>
+          <div class="product-desc">Automated arXiv tracking hub for video &amp; AI research</div>
+        </div>
+      </a>
+      <a class="product-card" href="https://github.com/greasebig/awesome-agent-everything" target="_blank">
+        <div class="product-visual">🌐</div>
+        <div class="product-info">
+          <div class="product-name">Agent Index</div>
+          <div class="product-desc">Meta-index of ALL awesome agent repos on GitHub</div>
+        </div>
+      </a>
+      <a class="product-card" href="https://github.com/greasebig/harness-poc" target="_blank">
+        <div class="product-visual">⚡</div>
+        <div class="product-info">
+          <div class="product-name">Harness POC</div>
+          <div class="product-desc">Minimal Agent Harness — Model + Harness, ~300 lines</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
   <!-- ===== EXPLORED ===== -->
   <div class="section" id="explored">
     <div class="section-label reveal">RESEARCH</div>
     <h2 class="reveal reveal-delay-1">EXPLORED</h2>
   </div>
-  <div class="explored-list reveal reveal-delay-2" style="max-width:1200px;margin:0 auto;">
+  <div class="explored-list reveal reveal-delay-2 floria-reveal" style="max-width:1200px;margin:0 auto;">
     <a class="explored-card" href="https://github.com/greasebig/VideoCoF" target="_blank">
       <span class="explored-venue">CVPR 2026 Highlight</span>
       <h3>VideoCoF</h3>
@@ -723,6 +755,8 @@
       <p>Reproduction and exploration of the CVPR 2023 Foundation Model Challenge, Track 2 — cross-modal track solution.</p>
     </a>
   </div>
+
+  <div class="footer-watermark floria-reveal-scale">FLORIA</div>
 
   <!-- ===== FOOTER ===== -->
   <footer>
@@ -753,6 +787,28 @@
           nav.classList.remove('scrolled');
         }
       }, { passive: true });
+    })();
+
+    // ========== Floria-style scroll reveal ==========
+    (function() {
+      var reveals = document.querySelectorAll('.floria-reveal, .floria-reveal-scale');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+      reveals.forEach(function(el) {
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('active');
+        } else {
+          observer.observe(el);
+        }
+      });
     })();
   </script>
 </body>

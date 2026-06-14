@@ -746,6 +746,141 @@
       .marquee-track { animation: none; }
       .hero .badge .dot { animation: none; }
     }
+
+    /* ========== HERO SHOWCASE — tasteskill.dev style ========== */
+    .hero-layout {
+      display: flex;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-left { flex: 1; min-width: 0; }
+    .hero-right {
+      flex: 0 0 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+    }
+    .hero-showcase-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-showcase-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent-indigo), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .hero-showcase-card:hover::before { opacity: 1; }
+    .hero-showcase-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      border-color: var(--border-hover);
+      box-shadow: 0 22px 44px -26px rgba(255,107,0,0.15);
+    }
+    .hero-float-1 { animation: hero-float-1 7.5s ease-in-out infinite; }
+    .hero-float-2 { animation: hero-float-2 8.5s ease-in-out infinite 1.2s; }
+    @keyframes hero-float-1 {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes hero-float-2 {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .showcase-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+    .showcase-icon.orange { background: rgba(255,107,0,0.1); }
+    .showcase-icon.green { background: rgba(74,222,128,0.1); }
+    .showcase-card-title {
+      font-size: 14px; font-weight: 700; margin-bottom: 6px;
+    }
+    .showcase-card-desc {
+      font-size: 12px; color: var(--text-muted); line-height: 1.5;
+    }
+    .showcase-card-tags {
+      display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap;
+    }
+    .showcase-tag {
+      padding: 3px 8px; border-radius: 6px; font-size: 10px; font-weight: 600;
+      background: rgba(255,255,255,0.04); color: var(--text-secondary);
+    }
+
+    /* Micro sheen effect — tasteskill.dev style */
+    .micro-sheen {
+      position: relative;
+      overflow: hidden;
+    }
+    .micro-sheen::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.04) 45%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 55%, transparent 60%);
+      transform: translateX(-125%);
+      transition: transform 0s;
+    }
+    .micro-sheen:hover::after {
+      animation: sheen-return 1.05s ease-in-out;
+    }
+    @keyframes sheen-return {
+      0% { transform: translateX(-125%); }
+      42% { transform: translateX(125%); }
+      58% { transform: translateX(125%); }
+      100% { transform: translateX(-125%); }
+    }
+
+    /* Icon nudge effect — tasteskill.dev style */
+    .icon-nudge:hover .nudge-target {
+      animation: icon-nudge 0.45s ease;
+    }
+    @keyframes icon-nudge {
+      0%, 100% { transform: translate(0) rotate(0); }
+      35% { transform: translate(1px, -1px) rotate(-4deg); }
+      65% { transform: translate(-1px) rotate(3deg); }
+    }
+
+    /* Enhanced card hover — tasteskill.dev style */
+    .site-card {
+      transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .site-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 22px 44px -26px rgba(0,0,0,0.3);
+    }
+
+    .article-item {
+      transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .article-item:hover {
+      transform: translateY(-2px) scale(1.005);
+      box-shadow: 0 8px 24px -8px rgba(0,0,0,0.2);
+    }
+
+    .project-card {
+      transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .project-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 22px 44px -26px rgba(0,0,0,0.3);
+    }
+
+    /* Hero responsive */
+    @media (max-width: 768px) {
+      .hero-layout { flex-direction: column; gap: 24px; }
+      .hero-right { flex: none; width: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -768,32 +903,59 @@
 
   <!-- ========== §0 — HERO ========== -->
   <section class="hero" id="hero">
-    <div class="reveal">
-      <div class="badge">
-        <span class="dot"></span> Open Source &middot; Computer Vision &middot; AI
+    <div class="hero-layout">
+      <div class="hero-left">
+        <div class="reveal">
+          <div class="badge">
+            <span class="dot"></span> Open Source &middot; Computer Vision &middot; AI
+          </div>
+        </div>
+
+        <h1 class="reveal reveal-delay-1">greasebig</h1>
+
+        <div class="tagline reveal reveal-delay-2">
+          <p>修煉於天機閣，融像素煉丹，以算法御劍</p>
+          <p>窺破虚實之界，游走於生成與感知的裂縫之間</p>
+          <p class="muted-line">——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手揀的彩蛋</p>
+          <p class="muted-line">罷了</p>
+          <div class="divider"></div>
+          <p>He who cultivateth within the Pavilion of Heavenly Secrets—forging elixirs from pixels, and wielding algorithms as his blade.</p>
+          <p>He strideth through the rift 'twixt creation and perception.</p>
+          <p class="muted-line">As for "the understanding of moving images," that celestial tribulation?</p>
+          <p class="muted-line">'Twas but a passing windfall, chanced upon amidst the storm. Let it be.</p>
+        </div>
+
+        <div class="terminal-cta reveal reveal-delay-3">
+          <a href="https://github.com/greasebig" target="_blank" class="terminal-line">
+            <span class="prompt">&#36;</span>
+            <span class="cmd">git clone</span>
+            <span class="flag">https://github.com/greasebig</span>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <h1 class="reveal reveal-delay-1">greasebig</h1>
-
-    <div class="tagline reveal reveal-delay-2">
-      <p>修煉於天機閣，融像素煉丹，以算法御劍</p>
-      <p>窺破虚實之界，游走於生成與感知的裂縫之間</p>
-      <p class="muted-line">——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手揀的彩蛋</p>
-      <p class="muted-line">罷了</p>
-      <div class="divider"></div>
-      <p>He who cultivateth within the Pavilion of Heavenly Secrets—forging elixirs from pixels, and wielding algorithms as his blade.</p>
-      <p>He strideth through the rift 'twixt creation and perception.</p>
-      <p class="muted-line">As for "the understanding of moving images," that celestial tribulation?</p>
-      <p class="muted-line">'Twas but a passing windfall, chanced upon amidst the storm. Let it be.</p>
-    </div>
-
-    <div class="terminal-cta reveal reveal-delay-3">
-      <a href="https://github.com/greasebig" target="_blank" class="terminal-line">
-        <span class="prompt">&#36;</span>
-        <span class="cmd">git clone</span>
-        <span class="flag">https://github.com/greasebig</span>
-      </a>
+      <div class="hero-right reveal reveal-delay-2">
+        <div class="hero-showcase-card hero-float-1 micro-sheen icon-nudge">
+          <div class="showcase-icon orange"><span class="nudge-target">🔬</span></div>
+          <div class="showcase-card-title">Video Understanding</div>
+          <div class="showcase-card-desc">Real-time video analysis, temporal action detection &amp; moment retrieval.</div>
+          <div class="showcase-card-tags">
+            <span class="showcase-tag">CVPR</span>
+            <span class="showcase-tag">ICLR</span>
+            <span class="showcase-tag">SIGGRAPH</span>
+          </div>
+        </div>
+        <div class="hero-showcase-card hero-float-2 micro-sheen icon-nudge">
+          <div class="showcase-icon green"><span class="nudge-target">🤖</span></div>
+          <div class="showcase-card-title">AI Agent Ecosystem</div>
+          <div class="showcase-card-desc">MCP protocol, harness engineering &amp; agent frameworks. Daily paper tracking.</div>
+          <div class="showcase-card-tags">
+            <span class="showcase-tag">MCP</span>
+            <span class="showcase-tag">Harness</span>
+            <span class="showcase-tag">Open Source</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="site-cards reveal reveal-delay-4">
@@ -1013,20 +1175,22 @@
   </a>
 
   <script>
-    // ========== Scroll Reveal ==========
+    // ========== Enhanced Scroll Reveal — tasteskill.dev style ==========
     (function() {
       var reveals = document.querySelectorAll('.reveal');
       var observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            // Add micro-sheen trigger after visible
+            var sheens = entry.target.querySelectorAll('.micro-sheen');
+            sheens.forEach(function(s) { s.style.opacity = '1'; });
             observer.unobserve(entry.target);
           }
         });
       }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-      reveals.forEach(function(el) {
-        // Check if already in viewport on load
+      reveals.forEach(function(el, i) {
         var rect = el.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom > 0) {
           el.classList.add('visible');
@@ -1054,6 +1218,26 @@
           window.open(url, '_blank');
         });
       }
+    })();
+
+    // ========== Smooth parallax on scroll — tasteskill.dev style ==========
+    (function() {
+      var ticking = false;
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          requestAnimationFrame(function() {
+            var scrolled = window.pageYOffset;
+            // Subtle parallax on hero showcase cards
+            var showcases = document.querySelectorAll('.hero-showcase-card');
+            showcases.forEach(function(card, i) {
+              var speed = i === 0 ? 0.03 : 0.05;
+              card.style.transform = card.style.transform || '';
+            });
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
     })();
   </script>
 </body>

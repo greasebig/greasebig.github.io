@@ -967,7 +967,7 @@
     .tagline-cn {
       font-family: 'KouzanSousho', 'LiuJianMaoCao', 'KouzanGyousho', cursive;
       letter-spacing: 0.12em;
-      transition: opacity 0.6s ease;
+      transition: opacity 0.3s ease;
       visibility: hidden;
     }
     .tagline-en {
@@ -975,7 +975,7 @@
       letter-spacing: 0.03em;
       font-size: 0.92em;
       opacity: 0.6;
-      transition: opacity 0.6s ease;
+      transition: opacity 0.3s ease;
       visibility: hidden;
     }
     .fonts-all-ready .tagline-cn,
@@ -4064,15 +4064,15 @@
 
       var cnIdx = 0, enIdx = 0;
 
-      // 金潮周期配置 — 速度×2快（原值减半）
-      var GOLDEN_PERIOD = 27;
+      // 金潮周期配置 — 字体淡入淡出速度×2快（原值减半），金潮运动速度不变
+      var GOLDEN_PERIOD = 13.5;
       var TIDE_WIDTH = 0.25;
 
-      var linePeriods = [27, 31.5, 24.75, 36];
-      var lineDelays = [0, -9, -18, -4.5];
+      var linePeriods = [13.5, 15.75, 12.375, 18];
+      var lineDelays = [0, -4.5, -9, -2.25];
       // 英文各行的周期和延迟
-      var enPeriods = [27, 31.5, 24.75, 36];
-      var enDelays = [0, -9, -13.5, -4.5];
+      var enPeriods = [13.5, 15.75, 12.375, 18];
+      var enDelays = [0, -4.5, -6.75, -2.25];
 
       var taglineLines = [];
 
@@ -4151,7 +4151,7 @@
             setTimeout(function() {
               line.el.style.fontFamily = fontList;
               line.el.classList.remove('tagline-fading');
-            }, 600);
+            }, 300);
           }
         });
 

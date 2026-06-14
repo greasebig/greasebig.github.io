@@ -982,9 +982,13 @@
       });
 
       // ===== GA Dashboard Live Stats =====
-      (function() {
+      function renderGADashboard() {
         var visits = getVisits();
-        if (!visits || visits.length === 0) return;
+        if (!visits || visits.length === 0) {
+          var emptyEl = document.getElementById('gaTotalVisits');
+          if (emptyEl) emptyEl.textContent = '0';
+          return;
+        }
 
         // Calculate metrics
         var totalVisits = visits.length;
@@ -995,6 +999,8 @@
         var vpnCount = 0;
         var recent24h = 0;
         var now = Date.now();
+        var hourBuckets = {};
+        for (var h = 0; h < 24; h++) hourBuckets[h] = 0;
 
         visits.forEach(function(v) {
           if (v.ip && v.ip !== '?') uniqueIPs[v.ip] = true;
@@ -1017,46 +1023,92 @@
           if (/Mobile|Android|iPhone/i.test(ua)) device = 'Mobile';
           else if (/iPad|Tablet/i.test(ua)) device = 'Tablet';
           devices[device] = (devices[device] || 0) + 1;
+
+          // Hour bucket for timeline
+          if (v.time) {
+            var date = new Date(v.time);
+            var hour = date.getHours();
+            if (now - v.time < 86400000) hourBuckets[hour]++;
+          }
         });
 
-        // Render live stats grid
-        var statsHTML = '';
-        var metrics = [
-          { label: 'Total Visits', value: totalVisits, color: 'var(--accent)' },
-          { label: 'Unique IPs', value: Object.keys(uniqueIPs).length, color: '#10b981' },
-          { label: 'Countries', value: Object.keys(countries).length, color: '#f59e0b' },
-          { label: 'Last 24h', value: recent24h, color: '#ec4899' }
-        ];
-        metrics.forEach(function(m) {
-          statsHTML += '<div style="padding:10px;border-radius:10px;background:rgba(99,102,241,0.04);text-align:center;">' +
-            '<div style="font-size:20px;font-weight:800;color:' + m.color + ';">' + m.value + '</div>' +
-            '<div style="font-size:10px;color:var(--muted);margin-top:2px;">' + m.label + '</div></div>';
-        });
-        var gaLiveEl = document.getElementById('gaLiveStats');
-        if (gaLiveEl) gaLiveEl.innerHTML = statsHTML;
+        // Update metric cards
+        var el;
+        el = document.getElementById('gaTotalVisits'); if (el) el.textContent = totalVisits;
+        el = document.getElementById('gaUniqueIPs'); if (el) el.textContent = Object.keys(uniqueIPs).length;
+        el = document.getElementById('gaCountries'); if (el) el.textContent = Object.keys(countries).length;
+        el = document.getElementById('gaRecent24h'); if (el) el.textContent = recent24h;
 
-        // Render device/browser bars
-        var barsHTML = '';
-        var allCategories = [
-          { name: 'Browsers', items: browsers },
-          { name: 'Devices', items: devices }
-        ];
-        allCategories.forEach(function(cat) {
-          var sorted = Object.keys(cat.items).sort(function(a, b) { return cat.items[b] - cat.items[a]; });
-          var maxVal = sorted.length > 0 ? cat.items[sorted[0]] : 1;
-          barsHTML += '<div style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.7);margin:6px 0 4px;">' + cat.name + '</div>';
-          sorted.slice(0, 4).forEach(function(key) {
-            var pct = Math.round(cat.items[key] / maxVal * 100);
-            barsHTML += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">' +
-              '<span style="font-size:10px;color:var(--muted);width:50px;text-align:right;">' + key + '</span>' +
-              '<div style="flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,0.06);overflow:hidden;">' +
-              '<div style="height:100%;width:' + pct + '%;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>' +
-              '<span style="font-size:10px;color:var(--muted);">' + cat.items[key] + '</span></div>';
+        // Render browser bars
+        function renderBarChart(containerId, items, accentColor) {
+          var sorted = Object.keys(items).sort(function(a, b) { return items[b] - items[a]; });
+          var maxVal = sorted.length > 0 ? items[sorted[0]] : 1;
+          var html = '';
+          sorted.slice(0, 5).forEach(function(key) {
+            var pct = Math.round(items[key] / maxVal * 100);
+            html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">' +
+              '<span style="font-size:10px;color:var(--text-secondary);width:48px;text-align:right;white-space:nowrap;">' + key + '</span>' +
+              '<div style="flex:1;height:8px;border-radius:4px;background:rgba(255,255,255,0.06);overflow:hidden;">' +
+              '<div style="height:100%;width:' + pct + '%;border-radius:4px;background:' + accentColor + ';transition:width 0.6s ease;"></div></div>' +
+              '<span style="font-size:10px;color:var(--text-secondary);font-weight:600;min-width:20px;text-align:right;">' + items[key] + '</span></div>';
           });
-        });
-        var gaDeviceEl = document.getElementById('gaDeviceBars');
-        if (gaDeviceEl) gaDeviceEl.innerHTML = barsHTML;
-      })();
+          var container = document.getElementById(containerId);
+          if (container) container.innerHTML = html;
+        }
+
+        renderBarChart('gaBrowserBars', browsers, 'linear-gradient(90deg,#6366f1,#818cf8)');
+        renderBarChart('gaDeviceBars', devices, 'linear-gradient(90deg,#10b981,#34d399)');
+
+        // VPN stats
+        var vpnEl = document.getElementById('gaVPNStats');
+        if (vpnEl) {
+          var vpnPct = totalVisits > 0 ? Math.round(vpnCount / totalVisits * 100) : 0;
+          vpnEl.innerHTML = '<div style="display:flex;gap:16px;">' +
+            '<div style="text-align:center;"><div style="font-size:22px;font-weight:900;color:#f59e0b;">' + vpnCount + '</div><div style="font-size:10px;color:var(--muted);">VPN</div></div>' +
+            '<div style="text-align:center;"><div style="font-size:22px;font-weight:900;color:#10b981;">' + (totalVisits - vpnCount) + '</div><div style="font-size:10px;color:var(--muted);">Direct</div></div>' +
+            '</div>' +
+            '<div style="margin-top:8px;height:6px;border-radius:3px;background:rgba(255,255,255,0.06);overflow:hidden;">' +
+            '<div style="height:100%;width:' + vpnPct + '%;background:#f59e0b;border-radius:3px;"></div></div>' +
+            '<div style="font-size:9px;color:var(--muted);margin-top:4px;">' + vpnPct + '% using VPN</div>';
+        }
+
+        // Top countries
+        var countryEl = document.getElementById('gaCountryBars');
+        if (countryEl) {
+          var sortedCountries = Object.keys(countries).sort(function(a, b) { return countries[b] - countries[a]; });
+          var maxCountry = sortedCountries.length > 0 ? countries[sortedCountries[0]] : 1;
+          var chtml = '';
+          sortedCountries.slice(0, 5).forEach(function(c) {
+            var pct = Math.round(countries[c] / maxCountry * 100);
+            chtml += '<div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">' +
+              '<span style="font-size:10px;color:var(--text-secondary);width:56px;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + c + '</span>' +
+              '<div style="flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,0.06);overflow:hidden;">' +
+              '<div style="height:100%;width:' + pct + '%;border-radius:3px;background:linear-gradient(90deg,#ec4899,#f472b6);"></div></div>' +
+              '<span style="font-size:10px;color:var(--text-secondary);font-weight:600;">' + countries[c] + '</span></div>';
+          });
+          countryEl.innerHTML = chtml;
+        }
+
+        // Timeline — last 24h by hour
+        var timelineEl = document.getElementById('gaTimeline');
+        if (timelineEl) {
+          var maxHour = 1;
+          for (var h = 0; h < 24; h++) { if (hourBuckets[h] > maxHour) maxHour = hourBuckets[h]; }
+          var thtml = '';
+          var currentHour = new Date().getHours();
+          for (var h = 0; h < 24; h++) {
+            var height = Math.max(2, (hourBuckets[h] / maxHour) * 44);
+            var isCurrent = h === currentHour;
+            var color = isCurrent ? '#6366f1' : 'rgba(99,102,241,0.3)';
+            thtml += '<div title="' + h + ':00 — ' + hourBuckets[h] + ' visits" style="flex:1;height:' + height + 'px;background:' + color + ';border-radius:2px;transition:height 0.4s ease;cursor:default;' + (isCurrent ? 'box-shadow:0 0 6px rgba(99,102,241,0.5);' : '') + '"></div>';
+          }
+          timelineEl.innerHTML = thtml;
+        }
+      }
+
+      // Render GA dashboard immediately and refresh every 10s
+      renderGADashboard();
+      setInterval(renderGADashboard, 10000);
 
     })();
   </script>
@@ -1129,24 +1181,63 @@
         </div>
 
         <!-- Google Analytics — Live Dashboard -->
-        <div id="gaDashboard" style="padding:22px 20px;border-radius:18px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(15,23,42,0.08);">
-          <h3 style="font-size:16px;font-weight:700;margin:0 0 4px;">🔬 Google Analytics</h3>
-          <p style="color:var(--muted);font-size:12px;margin:0 0 14px;">Professional analytics — full visitor insights (geolocation, duration, device, browser)</p>
-          <div style="display:flex;flex-direction:column;gap:12px;">
-            <div style="display:flex;align-items:center;gap:8px;padding:12px;border-radius:12px;background:rgba(99,102,241,0.06);">
-              <div style="width:8px;height:8px;border-radius:50%;background:var(--accent-4);"></div>
-              <span style="font-size:13px;font-weight:500;">GA4 tracking active on all pages</span>
+        <div id="gaDashboard" style="padding:0;border-radius:20px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(15,23,42,0.08);overflow:hidden;">
+          <div style="padding:20px 22px 12px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;">
+            <div>
+              <h3 style="font-size:15px;font-weight:700;margin:0;">🔬 Google Analytics</h3>
+              <p style="color:var(--muted);font-size:11px;margin:2px 0 0;">Live visitor insights — geolocation, device, browser</p>
             </div>
-            <div id="gaLiveStats" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px;">
-              <!-- Populated by JS -->
+            <div style="display:flex;align-items:center;gap:6px;">
+              <div style="width:8px;height:8px;border-radius:50%;background:#10b981;animation:gaPulse 2s ease-in-out infinite;"></div>
+              <span style="font-size:11px;font-weight:600;color:#10b981;">LIVE</span>
             </div>
-            <div id="gaDeviceChart" style="margin-top:8px;padding:12px;border-radius:12px;background:rgba(99,102,241,0.04);">
-              <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">Device / Browser Breakdown</div>
-              <div id="gaDeviceBars"></div>
+          </div>
+          <div style="padding:18px 22px;">
+            <div id="gaLiveStats" style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;">
+              <div style="text-align:center;padding:14px 8px;border-radius:14px;background:rgba(99,102,241,0.06);">
+                <div id="gaTotalVisits" style="font-size:26px;font-weight:900;color:var(--accent);">—</div>
+                <div style="font-size:10px;color:var(--muted);margin-top:3px;">Total Visits</div>
+              </div>
+              <div style="text-align:center;padding:14px 8px;border-radius:14px;background:rgba(16,185,129,0.06);">
+                <div id="gaUniqueIPs" style="font-size:26px;font-weight:900;color:#10b981;">—</div>
+                <div style="font-size:10px;color:var(--muted);margin-top:3px;">Unique IPs</div>
+              </div>
+              <div style="text-align:center;padding:14px 8px;border-radius:14px;background:rgba(245,158,11,0.06);">
+                <div id="gaCountries" style="font-size:26px;font-weight:900;color:#f59e0b;">—</div>
+                <div style="font-size:10px;color:var(--muted);margin-top:3px;">Countries</div>
+              </div>
+              <div style="text-align:center;padding:14px 8px;border-radius:14px;background:rgba(236,72,153,0.06);">
+                <div id="gaRecent24h" style="font-size:26px;font-weight:900;color:#ec4899;">—</div>
+                <div style="font-size:10px;color:var(--muted);margin-top:3px;">Last 24h</div>
+              </div>
             </div>
-            <div style="font-size:12px;color:var(--muted);line-height:1.6;margin-top:4px;">
-              Tracking: page views, session duration, bounce rate, user flow, geolocation, device/browser, real-time active users<br>
-              <a href="https://analytics.google.com/" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:500;">Open Google Analytics Dashboard →</a>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;">
+              <div style="padding:14px;border-radius:14px;background:rgba(99,102,241,0.04);">
+                <div style="font-size:11px;font-weight:700;color:var(--text-secondary);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.05em;">🌐 Browsers</div>
+                <div id="gaBrowserBars"></div>
+              </div>
+              <div style="padding:14px;border-radius:14px;background:rgba(99,102,241,0.04);">
+                <div style="font-size:11px;font-weight:700;color:var(--text-secondary);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.05em;">💻 Devices</div>
+                <div id="gaDeviceBars"></div>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;">
+              <div style="padding:14px;border-radius:14px;background:rgba(99,102,241,0.04);">
+                <div style="font-size:11px;font-weight:700;color:var(--text-secondary);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.05em;">🛡️ VPN Detection</div>
+                <div id="gaVPNStats"></div>
+              </div>
+              <div style="padding:14px;border-radius:14px;background:rgba(99,102,241,0.04);">
+                <div style="font-size:11px;font-weight:700;color:var(--text-secondary);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.05em;">🌍 Top Countries</div>
+                <div id="gaCountryBars"></div>
+              </div>
+            </div>
+            <div style="margin-top:14px;padding:14px;border-radius:14px;background:rgba(99,102,241,0.04);">
+              <div style="font-size:11px;font-weight:700;color:var(--text-secondary);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.05em;">📊 Recent Visits Timeline</div>
+              <div id="gaTimeline" style="display:flex;gap:3px;align-items:flex-end;height:48px;overflow:hidden;"></div>
+            </div>
+            <div style="font-size:11px;color:var(--muted);line-height:1.6;margin-top:14px;display:flex;justify-content:space-between;align-items:center;">
+              <span>Tracking: page views, session duration, geolocation, device/browser</span>
+              <a href="https://analytics.google.com/" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:600;font-size:11px;">GA Dashboard →</a>
             </div>
           </div>
         </div>
