@@ -28,7 +28,6 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='a' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient><filter id='g'><feGaussianBlur stdDeviation='2' result='b'/><feMerge><feMergeNode in='b'/><feMergeNode in='SourceGraphic'/></feMerge></filter></defs><rect width='100' height='100' rx='20' fill='%230a0a1a'/><circle cx='50' cy='50' r='38' fill='none' stroke='url(%23a)' stroke-width='2.5' opacity='0.4'/><circle cx='50' cy='50' r='28' fill='none' stroke='url(%23a)' stroke-width='1.5' opacity='0.6' stroke-dasharray='4 6'/><circle cx='50' cy='50' r='18' fill='none' stroke='%23fff' stroke-width='1' opacity='0.3'/><g filter='url(%23g)'><path d='M50 16 L56 34 L50 28 L44 34 Z' fill='%23fff' opacity='0.9'/><path d='M50 84 L44 66 L50 72 L56 66 Z' fill='%23fff' opacity='0.9'/><path d='M16 50 L34 44 L28 50 L34 56 Z' fill='%23fff' opacity='0.9'/><path d='M84 50 L66 56 L72 50 L66 44 Z' fill='%23fff' opacity='0.9'/></g><circle cx='50' cy='50' r='6' fill='url(%23a)'/><circle cx='50' cy='50' r='3' fill='%23fff'/><circle cx='50' cy='12' r='2.5' fill='%236366f1'/><circle cx='50' cy='88' r='2.5' fill='%23ec4899'/><circle cx='12' cy='50' r='2.5' fill='%238b5cf6'/><circle cx='88' cy='50' r='2.5' fill='%23f59e0b'/><circle cx='23' cy='23' r='2' fill='%2310b981' opacity='0.7'/><circle cx='77' cy='23' r='2' fill='%23ec4899' opacity='0.7'/><circle cx='23' cy='77' r='2' fill='%236366f1' opacity='0.7'/><circle cx='77' cy='77' r='2' fill='%238b5cf6' opacity='0.7'/></svg>" type="image/svg+xml" />
 
   <!-- 预加载关键字体（最高优先级，消除首次加载闪烁） -->
-  <link rel="preload" href="fonts/ZhiMangXing.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/KouzanBrushFontSousyo.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/CloisterBlack.woff2" as="font" type="font/woff2" crossorigin />
 
@@ -54,17 +53,7 @@
       font-display: block;
     }
 
-    /* 3. 繁体狂草：简繁同形字+正宗中国狂草风格（缺19繁体字由日式字体兜底） — 自托管 WOFF2 */
-    @font-face {
-      font-family: 'ZhiMangXing';
-      src: url('fonts/ZhiMangXing.woff2') format('woff2'),
-           url('fonts/ZhiMangXing.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-      font-display: block;
-    }
-
-    /* 4. 毛草：连写感强，增加变化（缺19繁体字由日式字体兜底） — 自托管 WOFF2 */
+    /* 3. 毛草：连写感强，增加变化（缺19繁体字由日式字体兜底） — 自托管 WOFF2 */
     @font-face {
       font-family: 'LiuJianMaoCao';
       src: url('fonts/LiuJianMaoCao.woff2') format('woff2'),
@@ -976,7 +965,7 @@
 
     /* 个人介绍文字：所有古体/狂草字体未就绪前不显示，避免任何闪烁 */
     .tagline-cn {
-      font-family: 'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', cursive;
+      font-family: 'KouzanSousho', 'LiuJianMaoCao', 'KouzanGyousho', cursive;
       letter-spacing: 0.12em;
       transition: opacity 0.6s ease;
       visibility: hidden;
@@ -2391,6 +2380,15 @@
 
         </div>
 
+        <!-- Alternative Styles — 4 style variations of this page -->
+        <div class="style-switcher" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:12px 0 0;">
+          <span style="color:var(--muted);font-size:12px;display:flex;align-items:center;gap:4px;margin-right:4px;">🎨 Alt styles:</span>
+          <a href="./tasteskill.html" style="font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted);text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">Taste Skill</a>
+          <a href="./floria.html" style="font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted);text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">Floria</a>
+          <a href="./collectiveos.html" style="font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted);text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">Collective OS</a>
+          <a href="./itssoftly.html" style="font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted);text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">Softly</a>
+        </div>
+
         <div class="links-row">
 
           <a class="gls-btn primary" href="https://github.com/greasebig" target="_blank">
@@ -2764,7 +2762,7 @@
     // ========== 全部古体/狂草字体就绪检测：未加载完不显示个人介绍 ==========
     (function() {
       // 需要等待的关键字体：中文狂草 + 英文古体
-      var cnFonts = ['ZhiMangXing', 'KouzanSousho'];
+      var cnFonts = ['KouzanSousho'];
       var enFonts = ['CloisterBlack', 'UnifrakturMaguntia'];
 
       function markReady() {
@@ -2792,7 +2790,6 @@
       // 主动加载关键字体：用 FontFace API 确保浏览器下载
       if (typeof FontFace !== 'undefined') {
         var loadTasks = [
-          new FontFace('ZhiMangXing', "url('fonts/ZhiMangXing.woff2')").load(),
           new FontFace('KouzanSousho', "url('fonts/KouzanBrushFontSousyo.woff2')").load(),
           new FontFace('CloisterBlack', "url('fonts/CloisterBlack.woff2')").load(),
           new FontFace('UnifrakturMaguntia', "url('https://fonts.gstatic.com/s/unifrakturmaguntia/v16/WWXPluV8XUxT2LEmYVP9X5y7TTg.woff2')").load()
@@ -4038,16 +4035,15 @@
       // KouzanSousho（衡山草書）：狂草风格，粗犷潦草，完整覆盖所有繁体字
       // KouzanGyousho（衡山行書）：行书风格，流畅飘逸，完整覆盖（除—和揀/原撿已换为揀）
       // 中文狂草/行书字体轮换列表
-      // ZhiMangXing（繁体狂草）：支持40/59字（简繁同形字），缺19繁体字由日式字体兜底
-      // LiuJianMaoCao（毛草）：同上40/59字，连写感强
-      // KouzanSousho（衡山草書）：57/59字，日式狂草
+      // KouzanSousho（衡山草書）：57/59字，日式狂草，繁体完整覆盖
+      // LiuJianMaoCao（毛草）：连写感强
       // KouzanGyousho（衡山行書）：58/59字，日式行书
       // Noto Serif TC 已从回退链移除，绝不出现楷书
       var cnFonts = [
-        "'ZhiMangXing', 'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', cursive",
-        "'LiuJianMaoCao', 'ZhiMangXing', 'KouzanSousho', 'KouzanGyousho', cursive",
-        "'KouzanSousho', 'ZhiMangXing', 'KouzanGyousho', 'LiuJianMaoCao', cursive",
-        "'KouzanGyousho', 'LiuJianMaoCao', 'KouzanSousho', 'ZhiMangXing', cursive"
+        "'KouzanSousho', 'LiuJianMaoCao', 'KouzanGyousho', cursive",
+        "'LiuJianMaoCao', 'KouzanSousho', 'KouzanGyousho', cursive",
+        "'KouzanGyousho', 'KouzanSousho', 'LiuJianMaoCao', cursive",
+        "'KouzanSousho', 'KouzanGyousho', 'LiuJianMaoCao', cursive"
       ];
 
       // 英文古英语/黑体字字体轮换列表

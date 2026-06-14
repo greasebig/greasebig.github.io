@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>greasebig — Taste Skill Edition</title>
+  <link rel="canonical" href="https://greasebig.github.io/tasteskill.html" />
+  <meta property="og:title" content="greasebig" />
+  <meta property="og:description" content="Open Source · Computer Vision · AI — Cultivating within the Pavilion of Heavenly Secrets" />
+  <meta property="og:url" content="https://greasebig.github.io/tasteskill.html" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="greasebig — Open Source · Computer Vision · AI. Cultivating within the Pavilion of Heavenly Secrets." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230A0A0A'/><text x='50' y='68' font-family='monospace' font-size='50' fill='%23FAFAFA' text-anchor='middle'>G</text></svg>" type="image/svg+xml" />
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6VD55179J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q6VD55179J');
+  </script>
+  <!-- Visitor Badge pixel -->
+  <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgreasebig.github.io%2Ftasteskill.html&label=&countColor=%236366f1&style=none" alt="" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0A0A0A;
+      --bg-card: #1A1A1A;
+      --bg-card-hover: #222222;
+      --text-primary: #FAFAFA;
+      --text-secondary: #888888;
+      --text-muted: #555555;
+      --border: rgba(255,255,255,0.06);
+      --border-hover: rgba(255,255,255,0.12);
+      --accent-green: #4ADE80;
+      --accent-indigo: #818CF8;
+      --accent-amber: #FBBF24;
+      --accent-pink: #F472B6;
+      --accent-cyan: #22D3EE;
+      --radius: 12px;
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Noise texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 256px 256px;
+    }
+
+    /* ========== NAVIGATION ========== */
+    nav {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(10,10,10,0.8);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    nav .nav-brand {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav .nav-brand span.brand-prompt {
+      color: var(--accent-green);
+    }
+
+    nav .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      letter-spacing: 0.02em;
+    }
+
+    nav .nav-links a:hover {
+      color: var(--text-primary);
+    }
+
+    nav .back-link {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    nav .back-link:hover {
+      color: var(--text-primary);
+      border-color: var(--border-hover);
+    }
+
+    /* ========== SECTION NUMBERING ========== */
+    .section-num {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-num::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 32px 80px;
+      max-width: 960px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .hero .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      letter-spacing: 0.04em;
+      margin-bottom: 32px;
+      width: fit-content;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .hero .badge .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      animation: dot-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes dot-pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .hero h1 {
+      font-family: var(--font-sans);
+      font-size: clamp(64px, 10vw, 96px);
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      color: var(--text-primary);
+      margin-bottom: 32px;
+    }
+
+    .hero .tagline {
+      max-width: 600px;
+    }
+
+    .hero .tagline p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+    }
+
+    .hero .tagline p.muted-line {
+      color: var(--text-muted);
+    }
+
+    .hero .tagline .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--text-muted);
+      margin: 20px 0;
+    }
+
+    /* Terminal CTA */
+    .terminal-cta {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .terminal-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 14px;
+      color: var(--text-secondary);
+      padding: 12px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    .terminal-line:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+    }
+
+    .terminal-line .prompt {
+      color: var(--accent-green);
+      font-weight: 600;
+    }
+
+    .terminal-line .cmd {
+      color: var(--text-primary);
+    }
+
+    .terminal-line .flag {
+      color: var(--text-muted);
+    }
+
+    /* ========== SITE CARDS ========== */
+    .site-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 12px;
+      margin-top: 48px;
+    }
+
+    .site-card {
+      display: block;
+      padding: 20px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .site-card:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+
+    .site-card .card-icon {
+      font-size: 20px;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .site-card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .site-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .site-card .arrow {
+      position: absolute;
+      top: 20px; right: 16px;
+      color: var(--text-muted);
+      font-size: 14px;
+      transition: transform 0.2s ease;
+    }
+
+    .site-card:hover .arrow {
+      transform: translate(2px, -2px);
+      color: var(--text-secondary);
+    }
+
+    /* ========== SECTIONS ========== */
+    .section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 32px;
+    }
+
+    .section-title {
+      font-size: clamp(40px, 5vw, 56px);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      max-width: 500px;
+    }
+
+    /* ========== ARTICLE LIST ========== */
+    .article-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .article-item {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 20px 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .article-item:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+    }
+
+    .article-item .art-num {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      min-width: 24px;
+    }
+
+    .article-item .art-content {
+      flex: 1;
+    }
+
+    .article-item .art-content h3 {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .article-item .art-content .art-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .article-item .art-tag {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 500;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(129,140,248,0.1);
+      color: var(--accent-indigo);
+      letter-spacing: 0.04em;
+    }
+
+    /* ========== PROJECT CARDS ========== */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+
+    .project-card {
+      padding: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .project-card:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+
+    .project-card .proj-type {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 4px;
+      width: fit-content;
+      letter-spacing: 0.04em;
+    }
+
+    .proj-type.tool { background: rgba(74,222,128,0.08); color: var(--accent-green); }
+    .proj-type.resource { background: rgba(251,191,36,0.08); color: var(--accent-amber); }
+    .proj-type.cvpr { background: rgba(129,140,248,0.08); color: var(--accent-indigo); }
+    .proj-type.iclr { background: rgba(244,114,182,0.08); color: var(--accent-pink); }
+    .proj-type.siggraph { background: rgba(34,211,238,0.08); color: var(--accent-cyan); }
+    .proj-type.challenge { background: rgba(129,140,248,0.08); color: var(--accent-indigo); }
+
+    .project-card h3 {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .project-card p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .project-card .proj-link {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s ease;
+    }
+
+    .project-card:hover .proj-link {
+      color: var(--accent-green);
+    }
+
+    .proj-link svg {
+      width: 12px; height: 12px;
+    }
+
+    /* ========== MARQUEE ========== */
+    .marquee-wrap {
+      overflow: hidden;
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 0;
+    }
+
+    .marquee-track {
+      display: flex;
+      gap: 48px;
+      animation: marquee-scroll 30s linear infinite;
+      width: max-content;
+    }
+
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    .marquee-item {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .marquee-item .mi-dot {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--text-muted);
+    }
+
+    @keyframes marquee-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ========== EXPLORED TABLE ========== */
+    .explored-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .explored-table tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s ease;
+    }
+
+    .explored-table tr:hover {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .explored-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .explored-table td {
+      padding: 16px 0;
+      vertical-align: middle;
+    }
+
+    .explored-table td:first-child {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      width: 40px;
+    }
+
+    .explored-table .exp-name {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .explored-table .exp-venue {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .explored-table td:last-child {
+      text-align: right;
+    }
+
+    .explored-table .exp-link {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .explored-table .exp-link:hover {
+      color: var(--accent-green);
+    }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 32px;
+      text-align: center;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .footer p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer .heart {
+      display: inline-block;
+      animation: heartbeat 1.5s ease-in-out infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      15% { transform: scale(1.15); }
+      30% { transform: scale(1); }
+      45% { transform: scale(1.1); }
+    }
+
+    /* ========== SCROLL REVEAL ========== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ========== SCROLLBAR ========== */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+    /* ========== BACK TO TOP ========== */
+    .back-to-top {
+      position: fixed;
+      bottom: 32px; right: 32px;
+      width: 40px; height: 40px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: all 0.3s ease;
+      z-index: 99;
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-hover);
+    }
+
+    .back-to-top svg {
+      width: 16px; height: 16px;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      nav { padding: 12px 20px; }
+      .hero { padding: 100px 20px 60px; }
+      .hero h1 { font-size: 48px; }
+      .section { padding: 60px 20px; }
+      .section-title { font-size: 32px; }
+      .site-cards { grid-template-columns: repeat(2, 1fr); }
+      .project-grid { grid-template-columns: 1fr; }
+      nav .nav-links { gap: 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 40px; }
+      .site-cards { grid-template-columns: 1fr; }
+      .article-item { flex-direction: column; gap: 8px; }
+      nav .nav-links a:not(.back-link) { display: none; }
+    }
+
+    /* ========== REDUCED MOTION ========== */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { transition: none; opacity: 1; transform: none; }
+      .marquee-track { animation: none; }
+      .hero .badge .dot { animation: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav>
+    <a href="./" class="nav-brand">
+      <span class="brand-prompt">$</span> greasebig
+    </a>
+    <div class="nav-links">
+      <a href="#articles">Articles</a>
+      <a href="#projects">Projects</a>
+      <a href="#explored">Explored</a>
+      <a href="./" class="back-link">&larr; Main</a>
+    </div>
+  </nav>
+
+  <!-- ========== §0 — HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="reveal">
+      <div class="badge">
+        <span class="dot"></span> Open Source &middot; Computer Vision &middot; AI
+      </div>
+    </div>
+
+    <h1 class="reveal reveal-delay-1">greasebig</h1>
+
+    <div class="tagline reveal reveal-delay-2">
+      <p>修煉於天機閣，融像素煉丹，以算法御劍</p>
+      <p>窺破虚實之界，游走於生成與感知的裂縫之間</p>
+      <p class="muted-line">——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手揀的彩蛋</p>
+      <p class="muted-line">罷了</p>
+      <div class="divider"></div>
+      <p>He who cultivateth within the Pavilion of Heavenly Secrets—forging elixirs from pixels, and wielding algorithms as his blade.</p>
+      <p>He strideth through the rift 'twixt creation and perception.</p>
+      <p class="muted-line">As for "the understanding of moving images," that celestial tribulation?</p>
+      <p class="muted-line">'Twas but a passing windfall, chanced upon amidst the storm. Let it be.</p>
+    </div>
+
+    <div class="terminal-cta reveal reveal-delay-3">
+      <a href="https://github.com/greasebig" target="_blank" class="terminal-line">
+        <span class="prompt">&#36;</span>
+        <span class="cmd">git clone</span>
+        <span class="flag">https://github.com/greasebig</span>
+      </a>
+    </div>
+
+    <div class="site-cards reveal reveal-delay-4">
+      <a class="site-card" href="https://github.com/greasebig" target="_blank">
+        <span class="arrow">&nearr;</span>
+        <span class="card-icon">&#x1F3E0;</span>
+        <h3>GitHub</h3>
+        <p>Projects, articles & links</p>
+      </a>
+      <a class="site-card" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
+        <span class="arrow">&nearr;</span>
+        <span class="card-icon">&#x1F4DA;</span>
+        <h3>Papers Hub</h3>
+        <p>Daily arXiv paper tracker</p>
+      </a>
+      <a class="site-card" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
+        <span class="arrow">&nearr;</span>
+        <span class="card-icon">&#x1F916;</span>
+        <h3>Agent Index</h3>
+        <p>Meta-index of agent repos</p>
+      </a>
+      <a class="site-card" href="./articles.html">
+        <span class="arrow">&nearr;</span>
+        <span class="card-icon">&#x270D;&#xFE0F;</span>
+        <h3>Articles</h3>
+        <p>Tech deep dives & feeds</p>
+      </a>
+      <a class="site-card" href="./stats.html">
+        <span class="arrow">&nearr;</span>
+        <span class="card-icon">&#x1F4CA;</span>
+        <h3>Stats</h3>
+        <p>Live numbers & metrics</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="mi-dot"></span> Computer Vision</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Video Understanding</span>
+      <span class="marquee-item"><span class="mi-dot"></span> AI Agents</span>
+      <span class="marquee-item"><span class="mi-dot"></span> MCP Protocol</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Harness Engineering</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Open Source</span>
+      <span class="marquee-item"><span class="mi-dot"></span> World Models</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Generative AI</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Diffusion Models</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Agent Ecosystem</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item"><span class="mi-dot"></span> Computer Vision</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Video Understanding</span>
+      <span class="marquee-item"><span class="mi-dot"></span> AI Agents</span>
+      <span class="marquee-item"><span class="mi-dot"></span> MCP Protocol</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Harness Engineering</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Open Source</span>
+      <span class="marquee-item"><span class="mi-dot"></span> World Models</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Generative AI</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Diffusion Models</span>
+      <span class="marquee-item"><span class="mi-dot"></span> Agent Ecosystem</span>
+    </div>
+  </div>
+
+  <!-- ========== §1 — ARTICLES ========== -->
+  <section class="section" id="articles">
+    <div class="reveal">
+      <div class="section-num">&sect;1 &mdash; Articles</div>
+      <h2 class="section-title">Pinned Essays</h2>
+      <p class="section-subtitle">Long-form technical writing. No fluff.</p>
+    </div>
+
+    <div class="article-list reveal reveal-delay-1">
+      <a class="article-item" href="./articles/mcp-deep-dive.html" target="_blank">
+        <span class="art-num">01</span>
+        <div class="art-content">
+          <h3>MCP 深度解析</h3>
+          <div class="art-meta">
+            <span class="art-tag">MCP Protocol</span>
+            <span>2026-06-06</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-item" href="./articles/claw-runtime.html" target="_blank">
+        <span class="art-num">02</span>
+        <div class="art-content">
+          <h3>Claw Runtime 与 Agent 生态 2026</h3>
+          <div class="art-meta">
+            <span class="art-tag">Agent Ecosystem</span>
+            <span>2026-05-28</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-item" href="./articles/harness-engineering.html" target="_blank">
+        <span class="art-num">03</span>
+        <div class="art-content">
+          <h3>Harness Engineering</h3>
+          <div class="art-meta">
+            <span class="art-tag">Harness Engineering</span>
+            <span>2026-05-24</span>
+          </div>
+        </div>
+      </a>
+      <a class="article-item" href="./articles/harness-poc.html" target="_blank">
+        <span class="art-num">04</span>
+        <div class="art-content">
+          <h3>Building a Harness from Scratch</h3>
+          <div class="art-meta">
+            <span class="art-tag">Harness POC</span>
+            <span>2026-05-24</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== §2 — FEATURED PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="reveal">
+      <div class="section-num">&sect;2 &mdash; Featured Projects</div>
+      <h2 class="section-title">Original Work</h2>
+      <p class="section-subtitle">Open-source tools and resources, built from scratch.</p>
+    </div>
+
+    <div class="project-grid reveal reveal-delay-1">
+      <a class="project-card" href="https://github.com/greasebig/daily-video-papers" target="_blank">
+        <span class="proj-type tool">Tool</span>
+        <h3>Daily Video Papers</h3>
+        <p>Automated arXiv paper tracking hub for Video, World Models, Agents & Tone/Color research. Daily updates with translated abstracts.</p>
+        <span class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          daily-video-papers
+        </span>
+      </a>
+      <a class="project-card" href="https://github.com/greasebig/harness-poc" target="_blank">
+        <span class="proj-type tool">Tool</span>
+        <h3>harness-poc</h3>
+        <p>Minimal Agent Harness POC — Agent = Model + Harness. ~300 lines of Python with multi-provider support, memory, permissions, and hooks.</p>
+        <span class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          harness-poc
+        </span>
+      </a>
+      <a class="project-card" href="https://github.com/greasebig/awesome-agent-everything" target="_blank">
+        <span class="proj-type resource">Resource</span>
+        <h3>Awesome Agent Everything</h3>
+        <p>Meta-index of ALL awesome agent repos on GitHub — frameworks, skills, papers, MCP, harness & more. Auto-updated every 3 days via GitHub Actions.</p>
+        <span class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          awesome-agent-everything
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== §3 — EXPLORED ========== -->
+  <section class="section" id="explored">
+    <div class="reveal">
+      <div class="section-num">&sect;3 &mdash; Explored</div>
+      <h2 class="section-title">Reproductions</h2>
+      <p class="section-subtitle">Reproduced and explored — I've tried these.</p>
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <table class="explored-table">
+        <tr>
+          <td>01</td>
+          <td>
+            <span class="exp-name">VideoCoF</span>
+            <span class="exp-venue cvpr">CVPR 2026 Highlight</span>
+          </td>
+          <td><a href="https://github.com/greasebig/VideoCoF" target="_blank" class="exp-link">repo &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>
+            <span class="exp-name">LiveMoments</span>
+            <span class="exp-venue iclr">ICLR 2026</span>
+          </td>
+          <td><a href="https://github.com/greasebig/LiveMoments" target="_blank" class="exp-link">repo &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>
+            <span class="exp-name">DynVFX</span>
+            <span class="exp-venue siggraph">SIGGRAPH Asia 2025</span>
+          </td>
+          <td><a href="https://github.com/greasebig/dynvfx" target="_blank" class="exp-link">repo &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>
+            <span class="exp-name">ReCo</span>
+            <span class="exp-venue cvpr">CVPR</span>
+          </td>
+          <td><a href="https://github.com/greasebig/ReCo" target="_blank" class="exp-link">repo &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>
+            <span class="exp-name">Foundation Model Challenge</span>
+            <span class="exp-venue challenge">CVPR 2023</span>
+          </td>
+          <td><a href="https://github.com/greasebig/CVPR-2023-1st-foundation-model-challenge-Track-2-1th-solution" target="_blank" class="exp-link">repo &rarr;</a></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>Built with <span class="heart">&hearts;</span> &middot; &copy; 2026</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <a class="back-to-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+
+  <script>
+    // ========== Scroll Reveal ==========
+    (function() {
+      var reveals = document.querySelectorAll('.reveal');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+      reveals.forEach(function(el) {
+        // Check if already in viewport on load
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('visible');
+        } else {
+          observer.observe(el);
+        }
+      });
+    })();
+
+    // ========== Back to Top ==========
+    (function() {
+      var btn = document.querySelector('.back-to-top');
+      window.addEventListener('scroll', function() {
+        btn.classList.toggle('visible', window.scrollY > 400);
+      });
+    })();
+
+    // ========== Terminal CTA Copy ==========
+    (function() {
+      var terminalLine = document.querySelector('.terminal-line');
+      if (terminalLine) {
+        terminalLine.addEventListener('click', function(e) {
+          e.preventDefault();
+          var url = terminalLine.getAttribute('href');
+          window.open(url, '_blank');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
