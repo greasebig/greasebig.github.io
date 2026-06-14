@@ -102,7 +102,7 @@
 
     .tracker-top-row {
       display: grid;
-      grid-template-columns: 420px 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 24px;
       margin-bottom: 24px;
     }
@@ -130,11 +130,9 @@
     .globe-legend span { display: flex; align-items: center; gap: 4px; }
     .globe-legend .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
 
-    /* Right side: two stacked tickers */
+    /* Right side: tickers in grid */
     .right-tickers {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
+      display: contents;
     }
 
     /* Ticker panel */
@@ -279,46 +277,32 @@
       <p class="tracker-subtitle">Real-time visitor tracking — globe + live tickers from multiple sources</p>
 
       <div class="tracker-top-row">
-        <!-- Globe — left side, centered -->
-        <div class="globe-panel">
-          <h3>🌍 3D Globe</h3>
-          <canvas id="globeCanvas" width="760" height="760"></canvas>
-          <div class="globe-legend">
-            <span><span class="dot" style="background:#6366f1"></span> You</span>
-            <span><span class="dot" style="background:#10b981"></span> Recent</span>
-            <span><span class="dot" style="background:#f59e0b"></span> Older</span>
+        <!-- Ticker 1: ipapi.co -->
+        <div class="ticker-panel">
+          <h3>📡 ipapi.co <span class="src-badge src-ipapi">Source 1</span></h3>
+          <div class="ticker-list">
+            <div class="ticker-inner" id="ticker1"></div>
           </div>
         </div>
-
-        <!-- Right: stacked tickers from multiple sources -->
-        <div class="right-tickers">
-          <!-- Ticker 1: ipapi.co -->
-          <div class="ticker-panel">
-            <h3>📡 ipapi.co <span class="src-badge src-ipapi">Source 1</span></h3>
-            <div class="ticker-list">
-              <div class="ticker-inner" id="ticker1"></div>
-            </div>
+        <!-- Ticker 2: ipwho.is -->
+        <div class="ticker-panel">
+          <h3>📡 ipwho.is <span class="src-badge src-ipapi2">Source 2</span></h3>
+          <div class="ticker-list">
+            <div class="ticker-inner" id="ticker2"></div>
           </div>
-          <!-- Ticker 2: ipwho.is -->
-          <div class="ticker-panel">
-            <h3>📡 ipwho.is <span class="src-badge src-ipapi2">Source 2</span></h3>
-            <div class="ticker-list">
-              <div class="ticker-inner" id="ticker2"></div>
-            </div>
+        </div>
+        <!-- Ticker 3: freeipapi.com -->
+        <div class="ticker-panel">
+          <h3>📡 freeipapi.com <span class="src-badge src-ipinfo">Source 3</span></h3>
+          <div class="ticker-list">
+            <div class="ticker-inner" id="ticker3"></div>
           </div>
-          <!-- Ticker 3: freeipapi.com -->
-          <div class="ticker-panel">
-            <h3>📡 freeipapi.com <span class="src-badge src-ipinfo">Source 3</span></h3>
-            <div class="ticker-list">
-              <div class="ticker-inner" id="ticker3"></div>
-            </div>
-          </div>
-          <!-- Ticker 4: ip-api.com -->
-          <div class="ticker-panel">
-            <h3>📡 ip-api.com <span class="src-badge" style="background:rgba(245,158,11,0.2);color:#fbbf24;">Source 4</span></h3>
-            <div class="ticker-list">
-              <div class="ticker-inner" id="ticker4"></div>
-            </div>
+        </div>
+        <!-- Ticker 4: ip-api.com -->
+        <div class="ticker-panel">
+          <h3>📡 ip-api.com <span class="src-badge" style="background:rgba(245,158,11,0.2);color:#fbbf24;">Source 4</span></h3>
+          <div class="ticker-list">
+            <div class="ticker-inner" id="ticker4"></div>
           </div>
         </div>
       </div>
@@ -357,6 +341,17 @@
         <div class="summary-item">
           <div class="summary-value" id="sumAvgDuration">—</div>
           <div class="summary-label">Avg Duration</div>
+        </div>
+      </div>
+
+      <!-- Globe — bottom, full width -->
+      <div class="globe-panel" style="margin-top:24px;width:100%;max-width:1400px;min-height:520px;">
+        <h3>🌍 3D Globe</h3>
+        <canvas id="globeCanvas" width="760" height="760"></canvas>
+        <div class="globe-legend">
+          <span><span class="dot" style="background:#6366f1"></span> You</span>
+          <span><span class="dot" style="background:#10b981"></span> Recent</span>
+          <span><span class="dot" style="background:#f59e0b"></span> Older</span>
         </div>
       </div>
     </div>
@@ -776,8 +771,19 @@
         var lastX = 0;
         var currentIP = null;
 
-        // Find current IP
-        if (visits.length > 0) currentIP = visits[0].ip;
+        // Find current IP - use the most recent visit with a valid IP
+        for (var vi = 0; vi < visits.length; vi++) {
+          if (visits[vi].ip && visits[vi].ip !== '?') {
+            currentIP = visits[vi].ip;
+            break;
+          }
+        }
+        // If no valid IP in visits, try to get it now
+        if (!currentIP || currentIP === '?') {
+          fetch('https://ipapi.co/json/').then(function(r){return r.json();}).then(function(d){
+            if (d.ip) currentIP = d.ip;
+          }).catch(function(){});
+        }
 
         function resize() {
           var rect = canvas.getBoundingClientRect();
@@ -863,7 +869,7 @@
             var r = rotateY(latLonTo3D(v.lat, v.lon), rotation);
             if (r.z > 0) {
               var p = project(r);
-              var isCurrent = v.ip === currentIP;
+              var isCurrent = (v.ip === currentIP) || (v === visits[0] && currentIP && currentIP !== '?');
               var age = Date.now() - v.time;
               points.push({ x: p.x, y: p.y, scale: p.scale, isCurrent: isCurrent, age: age, ip: v.ip, visitCount: v.ipVisitCount || 1 });
             }
@@ -975,6 +981,83 @@
         }, 30000);
       });
 
+      // ===== GA Dashboard Live Stats =====
+      (function() {
+        var visits = getVisits();
+        if (!visits || visits.length === 0) return;
+
+        // Calculate metrics
+        var totalVisits = visits.length;
+        var uniqueIPs = {};
+        var countries = {};
+        var browsers = {};
+        var devices = {};
+        var vpnCount = 0;
+        var recent24h = 0;
+        var now = Date.now();
+
+        visits.forEach(function(v) {
+          if (v.ip && v.ip !== '?') uniqueIPs[v.ip] = true;
+          if (v.country) countries[v.country] = (countries[v.country] || 0) + 1;
+          if (v.vpn) vpnCount++;
+          if (now - v.time < 86400000) recent24h++;
+
+          // Parse browser from UA
+          var ua = v.ua || '';
+          var browser = 'Other';
+          if (ua.indexOf('Chrome') > -1 && ua.indexOf('Edg') > -1) browser = 'Edge';
+          else if (ua.indexOf('Chrome') > -1 && ua.indexOf('OPR') > -1) browser = 'Opera';
+          else if (ua.indexOf('Chrome') > -1) browser = 'Chrome';
+          else if (ua.indexOf('Firefox') > -1) browser = 'Firefox';
+          else if (ua.indexOf('Safari') > -1) browser = 'Safari';
+          browsers[browser] = (browsers[browser] || 0) + 1;
+
+          // Device type
+          var device = 'Desktop';
+          if (/Mobile|Android|iPhone/i.test(ua)) device = 'Mobile';
+          else if (/iPad|Tablet/i.test(ua)) device = 'Tablet';
+          devices[device] = (devices[device] || 0) + 1;
+        });
+
+        // Render live stats grid
+        var statsHTML = '';
+        var metrics = [
+          { label: 'Total Visits', value: totalVisits, color: 'var(--accent)' },
+          { label: 'Unique IPs', value: Object.keys(uniqueIPs).length, color: '#10b981' },
+          { label: 'Countries', value: Object.keys(countries).length, color: '#f59e0b' },
+          { label: 'Last 24h', value: recent24h, color: '#ec4899' }
+        ];
+        metrics.forEach(function(m) {
+          statsHTML += '<div style="padding:10px;border-radius:10px;background:rgba(99,102,241,0.04);text-align:center;">' +
+            '<div style="font-size:20px;font-weight:800;color:' + m.color + ';">' + m.value + '</div>' +
+            '<div style="font-size:10px;color:var(--muted);margin-top:2px;">' + m.label + '</div></div>';
+        });
+        var gaLiveEl = document.getElementById('gaLiveStats');
+        if (gaLiveEl) gaLiveEl.innerHTML = statsHTML;
+
+        // Render device/browser bars
+        var barsHTML = '';
+        var allCategories = [
+          { name: 'Browsers', items: browsers },
+          { name: 'Devices', items: devices }
+        ];
+        allCategories.forEach(function(cat) {
+          var sorted = Object.keys(cat.items).sort(function(a, b) { return cat.items[b] - cat.items[a]; });
+          var maxVal = sorted.length > 0 ? cat.items[sorted[0]] : 1;
+          barsHTML += '<div style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.7);margin:6px 0 4px;">' + cat.name + '</div>';
+          sorted.slice(0, 4).forEach(function(key) {
+            var pct = Math.round(cat.items[key] / maxVal * 100);
+            barsHTML += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">' +
+              '<span style="font-size:10px;color:var(--muted);width:50px;text-align:right;">' + key + '</span>' +
+              '<div style="flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,0.06);overflow:hidden;">' +
+              '<div style="height:100%;width:' + pct + '%;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>' +
+              '<span style="font-size:10px;color:var(--muted);">' + cat.items[key] + '</span></div>';
+          });
+        });
+        var gaDeviceEl = document.getElementById('gaDeviceBars');
+        if (gaDeviceEl) gaDeviceEl.innerHTML = barsHTML;
+      })();
+
     })();
   </script>
 
@@ -993,7 +1076,7 @@
           <h3 style="font-size:16px;font-weight:700;margin:0 0 4px;">🗺️ Flag Counter Map</h3>
           <p style="color:var(--muted);font-size:12px;margin:0 0 14px;">Visitor countries on a world map — no registration needed</p>
           <div style="width:100%;overflow:hidden;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(15,15,35,0.5);">
-            <a href="https://info.flagcounter.com/3zfz"><img src="https://s01.flagcounter.com/map/3zfz/size_s/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/" alt="Flag Counter" border="0" style="width:100%;border-radius:12px;"></a>
+            <a href="https://info.flagcounter.com/3zfz"><img src="https://s01.flagcounter.com/map/3zfz/size_l/txt_ffffff/border_ffffff/pageviews_0/viewers_0/flags_0/" alt="Flag Counter" border="0" style="width:100%;border-radius:12px;"></a>
           </div>
         </div>
 
@@ -1004,13 +1087,14 @@
           <div style="display:flex;flex-direction:column;gap:14px;align-items:center;padding:16px 0;">
             <div style="text-align:center;">
               <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">Online now (dynamic widget)</div>
-              <script id="_wau_3zf">var _wau = _wau || []; _wau.push(["dynamic", "greasebig", "3zf", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+              <script id="_wau_3zf">var _wau = _wau || []; _wau.push(["dynamic", "greasebig", "3zf", "c4302bffffff", "small"]);</script><script async src="https://waust.at/d.js"></script>
             </div>
             <div style="text-align:center;">
               <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">Visitor map</div>
-              <script id="_wau_map">var _wau = _wau || []; _wau.push(["map", "greasebig", "map", "300", "150", "night", "cross-pink"]);</script><script async src="//waust.at/m.js"></script>
+              <script id="_wau_map">var _wau = _wau || []; _wau.push(["map", "greasebig", "map", "300", "150", "night", "cross-pink"]);</script><script async src="https://waust.at/m.js"></script>
             </div>
           </div>
+          <noscript><p style="font-size:11px;color:var(--muted);text-align:center;">JavaScript required for live widget</p></noscript>
         </div>
 
         <!-- Visitor Badge Counter -->
@@ -1039,13 +1123,13 @@
           <p style="color:var(--muted);font-size:12px;margin:0 0 14px;">Cumulative visitor dots on a world map</p>
           <div style="width:100%;aspect-ratio:1/0.6;overflow:hidden;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(15,15,35,0.5);">
             <a href="https://clustrmaps.com/site/1c5n9" title="ClustrMaps">
-              <img src="//www.clustrmaps.com/map_v2.png?d=t6c8frZHbWPxwJD1bnTq1_qJxD4R2BYc-T7na_4Jjts&cl=ffffff" style="border-radius:12px;width:100%;" alt="ClustrMaps visitor map" />
+              <img src="https://www.clustrmaps.com/map_v2.png?d=t6c8frZHbWPxwJD1bnTq1_qJxD4R2BYc-T7na_4Jjts&cl=ffffff" style="border-radius:12px;width:100%;" alt="ClustrMaps visitor map" />
             </a>
           </div>
         </div>
 
-        <!-- Google Analytics Status -->
-        <div style="padding:22px 20px;border-radius:18px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(15,23,42,0.08);">
+        <!-- Google Analytics — Live Dashboard -->
+        <div id="gaDashboard" style="padding:22px 20px;border-radius:18px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(15,23,42,0.08);">
           <h3 style="font-size:16px;font-weight:700;margin:0 0 4px;">🔬 Google Analytics</h3>
           <p style="color:var(--muted);font-size:12px;margin:0 0 14px;">Professional analytics — full visitor insights (geolocation, duration, device, browser)</p>
           <div style="display:flex;flex-direction:column;gap:12px;">
@@ -1053,7 +1137,14 @@
               <div style="width:8px;height:8px;border-radius:50%;background:var(--accent-4);"></div>
               <span style="font-size:13px;font-weight:500;">GA4 tracking active on all pages</span>
             </div>
-            <div style="font-size:12px;color:var(--muted);line-height:1.6;">
+            <div id="gaLiveStats" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px;">
+              <!-- Populated by JS -->
+            </div>
+            <div id="gaDeviceChart" style="margin-top:8px;padding:12px;border-radius:12px;background:rgba(99,102,241,0.04);">
+              <div style="font-size:11px;color:var(--muted);margin-bottom:8px;">Device / Browser Breakdown</div>
+              <div id="gaDeviceBars"></div>
+            </div>
+            <div style="font-size:12px;color:var(--muted);line-height:1.6;margin-top:4px;">
               Tracking: page views, session duration, bounce rate, user flow, geolocation, device/browser, real-time active users<br>
               <a href="https://analytics.google.com/" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:500;">Open Google Analytics Dashboard →</a>
             </div>

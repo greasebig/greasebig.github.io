@@ -38,16 +38,16 @@
   }
 
   :root {
-    --bg: #FAF8F5;
-    --bg-ambient: radial-gradient(circle at top right, #F0E6DA 0%, transparent 60%);
-    --card-bg: rgba(255,255,255,0.6);
+    --bg: #faf5f6;
+    --bg-ambient: radial-gradient(circle at top right, #f0e6ea 0%, transparent 60%);
+    --card-bg: rgba(245,239,240,0.7);
     --text-primary: #2C2C2C;
     --text-secondary: #8A8A8A;
     --text-tertiary: #A0A0A0;
-    --accent: #C4A882;
-    --accent-dusty: #B5B0A8;
-    --border: #E8E4DF;
-    --border-hover: #D0CBC5;
+    --accent: #d45d8a;
+    --accent-dusty: #c9a0b2;
+    --border: #e8dde0;
+    --border-hover: #d8cdd0;
     --pill-bg: #2C2C2C;
     --pill-text: #FAF8F5;
     --transition: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -80,6 +80,74 @@
     pointer-events: none;
     z-index: 0;
     filter: blur(80px);
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.02;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+  }
+
+  /* Dynamic blur orbs - itssoftly style */
+  .softly-orb {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    filter: blur(70px);
+  }
+  .softly-orb-1 {
+    top: 10%;
+    left: 15%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, hsl(340 55% 68% / 0.08) 0%, transparent 70%);
+    animation: softlyDrift1 18s ease-in-out infinite;
+  }
+  .softly-orb-2 {
+    top: 50%;
+    right: 10%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, hsl(320 50% 68% / 0.06) 0%, transparent 70%);
+    animation: softlyDrift2 22s ease-in-out infinite 3s;
+  }
+  .softly-orb-3 {
+    bottom: 15%;
+    left: 40%;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, hsl(350 55% 68% / 0.05) 0%, transparent 70%);
+    animation: softlyDrift3 20s ease-in-out infinite 6s;
+  }
+  @keyframes softlyDrift1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(20px, -15px) scale(1.05); }
+  }
+  @keyframes softlyDrift2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-15px, 10px) scale(0.95); }
+  }
+  @keyframes softlyDrift3 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(10px, 20px) scale(1.03); }
+  }
+
+  /* Dot pattern - itssoftly style */
+  .dot-pattern {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image: radial-gradient(circle, rgba(212,93,138,0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
 
   .page-wrapper {
@@ -120,14 +188,14 @@
   }
 
   .nav-back:hover {
-    color: var(--text-primary);
-    border-color: var(--border-hover);
+    color: var(--accent);
+    border-color: var(--accent);
   }
 
   /* ---- Divider ---- */
   .divider {
     height: 1px;
-    background: linear-gradient(to right, transparent, #D0CBC5, transparent);
+    background: linear-gradient(to right, transparent, #d8cdd0, transparent);
     border: none;
     margin: 48px 0;
   }
@@ -515,6 +583,11 @@
 </head>
 
 <body>
+
+  <div class="softly-orb softly-orb-1"></div>
+  <div class="softly-orb softly-orb-2"></div>
+  <div class="softly-orb softly-orb-3"></div>
+  <div class="dot-pattern"></div>
 
 <div class="page-wrapper">
 

@@ -31,11 +31,11 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border-radius: 0 !important; }
 
     :root {
-      --bg: #0A0A0A;
-      --surface: #1A1A1A;
+      --bg: #0c0a09;
+      --surface: #1c1917;
       --text-primary: #F5F0EB;
-      --text-secondary: #8A8578;
-      --accent: #C8B99A;
+      --text-secondary: #a8a29e;
+      --accent: #065f46;
       --border: #2A2723;
       --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
     }
@@ -44,7 +44,7 @@
 
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: var(--bg);
+      background: linear-gradient(180deg, #0c0a09 0%, #0f0d0b 40%, #12100e 70%, #0c0a09 100%);
       color: var(--text-primary);
       font-weight: 300;
       line-height: 1.75;
@@ -60,6 +60,52 @@
     ::-webkit-scrollbar-thumb { background: var(--border); }
     ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
+    /* Atmospheric botanical blur orbs - Floria style */
+    .floria-orb {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: -1;
+      filter: blur(150px);
+    }
+    .floria-orb-1 {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: rgba(6, 95, 70, 0.05);
+      animation: floriaPulse 15s ease-in-out infinite;
+    }
+    .floria-orb-2 {
+      top: -10%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: rgba(6, 95, 70, 0.03);
+      animation: floriaPulse 20s ease-in-out infinite 3s;
+    }
+    .floria-orb-3 {
+      bottom: -5%;
+      left: -5%;
+      width: 350px;
+      height: 350px;
+      background: rgba(200, 185, 154, 0.02);
+      animation: floriaPulse 18s ease-in-out infinite 6s;
+    }
+    @keyframes floriaPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.08); opacity: 0.7; }
+    }
+    /* Fix centering for orb-1 animation */
+    .floria-orb-1 {
+      animation: floriaPulse1 15s ease-in-out infinite;
+    }
+    @keyframes floriaPulse1 {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+      50% { transform: translate(-50%, -50%) scale(1.08); opacity: 0.7; }
+    }
+
     /* ===== NAVIGATION ===== */
     nav {
       position: fixed;
@@ -71,7 +117,7 @@
       padding: 20px 48px;
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      background: rgba(10,10,10,0.75);
+      background: rgba(12,10,9,0.85);
       border-bottom: 1px solid rgba(42,39,35,0.5);
       transition: padding 0.4s var(--ease);
     }
@@ -123,6 +169,15 @@
       padding: 160px 24px 120px;
       position: relative;
     }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(12,10,9,0.95) 0%, rgba(12,10,9,0.7) 40%, rgba(12,10,9,0) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero > * { position: relative; z-index: 1; }
     .hero-label {
       font-size: 11px;
       font-weight: 300;
@@ -486,6 +541,9 @@
   </style>
 </head>
 <body>
+  <div class="floria-orb floria-orb-1"></div>
+  <div class="floria-orb floria-orb-2"></div>
+  <div class="floria-orb floria-orb-3"></div>
 
   <!-- ===== NAVIGATION ===== -->
   <nav id="mainNav">
