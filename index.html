@@ -985,7 +985,8 @@
     }
     .tagline-fading { opacity: 0 !important; }
 
-    /* Golden tidal wave animation on tagline text — 金潮速度×3慢 */
+    /* Golden tidal wave animation on tagline text
+       所有时长通过 CSS 变量控制，JS 注入 --gt-base 实现一键调速 */
     .tagline-fx .tagline-cn,
     .tagline-fx .tagline-en {
       background: linear-gradient(
@@ -1002,7 +1003,7 @@
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: golden-tide 54s ease-in-out infinite;
+      animation: golden-tide var(--gt-d1) ease-in-out infinite;
     }
 
     @keyframes golden-tide {
@@ -1013,20 +1014,20 @@
 
     /* Random-direction secondary shimmer (CSS only, per-line offset) */
     .tagline-fx .tagline-cn:nth-of-type(2) {
-      animation: golden-tide 63s ease-in-out infinite;
-      animation-delay: -18s;
+      animation: golden-tide var(--gt-d2) ease-in-out infinite;
+      animation-delay: var(--gt-delay2);
     }
     .tagline-fx .tagline-cn:nth-of-type(3) {
-      animation: golden-tide 49.5s ease-in-out infinite;
-      animation-delay: -36s;
+      animation: golden-tide var(--gt-d3) ease-in-out infinite;
+      animation-delay: var(--gt-delay3);
     }
     .tagline-fx .tagline-cn:nth-of-type(4) {
-      animation: golden-tide 72s ease-in-out infinite;
-      animation-delay: -9s;
+      animation: golden-tide var(--gt-d4) ease-in-out infinite;
+      animation-delay: var(--gt-delay4);
     }
     .tagline-fx .tagline-en {
-      animation: golden-tide 81s ease-in-out infinite;
-      animation-delay: -27s;
+      animation: golden-tide var(--gt-d5) ease-in-out infinite;
+      animation-delay: var(--gt-delay5);
     }
 
     /* ========== 四网站大卡片 ========== */
@@ -4064,15 +4065,47 @@
 
       var cnIdx = 0, enIdx = 0;
 
-      // 金潮周期配置 — 字体淡入淡出速度×2快（原值减半），金潮运动速度不变
-      var GOLDEN_PERIOD = 13.5;
-      var TIDE_WIDTH = 0.25;
+      // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+      // 🎛️  一键调速：只需修改这一个数字
+      //    1 = 原速  |  2 = 慢2倍  |  0.5 = 快2倍
+      var SPEED_MULTIPLIER = 2;
+      // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-      var linePeriods = [13.5, 15.75, 12.375, 18];
-      var lineDelays = [0, -4.5, -9, -2.25];
-      // 英文各行的周期和延迟
-      var enPeriods = [13.5, 15.75, 12.375, 18];
-      var enDelays = [0, -4.5, -6.75, -2.25];
+      // 基准值（原始速度，勿改）
+      var _BASE_PERIOD   = 13.5;
+      var _BASE_CSS_D    = [54, 63, 49.5, 72, 81];        // CSS golden-tide 各行时长(s)
+      var _BASE_CSS_DL   = [0, -18, -36, -9, -27];        // CSS animation-delay(s)
+      var _BASE_PERIODS  = [13.5, 15.75, 12.375, 18];     // JS CN 各行周期
+      var _BASE_DELAYS   = [0, -4.5, -9, -2.25];          // JS CN 各行延迟
+      var _BASE_EN_P     = [13.5, 15.75, 12.375, 18];     // JS EN 各行周期
+      var _BASE_EN_D     = [0, -4.5, -6.75, -2.25];       // JS EN 各行延迟
+      var _BASE_FADE_MS  = 300;                            // 字体淡入淡出时长(ms)
+
+      // 应用倍率
+      var GOLDEN_PERIOD = _BASE_PERIOD * SPEED_MULTIPLIER;
+      var TIDE_WIDTH = 0.25;
+      var FADE_MS = _BASE_FADE_MS;   // 淡入淡出不跟随倍率（保持流畅），如需同步改为 _BASE_FADE_MS * SPEED_MULTIPLIER
+
+      var linePeriods = _BASE_PERIODS.map(function(v) { return v * SPEED_MULTIPLIER; });
+      var lineDelays  = _BASE_DELAYS.map(function(v)  { return v * SPEED_MULTIPLIER; });
+      var enPeriods   = _BASE_EN_P.map(function(v)    { return v * SPEED_MULTIPLIER; });
+      var enDelays    = _BASE_EN_D.map(function(v)    { return v * SPEED_MULTIPLIER; });
+
+      // 将 CSS 动画时长通过 CSS 变量注入 :root，驱动 golden-tide 动画
+      (function injectCSSVars() {
+        var durations = _BASE_CSS_D.map(function(v) { return (v * SPEED_MULTIPLIER).toFixed(3) + 's'; });
+        var delays    = _BASE_CSS_DL.map(function(v) { return (v * SPEED_MULTIPLIER).toFixed(3) + 's'; });
+        var root = document.documentElement;
+        root.style.setProperty('--gt-d1',     durations[0]);
+        root.style.setProperty('--gt-d2',     durations[1]);
+        root.style.setProperty('--gt-d3',     durations[2]);
+        root.style.setProperty('--gt-d4',     durations[3]);
+        root.style.setProperty('--gt-d5',     durations[4]);
+        root.style.setProperty('--gt-delay2', delays[1]);
+        root.style.setProperty('--gt-delay3', delays[2]);
+        root.style.setProperty('--gt-delay4', delays[3]);
+        root.style.setProperty('--gt-delay5', delays[4]);
+      })();
 
       var taglineLines = [];
 
@@ -4151,7 +4184,7 @@
             setTimeout(function() {
               line.el.style.fontFamily = fontList;
               line.el.classList.remove('tagline-fading');
-            }, 300);
+            }, FADE_MS);
           }
         });
 
