@@ -1,5 +1,71 @@
 [
   {
+    "title": "Microsoft turns to AWS as GitHub faces AI capacity crunch",
+    "url": "https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch",
+    "source": "runtimewire.com",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from runtimewire.com. Hacker News score 146, 65 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48549918",
+    "fetched_at": "2026-06-16T06:46:21Z",
+    "title_zh": "GitHub 面临 AI 容量短缺，微软转向 AWS"
+  },
+  {
+    "title": "OpenAI Losses Increased Nearly 8X in 2025, with Spending Hitting $34B",
+    "url": "https://www.wheresyoured.at/exclusive-openai-financials/",
+    "source": "wheresyoured.at",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from wheresyoured.at. Hacker News score 48, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48550465",
+    "fetched_at": "2026-06-16T06:46:20Z",
+    "title_zh": "2025 年 OpenAI 损失增加近 8 倍，支出达到 $34B"
+  },
+  {
+    "title": "The time the x86 emulator team found code so bad they fixed it during emulation",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 136, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48550693",
+    "fetched_at": "2026-06-16T06:46:15Z",
+    "title_zh": "有一次 x86 模拟器团队发现代码非常糟糕，他们在模拟过程中修复了它"
+  },
+  {
+    "title": "Claude Corps",
+    "url": "https://www.anthropic.com/news/claude-corps",
+    "source": "anthropic.com",
+    "date": "2026-06-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 116, 79 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48544637",
+    "fetched_at": "2026-06-16T06:46:20Z",
+    "title_zh": "克劳德军团"
+  },
+  {
+    "title": "Show HN: Veterinarian turned founder, AI lawn diagnosis",
+    "url": "https://grassdx.com/",
+    "source": "grassdx.com",
+    "date": "2026-06-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from grassdx.com. Hacker News score 58, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48544823",
+    "fetched_at": "2026-06-16T06:46:19Z",
+    "title_zh": "Show HN：兽医变身人工智能草坪诊断创始人"
+  },
+  {
+    "title": "My Homelab AI Dev Platform",
+    "url": "https://rsgm.dev/post/ai-dev-platform/",
+    "source": "rsgm.dev",
+    "date": "2026-06-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from rsgm.dev. Hacker News score 292, 52 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48542433",
+    "fetched_at": "2026-06-16T06:46:17Z",
+    "title_zh": "我的 Homelab 人工智能开发平台"
+  },
+  {
     "title": "Ponytail – make your AI agent think like the laziest senior dev in the room",
     "url": "https://github.com/DietrichGebert/ponytail",
     "source": "github.com",
@@ -264,6 +330,39 @@
     "title_zh": "AI 特工在尝试扫描 DN42 时让他们的运营商破产"
   },
   {
+    "title": "Show HN: Fata – Spaced repetition to fight skill rot from AI coding",
+    "url": "https://fata.dev",
+    "source": "fata.dev",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from fata.dev. Hacker News score 97, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48489163",
+    "fetched_at": "2026-06-16T06:46:20Z",
+    "title_zh": "Show HN：Fata – 间隔重复以对抗 AI 编码造成的技能衰退"
+  },
+  {
+    "title": "Cohere's First Model for Developers",
+    "url": "https://cohere.com/blog/north-mini-code",
+    "source": "cohere.com",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from cohere.com. Hacker News score 65, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48489934",
+    "fetched_at": "2026-06-16T06:46:17Z",
+    "title_zh": "Cohere 的第一个开发者模型"
+  },
+  {
+    "title": "The 90-year-old idea behind JEPA models: Canonical Correlation Analysis",
+    "url": "https://shonczinner.github.io/posts/embedding-prediction/",
+    "source": "shonczinner.github.io",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from shonczinner.github.io. Hacker News score 42, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48490578",
+    "fetched_at": "2026-06-16T06:46:17Z",
+    "title_zh": "JEPA 模型背后 90 年前的想法：典型相关分析"
+  },
+  {
     "title": "FreeOberon – Open-Source, Cross-Platform, Free Pascal/Turbo Pascal-Like Language",
     "url": "https://github.com/kekcleader/FreeOberon",
     "source": "github.com",
@@ -361,6 +460,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48484584",
     "fetched_at": "2026-06-11T06:09:43Z",
     "title_zh": "AI 代理在 Fedora 和其他地方横行"
+  },
+  {
+    "title": "I hacked into the worst e-bike and fixed it [video]",
+    "url": "https://www.youtube.com/watch?v=hPrtVGimBYs",
+    "source": "youtube.com",
+    "date": "2026-06-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 54, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48479957",
+    "fetched_at": "2026-06-16T06:46:16Z",
+    "title_zh": "我侵入了最糟糕的电动自行车并修复了它[视频]"
   },
   {
     "title": "TorchCodec 0.14: HDR Video Decoding for CPU and CUDA, and Fast Wav Decoder",
