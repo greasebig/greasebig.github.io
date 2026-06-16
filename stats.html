@@ -374,7 +374,7 @@
     }
 
     // ===== Load stats from JSON =====
-    var statsData = { articles: 53, papers: 1037, agents: 680 };
+    var statsData = { articles: 34, papers: 1036, agents: 680 };
     function loadLiveStats() {
       // Fetch original articles count from articles-index.json
       var origCount = 0;
@@ -466,6 +466,8 @@
     (function() {
       var STORAGE_KEY = 'greasebig_visits_v2';
       var MAX_VISITS = 500;
+      var CLOUD_BLOB_ID = '019ecb7f-9f2c-762a-b048-d213787a959b';
+      var CLOUD_URL = 'https://jsonblob.com/api/jsonBlob/' + CLOUD_BLOB_ID;
 
       function getVisits() {
         try {
@@ -488,7 +490,64 @@
       }
       function saveVisits(visits) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(visits.slice(0, MAX_VISITS))); } catch(e) {} }
 
-      // Geo API sources — all HTTPS, no auth required, CORS-friendly
+      // ===== Cloud Sync (jsonblob.com — free, no auth, CORS-friendly) =====
+      var cloudSyncBusy = false;
+
+      function cloudFetch() {
+        return fetch(CLOUD_URL, {
+          headers: { 'Accept': 'application/json' }
+        }).then(function(r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        }).then(function(data) {
+          if (data && Array.isArray(data.visits)) return data.visits;
+          return [];
+        }).catch(function() { return []; });
+      }
+
+      function cloudPush(visits) {
+        if (cloudSyncBusy) return;
+        cloudSyncBusy = true;
+        // Only push last 100 visits to keep payload small (<50KB)
+        var payload = visits.slice(0, 100);
+        fetch(CLOUD_URL, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ visits: payload, updated: Date.now() })
+        }).catch(function() {}).then(function() { cloudSyncBusy = false; });
+      }
+
+      // Merge remote visits into local, dedup by visit ID
+      function mergeVisits(local, remote) {
+        if (!remote || remote.length === 0) return local;
+        var idSet = {};
+        local.forEach(function(v) { if (v.id) idSet[v.id] = true; });
+        var newFromRemote = remote.filter(function(v) { return v.id && !idSet[v.id]; });
+        if (newFromRemote.length === 0) return local;
+        // Merge and sort by time descending
+        var merged = local.concat(newFromRemote);
+        merged.sort(function(a, b) { return (b.time || 0) - (a.time || 0); });
+        return merged.slice(0, MAX_VISITS);
+      }
+
+      // Full sync: pull remote, merge, save, push if needed
+      async function cloudSync() {
+        try {
+          var localVisits = getVisits();
+          var remoteVisits = await cloudFetch();
+          var merged = mergeVisits(localVisits, remoteVisits);
+          if (merged.length !== localVisits.length) {
+            saveVisits(merged);
+          }
+          // Always push latest to cloud (overwrite with most complete local data)
+          cloudPush(merged);
+          return merged;
+        } catch(e) {
+          return getVisits();
+        }
+      }
+
+      // Geo API sources — all HTTPS, free, no auth, CORS-friendly
       var geoSources = [
         {
           name: 'ipapi.co',
@@ -501,22 +560,23 @@
           name: 'ipwho.is',
           url: 'https://ipwho.is/',
           parse: function(d) {
+            if (d.success === false) return null;
             return { ip: d.ip || '?', country: d.country || '?', city: d.city || '?', region: d.region || '?', lat: d.latitude || 0, lon: d.longitude || 0, country_code: (d.country_code || '').toLowerCase(), isp: d.connection ? d.connection.isp || '?' : '?', timezone: d.timezone ? d.timezone.id || '?' : '?', source: 'ipwho.is' };
+          }
+        },
+        {
+          name: 'ipwhois.app',
+          url: 'https://ipwhois.app/json/',
+          parse: function(d) {
+            if (d.success === false) return null;
+            return { ip: d.ip || '?', country: d.country || '?', city: d.city || '?', region: d.region || '?', lat: d.latitude || 0, lon: d.longitude || 0, country_code: (d.country_code || '').toLowerCase(), isp: d.isp || '?', timezone: d.timezone || '?', source: 'ipwhois.app' };
           }
         },
         {
           name: 'freeipapi.com',
           url: 'https://freeipapi.com/api/json',
           parse: function(d) {
-            return { ip: d.ipAddress || '?', country: d.countryName || '?', city: d.cityName || '?', region: d.regionName || '?', lat: d.latitude || 0, lon: d.longitude || 0, country_code: (d.countryCode || '').toLowerCase(), isp: '?', timezone: d.timeZone || '?', source: 'freeipapi.com' };
-          }
-        },
-        {
-          name: 'ip-api.com',
-          url: 'https://pro.ip-api.com/json/?fields=status,message,country,countryCode,region,regionName,city,lat,lon,isp,org,timezone,query',
-          parse: function(d) {
-            if (d.status === 'fail') return null;
-            return { ip: d.query || '?', country: d.country || '?', city: d.city || '?', region: d.regionName || '?', lat: d.lat || 0, lon: d.lon || 0, country_code: (d.countryCode || '').toLowerCase(), isp: d.isp || d.org || '?', timezone: d.timezone || '?', source: 'ip-api.com' };
+            return { ip: d.ipAddress || '?', country: d.countryName || '?', city: d.cityName || '?', region: d.regionName || '?', lat: d.latitude || 0, lon: d.longitude || 0, country_code: (d.countryCode || '').toLowerCase(), isp: d.asnOrganization || '?', timezone: d.timeZones ? d.timeZones[0] || '?' : '?', isProxy: d.isProxy || false, source: 'freeipapi.com' };
           }
         }
       ];
@@ -539,26 +599,18 @@
         return results.filter(Boolean);
       }
 
-      // VPN/Proxy detection — use iphub.info (free, no key needed for basic)
-      async function detectVPN(ip) {
-        try {
-          var r = await fetch('https://v2.api.iphub.info/ip/' + ip, {
-            headers: { 'Accept': 'application/json' }
-          });
-          if (r.ok) {
-            var d = await r.json();
-            // block: 0=residential, 1=non-residential VPN/proxy, 2=non-residential (datacenter etc)
-            return d.block === 1 || d.block === 2;
-          }
-        } catch(e) {}
-        // Fallback: try ipqualityscore
-        try {
-          var r2 = await fetch('https://ipqualityscore.com/api/json/ip/free/' + ip);
-          if (r2.ok) {
-            var d2 = await r2.json();
-            return !!(d2.vpn || d2.tor || d2.proxy);
-          }
-        } catch(e) {}
+      // VPN/Proxy detection — use freeipapi.com isProxy field (no auth needed)
+      async function detectVPN(ip, allGeo) {
+        // Method 1: freeipapi.com provides isProxy directly
+        var freeipResult = allGeo.find(function(g) { return g.source === 'freeipapi.com' && g.isProxy === true; });
+        if (freeipResult) return true;
+        // Method 2: Heuristic — check if ISP looks like a datacenter/VPN provider
+        var primary = allGeo[0] || {};
+        var isp = (primary.isp || '').toLowerCase();
+        var vpnKeywords = ['vpn', 'proxy', 'hosting', 'cloud', 'datacenter', 'data center', 'server', 'digitalocean', 'aws', 'amazon', 'google cloud', 'azure', 'microsoft', 'linode', 'vultr', 'ovh', 'hetzner', 'bandwidth', 'leaseweb', 'choopa', 'm247', 'quadranet'];
+        for (var i = 0; i < vpnKeywords.length; i++) {
+          if (isp.indexOf(vpnKeywords[i]) > -1) return true;
+        }
         return false;
       }
 
@@ -575,7 +627,7 @@
           primary = allGeo[0];
         }
 
-        var vpn = await detectVPN(primary.ip);
+        var vpn = await detectVPN(primary.ip, allGeo);
 
         // Enrich with VPN
         allGeo.forEach(function(g) { g.vpn = vpn; });
@@ -609,6 +661,9 @@
         visits.unshift(visit);
         if (visits.length > MAX_VISITS) visits = visits.slice(0, MAX_VISITS);
         saveVisits(visits);
+
+        // Cloud sync: push this visit so other devices can see it
+        cloudPush(visits);
 
         // Also update all previous records for this IP with the latest count
         var cnt = 1;
@@ -940,18 +995,19 @@
       // ===== Initialize =====
       var globeInitialized = false;
 
-      // Show existing data immediately from localStorage
-      var existingVisits = getVisits();
-      if (existingVisits.length > 0) {
-        renderTicker('ticker1', existingVisits, 'ipapi.co');
-        renderTicker('ticker2', existingVisits, 'ipwho.is');
-        renderTicker('ticker3', existingVisits, 'freeipapi.com');
-        renderTicker('ticker4', existingVisits, 'ip-api.com');
-        renderRankings(existingVisits);
-        renderSummary(existingVisits);
-        initGlobe(existingVisits);
-        globeInitialized = true;
-      }
+      // Show existing data immediately from localStorage + cloud sync
+      cloudSync().then(function(mergedVisits) {
+        if (mergedVisits && mergedVisits.length > 0) {
+          renderTicker('ticker1', mergedVisits, 'ipapi.co');
+          renderTicker('ticker2', mergedVisits, 'ipwho.is');
+          renderTicker('ticker3', mergedVisits, 'freeipapi.com');
+          renderTicker('ticker4', mergedVisits, 'ipwhois.app');
+          renderRankings(mergedVisits);
+          renderSummary(mergedVisits);
+          initGlobe(mergedVisits);
+          globeInitialized = true;
+        }
+      });
 
       recordVisit().then(function() {
         var visits = getVisits();
@@ -960,7 +1016,7 @@
         renderTicker('ticker1', visits, 'ipapi.co');
         renderTicker('ticker2', visits, 'ipwho.is');
         renderTicker('ticker3', visits, 'freeipapi.com');
-        renderTicker('ticker4', visits, 'ip-api.com');
+        renderTicker('ticker4', visits, 'ipwhois.app');
 
         renderRankings(visits);
         renderSummary(visits);
@@ -975,7 +1031,7 @@
           renderTicker('ticker1', visits, 'ipapi.co');
           renderTicker('ticker2', visits, 'ipwho.is');
           renderTicker('ticker3', visits, 'freeipapi.com');
-          renderTicker('ticker4', visits, 'ip-api.com');
+          renderTicker('ticker4', visits, 'ipwhois.app');
           renderRankings(visits);
           renderSummary(visits);
         }, 30000);
