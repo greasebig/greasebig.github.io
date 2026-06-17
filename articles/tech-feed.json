@@ -1,5 +1,93 @@
 [
   {
+    "title": "DOJ claims xAI's gas turbines are a matter of 'national and energy security'",
+    "url": "https://techcrunch.com/2026/06/16/doj-claims-xais-unpermitted-gas-turbines-are-a-matter-of-national-economic-and-energy-security/",
+    "source": "techcrunch.com",
+    "date": "2026-06-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from techcrunch.com. Hacker News score 44, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48565429",
+    "fetched_at": "2026-06-17T06:30:18Z",
+    "title_zh": "美国司法部声称 xAI 的燃气轮机事关“国家和能源安全”"
+  },
+  {
+    "title": "Qwen-Robot Suite: A Foundation Model Suite for Physical World Intelligence",
+    "url": "https://qwen.ai/blog?id=qwen-robotsuite",
+    "source": "qwen.ai",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from qwen.ai. Hacker News score 153, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48554814",
+    "fetched_at": "2026-06-17T06:30:22Z",
+    "title_zh": "Qwen-Robot Suite：物理世界智能的基础模型套件"
+  },
+  {
+    "title": "Show HN: cuTile Rust: Safe, data-race-free GPU kernels in Rust",
+    "url": "https://github.com/nvlabs/cutile-rs",
+    "source": "github.com",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 62, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48561410",
+    "fetched_at": "2026-06-17T06:30:21Z",
+    "title_zh": "Show HN：cuTile Rust：Rust 中安全、无数据竞争的 GPU 内核"
+  },
+  {
+    "title": "Stop Using JWTs",
+    "url": "https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452",
+    "source": "gist.github.com",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 332, 194 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48558147",
+    "fetched_at": "2026-06-17T06:30:20Z",
+    "title_zh": "停止使用 JWT"
+  },
+  {
+    "title": "GPT‑NL: a sovereign language model for the Netherlands",
+    "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
+    "source": "tno.nl",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from tno.nl. Hacker News score 182, 156 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48559188",
+    "fetched_at": "2026-06-17T06:30:19Z",
+    "title_zh": "GPT‑NL：荷兰的主权语言模型"
+  },
+  {
+    "title": "Has AI already killed self-help nonfiction books?",
+    "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
+    "source": "tim.blog",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from tim.blog. Hacker News score 246, 255 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48558489",
+    "fetched_at": "2026-06-17T06:30:19Z",
+    "title_zh": "人工智能已经杀死了自助非小说类书籍吗？"
+  },
+  {
+    "title": "Running local models is good now",
+    "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
+    "source": "vickiboykis.com",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from vickiboykis.com. Hacker News score 1195, 474 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48555993",
+    "fetched_at": "2026-06-17T06:30:18Z",
+    "title_zh": "现在运行本地模型很好"
+  },
+  {
+    "title": "Wolfram Language and Mathematica Version 15, AI Assistant, Symbolic Music, More",
+    "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
+    "source": "writings.stephenwolfram.com",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from writings.stephenwolfram.com. Hacker News score 138, 55 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48563609",
+    "fetched_at": "2026-06-17T06:30:18Z",
+    "title_zh": "Wolfram 语言和 Mathematica 版本 15、AI 助手、符号音乐等"
+  },
+  {
     "title": "Microsoft turns to AWS as GitHub faces AI capacity crunch",
     "url": "https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch",
     "source": "runtimewire.com",
@@ -330,6 +418,17 @@
     "title_zh": "AI 特工在尝试扫描 DN42 时让他们的运营商破产"
   },
   {
+    "title": "Formal Methods and the Future of Programming",
+    "url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/",
+    "source": "blog.janestreet.com",
+    "date": "2026-06-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.janestreet.com. Hacker News score 101, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48497067",
+    "fetched_at": "2026-06-17T06:30:22Z",
+    "title_zh": "形式化方法和编程的未来"
+  },
+  {
     "title": "Show HN: Fata – Spaced repetition to fight skill rot from AI coding",
     "url": "https://fata.dev",
     "source": "fata.dev",
@@ -467,9 +566,9 @@
     "source": "youtube.com",
     "date": "2026-06-10",
     "repost": true,
-    "summary": "转载 / Curated repost from youtube.com. Hacker News score 54, 18 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 179, 92 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48479957",
-    "fetched_at": "2026-06-16T06:46:16Z",
+    "fetched_at": "2026-06-17T06:30:24Z",
     "title_zh": "我侵入了最糟糕的电动自行车并修复了它[视频]"
   },
   {
