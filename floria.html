@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GREASEBIG. — Floria</title>
+  <title>GREASEBIG. | Studio &amp; Archive</title>
   <link rel="canonical" href="https://greasebig.github.io/floria.html" />
   <meta property="og:title" content="GREASEBIG." />
   <meta property="og:description" content="Studio & Archive — Open Source · Computer Vision · AI" />
@@ -21,752 +21,1475 @@
   </script>
 
   <!-- Visitor Badge -->
-  <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgreasebig.github.io%2Ffloria.html&label=&countColor=%23C8B99A&style=none" alt="" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;" />
+  <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgreasebig.github.io%2Ffloria.html&label=&countColor=%23065f46&style=none" alt="" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=block" rel="stylesheet">
+  <!-- Fonts: Geist Sans + Geist Mono (CDN) -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/style.min.css" rel="stylesheet">
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border-radius: 0 !important; }
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #0c0a09;
-      --surface: #1c1917;
-      --text-primary: #F5F0EB;
-      --text-secondary: #a8a29e;
+      --background: #fafaf9;
+      --foreground: #09090b;
       --accent: #065f46;
-      --border: #2A2723;
-      --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+      --accent-foreground: #fafaf9;
+      --muted: #f4f4f5;
+      --muted-foreground: #71717a;
+      --border: #e4e4e7;
+      --radius: 0.75rem;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
     body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: linear-gradient(180deg, #0c0a09 0%, #0f0d0b 40%, #12100e 70%, #0c0a09 100%);
-      color: var(--text-primary);
-      font-weight: 300;
-      line-height: 1.75;
-      font-size: 15px;
+      font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--background);
+      color: var(--foreground);
+      font-weight: 400;
+      line-height: 1.6;
       overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
     /* ===== SCROLLBAR ===== */
-    ::-webkit-scrollbar { width: 4px; }
-    ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--border); }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-    /* Atmospheric botanical blur orbs - Floria style */
-    .floria-orb {
-      position: fixed;
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: -1;
-      filter: blur(150px);
-    }
-    .floria-orb-1 {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 800px;
-      height: 800px;
-      background: rgba(6, 95, 70, 0.05);
-      animation: floriaPulse 15s ease-in-out infinite;
-    }
-    .floria-orb-2 {
-      top: -10%;
-      right: -10%;
-      width: 400px;
-      height: 400px;
-      background: rgba(6, 95, 70, 0.03);
-      animation: floriaPulse 20s ease-in-out infinite 3s;
-    }
-    .floria-orb-3 {
-      bottom: -5%;
-      left: -5%;
-      width: 350px;
-      height: 350px;
-      background: rgba(200, 185, 154, 0.02);
-      animation: floriaPulse 18s ease-in-out infinite 6s;
-    }
-    @keyframes floriaPulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.08); opacity: 0.7; }
-    }
-    /* Fix centering for orb-1 animation */
-    .floria-orb-1 {
-      animation: floriaPulse1 15s ease-in-out infinite;
-    }
-    @keyframes floriaPulse1 {
-      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-      50% { transform: translate(-50%, -50%) scale(1.08); opacity: 0.7; }
-    }
+    /* ===== TYPOGRAPHY ===== */
+    .font-serif { font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif; }
+    .font-mono { font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
 
-    /* ===== NAVIGATION ===== */
-    nav {
+    /* ===== CONTAINER ===== */
+    .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 1rem; }
+    @media (min-width: 768px) { .container { padding: 0 2rem; } }
+
+    /* ===== HEADER / NAV ===== */
+    .site-header {
       position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+      transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .site-header.scrolled { padding: 0.75rem 1rem; }
+    .site-header.scrolled .nav-inner {
+      background: rgba(250, 250, 249, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .nav-inner {
+      width: 100%;
+      max-width: 1280px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 20px 48px;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: rgba(12,10,9,0.85);
-      border-bottom: 1px solid rgba(42,39,35,0.5);
-      transition: padding 0.4s var(--ease);
+      border-radius: 9999px;
+      padding: 0.5rem;
+      transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
-    nav.scrolled { padding: 14px 48px; }
     .nav-logo {
-      font-size: 16px;
-      font-weight: 300;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
       text-decoration: none;
+      color: inherit;
     }
-    .nav-links { display: flex; gap: 32px; }
+    .nav-logo svg { width: 2rem; height: 2rem; color: var(--accent); transition: transform 0.5s; }
+    .nav-logo:hover svg { transform: rotate(12deg); }
+    .nav-logo span { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.04em; }
+    .nav-links { display: none; align-items: center; gap: 2rem; }
+    @media (min-width: 768px) { .nav-links { display: flex; } }
     .nav-links a {
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--text-secondary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted-foreground);
       text-decoration: none;
-      transition: color 0.3s var(--ease);
+      transition: color 0.15s;
     }
-    .nav-links a:hover { color: var(--accent); }
-
-    /* ===== REVEAL ANIMATION ===== */
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+    .nav-links a:hover { color: var(--foreground); }
+    .nav-cta {
+      display: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      background: var(--foreground);
+      color: var(--background);
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: opacity 0.15s;
     }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-    .reveal-delay-4 { transition-delay: 0.4s; }
-    .reveal-delay-5 { transition-delay: 0.5s; }
+    .nav-cta:hover { opacity: 0.9; }
+    @media (min-width: 768px) { .nav-cta { display: inline-flex; align-items: center; gap: 0.5rem; } }
+    .mobile-menu-btn { display: block; padding: 0.5rem; color: var(--foreground); background: none; border: none; cursor: pointer; }
+    .mobile-menu-btn svg { width: 1.5rem; height: 1.5rem; }
+    @media (min-width: 768px) { .mobile-menu-btn { display: none; } }
 
     /* ===== HERO ===== */
     .hero {
-      min-height: 100vh;
+      position: relative;
+      min-height: 100dvh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-top: 6rem;
+      padding-bottom: 3rem;
+      background: #000;
+      z-index: 20;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.3;
+    }
+    .hero-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, #000, rgba(0,0,0,0.8), transparent);
+    }
+    .hero-bg-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 12rem;
+      background: linear-gradient(to top, var(--background), transparent);
+      pointer-events: none;
+    }
+    @media (min-width: 768px) { .hero-bg-bottom { height: 12rem; } }
+
+    .hero-accent {
+      position: absolute;
+      top: 6rem;
+      right: 0;
+      height: 100dvh;
+      width: 90vw;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      pointer-events: none;
+      z-index: 10;
+    }
+    @media (min-width: 768px) { .hero-accent { width: 60vw; } }
+    .hero-accent-img {
+      position: relative;
+      height: 120vh;
+      aspect-ratio: 1;
+      transform-origin: center;
+      transform: translateX(25%);
+      pointer-events: auto;
+      cursor: pointer;
+    }
+    .hero-accent-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 25px 50px rgba(0,0,0,0.5)) brightness(0.75);
+      transition: filter 0.7s;
+    }
+    .hero-accent-img:hover img { filter: drop-shadow(0 25px 50px rgba(0,0,0,0.5)) brightness(0.9); }
+
+    .hero-content {
+      position: relative;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+      z-index: 20;
+      pointer-events: none;
+    }
+    @media (min-width: 768px) {
+      .hero-content {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+        padding: 0 2rem;
+      }
+    }
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      pointer-events: auto;
+    }
+    @media (min-width: 768px) { .hero-text { grid-column: span 7; } }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(8px);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 0.9;
+      color: #fff;
+      margin-bottom: 2rem;
+      text-wrap: balance;
+    }
+    @media (min-width: 768px) { .hero h1 { font-size: 4.5rem; } }
+    @media (min-width: 1024px) { .hero h1 { font-size: 6rem; } }
+    .hero h1 .italic-light {
+      color: rgba(255,255,255,0.7);
+      font-style: italic;
+      font-weight: 400;
+    }
+    .hero-desc {
+      font-size: 1.125rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.625;
+      max-width: 40ch;
+      margin-bottom: 2.5rem;
+      text-wrap: balance;
+    }
+    .hero-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      border-radius: 9999px;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      letter-spacing: -0.01em;
+      background: #fff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+      text-decoration: none;
+    }
+    .btn-primary:hover { background: rgba(255,255,255,0.9); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      border-radius: 9999px;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      background: transparent;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+      height: 3.5rem;
+      text-decoration: none;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.1); }
+
+    /* ===== REVEAL ANIMATIONS ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.95);
+      transition: opacity 0.7s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .reveal-scale.visible { opacity: 1; transform: scale(1); }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity 0.7s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+    .delay-5 { transition-delay: 0.5s; }
+
+    /* ===== SECTION: SHOP / PROJECTS ===== */
+    .section-shop {
+      padding: 6rem 0;
+      background: var(--background);
+      position: relative;
+      z-index: 10;
+    }
+    @media (min-width: 768px) { .section-shop { padding: 8rem 0; } }
+    .shop-header {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    @media (min-width: 768px) {
+      .shop-header {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+      }
+    }
+    .shop-header h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+    @media (min-width: 768px) { .shop-header h2 { font-size: 3rem; } }
+    .shop-header p {
+      color: var(--muted-foreground);
+      max-width: 40ch;
+    }
+    .shop-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--foreground);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .shop-link:hover { color: var(--accent); }
+    .shop-link-icon {
+      padding: 0.5rem;
+      background: var(--muted);
+      border-radius: 9999px;
+      transition: all 0.15s;
+    }
+    .shop-link:hover .shop-link-icon {
+      background: var(--accent);
+      color: var(--accent-foreground);
+      transform: translate(1px, -1px);
+    }
+    .shop-link-icon svg { width: 1rem; height: 1rem; }
+
+    .shop-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .shop-grid {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+      }
+    }
+    .product-card {
+      cursor: pointer;
+    }
+    .product-card-img {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .product-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s;
+    }
+    .product-card:hover .product-card-img img { transform: scale(1.1); }
+    .product-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.05);
+      transition: background 0.5s;
+    }
+    .product-card:hover .product-card-overlay { background: transparent; }
+    .product-card-btn {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    .product-card-btn span {
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(12px);
+      color: #18181b;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transform: translateY(100%);
+      opacity: 0;
+      transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .product-card:hover .product-card-btn span {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .product-card-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .product-card-info h3 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--foreground);
+      transition: color 0.15s;
+    }
+    .product-card:hover .product-card-info h3 { color: var(--accent); }
+    .product-card-info .price {
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+    }
+
+    /* Aspect ratios for cards */
+    .aspect-3-4 { aspect-ratio: 3/4; }
+    .aspect-square { aspect-ratio: 1/1; }
+    .aspect-4-5 { aspect-ratio: 4/5; }
+
+    /* ===== SECTION: PROCESS ===== */
+    .section-process {
+      padding: 6rem 0;
+      background: #09090b;
+      color: #fafaf9;
+      position: relative;
+      overflow-x: clip;
+      z-index: 20;
+    }
+    @media (min-width: 768px) { .section-process { padding: 10rem 0; } }
+    .process-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80vw;
+      height: 80vw;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.05;
+      filter: blur(120px);
+      pointer-events: none;
+    }
+    @media (min-width: 768px) {
+      .process-glow { width: 40vw; height: 40vw; }
+    }
+    .process-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    @media (min-width: 1024px) {
+      .process-grid { grid-template-columns: 1fr 1fr; gap: 6rem; }
+    }
+    .process-sticky {
+      position: relative;
+    }
+    @media (min-width: 1024px) {
+      .process-sticky { position: sticky; top: 10rem; align-self: start; }
+    }
+    .process-sticky h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    }
+    @media (min-width: 768px) { .process-sticky h2 { font-size: 3.75rem; } }
+    .process-sticky p {
+      color: #a1a1aa;
+      font-size: 1.125rem;
+      max-width: 40ch;
+    }
+    .process-steps { display: flex; flex-direction: column; gap: 3rem; }
+    @media (min-width: 768px) { .process-steps { gap: 6rem; } }
+    .process-step {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 1px solid rgba(255,255,255,0.1);
+    }
+    @media (min-width: 768px) { .process-step { padding-left: 4rem; } }
+    .process-step-num {
+      position: absolute;
+      top: 0;
+      left: -18px;
+    }
+    @media (min-width: 768px) { .process-step-num { left: -24px; } }
+    .process-step-num span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 50%;
+      background: #18181b;
+      border: 1px solid rgba(255,255,255,0.1);
+      font-family: 'Geist Mono', monospace;
+      font-size: 0.75rem;
+      color: #a1a1aa;
+    }
+    @media (min-width: 768px) {
+      .process-step-num span { width: 3rem; height: 3rem; font-size: 0.875rem; }
+    }
+    .process-step h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    @media (min-width: 768px) { .process-step h3 { font-size: 1.875rem; } }
+    .process-step p {
+      color: #a1a1aa;
+      line-height: 1.625;
+      max-width: 45ch;
+    }
+    .process-step-offset { margin-left: 0; }
+    @media (min-width: 768px) { .process-step-offset { margin-left: 6rem; } }
+
+    /* ===== SECTION: COLLECTIONS / ARCHIVES ===== */
+    .section-collections {
+      padding: 6rem 0;
+      background: var(--background);
+      position: relative;
+    }
+    @media (min-width: 768px) { .section-collections { padding: 8rem 0; } }
+    .collections-header { margin-bottom: 4rem; }
+    .collections-header h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+    @media (min-width: 768px) { .collections-header h2 { font-size: 3rem; } }
+    .collections-header p { color: var(--muted-foreground); max-width: 40ch; }
+
+    .collections-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      grid-auto-rows: 300px;
+    }
+    @media (min-width: 768px) {
+      .collections-grid {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+        grid-auto-rows: 400px;
+      }
+    }
+    .collection-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 2.5rem;
+      cursor: pointer;
+    }
+    .collection-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1s;
+    }
+    .collection-card:hover img { transform: scale(1.1); }
+    .collection-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1), transparent);
+      opacity: 0.8;
+      transition: opacity 0.5s;
+    }
+    .collection-card:hover .collection-card-overlay { opacity: 1; }
+    .collection-card-ring {
+      position: absolute;
+      inset: 0;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+      border-radius: inherit;
+      pointer-events: none;
+    }
+    .collection-card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 2rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    @media (min-width: 768px) { .collection-card-content { padding: 2.5rem; } }
+    .collection-card-content h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      transform: translateY(1rem);
+      transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    @media (min-width: 768px) { .collection-card-content h3 { font-size: 1.875rem; } }
+    .collection-card:hover .collection-card-content h3 { transform: translateY(0); }
+    .collection-card-content p {
+      color: #d4d4d8;
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0.1s;
+    }
+    .collection-card:hover .collection-card-content p { opacity: 1; transform: translateY(0); }
+
+    /* Grid placement for collection cards */
+    @media (min-width: 768px) {
+      .col-span-8 { grid-column: span 8; }
+      .col-span-4 { grid-column: span 4; }
+      .col-span-6 { grid-column: span 6; }
+    }
+
+    /* ===== SECTION: TESTIMONIALS ===== */
+    .section-testimonials {
+      padding: 8rem 0;
+      background: linear-gradient(to bottom, #09090b, #0a0a0a);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (min-width: 768px) { .section-testimonials { padding: 12rem 0; } }
+    .testimonials-title {
+      margin-bottom: 6rem;
+      text-align: center;
+      z-index: 10;
+    }
+    .testimonials-title h2 {
+      font-size: 3rem;
+      font-weight: 400;
+      font-style: italic;
+      font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+      color: #fff;
+    }
+    @media (min-width: 768px) { .testimonials-title h2 { font-size: 4.5rem; } }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+      }
+    }
+    .testimonial-card {
+      position: relative;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      background: rgba(24,24,27,0.3);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    @media (min-width: 768px) { .testimonial-card { padding: 2.5rem; } }
+    .testimonial-card:hover { border-color: rgba(255,255,255,0.1); background: rgba(24,24,27,0.5); }
+    .testimonial-quote-icon {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      width: 3rem;
+      height: 3rem;
+      color: rgba(255,255,255,0.05);
+      transition: color 0.15s;
+    }
+    .testimonial-card:hover .testimonial-quote-icon { color: rgba(255,255,255,0.1); }
+    .testimonial-stars {
+      display: flex;
+      gap: 0.25rem;
+      margin-bottom: 2rem;
+      color: #a1a1aa;
+    }
+    .testimonial-stars svg { width: 1rem; height: 1rem; }
+    .testimonial-text {
+      color: #d4d4d8;
+      line-height: 1.625;
+      position: relative;
+      z-index: 10;
+      flex: 1;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 2rem;
+      position: relative;
+      z-index: 10;
+    }
+    .testimonial-avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a1a1aa;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    .testimonial-name {
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+    .testimonial-role {
+      color: #71717a;
+      font-size: 0.75rem;
+    }
+
+    /* Staggered card positions */
+    @media (min-width: 768px) {
+      .mt-stagger-1 { margin-top: 3rem; }
+      .mt-stagger-2 { margin-top: -2rem; }
+      .mt-stagger-3 { margin-top: -6rem; }
+      .mt-stagger-4 { margin-top: -3rem; }
+    }
+
+    /* ===== SECTION: CTA ===== */
+    .section-cta {
+      padding: 8rem 0;
+      background: linear-gradient(to bottom, #0a0a0a, #000);
+      position: relative;
+      overflow: hidden;
+    }
+    @media (min-width: 768px) { .section-cta { padding: 12rem 0; } }
+    .cta-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 160px 24px 120px;
       position: relative;
+      z-index: 10;
     }
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(12,10,9,0.95) 0%, rgba(12,10,9,0.7) 40%, rgba(12,10,9,0) 100%);
-      pointer-events: none;
-      z-index: 0;
+    .cta-icon {
+      margin-bottom: 3rem;
+      color: rgba(6, 95, 70, 0.5);
     }
-    .hero > * { position: relative; z-index: 1; }
-    .hero-label {
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 40px;
+    .cta-icon svg { width: 4rem; height: 4rem; }
+    @media (min-width: 768px) { .cta-icon svg { width: 5rem; height: 5rem; } }
+    .cta-content h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      max-width: 20ch;
+      line-height: 1.1;
+      margin-bottom: 2rem;
+      color: #fff;
     }
-    .hero h1 {
-      font-size: clamp(56px, 9vw, 96px);
-      font-weight: 200;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      line-height: 1;
-      margin-bottom: 36px;
-      color: var(--text-primary);
+    @media (min-width: 768px) { .cta-content h2 { font-size: 3.75rem; } }
+    @media (min-width: 1024px) { .cta-content h2 { font-size: 4.5rem; } }
+    .cta-content p {
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      max-width: 45ch;
+      line-height: 1.625;
+      text-wrap: balance;
     }
-    .hero h1 .period {
-      color: var(--accent);
-    }
-    .hero-badge {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 400;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--text-secondary);
-      border: 1px solid var(--border);
-      padding: 8px 24px;
-      margin-bottom: 56px;
-    }
-    .hero-tagline {
-      max-width: 680px;
-      margin: 0 auto;
-    }
-    .tagline-cn {
-      font-size: 17px;
-      font-weight: 300;
-      letter-spacing: 0.12em;
-      color: var(--text-secondary);
-      line-height: 2.2;
-    }
-    .tagline-en {
-      font-size: 13px;
-      font-weight: 300;
-      letter-spacing: 0.04em;
-      color: rgba(138,133,120,0.6);
-      line-height: 2;
-      margin-top: 28px;
-      font-style: italic;
-    }
+    @media (min-width: 768px) { .cta-content p { font-size: 1.25rem; } }
 
-    /* ===== SECTION ===== */
-    .section {
-      padding: 140px 48px;
-      max-width: 1200px;
+    /* ===== SECTION: NEWSLETTER ===== */
+    .section-newsletter {
+      padding: 3rem 1rem;
+      background: linear-gradient(to bottom, #000, var(--background));
+    }
+    @media (min-width: 768px) { .section-newsletter { padding: 6rem 2rem; } }
+    .newsletter-card {
+      width: 100%;
+      max-width: 1280px;
       margin: 0 auto;
-    }
-    .section-label {
-      font-size: 10px;
-      font-weight: 300;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-    .section h2 {
-      font-size: clamp(36px, 4vw, 48px);
-      font-weight: 200;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 64px;
-      color: var(--text-primary);
-    }
-
-    /* ===== SITE CARDS ===== */
-    .site-cards {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1px;
-      background: var(--border);
-      margin-top: 80px;
-      margin-bottom: 0;
-    }
-    .site-card {
-      background: var(--bg);
-      padding: 36px 28px;
-      text-decoration: none;
-      color: inherit;
+      border-radius: 3rem;
+      padding: 3rem;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      transition: background 0.4s var(--ease);
-      position: relative;
-    }
-    .site-card:hover {
-      background: var(--surface);
-    }
-    .site-card-number {
-      font-size: 10px;
-      font-weight: 300;
-      letter-spacing: 0.15em;
-      color: var(--accent);
-      text-transform: uppercase;
-    }
-    .site-card h3 {
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    .site-card p {
-      font-size: 12px;
-      font-weight: 300;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    /* ===== PINNED ARTICLES ===== */
-    .articles-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1px;
-      background: var(--border);
-    }
-    .article-card {
-      background: var(--bg);
-      padding: 56px 40px;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       position: relative;
       overflow: hidden;
-      transition: background 0.4s var(--ease);
+      isolation: isolate;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
     }
-    .article-card:hover {
-      background: var(--surface);
-    }
-    .article-watermark {
+    @media (min-width: 768px) { .newsletter-card { padding: 6rem; } }
+    .newsletter-card-bg {
       position: absolute;
-      top: -10px;
-      right: 20px;
-      font-size: 160px;
-      font-weight: 200;
-      color: var(--text-primary);
-      opacity: 0.03;
-      line-height: 1;
+      inset: 0;
+      z-index: 0;
       pointer-events: none;
-      user-select: none;
     }
-    .article-tag {
-      font-size: 10px;
-      font-weight: 400;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 20px;
+    .newsletter-card-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .article-card h3 {
-      font-size: 18px;
-      font-weight: 300;
-      letter-spacing: 0.02em;
-      line-height: 1.4;
-      margin-bottom: 16px;
+    .newsletter-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+      z-index: 0;
+      pointer-events: none;
     }
-    .article-card .article-desc {
-      font-size: 13px;
-      font-weight: 300;
-      color: var(--text-secondary);
-      line-height: 1.7;
+    .newsletter-card h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 10;
     }
-    .article-card .article-date {
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: 0.1em;
-      color: rgba(138,133,120,0.5);
-      margin-top: auto;
-      padding-top: 24px;
+    @media (min-width: 768px) { .newsletter-card h2 { font-size: 3.75rem; } }
+    .newsletter-card p {
+      font-size: 1.125rem;
+      color: rgba(255,255,255,0.8);
+      max-width: 35ch;
+      margin-bottom: 3rem;
+      position: relative;
+      z-index: 10;
+      text-wrap: balance;
     }
-
-    /* ===== FEATURED PROJECTS ===== */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--border);
-    }
-    .project-card {
-      background: var(--bg);
-      padding: 48px 36px;
-      text-decoration: none;
-      color: inherit;
+    .newsletter-form {
+      width: 100%;
+      max-width: 28rem;
+      position: relative;
+      z-index: 10;
       display: flex;
       flex-direction: column;
-      gap: 16px;
-      transition: background 0.4s var(--ease);
+      gap: 0.75rem;
     }
-    .project-card:hover {
-      background: var(--surface);
-    }
-    .project-venue {
-      font-size: 10px;
-      font-weight: 400;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-      border: 1px solid var(--border);
-      padding: 4px 12px;
-      width: fit-content;
-    }
-    .project-card h3 {
-      font-size: 18px;
-      font-weight: 300;
-      letter-spacing: 0.02em;
-      line-height: 1.35;
-    }
-    .project-card p {
-      font-size: 13px;
-      font-weight: 300;
-      color: var(--text-secondary);
-      line-height: 1.7;
+    @media (min-width: 640px) { .newsletter-form { flex-direction: row; } }
+    .newsletter-form input {
       flex: 1;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      outline: none;
+      height: 3.5rem;
+      transition: all 0.15s;
     }
-    .project-link {
-      font-size: 10px;
-      font-weight: 300;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--text-secondary);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: color 0.3s var(--ease);
-      margin-top: auto;
-      padding-top: 20px;
-    }
-    .project-card:hover .project-link { color: var(--accent); }
-    .project-link svg {
-      width: 12px; height: 12px;
-      transition: transform 0.3s var(--ease);
-    }
-    .project-card:hover .project-link svg { transform: translateX(4px); }
-
-    /* ===== EXPLORED REPOS ===== */
-    .explored-list {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1px;
-      background: var(--border);
-    }
-    .explored-card {
-      background: var(--bg);
-      padding: 36px 24px;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      transition: background 0.4s var(--ease);
-    }
-    .explored-card:hover {
-      background: var(--surface);
-    }
-    .explored-venue {
-      font-size: 9px;
-      font-weight: 400;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    .explored-card h3 {
-      font-size: 15px;
-      font-weight: 300;
-      letter-spacing: 0.02em;
-      line-height: 1.3;
-    }
-    .explored-card p {
-      font-size: 12px;
-      font-weight: 300;
-      color: var(--text-secondary);
-      line-height: 1.6;
-      flex: 1;
-    }
-
-    /* ===== DIVIDER LINE ===== */
-    .divider {
-      height: 1px;
-      background: var(--border);
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    /* ===== BACK LINK ===== */
-    .back-link {
+    .newsletter-form input::placeholder { color: rgba(255,255,255,0.7); }
+    .newsletter-form input:focus { border-color: #fff; box-shadow: 0 0 0 2px rgba(255,255,255,0.3); }
+    .newsletter-form button {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: color 0.3s var(--ease);
-      margin-bottom: 48px;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      background: #fff;
+      color: #002c22;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      height: 3.5rem;
+      transition: background 0.15s;
+      white-space: nowrap;
     }
-    .back-link:hover { color: var(--accent); }
-    .back-link svg { width: 14px; height: 14px; }
+    .newsletter-form button:hover { background: #f5f5f4; }
+    .newsletter-form button svg { width: 1em; height: 1em; transition: transform 0.15s; }
+    .newsletter-form button:hover svg { transform: translateX(2px); }
 
     /* ===== FOOTER ===== */
-    footer {
-      text-align: center;
-      padding: 80px 24px;
-      border-top: 1px solid var(--border);
+    .site-footer {
+      background: #09090b;
+      padding-top: 8rem;
+      padding-bottom: 2.5rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      position: relative;
+      overflow: hidden;
     }
-    footer p {
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--text-secondary);
+    .footer-watermark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 2.5rem;
+      overflow: hidden;
+      pointer-events: none;
+      opacity: 0.02;
+      user-select: none;
     }
-    footer .heart {
-      display: inline-block;
+    .footer-watermark span {
+      font-size: 22vw;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: #fff;
+      white-space: nowrap;
+    }
+    .footer-accent-img {
+      position: absolute;
+      bottom: -25%;
+      right: -5rem;
+      width: 500px;
+      height: 500px;
+      pointer-events: none;
+      opacity: 0.2;
+      mix-blend-mode: screen;
+      overflow: hidden;
+    }
+    @media (min-width: 768px) { .footer-accent-img { right: -16rem; width: 900px; height: 900px; } }
+    .footer-accent-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: blur(8px);
+      transform: rotate(12deg);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      margin-bottom: 8rem;
+      margin-top: 2.5rem;
+    }
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+      }
+    }
+    .footer-brand { color: #fafaf9; }
+    @media (min-width: 768px) { .footer-brand { grid-column: span 5; } }
+    .footer-brand h2 {
+      font-size: 4.5rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    @media (min-width: 768px) { .footer-brand h2 { font-size: 6rem; } }
+    .footer-brand .tagline {
+      font-size: 1.5rem;
       color: var(--accent);
-      animation: heartbeat 2s ease-in-out infinite;
+      font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+      font-style: italic;
+      opacity: 0.9;
     }
-    @keyframes heartbeat {
-      0%, 100% { transform: scale(1); }
-      15% { transform: scale(1.15); }
-      30% { transform: scale(1); }
-      45% { transform: scale(1.1); }
+    @media (min-width: 768px) { .footer-brand .tagline { font-size: 1.875rem; } }
+    .footer-brand p {
+      color: #a1a1aa;
+      max-width: 35ch;
+      line-height: 1.625;
+      font-size: 1.125rem;
+      margin-top: 2rem;
     }
+    .footer-col h4 {
+      color: #fafaf9;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .footer-col h4 .dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+    .footer-col a {
+      color: #a1a1aa;
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.15s;
+    }
+    .footer-col a:hover { color: #fff; }
+    @media (min-width: 768px) {
+      .footer-col-1 { grid-column: 7 / span 2; }
+      .footer-col-2 { grid-column: 9 / span 2; }
+      .footer-col-3 { grid-column: 11 / span 2; }
+    }
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      position: relative;
+      z-index: 10;
+    }
+    @media (min-width: 768px) { .footer-bottom { flex-direction: row; } }
+    .footer-bottom p {
+      font-size: 0.875rem;
+      color: #52525b;
+    }
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+    }
+    .footer-socials a {
+      color: #52525b;
+      transition: color 0.15s;
+    }
+    .footer-socials a:hover { color: #fff; }
+    .footer-socials svg { width: 1.25rem; height: 1.25rem; }
 
     /* ===== RESPONSIVE ===== */
-    @media (max-width: 1024px) {
-      nav { padding: 16px 24px; }
-      .section { padding: 100px 24px; }
-      .site-cards { grid-template-columns: repeat(3, 1fr); }
-      .articles-grid { grid-template-columns: 1fr; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .explored-list { grid-template-columns: repeat(2, 1fr); }
-    }
     @media (max-width: 640px) {
-      nav { padding: 14px 20px; }
-      .nav-links { gap: 20px; }
-      .section { padding: 80px 20px; }
-      .hero { padding: 120px 20px 80px; }
-      .site-cards { grid-template-columns: 1fr; }
-      .explored-list { grid-template-columns: 1fr; }
-      .article-card { padding: 40px 24px; }
-      .project-card { padding: 36px 24px; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-desc { font-size: 1rem; }
+      .hero-buttons { flex-direction: column; width: 100%; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
     }
 
     /* ===== REDUCED MOTION ===== */
     @media (prefers-reduced-motion: reduce) {
-      .reveal { opacity: 1; transform: none; transition: none; }
-      footer .heart { animation: none; }
+      .reveal, .reveal-scale, .reveal-left { opacity: 1; transform: none; transition: none; }
+      .hero-accent-img img { filter: none !important; }
     }
   </style>
 </head>
 <body>
-  <div class="floria-orb floria-orb-1"></div>
-  <div class="floria-orb floria-orb-2"></div>
-  <div class="floria-orb floria-orb-3"></div>
-
-  <!-- ===== NAVIGATION ===== -->
-  <nav id="mainNav">
-    <a href="#top" class="nav-logo"><span class="brand-icon">🌿</span> <span class="brand-prompt">$</span> greasebig</a>
-    <div class="nav-links">
-      <a href="#articles">Articles</a>
-      <a href="#projects">Projects</a>
-      <a href="#explored">Explored</a>
-      <a href="./">Main</a>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+          <path d="M138.54,149.46C106.62,96.25,149.18,43.05,239.63,48.37,245,138.82,191.75,181.39,138.54,149.46ZM16.26,88.26c-3.8,64.61,34.21,95,72.21,72.21C111.27,122.47,80.87,84.46,16.26,88.26Z" opacity="0.2"></path>
+          <path d="M247.63,47.89a8,8,0,0,0-7.52-7.52c-51.76-3-93.32,12.74-111.18,42.22-11.8,19.48-11.78,43.16-.16,65.74a71.37,71.37,0,0,0-14.17,26.95L98.33,159c7.82-16.33,7.52-33.36-1-47.49C84.09,89.73,53.62,78,15.79,80.27a8,8,0,0,0-7.52,7.52c-2.23,37.83,9.46,68.3,31.25,81.5A45.82,45.82,0,0,0,63.44,176,54.58,54.58,0,0,0,87,170.33l25,25V224a8,8,0,0,0,16,0V194.51a55.61,55.61,0,0,1,12.27-35,73.91,73.91,0,0,0,33.31,8.4,60.9,60.9,0,0,0,31.83-8.86C234.89,141.21,250.67,99.65,247.63,47.89ZM86.06,146.74l-24.41-24.4a8,8,0,0,0-11.31,11.31l24.41,24.41c-9.61,3.18-18.93,2.39-26.94-2.46C32.47,146.31,23.79,124.32,24,96c28.31-.25,50.31,8.47,59.6,23.81C88.45,127.82,89.24,137.14,86.06,146.74Zm111.06-1.36c-13.4,8.11-29.15,8.73-45.15,2l53.69-53.7a8,8,0,0,0-11.31-11.32L140.65,136c-6.76-16-6.15-31.76,2-45.15,13.94-23,47-35.8,89.33-34.83C232.94,98.34,220.14,131.44,197.12,145.38Z"></path>
+        </svg>
+        <span>GREASEBIG.</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#process">Process</a>
+        <a href="#archives">Archives</a>
+        <a href="./">Main</a>
+      </nav>
+      <a href="https://github.com/greasebig" target="_blank" class="nav-cta">
+        <span>View GitHub</span>
+      </a>
+      <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('show-mobile')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z"></path></svg>
+      </button>
     </div>
-  </nav>
+  </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="top">
-    <div class="hero-label reveal">STUDIO &amp; ARCHIVE</div>
-    <h1 class="reveal reveal-delay-1">GREASEBIG<span class="period">.</span></h1>
-    <div class="hero-badge reveal reveal-delay-2">OPEN SOURCE &middot; COMPUTER VISION &middot; AI</div>
-    <div class="hero-tagline reveal reveal-delay-3">
-      <div class="tagline-cn">
-        修煉於天機閣，融像素煉丹，以算法御劍<br>
-        窺破虚實之界，游走於生成與感知的裂縫之間<br>
-        ——至於"理解視頻"這等仙級殺招，不過是渡天劫時順手揀的彩蛋<br>
-        罷了
+  <main class="min-h-[100dvh] relative bg-background">
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1506906165350-e37e0f5530f2?w=1920&q=80" alt="Dark botanical background" />
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-bg-bottom"></div>
       </div>
-      <div class="tagline-en">
-        He who cultivateth within the Pavilion of Heavenly Secrets—forging elixirs from pixels, and wielding algorithms as his blade.<br>
-        He strideth through the rift 'twixt creation and perception.<br>
-        As for "the understanding of moving images," that celestial tribulation?<br>
-        'Twas but a passing windfall, chanced upon amidst the storm. Let it be.
+      <div class="hero-accent">
+        <div class="hero-accent-img">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80" alt="Floating structural flora" />
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ===== SITE CARDS ===== -->
-  <div class="section" style="padding-bottom:0;">
-    <div class="section-label reveal">NAVIGATE</div>
-    <h2 class="reveal reveal-delay-1">ENTRY POINTS</h2>
-  </div>
-  <div class="site-cards reveal reveal-delay-2 floria-reveal" style="max-width:1200px;margin:0 auto;">
-    <a class="site-card" href="https://github.com/greasebig" target="_blank">
-      <span class="site-card-number">01</span>
-      <h3>GitHub</h3>
-      <p>Projects, articles &amp; links</p>
-    </a>
-    <a class="site-card" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
-      <span class="site-card-number">02</span>
-      <h3>Papers Hub</h3>
-      <p>Daily arXiv paper tracker</p>
-    </a>
-    <a class="site-card" href="https://greasebig.github.io/awesome-agent-everything/" target="_blank">
-      <span class="site-card-number">03</span>
-      <h3>Agent Index</h3>
-      <p>Meta-index of agent repos</p>
-    </a>
-    <a class="site-card" href="./articles.html">
-      <span class="site-card-number">04</span>
-      <h3>Articles</h3>
-      <p>Tech deep dives &amp; feeds</p>
-    </a>
-    <a class="site-card" href="./stats.html">
-      <span class="site-card-number">05</span>
-      <h3>Stats</h3>
-      <p>Live numbers &amp; metrics</p>
-    </a>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ===== PINNED ARTICLES ===== -->
-  <div class="section" id="articles">
-    <a href="./" class="back-link reveal">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
-      Back to main page
-    </a>
-    <div class="section-label reveal">WRITING</div>
-    <h2 class="reveal reveal-delay-1">PINNED ARTICLES</h2>
-  </div>
-  <div class="articles-grid reveal reveal-delay-2 floria-reveal" style="max-width:1200px;margin:0 auto;">
-    <a class="article-card" href="./articles/mcp-deep-dive.html" target="_blank">
-      <span class="article-watermark">01</span>
-      <span class="article-tag">Pinned &middot; MCP Protocol</span>
-      <h3>MCP 深度解析：从零到行业标准仅 15 个月的协议奇迹</h3>
-      <p class="article-desc">全面解析 MCP 诞生、三大原语、规范演进、OpenAI 采纳分水岭、与 A2A 协议的垂直/水平互补关系、A2A Task 生命周期、生产环境安全挑战与四层防御模型，以及 2026 年生态系统现状。</p>
-      <span class="article-date">2026.06.06</span>
-    </a>
-    <a class="article-card" href="./articles/claw-runtime.html" target="_blank">
-      <span class="article-watermark">02</span>
-      <span class="article-tag">Pinned &middot; Agent Ecosystem</span>
-      <h3>Claw Runtime 与 Agent 生态 2026：从概念到落地</h3>
-      <p class="article-desc">全面解析 OpenClaw 病毒式爆发、Agent Harness 工程化实践、MCP/A2A/ACP 三大协议生态，以及 AI Agent 与 Agentic AI 的概念澄清与技术演进路线图。</p>
-      <span class="article-date">2026.05.28</span>
-    </a>
-    <a class="article-card" href="./articles/harness-engineering.html" target="_blank">
-      <span class="article-watermark">03</span>
-      <span class="article-tag">Pinned &middot; Harness Engineering</span>
-      <h3>Harness Engineering：驾驭 AI Agent 的工程艺术</h3>
-      <p class="article-desc">从 Mitchell Hashimoto 的定义出发，深入探讨 Agent = Model + Harness 范式。分析 WorkBuddy 如何作为一套完整的 Harness 运行，以及自建 OpenClaw 如何集成 OpenHarness 构建可靠的 AI 编码 Agent。</p>
-      <span class="article-date">2026.05.24</span>
-    </a>
-    <a class="article-card" href="./articles/harness-poc.html" target="_blank">
-      <span class="article-watermark">04</span>
-      <span class="article-tag">Pinned &middot; Harness POC</span>
-      <h3>Building a Harness from Scratch: ~300 Lines of Python</h3>
-      <p class="article-desc">动手实现了一个最小可用的 Agent Harness。多 provider 支持、Agent Loop、AGENTS.md 上下文注入、MEMORY.md 跨会话记忆、权限边界、生命周期钩子。附完整源码和三个示例。</p>
-      <span class="article-date">2026.05.24</span>
-    </a>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ===== FEATURED PROJECTS ===== -->
-  <div class="section" id="projects">
-    <div class="section-label reveal">CREATION</div>
-    <h2 class="reveal reveal-delay-1">FEATURED PROJECTS</h2>
-  </div>
-  <div class="projects-grid reveal reveal-delay-2 floria-reveal" style="max-width:1200px;margin:0 auto;">
-    <a class="project-card" href="https://github.com/greasebig/daily-video-papers" target="_blank">
-      <span class="project-venue">Tool</span>
-      <h3>Daily Video Papers</h3>
-      <p>Automated arXiv paper tracking hub for Video, World Models, Agents &amp; Tone/Color research. Daily updates with translated abstracts.</p>
-      <span class="project-link">
-        View Project
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </span>
-    </a>
-    <a class="project-card" href="https://github.com/greasebig/harness-poc" target="_blank">
-      <span class="project-venue">Tool</span>
-      <h3>harness-poc</h3>
-      <p>Minimal Agent Harness POC — Agent = Model + Harness. ~300 lines of Python with multi-provider support, memory, permissions, and hooks.</p>
-      <span class="project-link">
-        View Project
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </span>
-    </a>
-    <a class="project-card" href="https://github.com/greasebig/awesome-agent-everything" target="_blank">
-      <span class="project-venue">Resource</span>
-      <h3>Awesome Agent Everything</h3>
-      <p>Meta-index of ALL awesome agent repos on GitHub — frameworks, skills, papers, MCP, harness &amp; more. Auto-updated every 3 days via GitHub Actions.</p>
-      <span class="project-link">
-        View Project
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </span>
-    </a>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- ========== FLORIA PRODUCT SHOWCASE ========== -->
-  <section class="section" style="max-width:960px;margin:0 auto;padding:60px 32px;">
-    <div class="floria-reveal">
-      <div class="section-num">&sect;1.5 &mdash; Showcase</div>
-      <h2 class="section-title">Digital Garden</h2>
-      <p class="section-subtitle">Cultivated projects, growing daily.</p>
-    </div>
-    <div class="product-grid floria-reveal">
-      <a class="product-card" href="https://greasebig.github.io/daily-video-papers/" target="_blank">
-        <div class="product-visual">📄</div>
-        <div class="product-info">
-          <div class="product-name">Daily Papers</div>
-          <div class="product-desc">Automated arXiv tracking hub for video &amp; AI research</div>
+      <div class="hero-content">
+        <div class="hero-text reveal">
+          <span class="hero-badge">Studio &amp; Archive</span>
+          <h1>GREASEBIG<br/><span class="italic-light">Architecture.</span></h1>
+          <p class="hero-desc">修煉於天機閣，融像素煉丹，以算法御劍。窺破虚實之界，游走於生成與感知的裂縫之間。</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#archives" class="btn-ghost">Explore Archives</a>
+          </div>
         </div>
-      </a>
-      <a class="product-card" href="https://github.com/greasebig/awesome-agent-everything" target="_blank">
-        <div class="product-visual">🌐</div>
-        <div class="product-info">
-          <div class="product-name">Agent Index</div>
-          <div class="product-desc">Meta-index of ALL awesome agent repos on GitHub</div>
-        </div>
-      </a>
-      <a class="product-card" href="https://github.com/greasebig/harness-poc" target="_blank">
-        <div class="product-visual">⚡</div>
-        <div class="product-info">
-          <div class="product-name">Harness POC</div>
-          <div class="product-desc">Minimal Agent Harness — Model + Harness, ~300 lines</div>
-        </div>
-      </a>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- ===== EXPLORED ===== -->
-  <div class="section" id="explored">
-    <div class="section-label reveal">RESEARCH</div>
-    <h2 class="reveal reveal-delay-1">EXPLORED</h2>
-  </div>
-  <div class="explored-list reveal reveal-delay-2 floria-reveal" style="max-width:1200px;margin:0 auto;">
-    <a class="explored-card" href="https://github.com/greasebig/VideoCoF" target="_blank">
-      <span class="explored-venue">CVPR 2026 Highlight</span>
-      <h3>VideoCoF</h3>
-      <p>Unified video editing with temporal reasoner. State-of-the-art framework for coherent video manipulation.</p>
-    </a>
-    <a class="explored-card" href="https://github.com/greasebig/LiveMoments" target="_blank">
-      <span class="explored-venue">ICLR 2026</span>
-      <h3>LiveMoments</h3>
-      <p>Key photo restoration in Live Photos via reference-guided diffusion. Reselect and restore your best moments.</p>
-    </a>
-    <a class="explored-card" href="https://github.com/greasebig/dynvfx" target="_blank">
-      <span class="explored-venue">SIGGRAPH Asia 2025</span>
-      <h3>DynVFX</h3>
-      <p>Augmenting real videos with dynamic visual content. Seamlessly add effects to existing footage.</p>
-    </a>
-    <a class="explored-card" href="https://github.com/greasebig/ReCo" target="_blank">
-      <span class="explored-venue">CVPR</span>
-      <h3>ReCo</h3>
-      <p>Region-constrained in-context generation for instructional video editing with precise spatial control.</p>
-    </a>
-    <a class="explored-card" href="https://github.com/greasebig/CVPR-2023-1st-foundation-model-challenge-Track-2-1th-solution" target="_blank">
-      <span class="explored-venue">CVPR 2023 Challenge</span>
-      <h3>Foundation Model Challenge</h3>
-      <p>Reproduction and exploration of the CVPR 2023 Foundation Model Challenge, Track 2 — cross-modal track solution.</p>
-    </a>
-  </div>
+    <!-- ===== SHOP / PROJECTS SECTION ===== -->
+    <section id="projects" class="section-shop">
+      <div class="container">
+        <div class="shop-header">
+          <div class="reveal">
+            <h2>Curated Projects.</h2>
+            <p>Open source tools and resources crafted for atmospheric presence in AI research.</p>
+          </div>
+          <a href="https://github.com/greasebig?tab=repositories" target="_blank" class="shop-link reveal">
+            <span>View Complete Archive</span>
+            <span class="shop-link-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
+            </span>
+          </a>
+        </div>
+        <div class="shop-grid">
+          <!-- Product 1 -->
+          <a href="https://github.com/greasebig/daily-video-papers" target="_blank" class="product-card reveal" style="grid-column: span 4;">
+            <div class="product-card-img aspect-3-4">
+              <img src="https://images.unsplash.com/photo-1481627834876-b78eb3e659e7?w=600&q=80" alt="Daily Video Papers" />
+              <div class="product-card-overlay"></div>
+              <div class="product-card-btn"><span>View Project</span></div>
+            </div>
+            <div class="product-card-info">
+              <h3>Daily Video Papers</h3>
+              <span class="price">Tool</span>
+            </div>
+          </a>
+          <!-- Product 2 -->
+          <a href="https://github.com/greasebig/harness-poc" target="_blank" class="product-card reveal delay-1" style="grid-column: span 4; margin-top: 6rem;">
+            <div class="product-card-img aspect-square">
+              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee9816?w=600&q=80" alt="Harness POC" />
+              <div class="product-card-overlay"></div>
+              <div class="product-card-btn"><span>View Project</span></div>
+            </div>
+            <div class="product-card-info">
+              <h3>Harness POC</h3>
+              <span class="price">Tool</span>
+            </div>
+          </a>
+          <!-- Product 3 -->
+          <a href="https://github.com/greasebig/awesome-agent-everything" target="_blank" class="product-card reveal delay-2" style="grid-column: span 4; margin-top: 2rem;">
+            <div class="product-card-img aspect-4-5">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" alt="Awesome Agent Everything" />
+              <div class="product-card-overlay"></div>
+              <div class="product-card-btn"><span>View Project</span></div>
+            </div>
+            <div class="product-card-info">
+              <h3>Awesome Agent Everything</h3>
+              <span class="price">Resource</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <div class="footer-watermark floria-reveal-scale">FLORIA</div>
+    <!-- ===== PROCESS SECTION ===== -->
+    <section id="process" class="section-process">
+      <div class="process-glow"></div>
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="process-grid">
+          <div class="process-sticky">
+            <h2 class="reveal-left">The Architecture<br/>of Code.</h2>
+            <p class="reveal">Our process is a deliberate rejection of surface-level tooling. Every project is treated as a site-specific installation.</p>
+          </div>
+          <div class="process-steps">
+            <div class="process-step reveal">
+              <div class="process-step-num"><span>01</span></div>
+              <h3>Research &amp; Vision</h3>
+              <p>We explore the aesthetic, the spatial architecture of the problem, and the invisible emotional tone you wish to set.</p>
+            </div>
+            <div class="process-step process-step-offset reveal delay-1">
+              <div class="process-step-num"><span>02</span></div>
+              <h3>Botanical Sourcing</h3>
+              <p>Procuring rare, seasonal insights from strictly local research and specialized independent papers.</p>
+            </div>
+            <div class="process-step reveal delay-2">
+              <div class="process-step-num"><span>03</span></div>
+              <h3>Structural Design</h3>
+              <p>Applying first principles and modern proportions to build a living system that breathes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COLLECTIONS / ARCHIVES SECTION ===== -->
+    <section id="archives" class="section-collections">
+      <div class="container">
+        <div class="collections-header">
+          <h2 class="reveal">The Archives.</h2>
+          <p class="reveal">Explore our categorical studies in code architecture.</p>
+        </div>
+        <div class="collections-grid">
+          <a href="https://github.com/greasebig/daily-video-papers" target="_blank" class="collection-card col-span-8 reveal-scale">
+            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80" alt="Daily Papers Hub" />
+            <div class="collection-card-overlay"></div>
+            <div class="collection-card-ring"></div>
+            <div class="collection-card-content">
+              <h3>Daily Papers Hub</h3>
+              <p>Automated arXiv tracking hub for video &amp; AI research</p>
+            </div>
+          </a>
+          <a href="https://github.com/greasebig/awesome-agent-everything" target="_blank" class="collection-card col-span-4 reveal-scale delay-1">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80" alt="Agent Index" />
+            <div class="collection-card-overlay"></div>
+            <div class="collection-card-ring"></div>
+            <div class="collection-card-content">
+              <h3>Agent Index</h3>
+              <p>Meta-index of ALL awesome agent repos</p>
+            </div>
+          </a>
+          <a href="https://github.com/greasebig/VideoCoF" target="_blank" class="collection-card col-span-4 reveal-scale delay-2">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="VideoCoF" />
+            <div class="collection-card-overlay"></div>
+            <div class="collection-card-ring"></div>
+            <div class="collection-card-content">
+              <h3>VideoCoF</h3>
+              <p>Unified video editing with temporal reasoner</p>
+            </div>
+          </a>
+          <a href="https://github.com/greasebig/harness-poc" target="_blank" class="collection-card col-span-8 reveal-scale delay-3">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80" alt="Harness POC" />
+            <div class="collection-card-overlay"></div>
+            <div class="collection-card-ring"></div>
+            <div class="collection-card-content">
+              <h3>Harness POC</h3>
+              <p>Minimal Agent Harness — Model + Harness, ~300 lines</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="section-testimonials">
+      <div class="testimonials-title reveal">
+        <h2>Clarity.</h2>
+      </div>
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card reveal" style="grid-column: span 4;">
+            <svg class="testimonial-quote-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z"></path></svg>
+            <div style="position: relative; z-index: 10; display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+              <div>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                </div>
+                <p class="testimonial-text">MCP 深度解析彻底改变了我对协议设计的理解。从零到行业标准仅15个月，这本身就是最好的架构案例。</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">A</div>
+                <div>
+                  <div class="testimonial-name">Amara Osei</div>
+                  <div class="testimonial-role">Gallery Director</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="testimonial-card reveal delay-1 mt-stagger-2" style="grid-column: span 5;">
+            <svg class="testimonial-quote-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z"></path></svg>
+            <div style="position: relative; z-index: 10; display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+              <div>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                </div>
+                <p class="testimonial-text">Their structural approach to harness engineering is unparalleled. Not just a framework, an architectural statement on how agents should be built.</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">M</div>
+                <div>
+                  <div class="testimonial-name">Markus Vance</div>
+                  <div class="testimonial-role">Product Lead, Aethos</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="testimonial-card reveal delay-2 mt-stagger-1" style="grid-column: span 5; grid-column-start: 2;">
+            <svg class="testimonial-quote-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z"></path></svg>
+            <div style="position: relative; z-index: 10; display: flex; flex-direction: column; height: 100%; justify-content: space-between; align-items: center; text-align: center;">
+              <div>
+                <div class="testimonial-stars" style="justify-content: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                </div>
+                <p class="testimonial-text">I've never experienced an installation so deeply attuned to natural workflows. It responds with quiet intelligence.</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">J</div>
+                <div>
+                  <div class="testimonial-name">Julian Thorne</div>
+                  <div class="testimonial-role">Founder, Synthetix</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="testimonial-card reveal delay-3 mt-stagger-3" style="grid-column: span 5; grid-column-start: 7;">
+            <svg class="testimonial-quote-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z"></path></svg>
+            <div style="position: relative; z-index: 10; display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+              <div>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                </div>
+                <p class="testimonial-text">Elegant, fluid, and brilliantly executed. It stands out by whispering instead of shouting. A profound paradigm shift in how we think about agent architecture.</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">E</div>
+                <div>
+                  <div class="testimonial-name">Elena Rostova</div>
+                  <div class="testimonial-role">Tech Curator</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="testimonial-card reveal delay-4 mt-stagger-4" style="grid-column: span 5; grid-column-start: 8;">
+            <svg class="testimonial-quote-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z"></path></svg>
+            <div style="position: relative; z-index: 10; display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+              <div>
+                <div class="testimonial-stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"></path></svg>
+                </div>
+                <p class="testimonial-text">The attention to the smallest interactions makes every project feel rewarding. The performance is staggering, yet serene.</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">D</div>
+                <div>
+                  <div class="testimonial-name">David Kim</div>
+                  <div class="testimonial-role">Systems Engineer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-icon reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M63.81,192.19c-47.89-79.81,16-159.62,151.64-151.64C223.43,176.23,143.62,240.08,63.81,192.19Z" opacity="0.2"></path><path d="M223.45,40.07a8,8,0,0,0-7.52-7.52C139.8,28.08,78.82,51,52.82,94a87.09,87.09,0,0,0-12.76,49c.57,15.92,5.21,32,13.79,47.85l-19.51,19.5a8,8,0,0,0,11.32,11.32l19.5-19.51C81,210.73,97.09,215.37,113,215.94q1.67.06,3.33.06A86.93,86.93,0,0,0,162,203.18C205,177.18,227.93,116.21,223.45,40.07ZM153.75,189.5c-22.75,13.78-49.68,14-76.71.77l88.63-88.62a8,8,0,0,0-11.32-11.32L65.73,179c-13.19-27-13-54,.77-76.71,22.09-36.47,74.6-56.44,141.31-54.06C210.2,114.89,190.22,167.41,153.75,189.5Z"></path></svg>
+          </div>
+          <h2 class="reveal delay-1">Never a generic<br/>arrangement.</h2>
+          <p class="reveal delay-2">修煉於天機閣 works exclusively with independent researchers within the open-source ecosystem, ensuring every project possesses a wild, architectural intent that conventional tooling strips away.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER SECTION ===== -->
+    <section class="section-newsletter">
+      <div class="newsletter-card reveal">
+        <div class="newsletter-card-bg">
+          <img src="https://images.unsplash.com/photo-1516979187277-ac810e7b0e9e?w=1200&q=80" alt="Newsletter Background" />
+        </div>
+        <div class="newsletter-card-overlay"></div>
+        <h2>Join the Studio Archive.</h2>
+        <p>Receive bi-weekly essays on spatial design, exclusive access to limited research runs, and nothing else.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email address..." required />
+          <button type="submit">
+            <span>Subscribe</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>BUILT WITH <span class="heart">&hearts;</span> &middot; &copy; 2026</p>
+  <footer class="site-footer">
+    <div class="footer-watermark"><span>GREASEBIG</span></div>
+    <div class="footer-accent-img">
+      <img src="https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=400&q=60" alt="Footer accent" />
+    </div>
+    <div class="container" style="position: relative; z-index: 10;">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>GREASEBIG.</h2>
+          <p class="tagline">Architecture of Code</p>
+          <p>An independent research studio for modern, sculptural computing. Sourced locally, curated globally.</p>
+        </div>
+        <div class="footer-col footer-col-1">
+          <h4><span class="dot"></span> Archive</h4>
+          <ul>
+            <li><a href="https://github.com/greasebig/daily-video-papers" target="_blank">Daily Papers</a></li>
+            <li><a href="https://github.com/greasebig/awesome-agent-everything" target="_blank">Agent Index</a></li>
+            <li><a href="https://github.com/greasebig/harness-poc" target="_blank">Harness POC</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-2">
+          <h4><span class="dot"></span> Studio</h4>
+          <ul>
+            <li><a href="./articles/mcp-deep-dive.html">MCP Deep Dive</a></li>
+            <li><a href="./articles/claw-runtime.html">Claw Runtime</a></li>
+            <li><a href="./articles/harness-engineering.html">Harness Engineering</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-3">
+          <h4><span class="dot"></span> Connect</h4>
+          <ul>
+            <li><a href="https://github.com/greasebig" target="_blank">GitHub</a></li>
+            <li><a href="https://greasebig.github.io/daily-video-papers/" target="_blank">Papers Hub</a></li>
+            <li><a href="./">Main Page</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GREASEBIG. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/greasebig" target="_blank" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script>
     // ===== SCROLL REVEAL =====
     (function() {
-      var reveals = document.querySelectorAll('.reveal');
+      var reveals = document.querySelectorAll('.reveal, .reveal-scale, .reveal-left');
       var observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
@@ -777,39 +1500,44 @@
       reveals.forEach(function(el) { observer.observe(el); });
     })();
 
-    // ===== NAV SCROLL EFFECT =====
+    // ===== HEADER SCROLL EFFECT =====
     (function() {
-      var nav = document.getElementById('mainNav');
+      var header = document.getElementById('siteHeader');
+      var lastScroll = 0;
       window.addEventListener('scroll', function() {
-        if (window.scrollY > 60) {
-          nav.classList.add('scrolled');
+        var currentScroll = window.scrollY;
+        if (currentScroll > 60) {
+          header.classList.add('scrolled');
         } else {
-          nav.classList.remove('scrolled');
+          header.classList.remove('scrolled');
         }
+        lastScroll = currentScroll;
       }, { passive: true });
     })();
 
-    // ========== Floria-style scroll reveal ==========
+    // ===== HERO ACCENT ANIMATION =====
     (function() {
-      var reveals = document.querySelectorAll('.floria-reveal, .floria-reveal-scale');
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+      var accentImg = document.querySelector('.hero-accent-img');
+      if (accentImg) {
+        // Animate in on load
+        setTimeout(function() {
+          accentImg.style.transition = 'opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1), transform 1.2s cubic-bezier(0.25, 0.1, 0.25, 1)';
+          accentImg.style.opacity = '1';
+          accentImg.style.transform = 'scale(1) rotate(-15deg) translateX(25%)';
+        }, 300);
+      }
+    })();
 
-      reveals.forEach(function(el) {
-        var rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          el.classList.add('active');
-        } else {
-          observer.observe(el);
+    // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
-    })();
+    });
   </script>
 </body>
 </html>
