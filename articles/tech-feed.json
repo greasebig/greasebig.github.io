@@ -1,5 +1,104 @@
 [
   {
+    "title": "SteamOS Linux 3.8 released as stable",
+    "url": "https://store.steampowered.com/news/app/1675200/view/697641379212298072",
+    "source": "store.steampowered.com",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from store.steampowered.com. Hacker News score 61, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48580686",
+    "fetched_at": "2026-06-18T06:13:18Z",
+    "title_zh": "SteamOS Linux 3.8 稳定版发布"
+  },
+  {
+    "title": "[x86] AI Compute Extensions (ACE) Specification",
+    "url": "https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/",
+    "source": "x86ecosystem.org",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from x86ecosystem.org. Hacker News score 26, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48579913",
+    "fetched_at": "2026-06-18T06:13:17Z",
+    "title_zh": "[x86] AI 计算扩展 (ACE) 规范"
+  },
+  {
+    "title": "Apple boss Tim Cook says prices to rise due to memory chip costs",
+    "url": "https://www.bbc.com/news/articles/c3wyxvqdx1zo",
+    "source": "bbc.com",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from bbc.com. Hacker News score 21, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48580466",
+    "fetched_at": "2026-06-18T06:13:16Z",
+    "title_zh": "苹果老板蒂姆·库克表示，由于内存芯片成本上涨，价格将上涨"
+  },
+  {
+    "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
+    "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+    "source": "artificialanalysis.ai",
+    "date": "2026-06-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from artificialanalysis.ai. Hacker News score 833, 401 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48567759",
+    "fetched_at": "2026-06-18T06:13:20Z",
+    "title_zh": "GLM-5.2 是人工分析领域新的领先开放权重模型"
+  },
+  {
+    "title": "The founder's playbook: Building an AI-native startup",
+    "url": "https://claude.com/blog/the-founders-playbook",
+    "source": "claude.com",
+    "date": "2026-06-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from claude.com. Hacker News score 225, 157 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48566832",
+    "fetched_at": "2026-06-18T06:13:20Z",
+    "title_zh": "创始人的剧本：建立一家人工智能原生初创公司"
+  },
+  {
+    "title": "MicroUI – A tiny, portable, immediate-mode UI library written in ANSI C",
+    "url": "https://github.com/rxi/microui",
+    "source": "github.com",
+    "date": "2026-06-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 222, 73 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48569205",
+    "fetched_at": "2026-06-18T06:13:19Z",
+    "title_zh": "MicroUI – 一个用 ANSI C 编写的小型、可移植、即时模式 UI 库"
+  },
+  {
+    "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+    "url": "https://github.com/Adam-CAD/CADAM",
+    "source": "github.com",
+    "date": "2026-06-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 174, 84 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48572553",
+    "fetched_at": "2026-06-18T06:13:18Z",
+    "title_zh": "推出 HN：Adam (YC W25) – 开源 AI CAD"
+  },
+  {
+    "title": "Clojure Hosted on Go",
+    "url": "https://github.com/glojurelang/glojure",
+    "source": "github.com",
+    "date": "2026-06-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 89, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48578326",
+    "fetched_at": "2026-06-18T06:13:17Z",
+    "title_zh": "Go 上托管的 Clojure"
+  },
+  {
+    "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
+    "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+    "source": "reuters.com",
+    "date": "2026-06-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from reuters.com. Hacker News score 425, 476 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48565498",
+    "fetched_at": "2026-06-18T06:13:16Z",
+    "title_zh": "美国暂缓将 DeepSeek 列入黑名单 100 多家公司被视为存在安全风险"
+  },
+  {
     "title": "DOJ claims xAI's gas turbines are a matter of 'national and energy security'",
     "url": "https://techcrunch.com/2026/06/16/doj-claims-xais-unpermitted-gas-turbines-are-a-matter-of-national-economic-and-energy-security/",
     "source": "techcrunch.com",
@@ -119,6 +218,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48550693",
     "fetched_at": "2026-06-16T06:46:15Z",
     "title_zh": "有一次 x86 模拟器团队发现代码非常糟糕，他们在模拟过程中修复了它"
+  },
+  {
+    "title": "Show HN: We built an 8-bit CPU as 2nd year EE students",
+    "url": "https://github.com/c0rRupT9/STEPLA-1",
+    "source": "github.com",
+    "date": "2026-06-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 59, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48546549",
+    "fetched_at": "2026-06-18T06:13:18Z",
+    "title_zh": "Show HN：作为 EE 二年级学生，我们构建了一个 8 位 CPU"
   },
   {
     "title": "Claude Corps",
