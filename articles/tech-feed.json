@@ -1,5 +1,93 @@
 [
   {
+    "title": "Vim Creator Bram Moolenaar's Forgotten Programming Language, Zimbu (2023)",
+    "url": "https://thenewstack.io/vim-creator-bram-moolenaars-forgotten-programming-language-zimbu/",
+    "source": "thenewstack.io",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from thenewstack.io. Hacker News score 9, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48594963",
+    "fetched_at": "2026-06-19T06:33:42Z",
+    "title_zh": "Vim 创建者 Bram Moolenaar 的被遗忘的编程语言，Zimbu (2023)"
+  },
+  {
+    "title": "Apple A12 and A13 Chips: New Unpatchable Exploit",
+    "url": "https://www.macrumors.com/2026/06/18/a12-and-a13-chips-facing-exploit/",
+    "source": "macrumors.com",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from macrumors.com. Hacker News score 5, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48595295",
+    "fetched_at": "2026-06-19T06:33:41Z",
+    "title_zh": "Apple A12 和 A13 芯片：新的不可修补漏洞"
+  },
+  {
+    "title": "We built a persistent agent memory layer on Elasticsearch with 0.89 recall",
+    "url": "https://www.elastic.co/search-labs/blog/agent-memory-elasticsearch",
+    "source": "elastic.co",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from elastic.co. Hacker News score 103, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48583703",
+    "fetched_at": "2026-06-19T06:33:41Z",
+    "title_zh": "我们在 Elasticsearch 上构建了一个持久代理内存层，召回率为 0.89"
+  },
+  {
+    "title": "Launch HN: TesterArmy (YC P26) – Agents that test web and mobile apps",
+    "url": "https://tester.army",
+    "source": "tester.army",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from tester.army. Hacker News score 112, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48586299",
+    "fetched_at": "2026-06-19T06:33:39Z",
+    "title_zh": "启动 HN：TesterArmy (YC P26) – 测试 Web 和移动应用程序的代理"
+  },
+  {
+    "title": "Noam Shazeer Joins OpenAI",
+    "url": "https://twitter.com/NoamShazeer/status/2067400851438932297",
+    "source": "twitter.com",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 321, 313 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48578913",
+    "fetched_at": "2026-06-19T06:33:39Z",
+    "title_zh": "Noam Shazeer 加入 OpenAI"
+  },
+  {
+    "title": "Show HN: Talos – Open-source WASM interpreter for Lean",
+    "url": "https://github.com/cajal-technologies/talos",
+    "source": "github.com",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 36, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48584761",
+    "fetched_at": "2026-06-19T06:33:38Z",
+    "title_zh": "Show HN：Talos – 精益的开源 WASM 解释器"
+  },
+  {
+    "title": "I found 10k GitHub repositories distributing Trojan malware",
+    "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
+    "source": "orchidfiles.com",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from orchidfiles.com. Hacker News score 745, 187 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48583928",
+    "fetched_at": "2026-06-19T06:33:37Z",
+    "title_zh": "我发现了 10k 个分发木马恶意软件的 GitHub 存储库"
+  },
+  {
+    "title": "Building a robotics research setup that lives next to my desk",
+    "url": "https://dfdxlabs.com/research/2026/robotics-setup/",
+    "source": "dfdxlabs.com",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from dfdxlabs.com. Hacker News score 56, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48586329",
+    "fetched_at": "2026-06-19T06:33:37Z",
+    "title_zh": "在我的办公桌旁边建立一个机器人研究装置"
+  },
+  {
     "title": "SteamOS Linux 3.8 released as stable",
     "url": "https://store.steampowered.com/news/app/1675200/view/697641379212298072",
     "source": "store.steampowered.com",
@@ -110,6 +198,17 @@
     "title_zh": "美国司法部声称 xAI 的燃气轮机事关“国家和能源安全”"
   },
   {
+    "title": "Zen and the Art of Machine Learning Research",
+    "url": "https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning",
+    "source": "blog.jxmo.io",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.jxmo.io. Hacker News score 8, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48549118",
+    "fetched_at": "2026-06-19T06:33:37Z",
+    "title_zh": "禅宗与机器学习研究的艺术"
+  },
+  {
     "title": "Qwen-Robot Suite: A Foundation Model Suite for Physical World Intelligence",
     "url": "https://qwen.ai/blog?id=qwen-robotsuite",
     "source": "qwen.ai",
@@ -218,6 +317,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48550693",
     "fetched_at": "2026-06-16T06:46:15Z",
     "title_zh": "有一次 x86 模拟器团队发现代码非常糟糕，他们在模拟过程中修复了它"
+  },
+  {
+    "title": "To study how chips work, MIT researchers built their own operating system",
+    "url": "https://news.mit.edu/2026/to-study-how-chips-really-work-mit-researchers-built-their-own-operating-system-0610",
+    "source": "news.mit.edu",
+    "date": "2026-06-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from news.mit.edu. Hacker News score 130, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48543311",
+    "fetched_at": "2026-06-19T06:33:36Z",
+    "title_zh": "为了研究芯片的工作原理，麻省理工学院的研究人员构建了自己的操作系统"
   },
   {
     "title": "Show HN: We built an 8-bit CPU as 2nd year EE students",
