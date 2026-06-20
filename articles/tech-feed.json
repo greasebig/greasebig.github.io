@@ -1,5 +1,82 @@
 [
   {
+    "title": "We built a lab to evaluate data agents – Hex",
+    "url": "https://hex.tech/blog/evaluate-data-agents/",
+    "source": "hex.tech",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from hex.tech. Hacker News score 6, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48604937",
+    "fetched_at": "2026-06-20T05:47:28Z",
+    "title_zh": "我们建立了一个实验室来评估数据代理 – Hex"
+  },
+  {
+    "title": "Cirrus: ATProto Personal Data Server That Runs on Cloudflare Workers",
+    "url": "https://github.com/ascorbic/cirrus",
+    "source": "github.com",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 11, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48604801",
+    "fetched_at": "2026-06-20T05:47:27Z",
+    "title_zh": "Cirrus：在 Cloudflare Workers 上运行的 ATProto 个人数据服务器"
+  },
+  {
+    "title": "Companies rein in AI usage as costs strain budgets",
+    "url": "https://www.ft.com/content/1d37cc08-e0aa-45a4-a45d-4ad282529314",
+    "source": "ft.com",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from ft.com. Hacker News score 99, 88 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48602571",
+    "fetched_at": "2026-06-20T05:47:29Z",
+    "title_zh": "由于成本预算紧张，公司限制人工智能的使用"
+  },
+  {
+    "title": "Hide Secrets from AI Agents and NPM install using Airgap",
+    "url": "https://sauleau.com/notes/airgap-security-for-the-modern-ai-age.html",
+    "source": "sauleau.com",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from sauleau.com. Hacker News score 16, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48602862",
+    "fetched_at": "2026-06-20T05:47:28Z",
+    "title_zh": "使用 Airgap 隐藏 AI 代理和 NPM 安装的秘密"
+  },
+  {
+    "title": "Google workspace threatening to block Firefox access",
+    "url": "https://tales.fromprod.com/2026/169/google-workspace-threatening-to-block-firefox.html",
+    "source": "tales.fromprod.com",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from tales.fromprod.com. Hacker News score 466, 149 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48600345",
+    "fetched_at": "2026-06-20T05:47:26Z",
+    "title_zh": "Google Workspace 威胁阻止 Firefox 访问"
+  },
+  {
+    "title": "John Jumper to join Anthropic",
+    "url": "https://twitter.com/JohnJumperSci/status/2068001285173834106",
+    "source": "twitter.com",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 101, 72 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48601162",
+    "fetched_at": "2026-06-20T05:47:25Z",
+    "title_zh": "约翰·詹珀 (John Jumper) 加盟 Anthropic"
+  },
+  {
+    "title": "Norway imposes near ban on AI in elementary school",
+    "url": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/",
+    "source": "reuters.com",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from reuters.com. Hacker News score 558, 376 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48600093",
+    "fetched_at": "2026-06-20T05:47:24Z",
+    "title_zh": "挪威小学几乎禁止人工智能"
+  },
+  {
     "title": "Vim Creator Bram Moolenaar's Forgotten Programming Language, Zimbu (2023)",
     "url": "https://thenewstack.io/vim-creator-bram-moolenaars-forgotten-programming-language-zimbu/",
     "source": "thenewstack.io",
@@ -20,6 +97,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48595295",
     "fetched_at": "2026-06-19T06:33:41Z",
     "title_zh": "Apple A12 和 A13 芯片：新的不可修补漏洞"
+  },
+  {
+    "title": "I found 10k GitHub repositories distributing Trojan malware",
+    "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
+    "source": "orchidfiles.com",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from orchidfiles.com. Hacker News score 944, 243 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48583928",
+    "fetched_at": "2026-06-20T05:47:28Z",
+    "title_zh": "我发现了 10k 个分发木马恶意软件的 GitHub 存储库"
+  },
+  {
+    "title": "Building a robotics research setup that lives next to my desk",
+    "url": "https://dfdxlabs.com/research/2026/robotics-setup/",
+    "source": "dfdxlabs.com",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from dfdxlabs.com. Hacker News score 132, 45 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48586329",
+    "fetched_at": "2026-06-20T05:47:26Z",
+    "title_zh": "在我的办公桌旁边建立一个机器人研究装置"
   },
   {
     "title": "We built a persistent agent memory layer on Elasticsearch with 0.89 recall",
@@ -64,28 +163,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48584761",
     "fetched_at": "2026-06-19T06:33:38Z",
     "title_zh": "Show HN：Talos – 精益的开源 WASM 解释器"
-  },
-  {
-    "title": "I found 10k GitHub repositories distributing Trojan malware",
-    "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
-    "source": "orchidfiles.com",
-    "date": "2026-06-18",
-    "repost": true,
-    "summary": "转载 / Curated repost from orchidfiles.com. Hacker News score 745, 187 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48583928",
-    "fetched_at": "2026-06-19T06:33:37Z",
-    "title_zh": "我发现了 10k 个分发木马恶意软件的 GitHub 存储库"
-  },
-  {
-    "title": "Building a robotics research setup that lives next to my desk",
-    "url": "https://dfdxlabs.com/research/2026/robotics-setup/",
-    "source": "dfdxlabs.com",
-    "date": "2026-06-18",
-    "repost": true,
-    "summary": "转载 / Curated repost from dfdxlabs.com. Hacker News score 56, 18 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48586329",
-    "fetched_at": "2026-06-19T06:33:37Z",
-    "title_zh": "在我的办公桌旁边建立一个机器人研究装置"
   },
   {
     "title": "SteamOS Linux 3.8 released as stable",
@@ -203,9 +280,9 @@
     "source": "blog.jxmo.io",
     "date": "2026-06-16",
     "repost": true,
-    "summary": "转载 / Curated repost from blog.jxmo.io. Hacker News score 8, 0 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from blog.jxmo.io. Hacker News score 245, 89 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48549118",
-    "fetched_at": "2026-06-19T06:33:37Z",
+    "fetched_at": "2026-06-20T05:47:25Z",
     "title_zh": "禅宗与机器学习研究的艺术"
   },
   {
