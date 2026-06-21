@@ -1,5 +1,104 @@
 [
   {
+    "title": "Project Fetch: Phase Two",
+    "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+    "source": "anthropic.com",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 52, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48614311",
+    "fetched_at": "2026-06-21T06:20:43Z",
+    "title_zh": "项目获取：第二阶段"
+  },
+  {
+    "title": "The 100k Whys of AI",
+    "url": "https://lcamtuf.substack.com/p/the-100000-whys-of-ai",
+    "source": "lcamtuf.substack.com",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from lcamtuf.substack.com. Hacker News score 3, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48616017",
+    "fetched_at": "2026-06-21T06:20:42Z",
+    "title_zh": "人工智能的十万个为什么"
+  },
+  {
+    "title": "When I reject AI code even if it works",
+    "url": "https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/",
+    "source": "vinibrasil.com",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from vinibrasil.com. Hacker News score 130, 74 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48614631",
+    "fetched_at": "2026-06-21T06:20:42Z",
+    "title_zh": "当我拒绝人工智能代码时，即使它有效"
+  },
+  {
+    "title": "Building Reliable Agentic AI Systems",
+    "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+    "source": "martinfowler.com",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from martinfowler.com. Hacker News score 39, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48615680",
+    "fetched_at": "2026-06-21T06:20:41Z",
+    "title_zh": "构建可靠的代理人工智能系统"
+  },
+  {
+    "title": "UHF X11: X11 Built for VisionOS and Apple Vision Pro",
+    "url": "https://www.lispm.net/apps/uhf-x11/",
+    "source": "lispm.net",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from lispm.net. Hacker News score 190, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48610853",
+    "fetched_at": "2026-06-21T06:20:43Z",
+    "title_zh": "UHF X11：专为 VisionOS 和 Apple Vision Pro 打造的 X11"
+  },
+  {
+    "title": "Linux eliminates the strncpy API after six years of work, 360 patches",
+    "url": "https://www.phoronix.com/news/Linux-7.2-Drops-strncpy",
+    "source": "phoronix.com",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from phoronix.com. Hacker News score 162, 125 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48612943",
+    "fetched_at": "2026-06-21T06:20:43Z",
+    "title_zh": "Linux经过六年的工作、360个补丁消除了strncpy API"
+  },
+  {
+    "title": "Temporary Cloudflare accounts for AI agents",
+    "url": "https://blog.cloudflare.com/temporary-accounts/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 199, 103 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48608394",
+    "fetched_at": "2026-06-21T06:20:43Z",
+    "title_zh": "AI 代理的临时 Cloudflare 帐户"
+  },
+  {
+    "title": "Epoll vs. io_uring in Linux",
+    "url": "https://sibexi.co/posts/epoll-vs-io_uring/",
+    "source": "sibexi.co",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from sibexi.co. Hacker News score 115, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48613872",
+    "fetched_at": "2026-06-21T06:20:42Z",
+    "title_zh": "Linux 中的 epoll 与 io_uring"
+  },
+  {
+    "title": "Loupe – A iOS app that raises awareness about what native apps can see",
+    "url": "https://github.com/mysk-research/loupe",
+    "source": "github.com",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 184, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48608645",
+    "fetched_at": "2026-06-21T06:20:41Z",
+    "title_zh": "Loupe – 一款 iOS 应用程序，可提高人们对本机应用程序可以看到的内容的认识"
+  },
+  {
     "title": "We built a lab to evaluate data agents – Hex",
     "url": "https://hex.tech/blog/evaluate-data-agents/",
     "source": "hex.tech",
@@ -273,6 +372,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48565429",
     "fetched_at": "2026-06-17T06:30:18Z",
     "title_zh": "美国司法部声称 xAI 的燃气轮机事关“国家和能源安全”"
+  },
+  {
+    "title": "Inference cost at scale with napkin math",
+    "url": "https://injuly.in/blog/napkin-inference-cost/index.html",
+    "source": "injuly.in",
+    "date": "2026-06-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from injuly.in. Hacker News score 73, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48560227",
+    "fetched_at": "2026-06-21T06:20:44Z",
+    "title_zh": "使用餐巾纸数学进行大规模推理成本"
   },
   {
     "title": "Zen and the Art of Machine Learning Research",
