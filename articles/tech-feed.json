@@ -1,5 +1,82 @@
 [
   {
+    "title": "Show HN: Recall – Local project memory for Claude Code",
+    "url": "https://github.com/raiyanyahya/recall",
+    "source": "github.com",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 99, 65 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48622590",
+    "fetched_at": "2026-06-22T06:43:40Z",
+    "title_zh": "显示 HN：Recall – Claude Code 的本地项目内存"
+  },
+  {
+    "title": "Show HN: Teach your kids perfect pitch",
+    "url": "https://github.com/paytonjjones/bsharp",
+    "source": "github.com",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 109, 63 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48618488",
+    "fetched_at": "2026-06-22T06:43:39Z",
+    "title_zh": "Show HN：教您的孩子完美音调"
+  },
+  {
+    "title": "PowerFox Browser",
+    "url": "https://powerfox.jazzzny.me/",
+    "source": "powerfox.jazzzny.me",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from powerfox.jazzzny.me. Hacker News score 113, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48622731",
+    "fetched_at": "2026-06-22T06:43:38Z",
+    "title_zh": "PowerFox浏览器"
+  },
+  {
+    "title": "Good results fine tuning a local LLM like Qwen 3:0.6B to categorize questions",
+    "url": "https://www.teachmecoolstuff.com/viewarticle/fine-tuning-a-local-llm-to-categorize-questions",
+    "source": "teachmecoolstuff.com",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from teachmecoolstuff.com. Hacker News score 97, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48623434",
+    "fetched_at": "2026-06-22T06:43:37Z",
+    "title_zh": "微调本地法学硕士（如 Qwen 3:0.6B）以对问题进行分类，效果良好"
+  },
+  {
+    "title": "Identity verification on Claude",
+    "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+    "source": "support.claude.com",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from support.claude.com. Hacker News score 688, 580 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48618455",
+    "fetched_at": "2026-06-22T06:43:37Z",
+    "title_zh": "克劳德身份验证"
+  },
+  {
+    "title": "Apertus – Open Foundation Model for Sovereign AI",
+    "url": "https://apertvs.ai/",
+    "source": "apertvs.ai",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from apertvs.ai. Hacker News score 321, 111 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48622778",
+    "fetched_at": "2026-06-22T06:43:36Z",
+    "title_zh": "Apertus – 主权人工智能的开放基础模型"
+  },
+  {
+    "title": "There is minimal downside to switching to open models",
+    "url": "https://www.marble.onl/posts/cancel_claude.html",
+    "source": "marble.onl",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from marble.onl. Hacker News score 163, 116 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48622518",
+    "fetched_at": "2026-06-22T06:43:36Z",
+    "title_zh": "切换到开放模型的负面影响很小"
+  },
+  {
     "title": "Project Fetch: Phase Two",
     "url": "https://www.anthropic.com/research/project-fetch-phase-two",
     "source": "anthropic.com",
@@ -42,6 +119,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48615680",
     "fetched_at": "2026-06-21T06:20:41Z",
     "title_zh": "构建可靠的代理人工智能系统"
+  },
+  {
+    "title": "Efficient C++ Programming for Modern C++ CPUs, Chapter 4/part 2",
+    "url": "https://6it.dev/blog/infographics-operation-costs-in-cpu-clock-cycles-take-2-80736",
+    "source": "6it.dev",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from 6it.dev. Hacker News score 35, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48605085",
+    "fetched_at": "2026-06-22T06:43:39Z",
+    "title_zh": "现代 C++ CPU 的高效 C++ 编程，第 4 章/第 2 部分"
+  },
+  {
+    "title": "Lisp in the Rust Type System",
+    "url": "https://github.com/playX18/lisp-in-types/",
+    "source": "github.com",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 35, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48606654",
+    "fetched_at": "2026-06-22T06:43:38Z",
+    "title_zh": "Rust 类型系统中的 Lisp"
   },
   {
     "title": "UHF X11: X11 Built for VisionOS and Apple Vision Pro",
@@ -196,6 +295,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48595295",
     "fetched_at": "2026-06-19T06:33:41Z",
     "title_zh": "Apple A12 和 A13 芯片：新的不可修补漏洞"
+  },
+  {
+    "title": "How I play video games with spinal muscular atrophy",
+    "url": "https://www.openassistivetech.org/how-i-actually-play-video-games-with-sma-the-tools-i-use-every-day/",
+    "source": "openassistivetech.org",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from openassistivetech.org. Hacker News score 93, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48589687",
+    "fetched_at": "2026-06-22T06:43:37Z",
+    "title_zh": "脊髓性肌萎缩症患者如何玩电子游戏"
   },
   {
     "title": "I found 10k GitHub repositories distributing Trojan malware",
