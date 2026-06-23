@@ -1,5 +1,71 @@
 [
   {
+    "title": "Ultralytics YOLO26: Unified Real-Time End-to-End Vision Models",
+    "url": "https://arxiv.org/abs/2606.03748",
+    "source": "arxiv.org",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 16, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48639434",
+    "fetched_at": "2026-06-23T05:33:26Z",
+    "title_zh": "Ultralytics YOLO26：统一的实时端到端视觉模型"
+  },
+  {
+    "title": "VibeThinker: 3B param model that beats Opus 4.5 on reasoning with novel SFT+GRPO",
+    "url": "https://arxiv.org/abs/2606.16140",
+    "source": "arxiv.org",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 88, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48639240",
+    "fetched_at": "2026-06-23T05:33:22Z",
+    "title_zh": "VibeThinker：3B 参数模型在推理上击败 Opus 4.5，采用新颖的 SFT+GRPO"
+  },
+  {
+    "title": "The text in Claude Code’s “Extended Thinking” output",
+    "url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/",
+    "source": "patrickmccanna.net",
+    "date": "2026-06-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from patrickmccanna.net. Hacker News score 293, 205 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48630535",
+    "fetched_at": "2026-06-23T05:33:28Z",
+    "title_zh": "克劳德·科德“扩展思维”输出中的文本"
+  },
+  {
+    "title": "Show HN: Oak – Git alternative designed for agents",
+    "url": "https://oak.space/oak/oak",
+    "source": "oak.space",
+    "date": "2026-06-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from oak.space. Hacker News score 171, 155 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48631726",
+    "fetched_at": "2026-06-23T05:33:24Z",
+    "title_zh": "Show HN：Oak – 专为代理设计的 Git 替代方案"
+  },
+  {
+    "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+    "url": "https://hustvl.github.io/Moebius/",
+    "source": "hustvl.github.io",
+    "date": "2026-06-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from hustvl.github.io. Hacker News score 261, 67 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48630171",
+    "fetched_at": "2026-06-23T05:33:23Z",
+    "title_zh": "Moebius：0.2B图像修复模型，10B级性能"
+  },
+  {
+    "title": "Optocam Zero: a Pi Zero based digital camera made using off the shelf components",
+    "url": "https://github.com/dorukkumkumoglu/optocamzero",
+    "source": "github.com",
+    "date": "2026-06-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 137, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48634778",
+    "fetched_at": "2026-06-23T05:33:22Z",
+    "title_zh": "Optocam Zero：基于 Pi Zero 的数码相机，使用现成组件制成"
+  },
+  {
     "title": "Show HN: Recall – Local project memory for Claude Code",
     "url": "https://github.com/raiyanyahya/recall",
     "source": "github.com",
@@ -121,6 +187,17 @@
     "title_zh": "构建可靠的代理人工智能系统"
   },
   {
+    "title": "I built an offline tool to stabilize TV audio because nothing else worked",
+    "url": "https://github.com/AdBusterOfficial/Adbuster--WinApp",
+    "source": "github.com",
+    "date": "2026-06-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 6, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48612625",
+    "fetched_at": "2026-06-23T05:33:25Z",
+    "title_zh": "我构建了一个离线工具来稳定电视音频，因为其他方法都不起作用"
+  },
+  {
     "title": "Efficient C++ Programming for Modern C++ CPUs, Chapter 4/part 2",
     "url": "https://6it.dev/blog/infographics-operation-costs-in-cpu-clock-cycles-take-2-80736",
     "source": "6it.dev",
@@ -220,6 +297,17 @@
     "title_zh": "Cirrus：在 Cloudflare Workers 上运行的 ATProto 个人数据服务器"
   },
   {
+    "title": "Windows NT for GameCube/Wii",
+    "url": "https://github.com/Wack0/entii-for-workcubes",
+    "source": "github.com",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 42, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48598591",
+    "fetched_at": "2026-06-23T05:33:24Z",
+    "title_zh": "GameCube/Wii 的 Windows NT"
+  },
+  {
     "title": "Companies rein in AI usage as costs strain budgets",
     "url": "https://www.ft.com/content/1d37cc08-e0aa-45a4-a45d-4ad282529314",
     "source": "ft.com",
@@ -295,6 +383,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48595295",
     "fetched_at": "2026-06-19T06:33:41Z",
     "title_zh": "Apple A12 和 A13 芯片：新的不可修补漏洞"
+  },
+  {
+    "title": "Show HN: Pagecast – Publish Markdown/HTML Reports to Cloudflare Pages",
+    "url": "https://github.com/Amal-David/pagecast",
+    "source": "github.com",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 40, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48590505",
+    "fetched_at": "2026-06-23T05:33:26Z",
+    "title_zh": "Show HN：Pagecast – 将 Markdown/HTML 报告发布到 Cloudflare 页面"
+  },
+  {
+    "title": "Is it time for a new Embedded Linux build system?",
+    "url": "https://yoebuild.org/blog/time-for-a-new-build-system/",
+    "source": "yoebuild.org",
+    "date": "2026-06-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from yoebuild.org. Hacker News score 60, 42 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48588247",
+    "fetched_at": "2026-06-23T05:33:25Z",
+    "title_zh": "是时候采用新的嵌入式 Linux 构建系统了吗？"
   },
   {
     "title": "How I play video games with spinal muscular atrophy",
