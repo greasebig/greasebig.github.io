@@ -1,5 +1,82 @@
 [
   {
+    "title": "DiffusionBench: Towards Holistic Evaluation of Generative Diffusion Transformers",
+    "url": "https://github.com/End2End-Diffusion/diffusion-bench",
+    "source": "github.com",
+    "date": "2026-06-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 18, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48654274",
+    "fetched_at": "2026-06-24T05:13:55Z",
+    "title_zh": "DiffusionBench：对生成扩散变压器进行整体评估"
+  },
+  {
+    "title": "Qwen-AgentWorld: Language World Models for General Agents",
+    "url": "https://arxiv.org/abs/2606.24597",
+    "source": "arxiv.org",
+    "date": "2026-06-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 23, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48654351",
+    "fetched_at": "2026-06-24T05:13:54Z",
+    "title_zh": "Qwen-AgentWorld：一般代理的语言世界模型"
+  },
+  {
+    "title": "Show HN: RLM-based local debugger for AI agent traces",
+    "url": "https://github.com/context-labs/halo",
+    "source": "github.com",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 18, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48649137",
+    "fetched_at": "2026-06-24T05:13:57Z",
+    "title_zh": "Show HN：用于 AI 代理跟踪的基于 RLM 的本地调试器"
+  },
+  {
+    "title": "The Low-Tech AI of Elden Ring",
+    "url": "https://nega.tv/posts/low-tech-ai-of-elden-ring.html",
+    "source": "nega.tv",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from nega.tv. Hacker News score 127, 60 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48643489",
+    "fetched_at": "2026-06-24T05:13:57Z",
+    "title_zh": "Elden Ring 的低科技人工智能"
+  },
+  {
+    "title": "Fired by Google for creating the Google workspace CLI",
+    "url": "https://twitter.com/JPoehnelt/status/2069482265953087602",
+    "source": "twitter.com",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 377, 243 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48649011",
+    "fetched_at": "2026-06-24T05:13:57Z",
+    "title_zh": "因创建 Google Workspace CLI 而被 Google 解雇"
+  },
+  {
+    "title": "FUTO Swipe – A new swipe typing model",
+    "url": "https://swipe.futo.tech/",
+    "source": "swipe.futo.tech",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from swipe.futo.tech. Hacker News score 394, 116 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48648619",
+    "fetched_at": "2026-06-24T05:13:54Z",
+    "title_zh": "FUTO Swipe – 一种新的滑动打字模式"
+  },
+  {
+    "title": "In memory of the man who put red and green squiggles under words",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 244, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48648959",
+    "fetched_at": "2026-06-24T05:13:54Z",
+    "title_zh": "纪念那个在文字下面画上红绿曲线的人"
+  },
+  {
     "title": "Ultralytics YOLO26: Unified Real-Time End-to-End Vision Models",
     "url": "https://arxiv.org/abs/2606.03748",
     "source": "arxiv.org",
@@ -20,6 +97,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48639240",
     "fetched_at": "2026-06-23T05:33:22Z",
     "title_zh": "VibeThinker：3B 参数模型在推理上击败 Opus 4.5，采用新颖的 SFT+GRPO"
+  },
+  {
+    "title": "Five monitors on a Commodore 128 [video]",
+    "url": "https://www.youtube.com/watch?v=ul5hC3PY1Yg",
+    "source": "youtube.com",
+    "date": "2026-06-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 113, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48634187",
+    "fetched_at": "2026-06-24T05:13:58Z",
+    "title_zh": "Commodore 128 上有五个显示器 [视频]"
+  },
+  {
+    "title": "Show HN: FastUbu – An Ultrafast Video Archive",
+    "url": "https://fastubu.com/",
+    "source": "fastubu.com",
+    "date": "2026-06-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from fastubu.com. Hacker News score 27, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48631681",
+    "fetched_at": "2026-06-24T05:13:58Z",
+    "title_zh": "Show HN：FastUbu – 超快视频存档"
   },
   {
     "title": "The text in Claude Code’s “Extended Thinking” output",
@@ -64,6 +163,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48634778",
     "fetched_at": "2026-06-23T05:33:22Z",
     "title_zh": "Optocam Zero：基于 Pi Zero 的数码相机，使用现成组件制成"
+  },
+  {
+    "title": "F* file system – file search that reads SSD directly bypassing OS kernel",
+    "url": "https://github.com/dmtrKovalenko/ffs",
+    "source": "github.com",
+    "date": "2026-06-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 49, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48622433",
+    "fetched_at": "2026-06-24T05:13:56Z",
+    "title_zh": "F*文件系统——绕过操作系统内核直接读取SSD的文件搜索"
   },
   {
     "title": "Show HN: Recall – Local project memory for Claude Code",
