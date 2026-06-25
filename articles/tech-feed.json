@@ -1,5 +1,82 @@
 [
   {
+    "title": "What I'm Finding About LLM Code Style and Token Costs",
+    "url": "https://www.jimmont.com/llm-style-token-costs",
+    "source": "jimmont.com",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from jimmont.com. Hacker News score 22, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48667409",
+    "fetched_at": "2026-06-25T05:34:24Z",
+    "title_zh": "我对 LLM 代码风格和代币成本的发现"
+  },
+  {
+    "title": "Medical students are using popular research tool to pump out misleading studies",
+    "url": "https://www.science.org/content/article/medical-students-are-using-popular-research-tool-pump-out-misleading-studies",
+    "source": "science.org",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from science.org. Hacker News score 12, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48668119",
+    "fetched_at": "2026-06-25T05:34:23Z",
+    "title_zh": "医学生正在使用流行的研究工具来进行误导性研究"
+  },
+  {
+    "title": "Cloudflare launched self-managed OAuth for all",
+    "url": "https://blog.cloudflare.com/oauth-for-all/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 76, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48668033",
+    "fetched_at": "2026-06-25T05:34:21Z",
+    "title_zh": "Cloudflare 为所有人推出了自我管理的 OAuth"
+  },
+  {
+    "title": "LuaJIT 3.0 proposed syntax extensions",
+    "url": "https://github.com/LuaJIT/LuaJIT/issues/1475",
+    "source": "github.com",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 107, 60 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48667336",
+    "fetched_at": "2026-06-25T05:34:21Z",
+    "title_zh": "LuaJIT 3.0 提议的语法扩展"
+  },
+  {
+    "title": "RubyLLM: A Ruby framework for all major AI providers",
+    "url": "https://rubyllm.com/",
+    "source": "rubyllm.com",
+    "date": "2026-06-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from rubyllm.com. Hacker News score 367, 60 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48660711",
+    "fetched_at": "2026-06-25T05:34:22Z",
+    "title_zh": "RubyLLM：适用于所有主要 AI 提供商的 Ruby 框架"
+  },
+  {
+    "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
+    "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+    "source": "reuters.com",
+    "date": "2026-06-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from reuters.com. Hacker News score 251, 422 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48664814",
+    "fetched_at": "2026-06-25T05:34:21Z",
+    "title_zh": "Anthropic称阿里巴巴非法提取Claude AI模型能力"
+  },
+  {
+    "title": "OpenAI unveils its first custom chip, built by Broadcom",
+    "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+    "source": "techcrunch.com",
+    "date": "2026-06-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from techcrunch.com. Hacker News score 630, 359 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48663324",
+    "fetched_at": "2026-06-25T05:34:21Z",
+    "title_zh": "OpenAI 推出首款定制芯片，由 Broadcom 制造"
+  },
+  {
     "title": "DiffusionBench: Towards Holistic Evaluation of Generative Diffusion Transformers",
     "url": "https://github.com/End2End-Diffusion/diffusion-bench",
     "source": "github.com",
@@ -20,6 +97,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48654351",
     "fetched_at": "2026-06-24T05:13:54Z",
     "title_zh": "Qwen-AgentWorld：一般代理的语言世界模型"
+  },
+  {
+    "title": "GLM-5.2 is a step change for open agents",
+    "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+    "source": "interconnects.ai",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from interconnects.ai. Hacker News score 177, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48639840",
+    "fetched_at": "2026-06-25T05:34:23Z",
+    "title_zh": "GLM-5.2 是开放代理的一步改变"
   },
   {
     "title": "Show HN: RLM-based local debugger for AI agent traces",
@@ -405,6 +493,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48604801",
     "fetched_at": "2026-06-20T05:47:27Z",
     "title_zh": "Cirrus：在 Cloudflare Workers 上运行的 ATProto 个人数据服务器"
+  },
+  {
+    "title": "Show HN: Brain Frog – Can you be random enough for 11 lines of JavaScript?",
+    "url": "https://brainfrog.lol",
+    "source": "brainfrog.lol",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from brainfrog.lol. Hacker News score 19, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48598051",
+    "fetched_at": "2026-06-25T05:34:23Z",
+    "title_zh": "Show HN：Brain Frog – 你能足够随机地写 11 行 JavaScript 吗？"
+  },
+  {
+    "title": "Show HN: Write SaaS apps where users control where their data is stored",
+    "url": "https://github.com/wolfoo2931/linkedrecords/",
+    "source": "github.com",
+    "date": "2026-06-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 29, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48595882",
+    "fetched_at": "2026-06-25T05:34:22Z",
+    "title_zh": "Show HN：编写 SaaS 应用程序，让用户控制数据的存储位置"
   },
   {
     "title": "Windows NT for GameCube/Wii",
