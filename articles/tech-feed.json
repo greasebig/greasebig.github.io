@@ -1,5 +1,71 @@
 [
   {
+    "title": "What happened after 2k people tried to hack my AI assistant",
+    "url": "https://www.fernandoi.cl/posts/hackmyclaw/",
+    "source": "fernandoi.cl",
+    "date": "2026-06-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from fernandoi.cl. Hacker News score 49, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48681687",
+    "fetched_at": "2026-06-26T05:40:53Z",
+    "title_zh": "2000 人试图破解我的人工智能助手后发生了什么"
+  },
+  {
+    "title": "Political bias in AI: Where the AI models stand",
+    "url": "https://trakkr.ai/bias",
+    "source": "trakkr.ai",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from trakkr.ai. Hacker News score 137, 248 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48672779",
+    "fetched_at": "2026-06-26T05:40:58Z",
+    "title_zh": "人工智能中的政治偏见：人工智能模型的立场"
+  },
+  {
+    "title": "An oral history of Bank Python (2021)",
+    "url": "https://calpaterson.com/bank-python.html",
+    "source": "calpaterson.com",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from calpaterson.com. Hacker News score 93, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48678645",
+    "fetched_at": "2026-06-26T05:40:56Z",
+    "title_zh": "Python 银行的口述历史 (2021)"
+  },
+  {
+    "title": "IBM debuts sub-1 nanometer chip technology",
+    "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+    "source": "newsroom.ibm.com",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from newsroom.ibm.com. Hacker News score 293, 160 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48674967",
+    "fetched_at": "2026-06-26T05:40:55Z",
+    "title_zh": "IBM 首次推出亚 1 纳米芯片技术"
+  },
+  {
+    "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+    "url": "https://github.com/inkeep/open-knowledge",
+    "source": "github.com",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 239, 116 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48675435",
+    "fetched_at": "2026-06-26T05:40:55Z",
+    "title_zh": "Show HN：OpenKnowledge – Obsidian/Notion 的开源 AI 优先替代品"
+  },
+  {
+    "title": "Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line",
+    "url": "https://www.bloomberg.com/news/articles/2026-06-25/apple-to-skip-high-end-m6-mac-chips-to-launch-m7-pro-m7-max-m7-ultra-instead?embedded-checkout=true",
+    "source": "bloomberg.com",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from bloomberg.com. Hacker News score 178, 141 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48676795",
+    "fetched_at": "2026-06-26T05:40:54Z",
+    "title_zh": "苹果将​​跳过高端 M6 Mac 芯片，转而专注于 AI 的 M7 系列"
+  },
+  {
     "title": "What I'm Finding About LLM Code Style and Token Costs",
     "url": "https://www.jimmont.com/llm-style-token-costs",
     "source": "jimmont.com",
@@ -42,6 +108,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48667336",
     "fetched_at": "2026-06-25T05:34:21Z",
     "title_zh": "LuaJIT 3.0 提议的语法扩展"
+  },
+  {
+    "title": "GloriousEggroll's Proton has been rebased on Proton 11",
+    "url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton11-1",
+    "source": "github.com",
+    "date": "2026-06-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 74, 29 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48656692",
+    "fetched_at": "2026-06-26T05:40:58Z",
+    "title_zh": "GloriousEggroll 的 Proton 已基于 Proton 11 进行了重新设计"
   },
   {
     "title": "RubyLLM: A Ruby framework for all major AI providers",
@@ -97,6 +174,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48654351",
     "fetched_at": "2026-06-24T05:13:54Z",
     "title_zh": "Qwen-AgentWorld：一般代理的语言世界模型"
+  },
+  {
+    "title": "Record type inference for dummies",
+    "url": "http://haskellforall.com/2026/06/record-type-inference-for-dummies",
+    "source": "haskellforall.com",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from haskellforall.com. Hacker News score 29, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48644383",
+    "fetched_at": "2026-06-26T05:40:57Z",
+    "title_zh": "傻瓜式记录类型推断"
+  },
+  {
+    "title": "A game where you're an OS and have to manage processes, memory and I/O events",
+    "url": "https://github.com/plbrault/youre-the-os",
+    "source": "github.com",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 147, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48642474",
+    "fetched_at": "2026-06-26T05:40:54Z",
+    "title_zh": "在一款游戏中，你是一个操作系统，必须管理进程、内存和 I/O 事件"
   },
   {
     "title": "GLM-5.2 is a step change for open agents",
@@ -185,6 +284,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48639240",
     "fetched_at": "2026-06-23T05:33:22Z",
     "title_zh": "VibeThinker：3B 参数模型在推理上击败 Opus 4.5，采用新颖的 SFT+GRPO"
+  },
+  {
+    "title": "The annotated PyTorch training loop",
+    "url": "https://idlemachines.co.uk/essays/pytorch-training-loop",
+    "source": "idlemachines.co.uk",
+    "date": "2026-06-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from idlemachines.co.uk. Hacker News score 66, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48638120",
+    "fetched_at": "2026-06-26T05:40:58Z",
+    "title_zh": "带注释的 PyTorch 训练循环"
   },
   {
     "title": "Five monitors on a Commodore 128 [video]",
