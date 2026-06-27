@@ -1,5 +1,71 @@
 [
   {
+    "title": "Foreign funds help make housing unaffordable: research",
+    "url": "https://news.mccombs.utexas.edu/research/foreign-funds-help-make-housing-unaffordable/",
+    "source": "news.mccombs.utexas.edu",
+    "date": "2026-06-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from news.mccombs.utexas.edu. Hacker News score 22, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48693420",
+    "fetched_at": "2026-06-27T05:06:51Z",
+    "title_zh": "外国资金导致住房负担不起：研究"
+  },
+  {
+    "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+    "url": "https://github.com/workweave/router",
+    "source": "github.com",
+    "date": "2026-06-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 158, 91 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48688700",
+    "fetched_at": "2026-06-27T05:06:51Z",
+    "title_zh": "Show HN：直接在 Claude、Codex 和 Cursor 中显示智能模型路由"
+  },
+  {
+    "title": "AI in mathematics is forcing big questions",
+    "url": "https://spectrum.ieee.org/ai-in-mathematics",
+    "source": "spectrum.ieee.org",
+    "date": "2026-06-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 81, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48692883",
+    "fetched_at": "2026-06-27T05:06:50Z",
+    "title_zh": "数学领域的人工智能正在提出重大问题"
+  },
+  {
+    "title": "A C++ implementation of a fast hash map and hash set using hopscotch hashing",
+    "url": "https://github.com/Tessil/hopscotch-map",
+    "source": "github.com",
+    "date": "2026-06-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 79, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48692090",
+    "fetched_at": "2026-06-27T05:06:50Z",
+    "title_zh": "使用跳房子哈希法的快速哈希映射和哈希集的 C++ 实现"
+  },
+  {
+    "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+    "source": "openai.com",
+    "date": "2026-06-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 909, 552 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48689028",
+    "fetched_at": "2026-06-27T05:06:49Z",
+    "title_zh": "预览 GPT‑5.6 Sol：下一代模型"
+  },
+  {
+    "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
+    "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+    "source": "semafor.com",
+    "date": "2026-06-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from semafor.com. Hacker News score 313, 318 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48692995",
+    "fetched_at": "2026-06-27T05:06:49Z",
+    "title_zh": "美国允许 Anthropic 向“值得信赖”的美国组织发布 Mythos AI"
+  },
+  {
     "title": "What happened after 2k people tried to hack my AI assistant",
     "url": "https://www.fernandoi.cl/posts/hackmyclaw/",
     "source": "fernandoi.cl",
@@ -9,6 +75,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48681687",
     "fetched_at": "2026-06-26T05:40:53Z",
     "title_zh": "2000 人试图破解我的人工智能助手后发生了什么"
+  },
+  {
+    "title": "Show HN: Autofit2 – End-to-end pipeline for multilingual text classification",
+    "url": "https://github.com/neospe/autofit2",
+    "source": "github.com",
+    "date": "2026-06-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 21, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48673527",
+    "fetched_at": "2026-06-27T05:06:52Z",
+    "title_zh": "Show HN：Autofit2 – 用于多语言文本分类的端到端管道"
   },
   {
     "title": "Political bias in AI: Where the AI models stand",
@@ -110,6 +187,28 @@
     "title_zh": "LuaJIT 3.0 提议的语法扩展"
   },
   {
+    "title": "Fusion Programming Language",
+    "url": "https://fusion-lang.org/",
+    "source": "fusion-lang.org",
+    "date": "2026-06-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from fusion-lang.org. Hacker News score 19, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48658148",
+    "fetched_at": "2026-06-27T05:06:50Z",
+    "title_zh": "融合编程语言"
+  },
+  {
+    "title": "Show HN: DBOSify – Drop-in Temporal replacement built on Postgres",
+    "url": "https://github.com/dbos-inc/dbosify-py",
+    "source": "github.com",
+    "date": "2026-06-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 38, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48662988",
+    "fetched_at": "2026-06-27T05:06:50Z",
+    "title_zh": "Show HN：DBOSify – 基于 Postgres 构建的直接临时替换"
+  },
+  {
     "title": "GloriousEggroll's Proton has been rebased on Proton 11",
     "url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton11-1",
     "source": "github.com",
@@ -174,6 +273,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48654351",
     "fetched_at": "2026-06-24T05:13:54Z",
     "title_zh": "Qwen-AgentWorld：一般代理的语言世界模型"
+  },
+  {
+    "title": "Modern GPU Programming for MLSys",
+    "url": "https://mlc.ai/modern-gpu-programming-for-mlsys/",
+    "source": "mlc.ai",
+    "date": "2026-06-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from mlc.ai. Hacker News score 69, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48643459",
+    "fetched_at": "2026-06-27T05:06:52Z",
+    "title_zh": "MLSys 的现代 GPU 编程"
   },
   {
     "title": "Record type inference for dummies",
