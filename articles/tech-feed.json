@@ -1,5 +1,104 @@
 [
   {
+    "title": "Response to AI slop is from Robin Williams",
+    "url": "https://jayacunzo.com/blog/your-move-chief",
+    "source": "jayacunzo.com",
+    "date": "2026-06-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from jayacunzo.com. Hacker News score 146, 86 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48703452",
+    "fetched_at": "2026-06-28T05:48:03Z",
+    "title_zh": "Robin Williams 对 AI slop 的回应"
+  },
+  {
+    "title": "Ford hired AI and sacked humans. It backfired badly",
+    "url": "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html",
+    "source": "the-independent.com",
+    "date": "2026-06-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from the-independent.com. Hacker News score 90, 50 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48703968",
+    "fetched_at": "2026-06-28T05:48:02Z",
+    "title_zh": "福特雇佣了人工智能并解雇了人类。结果适得其反"
+  },
+  {
+    "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+    "url": "https://github.com/itsthelore/wayfinder-router",
+    "source": "github.com",
+    "date": "2026-06-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 21, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48704373",
+    "fetched_at": "2026-06-28T05:48:01Z",
+    "title_zh": "Wayfinder Router：本地和托管 LLM 之间查询的确定性路由"
+  },
+  {
+    "title": "AMD Strix Halo RDMA Cluster Setup Guide",
+    "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
+    "source": "github.com",
+    "date": "2026-06-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 88, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48703258",
+    "fetched_at": "2026-06-28T05:48:01Z",
+    "title_zh": "AMD Strix Halo RDMA 集群设置指南"
+  },
+  {
+    "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+    "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+    "source": "github.com",
+    "date": "2026-06-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 747, 312 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48696585",
+    "fetched_at": "2026-06-28T05:48:04Z",
+    "title_zh": "DSpark：推测性解码加速 LLM 推理 [pdf]"
+  },
+  {
+    "title": "WAL-RUS: a Rust Rewrite of WAL-G for PostgreSQL Backups",
+    "url": "https://clickhouse.com/blog/walrus-postgres-backups-in-rust",
+    "source": "clickhouse.com",
+    "date": "2026-06-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from clickhouse.com. Hacker News score 37, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48702848",
+    "fetched_at": "2026-06-28T05:48:03Z",
+    "title_zh": "WAL-RUS：用于 PostgreSQL 备份的 WAL-G 的 Rust 重写"
+  },
+  {
+    "title": "Asian AI startups launch Mythos-like models",
+    "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+    "source": "techcrunch.com",
+    "date": "2026-06-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from techcrunch.com. Hacker News score 199, 154 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48697958",
+    "fetched_at": "2026-06-28T05:48:03Z",
+    "title_zh": "亚洲人工智能初创公司推出类似神话的模型"
+  },
+  {
+    "title": "Enhancing X11 Application Security with LXC",
+    "url": "https://dobrowolski.dev/article/enhancing-x11-application-security-with-lxc/",
+    "source": "dobrowolski.dev",
+    "date": "2026-06-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from dobrowolski.dev. Hacker News score 57, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48701936",
+    "fetched_at": "2026-06-28T05:48:02Z",
+    "title_zh": "使用 LXC 增强 X11 应用程序安全性"
+  },
+  {
+    "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+    "url": "https://github.com/bikini/exploitarium",
+    "source": "github.com",
+    "date": "2026-06-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 746, 291 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48698617",
+    "fetched_at": "2026-06-28T05:48:01Z",
+    "title_zh": "匿名 GitHub 帐户大量删除未公开的 0day"
+  },
+  {
     "title": "Foreign funds help make housing unaffordable: research",
     "url": "https://news.mccombs.utexas.edu/research/foreign-funds-help-make-housing-unaffordable/",
     "source": "news.mccombs.utexas.edu",
@@ -185,6 +284,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48667336",
     "fetched_at": "2026-06-25T05:34:21Z",
     "title_zh": "LuaJIT 3.0 提议的语法扩展"
+  },
+  {
+    "title": "AI learns the “dark art” of RFIC design",
+    "url": "https://spectrum.ieee.org/ai-radio-chip-design",
+    "source": "spectrum.ieee.org",
+    "date": "2026-06-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 217, 144 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48660021",
+    "fetched_at": "2026-06-28T05:48:03Z",
+    "title_zh": "AI 学习 RFIC 设计的“黑暗艺术”"
   },
   {
     "title": "Fusion Programming Language",
