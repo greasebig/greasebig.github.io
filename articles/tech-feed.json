@@ -1,5 +1,71 @@
 [
   {
+    "title": "LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active",
+    "url": "https://longcat.chat/blog/longcat-2.0/",
+    "source": "longcat.chat",
+    "date": "2026-06-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from longcat.chat. Hacker News score 74, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48727116",
+    "fetched_at": "2026-06-30T05:36:46Z",
+    "title_zh": "LongCat-2.0，大型MoE模型，总重1.6T，活动48B"
+  },
+  {
+    "title": "Working With AI: A concrete example",
+    "url": "https://htmx.org/essays/working-with-ai/",
+    "source": "htmx.org",
+    "date": "2026-06-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from htmx.org. Hacker News score 123, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48720064",
+    "fetched_at": "2026-06-30T05:36:49Z",
+    "title_zh": "使用人工智能：一个具体的例子"
+  },
+  {
+    "title": "Micro-Agent: Beat Frontier Models with Collaboration Inside Model API",
+    "url": "https://vllm.ai/blog/2026-06-29-micro-agent-frontier-models",
+    "source": "vllm.ai",
+    "date": "2026-06-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from vllm.ai. Hacker News score 65, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48722802",
+    "fetched_at": "2026-06-30T05:36:49Z",
+    "title_zh": "微代理：通过模型 API 内部协作击败前沿模型"
+  },
+  {
+    "title": "South Korea to spend $1T on more memory chip production and humanoid robots",
+    "url": "https://arstechnica.com/ai/2026/06/south-korea-to-spend-1t-on-more-memory-chip-production-and-humanoid-robots/",
+    "source": "arstechnica.com",
+    "date": "2026-06-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from arstechnica.com. Hacker News score 186, 104 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48726102",
+    "fetched_at": "2026-06-30T05:36:48Z",
+    "title_zh": "韩国将花费 1T 美元增加存储芯片生产和人形机器人"
+  },
+  {
+    "title": "Ornith-1.0: self-improving open-source models for agentic coding",
+    "url": "https://github.com/deepreinforce-ai/Ornith-1",
+    "source": "github.com",
+    "date": "2026-06-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 185, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48722052",
+    "fetched_at": "2026-06-30T05:36:47Z",
+    "title_zh": "Ornith-1.0：用于代理编码的自我改进开源模型"
+  },
+  {
+    "title": "Linux for the Sega MegaDrive",
+    "url": "https://github.com/LinuxMD/linuxmd",
+    "source": "github.com",
+    "date": "2026-06-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 49, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48720186",
+    "fetched_at": "2026-06-30T05:36:47Z",
+    "title_zh": "适用于 Sega MegaDrive 的 Linux"
+  },
+  {
     "title": "Lore – give your coding agent the decisions your team made",
     "url": "https://github.com/itsthelore/rac-core",
     "source": "github.com",
@@ -143,6 +209,39 @@
     "title_zh": "AMD Strix Halo RDMA 集群设置指南"
   },
   {
+    "title": "Apple Neural Engine: Architecture, Programming, and Performance",
+    "url": "https://arxiv.org/abs/2606.22283",
+    "source": "arxiv.org",
+    "date": "2026-06-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 143, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48702825",
+    "fetched_at": "2026-06-30T05:36:48Z",
+    "title_zh": "Apple 神经引擎：架构、编程和性能"
+  },
+  {
+    "title": "Alan Kay on the meaning of \"object-oriented programming\" (2003)",
+    "url": "https://notes.shixiangxi.com/en/docs/appendix/alan-kay-on-oop/",
+    "source": "notes.shixiangxi.com",
+    "date": "2026-06-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from notes.shixiangxi.com. Hacker News score 36, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48698781",
+    "fetched_at": "2026-06-30T05:36:48Z",
+    "title_zh": "Alan Kay 论“面向对象编程”的含义 (2003)"
+  },
+  {
+    "title": "Kb – Prolog Knowledge Base",
+    "url": "https://github.com/mat-mgm/kb-prolog",
+    "source": "github.com",
+    "date": "2026-06-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 58, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48697599",
+    "fetched_at": "2026-06-30T05:36:47Z",
+    "title_zh": "Kb – Prolog 知识库"
+  },
+  {
     "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
     "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
     "source": "github.com",
@@ -196,6 +295,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48698617",
     "fetched_at": "2026-06-28T05:48:01Z",
     "title_zh": "匿名 GitHub 帐户大量删除未公开的 0day"
+  },
+  {
+    "title": "How to corrupt an SQLite database file",
+    "url": "https://www.sqlite.org/howtocorrupt.html",
+    "source": "sqlite.org",
+    "date": "2026-06-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from sqlite.org. Hacker News score 40, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48689885",
+    "fetched_at": "2026-06-30T05:36:47Z",
+    "title_zh": "如何损坏 SQLite 数据库文件"
   },
   {
     "title": "Foreign funds help make housing unaffordable: research",
