@@ -1,5 +1,93 @@
 [
   {
+    "title": "Oomwoo, an open-source robot vacuum you build yourself",
+    "url": "https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/",
+    "source": "makerspet.com",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from makerspet.com. Hacker News score 123, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48755005",
+    "fetched_at": "2026-07-02T05:12:13Z",
+    "title_zh": "Oomwoo，您自己构建的开源扫地机器人"
+  },
+  {
+    "title": "Senior SWE-Bench: open-source benchmark that assesses agents as senior engineers",
+    "url": "https://senior-swe-bench.snorkel.ai/",
+    "source": "senior-swe-bench.snorkel.ai",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from senior-swe-bench.snorkel.ai. Hacker News score 40, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48755928",
+    "fetched_at": "2026-07-02T05:12:12Z",
+    "title_zh": "Senior SWE-Bench：评估代理为高级工程师的开源基准"
+  },
+  {
+    "title": "OpenWiki: CLI that writes and maintains agent documentation for your codebase",
+    "url": "https://github.com/langchain-ai/openwiki",
+    "source": "github.com",
+    "date": "2026-07-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 31, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48752949",
+    "fetched_at": "2026-07-02T05:12:17Z",
+    "title_zh": "OpenWiki：为您的代码库编写和维护代理文档的 CLI"
+  },
+  {
+    "title": "Asahi Linux 7.1 Progress Report",
+    "url": "https://asahilinux.org/2026/06/progress-report-7-1/",
+    "source": "asahilinux.org",
+    "date": "2026-07-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from asahilinux.org. Hacker News score 540, 201 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48744518",
+    "fetched_at": "2026-07-02T05:12:17Z",
+    "title_zh": "Asahi Linux 7.1 进度报告"
+  },
+  {
+    "title": "Monetization Gateway: Charge for any resource behind Cloudflare via x402",
+    "url": "https://blog.cloudflare.com/monetization-gateway/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-07-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 270, 188 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48746914",
+    "fetched_at": "2026-07-02T05:12:15Z",
+    "title_zh": "货币化网关：通过 x402 对 Cloudflare 背后的任何资源进行收费"
+  },
+  {
+    "title": "Chip Off The Old Block",
+    "url": "https://www.astralcodexten.com/p/chip-off-the-old-block",
+    "source": "astralcodexten.com",
+    "date": "2026-07-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from astralcodexten.com. Hacker News score 64, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48753524",
+    "fetched_at": "2026-07-02T05:12:15Z",
+    "title_zh": "削掉旧块"
+  },
+  {
+    "title": "Qualcomm Linux 2.0",
+    "url": "https://www.qualcomm.com/developer/blog/2026/06/qualcomm-linux-2-now-available",
+    "source": "qualcomm.com",
+    "date": "2026-07-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from qualcomm.com. Hacker News score 73, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48753069",
+    "fetched_at": "2026-07-02T05:12:14Z",
+    "title_zh": "高通Linux 2.0"
+  },
+  {
+    "title": "Weave Robotics launches Isaac 1, a $7,999 home robot with Fall 2026 deliveries",
+    "url": "https://www.weaverobotics.com/isaac-1",
+    "source": "weaverobotics.com",
+    "date": "2026-07-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from weaverobotics.com. Hacker News score 126, 164 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48750989",
+    "fetched_at": "2026-07-02T05:12:14Z",
+    "title_zh": "Weave Robotics 推出 Isaac 1，这是一款售价 7,999 美元的家用机器人，将于 2026 年秋季交付"
+  },
+  {
     "title": "How employment changes when firms adopt generative AI",
     "url": "https://ramp.com/data/ai-jobs-impact",
     "source": "ramp.com",
@@ -20,6 +108,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48742514",
     "fetched_at": "2026-07-01T05:57:08Z",
     "title_zh": "矩阵正交化可改善循环模型中的记忆"
+  },
+  {
+    "title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
+    "url": "https://twitter.com/AnthropicAI/status/2072106151890809341",
+    "source": "twitter.com",
+    "date": "2026-06-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 927, 642 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48740771",
+    "fetched_at": "2026-07-02T05:12:16Z",
+    "title_zh": "美国商务部取消了《克劳德寓言5》和《神话5》的出口管制"
+  },
+  {
+    "title": "Database Traffic Control",
+    "url": "https://planetscale.com/blog/introducing-database-traffic-control",
+    "source": "planetscale.com",
+    "date": "2026-06-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from planetscale.com. Hacker News score 12, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48730151",
+    "fetched_at": "2026-07-02T05:12:13Z",
+    "title_zh": "数据库流量控制"
   },
   {
     "title": "Claude Science",
@@ -64,17 +174,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48740698",
     "fetched_at": "2026-07-01T05:57:09Z",
     "title_zh": "Google copybara：在存储库之间移动代码"
-  },
-  {
-    "title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
-    "url": "https://twitter.com/AnthropicAI/status/2072106151890809341",
-    "source": "twitter.com",
-    "date": "2026-06-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from twitter.com. Hacker News score 514, 265 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48740771",
-    "fetched_at": "2026-07-01T05:57:09Z",
-    "title_zh": "美国商务部取消了《克劳德寓言5》和《神话5》的出口管制"
   },
   {
     "title": "Claude Code is steganographically marking requests",
