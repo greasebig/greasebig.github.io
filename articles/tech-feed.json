@@ -1,5 +1,115 @@
 [
   {
+    "title": "Order a burned CD of your own public GitHub repo",
+    "url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR6G-c11n8yFDlQmk4B-QjDxUQkdTTjZLU0EyTFFRV1E3NVRTVTRTWjRHMy4u&route=shorturl",
+    "source": "forms.cloud.microsoft",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from forms.cloud.microsoft. Hacker News score 120, 90 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48768997",
+    "fetched_at": "2026-07-03T05:06:30Z",
+    "title_zh": "订购您自己的公共 GitHub 存储库的刻录 CD"
+  },
+  {
+    "title": "Show HN: Imagent – agentic image/video/speech generation",
+    "url": "https://github.com/unliftedq/imagent",
+    "source": "github.com",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 3, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48770383",
+    "fetched_at": "2026-07-03T05:06:30Z",
+    "title_zh": "Show HN：Imagent – 代理图像/视频/语音生成"
+  },
+  {
+    "title": "Claude-real-video － any LLM can watch a video",
+    "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+    "source": "github.com",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 104, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48766005",
+    "fetched_at": "2026-07-03T05:06:30Z",
+    "title_zh": "Claude-real-video － 任何法学硕士都可以观看视频"
+  },
+  {
+    "title": "The short leash AI coding method for beating Fable",
+    "url": "https://blog.okturtles.org/2026/07/short-leash-ai-method/",
+    "source": "blog.okturtles.org",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.okturtles.org. Hacker News score 88, 105 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48766026",
+    "fetched_at": "2026-07-03T05:06:29Z",
+    "title_zh": "击败《神鬼寓言》的短链人工智能编码方法"
+  },
+  {
+    "title": "This is my attempt to get Vulkan going on NetBSD",
+    "url": "https://github.com/segaboy/vulkan-netbsd",
+    "source": "github.com",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 91, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48765607",
+    "fetched_at": "2026-07-03T05:06:29Z",
+    "title_zh": "这是我让 Vulkan 在 NetBSD 上运行的尝试"
+  },
+  {
+    "title": "Lightning Memory-Mapped Database Manager (LMDB) 1.0",
+    "url": "http://www.lmdb.tech/doc/",
+    "source": "lmdb.tech",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from lmdb.tech. Hacker News score 72, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48766598",
+    "fetched_at": "2026-07-03T05:06:29Z",
+    "title_zh": "Lightning 内存映射数据库管理器 (LMDB) 1.0"
+  },
+  {
+    "title": "PeerTube is a free, decentralized and federated video platform",
+    "url": "https://github.com/Chocobozzz/PeerTube",
+    "source": "github.com",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 557, 260 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48759634",
+    "fetched_at": "2026-07-03T05:06:28Z",
+    "title_zh": "PeerTube 是一个免费、去中心化和联合的视频平台"
+  },
+  {
+    "title": "Immich 3.0",
+    "url": "https://github.com/immich-app/immich/discussions/29439",
+    "source": "github.com",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 257, 120 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48761944",
+    "fetched_at": "2026-07-03T05:06:28Z",
+    "title_zh": "伊米奇3.0"
+  },
+  {
+    "title": "crustc: entirety of `rustc`, translated to C",
+    "url": "https://github.com/FractalFir/crustc",
+    "source": "github.com",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 198, 34 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48768464",
+    "fetched_at": "2026-07-03T05:06:27Z",
+    "title_zh": "Crustc：整个`rustc`，翻译成C"
+  },
+  {
+    "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory",
+    "url": "https://mathstodon.xyz/@iblech/116769502749142438",
+    "source": "mathstodon.xyz",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from mathstodon.xyz. Hacker News score 433, 192 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48763035",
+    "fetched_at": "2026-07-03T05:06:27Z",
+    "title_zh": "自 Linux 6.9 起，LUKS 挂起停止从内存中擦除磁盘加密密钥"
+  },
+  {
     "title": "Oomwoo, an open-source robot vacuum you build yourself",
     "url": "https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/",
     "source": "makerspet.com",
