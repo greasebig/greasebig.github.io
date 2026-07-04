@@ -1,5 +1,104 @@
 [
   {
+    "title": "Soatok's Informal Guide to Threat Models",
+    "url": "https://soatok.blog/2026/06/30/soatoks-informal-guide-to-threat-models/",
+    "source": "soatok.blog",
+    "date": "2026-07-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from soatok.blog. Hacker News score 49, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48781597",
+    "fetched_at": "2026-07-04T05:00:02Z",
+    "title_zh": "Soatok 的威胁模型非正式指南"
+  },
+  {
+    "title": "Show HN: Mcpsnoop – Wireshark for MCP (transparent proxy and live TUI)",
+    "url": "https://github.com/kerlenton/mcpsnoop",
+    "source": "github.com",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 53, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48777144",
+    "fetched_at": "2026-07-04T05:00:05Z",
+    "title_zh": "Show HN：Mcpsnoop – 适用于 MCP 的 Wireshark（透明代理和实时 TUI）"
+  },
+  {
+    "title": "Dispersion loss counteracts embedding condensation in small language models",
+    "url": "https://chenliu-1996.github.io/projects/LM-Dispersion/",
+    "source": "chenliu-1996.github.io",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from chenliu-1996.github.io. Hacker News score 27, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48780826",
+    "fetched_at": "2026-07-04T05:00:04Z",
+    "title_zh": "色散损失抵消了小语言模型中的嵌入凝聚"
+  },
+  {
+    "title": "GitFut – Your GitHub stats turned into a World-Cup-style player card",
+    "url": "https://gitfut.com",
+    "source": "gitfut.com",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from gitfut.com. Hacker News score 36, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48780812",
+    "fetched_at": "2026-07-04T05:00:04Z",
+    "title_zh": "GitFut – 你的 GitHub 统计数据变成了世界杯风格的球员卡"
+  },
+  {
+    "title": "New serious vulnerabilities spiked around release of Claude Mythos Preview",
+    "url": "https://epoch.ai/data-insights/cve-severity-spike",
+    "source": "epoch.ai",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from epoch.ai. Hacker News score 74, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48780056",
+    "fetched_at": "2026-07-04T05:00:03Z",
+    "title_zh": "Claude Mythos 预览版发布后新的严重漏洞激增"
+  },
+  {
+    "title": "Steam Controller Auto-Charge – pilot to magnetic charging puck using CV",
+    "url": "https://github.com/FossPrime/Steam-Controller-Auto-Charge",
+    "source": "github.com",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 102, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48780865",
+    "fetched_at": "2026-07-04T05:00:02Z",
+    "title_zh": "蒸汽控制器自动充电 – 使用 CV 引导磁性充电圆盘"
+  },
+  {
+    "title": "SearXNG: A free internet metasearch engine",
+    "url": "https://github.com/searxng/searxng",
+    "source": "github.com",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 173, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48779454",
+    "fetched_at": "2026-07-04T05:00:02Z",
+    "title_zh": "SearXNG：免费的互联网元搜索引擎"
+  },
+  {
+    "title": "Jamesob's guide to running SOTA LLMs locally",
+    "url": "https://github.com/jamesob/local-llm",
+    "source": "github.com",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 307, 139 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48775921",
+    "fetched_at": "2026-07-04T05:00:02Z",
+    "title_zh": "Jamesob 在本地运行 SOTA LLM 的指南"
+  },
+  {
+    "title": "Giant trees have no trouble pumping water to top branches: new research",
+    "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
+    "source": "news.exeter.ac.uk",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from news.exeter.ac.uk. Hacker News score 144, 72 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48780870",
+    "fetched_at": "2026-07-04T05:00:01Z",
+    "title_zh": "新研究：巨树可以毫无困难地将水抽到顶部树枝"
+  },
+  {
     "title": "Order a burned CD of your own public GitHub repo",
     "url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR6G-c11n8yFDlQmk4B-QjDxUQkdTTjZLU0EyTFFRV1E3NVRTVTRTWjRHMy4u&route=shorturl",
     "source": "forms.cloud.microsoft",
@@ -218,6 +317,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48742514",
     "fetched_at": "2026-07-01T05:57:08Z",
     "title_zh": "矩阵正交化可改善循环模型中的记忆"
+  },
+  {
+    "title": "Show HN: A statically typed, cross-platform, easily bootstrappable build system",
+    "url": "https://github.com/rochus-keller/BUSY/",
+    "source": "github.com",
+    "date": "2026-06-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 22, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48735097",
+    "fetched_at": "2026-07-04T05:00:03Z",
+    "title_zh": "Show HN：静态类型、跨平台、易于引导的构建系统"
   },
   {
     "title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
