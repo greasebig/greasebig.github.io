@@ -1,5 +1,104 @@
 [
   {
+    "title": "Backon – Python retry (zero deps, circuit breaker, async native)",
+    "url": "https://github.com/Llucs/backon",
+    "source": "github.com",
+    "date": "2026-07-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 7, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48790898",
+    "fetched_at": "2026-07-05T05:27:27Z",
+    "title_zh": "Backon – Python 重试（零 deps、断路器、异步本机）"
+  },
+  {
+    "title": "The Log Is the Agent",
+    "url": "https://arxiv.org/abs/2605.21997",
+    "source": "arxiv.org",
+    "date": "2026-07-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 8, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48790912",
+    "fetched_at": "2026-07-05T05:27:27Z",
+    "title_zh": "日志是代理"
+  },
+  {
+    "title": "Protocol Prying: Vulnerability Research in AirDrop and Quick Share",
+    "url": "https://arxiv.org/abs/2606.26967",
+    "source": "arxiv.org",
+    "date": "2026-07-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 21, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48788849",
+    "fetched_at": "2026-07-05T05:27:29Z",
+    "title_zh": "协议窥探：AirDrop和Quick Share中的漏洞研究"
+  },
+  {
+    "title": "Windows CE Dreamcast Community Edition (wince-dc)",
+    "url": "https://github.com/maximqaxd/wince-dc",
+    "source": "github.com",
+    "date": "2026-07-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 98, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48785840",
+    "fetched_at": "2026-07-05T05:27:28Z",
+    "title_zh": "Windows CE Dreamcast 社区版 (wince-dc)"
+  },
+  {
+    "title": "Better Models: Worse Tools",
+    "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+    "source": "lucumr.pocoo.org",
+    "date": "2026-07-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from lucumr.pocoo.org. Hacker News score 135, 41 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48788599",
+    "fetched_at": "2026-07-05T05:27:26Z",
+    "title_zh": "更好的模型：更糟糕的工具"
+  },
+  {
+    "title": "Potential session/cache leakage between workspace instances or consumer accounts",
+    "url": "https://github.com/anthropics/claude-code/issues/74066",
+    "source": "github.com",
+    "date": "2026-07-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 284, 129 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48785485",
+    "fetched_at": "2026-07-05T05:27:26Z",
+    "title_zh": "工作区实例或消费者帐户之间潜在的会话/缓存泄漏"
+  },
+  {
+    "title": "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
+    "url": "https://github.com/openai/codex/issues/30364",
+    "source": "github.com",
+    "date": "2026-07-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 208, 71 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48789428",
+    "fetched_at": "2026-07-05T05:27:25Z",
+    "title_zh": "GPT-5.5 Codex 推理令牌聚类可能会导致性能下降"
+  },
+  {
+    "title": "Google Books (or similar) all book scans – $200k bounty (2025)",
+    "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
+    "source": "software.annas-archive.gl",
+    "date": "2026-07-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from software.annas-archive.gl. Hacker News score 398, 216 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48786838",
+    "fetched_at": "2026-07-05T05:27:25Z",
+    "title_zh": "Google 图书（或类似）所有图书扫描 – 20 万美元赏金（2025 年）"
+  },
+  {
+    "title": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable",
+    "url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main",
+    "source": "github.com",
+    "date": "2026-07-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 451, 177 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48788283",
+    "fetched_at": "2026-07-05T05:27:24Z",
+    "title_zh": "使用《神鬼寓言》将《命令与征服将军》原生移植到 macOS、iPhone、iPad"
+  },
+  {
     "title": "Soatok's Informal Guide to Threat Models",
     "url": "https://soatok.blog/2026/06/30/soatoks-informal-guide-to-threat-models/",
     "source": "soatok.blog",
@@ -119,6 +218,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48770383",
     "fetched_at": "2026-07-03T05:06:30Z",
     "title_zh": "Show HN：Imagent – 代理图像/视频/语音生成"
+  },
+  {
+    "title": "Atomic Force Microscope high-speed video, stainless etching, bacteria, and more",
+    "url": "https://www.youtube.com/watch?v=DyIQkqBXhS0",
+    "source": "youtube.com",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 35, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48765920",
+    "fetched_at": "2026-07-05T05:27:26Z",
+    "title_zh": "原子力显微镜高速视频、不锈钢蚀刻、细菌等"
   },
   {
     "title": "Claude-real-video － any LLM can watch a video",
