@@ -1,5 +1,93 @@
 [
   {
+    "title": "Al Vigier: Canada's AI strategy shouldn't include secret Palantir bills",
+    "url": "https://www.readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt",
+    "source": "readtheline.ca",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from readtheline.ca. Hacker News score 128, 54 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48799256",
+    "fetched_at": "2026-07-06T05:45:19Z",
+    "title_zh": "Al Vigier：加拿大的人工智能战略不应包括秘密的 Palantir 法案"
+  },
+  {
+    "title": "GPT-5.6 Sol Ultra will be in Codex",
+    "url": "https://twitter.com/thsottiaux/status/2073933490513752151",
+    "source": "twitter.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 176, 112 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48799614",
+    "fetched_at": "2026-07-06T05:45:17Z",
+    "title_zh": "GPT-5.6 Sol Ultra 将出现在 Codex 中"
+  },
+  {
+    "title": "Jim Keller's startup is building a factory to mass-produce small chip fabs",
+    "url": "https://www.tomshardware.com/tech-industry/atomic-semi-rebrands-as-fab2-and-shifts-operations-to-texas",
+    "source": "tomshardware.com",
+    "date": "2026-07-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from tomshardware.com. Hacker News score 118, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48796784",
+    "fetched_at": "2026-07-06T05:45:21Z",
+    "title_zh": "吉姆·凯勒 (Jim Keller) 的初创公司正在建设一家工厂，大规模生产小型芯片工厂"
+  },
+  {
+    "title": "The AI Compass Quiz",
+    "url": "https://bambamramfan.github.io/ai-compass/",
+    "source": "bambamramfan.github.io",
+    "date": "2026-07-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from bambamramfan.github.io. Hacker News score 27, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48798605",
+    "fetched_at": "2026-07-06T05:45:20Z",
+    "title_zh": "人工智能指南针测验"
+  },
+  {
+    "title": "DNSGlobe – Rust TUI to watch DNS propagate around the world",
+    "url": "https://github.com/514-labs/dnsglobe",
+    "source": "github.com",
+    "date": "2026-07-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 42, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48798313",
+    "fetched_at": "2026-07-06T05:45:19Z",
+    "title_zh": "DNSGlobe – Rust TUI 用于观察 DNS 在世界范围内的传播"
+  },
+  {
+    "title": "Does code cleanliness affect coding agents? A controlled minimal-pair study",
+    "url": "https://arxiv.org/abs/2605.20049",
+    "source": "arxiv.org",
+    "date": "2026-07-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 77, 38 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48798815",
+    "fetched_at": "2026-07-06T05:45:18Z",
+    "title_zh": "代码整洁度会影响编码代理吗？受控最小配对研究"
+  },
+  {
+    "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
+    "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+    "source": "intextbooks.science.uu.nl",
+    "date": "2026-07-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from intextbooks.science.uu.nl. Hacker News score 149, 90 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48796817",
+    "fetched_at": "2026-07-06T05:45:18Z",
+    "title_zh": "新的人工智能导师在达特茅斯课程中实现了 0.71-1.30 SD 效果大小 [pdf]"
+  },
+  {
+    "title": "Composite Video on the NES: Why's it so wobbly?",
+    "url": "https://nicole.express/2026/phase-altering-by-line.html",
+    "source": "nicole.express",
+    "date": "2026-07-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from nicole.express. Hacker News score 75, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48798247",
+    "fetched_at": "2026-07-06T05:45:18Z",
+    "title_zh": "NES 上的复合视频：为什么这么不稳定？"
+  },
+  {
     "title": "Backon – Python retry (zero deps, circuit breaker, async native)",
     "url": "https://github.com/Llucs/backon",
     "source": "github.com",
@@ -220,6 +308,17 @@
     "title_zh": "Show HN：Imagent – 代理图像/视频/语音生成"
   },
   {
+    "title": "Zuckerberg says AI agent development going slower than expected",
+    "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
+    "source": "reuters.com",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from reuters.com. Hacker News score 148, 294 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48767058",
+    "fetched_at": "2026-07-06T05:45:19Z",
+    "title_zh": "扎克伯格表示人工智能代理的开发速度比预期慢"
+  },
+  {
     "title": "Atomic Force Microscope high-speed video, stainless etching, bacteria, and more",
     "url": "https://www.youtube.com/watch?v=DyIQkqBXhS0",
     "source": "youtube.com",
@@ -346,9 +445,9 @@
     "source": "github.com",
     "date": "2026-07-01",
     "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 31, 7 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from github.com. Hacker News score 85, 27 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48752949",
-    "fetched_at": "2026-07-02T05:12:17Z",
+    "fetched_at": "2026-07-06T05:45:20Z",
     "title_zh": "OpenWiki：为您的代码库编写和维护代理文档的 CLI"
   },
   {
