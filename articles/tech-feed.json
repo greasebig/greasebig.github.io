@@ -1,5 +1,115 @@
 [
   {
+    "title": "Poly/ML – A Standard ML Implementation",
+    "url": "https://github.com/polyml/polyml",
+    "source": "github.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 43, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48811317",
+    "fetched_at": "2026-07-07T05:13:58Z",
+    "title_zh": "Poly/ML – 标准 ML 实现"
+  },
+  {
+    "title": "OfficeCLI: Office suite for AI agents to read and edit Microsoft Office files",
+    "url": "https://github.com/iOfficeAI/OfficeCLI",
+    "source": "github.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 149, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48807225",
+    "fetched_at": "2026-07-07T05:13:57Z",
+    "title_zh": "OfficeCLI：供 AI 代理读取和编辑 Microsoft Office 文件的 Office 套件"
+  },
+  {
+    "title": "Full Writeup of the Windows GDID",
+    "url": "https://github.com/SmtimesIWndr/gdid-reversal",
+    "source": "github.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 54, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48811081",
+    "fetched_at": "2026-07-07T05:13:57Z",
+    "title_zh": "Windows GDID 的完整写入"
+  },
+  {
+    "title": "Linux on the Atari Jaguar",
+    "url": "https://cakehonolulu.github.io/linux-for-jaguar/",
+    "source": "cakehonolulu.github.io",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from cakehonolulu.github.io. Hacker News score 125, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48808663",
+    "fetched_at": "2026-07-07T05:13:56Z",
+    "title_zh": "Atari Jaguar 上的 Linux"
+  },
+  {
+    "title": "AMD Ryzen AI Halo – $4k AI Dev Kit",
+    "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
+    "source": "lttlabs.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from lttlabs.com. Hacker News score 300, 217 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48805624",
+    "fetched_at": "2026-07-07T05:13:56Z",
+    "title_zh": "AMD Ryzen AI Halo – 4000 美元 AI 开发套件"
+  },
+  {
+    "title": "GLM 5.2 and the coming AI margin collapse",
+    "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+    "source": "martinalderson.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from martinalderson.com. Hacker News score 260, 169 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48809877",
+    "fetched_at": "2026-07-07T05:13:55Z",
+    "title_zh": "GLM 5.2 和即将到来的人工智能利润率崩溃"
+  },
+  {
+    "title": "Small AI Models Gain Traction In places with unreliable networks",
+    "url": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
+    "source": "spectrum.ieee.org",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 69, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48812055",
+    "fetched_at": "2026-07-07T05:13:55Z",
+    "title_zh": "小型人工智能模型在网络不可靠的地方受到关注"
+  },
+  {
+    "title": "Ternlight – 7 MB embedding model that runs in browser (WASM)",
+    "url": "https://ternlight-demo.vercel.app/",
+    "source": "ternlight-demo.vercel.app",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from ternlight-demo.vercel.app. Hacker News score 145, 39 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48811644",
+    "fetched_at": "2026-07-07T05:13:55Z",
+    "title_zh": "Ternlight – 在浏览器中运行的 7 MB 嵌入模型 (WASM)"
+  },
+  {
+    "title": "A global workspace in language models",
+    "url": "https://www.anthropic.com/research/global-workspace",
+    "source": "anthropic.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 319, 118 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48808002",
+    "fetched_at": "2026-07-07T05:13:55Z",
+    "title_zh": "语言模型中的全局工作区"
+  },
+  {
+    "title": "Fable turned reMarkable into Tom Riddle's diary from Harry Potter",
+    "url": "https://github.com/MaximeRivest/Riddle",
+    "source": "github.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 273, 151 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48811591",
+    "fetched_at": "2026-07-07T05:13:54Z",
+    "title_zh": "《寓言》变成了《哈利·波特》中汤姆·里德尔的日记"
+  },
+  {
     "title": "Al Vigier: Canada's AI strategy shouldn't include secret Palantir bills",
     "url": "https://www.readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt",
     "source": "readtheline.ca",
