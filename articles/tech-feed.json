@@ -1,5 +1,82 @@
 [
   {
+    "title": "Show HN: Docx-CLI: agents read/edit Word docs using 1/2 the time and tokens",
+    "url": "https://github.com/kklimuk/docx-cli",
+    "source": "github.com",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 60, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48821500",
+    "fetched_at": "2026-07-08T04:39:48Z",
+    "title_zh": "显示 HN：Docx-CLI：代理使用 1/2 的时间和令牌读取/编辑 Word 文档"
+  },
+  {
+    "title": "A better way to tie gym shorts (or any drawstring) [video]",
+    "url": "https://www.youtube.com/watch?v=3R0Lp86GEBk",
+    "source": "youtube.com",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 488, 169 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48816956",
+    "fetched_at": "2026-07-08T04:39:48Z",
+    "title_zh": "系运动短裤（或任何拉绳）的更好方法[视频]"
+  },
+  {
+    "title": "AI Meets Cryptography 1: What AI Found in Cloudflare's Circl",
+    "url": "https://blog.zksecurity.xyz/posts/circl-bugs/",
+    "source": "blog.zksecurity.xyz",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.zksecurity.xyz. Hacker News score 100, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48821749",
+    "fetched_at": "2026-07-08T04:39:47Z",
+    "title_zh": "AI 遇见密码学 1：AI 在 Cloudflare 的 Circl 中发现了什么"
+  },
+  {
+    "title": "Automating AI Away",
+    "url": "https://replicated.live/blog/away",
+    "source": "replicated.live",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from replicated.live. Hacker News score 109, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48818937",
+    "fetched_at": "2026-07-08T04:39:47Z",
+    "title_zh": "自动化 AI 离开"
+  },
+  {
+    "title": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+    "url": "https://github.com/rowboatlabs/rowboat",
+    "source": "github.com",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 118, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48819808",
+    "fetched_at": "2026-07-08T04:39:45Z",
+    "title_zh": "Show HN：Rowboat – 开源、本地优先的 Claude Desktop 替代方案"
+  },
+  {
+    "title": "Jim's TrueType QR Code Font",
+    "url": "https://github.com/jimparis/qr-font",
+    "source": "github.com",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 156, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48820119",
+    "fetched_at": "2026-07-08T04:39:45Z",
+    "title_zh": "Jim 的 TrueType QR 代码字体"
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs Video Lectures (1986)",
+    "url": "https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/",
+    "source": "ocw.mit.edu",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from ocw.mit.edu. Hacker News score 80, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48825664",
+    "fetched_at": "2026-07-08T04:39:43Z",
+    "title_zh": "计算机程序的结构和解释视频讲座（1986）"
+  },
+  {
     "title": "Poly/ML – A Standard ML Implementation",
     "url": "https://github.com/polyml/polyml",
     "source": "github.com",
@@ -308,6 +385,17 @@
     "title_zh": "Soatok 的威胁模型非正式指南"
   },
   {
+    "title": "First Principles of Model Routing",
+    "url": "https://try.works/first-principles-of-model-routing",
+    "source": "try.works",
+    "date": "2026-07-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from try.works. Hacker News score 31, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48771200",
+    "fetched_at": "2026-07-08T04:39:46Z",
+    "title_zh": "模型路由的首要原则"
+  },
+  {
     "title": "Show HN: Mcpsnoop – Wireshark for MCP (transparent proxy and live TUI)",
     "url": "https://github.com/kerlenton/mcpsnoop",
     "source": "github.com",
@@ -416,6 +504,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48770383",
     "fetched_at": "2026-07-03T05:06:30Z",
     "title_zh": "Show HN：Imagent – 代理图像/视频/语音生成"
+  },
+  {
+    "title": "Pure-Python symbolic regression that rediscovered Kepler's law from 8 data point",
+    "url": "https://github.com/ariel95500-create/gp-elite",
+    "source": "github.com",
+    "date": "2026-07-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 18, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48761788",
+    "fetched_at": "2026-07-08T04:39:44Z",
+    "title_zh": "从 8 个数据点重新发现开普勒定律的纯 Python 符号回归"
   },
   {
     "title": "Zuckerberg says AI agent development going slower than expected",
@@ -548,6 +647,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48755928",
     "fetched_at": "2026-07-02T05:12:12Z",
     "title_zh": "Senior SWE-Bench：评估代理为高级工程师的开源基准"
+  },
+  {
+    "title": "IEEE Rolls Out Large Language Models Training Course",
+    "url": "https://spectrum.ieee.org/large-language-models-ieee-course",
+    "source": "spectrum.ieee.org",
+    "date": "2026-07-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 47, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48742703",
+    "fetched_at": "2026-07-08T04:39:45Z",
+    "title_zh": "IEEE 推出大型语言模型培训课程"
   },
   {
     "title": "OpenWiki: CLI that writes and maintains agent documentation for your codebase",
