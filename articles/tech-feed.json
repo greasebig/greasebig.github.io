@@ -1,5 +1,115 @@
 [
   {
+    "title": "What's slowing down the AI buildout",
+    "url": "https://www.worksinprogress.news/p/ai-is-bottlenecked-by-the-grid",
+    "source": "worksinprogress.news",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from worksinprogress.news. Hacker News score 10, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48840620",
+    "fetched_at": "2026-07-09T05:28:21Z",
+    "title_zh": "是什么减缓了人工智能的发展"
+  },
+  {
+    "title": "GPT‑Live",
+    "url": "https://openai.com/index/introducing-gpt-live/",
+    "source": "openai.com",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 654, 426 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48834405",
+    "fetched_at": "2026-07-09T05:28:23Z",
+    "title_zh": "GPT-Live"
+  },
+  {
+    "title": "Turning a pile of documents into a searchable useable knowledge base",
+    "url": "https://github.com/linuxrebel/DocuBrowser",
+    "source": "github.com",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 107, 24 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48837110",
+    "fetched_at": "2026-07-09T05:28:22Z",
+    "title_zh": "将一堆文档变成可搜索、可用的知识库"
+  },
+  {
+    "title": "We made Grok 4.5, GPT-5.5, and Claude build the same apps",
+    "url": "https://www.tryai.dev/blog/grok-4.5-vs-gpt-5.5-vs-claude-build-off",
+    "source": "tryai.dev",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from tryai.dev. Hacker News score 121, 58 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48838772",
+    "fetched_at": "2026-07-09T05:28:22Z",
+    "title_zh": "我们让 Grok 4.5、GPT-5.5 和 Claude 构建了相同的应用程序"
+  },
+  {
+    "title": "Rewriting Bun in Rust",
+    "url": "https://bun.com/blog/bun-in-rust",
+    "source": "bun.com",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from bun.com. Hacker News score 415, 216 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48837877",
+    "fetched_at": "2026-07-09T05:28:22Z",
+    "title_zh": "用 Rust 重写 Bun"
+  },
+  {
+    "title": "Benchmarking coding agents on Databricks' multi-million line codebase",
+    "url": "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
+    "source": "databricks.com",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from databricks.com. Hacker News score 35, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48837696",
+    "fetched_at": "2026-07-09T05:28:20Z",
+    "title_zh": "在 Databricks 数百万行代码库上对编码代理进行基准测试"
+  },
+  {
+    "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+    "url": "https://microsoft.github.io/flint-chart/#/",
+    "source": "microsoft.github.io",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from microsoft.github.io. Hacker News score 238, 98 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48834924",
+    "fetched_at": "2026-07-09T05:28:20Z",
+    "title_zh": "Show HN：微软发布 Flint，一种用于 AI 代理的可视化语言"
+  },
+  {
+    "title": "Separating signal from noise in coding evaluations",
+    "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/",
+    "source": "openai.com",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 190, 68 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48837396",
+    "fetched_at": "2026-07-09T05:28:19Z",
+    "title_zh": "在编码评估中将信号与噪声分离"
+  },
+  {
+    "title": "Cloudflare Drop",
+    "url": "https://www.cloudflare.com/drop/",
+    "source": "cloudflare.com",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from cloudflare.com. Hacker News score 346, 169 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48836233",
+    "fetched_at": "2026-07-09T05:28:19Z",
+    "title_zh": "云焰掉落"
+  },
+  {
+    "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+    "url": "https://mistral.ai/news/robostral-navigate/",
+    "source": "mistral.ai",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from mistral.ai. Hacker News score 448, 96 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48832212",
+    "fetched_at": "2026-07-09T05:28:19Z",
+    "title_zh": "Mistral 的 Robostral Navigate：最先进的机器人导航模型"
+  },
+  {
     "title": "Show HN: Docx-CLI: agents read/edit Word docs using 1/2 the time and tokens",
     "url": "https://github.com/kklimuk/docx-cli",
     "source": "github.com",
