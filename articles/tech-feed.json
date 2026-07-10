@@ -1,5 +1,82 @@
 [
   {
+    "title": "Build your own vulnerability harness",
+    "url": "https://blog.cloudflare.com/build-your-own-vulnerability-harness/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-07-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 26, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48854681",
+    "fetched_at": "2026-07-10T05:15:20Z",
+    "title_zh": "构建您自己的漏洞利用工具"
+  },
+  {
+    "title": "Ben Bernanke Joins Anthropic Oversight Trust",
+    "url": "https://www.anthropic.com/news/ben-bernanke",
+    "source": "anthropic.com",
+    "date": "2026-07-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 51, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48855112",
+    "fetched_at": "2026-07-10T05:15:19Z",
+    "title_zh": "本·伯南克加入人类监督信托基金"
+  },
+  {
+    "title": "AI content is everywhere on social media, especially LinkedIn",
+    "url": "https://www.pangram.com/blog/ai-in-your-feed",
+    "source": "pangram.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from pangram.com. Hacker News score 207, 183 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48847940",
+    "fetched_at": "2026-07-10T05:15:21Z",
+    "title_zh": "社交媒体上人工智能内容无处不在，尤其是 LinkedIn"
+  },
+  {
+    "title": "Building a real-time AI tutor for 5-year-olds",
+    "url": "https://www.ello.com/blog/teaching-a-child-in-1000-ms",
+    "source": "ello.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from ello.com. Hacker News score 66, 100 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48852199",
+    "fetched_at": "2026-07-10T05:15:20Z",
+    "title_zh": "为 5 岁儿童打造实时人工智能导师"
+  },
+  {
+    "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests",
+    "url": "https://github.com/malisper/pgrust",
+    "source": "github.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 488, 448 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48841676",
+    "fetched_at": "2026-07-10T05:15:19Z",
+    "title_zh": "Postgres 用 Rust 重写，现已通过 100% 的 Postgres 回归测试"
+  },
+  {
+    "title": "Show HN: Getting GLM 5.2 running on my slow computer",
+    "url": "https://github.com/JustVugg/colibri",
+    "source": "github.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 485, 125 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48842459",
+    "fetched_at": "2026-07-10T05:15:18Z",
+    "title_zh": "Show HN：在我的慢速计算机上运行 GLM 5.2"
+  },
+  {
+    "title": "GPT-5.6",
+    "url": "https://openai.com/index/gpt-5-6/",
+    "source": "openai.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 1148, 821 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48849066",
+    "fetched_at": "2026-07-10T05:15:18Z",
+    "title_zh": "GPT-5.6"
+  },
+  {
     "title": "What's slowing down the AI buildout",
     "url": "https://www.worksinprogress.news/p/ai-is-bottlenecked-by-the-grid",
     "source": "worksinprogress.news",
@@ -110,6 +187,17 @@
     "title_zh": "Mistral 的 Robostral Navigate：最先进的机器人导航模型"
   },
   {
+    "title": "Cache-Conscious Data Layout in Rust: Field Zoning, False Sharing, 128-Byte Rule",
+    "url": "https://debasishg.github.io/blog/part1-cache-conscious-data-layout-in-rust/",
+    "source": "debasishg.github.io",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from debasishg.github.io. Hacker News score 17, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48813214",
+    "fetched_at": "2026-07-10T05:15:21Z",
+    "title_zh": "Rust 中的缓存意识数据布局：字段分区、错误共享、128 字节规则"
+  },
+  {
     "title": "Show HN: Docx-CLI: agents read/edit Word docs using 1/2 the time and tokens",
     "url": "https://github.com/kklimuk/docx-cli",
     "source": "github.com",
@@ -185,6 +273,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48825664",
     "fetched_at": "2026-07-08T04:39:43Z",
     "title_zh": "计算机程序的结构和解释视频讲座（1986）"
+  },
+  {
+    "title": "Patterncollider: Generate and explore quasiperiodic tiling patterns",
+    "url": "https://github.com/aatishb/patterncollider",
+    "source": "github.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 33, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48800930",
+    "fetched_at": "2026-07-10T05:15:21Z",
+    "title_zh": "Patterncollider：生成和探索准周期平铺模式"
+  },
+  {
+    "title": "Apple Silicon Exec Explains Mac Mini AI Demand and On-Device Future",
+    "url": "https://www.macrumors.com/2026/07/06/apple-silicon-exec-explains-mac-mini-ai-demand/",
+    "source": "macrumors.com",
+    "date": "2026-07-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from macrumors.com. Hacker News score 29, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48805598",
+    "fetched_at": "2026-07-10T05:15:19Z",
+    "title_zh": "Apple Silicon Exec 解释 Mac Mini 人工智能需求和设备上的未来"
   },
   {
     "title": "Poly/ML – A Standard ML Implementation",
