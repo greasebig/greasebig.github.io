@@ -1,5 +1,60 @@
 [
   {
+    "title": "How the terrorist group Boko Haram uses frontier AI",
+    "url": "https://casp.ac/reports/ai-enabled-terrorism",
+    "source": "casp.ac",
+    "date": "2026-07-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from casp.ac. Hacker News score 196, 163 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48863707",
+    "fetched_at": "2026-07-11T04:35:17Z",
+    "title_zh": "恐怖组织博科圣地如何使用前沿人工智能"
+  },
+  {
+    "title": "GhostLock, a stack-UAF that has existed in ALL Linux distributions for 15 years",
+    "url": "https://nebusec.ai/research/ionstack-part-2/",
+    "source": "nebusec.ai",
+    "date": "2026-07-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from nebusec.ai. Hacker News score 53, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48864969",
+    "fetched_at": "2026-07-11T04:35:16Z",
+    "title_zh": "GhostLock，一种堆栈 UAF，已在所有 Linux 发行版中存在 15 年"
+  },
+  {
+    "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
+    "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+    "source": "cdn.openai.com",
+    "date": "2026-07-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from cdn.openai.com. Hacker News score 393, 306 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48863490",
+    "fetched_at": "2026-07-11T04:35:14Z",
+    "title_zh": "GPT-5.6 Sol Ultra 证明了循环双盖猜想 [pdf]"
+  },
+  {
+    "title": "Einstein's relativity rules chemical bonds in heavy elements, new research shows",
+    "url": "https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity",
+    "source": "brown.edu",
+    "date": "2026-07-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from brown.edu. Hacker News score 153, 54 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48866134",
+    "fetched_at": "2026-07-11T04:35:13Z",
+    "title_zh": "新研究表明爱因斯坦的相对论规则了重元素中的化学键"
+  },
+  {
+    "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
+    "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+    "source": "9to5mac.com",
+    "date": "2026-07-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from 9to5mac.com. Hacker News score 744, 369 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48865019",
+    "fetched_at": "2026-07-11T04:35:13Z",
+    "title_zh": "苹果起诉 OpenAI，指控其前员工窃取商业机密"
+  },
+  {
     "title": "Build your own vulnerability harness",
     "url": "https://blog.cloudflare.com/build-your-own-vulnerability-harness/",
     "source": "blog.cloudflare.com",
@@ -20,6 +75,50 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48855112",
     "fetched_at": "2026-07-10T05:15:19Z",
     "title_zh": "本·伯南克加入人类监督信托基金"
+  },
+  {
+    "title": "Show HN: Getting GLM 5.2 running on my slow computer",
+    "url": "https://github.com/JustVugg/colibri",
+    "source": "github.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 837, 206 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48842459",
+    "fetched_at": "2026-07-11T04:35:17Z",
+    "title_zh": "Show HN：在我的慢速计算机上运行 GLM 5.2"
+  },
+  {
+    "title": "Show HN: Reviving my 2001 college band with AI",
+    "url": "https://www.fadingmaize.com",
+    "source": "fadingmaize.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from fadingmaize.com. Hacker News score 53, 56 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48851476",
+    "fetched_at": "2026-07-11T04:35:17Z",
+    "title_zh": "Show HN：用 AI 重振我 2001 年的大学乐队"
+  },
+  {
+    "title": "Show HN: Wyrm – Solve algebra by touch, built on an open-source soundness engine",
+    "url": "https://github.com/dicroce/wyrm_math",
+    "source": "github.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 66, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48844046",
+    "fetched_at": "2026-07-11T04:35:16Z",
+    "title_zh": "Show HN：Wyrm – 通过触摸解决代数，基于开源健全引擎构建"
+  },
+  {
+    "title": "AI 2040: Plan A",
+    "url": "https://ai-2040.com/",
+    "source": "ai-2040.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from ai-2040.com. Hacker News score 183, 193 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48848425",
+    "fetched_at": "2026-07-11T04:35:15Z",
+    "title_zh": "AI 2040：A 计划"
   },
   {
     "title": "AI content is everywhere on social media, especially LinkedIn",
@@ -53,17 +152,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48841676",
     "fetched_at": "2026-07-10T05:15:19Z",
     "title_zh": "Postgres 用 Rust 重写，现已通过 100% 的 Postgres 回归测试"
-  },
-  {
-    "title": "Show HN: Getting GLM 5.2 running on my slow computer",
-    "url": "https://github.com/JustVugg/colibri",
-    "source": "github.com",
-    "date": "2026-07-09",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 485, 125 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48842459",
-    "fetched_at": "2026-07-10T05:15:18Z",
-    "title_zh": "Show HN：在我的慢速计算机上运行 GLM 5.2"
   },
   {
     "title": "GPT-5.6",
@@ -185,6 +273,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48832212",
     "fetched_at": "2026-07-09T05:28:19Z",
     "title_zh": "Mistral 的 Robostral Navigate：最先进的机器人导航模型"
+  },
+  {
+    "title": "Inference Optimization for MiMo v2.5: Pushing Hybrid SWA Efficiency to the Limit",
+    "url": "https://mimo.xiaomi.com/blog/mimo-v2-5-inference",
+    "source": "mimo.xiaomi.com",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from mimo.xiaomi.com. Hacker News score 58, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48814170",
+    "fetched_at": "2026-07-11T04:35:15Z",
+    "title_zh": "MiMo v2.5 推理优化：将混合 SWA 效率推向极限"
   },
   {
     "title": "Cache-Conscious Data Layout in Rust: Field Zoning, False Sharing, 128-Byte Rule",
