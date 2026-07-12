@@ -1,5 +1,93 @@
 [
   {
+    "title": "What xAI's Grok Build CLI Actually Sends to xAI",
+    "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+    "source": "gist.github.com",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 138, 71 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48877371",
+    "fetched_at": "2026-07-12T04:45:58Z",
+    "title_zh": "xAI 的 Grok Build CLI 实际发送给 xAI 的内容"
+  },
+  {
+    "title": "A pure scheme web programming tool",
+    "url": "https://goeteia.dev",
+    "source": "goeteia.dev",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from goeteia.dev. Hacker News score 51, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48877314",
+    "fetched_at": "2026-07-12T04:45:57Z",
+    "title_zh": "一个纯方案的Web编程工具"
+  },
+  {
+    "title": "Show HN: Sqlsure – deterministic semantic checks for AI-generated SQL",
+    "url": "https://github.com/sqlsure/sqlsure",
+    "source": "github.com",
+    "date": "2026-07-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 24, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48875342",
+    "fetched_at": "2026-07-12T04:46:00Z",
+    "title_zh": "Show HN：Sqlsure – 对 AI 生成的 SQL 进行确定性语义检查"
+  },
+  {
+    "title": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
+    "url": "https://shipthatcode.com",
+    "source": "shipthatcode.com",
+    "date": "2026-07-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from shipthatcode.com. Hacker News score 138, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48871973",
+    "fetched_at": "2026-07-12T04:45:59Z",
+    "title_zh": "Show HN：通过从头开始重建 Redis、Git、数据库来学习"
+  },
+  {
+    "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+    "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+    "source": "io-fund.com",
+    "date": "2026-07-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from io-fund.com. Hacker News score 200, 67 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48873836",
+    "fetched_at": "2026-07-12T04:45:58Z",
+    "title_zh": "Nvidia、CoreWeave 和 Nebius：GPU 繁荣的循环融资内部"
+  },
+  {
+    "title": "Mesh LLM: distributed AI computing on iroh",
+    "url": "https://www.iroh.computer/blog/mesh-llm",
+    "source": "iroh.computer",
+    "date": "2026-07-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from iroh.computer. Hacker News score 163, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48876505",
+    "fetched_at": "2026-07-12T04:45:57Z",
+    "title_zh": "Mesh LLM：iroh 上的分布式 AI 计算"
+  },
+  {
+    "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
+    "url": "https://antjs.org",
+    "source": "antjs.org",
+    "date": "2026-07-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from antjs.org. Hacker News score 213, 91 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48875377",
+    "fetched_at": "2026-07-12T04:45:57Z",
+    "title_zh": "Show HN：Ant – JavaScript 运行时和生态系统"
+  },
+  {
+    "title": "RISCBoy is an open-source portable games console, designed from scratch",
+    "url": "https://github.com/Wren6991/RISCBoy",
+    "source": "github.com",
+    "date": "2026-07-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 90, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48876245",
+    "fetched_at": "2026-07-12T04:45:57Z",
+    "title_zh": "RISCBoy 是一款开源便携式游戏机，从头开始设计"
+  },
+  {
     "title": "How the terrorist group Boko Haram uses frontier AI",
     "url": "https://casp.ac/reports/ai-enabled-terrorism",
     "source": "casp.ac",
@@ -273,6 +361,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48832212",
     "fetched_at": "2026-07-09T05:28:19Z",
     "title_zh": "Mistral 的 Robostral Navigate：最先进的机器人导航模型"
+  },
+  {
+    "title": "Biff.graph: structure your Clojure codebase as a queryable graph",
+    "url": "https://github.com/jacobobryant/biff/tree/v2.x/libs/graph",
+    "source": "github.com",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 103, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48820361",
+    "fetched_at": "2026-07-12T04:45:59Z",
+    "title_zh": "Biff.graph：将 Clojure 代码库构建为可查询的图表"
+  },
+  {
+    "title": "An agent in 100 lines of Lisp",
+    "url": "https://thebeach.dev/posts/lisp-agent/",
+    "source": "thebeach.dev",
+    "date": "2026-07-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from thebeach.dev. Hacker News score 65, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48823981",
+    "fetched_at": "2026-07-12T04:45:58Z",
+    "title_zh": "100 行 Lisp 中的代理"
   },
   {
     "title": "Inference Optimization for MiMo v2.5: Pushing Hybrid SWA Efficiency to the Limit",
