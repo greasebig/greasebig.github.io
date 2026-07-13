@@ -1,14 +1,102 @@
 [
   {
-    "title": "What xAI's Grok Build CLI Actually Sends to xAI",
+    "title": "Understanding the Odin programming language",
+    "url": "https://odinbook.com/",
+    "source": "odinbook.com",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from odinbook.com. Hacker News score 149, 92 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48880499",
+    "fetched_at": "2026-07-13T04:52:56Z",
+    "title_zh": "了解 Odin 编程语言"
+  },
+  {
+    "title": "Show HN: Codebase Posters – turn any Git repo into generative poster art",
+    "url": "https://github.com/unable12/codebase-posters",
+    "source": "github.com",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 12, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48885500",
+    "fetched_at": "2026-07-13T04:52:56Z",
+    "title_zh": "Show HN：代码库海报 – 将任何 Git 存储库变成生成海报艺术"
+  },
+  {
+    "title": "The One-Step Trap (In AI Research)",
+    "url": "http://incompleteideas.net/IncIdeas/OneStepTrap.html",
+    "source": "incompleteideas.net",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from incompleteideas.net. Hacker News score 47, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48883415",
+    "fetched_at": "2026-07-13T04:52:55Z",
+    "title_zh": "一步陷阱（人工智能研究中）"
+  },
+  {
+    "title": "What xAI's Grok build CLI sends to xAI: A wire-level analysis",
     "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
     "source": "gist.github.com",
     "date": "2026-07-12",
     "repost": true,
-    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 138, 71 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 430, 163 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=48877371",
-    "fetched_at": "2026-07-12T04:45:58Z",
-    "title_zh": "xAI 的 Grok Build CLI 实际发送给 xAI 的内容"
+    "fetched_at": "2026-07-13T04:52:54Z",
+    "title_zh": "xAI 的 Grok 构建 CLI 发送给 xAI 的内容：线路级分析"
+  },
+  {
+    "title": "Old and new apps, via modern coding agents",
+    "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+    "source": "terrytao.wordpress.com",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from terrytao.wordpress.com. Hacker News score 423, 126 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48880170",
+    "fetched_at": "2026-07-13T04:52:54Z",
+    "title_zh": "新旧应用程序，通过现代编码代理"
+  },
+  {
+    "title": "Flash-MSA: Accelerating Million-Token Training with Sparse Attention Kernels",
+    "url": "https://nanduruganesh.github.io/flash-msa/",
+    "source": "nanduruganesh.github.io",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from nanduruganesh.github.io. Hacker News score 31, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48884618",
+    "fetched_at": "2026-07-13T04:52:53Z",
+    "title_zh": "Flash-MSA：利用稀疏注意力内核加速百万代币训练"
+  },
+  {
+    "title": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+    "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+    "source": "ploy.ai",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from ploy.ai. Hacker News score 163, 61 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48882716",
+    "fetched_at": "2026-07-13T04:52:52Z",
+    "title_zh": "将生产 AI 代理迁移到 GPT-5.6：速度提高 2.2 倍，成本降低 27%"
+  },
+  {
+    "title": "Why Vanilla JavaScript",
+    "url": "https://guseyn.com/html/posts/why-vanilla-js.html",
+    "source": "guseyn.com",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from guseyn.com. Hacker News score 101, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48885705",
+    "fetched_at": "2026-07-13T04:52:52Z",
+    "title_zh": "为什么选择 Vanilla JavaScript"
+  },
+  {
+    "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+    "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+    "source": "systima.ai",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from systima.ai. Hacker News score 510, 284 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48883275",
+    "fetched_at": "2026-07-13T04:52:51Z",
+    "title_zh": "Claude Code 在阅读提示之前发送了 33k 令牌； OpenCode 发送 7k"
   },
   {
     "title": "A pure scheme web programming tool",
@@ -97,17 +185,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48863707",
     "fetched_at": "2026-07-11T04:35:17Z",
     "title_zh": "恐怖组织博科圣地如何使用前沿人工智能"
-  },
-  {
-    "title": "GhostLock, a stack-UAF that has existed in ALL Linux distributions for 15 years",
-    "url": "https://nebusec.ai/research/ionstack-part-2/",
-    "source": "nebusec.ai",
-    "date": "2026-07-10",
-    "repost": true,
-    "summary": "转载 / Curated repost from nebusec.ai. Hacker News score 53, 10 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=48864969",
-    "fetched_at": "2026-07-11T04:35:16Z",
-    "title_zh": "GhostLock，一种堆栈 UAF，已在所有 Linux 发行版中存在 15 年"
   },
   {
     "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
@@ -262,6 +339,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48840620",
     "fetched_at": "2026-07-09T05:28:21Z",
     "title_zh": "是什么减缓了人工智能的发展"
+  },
+  {
+    "title": "GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years",
+    "url": "https://nebusec.ai/research/ionstack-part-2/",
+    "source": "nebusec.ai",
+    "date": "2026-07-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from nebusec.ai. Hacker News score 155, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48834309",
+    "fetched_at": "2026-07-13T04:52:50Z",
+    "title_zh": "GhostLock，一种堆栈 UAF，已在所有 Linux 发行版中存在 15 年"
   },
   {
     "title": "GPT‑Live",
