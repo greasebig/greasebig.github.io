@@ -1,5 +1,104 @@
 [
   {
+    "title": "Building Food Metadata with LLM Juries",
+    "url": "https://careersatdoordash.com/blog/building-food-metadata-with-llm-juries-context-optimization-multimodal-ai/",
+    "source": "careersatdoordash.com",
+    "date": "2026-07-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from careersatdoordash.com. Hacker News score 18, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48901275",
+    "fetched_at": "2026-07-14T04:21:22Z",
+    "title_zh": "与法学硕士评审团一起构建食品元数据"
+  },
+  {
+    "title": "Turn your singing voice into printable notes (in the browser)",
+    "url": "https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html",
+    "source": "om-intelligence.ch",
+    "date": "2026-07-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from om-intelligence.ch. Hacker News score 32, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48900686",
+    "fetched_at": "2026-07-14T04:21:22Z",
+    "title_zh": "将您的歌声变成可打印的音符（在浏览器中）"
+  },
+  {
+    "title": "Agents.md – Dumb Human",
+    "url": "https://gist.github.com/skorotkiewicz/2d4db4ceaf83aa54eb7f2066fdb961ff",
+    "source": "gist.github.com",
+    "date": "2026-07-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 17, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48901695",
+    "fetched_at": "2026-07-14T04:21:21Z",
+    "title_zh": "Agents.md – 愚蠢的人类"
+  },
+  {
+    "title": "Show HN: I implemented a neural network in SQL",
+    "url": "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py",
+    "source": "github.com",
+    "date": "2026-07-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 66, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48897975",
+    "fetched_at": "2026-07-14T04:21:25Z",
+    "title_zh": "Show HN：我用 SQL 实现了一个神经网络"
+  },
+  {
+    "title": "Show HN: Jacquard, a programming language for AI-written, human-reviewed code",
+    "url": "https://github.com/jbwinters/jacquard-lang",
+    "source": "github.com",
+    "date": "2026-07-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 64, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48894630",
+    "fetched_at": "2026-07-14T04:21:24Z",
+    "title_zh": "Show HN：Jacquard，一种用于人工智能编写、人工审核代码的编程语言"
+  },
+  {
+    "title": "A Study of Microsoft's Early 2026 Rollout of Claude Code and GitHub Copilot CLI",
+    "url": "https://arxiv.org/abs/2607.01418",
+    "source": "arxiv.org",
+    "date": "2026-07-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 43, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48899321",
+    "fetched_at": "2026-07-14T04:21:24Z",
+    "title_zh": "对 Microsoft 2026 年初推出的 Claude Code 和 GitHub Copilot CLI 的研究"
+  },
+  {
+    "title": "Show HN: Sx 2.0 – Share AI skills with your team through a Dropbox folder",
+    "url": "https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html",
+    "source": "sleuth-io.github.io",
+    "date": "2026-07-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from sleuth-io.github.io. Hacker News score 24, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48900319",
+    "fetched_at": "2026-07-14T04:21:23Z",
+    "title_zh": "Show HN: Sx 2.0 – 通过 Dropbox 文件夹与您的团队分享 AI 技能"
+  },
+  {
+    "title": "Show HN: YouTube Guitar Tab Parser",
+    "url": "https://github.com/marcelpanse/youtube-guitar-tab-parser",
+    "source": "github.com",
+    "date": "2026-07-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 86, 55 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48898154",
+    "fetched_at": "2026-07-14T04:21:23Z",
+    "title_zh": "Show HN：YouTube 吉他谱解析器"
+  },
+  {
+    "title": "Linux on the Sega 32X. Who needs hardware synchronization primitives anyway?",
+    "url": "https://cakehonolulu.github.io/linux-on-32x/",
+    "source": "cakehonolulu.github.io",
+    "date": "2026-07-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from cakehonolulu.github.io. Hacker News score 110, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48896600",
+    "fetched_at": "2026-07-14T04:21:23Z",
+    "title_zh": "Sega 32X 上的 Linux。到底谁需要硬件同步原语？"
+  },
+  {
     "title": "Understanding the Odin programming language",
     "url": "https://odinbook.com/",
     "source": "odinbook.com",
@@ -240,6 +339,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48855112",
     "fetched_at": "2026-07-10T05:15:19Z",
     "title_zh": "本·伯南克加入人类监督信托基金"
+  },
+  {
+    "title": "Show HN: RandoFont – A browser for Google Fonts",
+    "url": "https://randofont.alesh.com",
+    "source": "randofont.alesh.com",
+    "date": "2026-07-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from randofont.alesh.com. Hacker News score 29, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48852144",
+    "fetched_at": "2026-07-14T04:21:24Z",
+    "title_zh": "Show HN：RandoFont – Google 字体浏览器"
   },
   {
     "title": "Show HN: Getting GLM 5.2 running on my slow computer",
