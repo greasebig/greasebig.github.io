@@ -1,5 +1,115 @@
 [
   {
+    "title": "Accelerating Block Low-Rank Foundation Model Inference on MemoryConstrained GPUs",
+    "url": "https://dl.acm.org/doi/full/10.1145/3806645.3807580",
+    "source": "dl.acm.org",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from dl.acm.org. Hacker News score 4, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48929804",
+    "fetched_at": "2026-07-16T04:31:03Z",
+    "title_zh": "加速内存受限 GPU 上的块低阶基础模型推理"
+  },
+  {
+    "title": "Open Source, Free Tier Capable Whispr Using Cloudflare AI",
+    "url": "https://github.com/PrestigePvP/Voicebox",
+    "source": "github.com",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 6, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48929870",
+    "fetched_at": "2026-07-16T04:31:01Z",
+    "title_zh": "使用 Cloudflare AI 的开源、免费套餐 Whispr"
+  },
+  {
+    "title": "An Interactive Map of AI",
+    "url": "https://artifipedia.com/map",
+    "source": "artifipedia.com",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from artifipedia.com. Hacker News score 8, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48930160",
+    "fetched_at": "2026-07-16T04:31:00Z",
+    "title_zh": "人工智能互动地图"
+  },
+  {
+    "title": "Brainless: Shadcn components that look like Claude Code, Codex and Grok",
+    "url": "https://brainless.swerdlow.dev",
+    "source": "brainless.swerdlow.dev",
+    "date": "2026-07-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from brainless.swerdlow.dev. Hacker News score 113, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48926085",
+    "fetched_at": "2026-07-16T04:31:03Z",
+    "title_zh": "Brainless：Shadcn 组件看起来像 Claude Code、Codex 和 Grok"
+  },
+  {
+    "title": "Running Gemma 4 26B at 5 tokens/sec on a 13-year-old Xeon with no GPU",
+    "url": "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/",
+    "source": "neomindlabs.com",
+    "date": "2026-07-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from neomindlabs.com. Hacker News score 255, 169 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48922434",
+    "fetched_at": "2026-07-16T04:31:02Z",
+    "title_zh": "在没有 GPU 的 13 年历史的 Xeon 上以 5 个令牌/秒的速度运行 Gemma 4 26B"
+  },
+  {
+    "title": "Governments, companies, nonprofits should invest in free, open source AI [pdf]",
+    "url": "https://www.siegelendowment.org/wp-content/uploads/2026/07/fortune-david-siegel-open-source-ai.pdf",
+    "source": "siegelendowment.org",
+    "date": "2026-07-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from siegelendowment.org. Hacker News score 124, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48927095",
+    "fetched_at": "2026-07-16T04:31:01Z",
+    "title_zh": "政府、公司、非营利组织应该投资免费、开源的人工智能 [pdf]"
+  },
+  {
+    "title": "LLM Networking with MikroTik",
+    "url": "https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html",
+    "source": "blog.greg.technology",
+    "date": "2026-07-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.greg.technology. Hacker News score 66, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48927915",
+    "fetched_at": "2026-07-16T04:31:01Z",
+    "title_zh": "法学硕士与 MikroTik 的网络"
+  },
+  {
+    "title": "Grok Build is open source",
+    "url": "https://github.com/xai-org/grok-build",
+    "source": "github.com",
+    "date": "2026-07-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 330, 367 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48926590",
+    "fetched_at": "2026-07-16T04:30:59Z",
+    "title_zh": "Grok Build 是开源的"
+  },
+  {
+    "title": "High-Bandwidth Flash offers efficient storage for model weights",
+    "url": "https://spectrum.ieee.org/high-bandwidth-flash",
+    "source": "spectrum.ieee.org",
+    "date": "2026-07-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 16, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48915393",
+    "fetched_at": "2026-07-16T04:30:58Z",
+    "title_zh": "高带宽闪存为模型权重提供高效存储"
+  },
+  {
+    "title": "Inkling: Our Open-Weights Model",
+    "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+    "source": "thinkingmachines.ai",
+    "date": "2026-07-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from thinkingmachines.ai. Hacker News score 801, 205 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48924912",
+    "fetched_at": "2026-07-16T04:30:57Z",
+    "title_zh": "Inkling：我们的开放重量模型"
+  },
+  {
     "title": "Solving 20 Erdős Problems with 20 Codex Accounts Running in Parallel",
     "url": "https://www.starfleetmath.com/",
     "source": "starfleetmath.com",
