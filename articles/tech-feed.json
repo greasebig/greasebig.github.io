@@ -1,5 +1,93 @@
 [
   {
+    "title": "Lingbot-map: A 3D foundation model for reconstructing scenes from streaming data",
+    "url": "https://github.com/Robbyant/lingbot-map",
+    "source": "github.com",
+    "date": "2026-07-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 9, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48941908",
+    "fetched_at": "2026-07-17T04:33:31Z",
+    "title_zh": "Lingbot-map：用于从流数据重建场景的 3D 基础模型"
+  },
+  {
+    "title": "The LLM Critics Are Right. I Use LLMs Anyway",
+    "url": "https://www.theocharis.dev/blog/llm-critics-are-right-i-use-llms-anyway/",
+    "source": "theocharis.dev",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from theocharis.dev. Hacker News score 206, 209 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48933310",
+    "fetched_at": "2026-07-17T04:33:31Z",
+    "title_zh": "法学硕士的批评是正确的。无论如何我都使用法学硕士"
+  },
+  {
+    "title": "How to Train a Gen AI Kick Drum Model on Your Old Linux Desktop with 6GB VRAM",
+    "url": "https://www.zhinit.dev/blog/training-a-kick-drum-diffusion-model",
+    "source": "zhinit.dev",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from zhinit.dev. Hacker News score 109, 55 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48935687",
+    "fetched_at": "2026-07-17T04:33:30Z",
+    "title_zh": "如何在具有 6GB VRAM 的旧 Linux 桌面上训练 Gen AI 底鼓模型"
+  },
+  {
+    "title": "Detecting LLM-Generated Texts with “Classical” Machine Learning",
+    "url": "https://blog.lyc8503.net/en/post/llm-classifier/",
+    "source": "blog.lyc8503.net",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.lyc8503.net. Hacker News score 169, 117 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48936880",
+    "fetched_at": "2026-07-17T04:33:29Z",
+    "title_zh": "使用“经典”机器学习检测法学硕士生成的文本"
+  },
+  {
+    "title": "The Little Book of Reinforcement Learning",
+    "url": "https://github.com/alxndrTL/little-book-rl/",
+    "source": "github.com",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 77, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48941104",
+    "fetched_at": "2026-07-17T04:33:28Z",
+    "title_zh": "强化学习小书"
+  },
+  {
+    "title": "LM Studio Bionic: the AI agent for open models",
+    "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+    "source": "lmstudio.ai",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from lmstudio.ai. Hacker News score 190, 69 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48939662",
+    "fetched_at": "2026-07-17T04:33:26Z",
+    "title_zh": "LM Studio Bionic：开放模型的 AI 代理"
+  },
+  {
+    "title": "$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol",
+    "url": "https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6",
+    "source": "tryai.dev",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from tryai.dev. Hacker News score 178, 209 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48939524",
+    "fetched_at": "2026-07-17T04:33:26Z",
+    "title_zh": "100 美元 AI 音乐视频：克劳德寓言 5 与 GPT-5.6 Sol"
+  },
+  {
+    "title": "Microsoft Comic Chat is now open source",
+    "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
+    "source": "opensource.microsoft.com",
+    "date": "2026-07-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from opensource.microsoft.com. Hacker News score 595, 130 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48936426",
+    "fetched_at": "2026-07-17T04:33:25Z",
+    "title_zh": "微软漫画聊天现已开源"
+  },
+  {
     "title": "Accelerating Block Low-Rank Foundation Model Inference on MemoryConstrained GPUs",
     "url": "https://dl.acm.org/doi/full/10.1145/3806645.3807580",
     "source": "dl.acm.org",
@@ -231,6 +319,17 @@
     "title_zh": "Agents.md – 愚蠢的人类"
   },
   {
+    "title": "Simulating everything, sort of: The promise and limits of world models",
+    "url": "https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models/",
+    "source": "arstechnica.com",
+    "date": "2026-07-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from arstechnica.com. Hacker News score 17, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48896044",
+    "fetched_at": "2026-07-17T04:33:28Z",
+    "title_zh": "模拟一切：世界模型的承诺和局限性"
+  },
+  {
     "title": "Show HN: I implemented a neural network in SQL",
     "url": "https://github.com/xqlsystems/xarray-sql/blob/claude/xarray-sql-mnist-demo/benchmarks/nn.py",
     "source": "github.com",
@@ -416,6 +515,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48877314",
     "fetched_at": "2026-07-12T04:45:57Z",
     "title_zh": "一个纯方案的Web编程工具"
+  },
+  {
+    "title": "Show HN: Clx – Compile Lua to Native Executables Through C++20",
+    "url": "https://github.com/samyeyo/clx",
+    "source": "github.com",
+    "date": "2026-07-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 97, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48871547",
+    "fetched_at": "2026-07-17T04:33:29Z",
+    "title_zh": "Show HN: Clx – 通过 C++20 将 Lua 编译为本机可执行文件"
   },
   {
     "title": "Show HN: Sqlsure – deterministic semantic checks for AI-generated SQL",
