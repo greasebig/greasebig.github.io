@@ -1,5 +1,82 @@
 [
   {
+    "title": "Homomorphically encrypted CIFAR-10 inference in 200ms",
+    "url": "https://sofar.belfortlabs.cloud/",
+    "source": "sofar.belfortlabs.cloud",
+    "date": "2026-07-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from sofar.belfortlabs.cloud. Hacker News score 68, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48949240",
+    "fetched_at": "2026-07-18T04:19:11Z",
+    "title_zh": "200 毫秒内同态加密的 CIFAR-10 推理"
+  },
+  {
+    "title": "Apple targets dozens of OpenAI employees with legal letters",
+    "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
+    "source": "ft.com",
+    "date": "2026-07-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from ft.com. Hacker News score 382, 328 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48946303",
+    "fetched_at": "2026-07-18T04:19:11Z",
+    "title_zh": "苹果向数十名 OpenAI 员工发出法律信函"
+  },
+  {
+    "title": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM",
+    "url": "https://blog.zksecurity.xyz/posts/openvm-bugs/",
+    "source": "blog.zksecurity.xyz",
+    "date": "2026-07-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.zksecurity.xyz. Hacker News score 86, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48947714",
+    "fetched_at": "2026-07-18T04:19:10Z",
+    "title_zh": "AI 遇见密码学 2：AI 在 OpenVM 的 ZkVM 中发现了什么"
+  },
+  {
+    "title": "Topcoat: The full full-stack framework for Rust",
+    "url": "https://github.com/tokio-rs/topcoat",
+    "source": "github.com",
+    "date": "2026-07-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 55, 34 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48952067",
+    "fetched_at": "2026-07-18T04:19:08Z",
+    "title_zh": "Topcoat：Rust 的完整全栈框架"
+  },
+  {
+    "title": "The state of open source AI",
+    "url": "https://stateofopensource.ai/",
+    "source": "stateofopensource.ai",
+    "date": "2026-07-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from stateofopensource.ai. Hacker News score 396, 292 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48947825",
+    "fetched_at": "2026-07-18T04:19:08Z",
+    "title_zh": "开源人工智能的现状"
+  },
+  {
+    "title": "TP-Link Kasa cameras leaked home GPS via unauthenticated UDP for 6 years",
+    "url": "https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md",
+    "source": "github.com",
+    "date": "2026-07-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 61, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48952565",
+    "fetched_at": "2026-07-18T04:19:06Z",
+    "title_zh": "TP-Link Kasa 相机通过未经身份验证的 UDP 泄露家庭 GPS 长达 6 年"
+  },
+  {
+    "title": "Kaiser nurses say AI, workplace surveillance are making their jobs, care worse",
+    "url": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
+    "source": "localnewsmatters.org",
+    "date": "2026-07-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from localnewsmatters.org. Hacker News score 377, 254 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48952880",
+    "fetched_at": "2026-07-18T04:19:05Z",
+    "title_zh": "凯撒护士表示人工智能、工作场所监控正在使他们的工作和护理变得更糟"
+  },
+  {
     "title": "Lingbot-map: A 3D foundation model for reconstructing scenes from streaming data",
     "url": "https://github.com/Robbyant/lingbot-map",
     "source": "github.com",
@@ -209,6 +286,28 @@
     "title_zh": "使用 20 个并行运行的 Codex 帐户解决 20 个 Erdős 问题"
   },
   {
+    "title": "MoonBASIC: A modern BASIC for building 2D and 3D games",
+    "url": "https://github.com/CharmingBlaze/moonbasic",
+    "source": "github.com",
+    "date": "2026-07-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 58, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48910579",
+    "fetched_at": "2026-07-18T04:19:09Z",
+    "title_zh": "MoonBASIC：用于构建 2D 和 3D 游戏的现代 BASIC"
+  },
+  {
+    "title": "Reviving a 15-year-old netbook with Arch Linux",
+    "url": "https://parksb.github.io/en/article/41.html",
+    "source": "parksb.github.io",
+    "date": "2026-07-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from parksb.github.io. Hacker News score 4, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48907063",
+    "fetched_at": "2026-07-18T04:19:08Z",
+    "title_zh": "使用 Arch Linux 复兴已有 15 年历史的上网本"
+  },
+  {
     "title": "Are we offloading too much of our thinking to AI?",
     "url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
     "source": "artfish.ai",
@@ -394,6 +493,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48896600",
     "fetched_at": "2026-07-14T04:21:23Z",
     "title_zh": "Sega 32X 上的 Linux。到底谁需要硬件同步原语？"
+  },
+  {
+    "title": "Show HN: Instrumation a PYPI library for Instruments",
+    "url": "https://github.com/abduznik/instrumation",
+    "source": "github.com",
+    "date": "2026-07-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 5, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48881912",
+    "fetched_at": "2026-07-18T04:19:11Z",
+    "title_zh": "显示 HN：Instrumentation 用于仪器的 PYPI 库"
   },
   {
     "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
