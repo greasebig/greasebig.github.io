@@ -1,5 +1,93 @@
 [
   {
+    "title": "Big Tech Needs to Justify AI Spending as Investors Dump Stocks",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-19/big-tech-needs-to-justify-ai-spending-as-investors-dump-stocks",
+    "source": "bloomberg.com",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from bloomberg.com. Hacker News score 6, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48974426",
+    "fetched_at": "2026-07-20T04:58:45Z",
+    "title_zh": "随着投资者抛售股票，大型科技公司需要证明人工智能支出的合理性"
+  },
+  {
+    "title": "Claude Fable produced a counterexample to the Jacobian Conjecture",
+    "url": "https://xcancel.com/__alpoge__/status/2079028340955197566",
+    "source": "xcancel.com",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from xcancel.com. Hacker News score 144, 67 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48973869",
+    "fetched_at": "2026-07-20T04:58:42Z",
+    "title_zh": "克劳德·寓言提出了雅可比猜想的反例"
+  },
+  {
+    "title": "Moonshine: Lets you stream games from your PC to any device running Moonlight",
+    "url": "https://github.com/hgaiser/moonshine",
+    "source": "github.com",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 36, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48972970",
+    "fetched_at": "2026-07-20T04:58:41Z",
+    "title_zh": "Moonshine：让您可以将游戏从 PC 传输到任何运行 Moonlight 的设备"
+  },
+  {
+    "title": "Moonshot AI suspends new subscriptions due to Kimi K3 demand",
+    "url": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
+    "source": "twitter.com",
+    "date": "2026-07-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 244, 102 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48969291",
+    "fetched_at": "2026-07-20T04:58:46Z",
+    "title_zh": "Moonshot AI 由于 Kimi K3 需求暂停新订阅"
+  },
+  {
+    "title": "AI advice made people less accurate but more confident – sudy",
+    "url": "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study",
+    "source": "thenextweb.com",
+    "date": "2026-07-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from thenextweb.com. Hacker News score 311, 176 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48971738",
+    "fetched_at": "2026-07-20T04:58:45Z",
+    "title_zh": "人工智能建议让人们不太准确，但更自信——研究"
+  },
+  {
+    "title": "Ollama: All Aboard Open Models",
+    "url": "https://ollama.com/blog/all-aboard-open-models",
+    "source": "ollama.com",
+    "date": "2026-07-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from ollama.com. Hacker News score 126, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48965880",
+    "fetched_at": "2026-07-20T04:58:44Z",
+    "title_zh": "Ollama：所有开放模型"
+  },
+  {
+    "title": "Claude Code uses Bun written in Rust now",
+    "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+    "source": "simonwillison.net",
+    "date": "2026-07-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from simonwillison.net. Hacker News score 438, 600 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48966569",
+    "fetched_at": "2026-07-20T04:58:42Z",
+    "title_zh": "Claude Code 现在使用 Rust 编写的 Bun"
+  },
+  {
+    "title": "Orion Browser by Kagi",
+    "url": "https://orionbrowser.com/",
+    "source": "orionbrowser.com",
+    "date": "2026-07-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from orionbrowser.com. Hacker News score 110, 81 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48970894",
+    "fetched_at": "2026-07-20T04:58:42Z",
+    "title_zh": "Kagi 的 Orion 浏览器"
+  },
+  {
     "title": "AI Mania Is Eviscerating Global Decision-Making",
     "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/#fnref:3",
     "source": "ludic.mataroa.blog",
@@ -20,6 +108,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48964015",
     "fetched_at": "2026-07-19T04:42:00Z",
     "title_zh": "比 IPTV 更好、更便宜"
+  },
+  {
+    "title": "UnifiedIR for Julia",
+    "url": "https://github.com/JuliaLang/julia/pull/62334",
+    "source": "github.com",
+    "date": "2026-07-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 88, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48962600",
+    "fetched_at": "2026-07-20T04:58:45Z",
+    "title_zh": "Julia 的统一IR"
   },
   {
     "title": "Show HN: Q3Edit – Edit and play Quake 3 maps in the browser",
@@ -372,6 +471,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48914646",
     "fetched_at": "2026-07-15T04:21:22Z",
     "title_zh": "使用 20 个并行运行的 Codex 帐户解决 20 个 Erdős 问题"
+  },
+  {
+    "title": "The Zen of Parallel Programming",
+    "url": "https://smolnero.com/posts/the-zen-of-parallel-programming",
+    "source": "smolnero.com",
+    "date": "2026-07-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from smolnero.com. Hacker News score 135, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48907390",
+    "fetched_at": "2026-07-20T04:58:43Z",
+    "title_zh": "并行编程之禅"
   },
   {
     "title": "Speech Recognition and TTS in less than 500kb",
