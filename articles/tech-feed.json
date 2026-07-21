@@ -1,5 +1,93 @@
 [
   {
+    "title": "Jane Street: Incremental",
+    "url": "https://github.com/janestreet/incremental",
+    "source": "github.com",
+    "date": "2026-07-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 12, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48987822",
+    "fetched_at": "2026-07-21T04:40:25Z",
+    "title_zh": "简街：增量"
+  },
+  {
+    "title": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
+    "url": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding",
+    "source": "asia.nikkei.com",
+    "date": "2026-07-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from asia.nikkei.com. Hacker News score 46, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48987863",
+    "fetched_at": "2026-07-21T04:40:24Z",
+    "title_zh": "由于人工智能融资不透明，美国五家科技巨头的隐性债务飙升至 1.65 吨"
+  },
+  {
+    "title": "How we measured AI writing across arXiv, and where the measurement breaks",
+    "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+    "source": "unslop.run",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from unslop.run. Hacker News score 201, 145 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48981206",
+    "fetched_at": "2026-07-21T04:40:27Z",
+    "title_zh": "我们如何测量 arXiv 上的人工智能写作，以及测量的突破点"
+  },
+  {
+    "title": "Agent swarms and the new model economics",
+    "url": "https://cursor.com/blog/agent-swarm-model-economics",
+    "source": "cursor.com",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from cursor.com. Hacker News score 152, 65 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48982535",
+    "fetched_at": "2026-07-21T04:40:26Z",
+    "title_zh": "代理群与新经济模型"
+  },
+  {
+    "title": "China’s open-weights AI strategy is winning",
+    "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
+    "source": "werd.io",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from werd.io. Hacker News score 1019, 813 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48979269",
+    "fetched_at": "2026-07-21T04:40:26Z",
+    "title_zh": "中国的开放权重人工智能战略正在获胜"
+  },
+  {
+    "title": "Hacker wipes Romania's land registry database",
+    "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
+    "source": "news.risky.biz",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from news.risky.biz. Hacker News score 604, 337 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48978605",
+    "fetched_at": "2026-07-21T04:40:25Z",
+    "title_zh": "黑客擦除罗马尼亚土地登记数据库"
+  },
+  {
+    "title": "Nativ: Run frontier open models locally on your Mac",
+    "url": "https://blaizzy.github.io/nativ/",
+    "source": "blaizzy.github.io",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from blaizzy.github.io. Hacker News score 221, 80 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48982681",
+    "fetched_at": "2026-07-21T04:40:25Z",
+    "title_zh": "Nativ：在 Mac 上本地运行前沿开放模型"
+  },
+  {
+    "title": "Who's afraid of Chinese models?",
+    "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+    "source": "stratechery.com",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from stratechery.com. Hacker News score 424, 288 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48977128",
+    "fetched_at": "2026-07-21T04:40:24Z",
+    "title_zh": "谁害怕中国模特？"
+  },
+  {
     "title": "Big Tech Needs to Justify AI Spending as Investors Dump Stocks",
     "url": "https://www.bloomberg.com/news/articles/2026-07-19/big-tech-needs-to-justify-ai-spending-as-investors-dump-stocks",
     "source": "bloomberg.com",
@@ -385,6 +473,17 @@
     "title_zh": "人工智能互动地图"
   },
   {
+    "title": "You only need the frontier model for one single edit",
+    "url": "https://stencil.so/blog/prewalk",
+    "source": "stencil.so",
+    "date": "2026-07-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from stencil.so. Hacker News score 96, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48916512",
+    "fetched_at": "2026-07-21T04:40:27Z",
+    "title_zh": "您只需要前沿模型进行一次编辑"
+  },
+  {
     "title": "Brainless: Shadcn components that look like Claude Code, Codex and Grok",
     "url": "https://brainless.swerdlow.dev",
     "source": "brainless.swerdlow.dev",
@@ -625,6 +724,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48901695",
     "fetched_at": "2026-07-14T04:21:21Z",
     "title_zh": "Agents.md – 愚蠢的人类"
+  },
+  {
+    "title": "What most histories get wrong about MUMPS's first standard",
+    "url": "https://github.com/rochus-keller/MUMPS/blob/main/docs/First_MUMPS_Standard_Article.md",
+    "source": "github.com",
+    "date": "2026-07-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 8, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48887043",
+    "fetched_at": "2026-07-21T04:40:27Z",
+    "title_zh": "大多数历史对 MUMPS 第一个标准的误解"
   },
   {
     "title": "A Second-Grade Teacher Revived a Beloved Video Game",
