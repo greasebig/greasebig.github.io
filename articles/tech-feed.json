@@ -1,5 +1,82 @@
 [
   {
+    "title": "Businesses with ugly AI menu redesigns",
+    "url": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
+    "source": "blog.fiddery.com",
+    "date": "2026-07-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.fiddery.com. Hacker News score 213, 161 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49005973",
+    "fetched_at": "2026-07-23T04:44:32Z",
+    "title_zh": "丑陋的人工智能菜单重新设计的企业"
+  },
+  {
+    "title": "Anthropomorphism in Children's Interactions with LLM Chatbots",
+    "url": "https://arxiv.org/abs/2607.18250",
+    "source": "arxiv.org",
+    "date": "2026-07-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 28, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49014537",
+    "fetched_at": "2026-07-23T04:44:32Z",
+    "title_zh": "儿童与 LLM 聊天机器人互动中的拟人化"
+  },
+  {
+    "title": "Show HN: Cactus Hybrid: We taught Gemma 4 to know when it's wrong",
+    "url": "https://github.com/cactus-compute/cactus-hybrid",
+    "source": "github.com",
+    "date": "2026-07-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 93, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49010782",
+    "fetched_at": "2026-07-23T04:44:31Z",
+    "title_zh": "Show HN：仙人掌混合体：我们教 Gemma 4 知道什么时候是错的"
+  },
+  {
+    "title": "Fairphone 6 wide camera experimental Linux support",
+    "url": "https://nondescriptpointer.com/articles/fairphone-6-wide-camera-linux/",
+    "source": "nondescriptpointer.com",
+    "date": "2026-07-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from nondescriptpointer.com. Hacker News score 89, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49012777",
+    "fetched_at": "2026-07-23T04:44:31Z",
+    "title_zh": "Fairphone 6 广角摄像头实验 Linux 支持"
+  },
+  {
+    "title": "Quality non-fiction books are the antithesis of AI slop",
+    "url": "https://resobscura.substack.com/p/quality-non-fiction-books-are-the",
+    "source": "resobscura.substack.com",
+    "date": "2026-07-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from resobscura.substack.com. Hacker News score 235, 92 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49007247",
+    "fetched_at": "2026-07-23T04:44:30Z",
+    "title_zh": "高质量的非小说类书籍是人工智能的对立面"
+  },
+  {
+    "title": "GigaToken: ~1000x faster Language model tokenization",
+    "url": "https://github.com/marcelroed/gigatoken/",
+    "source": "github.com",
+    "date": "2026-07-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 414, 82 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49010167",
+    "fetched_at": "2026-07-23T04:44:30Z",
+    "title_zh": "GigaToken：语言模型标记化速度提高约 1000 倍"
+  },
+  {
+    "title": "Are AI labs pelicanmaxxing?",
+    "url": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+    "source": "dylancastillo.co",
+    "date": "2026-07-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from dylancastillo.co. Hacker News score 433, 167 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49010129",
+    "fetched_at": "2026-07-23T04:44:30Z",
+    "title_zh": "人工智能实验室是鹈鹕最大化吗？"
+  },
+  {
     "title": "Show HN: Computable – Buy, sell, and redeem GPU for the exact weeks you want",
     "url": "https://www.getcomputable.com/",
     "source": "getcomputable.com",
@@ -132,6 +209,17 @@
     "title_zh": "由于人工智能融资不透明，美国五家科技巨头的隐性债务飙升至 1.65 吨"
   },
   {
+    "title": "ascdraw: Editor for ASCII/UTF-8 diagrams (in 144FPS)",
+    "url": "https://github.com/exlee/ascdraw",
+    "source": "github.com",
+    "date": "2026-07-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 15, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48984534",
+    "fetched_at": "2026-07-23T04:44:30Z",
+    "title_zh": "ascdraw：ASCII/UTF-8 图表编辑器（144FPS）"
+  },
+  {
     "title": "How we measured AI writing across arXiv, and where the measurement breaks",
     "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
     "source": "unslop.run",
@@ -229,6 +317,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48972970",
     "fetched_at": "2026-07-20T04:58:41Z",
     "title_zh": "Moonshine：让您可以将游戏从 PC 传输到任何运行 Moonlight 的设备"
+  },
+  {
+    "title": "MemoryPack: Zero encoding extreme performance binary serializer for C#",
+    "url": "https://github.com/Cysharp/MemoryPack",
+    "source": "github.com",
+    "date": "2026-07-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 26, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48967506",
+    "fetched_at": "2026-07-23T04:44:32Z",
+    "title_zh": "MemoryPack：用于 C# 的零编码极端性能二进制序列化器"
   },
   {
     "title": "Moonshot AI suspends new subscriptions due to Kimi K3 demand",
@@ -581,6 +680,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=48930160",
     "fetched_at": "2026-07-16T04:31:00Z",
     "title_zh": "人工智能互动地图"
+  },
+  {
+    "title": "Nobody knows what a used GPU cluster is worth",
+    "url": "https://ciphertalk.substack.com/p/nobody-knows-what-a-used-gpu-cluster",
+    "source": "ciphertalk.substack.com",
+    "date": "2026-07-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from ciphertalk.substack.com. Hacker News score 193, 177 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=48917135",
+    "fetched_at": "2026-07-23T04:44:31Z",
+    "title_zh": "没有人知道二手 GPU 集群的价值"
   },
   {
     "title": "You only need the frontier model for one single edit",
