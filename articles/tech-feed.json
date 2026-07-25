@@ -1,5 +1,115 @@
 [
   {
+    "title": "Show HN: Max Studio Tools – C++ DSP Modules for Max and Ableton Live",
+    "url": "https://github.com/apresta/max-studio-tools",
+    "source": "github.com",
+    "date": "2026-07-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 27, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49041546",
+    "fetched_at": "2026-07-25T04:37:29Z",
+    "title_zh": "显示 HN：Max Studio 工具 – 适用于 Max 和 Ableton Live 的 C++ DSP 模块"
+  },
+  {
+    "title": "Claude Cookbook",
+    "url": "https://platform.claude.com/cookbook/",
+    "source": "platform.claude.com",
+    "date": "2026-07-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from platform.claude.com. Hacker News score 296, 156 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49031409",
+    "fetched_at": "2026-07-25T04:37:29Z",
+    "title_zh": "克劳德食谱"
+  },
+  {
+    "title": "Be skeptical of OpenAI's rogue hacker agent story",
+    "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
+    "source": "theguardian.com",
+    "date": "2026-07-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from theguardian.com. Hacker News score 461, 263 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49038060",
+    "fetched_at": "2026-07-25T04:37:28Z",
+    "title_zh": "对 OpenAI 的流氓黑客代理故事持怀疑态度"
+  },
+  {
+    "title": "Programming language file extensions that match ISO 3166-1 alpha-2 country codes",
+    "url": "https://www.bruh.ltd/blog/programming-language-file-extensions-that-match-an-iso-3166-1-alpha-2-country-code/",
+    "source": "bruh.ltd",
+    "date": "2026-07-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from bruh.ltd. Hacker News score 46, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49034673",
+    "fetched_at": "2026-07-25T04:37:28Z",
+    "title_zh": "与 ISO 3166-1 alpha-2 国家/地区代码匹配的编程语言文件扩展名"
+  },
+  {
+    "title": "Government orders GitHub to remove Bluetooth-based chat app Bitchat: Jack Dorsey",
+    "url": "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece",
+    "source": "thehindu.com",
+    "date": "2026-07-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from thehindu.com. Hacker News score 411, 299 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49036433",
+    "fetched_at": "2026-07-25T04:37:27Z",
+    "title_zh": "政府命令 GitHub 删除基于蓝牙的聊天应用程序 Bitchat：Jack Dorsey"
+  },
+  {
+    "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+    "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+    "source": "cnbc.com",
+    "date": "2026-07-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from cnbc.com. Hacker News score 556, 250 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49035303",
+    "fetched_at": "2026-07-25T04:37:26Z",
+    "title_zh": "Nvidia、微软、Meta 警告不要过度监管开放权重模型"
+  },
+  {
+    "title": "Don't Take the Black Pill [video]",
+    "url": "https://www.youtube.com/watch?v=zLZwpH5lCD4",
+    "source": "youtube.com",
+    "date": "2026-07-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 151, 122 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49038298",
+    "fetched_at": "2026-07-25T04:37:26Z",
+    "title_zh": "不要服用黑色药丸[视频]"
+  },
+  {
+    "title": "My security camera shipped a GitHub admin token in its login page",
+    "url": "https://hhh.hn/hanwha-github-token/",
+    "source": "hhh.hn",
+    "date": "2026-07-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from hhh.hn. Hacker News score 539, 185 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49034292",
+    "fetched_at": "2026-07-25T04:37:25Z",
+    "title_zh": "我的安全摄像头在其登录页面中发送了 GitHub 管理令牌"
+  },
+  {
+    "title": "Claude Opus 5",
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "source": "anthropic.com",
+    "date": "2026-07-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 1391, 759 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49038433",
+    "fetched_at": "2026-07-25T04:37:24Z",
+    "title_zh": "克劳德作品 5"
+  },
+  {
+    "title": "Fil-C: Garbage In, Memory Safety Out [video]",
+    "url": "https://www.youtube.com/watch?v=5F-2Y1LPRek",
+    "source": "youtube.com",
+    "date": "2026-07-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 116, 107 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49026933",
+    "fetched_at": "2026-07-25T04:37:26Z",
+    "title_zh": "Fil-C：垃圾输入，内存安全输出 [视频]"
+  },
+  {
     "title": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
     "url": "https://github.com/onecli/onecli",
     "source": "github.com",
