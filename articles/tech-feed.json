@@ -1,5 +1,104 @@
 [
   {
+    "title": "Agentic test processes, LLM benchmarks, and other notes on agentic coding",
+    "url": "https://danluu.com/ai-coding/",
+    "source": "danluu.com",
+    "date": "2026-07-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from danluu.com. Hacker News score 7, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49054268",
+    "fetched_at": "2026-07-26T04:50:40Z",
+    "title_zh": "代理测试流程、LLM 基准测试以及有关代理编码的其他说明"
+  },
+  {
+    "title": "Becoming a Research Engineer at a Big LLM Lab",
+    "url": "https://www.maxmynter.com/pages/blog/jobhunt",
+    "source": "maxmynter.com",
+    "date": "2026-07-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from maxmynter.com. Hacker News score 26, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49051707",
+    "fetched_at": "2026-07-26T04:50:40Z",
+    "title_zh": "成为大型法学硕士实验室的研究工程师"
+  },
+  {
+    "title": "Show HN: SpinWin – A macOS menu bar app to visually rotate or spin any window",
+    "url": "https://github.com/alokdhir/spinwin",
+    "source": "github.com",
+    "date": "2026-07-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 30, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49049638",
+    "fetched_at": "2026-07-26T04:50:40Z",
+    "title_zh": "Show HN：SpinWin – 一款 macOS 菜单栏应用程序，可直观地旋转或旋转任何窗口"
+  },
+  {
+    "title": "LLM Usage in Debian: Three Proposals",
+    "url": "https://www.debian.org/vote/2026/vote_002",
+    "source": "debian.org",
+    "date": "2026-07-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from debian.org. Hacker News score 111, 98 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49050859",
+    "fetched_at": "2026-07-26T04:50:39Z",
+    "title_zh": "LLM 在 Debian 中的使用：三个建议"
+  },
+  {
+    "title": "DeepSeek pause fundraise after comments on compute gap to US leaked (transcript) [pdf]",
+    "url": "https://github.com/demo-zexuan/liang-wenfeng-investor-meeting-2026-7-22/blob/master/%E6%A2%81%E6%96%87%E9%94%8B%E6%8A%95%E8%B5%84%E8%80%85%E4%BA%A4%E6%B5%81%E4%BC%9A-%E6%96%87%E5%AD%97%E7%A8%BF_1_18_translate_20260723201651.pdf",
+    "source": "github.com",
+    "date": "2026-07-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 114, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49052912",
+    "fetched_at": "2026-07-26T04:50:39Z",
+    "title_zh": "关于美国计算差距的评论泄露后 DeepSeek 暂停筹款（文字记录）[pdf]"
+  },
+  {
+    "title": "Open-weight AI is having its Kubernetes moment",
+    "url": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+    "source": "tobi.knaup.me",
+    "date": "2026-07-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from tobi.knaup.me. Hacker News score 343, 275 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49048034",
+    "fetched_at": "2026-07-26T04:50:39Z",
+    "title_zh": "开放重量人工智能正在迎来 Kubernetes 时刻"
+  },
+  {
+    "title": "Cloudflare's new AI traffic options for customers",
+    "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-07-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 73, 45 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49052564",
+    "fetched_at": "2026-07-26T04:50:38Z",
+    "title_zh": "Cloudflare 为客户提供的新 AI 流量选项"
+  },
+  {
+    "title": "Running a 28.9M parameter LLM on an $8 microcontroller",
+    "url": "https://github.com/slvDev/esp32-ai",
+    "source": "github.com",
+    "date": "2026-07-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 112, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49050512",
+    "fetched_at": "2026-07-26T04:50:38Z",
+    "title_zh": "在 8 美元的微控制器上运行 2890 万参数的 LLM"
+  },
+  {
+    "title": "The new rules of context engineering for Claude 5 generation models",
+    "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+    "source": "claude.com",
+    "date": "2026-07-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from claude.com. Hacker News score 226, 139 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49051361",
+    "fetched_at": "2026-07-26T04:50:36Z",
+    "title_zh": "Claude 5代模型的上下文工程新规则"
+  },
+  {
     "title": "Show HN: Max Studio Tools – C++ DSP Modules for Max and Ableton Live",
     "url": "https://github.com/apresta/max-studio-tools",
     "source": "github.com",
@@ -97,6 +196,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49038433",
     "fetched_at": "2026-07-25T04:37:24Z",
     "title_zh": "克劳德作品 5"
+  },
+  {
+    "title": "Rethinking Legal Education in the AI Era",
+    "url": "https://www.law.uchicago.edu/news/ai-strategy-statement",
+    "source": "law.uchicago.edu",
+    "date": "2026-07-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from law.uchicago.edu. Hacker News score 35, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49024980",
+    "fetched_at": "2026-07-26T04:50:36Z",
+    "title_zh": "人工智能时代法学教育的反思"
   },
   {
     "title": "Fil-C: Garbage In, Memory Safety Out [video]",
