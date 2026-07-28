@@ -1,5 +1,115 @@
 [
   {
+    "title": "Residential Proxies Are a National Security Threat",
+    "url": "https://jacob.gold/posts/residential-proxies-are-a-national-security-threat/",
+    "source": "jacob.gold",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from jacob.gold. Hacker News score 31, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49078266",
+    "fetched_at": "2026-07-28T04:35:26Z",
+    "title_zh": "住宅代理是国家安全威胁"
+  },
+  {
+    "title": "EYG: A Programming Language for Humans",
+    "url": "https://crowdhailer.me/2026-06-08/a-programming-language-for-humans/",
+    "source": "crowdhailer.me",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from crowdhailer.me. Hacker News score 32, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49078463",
+    "fetched_at": "2026-07-28T04:35:26Z",
+    "title_zh": "EYG：人类编程语言"
+  },
+  {
+    "title": "Using an open model feels surprisingly good",
+    "url": "https://matthewsaltz.com/blog/using-an-open-model-feels-surprisingly-good/",
+    "source": "matthewsaltz.com",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from matthewsaltz.com. Hacker News score 98, 42 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49078583",
+    "fetched_at": "2026-07-28T04:35:25Z",
+    "title_zh": "使用开放模型感觉出奇的好"
+  },
+  {
+    "title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review",
+    "url": "https://fermisense.com/when-machines-take-the-wheel/",
+    "source": "fermisense.com",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from fermisense.com. Hacker News score 62, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49078454",
+    "fetched_at": "2026-07-28T04:35:25Z",
+    "title_zh": "售价 500 美元的 RL 9B 开放式模型在目录审查中击败了前沿模型"
+  },
+  {
+    "title": "Kimi K3 Now Available via Telnyx Inference API",
+    "url": "https://telnyx.com/release-notes/kimi-k3-telnyx-inference",
+    "source": "telnyx.com",
+    "date": "2026-07-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from telnyx.com. Hacker News score 30, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49076505",
+    "fetched_at": "2026-07-28T04:35:28Z",
+    "title_zh": "Kimi K3 现已通过 Telnyx Inference API 提供"
+  },
+  {
+    "title": "Self-contained highly-portable Python distributions",
+    "url": "https://gregoryszorc.com/docs/python-build-standalone/main/",
+    "source": "gregoryszorc.com",
+    "date": "2026-07-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from gregoryszorc.com. Hacker News score 126, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49073942",
+    "fetched_at": "2026-07-28T04:35:27Z",
+    "title_zh": "独立的高度可移植的 Python 发行版"
+  },
+  {
+    "title": "Show HN: Yap – OSS on-device voice dictation for macOS with no model to download",
+    "url": "https://github.com/FrigadeHQ/yap",
+    "source": "github.com",
+    "date": "2026-07-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 36, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49073834",
+    "fetched_at": "2026-07-28T04:35:26Z",
+    "title_zh": "Show HN: Yap – 适用于 macOS 的 OSS 设备上语音听写，无需下载模型"
+  },
+  {
+    "title": "C/C++ projects packaged for Zig",
+    "url": "https://github.com/allyourcodebase",
+    "source": "github.com",
+    "date": "2026-07-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 39, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49076791",
+    "fetched_at": "2026-07-28T04:35:26Z",
+    "title_zh": "为 Zig 打包的 C/C++ 项目"
+  },
+  {
+    "title": "Our position on open-weights models",
+    "url": "https://www.anthropic.com/news/position-open-weights-models",
+    "source": "anthropic.com",
+    "date": "2026-07-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 619, 856 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49076057",
+    "fetched_at": "2026-07-28T04:35:25Z",
+    "title_zh": "我们对开放重量模型的立场"
+  },
+  {
+    "title": "Benchmarking Opus 5 on SlopCodeBench",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+    "source": "github.com",
+    "date": "2026-07-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 187, 45 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49076391",
+    "fetched_at": "2026-07-28T04:35:25Z",
+    "title_zh": "在 SlopCodeBench 上对 Opus 5 进行基准测试"
+  },
+  {
     "title": "Wattage: A token-spend profiler and cost-regression gate for AI agents",
     "url": "https://github.com/faizannraza/wattage",
     "source": "github.com",
