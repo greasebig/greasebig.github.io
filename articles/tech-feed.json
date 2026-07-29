@@ -1,5 +1,82 @@
 [
   {
+    "title": "Show HN: Manim (3Blue1Brown's animation engine) in the browser via WebGPU",
+    "url": "https://studio.academa.ai/",
+    "source": "studio.academa.ai",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from studio.academa.ai. Hacker News score 39, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49091703",
+    "fetched_at": "2026-07-29T04:40:24Z",
+    "title_zh": "通过 WebGPU 在浏览器中显示 HN: Manim（3Blue1Brown 的动画引擎）"
+  },
+  {
+    "title": "Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-Design",
+    "url": "https://transformer-transformer.github.io/",
+    "source": "transformer-transformer.github.io",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from transformer-transformer.github.io. Hacker News score 8, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49093232",
+    "fetched_at": "2026-07-29T04:40:22Z",
+    "title_zh": "Transformer Transformer：运动条件机器人协同设计的统一模型"
+  },
+  {
+    "title": "Hubble: Open-source notetaking app for you and your agents",
+    "url": "https://www.hubble.md/",
+    "source": "hubble.md",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from hubble.md. Hacker News score 71, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49091730",
+    "fetched_at": "2026-07-29T04:40:22Z",
+    "title_zh": "Hubble：为您和您的代理提供的开源笔记应用程序"
+  },
+  {
+    "title": "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
+    "url": "https://learnvector.ai/",
+    "source": "learnvector.ai",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from learnvector.ai. Hacker News score 94, 50 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49092499",
+    "fetched_at": "2026-07-29T04:40:21Z",
+    "title_zh": "LearnVector – 吴恩达的人工智能公司打造一对一的学习体验"
+  },
+  {
+    "title": "Discovering Cryptographic Weaknesses with Claude",
+    "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+    "source": "anthropic.com",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 192, 132 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49087091",
+    "fetched_at": "2026-07-29T04:40:24Z",
+    "title_zh": "与 Claude 一起发现加密货币的弱点"
+  },
+  {
+    "title": "Show HN: I was tired of opening 2 tabs for every HN link, so I made a userscript",
+    "url": "https://github.com/twalichiewicz/HNewhere",
+    "source": "github.com",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 192, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49090607",
+    "fetched_at": "2026-07-29T04:40:22Z",
+    "title_zh": "显示 HN：我厌倦了为每个 HN 链接打开 2 个选项卡，所以我制作了一个用户脚本"
+  },
+  {
+    "title": "Codex Security",
+    "url": "https://github.com/openai/codex-security",
+    "source": "github.com",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 416, 129 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49089755",
+    "fetched_at": "2026-07-29T04:40:21Z",
+    "title_zh": "法典安全"
+  },
+  {
     "title": "Residential Proxies Are a National Security Threat",
     "url": "https://jacob.gold/posts/residential-proxies-are-a-national-security-threat/",
     "source": "jacob.gold",
@@ -42,6 +119,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49078454",
     "fetched_at": "2026-07-28T04:35:25Z",
     "title_zh": "售价 500 美元的 RL 9B 开放式模型在目录审查中击败了前沿模型"
+  },
+  {
+    "title": "Interview with Boris Cherny [video]",
+    "url": "https://www.youtube.com/watch?v=qyPCVqFUyDo",
+    "source": "youtube.com",
+    "date": "2026-07-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 44, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49077040",
+    "fetched_at": "2026-07-29T04:40:24Z",
+    "title_zh": "鲍里斯·切尔尼访谈[视频]"
+  },
+  {
+    "title": "Truth is not a direction: a Tarski attack on LLM probes",
+    "url": "https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html",
+    "source": "abeljansma.nl",
+    "date": "2026-07-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from abeljansma.nl. Hacker News score 49, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49069033",
+    "fetched_at": "2026-07-29T04:40:23Z",
+    "title_zh": "真相不是方向：Tarski 对 LLM 探测器的攻击"
   },
   {
     "title": "Kimi K3 Now Available via Telnyx Inference API",
@@ -108,6 +207,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49076391",
     "fetched_at": "2026-07-28T04:35:25Z",
     "title_zh": "在 SlopCodeBench 上对 Opus 5 进行基准测试"
+  },
+  {
+    "title": "Teach yourself programming in ten years (1998)",
+    "url": "https://www.norvig.com/21-days.html",
+    "source": "norvig.com",
+    "date": "2026-07-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from norvig.com. Hacker News score 82, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49055816",
+    "fetched_at": "2026-07-29T04:40:23Z",
+    "title_zh": "十年自学编程（1998）"
   },
   {
     "title": "Wattage: A token-spend profiler and cost-regression gate for AI agents",
