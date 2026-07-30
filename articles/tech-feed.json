@@ -1,5 +1,104 @@
 [
   {
+    "title": "Kuna: Decompiler Development in the Age of Coding Agents",
+    "url": "https://noelo.org/blog/kuna-release/",
+    "source": "noelo.org",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from noelo.org. Hacker News score 10, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49105563",
+    "fetched_at": "2026-07-30T04:25:58Z",
+    "title_zh": "Kuna：编码代理时代的反编译器开发"
+  },
+  {
+    "title": "NSF pilots 4-year PhDs with industry research placements",
+    "url": "https://www.nsf.gov/news/nsf-partners-universities-industry-pilot-initiative-four",
+    "source": "nsf.gov",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from nsf.gov. Hacker News score 52, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49105642",
+    "fetched_at": "2026-07-30T04:25:56Z",
+    "title_zh": "NSF 试行四年制博士学位与行业研究实习"
+  },
+  {
+    "title": "Launch HN: Tokenless (YC S26) – Automatic model switching to save money",
+    "url": "https://usetokenless.com/",
+    "source": "usetokenless.com",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from usetokenless.com. Hacker News score 55, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49099143",
+    "fetched_at": "2026-07-30T04:26:00Z",
+    "title_zh": "推出 HN：Tokenless（YC S26）——自动模型切换以节省资金"
+  },
+  {
+    "title": "Turning a dumb AC unit smart (without losing my security deposit)",
+    "url": "https://prilik.com/blog/post/automating-ac-nyc/",
+    "source": "prilik.com",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from prilik.com. Hacker News score 127, 98 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49101198",
+    "fetched_at": "2026-07-30T04:25:59Z",
+    "title_zh": "将愚蠢的空调变聪明（不会损失我的保证金）"
+  },
+  {
+    "title": "Handbook.md shows that long policy documents do not reliably govern agents",
+    "url": "https://arxiv.org/abs/2607.25398",
+    "source": "arxiv.org",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 309, 186 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49096969",
+    "fetched_at": "2026-07-30T04:25:58Z",
+    "title_zh": "Handbook.md 表明，长政策文件并不能可靠地管理代理人"
+  },
+  {
+    "title": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
+    "url": "https://github.com/drumih/turbo-fieldfare",
+    "source": "github.com",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 700, 242 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49098510",
+    "fetched_at": "2026-07-30T04:25:57Z",
+    "title_zh": "显示 HN：在任何 M 系列 Mac 上运行 Gemma 4 26B、2 GB RAM 的开源引擎"
+  },
+  {
+    "title": "LLM Honeypot",
+    "url": "https://llm2human.pages.dev/",
+    "source": "llm2human.pages.dev",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from llm2human.pages.dev. Hacker News score 116, 43 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49104117",
+    "fetched_at": "2026-07-30T04:25:57Z",
+    "title_zh": "法学硕士蜜罐"
+  },
+  {
+    "title": "AI's top startups are barely publishing their research",
+    "url": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
+    "source": "science.org",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from science.org. Hacker News score 295, 161 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49103285",
+    "fetched_at": "2026-07-30T04:25:56Z",
+    "title_zh": "人工智能的顶级初创公司几乎没有发表他们的研究成果"
+  },
+  {
+    "title": "The coolest use for the Vision Pro",
+    "url": "https://christianselig.com/2026/07/vision-pro-house/",
+    "source": "christianselig.com",
+    "date": "2026-07-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from christianselig.com. Hacker News score 478, 204 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49102774",
+    "fetched_at": "2026-07-30T04:25:56Z",
+    "title_zh": "Vision Pro 最酷的用途"
+  },
+  {
     "title": "Show HN: Manim (3Blue1Brown's animation engine) in the browser via WebGPU",
     "url": "https://studio.academa.ai/",
     "source": "studio.academa.ai",
@@ -42,6 +141,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49092499",
     "fetched_at": "2026-07-29T04:40:21Z",
     "title_zh": "LearnVector – 吴恩达的人工智能公司打造一对一的学习体验"
+  },
+  {
+    "title": "Anatomy of a Frontier Lab Agent Intrusion: A Timeline of the July 2026 Incident",
+    "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+    "source": "huggingface.co",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from huggingface.co. Hacker News score 322, 189 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49089500",
+    "fetched_at": "2026-07-30T04:25:58Z",
+    "title_zh": "前沿实验室特工入侵剖析：2026 年 7 月事件的时间表"
   },
   {
     "title": "Discovering Cryptographic Weaknesses with Claude",
