@@ -1,5 +1,104 @@
 [
   {
+    "title": "The AI trade now runs on borrowed money, and the lenders are repricing it",
+    "url": "https://greyswansignals.com/?theme=dark",
+    "source": "greyswansignals.com",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from greyswansignals.com. Hacker News score 33, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49118933",
+    "fetched_at": "2026-07-31T04:51:34Z",
+    "title_zh": "人工智能交易现在依靠借来的资金进行，贷方正在重新定价"
+  },
+  {
+    "title": "Rune 1.1: adds Python, an Emacs editor, a symbol index and is now free",
+    "url": "https://rune.build/blog/rune-1-1-release",
+    "source": "rune.build",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from rune.build. Hacker News score 66, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49116272",
+    "fetched_at": "2026-07-31T04:51:37Z",
+    "title_zh": "Rune 1.1：添加了 Python、Emacs 编辑器、符号索引，现在免费"
+  },
+  {
+    "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+    "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+    "source": "anthropic.com",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 137, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49116922",
+    "fetched_at": "2026-07-31T04:51:37Z",
+    "title_zh": "在我们的网络安全评估中调查三个现实事件"
+  },
+  {
+    "title": "Google will expand age checks on Android worldwide till the end of the year",
+    "url": "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html",
+    "source": "android-developers.googleblog.com",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from android-developers.googleblog.com. Hacker News score 383, 462 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49107950",
+    "fetched_at": "2026-07-31T04:51:37Z",
+    "title_zh": "谷歌将在全球范围内扩大 Android 年龄检查范围直至今年年底"
+  },
+  {
+    "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+    "source": "deepmind.google",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 510, 407 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49111237",
+    "fetched_at": "2026-07-31T04:51:36Z",
+    "title_zh": "Gemini Robotics 2 为机器人带来全身智能"
+  },
+  {
+    "title": "I flagged two research papers for fake authors and both were accepted as orals",
+    "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
+    "source": "geospatialml.com",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from geospatialml.com. Hacker News score 133, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49116721",
+    "fetched_at": "2026-07-31T04:51:35Z",
+    "title_zh": "我标记了两篇假作者的研究论文，并且都被接受为口头论文"
+  },
+  {
+    "title": "Stacked PRs are now live on GitHub",
+    "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+    "source": "github.blog",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.blog. Hacker News score 533, 181 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49112232",
+    "fetched_at": "2026-07-31T04:51:35Z",
+    "title_zh": "Stacked PR 现已发布在 GitHub 上"
+  },
+  {
+    "title": "Agent Skill to Force Docs in ASD-STE100 Simplified Technical English",
+    "url": "https://github.com/AminBlg/SimpleEnglish",
+    "source": "github.com",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 252, 87 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49114639",
+    "fetched_at": "2026-07-31T04:51:35Z",
+    "title_zh": "代理技能以 ASD-STE100 简化技术英语强制文档"
+  },
+  {
+    "title": "The AI Aesthetic",
+    "url": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
+    "source": "blog.jim-nielsen.com",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.jim-nielsen.com. Hacker News score 214, 108 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49117099",
+    "fetched_at": "2026-07-31T04:51:34Z",
+    "title_zh": "人工智能美学"
+  },
+  {
     "title": "Kuna: Decompiler Development in the Age of Coding Agents",
     "url": "https://noelo.org/blog/kuna-release/",
     "source": "noelo.org",
@@ -141,6 +240,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49092499",
     "fetched_at": "2026-07-29T04:40:21Z",
     "title_zh": "LearnVector – 吴恩达的人工智能公司打造一对一的学习体验"
+  },
+  {
+    "title": "Does Speaking to Agents Like Cavemen Save 65% of Tokens? We Test",
+    "url": "https://blog.jetbrains.com/ai/2026/07/speak-to-ai-agents-like-cavemen-tosave-tokens/",
+    "source": "blog.jetbrains.com",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.jetbrains.com. Hacker News score 39, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49080605",
+    "fetched_at": "2026-07-31T04:51:36Z",
+    "title_zh": "与像穴居人这样的特工交谈可以节省 65% 的代币吗？我们测试"
   },
   {
     "title": "Anatomy of a Frontier Lab Agent Intrusion: A Timeline of the July 2026 Incident",
