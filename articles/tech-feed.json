@@ -1,5 +1,104 @@
 [
   {
+    "title": "Flint: A Visualization Language for the AI Era",
+    "url": "https://microsoft.github.io/flint-chart/",
+    "source": "microsoft.github.io",
+    "date": "2026-08-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from microsoft.github.io. Hacker News score 36, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49130604",
+    "fetched_at": "2026-08-01T04:46:44Z",
+    "title_zh": "Flint：AI时代的可视化语言"
+  },
+  {
+    "title": "Is AI reasoning right for the wrong reasons?",
+    "url": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
+    "source": "quantamagazine.org",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from quantamagazine.org. Hacker News score 135, 163 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49124358",
+    "fetched_at": "2026-08-01T04:46:48Z",
+    "title_zh": "人工智能推理是否因错误的原因而正确？"
+  },
+  {
+    "title": "Using the railway network as a flatbed scanner [video]",
+    "url": "https://media.ccc.de/v/emf2026-74-1-using-the-railway-network-as-a-flatbed-scanner",
+    "source": "media.ccc.de",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from media.ccc.de. Hacker News score 62, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49126919",
+    "fetched_at": "2026-08-01T04:46:48Z",
+    "title_zh": "使用铁路网络作为平板扫描仪[视频]"
+  },
+  {
+    "title": "Dubious research tied to Red Bull has shaped energy drink policy",
+    "url": "https://www.theexamination.org/articles/red-bull-funded-research-energy-drinks-alcohol",
+    "source": "theexamination.org",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from theexamination.org. Hacker News score 128, 192 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49124738",
+    "fetched_at": "2026-08-01T04:46:48Z",
+    "title_zh": "与红牛相关的可疑研究影响了能量饮料政策"
+  },
+  {
+    "title": "Golang proposal: container/: generic collection types",
+    "url": "https://github.com/golang/go/issues/80590",
+    "source": "github.com",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 139, 88 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49127031",
+    "fetched_at": "2026-08-01T04:46:47Z",
+    "title_zh": "Golang提案：container/：通用集合类型"
+  },
+  {
+    "title": "Termixer (TUI DJ Mixer)",
+    "url": "https://github.com/l00sed/termixer",
+    "source": "github.com",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 61, 38 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49126883",
+    "fetched_at": "2026-08-01T04:46:47Z",
+    "title_zh": "Termixer（TUI DJ 混音器）"
+  },
+  {
+    "title": "Run Kimi K3 using 29 GB of RAM at 0.50 tok/s",
+    "url": "https://github.com/sqliteai/waste",
+    "source": "github.com",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 189, 76 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49123386",
+    "fetched_at": "2026-08-01T04:46:46Z",
+    "title_zh": "使用 29 GB RAM 以 0.50 tok/s 运行 Kimi K3"
+  },
+  {
+    "title": "Show HN: I worked on a new browser for 2 years, today it passed Acid 3",
+    "url": "https://code.intellios.ai/cwbrowser/",
+    "source": "code.intellios.ai",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from code.intellios.ai. Hacker News score 77, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49128826",
+    "fetched_at": "2026-08-01T04:46:46Z",
+    "title_zh": "Show HN：我为一款新浏览器工作了两年，今天它通过了 Acid 3"
+  },
+  {
+    "title": "qm – Multiplayer agent harness for work",
+    "url": "https://github.com/yc-software/qm",
+    "source": "github.com",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 515, 108 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49126604",
+    "fetched_at": "2026-08-01T04:46:45Z",
+    "title_zh": "qm – 多人工作代理工具"
+  },
+  {
     "title": "The AI trade now runs on borrowed money, and the lenders are repricing it",
     "url": "https://greyswansignals.com/?theme=dark",
     "source": "greyswansignals.com",
@@ -240,6 +339,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49092499",
     "fetched_at": "2026-07-29T04:40:21Z",
     "title_zh": "LearnVector – 吴恩达的人工智能公司打造一对一的学习体验"
+  },
+  {
+    "title": "Twenty-five years ago it was cryptography, today it's model weights",
+    "url": "https://weeraman.com/because-we-can/",
+    "source": "weeraman.com",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from weeraman.com. Hacker News score 208, 93 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49083599",
+    "fetched_at": "2026-08-01T04:46:47Z",
+    "title_zh": "二十五年前是密码学，今天是模型权重"
   },
   {
     "title": "Does Speaking to Agents Like Cavemen Save 65% of Tokens? We Test",
