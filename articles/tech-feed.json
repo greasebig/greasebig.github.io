@@ -1,5 +1,93 @@
 [
   {
+    "title": "The Greenhouse and the Lens: Two Modes of Agentic AI Work",
+    "url": "https://www.brethorsting.com/blog/2026/08/the-greenhouse-and-the-lens-two-modes-of-agentic-ai-work/",
+    "source": "brethorsting.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from brethorsting.com. Hacker News score 6, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49139826",
+    "fetched_at": "2026-08-02T04:47:00Z",
+    "title_zh": "温室和镜头：代理人工智能工作的两种模式"
+  },
+  {
+    "title": "Linux desktop market share has hit over 10% in North America",
+    "url": "https://old.reddit.com/r/linux/comments/1vcpk8i/linux_desktop_market_share_has_hit_over_10_in/",
+    "source": "old.reddit.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from old.reddit.com. Hacker News score 23, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49140696",
+    "fetched_at": "2026-08-02T04:46:58Z",
+    "title_zh": "Linux 桌面市场份额在北美已突破 10%"
+  },
+  {
+    "title": "Show HN: CostPerPrompt – Live AI API pricing and real-workload cost calculators",
+    "url": "https://costperprompt.com/",
+    "source": "costperprompt.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from costperprompt.com. Hacker News score 9, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49140340",
+    "fetched_at": "2026-08-02T04:46:58Z",
+    "title_zh": "Show HN：CostPerPrompt – 实时 AI API 定价和实际工作负载成本计算器"
+  },
+  {
+    "title": "Show HN: I'm a 15 Year Old Wannabe Engineer, This Is a Cycloidal Gearbox I Built",
+    "url": "https://github.com/tom-ilan/cycloidal_gearbox",
+    "source": "github.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 54, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49140396",
+    "fetched_at": "2026-08-02T04:46:56Z",
+    "title_zh": "Show HN：我是一名 15 岁的工程师，这是我建造的摆线齿轮箱"
+  },
+  {
+    "title": "AI opens new era in cognitive studies of wild primates",
+    "url": "https://news.emory.edu/features/2026/07/ai-opens-new-era-cognitive-studies-wild-primates",
+    "source": "news.emory.edu",
+    "date": "2026-08-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from news.emory.edu. Hacker News score 11, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49139232",
+    "fetched_at": "2026-08-02T04:46:59Z",
+    "title_zh": "人工智能开启野生灵长类认知研究新纪元"
+  },
+  {
+    "title": "How Google helped destroy adoption of RSS feeds (2023)",
+    "url": "https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds",
+    "source": "openrss.org",
+    "date": "2026-08-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from openrss.org. Hacker News score 458, 160 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49136821",
+    "fetched_at": "2026-08-02T04:46:58Z",
+    "title_zh": "Google 如何帮助破坏 RSS 提要的采用（2023）"
+  },
+  {
+    "title": "AI financial advice is surprisingly good, especially if you ask right questions",
+    "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+    "source": "mitsloan.mit.edu",
+    "date": "2026-08-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from mitsloan.mit.edu. Hacker News score 226, 202 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49139102",
+    "fetched_at": "2026-08-02T04:46:57Z",
+    "title_zh": "人工智能的财务建议出奇地好，特别是如果你提出正确的问题"
+  },
+  {
+    "title": "But can your calculator run Linux?",
+    "url": "https://raymii.org/s/articles/But_can_your_calculator_run_Linux.html",
+    "source": "raymii.org",
+    "date": "2026-08-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from raymii.org. Hacker News score 79, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49137713",
+    "fetched_at": "2026-08-02T04:46:57Z",
+    "title_zh": "但是你的计算器可以运行 Linux 吗？"
+  },
+  {
     "title": "Flint: A Visualization Language for the AI Era",
     "url": "https://microsoft.github.io/flint-chart/",
     "source": "microsoft.github.io",
@@ -108,6 +196,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49118933",
     "fetched_at": "2026-07-31T04:51:34Z",
     "title_zh": "人工智能交易现在依靠借来的资金进行，贷方正在重新定价"
+  },
+  {
+    "title": "Show HN: Legionlinuxtui – Control Lenovo legion laptops in the terminal",
+    "url": "https://github.com/nooneknowspeter/legionlinuxtui",
+    "source": "github.com",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 10, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49105365",
+    "fetched_at": "2026-08-02T04:47:00Z",
+    "title_zh": "Show HN: Legionlinuxtui – 在终端中控制联想 Legion 笔记本电脑"
   },
   {
     "title": "Rune 1.1: adds Python, an Emacs editor, a symbol index and is now free",
@@ -339,6 +438,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49092499",
     "fetched_at": "2026-07-29T04:40:21Z",
     "title_zh": "LearnVector – 吴恩达的人工智能公司打造一对一的学习体验"
+  },
+  {
+    "title": "Linux on ESP32",
+    "url": "https://github.com/GrieferPig/esp32-s31-linux",
+    "source": "github.com",
+    "date": "2026-07-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 108, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49087499",
+    "fetched_at": "2026-08-02T04:46:59Z",
+    "title_zh": "ESP32 上的 Linux"
   },
   {
     "title": "Twenty-five years ago it was cryptography, today it's model weights",
