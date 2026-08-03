@@ -1,5 +1,104 @@
 [
   {
+    "title": "AI migrated legacy COBOL programs to Java, bugs included",
+    "url": "https://arxiv.org/abs/2607.28271",
+    "source": "arxiv.org",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 3, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49150773",
+    "fetched_at": "2026-08-03T04:55:57Z",
+    "title_zh": "AI 将遗留 COBOL 程序迁移到 Java，其中包括错误"
+  },
+  {
+    "title": "CP/M-386 – CP/M for 386 protected mode, derived from CP/M‑68K",
+    "url": "https://github.com/johnsonjh/cpm386",
+    "source": "github.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 46, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49149898",
+    "fetched_at": "2026-08-03T04:55:54Z",
+    "title_zh": "CP/M-386 – 用于 386 保护模式的 CP/M，源自 CP/M-68K"
+  },
+  {
+    "title": "Show HN: NixOS-DGX-Spark – Nix and NixOS on the DGX Spark",
+    "url": "https://github.com/graham33/nixos-dgx-spark",
+    "source": "github.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 103, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49146267",
+    "fetched_at": "2026-08-03T04:55:57Z",
+    "title_zh": "显示 HN：NixOS-DGX-Spark – DGX Spark 上的 Nix 和 NixOS"
+  },
+  {
+    "title": "Show HN: Shitty – fast terminal. Memory-unsafe and faster than yours",
+    "url": "https://github.com/pg83/shitty",
+    "source": "github.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 110, 103 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49149326",
+    "fetched_at": "2026-08-03T04:55:57Z",
+    "title_zh": "Show HN：Shitty – 快速终端。内存不安全并且比你的更快"
+  },
+  {
+    "title": "Show HN: Mu – Tools for Agents",
+    "url": "https://github.com/micro/mu",
+    "source": "github.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 47, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49148899",
+    "fetched_at": "2026-08-03T04:55:56Z",
+    "title_zh": "Show HN：Mu – 代理工具"
+  },
+  {
+    "title": "Show HN: Make your Framework 12 sound like a creaky door",
+    "url": "https://github.com/ArcaEge/creakwork12",
+    "source": "github.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 68, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49148048",
+    "fetched_at": "2026-08-03T04:55:56Z",
+    "title_zh": "Show HN：让您的 Framework 12 听起来像一扇吱吱作响的门"
+  },
+  {
+    "title": "F*: A general-purpose proof-oriented programming language",
+    "url": "https://fstar-lang.org/",
+    "source": "fstar-lang.org",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from fstar-lang.org. Hacker News score 171, 77 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49143925",
+    "fetched_at": "2026-08-03T04:55:56Z",
+    "title_zh": "F*：一种通用的面向证明的编程语言"
+  },
+  {
+    "title": "My personal AI benchmark: “Generate an SVG of a frog with a Habsburg jaw”",
+    "url": "https://frogs.vaguespac.es/",
+    "source": "frogs.vaguespac.es",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from frogs.vaguespac.es. Hacker News score 123, 58 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49147622",
+    "fetched_at": "2026-08-03T04:55:56Z",
+    "title_zh": "我的个人 AI 基准：“生成带有哈布斯堡下巴的青蛙的 SVG”"
+  },
+  {
+    "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
+    "url": "https://github.com/wie-project/kakehashi",
+    "source": "github.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 195, 44 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49145937",
+    "fetched_at": "2026-08-03T04:55:55Z",
+    "title_zh": "Show HN：Kakehashi – 在 Linux ARM 上运行 macOS 二进制文件的实验用户空间"
+  },
+  {
     "title": "The Greenhouse and the Lens: Two Modes of Agentic AI Work",
     "url": "https://www.brethorsting.com/blog/2026/08/the-greenhouse-and-the-lens-two-modes-of-agentic-ai-work/",
     "source": "brethorsting.com",
@@ -97,6 +196,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49130604",
     "fetched_at": "2026-08-01T04:46:44Z",
     "title_zh": "Flint：AI时代的可视化语言"
+  },
+  {
+    "title": "Autoregressive Language Model on the 6502 Processor",
+    "url": "https://mattbeton.com/blog/bitnet-6502.html",
+    "source": "mattbeton.com",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from mattbeton.com. Hacker News score 77, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49122655",
+    "fetched_at": "2026-08-03T04:55:55Z",
+    "title_zh": "6502 处理器上的自回归语言模型"
   },
   {
     "title": "Is AI reasoning right for the wrong reasons?",
