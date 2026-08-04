@@ -1,5 +1,104 @@
 [
   {
+    "title": "KisakCOD – Open-source reimplementation of Call of Duty 4 Multiplayer",
+    "url": "https://github.com/SwagSoftware/KisakCOD",
+    "source": "github.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 57, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49159970",
+    "fetched_at": "2026-08-04T04:37:24Z",
+    "title_zh": "KisakCOD – 使命召唤 4 多人游戏的开源重新实现"
+  },
+  {
+    "title": "Ioskeley Mono",
+    "url": "https://github.com/ahatem/IoskeleyMono",
+    "source": "github.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 14, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49161743",
+    "fetched_at": "2026-08-04T04:37:24Z",
+    "title_zh": "奥斯克利·莫诺"
+  },
+  {
+    "title": "Launch HN: Hoplite (YC S26) – Effortlessly deploy cloud coding agents",
+    "url": "https://hoplite.sh",
+    "source": "hoplite.sh",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from hoplite.sh. Hacker News score 63, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49157997",
+    "fetched_at": "2026-08-04T04:37:23Z",
+    "title_zh": "推出 HN：Hoplite (YC S26) – 轻松部署云编码代理"
+  },
+  {
+    "title": "Bonsai: Janestreet's UI Library",
+    "url": "https://github.com/janestreet/bonsai",
+    "source": "github.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 319, 136 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49152842",
+    "fetched_at": "2026-08-04T04:37:23Z",
+    "title_zh": "Bonsai：Janestreet 的 UI 库"
+  },
+  {
+    "title": "AirLLM 70B inference with single 4GB GPU",
+    "url": "https://github.com/lyogavin/airllm",
+    "source": "github.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 202, 76 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49154228",
+    "fetched_at": "2026-08-04T04:37:23Z",
+    "title_zh": "使用单个 4GB GPU 进行 AirLLM 70B 推理"
+  },
+  {
+    "title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
+    "url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+    "source": "blog.comfy.org",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.comfy.org. Hacker News score 275, 81 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49155629",
+    "fetched_at": "2026-08-04T04:37:22Z",
+    "title_zh": "ComfyUI 中的 MiniMax H3 Day-0 支持：开放权重、原生音频和 2K 视频"
+  },
+  {
+    "title": "Show HN: Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
+    "url": "https://github.com/leonickson1/Swiftlet",
+    "source": "github.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 40, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49158333",
+    "fetched_at": "2026-08-04T04:37:21Z",
+    "title_zh": "Show HN：在 Mac 上运行 4.3 GB RAM 中的 80B Qwen，在 iPhone 上运行 35B"
+  },
+  {
+    "title": "Ten advances in mathematics and theoretical computer science",
+    "url": "https://openai.com/index/ten-advances-in-mathematics/",
+    "source": "openai.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 484, 752 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49157930",
+    "fetched_at": "2026-08-04T04:37:21Z",
+    "title_zh": "数学和理论计算机科学的十大进展"
+  },
+  {
+    "title": "Smaller, faster, safer: running Kimi and GLM at scale",
+    "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 172, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49158581",
+    "fetched_at": "2026-08-04T04:37:21Z",
+    "title_zh": "更小、更快、更安全：大规模运行 Kimi 和 GLM"
+  },
+  {
     "title": "AI migrated legacy COBOL programs to Java, bugs included",
     "url": "https://arxiv.org/abs/2607.28271",
     "source": "arxiv.org",
@@ -196,6 +295,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49130604",
     "fetched_at": "2026-08-01T04:46:44Z",
     "title_zh": "Flint：AI时代的可视化语言"
+  },
+  {
+    "title": "They Forgot What Happened Last Time: Hacking the Windows 365 Link [video]",
+    "url": "https://media.ccc.de/v/emf2026-93-1-they-forgot-what-happened-last-time",
+    "source": "media.ccc.de",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from media.ccc.de. Hacker News score 32, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49126602",
+    "fetched_at": "2026-08-04T04:37:22Z",
+    "title_zh": "他们忘记了上次发生的事情：破解 Windows 365 链接 [视频]"
   },
   {
     "title": "Autoregressive Language Model on the 6502 Processor",
