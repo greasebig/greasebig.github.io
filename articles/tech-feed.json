@@ -1,5 +1,104 @@
 [
   {
+    "title": "The Warp Agent CLI",
+    "url": "https://www.warp.dev/blog/introducing-the-warp-agent-cli-coding-agent",
+    "source": "warp.dev",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from warp.dev. Hacker News score 96, 59 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49171766",
+    "fetched_at": "2026-08-05T04:37:01Z",
+    "title_zh": "扭曲代理 CLI"
+  },
+  {
+    "title": "Cloudflare Wallets: the programmable wallet for the agentic Internet",
+    "url": "https://blog.cloudflare.com/wallets/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 35, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49175461",
+    "fetched_at": "2026-08-05T04:37:01Z",
+    "title_zh": "Cloudflare Wallets：用于代理互联网的可编程钱包"
+  },
+  {
+    "title": "Third-party cyber evaluations involving OpenAI models",
+    "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
+    "source": "openai.com",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 44, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49175248",
+    "fetched_at": "2026-08-05T04:37:00Z",
+    "title_zh": "涉及 OpenAI 模型的第三方网络评估"
+  },
+  {
+    "title": "Apple says more ex-employees may have taken confidential data to OpenAI",
+    "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+    "source": "techcrunch.com",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from techcrunch.com. Hacker News score 344, 253 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49170479",
+    "fetched_at": "2026-08-05T04:37:00Z",
+    "title_zh": "苹果称更多前员工可能将机密数据带到 OpenAI"
+  },
+  {
+    "title": "Launch HN: EdotEnv (YC S26) – Quant Trading RL Envs to Teach LLMs Research",
+    "url": "https://edotenv.com/",
+    "source": "edotenv.com",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from edotenv.com. Hacker News score 32, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49172936",
+    "fetched_at": "2026-08-05T04:37:00Z",
+    "title_zh": "推出 HN：EdotEnv (YC S26) – 量化交易 RL Envs 教授法学硕士研究"
+  },
+  {
+    "title": "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
+    "url": "https://arxiv.org/abs/2602.16763",
+    "source": "arxiv.org",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 86, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49170915",
+    "fetched_at": "2026-08-05T04:36:59Z",
+    "title_zh": "当人工智能基准达到稳定水平时：基准饱和度的系统研究"
+  },
+  {
+    "title": "Show HN: SIMD Viterbi Decoder in Rust",
+    "url": "https://github.com/brian-armstrong/fec",
+    "source": "github.com",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 33, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49176212",
+    "fetched_at": "2026-08-05T04:36:58Z",
+    "title_zh": "显示 HN：Rust 中的 SIMD Viterbi 解码器"
+  },
+  {
+    "title": "AI fuels more than half of cybercrime in Africa as scams surge – Interpol",
+    "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+    "source": "africanews.com",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from africanews.com. Hacker News score 169, 123 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49175826",
+    "fetched_at": "2026-08-05T04:36:57Z",
+    "title_zh": "随着诈骗激增，人工智能助长了非洲一半以上的网络犯罪——国际刑警组织"
+  },
+  {
+    "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+    "url": "https://mistral.ai/news/shieldstral/",
+    "source": "mistral.ai",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from mistral.ai. Hacker News score 343, 83 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49171268",
+    "fetched_at": "2026-08-05T04:36:55Z",
+    "title_zh": "Mistral 的 Shieldstral：用于多模式调节的 3B 开放权重模型"
+  },
+  {
     "title": "KisakCOD – Open-source reimplementation of Call of Duty 4 Multiplayer",
     "url": "https://github.com/SwagSoftware/KisakCOD",
     "source": "github.com",
@@ -119,6 +218,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49149898",
     "fetched_at": "2026-08-03T04:55:54Z",
     "title_zh": "CP/M-386 – 用于 386 保护模式的 CP/M，源自 CP/M-68K"
+  },
+  {
+    "title": "Video2NAND – Abusing video codecs for great computational power",
+    "url": "https://sharedobject.blog/posts/vp8-combinatorial-logic/",
+    "source": "sharedobject.blog",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from sharedobject.blog. Hacker News score 48, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49145037",
+    "fetched_at": "2026-08-05T04:36:57Z",
+    "title_zh": "Video2NAND – 滥用视频编解码器以获得强大的计算能力"
   },
   {
     "title": "Show HN: NixOS-DGX-Spark – Nix and NixOS on the DGX Spark",
