@@ -1,5 +1,93 @@
 [
   {
+    "title": "Governments are making a dangerous bet on the AI boom",
+    "url": "https://www.economist.com/leaders/2026/08/05/governments-are-making-a-dangerous-bet-on-the-ai-boom",
+    "source": "economist.com",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from economist.com. Hacker News score 40, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49192160",
+    "fetched_at": "2026-08-06T04:37:02Z",
+    "title_zh": "各国政府正在对人工智能热潮做出危险的赌注"
+  },
+  {
+    "title": "Cloudflare OS: an open platform for agents, apps, and work",
+    "url": "https://blog.cloudflare.com/cloudflare-os/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-08-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 501, 252 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49182996",
+    "fetched_at": "2026-08-06T04:37:04Z",
+    "title_zh": "Cloudflare OS：面向代理、应用程序和工作的开放平台"
+  },
+  {
+    "title": "Celld: Self-hosted, distributed Durable Objects",
+    "url": "https://github.com/denoland/celld",
+    "source": "github.com",
+    "date": "2026-08-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 171, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49185430",
+    "fetched_at": "2026-08-06T04:37:04Z",
+    "title_zh": "Celld：自托管、分布式持久对象"
+  },
+  {
+    "title": "I'm switching my phone from Android to Linux",
+    "url": "https://runarcn.no/android-to-linux/",
+    "source": "runarcn.no",
+    "date": "2026-08-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from runarcn.no. Hacker News score 249, 205 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49188022",
+    "fetched_at": "2026-08-06T04:37:04Z",
+    "title_zh": "我正在将手机从 Android 切换到 Linux"
+  },
+  {
+    "title": "Beating GPT-5.6 Sol on retrieval with 100x cheaper open models",
+    "url": "https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency",
+    "source": "neon.com",
+    "date": "2026-08-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from neon.com. Hacker News score 253, 64 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49186762",
+    "fetched_at": "2026-08-06T04:37:03Z",
+    "title_zh": "使用便宜 100 倍的开放模型在检索中击败 GPT-5.6 Sol"
+  },
+  {
+    "title": "Born Against, or why hobby programming communities are against LLM usage",
+    "url": "https://blog.fogus.me/llm/born-against.html",
+    "source": "blog.fogus.me",
+    "date": "2026-08-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.fogus.me. Hacker News score 172, 166 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49187061",
+    "fetched_at": "2026-08-06T04:37:03Z",
+    "title_zh": "天生反对，或者为什么业余编程社区反对使用 LLM"
+  },
+  {
+    "title": "Prime Agent: A self-improving RLM agent",
+    "url": "https://www.primeintellect.ai/blog/prime-agent",
+    "source": "primeintellect.ai",
+    "date": "2026-08-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from primeintellect.ai. Hacker News score 132, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49189075",
+    "fetched_at": "2026-08-06T04:37:03Z",
+    "title_zh": "Prime Agent：自我改进的 RLM 代理"
+  },
+  {
+    "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
+    "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
+    "source": "blog.google",
+    "date": "2026-08-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.google. Hacker News score 548, 624 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49184755",
+    "fetched_at": "2026-08-06T04:37:02Z",
+    "title_zh": "谷歌 DeepMind 人事变动：杰米斯·哈萨比斯 (Demis Hassabis) 从首席执行官变为董事长，杰夫·迪恩 (Jeff Dean) 离职"
+  },
+  {
     "title": "The Warp Agent CLI",
     "url": "https://www.warp.dev/blog/introducing-the-warp-agent-cli-coding-agent",
     "source": "warp.dev",
@@ -97,6 +185,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49171268",
     "fetched_at": "2026-08-05T04:36:55Z",
     "title_zh": "Mistral 的 Shieldstral：用于多模式调节的 3B 开放权重模型"
+  },
+  {
+    "title": "Branchless Rust: Making a Filter 4x Faster by Removing an If",
+    "url": "https://www.greyblake.com/blog/branchless-rust/",
+    "source": "greyblake.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from greyblake.com. Hacker News score 62, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49151991",
+    "fetched_at": "2026-08-06T04:37:03Z",
+    "title_zh": "Branchless Rust：通过删除 If 使过滤器速度提高 4 倍"
   },
   {
     "title": "KisakCOD – Open-source reimplementation of Call of Duty 4 Multiplayer",
@@ -405,6 +504,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49130604",
     "fetched_at": "2026-08-01T04:46:44Z",
     "title_zh": "Flint：AI时代的可视化语言"
+  },
+  {
+    "title": "Exact, parallel 2D Delaunay triangulation for int32 coordinates",
+    "url": "https://github.com/morishuz/delaunay32",
+    "source": "github.com",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 39, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49125532",
+    "fetched_at": "2026-08-06T04:37:05Z",
+    "title_zh": "int32 坐标的精确、并行 2D Delaunay 三角剖分"
   },
   {
     "title": "They Forgot What Happened Last Time: Hacking the Windows 365 Link [video]",
