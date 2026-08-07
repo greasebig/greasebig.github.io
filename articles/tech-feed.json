@@ -1,5 +1,93 @@
 [
   {
+    "title": "Show HN: Pokémon Emerald Ported to Raspberry Pi Pico 2",
+    "url": "https://github.com/mattdeeds/pokeemerald-rp2350",
+    "source": "github.com",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 41, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49203059",
+    "fetched_at": "2026-08-07T04:06:10Z",
+    "title_zh": "Show HN：神奇宝贝翡翠移植到 Raspberry Pi Pico 2"
+  },
+  {
+    "title": "Qwen3.8 Max now ranked as the best overall model by agentic index",
+    "url": "https://artificialanalysis.ai/?intelligence=agentic-index",
+    "source": "artificialanalysis.ai",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from artificialanalysis.ai. Hacker News score 462, 296 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49200652",
+    "fetched_at": "2026-08-07T04:06:09Z",
+    "title_zh": "Qwen3.8 Max现已被代理指数评为最佳整体机型"
+  },
+  {
+    "title": "Show HN: The Channels SDK – Bring Any Agent to Any Channel (Slack, MS Teams)",
+    "url": "https://github.com/CopilotKit/channels-sdk",
+    "source": "github.com",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 94, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49198583",
+    "fetched_at": "2026-08-07T04:06:08Z",
+    "title_zh": "Show HN：渠道 SDK – 将任何代理带到任何渠道（Slack、MS Teams）"
+  },
+  {
+    "title": "GitHub Actions and Pages are experiencing degraded availability",
+    "url": "https://www.githubstatus.com/incidents/qcvjkzcs7j74",
+    "source": "githubstatus.com",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from githubstatus.com. Hacker News score 352, 289 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49198302",
+    "fetched_at": "2026-08-07T04:06:07Z",
+    "title_zh": "GitHub Actions 和 Pages 的可用性下降"
+  },
+  {
+    "title": "Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)",
+    "url": "https://www.aleksagordic.com/blog/vllm",
+    "source": "aleksagordic.com",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from aleksagordic.com. Hacker News score 76, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49202852",
+    "fetched_at": "2026-08-07T04:06:07Z",
+    "title_zh": "vLLM 内部：高通量 LLM 推理系统剖析 (2025)"
+  },
+  {
+    "title": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+    "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+    "source": "scalex.dev",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from scalex.dev. Hacker News score 264, 196 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49195468",
+    "fetched_at": "2026-08-07T04:06:07Z",
+    "title_zh": "在 4 万次游戏运行中，人类错过了三分之一批准 AI 代理命令的威胁"
+  },
+  {
+    "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+    "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+    "source": "theregister.com",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from theregister.com. Hacker News score 459, 358 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49201970",
+    "fetched_at": "2026-08-07T04:06:06Z",
+    "title_zh": "AMD 收购 Taalas，通过在硅中蚀刻模型来提高推理性能"
+  },
+  {
+    "title": "Improving GPT‑5.6 Sol in ChatGPT, expanding GPT‑5.6 Luna access for free users",
+    "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+    "source": "openai.com",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 175, 127 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49199357",
+    "fetched_at": "2026-08-07T04:06:06Z",
+    "title_zh": "改进 ChatGPT 中的 GPT-5.6 Sol，扩展免费用户的 GPT-5.6 Luna 访问权限"
+  },
+  {
     "title": "Governments are making a dangerous bet on the AI boom",
     "url": "https://www.economist.com/leaders/2026/08/05/governments-are-making-a-dangerous-bet-on-the-ai-boom",
     "source": "economist.com",
@@ -506,6 +594,17 @@
     "title_zh": "Flint：AI时代的可视化语言"
   },
   {
+    "title": "Learn how chips are made with this Rollercoaster Tycoon-inspired animation",
+    "url": "https://laurentiugabriel.github.io/ChipTycoon/",
+    "source": "laurentiugabriel.github.io",
+    "date": "2026-07-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from laurentiugabriel.github.io. Hacker News score 118, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49120149",
+    "fetched_at": "2026-08-07T04:06:08Z",
+    "title_zh": "通过这部受过山车大亨启发的动画了解如何制作薯片"
+  },
+  {
     "title": "Exact, parallel 2D Delaunay triangulation for int32 coordinates",
     "url": "https://github.com/morishuz/delaunay32",
     "source": "github.com",
@@ -636,6 +735,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49118933",
     "fetched_at": "2026-07-31T04:51:34Z",
     "title_zh": "人工智能交易现在依靠借来的资金进行，贷方正在重新定价"
+  },
+  {
+    "title": "STV: A full-motion video codec for the Atari ST",
+    "url": "https://medium.com/@jonas.eschenburg/stv-a-video-codec-for-the-atari-st-6e46355c50e4",
+    "source": "medium.com",
+    "date": "2026-07-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from medium.com. Hacker News score 26, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49113256",
+    "fetched_at": "2026-08-07T04:06:08Z",
+    "title_zh": "STV：Atari ST 的全动态视频编解码器"
   },
   {
     "title": "Show HN: Legionlinuxtui – Control Lenovo legion laptops in the terminal",
