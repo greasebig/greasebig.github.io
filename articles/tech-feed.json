@@ -1,5 +1,93 @@
 [
   {
+    "title": "Kitesurf: Agent-first browser that runs in V8 isolates",
+    "url": "https://blog.cloudflare.com/kitesurf/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 172, 44 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49208393",
+    "fetched_at": "2026-08-08T03:03:54Z",
+    "title_zh": "Kitesurf：在 V8 隔离中运行的代理优先浏览器"
+  },
+  {
+    "title": "Show HN: Wyzer Programming Language",
+    "url": "https://github.com/Wyzer-Lang/wyzer",
+    "source": "github.com",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 178, 100 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49209385",
+    "fetched_at": "2026-08-08T03:03:54Z",
+    "title_zh": "显示 HN：Wyzer 编程语言"
+  },
+  {
+    "title": "Managing AI Coding Costs at Scale",
+    "url": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+    "source": "databricks.com",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from databricks.com. Hacker News score 177, 175 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49214468",
+    "fetched_at": "2026-08-08T03:03:53Z",
+    "title_zh": "大规模管理人工智能编码成本"
+  },
+  {
+    "title": "Psychological Warfare in Reverse Engineering (2015)",
+    "url": "https://github.com/xoreaxeaxeax/repsych",
+    "source": "github.com",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 56, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49214775",
+    "fetched_at": "2026-08-08T03:03:53Z",
+    "title_zh": "逆向工程中的心理战 (2015)"
+  },
+  {
+    "title": "Assembly Hall of Shame",
+    "url": "https://github.com/xoreaxeaxeax/asm-hall-of-shame",
+    "source": "github.com",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 270, 65 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49214098",
+    "fetched_at": "2026-08-08T03:03:52Z",
+    "title_zh": "耻辱大会堂"
+  },
+  {
+    "title": "Responding to the next frontier of critical cyber capabilities",
+    "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+    "source": "openai.com",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 163, 168 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49213029",
+    "fetched_at": "2026-08-08T03:03:52Z",
+    "title_zh": "应对关键网络能力的下一个前沿"
+  },
+  {
+    "title": "U.S. Department of Energy Launches the Genesis Open Models Initiative",
+    "url": "https://genesisopenmodels.anl.gov/",
+    "source": "genesisopenmodels.anl.gov",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from genesisopenmodels.anl.gov. Hacker News score 119, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49216946",
+    "fetched_at": "2026-08-08T03:03:51Z",
+    "title_zh": "美国能源部启动 Genesis 开放模型计划"
+  },
+  {
+    "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+    "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+    "source": "theregister.com",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from theregister.com. Hacker News score 892, 669 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49201970",
+    "fetched_at": "2026-08-08T03:03:55Z",
+    "title_zh": "AMD 收购 Taalas，通过在硅中蚀刻模型来提高推理性能"
+  },
+  {
     "title": "Show HN: Pokémon Emerald Ported to Raspberry Pi Pico 2",
     "url": "https://github.com/mattdeeds/pokeemerald-rp2350",
     "source": "github.com",
@@ -64,17 +152,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49195468",
     "fetched_at": "2026-08-07T04:06:07Z",
     "title_zh": "在 4 万次游戏运行中，人类错过了三分之一批准 AI 代理命令的威胁"
-  },
-  {
-    "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
-    "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
-    "source": "theregister.com",
-    "date": "2026-08-06",
-    "repost": true,
-    "summary": "转载 / Curated repost from theregister.com. Hacker News score 459, 358 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49201970",
-    "fetched_at": "2026-08-07T04:06:06Z",
-    "title_zh": "AMD 收购 Taalas，通过在硅中蚀刻模型来提高推理性能"
   },
   {
     "title": "Improving GPT‑5.6 Sol in ChatGPT, expanding GPT‑5.6 Luna access for free users",
@@ -275,6 +352,17 @@
     "title_zh": "Mistral 的 Shieldstral：用于多模式调节的 3B 开放权重模型"
   },
   {
+    "title": "A quine in Piet – a GIF image that prints itself [video]",
+    "url": "https://www.youtube.com/watch?v=GwMtzhjCzyc",
+    "source": "youtube.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 76, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49156157",
+    "fetched_at": "2026-08-08T03:03:57Z",
+    "title_zh": "Piet 中的 quine – 可以自行打印的 GIF 图像 [视频]"
+  },
+  {
     "title": "Branchless Rust: Making a Filter 4x Faster by Removing an If",
     "url": "https://www.greyblake.com/blog/branchless-rust/",
     "source": "greyblake.com",
@@ -405,6 +493,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49149898",
     "fetched_at": "2026-08-03T04:55:54Z",
     "title_zh": "CP/M-386 – 用于 386 保护模式的 CP/M，源自 CP/M-68K"
+  },
+  {
+    "title": "Captain Bible Reverse Engineering",
+    "url": "https://github.com/peterkelly/captain-bible-re",
+    "source": "github.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 17, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49146540",
+    "fetched_at": "2026-08-08T03:03:54Z",
+    "title_zh": "圣经船长逆向工程"
   },
   {
     "title": "Video2NAND – Abusing video codecs for great computational power",
