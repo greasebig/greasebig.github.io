@@ -1,5 +1,71 @@
 [
   {
+    "title": "The AI Apocalypse Is Here",
+    "url": "https://www.compactmag.com/article/the-ai-apocalypse-is-already-here/",
+    "source": "compactmag.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from compactmag.com. Hacker News score 28, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49227521",
+    "fetched_at": "2026-08-09T03:10:56Z",
+    "title_zh": "人工智能启示录已经到来"
+  },
+  {
+    "title": "You can build an AI agent's memory layer with only Go's standard library",
+    "url": "https://towardsdev.com/the-memory-efficient-ai-agent-building-a-context-engine-in-go-d4b7557c44d8?sk=22b2ffc30beac55a6f47841eb4df980b",
+    "source": "towardsdev.com",
+    "date": "2026-08-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from towardsdev.com. Hacker News score 4, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49226647",
+    "fetched_at": "2026-08-09T03:10:56Z",
+    "title_zh": "仅使用 Go 的标准库即可构建 AI 代理的内存层"
+  },
+  {
+    "title": "Message your other Claude Code sessions",
+    "url": "https://code.claude.com/docs/en/cross-session-messaging",
+    "source": "code.claude.com",
+    "date": "2026-08-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from code.claude.com. Hacker News score 71, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49222824",
+    "fetched_at": "2026-08-09T03:10:55Z",
+    "title_zh": "向您的其他 Claude Code 会议发送消息"
+  },
+  {
+    "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+    "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+    "source": "deepmind.google",
+    "date": "2026-08-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 395, 119 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49220126",
+    "fetched_at": "2026-08-09T03:10:55Z",
+    "title_zh": "DeepMind 的 WeatherNext 模型在预测气旋方面取得突破"
+  },
+  {
+    "title": "Timeline of the OpenAI accidental attack against Hugging Face",
+    "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+    "source": "simonwillison.net",
+    "date": "2026-08-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from simonwillison.net. Hacker News score 356, 357 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49220609",
+    "fetched_at": "2026-08-09T03:10:53Z",
+    "title_zh": "OpenAI 对 Hugging Face 的意外攻击的时间线"
+  },
+  {
+    "title": "Lost my phone at the office. Claude suggested tracking Bluetooth signal strength",
+    "url": "https://twitter.com/un1c0rnioz/status/2084686552299634805",
+    "source": "twitter.com",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 231, 164 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49215786",
+    "fetched_at": "2026-08-09T03:10:55Z",
+    "title_zh": "我的手机在办公室丢了。克劳德建议跟踪蓝牙信号强度"
+  },
+  {
     "title": "Kitesurf: Agent-first browser that runs in V8 isolates",
     "url": "https://blog.cloudflare.com/kitesurf/",
     "source": "blog.cloudflare.com",
@@ -176,6 +242,17 @@
     "title_zh": "各国政府正在对人工智能热潮做出危险的赌注"
   },
   {
+    "title": "The Sound and Music of 'Hyper Light Drifter' [video]",
+    "url": "https://gdcvault.com/play/1024135/The-Sound-and-Music-of",
+    "source": "gdcvault.com",
+    "date": "2026-08-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from gdcvault.com. Hacker News score 26, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49179352",
+    "fetched_at": "2026-08-09T03:10:53Z",
+    "title_zh": "“Hyper Light Drifter”的声音和音乐[视频]"
+  },
+  {
     "title": "Cloudflare OS: an open platform for agents, apps, and work",
     "url": "https://blog.cloudflare.com/cloudflare-os/",
     "source": "blog.cloudflare.com",
@@ -251,6 +328,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49184755",
     "fetched_at": "2026-08-06T04:37:02Z",
     "title_zh": "谷歌 DeepMind 人事变动：杰米斯·哈萨比斯 (Demis Hassabis) 从首席执行官变为董事长，杰夫·迪恩 (Jeff Dean) 离职"
+  },
+  {
+    "title": "BYOC Anywhere: The Spectrum of Bring Your Own Cloud Deployments",
+    "url": "https://omnistrate.com/blog/byoc-anywhere-the-spectrum-of-bring-your-own-cloud-deployments",
+    "source": "omnistrate.com",
+    "date": "2026-08-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from omnistrate.com. Hacker News score 69, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49163466",
+    "fetched_at": "2026-08-09T03:10:56Z",
+    "title_zh": "BYOC Anywhere：自带云部署的范围"
   },
   {
     "title": "The Warp Agent CLI",
@@ -350,6 +438,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49171268",
     "fetched_at": "2026-08-05T04:36:55Z",
     "title_zh": "Mistral 的 Shieldstral：用于多模式调节的 3B 开放权重模型"
+  },
+  {
+    "title": "DDisasm: Reversible (bi-directional) Disassembler",
+    "url": "https://github.com/GrammaTech/ddisasm",
+    "source": "github.com",
+    "date": "2026-08-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 23, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49151146",
+    "fetched_at": "2026-08-09T03:10:54Z",
+    "title_zh": "DDisasm：可逆（双向）反汇编器"
   },
   {
     "title": "A quine in Piet – a GIF image that prints itself [video]",
@@ -493,6 +592,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49149898",
     "fetched_at": "2026-08-03T04:55:54Z",
     "title_zh": "CP/M-386 – 用于 386 保护模式的 CP/M，源自 CP/M-68K"
+  },
+  {
+    "title": "ao486: x86-compatible Verilog core implementing all features of a 486 SX (2014)",
+    "url": "https://github.com/alfikpl/ao486",
+    "source": "github.com",
+    "date": "2026-08-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 69, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49141236",
+    "fetched_at": "2026-08-09T03:10:56Z",
+    "title_zh": "ao486：x86 兼容的 Verilog 内核，实现 486 SX 的所有功能 (2014)"
   },
   {
     "title": "Captain Bible Reverse Engineering",
