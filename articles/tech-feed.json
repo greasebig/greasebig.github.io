@@ -1,5 +1,104 @@
 [
   {
+    "title": "Blender MCP maintainer GitHub account hacked",
+    "url": "https://twitter.com/sidahuj/status/2086445625147793503",
+    "source": "twitter.com",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 14, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49238028",
+    "fetched_at": "2026-08-10T03:21:47Z",
+    "title_zh": "Blender MCP 维护者 GitHub 帐户被黑"
+  },
+  {
+    "title": "Japanese court overturns Red RAW video patent",
+    "url": "https://www.dpreview.com/news/panasonic-did-what-apple-sony-and-nikon-couldnt-overturn-a-red-raw-video-patent/",
+    "source": "dpreview.com",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from dpreview.com. Hacker News score 55, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49237873",
+    "fetched_at": "2026-08-10T03:21:42Z",
+    "title_zh": "日本法院推翻 Red RAW 视频专利"
+  },
+  {
+    "title": "Show HN: A replayable A2A jury for tracing how agents influence decisions",
+    "url": "https://github.com/nMaroulis/protolink/tree/main/examples/ai_courtroom",
+    "source": "github.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 16, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49233306",
+    "fetched_at": "2026-08-10T03:21:49Z",
+    "title_zh": "Show HN：可重玩的 A2A 陪审团，用于追踪代理如何影响决策"
+  },
+  {
+    "title": "Why Wall Street is ignoring big tech's debt [video]",
+    "url": "https://www.youtube.com/watch?v=NufJ7g63KSY",
+    "source": "youtube.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 76, 132 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49230630",
+    "fetched_at": "2026-08-10T03:21:47Z",
+    "title_zh": "为什么华尔街忽视大型科技公司的债务[视频]"
+  },
+  {
+    "title": "Transmission has been forked as \"ReTransmission\"",
+    "url": "https://github.com/transmission/transmission/discussions/9031",
+    "source": "github.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 22, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49234137",
+    "fetched_at": "2026-08-10T03:21:46Z",
+    "title_zh": "Transmission 已分叉为“ReTransmission”"
+  },
+  {
+    "title": "Human vs. AI – Diff-based line-level provenance for text under agentic editing",
+    "url": "https://github.com/eighttrigrams/us-vs-them",
+    "source": "github.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 46, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49232300",
+    "fetched_at": "2026-08-10T03:21:45Z",
+    "title_zh": "人类与人工智能——代理编辑下文本的基于差异的行级出处"
+  },
+  {
+    "title": "Show HN: A Project Oberon System version running on RISC-V instead of RISC-5",
+    "url": "https://github.com/rochus-keller/OberonSystem/tree/op2-rv32",
+    "source": "github.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 108, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49230891",
+    "fetched_at": "2026-08-10T03:21:44Z",
+    "title_zh": "显示 HN：在 RISC-V 而不是 RISC-5 上运行的 Project Oberon 系统版本"
+  },
+  {
+    "title": "I made tinnitus my friend, then it disappeared [video]",
+    "url": "https://mynoise.net/vlog.php?ep=20260803",
+    "source": "mynoise.net",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from mynoise.net. Hacker News score 87, 67 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49234271",
+    "fetched_at": "2026-08-10T03:21:44Z",
+    "title_zh": "我把耳鸣当作我的朋友，然后耳鸣就消失了[视频]"
+  },
+  {
+    "title": "The tragedy of the commons, AI edition",
+    "url": "https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition",
+    "source": "economist.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from economist.com. Hacker News score 85, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49235011",
+    "fetched_at": "2026-08-10T03:21:42Z",
+    "title_zh": "公地悲剧，AI版"
+  },
+  {
     "title": "The AI Apocalypse Is Here",
     "url": "https://www.compactmag.com/article/the-ai-apocalypse-is-already-here/",
     "source": "compactmag.com",
@@ -141,6 +240,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49216946",
     "fetched_at": "2026-08-08T03:03:51Z",
     "title_zh": "美国能源部启动 Genesis 开放模型计划"
+  },
+  {
+    "title": "Andrew Wiles on proving Fermat’s Last Theorem (1995) [video]",
+    "url": "https://www.youtube.com/watch?v=GS7CxAtV5Ks",
+    "source": "youtube.com",
+    "date": "2026-08-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 40, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49203626",
+    "fetched_at": "2026-08-10T03:21:42Z",
+    "title_zh": "安德鲁·怀尔斯 (Andrew Wiles) 证明费马大定理 (1995) [视频]"
   },
   {
     "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
