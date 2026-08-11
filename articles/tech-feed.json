@@ -1,5 +1,104 @@
 [
   {
+    "title": "Antirez/h3.c: MiniMax H3 inference engine for Mac computers",
+    "url": "https://github.com/antirez/h3.c",
+    "source": "github.com",
+    "date": "2026-08-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 52, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49252179",
+    "fetched_at": "2026-08-11T03:14:08Z",
+    "title_zh": "Antirez/h3.c：适用于 Mac 计算机的 MiniMax H3 推理引擎"
+  },
+  {
+    "title": "Launch HN: Stoa Markets (YC S26) – A Marketplace for GPUs and AI Servers",
+    "url": "https://www.stoaexchange.com",
+    "source": "stoaexchange.com",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from stoaexchange.com. Hacker News score 69, 43 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49246057",
+    "fetched_at": "2026-08-11T03:14:13Z",
+    "title_zh": "推出 HN：Stoa Markets (YC S26) – GPU 和 AI 服务器的市场"
+  },
+  {
+    "title": "Exploiting System Management Mode with a very long interrupt",
+    "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
+    "source": "github.com",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 137, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49245491",
+    "fetched_at": "2026-08-11T03:14:12Z",
+    "title_zh": "利用具有很长中断的系统管理模式"
+  },
+  {
+    "title": "What's the best programming language for coding agents?",
+    "url": "http://danluu.com/pl-tokens/",
+    "source": "danluu.com",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from danluu.com. Hacker News score 79, 59 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49245936",
+    "fetched_at": "2026-08-11T03:14:12Z",
+    "title_zh": "对于编码代理来说，最好的编程语言是什么？"
+  },
+  {
+    "title": "Humanising LLM Outputs Is Dumb",
+    "url": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
+    "source": "kuber.studio",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from kuber.studio. Hacker News score 168, 101 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49243474",
+    "fetched_at": "2026-08-11T03:14:11Z",
+    "title_zh": "人性化的LLM输出是愚蠢的"
+  },
+  {
+    "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
+    "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+    "source": "research.meta.ai",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from research.meta.ai. Hacker News score 1055, 584 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49241679",
+    "fetched_at": "2026-08-11T03:14:10Z",
+    "title_zh": "Muse Glimmer：针对始终在线的本地代理工作流程优化的 30B 参数模型"
+  },
+  {
+    "title": "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+    "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+    "source": "ft.com",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from ft.com. Hacker News score 405, 396 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49243880",
+    "fetched_at": "2026-08-11T03:14:09Z",
+    "title_zh": "随着 Meta 回归开放模型，马克·扎克伯格攻击“封闭”的人工智能竞争对手"
+  },
+  {
+    "title": "Rust SIMD on the GPU",
+    "url": "https://www.vectorware.com/blog/simd-on-gpu/",
+    "source": "vectorware.com",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from vectorware.com. Hacker News score 144, 62 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49247477",
+    "fetched_at": "2026-08-11T03:14:09Z",
+    "title_zh": "GPU 上的 Rust SIMD"
+  },
+  {
+    "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
+    "url": "https://cactuscompute.com/needle",
+    "source": "cactuscompute.com",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from cactuscompute.com. Hacker News score 209, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49246804",
+    "fetched_at": "2026-08-11T03:14:08Z",
+    "title_zh": "Show HN：Needle2：14MB 代理法学硕士，适用于手机、可穿戴设备、智能家居和机器人"
+  },
+  {
     "title": "Blender MCP maintainer GitHub account hacked",
     "url": "https://twitter.com/sidahuj/status/2086445625147793503",
     "source": "twitter.com",
@@ -152,6 +251,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49220609",
     "fetched_at": "2026-08-09T03:10:53Z",
     "title_zh": "OpenAI 对 Hugging Face 的意外攻击的时间线"
+  },
+  {
+    "title": "Choral: Choreographic Programming for Java",
+    "url": "https://www.choral-lang.org/",
+    "source": "choral-lang.org",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from choral-lang.org. Hacker News score 5, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49215111",
+    "fetched_at": "2026-08-11T03:14:12Z",
+    "title_zh": "Choral：Java 编排编程"
   },
   {
     "title": "Lost my phone at the office. Claude suggested tracking Bluetooth signal strength",
