@@ -1,5 +1,93 @@
 [
   {
+    "title": "Company Offering '100% Human-Written, Never AI' Medical Research Is 100% AI",
+    "url": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/",
+    "source": "404media.co",
+    "date": "2026-08-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from 404media.co. Hacker News score 23, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49267057",
+    "fetched_at": "2026-08-12T03:31:57Z",
+    "title_zh": "公司提供“100% 人工编写，绝不人工智能” 医学研究是 100% 人工智能"
+  },
+  {
+    "title": "Suzanne: AI tool for designing and manufacturing physical products",
+    "url": "https://www.suzanne3d.com/",
+    "source": "suzanne3d.com",
+    "date": "2026-08-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from suzanne3d.com. Hacker News score 44, 29 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49264755",
+    "fetched_at": "2026-08-12T03:32:00Z",
+    "title_zh": "Suzanne：用于设计和制造实体产品的人工智能工具"
+  },
+  {
+    "title": "US hires over 2k video gamers as air traffic controllers",
+    "url": "https://www.cbsnews.com/news/video-gamer-air-traffic-controllers-faa-recruitment-sean-duffy/",
+    "source": "cbsnews.com",
+    "date": "2026-08-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from cbsnews.com. Hacker News score 86, 80 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49265879",
+    "fetched_at": "2026-08-12T03:32:00Z",
+    "title_zh": "美国雇佣超过 2000 名视频游戏玩家担任空中交通管制员"
+  },
+  {
+    "title": "Show HN: Git-knife – Edit commit messages, authors, and dates like a spreadsheet",
+    "url": "https://github.com/TheRealYT/git-knife",
+    "source": "github.com",
+    "date": "2026-08-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 143, 88 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49259611",
+    "fetched_at": "2026-08-12T03:31:59Z",
+    "title_zh": "Show HN：Git-knife – 像电子表格一样编辑提交消息、作者和日期"
+  },
+  {
+    "title": "What I learned by putting GitHub Copilot behind a MitM proxy",
+    "url": "https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm",
+    "source": "lighthousenewsletter.com",
+    "date": "2026-08-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from lighthousenewsletter.com. Hacker News score 167, 24 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49256057",
+    "fetched_at": "2026-08-12T03:31:59Z",
+    "title_zh": "我通过将 GitHub Copilot 置于 MitM 代理后面学到了什么"
+  },
+  {
+    "title": "Emergent Introspective Awareness in Large Language Models",
+    "url": "https://arxiv.org/abs/2601.01828",
+    "source": "arxiv.org",
+    "date": "2026-08-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 39, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49264583",
+    "fetched_at": "2026-08-12T03:31:58Z",
+    "title_zh": "大型语言模型中涌现的内省意识"
+  },
+  {
+    "title": "Go is an ideal language for AI-assisted software engineering",
+    "url": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/",
+    "source": "developers.googleblog.com",
+    "date": "2026-08-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from developers.googleblog.com. Hacker News score 299, 349 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49261133",
+    "fetched_at": "2026-08-12T03:31:56Z",
+    "title_zh": "Go 是人工智能辅助软件工程的理想语言"
+  },
+  {
+    "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+    "url": "https://stolen-thoughts.com/",
+    "source": "stolen-thoughts.com",
+    "date": "2026-08-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from stolen-thoughts.com. Hacker News score 532, 222 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49257876",
+    "fetched_at": "2026-08-12T03:31:54Z",
+    "title_zh": "从专有的 LLM API 中窃取推理痕迹"
+  },
+  {
     "title": "Antirez/h3.c: MiniMax H3 inference engine for Mac computers",
     "url": "https://github.com/antirez/h3.c",
     "source": "github.com",
@@ -9,6 +97,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49252179",
     "fetched_at": "2026-08-11T03:14:08Z",
     "title_zh": "Antirez/h3.c：适用于 Mac 计算机的 MiniMax H3 推理引擎"
+  },
+  {
+    "title": "As AI eats the web, the internet’s collective memory is disappearing",
+    "url": "https://thewalrus.ca/google-search-is-dying/",
+    "source": "thewalrus.ca",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from thewalrus.ca. Hacker News score 874, 885 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49250836",
+    "fetched_at": "2026-08-12T03:32:00Z",
+    "title_zh": "随着人工智能吞噬网络，互联网的集体记忆正在消失"
   },
   {
     "title": "Launch HN: Stoa Markets (YC S26) – A Marketplace for GPUs and AI Servers",
@@ -251,6 +350,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49220609",
     "fetched_at": "2026-08-09T03:10:53Z",
     "title_zh": "OpenAI 对 Hugging Face 的意外攻击的时间线"
+  },
+  {
+    "title": "Show HN: Tamron Lens Utility Alternative on Linux",
+    "url": "https://github.com/yikerman/tamron-lens-control",
+    "source": "github.com",
+    "date": "2026-08-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 33, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49210199",
+    "fetched_at": "2026-08-12T03:31:55Z",
+    "title_zh": "显示 HN：Linux 上的腾龙镜头实用程序替代方案"
   },
   {
     "title": "Choral: Choreographic Programming for Java",
