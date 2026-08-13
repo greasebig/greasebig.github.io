@@ -1,5 +1,104 @@
 [
   {
+    "title": "Anthropic in Talks to Buy World Model AI Startup Decart for $6B",
+    "url": "https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion",
+    "source": "bloomberg.com",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from bloomberg.com. Hacker News score 14, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49280945",
+    "fetched_at": "2026-08-13T03:35:22Z",
+    "title_zh": "Anthropic 正在洽谈以 6B 美元收购世界模型人工智能初创公司 Decart"
+  },
+  {
+    "title": "Hax – a minimalist, terminal-native coding agent written in C",
+    "url": "https://usehax.dev/",
+    "source": "usehax.dev",
+    "date": "2026-08-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from usehax.dev. Hacker News score 92, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49273175",
+    "fetched_at": "2026-08-13T03:35:24Z",
+    "title_zh": "Hax – 用 C 语言编写的极简、终端原生编码代理"
+  },
+  {
+    "title": "AI is removing the middle class of software engineering?",
+    "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+    "source": "blog.florianherrengt.com",
+    "date": "2026-08-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.florianherrengt.com. Hacker News score 762, 706 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49271994",
+    "fetched_at": "2026-08-13T03:35:21Z",
+    "title_zh": "人工智能正在消除软件工程的中产阶级？"
+  },
+  {
+    "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
+    "url": "https://discoveredmaterials.com/research/",
+    "source": "discoveredmaterials.com",
+    "date": "2026-08-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from discoveredmaterials.com. Hacker News score 122, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49269090",
+    "fetched_at": "2026-08-13T03:35:20Z",
+    "title_zh": "推出 HN：发现材料 (YC P26) – 发现新材料的人工智能代理"
+  },
+  {
+    "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
+    "url": "https://knownagents.com/insights",
+    "source": "knownagents.com",
+    "date": "2026-08-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from knownagents.com. Hacker News score 242, 181 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49272569",
+    "fetched_at": "2026-08-13T03:35:20Z",
+    "title_zh": "有人正在运行大规模漏洞扫描，欺骗像 ClaudeBot 这样的人工智能机器人"
+  },
+  {
+    "title": "Tim King, AmigaDOS developer, has died",
+    "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
+    "source": "amiga-news.de",
+    "date": "2026-08-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from amiga-news.de. Hacker News score 243, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49272655",
+    "fetched_at": "2026-08-13T03:35:19Z",
+    "title_zh": "AmigaDOS 开发者 Tim King 去世"
+  },
+  {
+    "title": "HTML over WebSockets: real-time SPAs with barely any JavaScript",
+    "url": "https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/",
+    "source": "en.andros.dev",
+    "date": "2026-08-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from en.andros.dev. Hacker News score 157, 112 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49275335",
+    "fetched_at": "2026-08-13T03:35:19Z",
+    "title_zh": "HTML over WebSockets：几乎不需要任何 JavaScript 的实时 SPA"
+  },
+  {
+    "title": "Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug",
+    "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+    "source": "tailscale.com",
+    "date": "2026-08-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from tailscale.com. Hacker News score 856, 164 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49272832",
+    "fetched_at": "2026-08-13T03:35:18Z",
+    "title_zh": "Tailscale 追踪数据库损坏至 16y/o SQLite WAL 重置错误"
+  },
+  {
+    "title": "Happy 45th Birthday to the IBM PC and Model F/XT",
+    "url": "https://sharktastica.co.uk/articles/pc-fxt-45",
+    "source": "sharktastica.co.uk",
+    "date": "2026-08-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from sharktastica.co.uk. Hacker News score 39, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49280103",
+    "fetched_at": "2026-08-13T03:35:18Z",
+    "title_zh": "祝 IBM PC 和 Model F/XT 45 岁生日快乐"
+  },
+  {
     "title": "Company Offering '100% Human-Written, Never AI' Medical Research Is 100% AI",
     "url": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/",
     "source": "404media.co",
@@ -218,6 +317,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49237873",
     "fetched_at": "2026-08-10T03:21:42Z",
     "title_zh": "日本法院推翻 Red RAW 视频专利"
+  },
+  {
+    "title": "A Tale of Dynamic Programming (2022)",
+    "url": "https://iagoleal.com/posts/dynamic-programming/",
+    "source": "iagoleal.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from iagoleal.com. Hacker News score 75, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49232312",
+    "fetched_at": "2026-08-13T03:35:21Z",
+    "title_zh": "动态规划的故事 (2022)"
   },
   {
     "title": "Show HN: A replayable A2A jury for tracing how agents influence decisions",
