@@ -1,5 +1,93 @@
 [
   {
+    "title": "Text AI watermarks will always be trivial to remove",
+    "url": "https://www.seangoedecke.com/text-ai-watermarks/",
+    "source": "seangoedecke.com",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from seangoedecke.com. Hacker News score 103, 103 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49287153",
+    "fetched_at": "2026-08-14T03:32:28Z",
+    "title_zh": "文本 AI 水印总是很容易删除"
+  },
+  {
+    "title": "AI At Home Part 1: A Box Of Scraps",
+    "url": "https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html",
+    "source": "jdagostino.github.io",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from jdagostino.github.io. Hacker News score 100, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49288293",
+    "fetched_at": "2026-08-14T03:32:27Z",
+    "title_zh": "人工智能在家第 1 部分：一盒废料"
+  },
+  {
+    "title": "Choosing an AI model: one prompt, 11 models, different results",
+    "url": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
+    "source": "netlify.com",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from netlify.com. Hacker News score 180, 77 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49285327",
+    "fetched_at": "2026-08-14T03:32:27Z",
+    "title_zh": "选择AI模型：一个提示，11个模型，不同的结果"
+  },
+  {
+    "title": "Single log line is 49KB+ (ext4) / 110KB+ (btrfs) of systemd-journald disk writes",
+    "url": "https://github.com/systemd/systemd/issues/40262",
+    "source": "github.com",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 161, 104 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49290215",
+    "fetched_at": "2026-08-14T03:32:26Z",
+    "title_zh": "单个日志行 systemd-journald 磁盘写入量为 49KB+ (ext4) / 110KB+ (btrfs)"
+  },
+  {
+    "title": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
+    "url": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
+    "source": "cdn.openai.com",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from cdn.openai.com. Hacker News score 76, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49290768",
+    "fetched_at": "2026-08-14T03:32:26Z",
+    "title_zh": "组织如何使用人工智能：来自 ChatGPT 的证据 [pdf]"
+  },
+  {
+    "title": "Launch HN: Bullet (YC S26) – A Faster Coding Agent",
+    "url": "https://www.codewithbullet.com",
+    "source": "codewithbullet.com",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from codewithbullet.com. Hacker News score 87, 58 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49283063",
+    "fetched_at": "2026-08-14T03:32:26Z",
+    "title_zh": "推出 HN: Bullet (YC S26) – 更快的编码代理"
+  },
+  {
+    "title": "Spaghettifying DRAM",
+    "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+    "source": "github.com",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 519, 143 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49286341",
+    "fetched_at": "2026-08-14T03:32:25Z",
+    "title_zh": "面条化的 DRAM"
+  },
+  {
+    "title": "DeepSeek Harness developer preview",
+    "url": "https://deepseek.com/harness/en/",
+    "source": "deepseek.com",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from deepseek.com. Hacker News score 581, 247 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49285244",
+    "fetched_at": "2026-08-14T03:32:24Z",
+    "title_zh": "DeepSeek Harness 开发者预览版"
+  },
+  {
     "title": "Anthropic in Talks to Buy World Model AI Startup Decart for $6B",
     "url": "https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion",
     "source": "bloomberg.com",
@@ -317,6 +405,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49237873",
     "fetched_at": "2026-08-10T03:21:42Z",
     "title_zh": "日本法院推翻 Red RAW 视频专利"
+  },
+  {
+    "title": "Idol Mahjong Final Romance: A Slideshow Disguised as a Video Game",
+    "url": "https://nicole.express/2026/more-like-idle-mahjong.html",
+    "source": "nicole.express",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from nicole.express. Hacker News score 44, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49236811",
+    "fetched_at": "2026-08-14T03:32:27Z",
+    "title_zh": "偶像麻将最后的浪漫：伪装成电子游戏的幻灯片"
+  },
+  {
+    "title": "The Legend of the Novell NE2000 [video]",
+    "url": "https://www.youtube.com/watch?v=nNXzQ7V1S_k",
+    "source": "youtube.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 15, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49232753",
+    "fetched_at": "2026-08-14T03:32:25Z",
+    "title_zh": "Novell NE2000 的传奇 [视频]"
   },
   {
     "title": "A Tale of Dynamic Programming (2022)",
