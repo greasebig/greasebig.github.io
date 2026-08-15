@@ -1,5 +1,104 @@
 [
   {
+    "title": "AI productivity gains drive net CO₂ increase in global energy–economy model",
+    "url": "https://www.nature.com/articles/s44168-026-00411-0",
+    "source": "nature.com",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from nature.com. Hacker News score 5, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49306800",
+    "fetched_at": "2026-08-15T02:29:18Z",
+    "title_zh": "人工智能生产率的提高推动全球能源经济模型中二氧化碳净增加"
+  },
+  {
+    "title": "AI Model Atlas – visualizing populations of ML models as interconnected 3D graph",
+    "url": "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+    "source": "run.cosmograph.app",
+    "date": "2026-08-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from run.cosmograph.app. Hacker News score 54, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49299102",
+    "fetched_at": "2026-08-15T02:29:17Z",
+    "title_zh": "AI 模型图集 – 将 ML 模型群体可视化为互连的 3D 图"
+  },
+  {
+    "title": "Flownie – Open and Visual Data Workflow Platform with AI Agent Assistance",
+    "url": "https://flownie.com/",
+    "source": "flownie.com",
+    "date": "2026-08-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from flownie.com. Hacker News score 7, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49305904",
+    "fetched_at": "2026-08-15T02:29:17Z",
+    "title_zh": "Flownie – 具有人工智能代理协助的开放式可视化数据工作流程平台"
+  },
+  {
+    "title": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
+    "url": "https://arxiv.org/abs/2608.12700",
+    "source": "arxiv.org",
+    "date": "2026-08-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 36, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49301417",
+    "fetched_at": "2026-08-15T02:29:16Z",
+    "title_zh": "LLM 生成的 GPU 内核的合同级验证器"
+  },
+  {
+    "title": "Show HN: Mole – Deep research agent for your terminal",
+    "url": "https://github.com/lajosdeme/mole",
+    "source": "github.com",
+    "date": "2026-08-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 51, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49303046",
+    "fetched_at": "2026-08-15T02:29:15Z",
+    "title_zh": "显示 HN：Mole – 为您的终端进行深度研究代理"
+  },
+  {
+    "title": "AI by Hand",
+    "url": "https://www.byhand.ai/",
+    "source": "byhand.ai",
+    "date": "2026-08-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from byhand.ai. Hacker News score 213, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49300568",
+    "fetched_at": "2026-08-15T02:29:14Z",
+    "title_zh": "手工人工智能"
+  },
+  {
+    "title": "Maximizing the value of your Claude Code sessions",
+    "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+    "source": "claude.com",
+    "date": "2026-08-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from claude.com. Hacker News score 139, 94 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49300800",
+    "fetched_at": "2026-08-15T02:29:14Z",
+    "title_zh": "最大限度地发挥克劳德代码课程的价值"
+  },
+  {
+    "title": "Google is making private AI practical with homomorphic encryption",
+    "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+    "source": "blog.google",
+    "date": "2026-08-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.google. Hacker News score 291, 173 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49300314",
+    "fetched_at": "2026-08-15T02:29:13Z",
+    "title_zh": "谷歌正在通过同态加密使私人人工智能变得实用"
+  },
+  {
+    "title": "Firefox is now the last major browser that still supports uBlock Origin",
+    "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+    "source": "pcworld.com",
+    "date": "2026-08-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from pcworld.com. Hacker News score 448, 171 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49303202",
+    "fetched_at": "2026-08-15T02:29:13Z",
+    "title_zh": "Firefox 现在是最后一个仍然支持 uBlock Origin 的主要浏览器"
+  },
+  {
     "title": "Text AI watermarks will always be trivial to remove",
     "url": "https://www.seangoedecke.com/text-ai-watermarks/",
     "source": "seangoedecke.com",
@@ -405,6 +504,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49237873",
     "fetched_at": "2026-08-10T03:21:42Z",
     "title_zh": "日本法院推翻 Red RAW 视频专利"
+  },
+  {
+    "title": "Show HN: Ember – Redshift safe color palettes",
+    "url": "https://github.com/carpdiem/ember",
+    "source": "github.com",
+    "date": "2026-08-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 65, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49232870",
+    "fetched_at": "2026-08-15T02:29:15Z",
+    "title_zh": "显示 HN：Ember – 红移安全调色板"
   },
   {
     "title": "Idol Mahjong Final Romance: A Slideshow Disguised as a Video Game",
