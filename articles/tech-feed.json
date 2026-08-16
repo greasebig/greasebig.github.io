@@ -1,5 +1,104 @@
 [
   {
+    "title": "Big Pickle on SWE Atlas – Codebase QnA",
+    "url": "https://github.com/PhillipChaffee/big-pickle-swe-atlas",
+    "source": "github.com",
+    "date": "2026-08-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 4, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49315563",
+    "fetched_at": "2026-08-16T02:37:16Z",
+    "title_zh": "SWE Atlas 上的 Big Pickle – 代码库 QnA"
+  },
+  {
+    "title": "Show HN: I built a native app for coding agents with Rust and GPUI",
+    "url": "https://waku.sh",
+    "source": "waku.sh",
+    "date": "2026-08-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from waku.sh. Hacker News score 7, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49315709",
+    "fetched_at": "2026-08-16T02:37:15Z",
+    "title_zh": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序"
+  },
+  {
+    "title": "Tess's Android Wayland Compositor",
+    "url": "https://github.com/wmww/tawc",
+    "source": "github.com",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 52, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49313068",
+    "fetched_at": "2026-08-16T02:37:16Z",
+    "title_zh": "Tess 的 Android Wayland 合成器"
+  },
+  {
+    "title": "Working with AI feels more like leadership than coding",
+    "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
+    "source": "allen.bargi.org",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from allen.bargi.org. Hacker News score 272, 176 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49309451",
+    "fetched_at": "2026-08-16T02:37:16Z",
+    "title_zh": "与人工智能一起工作感觉更像是领导而不是编码"
+  },
+  {
+    "title": "SugarTrack – an offline Android logbook for blood sugar (no account, no cloud)",
+    "url": "https://sugartrack-beta.vercel.app/",
+    "source": "sugartrack-beta.vercel.app",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from sugartrack-beta.vercel.app. Hacker News score 23, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49314884",
+    "fetched_at": "2026-08-16T02:37:15Z",
+    "title_zh": "SugarTrack – 离线 Android 血糖日志（无帐户，无云）"
+  },
+  {
+    "title": "Auto-research with codex: How I achieved a 232x Faster Kernel",
+    "url": "https://sankalp.bearblog.dev/autoresearch/",
+    "source": "sankalp.bearblog.dev",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from sankalp.bearblog.dev. Hacker News score 399, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49309549",
+    "fetched_at": "2026-08-16T02:37:14Z",
+    "title_zh": "使用 Codex 自动研究：我如何实现速度提高 232 倍的内核"
+  },
+  {
+    "title": "AI has access to a vastly larger working memory than the human brain",
+    "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+    "source": "davidepiffer.com",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from davidepiffer.com. Hacker News score 424, 373 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49312845",
+    "fetched_at": "2026-08-16T02:37:14Z",
+    "title_zh": "人工智能拥有比人脑大得多的工作记忆"
+  },
+  {
+    "title": "AI in drug discovery – what it is, where we stand and the path forward",
+    "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+    "source": "science.org",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from science.org. Hacker News score 101, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49313367",
+    "fetched_at": "2026-08-16T02:37:13Z",
+    "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路"
+  },
+  {
+    "title": "Tea5767-Radio-Tuner",
+    "url": "https://github.com/turtushig22-blip/tea5767-radio-tuner",
+    "source": "github.com",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 23, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49315456",
+    "fetched_at": "2026-08-16T02:37:13Z",
+    "title_zh": "Tea5767-收音机调谐器"
+  },
+  {
     "title": "AI productivity gains drive net CO₂ increase in global energy–economy model",
     "url": "https://www.nature.com/articles/s44168-026-00411-0",
     "source": "nature.com",
@@ -383,6 +482,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49252179",
     "fetched_at": "2026-08-11T03:14:08Z",
     "title_zh": "Antirez/h3.c：适用于 Mac 计算机的 MiniMax H3 推理引擎"
+  },
+  {
+    "title": "A fortuitous decade as an indie software developer",
+    "url": "https://lapcatsoftware.com/articles/2026/8/3.html",
+    "source": "lapcatsoftware.com",
+    "date": "2026-08-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from lapcatsoftware.com. Hacker News score 33, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49244872",
+    "fetched_at": "2026-08-16T02:37:15Z",
+    "title_zh": "作为独立软件开发人员的十年偶然"
   },
   {
     "title": "As AI eats the web, the internet’s collective memory is disappearing",
