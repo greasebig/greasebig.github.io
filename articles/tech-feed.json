@@ -1,5 +1,93 @@
 [
   {
+    "title": "The federal keyword lists that canceled billions in research funding",
+    "url": "https://www.highereddive.com/news/inside-the-federal-keyword-lists-that-canceled-billions-in-research-funding/826203/",
+    "source": "highereddive.com",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from highereddive.com. Hacker News score 83, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49325159",
+    "fetched_at": "2026-08-17T02:36:48Z",
+    "title_zh": "取消数十亿研究经费的联邦关键词清单"
+  },
+  {
+    "title": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+    "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+    "source": "bloomberg.com",
+    "date": "2026-08-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from bloomberg.com. Hacker News score 214, 146 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49323381",
+    "fetched_at": "2026-08-17T02:36:50Z",
+    "title_zh": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易"
+  },
+  {
+    "title": "Red queen hypothesis – a new way forward for self-improving AI",
+    "url": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
+    "source": "cst.cam.ac.uk",
+    "date": "2026-08-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from cst.cam.ac.uk. Hacker News score 15, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49323136",
+    "fetched_at": "2026-08-17T02:36:50Z",
+    "title_zh": "红皇后假说——人工智能自我完善的新途径"
+  },
+  {
+    "title": "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee",
+    "url": "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/",
+    "source": "reuters.com",
+    "date": "2026-08-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from reuters.com. Hacker News score 115, 42 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49323686",
+    "fetched_at": "2026-08-17T02:36:49Z",
+    "title_zh": "Nvidia 大幅减少了其可能担保的 OpenAI 基础设施融资金额"
+  },
+  {
+    "title": "Models Are Getting Dumber on Purpose",
+    "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+    "source": "w4g1.dev",
+    "date": "2026-08-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from w4g1.dev. Hacker News score 278, 155 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49322695",
+    "fetched_at": "2026-08-17T02:36:49Z",
+    "title_zh": "模型故意变得更笨"
+  },
+  {
+    "title": "The AI Credit Resale Economy",
+    "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+    "source": "vectoral.com",
+    "date": "2026-08-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from vectoral.com. Hacker News score 235, 92 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49320611",
+    "fetched_at": "2026-08-17T02:36:48Z",
+    "title_zh": "人工智能信用转售经济"
+  },
+  {
+    "title": "MathCode, Mathematical Coding Agent",
+    "url": "https://math-ai-org.github.io/mathcode/",
+    "source": "math-ai-org.github.io",
+    "date": "2026-08-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from math-ai-org.github.io. Hacker News score 67, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49322330",
+    "fetched_at": "2026-08-17T02:36:48Z",
+    "title_zh": "MathCode，数学编码代理"
+  },
+  {
+    "title": "Claude: System Prompts",
+    "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+    "source": "platform.claude.com",
+    "date": "2026-08-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from platform.claude.com. Hacker News score 556, 234 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49319556",
+    "fetched_at": "2026-08-17T02:36:47Z",
+    "title_zh": "克劳德：系统提示"
+  },
+  {
     "title": "Big Pickle on SWE Atlas – Codebase QnA",
     "url": "https://github.com/PhillipChaffee/big-pickle-swe-atlas",
     "source": "github.com",
@@ -20,6 +108,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49315709",
     "fetched_at": "2026-08-16T02:37:15Z",
     "title_zh": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序"
+  },
+  {
+    "title": "Plastic mechanical computer from 1963: The Digi-Comp 1 [video]",
+    "url": "https://www.youtube.com/watch?v=-y8bGBE71yw",
+    "source": "youtube.com",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 51, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49313920",
+    "fetched_at": "2026-08-17T02:36:50Z",
+    "title_zh": "1963 年的塑料机械计算机：Digi-Comp 1 [视频]"
   },
   {
     "title": "Tess's Android Wayland Compositor",
@@ -196,6 +295,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49303202",
     "fetched_at": "2026-08-15T02:29:13Z",
     "title_zh": "Firefox 现在是最后一个仍然支持 uBlock Origin 的主要浏览器"
+  },
+  {
+    "title": "SIMD in the 90s: Programming Intel's Pentium MMX",
+    "url": "https://pikuma.com/blog/programming-intel-pentium-mmx-simd",
+    "source": "pikuma.com",
+    "date": "2026-08-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from pikuma.com. Hacker News score 75, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49285096",
+    "fetched_at": "2026-08-17T02:36:48Z",
+    "title_zh": "90 年代的 SIMD：Intel Pentium MMX 编程"
   },
   {
     "title": "Text AI watermarks will always be trivial to remove",
