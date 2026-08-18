@@ -1,5 +1,115 @@
 [
   {
+    "title": "Launch HN: Speko (YC S26) – OpenRouter for Voice AI",
+    "url": "https://speko.ai/",
+    "source": "speko.ai",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from speko.ai. Hacker News score 92, 52 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49332751",
+    "fetched_at": "2026-08-18T02:32:16Z",
+    "title_zh": "推出 HN：Speko (YC S26) – 用于语音 AI 的 OpenRouter"
+  },
+  {
+    "title": "scScript for Linux",
+    "url": "https://scapplications.com/",
+    "source": "scapplications.com",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from scapplications.com. Hacker News score 19, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49338428",
+    "fetched_at": "2026-08-18T02:32:16Z",
+    "title_zh": "用于 Linux 的 scScript"
+  },
+  {
+    "title": "GitHub degradation affects Cursor Origin, its new Git platform",
+    "url": "https://status.cursor.com/incidents/l9h9vrd726jv",
+    "source": "status.cursor.com",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from status.cursor.com. Hacker News score 38, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49336919",
+    "fetched_at": "2026-08-18T02:32:16Z",
+    "title_zh": "GitHub 降级影响其新的 Git 平台 Cursor Origin"
+  },
+  {
+    "title": "How to disable or avoid intrusive AI",
+    "url": "https://www.librarian.net/notoai/",
+    "source": "librarian.net",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from librarian.net. Hacker News score 260, 158 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49331220",
+    "fetched_at": "2026-08-18T02:32:15Z",
+    "title_zh": "如何禁用或避免侵入性人工智能"
+  },
+  {
+    "title": "How do functions like alloca allocate memory from the stack?",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260817-40/?p=112617",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 33, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49337630",
+    "fetched_at": "2026-08-18T02:32:15Z",
+    "title_zh": "像 alloca 这样的函数如何从堆栈分配内存？"
+  },
+  {
+    "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+    "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+    "source": "blog.roboflow.com",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.roboflow.com. Hacker News score 305, 154 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49329575",
+    "fetched_at": "2026-08-18T02:32:14Z",
+    "title_zh": "GPT 5.6 Sol是OpenAI有史以来发布的最好的“视觉”模型"
+  },
+  {
+    "title": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
+    "url": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+    "source": "responsiblestatecraft.org",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from responsiblestatecraft.org. Hacker News score 110, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49337392",
+    "fetched_at": "2026-08-18T02:32:14Z",
+    "title_zh": "以色列创建假智囊团可能试图欺骗人工智能聊天机器人"
+  },
+  {
+    "title": "GPU Offload in Rust: Portable, Safe, and Fast",
+    "url": "https://arxiv.org/abs/2608.13759",
+    "source": "arxiv.org",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 166, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49334991",
+    "fetched_at": "2026-08-18T02:32:13Z",
+    "title_zh": "Rust 中的 GPU 卸载：便携、安全且快速"
+  },
+  {
+    "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+    "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+    "source": "wiz.io",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from wiz.io. Hacker News score 319, 126 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49331423",
+    "fetched_at": "2026-08-18T02:32:13Z",
+    "title_zh": "AI 生成的 GitHub Copilot “Autofix” 允许 Snowflake 的 Jira 受到损害"
+  },
+  {
+    "title": "AI;DR (AI; Didn't Read)",
+    "url": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+    "source": "rickmanelius.com",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from rickmanelius.com. Hacker News score 620, 389 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49336573",
+    "fetched_at": "2026-08-18T02:32:13Z",
+    "title_zh": "AI;DR（AI；未读）"
+  },
+  {
     "title": "The federal keyword lists that canceled billions in research funding",
     "url": "https://www.highereddive.com/news/inside-the-federal-keyword-lists-that-canceled-billions-in-research-funding/826203/",
     "source": "highereddive.com",
