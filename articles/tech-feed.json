@@ -1,5 +1,82 @@
 [
   {
+    "title": "Universality of Gradient Descent Neural Network Training",
+    "url": "https://arxiv.org/abs/2007.13664",
+    "source": "arxiv.org",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 9, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49368828",
+    "fetched_at": "2026-08-20T02:33:15Z",
+    "title_zh": "梯度下降神经网络训练的普遍性"
+  },
+  {
+    "title": "Feature Request: Support AGENTS.md",
+    "url": "https://github.com/anthropics/claude-code/issues/6235",
+    "source": "github.com",
+    "date": "2026-08-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 140, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49367350",
+    "fetched_at": "2026-08-20T02:33:16Z",
+    "title_zh": "功能请求：支持 AGENTS.md"
+  },
+  {
+    "title": "Air Theremin – A browser theremin you play by waving at your webcam",
+    "url": "https://theremin.bizibah.com/",
+    "source": "theremin.bizibah.com",
+    "date": "2026-08-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from theremin.bizibah.com. Hacker News score 251, 86 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49359425",
+    "fetched_at": "2026-08-20T02:33:15Z",
+    "title_zh": "Air Theremin – 通过在网络摄像头上挥手即可播放的浏览器 Theremin"
+  },
+  {
+    "title": "Mathematics in the age of AI",
+    "url": "https://arxiv.org/abs/2608.16753",
+    "source": "arxiv.org",
+    "date": "2026-08-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 124, 134 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49362728",
+    "fetched_at": "2026-08-20T02:33:14Z",
+    "title_zh": "人工智能时代的数学"
+  },
+  {
+    "title": "Google replaced Git tags for certain source code with obtaining via Google Drive",
+    "url": "https://grapheneos.social/@GrapheneOS/117057099753905023",
+    "source": "grapheneos.social",
+    "date": "2026-08-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from grapheneos.social. Hacker News score 313, 132 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49364745",
+    "fetched_at": "2026-08-20T02:33:13Z",
+    "title_zh": "Google 将某些源代码的 Git 标签替换为通过 Google Drive 获取"
+  },
+  {
+    "title": "Os8088.com: IBM XT OS now has a Browser, CP/M 2.2 with Z80 core and MS Word 1.1a",
+    "url": "https://os8088.com/spotlight/",
+    "source": "os8088.com",
+    "date": "2026-08-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from os8088.com. Hacker News score 49, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49367256",
+    "fetched_at": "2026-08-20T02:33:13Z",
+    "title_zh": "Os8088.com：IBM XT OS 现在有浏览器、带有 Z80 内核的 CP/M 2.2 和 MS Word 1.1a"
+  },
+  {
+    "title": "Geolocating a random island using geometry and CUDA programming",
+    "url": "https://yassa9.github.io/osint/gralhix-004/",
+    "source": "yassa9.github.io",
+    "date": "2026-08-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from yassa9.github.io. Hacker News score 413, 76 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49360545",
+    "fetched_at": "2026-08-20T02:33:13Z",
+    "title_zh": "使用几何和 CUDA 编程对随机岛屿进行地理定位"
+  },
+  {
     "title": "The Integer",
     "url": "https://gist.github.com/17twenty/1f230ab8256f42d4cd3ba931b9bd440b",
     "source": "gist.github.com",
@@ -9,6 +86,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49355368",
     "fetched_at": "2026-08-19T02:34:18Z",
     "title_zh": "整数"
+  },
+  {
+    "title": "fx :Tiny, open, native coding agent.",
+    "url": "https://fx.sh",
+    "source": "fx.sh",
+    "date": "2026-08-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from fx.sh. Hacker News score 185, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49353339",
+    "fetched_at": "2026-08-20T02:33:15Z",
+    "title_zh": "fx ：小型、开放、本机编码代理。"
+  },
+  {
+    "title": "Pacing model development in an era of cyber-critical capabilities",
+    "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+    "source": "openai.com",
+    "date": "2026-08-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 132, 179 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49350031",
+    "fetched_at": "2026-08-20T02:33:15Z",
+    "title_zh": "网络关键能力时代的模型开发节奏"
   },
   {
     "title": "Launch HN: machine0 (YC S26) – Persistent CPU and GPU VMs from the CLI",
@@ -306,6 +405,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49315709",
     "fetched_at": "2026-08-16T02:37:15Z",
     "title_zh": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序"
+  },
+  {
+    "title": "The little-known winstart.bat batch file",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260811-00/?p=112605",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-08-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 82, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49314109",
+    "fetched_at": "2026-08-20T02:33:14Z",
+    "title_zh": "鲜为人知的winstart.bat批处理文件"
   },
   {
     "title": "A 25-year-old video patent just expired, ending a legal headache for Linux",
