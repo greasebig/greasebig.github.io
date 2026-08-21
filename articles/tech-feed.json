@@ -1,5 +1,115 @@
 [
   {
+    "title": "Show HN: ParqDB – Vector search in the browser from Parquet over HTTP\"",
+    "url": "https://search.parqdb.io/",
+    "source": "search.parqdb.io",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from search.parqdb.io. Hacker News score 7, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49382022",
+    "fetched_at": "2026-08-21T02:39:16Z",
+    "title_zh": "显示 HN：ParqDB – 在浏览器中通过 HTTP 从 Parquet 进行矢量搜索”"
+  },
+  {
+    "title": "Berkeley Law prohibits AI use in classes (by default)",
+    "url": "https://www.law.berkeley.edu/academics/registrar/academic-rules/artificial-intelligence-policy/",
+    "source": "law.berkeley.edu",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from law.berkeley.edu. Hacker News score 9, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49382614",
+    "fetched_at": "2026-08-21T02:39:15Z",
+    "title_zh": "伯克利法律禁止在课堂上使用人工智能（默认情况下）"
+  },
+  {
+    "title": "Every Model Cheats",
+    "url": "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks/",
+    "source": "dreadnode.io",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from dreadnode.io. Hacker News score 81, 64 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49374635",
+    "fetched_at": "2026-08-21T02:39:17Z",
+    "title_zh": "每个模型秘籍"
+  },
+  {
+    "title": "Hacking with Claude on a $27 smart watch",
+    "url": "https://www.mikekasberg.com/blog/2026/08/19/hacking-with-claude-on-a-27-smart-watch.html",
+    "source": "mikekasberg.com",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from mikekasberg.com. Hacker News score 87, 47 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49374772",
+    "fetched_at": "2026-08-21T02:39:17Z",
+    "title_zh": "与 Claude 一起在 27 美元的智能手表上进行黑客攻击"
+  },
+  {
+    "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+    "url": "https://github.com/zachahn/vomit",
+    "source": "github.com",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 195, 209 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49375996",
+    "fetched_at": "2026-08-21T02:39:16Z",
+    "title_zh": "呕吐：用单独的 LLM 清理 Claude 5 的代币输出"
+  },
+  {
+    "title": "Linux 7.2",
+    "url": "https://www.igalia.com/2026/08/19/Linux-72-Released.html",
+    "source": "igalia.com",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from igalia.com. Hacker News score 196, 72 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49376265",
+    "fetched_at": "2026-08-21T02:39:16Z",
+    "title_zh": "Linux 7.2"
+  },
+  {
+    "title": "Malicious Rust crate Arrayref runs a build-time payload",
+    "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+    "source": "safedep.io",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from safedep.io. Hacker News score 407, 366 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49374269",
+    "fetched_at": "2026-08-21T02:39:15Z",
+    "title_zh": "恶意 Rust 箱 Arrayref 运行构建时负载"
+  },
+  {
+    "title": "Stealth Model",
+    "url": "https://openrouter.ai/stealth/ox-alpha",
+    "source": "openrouter.ai",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from openrouter.ai. Hacker News score 39, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49381896",
+    "fetched_at": "2026-08-21T02:39:15Z",
+    "title_zh": "隐形模型"
+  },
+  {
+    "title": "Show HN: I trained a 125M model to autocomplete piano on-device",
+    "url": "https://simedw.com/2026/08/20/midi-autocomplete/",
+    "source": "simedw.com",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from simedw.com. Hacker News score 522, 108 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49373456",
+    "fetched_at": "2026-08-21T02:39:15Z",
+    "title_zh": "Show HN：我训练了一个 125M 的模型来在设备上自动完成钢琴"
+  },
+  {
+    "title": "Show HN: Huzzah – a novel approach to coding with AI",
+    "url": "https://www.danielvaughn.dev/posts/huzzah/",
+    "source": "danielvaughn.dev",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from danielvaughn.dev. Hacker News score 227, 134 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49378768",
+    "fetched_at": "2026-08-21T02:39:15Z",
+    "title_zh": "Show HN：Huzzah——一种利用人工智能进行编码的新颖方法"
+  },
+  {
     "title": "Universality of Gradient Descent Neural Network Training",
     "url": "https://arxiv.org/abs/2007.13664",
     "source": "arxiv.org",
