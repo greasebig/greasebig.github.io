@@ -1,5 +1,60 @@
 [
   {
+    "title": "How we made a text-to-speech model respond in sub-50 ms",
+    "url": "https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier/",
+    "source": "nari-labs.com",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from nari-labs.com. Hacker News score 109, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49389952",
+    "fetched_at": "2026-08-22T02:30:27Z",
+    "title_zh": "我们如何让文本转语音模型在 50 毫秒内做出响应"
+  },
+  {
+    "title": "Claudette: Make Claude stop talking like a BuzzFeed article",
+    "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+    "source": "github.com",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 209, 147 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49388752",
+    "fetched_at": "2026-08-22T02:30:27Z",
+    "title_zh": "克劳德：让克劳德停止像 BuzzFeed 文章一样说话"
+  },
+  {
+    "title": "I ran Photoshop on a £0.60 computer chip",
+    "url": "https://pointinthecloud.com/2026-08-19-144600.html",
+    "source": "pointinthecloud.com",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from pointinthecloud.com. Hacker News score 120, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49389441",
+    "fetched_at": "2026-08-22T02:30:27Z",
+    "title_zh": "我在 0.60 英镑的计算机芯片上运行 Photoshop"
+  },
+  {
+    "title": "Rust Glancer: Rust LSP using 100x less RAM",
+    "url": "https://rust-glancer.github.io/blog/hello-world/",
+    "source": "rust-glancer.github.io",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from rust-glancer.github.io. Hacker News score 41, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49393052",
+    "fetched_at": "2026-08-22T02:30:25Z",
+    "title_zh": "Rust Glancer：Rust LSP 使用的 RAM 减少了 100 倍"
+  },
+  {
+    "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
+    "url": "https://ozbrain.com",
+    "source": "ozbrain.com",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from ozbrain.com. Hacker News score 44, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49394827",
+    "fetched_at": "2026-08-22T02:30:25Z",
+    "title_zh": "显示 HN：OzBrain，代理和团队之间的知识共享大脑"
+  },
+  {
     "title": "Show HN: ParqDB – Vector search in the browser from Parquet over HTTP\"",
     "url": "https://search.parqdb.io/",
     "source": "search.parqdb.io",
@@ -20,6 +75,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49382614",
     "fetched_at": "2026-08-21T02:39:15Z",
     "title_zh": "伯克利法律禁止在课堂上使用人工智能（默认情况下）"
+  },
+  {
+    "title": "GitHub, autoscaling, and the component substitution fallacy",
+    "url": "https://surfingcomplexity.blog/2026/08/19/github-autoscaling-and-the-component-substitution-fallacy/",
+    "source": "surfingcomplexity.blog",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from surfingcomplexity.blog. Hacker News score 33, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49379026",
+    "fetched_at": "2026-08-22T02:30:28Z",
+    "title_zh": "GitHub、自动缩放和组件替换谬误"
+  },
+  {
+    "title": "Autolith: A programming agent with a live runtime",
+    "url": "https://www.lambda-symbolics.com/autolith",
+    "source": "lambda-symbolics.com",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from lambda-symbolics.com. Hacker News score 29, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49376197",
+    "fetched_at": "2026-08-22T02:30:27Z",
+    "title_zh": "Autolith：具有实时运行时的编程代理"
   },
   {
     "title": "Every Model Cheats",
@@ -121,6 +198,17 @@
     "title_zh": "梯度下降神经网络训练的普遍性"
   },
   {
+    "title": "AI boosted homework scores, then exam scores dropped: study",
+    "url": "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning",
+    "source": "economist.com",
+    "date": "2026-08-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from economist.com. Hacker News score 242, 293 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49357530",
+    "fetched_at": "2026-08-22T02:30:26Z",
+    "title_zh": "人工智能提高了家庭作业成绩，但考试成绩却下降了：研究"
+  },
+  {
     "title": "Feature Request: Support AGENTS.md",
     "url": "https://github.com/anthropics/claude-code/issues/6235",
     "source": "github.com",
@@ -196,6 +284,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49355368",
     "fetched_at": "2026-08-19T02:34:18Z",
     "title_zh": "整数"
+  },
+  {
+    "title": "The coolest anti-surveillance tools at Defcon [video]",
+    "url": "https://www.youtube.com/watch?v=-2uAsJ5EPAw",
+    "source": "youtube.com",
+    "date": "2026-08-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 164, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49346444",
+    "fetched_at": "2026-08-22T02:30:28Z",
+    "title_zh": "Defcon 上最酷的反监视工具 [视频]"
   },
   {
     "title": "fx :Tiny, open, native coding agent.",
@@ -284,6 +383,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49354613",
     "fetched_at": "2026-08-19T02:34:14Z",
     "title_zh": "Solo – 静态 Linux 二进制文件的 .so 加载器"
+  },
+  {
+    "title": "Show HN: Rex, a parallel functional language for scientific workflows",
+    "url": "https://github.com/peterkelly/rex",
+    "source": "github.com",
+    "date": "2026-08-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 12, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49326852",
+    "fetched_at": "2026-08-22T02:30:27Z",
+    "title_zh": "Show HN：Rex，一种用于科学工作流程的并行函数语言"
   },
   {
     "title": "Cursor launches Origin, GitHub alternative",
