@@ -3295,7 +3295,9 @@
     // Loading sequence:
     //   1. Load four 480p small videos -> fade in when ready
     //   2. After ALL 480p ready -> load & start bgm.mp3 (loop)
-    //   3. After audio playing -> load four large videos in background
+    //   (Step 3 "load four large / high-res videos" is DISABLED:
+    //    only 480p is shown, higher resolutions are no longer downloaded.
+    //    See the commented startLoadingLargeVideos()/loadLarge() block below.)
     // A global loading indicator in bottom-right shows progress.
 
     (function() {
@@ -3304,13 +3306,17 @@
 
       var VIDEO_MAP = {
 
-        hero:     { small: 'assets/videos/sections/hero-small.mp4',     large: 'assets/videos/sections/hero-large.mp4' },
+        hero:     { small: 'assets/videos/sections/hero-small.mp4' /*,
+                     large: 'assets/videos/sections/hero-large.mp4' */ },
 
-        articles: { small: 'assets/videos/sections/articles-small.mp4', large: 'assets/videos/sections/articles-large.mp4' },
+        articles: { small: 'assets/videos/sections/articles-small.mp4' /*,
+                     large: 'assets/videos/sections/articles-large.mp4' */ },
 
-        projects: { small: 'assets/videos/sections/projects-small.mp4', large: 'assets/videos/sections/projects-large.mp4' },
+        projects: { small: 'assets/videos/sections/projects-small.mp4' /*,
+                     large: 'assets/videos/sections/projects-large.mp4' */ },
 
-        explored: { small: 'assets/videos/sections/explored-small.mp4', large: 'assets/videos/sections/explored-large.mp4' }
+        explored: { small: 'assets/videos/sections/explored-small.mp4' /*,
+                     large: 'assets/videos/sections/explored-large.mp4' */ }
 
       };
 
@@ -3432,7 +3438,7 @@
 
       function markState(key, phase, state) {
 
-        if (!sectionStates[key]) sectionStates[key] = { small: 'loading', large: 'loading' };
+        if (!sectionStates[key]) sectionStates[key] = { small: 'loading', large: 'disabled' };
 
         sectionStates[key][phase] = state;
 
@@ -3510,7 +3516,7 @@
 
                 }
 
-                startLoadingLargeVideos();
+                /* startLoadingLargeVideos();  // [disabled] 仅展示 480p，停止下载高分辨率，便于日后回退 */
 
               }).catch(function() {
 
@@ -3572,7 +3578,7 @@
 
                 document.addEventListener('keydown', resumeOnce, true);
 
-                startLoadingLargeVideos();
+                /* startLoadingLargeVideos();  // [disabled] 仅展示 480p，停止下载高分辨率，便于日后回退 */
 
               });
 
@@ -3582,7 +3588,7 @@
 
               updateLoadingUI();
 
-              startLoadingLargeVideos();
+              /* startLoadingLargeVideos();  // [disabled] 仅展示 480p，停止下载高分辨率，便于日后回退 */
 
             }
 
@@ -3594,7 +3600,7 @@
 
             updateLoadingUI();
 
-            startLoadingLargeVideos();
+            /* startLoadingLargeVideos();  // [disabled] 仅展示 480p，停止下载高分辨率，便于日后回退 */
 
           };
 
@@ -3606,7 +3612,7 @@
 
           updateLoadingUI();
 
-          startLoadingLargeVideos();
+          /* startLoadingLargeVideos();  // [disabled] 仅展示 480p，停止下载高分辨率，便于日后回退 */
 
         }
 
@@ -3628,7 +3634,7 @@
 
         var urls = VIDEO_MAP[key];
 
-        sectionStates[key] = { small: 'loading', large: 'loading' };
+        sectionStates[key] = { small: 'loading', large: 'disabled' };
 
         // Load 480p small video in background
 
@@ -3696,7 +3702,7 @@
 
       });
 
-      // ---- Step 2: load large videos (called after audio starts) ----
+      /* ---- Step 2: load large videos (DISABLED: 仅展示 480p，高分辨率不再下载) ----
 
       function startLoadingLargeVideos() {
 
@@ -3825,6 +3831,8 @@
         req.send();
 
       }
+
+      */
 
       // Show initial loading state
 
