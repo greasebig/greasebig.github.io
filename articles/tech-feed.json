@@ -1,5 +1,93 @@
 [
   {
+    "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
+    "url": "https://twitter.com/argofowl/status/2091150597374537729",
+    "source": "twitter.com",
+    "date": "2026-08-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 166, 156 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49401549",
+    "fetched_at": "2026-08-23T02:40:33Z",
+    "title_zh": "在Claude Code中， Anthropic似乎正在进行A/B测试，减少了工作量"
+  },
+  {
+    "title": "Thinking in Python",
+    "url": "https://thinkinginpython.com/",
+    "source": "thinkinginpython.com",
+    "date": "2026-08-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from thinkinginpython.com. Hacker News score 61, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49402202",
+    "fetched_at": "2026-08-23T02:40:19Z",
+    "title_zh": "用Python思考"
+  },
+  {
+    "title": "Munder Difflin – Agent harness to run an office of your clones",
+    "url": "https://munderdiffl.in/",
+    "source": "munderdiffl.in",
+    "date": "2026-08-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from munderdiffl.in. Hacker News score 255, 115 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49398152",
+    "fetched_at": "2026-08-23T02:40:18Z",
+    "title_zh": "Munder Difflin –代理利用来运行您的克隆办公室"
+  },
+  {
+    "title": "Why your local LLM feels dumber than it is",
+    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+    "source": "forum.level1techs.com",
+    "date": "2026-08-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from forum.level1techs.com. Hacker News score 199, 68 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49402232",
+    "fetched_at": "2026-08-23T02:40:13Z",
+    "title_zh": "为什么您当地的法学硕士会觉得自己比现在更愚蠢"
+  },
+  {
+    "title": "Rust Glancer: Rust LSP using 100x less RAM",
+    "url": "https://rust-glancer.github.io/blog/hello-world/",
+    "source": "rust-glancer.github.io",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from rust-glancer.github.io. Hacker News score 399, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49393052",
+    "fetched_at": "2026-08-23T02:40:28Z",
+    "title_zh": "Rust Glancer ：使用100倍RAM的Rust LSP"
+  },
+  {
+    "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
+    "url": "https://ozbrain.com",
+    "source": "ozbrain.com",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from ozbrain.com. Hacker News score 79, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49394827",
+    "fetched_at": "2026-08-23T02:40:26Z",
+    "title_zh": "展示HN ： OzBrain ，代理和您的团队之间共享知识的大脑"
+  },
+  {
+    "title": "A week of using Codex more than Claude",
+    "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+    "source": "allaboutcoding.ghinda.com",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from allaboutcoding.ghinda.com. Hacker News score 137, 149 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49393051",
+    "fetched_at": "2026-08-23T02:40:22Z",
+    "title_zh": "比Claude更多地使用Codex的一周"
+  },
+  {
+    "title": "How a Texas student blew the whistle on a rogue AI hacking attempt",
+    "url": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/",
+    "source": "reuters.com",
+    "date": "2026-08-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from reuters.com. Hacker News score 115, 43 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49387959",
+    "fetched_at": "2026-08-23T02:40:15Z",
+    "title_zh": "德克萨斯州一名学生如何揭发流氓人工智能黑客攻击企图"
+  },
+  {
     "title": "How we made a text-to-speech model respond in sub-50 ms",
     "url": "https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier/",
     "source": "nari-labs.com",
@@ -33,28 +121,6 @@
     "title_zh": "我在 0.60 英镑的计算机芯片上运行 Photoshop"
   },
   {
-    "title": "Rust Glancer: Rust LSP using 100x less RAM",
-    "url": "https://rust-glancer.github.io/blog/hello-world/",
-    "source": "rust-glancer.github.io",
-    "date": "2026-08-21",
-    "repost": true,
-    "summary": "转载 / Curated repost from rust-glancer.github.io. Hacker News score 41, 18 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49393052",
-    "fetched_at": "2026-08-22T02:30:25Z",
-    "title_zh": "Rust Glancer：Rust LSP 使用的 RAM 减少了 100 倍"
-  },
-  {
-    "title": "Show HN: OzBrain, a shared brain for knowledge between agents and your team",
-    "url": "https://ozbrain.com",
-    "source": "ozbrain.com",
-    "date": "2026-08-21",
-    "repost": true,
-    "summary": "转载 / Curated repost from ozbrain.com. Hacker News score 44, 19 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49394827",
-    "fetched_at": "2026-08-22T02:30:25Z",
-    "title_zh": "显示 HN：OzBrain，代理和团队之间的知识共享大脑"
-  },
-  {
     "title": "Show HN: ParqDB – Vector search in the browser from Parquet over HTTP\"",
     "url": "https://search.parqdb.io/",
     "source": "search.parqdb.io",
@@ -77,6 +143,28 @@
     "title_zh": "伯克利法律禁止在课堂上使用人工智能（默认情况下）"
   },
   {
+    "title": "MiniageOS: \"Dumbphone\" Version of LineageOS",
+    "url": "https://github.com/ofdryads/miniageOS",
+    "source": "github.com",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 39, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49370284",
+    "fetched_at": "2026-08-23T02:40:31Z",
+    "title_zh": "MiniageOS ： LineageOS的“Dumbphone”版本"
+  },
+  {
+    "title": "Autolith: A programming agent with a live runtime",
+    "url": "https://www.lambda-symbolics.com/autolith",
+    "source": "lambda-symbolics.com",
+    "date": "2026-08-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from lambda-symbolics.com. Hacker News score 115, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49376197",
+    "fetched_at": "2026-08-23T02:40:24Z",
+    "title_zh": "Autolith ：具有实时运行时的编程代理"
+  },
+  {
     "title": "GitHub, autoscaling, and the component substitution fallacy",
     "url": "https://surfingcomplexity.blog/2026/08/19/github-autoscaling-and-the-component-substitution-fallacy/",
     "source": "surfingcomplexity.blog",
@@ -86,17 +174,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49379026",
     "fetched_at": "2026-08-22T02:30:28Z",
     "title_zh": "GitHub、自动缩放和组件替换谬误"
-  },
-  {
-    "title": "Autolith: A programming agent with a live runtime",
-    "url": "https://www.lambda-symbolics.com/autolith",
-    "source": "lambda-symbolics.com",
-    "date": "2026-08-20",
-    "repost": true,
-    "summary": "转载 / Curated repost from lambda-symbolics.com. Hacker News score 29, 4 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49376197",
-    "fetched_at": "2026-08-22T02:30:27Z",
-    "title_zh": "Autolith：具有实时运行时的编程代理"
   },
   {
     "title": "Every Model Cheats",
