@@ -2202,6 +2202,7 @@
 
   </style>
 
+  <link rel="stylesheet" href="./comments/comments.css" />
 </head>
 
 <body>
@@ -4221,6 +4222,20 @@
     <!-- whos.amung.us dynamic -->
     <script id="_wau_main">var _wau = _wau || []; _wau.push(["dynamic", "greasebig", "main", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
   </div>
+
+
+  <!-- Comments guestbook (GitHub Issues backed, no redirect) -->
+  <div id="comments"></div>
+  <script>
+    window.COMMENTS_CONFIG = {
+      repo:  "greasebig/greasebig.github.io",
+      issue: 1,
+      proxy: "http://localhost:7897",
+      max:   100,
+      title: "留言墙 / Guestbook"
+    };
+  </script>
+  <script src="./comments/comments.js"></script>
 
 </body>
 
