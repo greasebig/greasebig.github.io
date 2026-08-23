@@ -1,0 +1,31 @@
+/* GitHub-Issues-backed comment widget — scoped under .gh-comments */
+.gh-comments { font-family: "Manrope", system-ui, sans-serif; color: #0b1b2b; max-width: 760px; margin: 32px auto; padding: 0 4px; }
+.gh-comments * { box-sizing: border-box; }
+.gh-comments__title { font-family: "Fraunces", serif; font-size: 28px; margin: 0 0 4px; }
+.gh-comments__sub { color: #5a6b85; font-size: 14px; margin: 0 0 20px; }
+.gh-comments__scroll { height: 260px; overflow: hidden; position: relative; margin: 18px 0 24px; -webkit-mask-image: linear-gradient(180deg, transparent, #000 14%, #000 86%, transparent); mask-image: linear-gradient(180deg, transparent, #000 14%, #000 86%, transparent); }
+.gh-comments__track { display: flex; flex-direction: column; gap: 14px; animation: gc-scroll 28s linear infinite; }
+.gh-comments__scroll:hover .gh-comments__track { animation-play-state: paused; }
+@keyframes gc-scroll { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+.gh-comments__item { display: flex; gap: 12px; padding: 14px; border-radius: 16px; background: rgba(255,255,255,0.65); border: 1px solid rgba(12,36,66,0.12); box-shadow: 0 10px 24px rgba(26,60,90,0.08); }
+.gh-comments__avatar { width: 40px; height: 40px; border-radius: 50%; flex: 0 0 40px; background: #e9f1ff; object-fit: cover; }
+.gh-comments__avatar--letter { display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; background: linear-gradient(120deg, #2ec4b6, #f6ad55); font-family: "Manrope", sans-serif; }
+.gh-comments__meta { font-size: 13px; color: #5a6b85; }
+.gh-comments__author { font-weight: 700; color: #0b1b2b; }
+.gh-comments__body { font-size: 14px; line-height: 1.6; margin-top: 4px; word-break: break-word; }
+.gh-comments__body a { color: #2ec4b6; }
+.gh-comments__body code { background: #eef3fb; padding: 1px 5px; border-radius: 6px; font-size: 13px; }
+.gh-comments__body pre { background: #0b1b2b; color: #e9f1ff; padding: 10px; border-radius: 10px; overflow: auto; }
+.gh-comments__form { display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 18px; background: rgba(255,255,255,0.65); border: 1px solid rgba(12,36,66,0.12); box-shadow: 0 10px 24px rgba(26,60,90,0.08); }
+.gh-comments__row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.gh-comments input, .gh-comments textarea { font: inherit; font-size: 14px; padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(12,36,66,0.16); background: #fff; color: #0b1b2b; width: 100%; }
+.gh-comments textarea { min-height: 90px; resize: vertical; }
+.gh-comments__name { flex: 1; min-width: 180px; }
+.gh-comments__submit { padding: 10px 20px; border-radius: 999px; border: none; background: linear-gradient(120deg, #2ec4b6, #f6ad55); color: #0b1b2b; font-weight: 700; cursor: pointer; }
+.gh-comments__submit:disabled { opacity: .6; cursor: not-allowed; }
+.gh-comments__status { font-size: 13px; min-height: 18px; }
+.gh-comments__status--err { color: #ff6b6b; }
+.gh-comments__status--ok { color: #2ec4b6; }
+.gh-comments__empty { color: #5a6b85; font-size: 14px; padding: 14px; background: rgba(255,255,255,0.5); border-radius: 14px; text-align: center; }
+.gh-comments__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+@media (max-width: 640px) { .gh-comments__title { font-size: 24px; } }
