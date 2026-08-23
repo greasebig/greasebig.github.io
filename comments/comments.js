@@ -146,7 +146,14 @@
           setStatus('已发布！ / Posted!', 'ok');
           load();
         })
-        .catch(function (err) { btn.disabled = false; setStatus('发布失败 / Failed: ' + err.message, 'err'); });
+        .catch(function (err) {
+          btn.disabled = false;
+          var m = (err && err.message) ? err.message : 'unknown error';
+          var hint = (/fetch|network|refused|connect|load/i.test(m))
+            ? '｜本机留言代理未启动：请先运行 start-proxy.bat 并设置 GITHUB_TOKEN（需代理的网络另设 HTTPS_PROXY）'
+            : '';
+          setStatus('发布失败 / Failed: ' + m + hint, 'err');
+        });
     });
 
     load();
