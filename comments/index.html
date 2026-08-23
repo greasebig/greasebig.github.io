@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>留言板 / Comments · Papers Hub</title>
+  <link rel="stylesheet" href="./comments.css" />
+  <style>
+    body { margin: 0; font-family: "Manrope", system-ui, sans-serif; color: #0b1b2b; background: linear-gradient(180deg, #f9fcff, #e9f1ff 60%, #eef3fb); min-height: 100vh; }
+    .gc-page { max-width: 820px; margin: 0 auto; padding: 48px 20px 80px; }
+    .gc-back { display: inline-flex; align-items: center; gap: 6px; color: #5a6b85; text-decoration: none; font-size: 14px; margin-bottom: 18px; }
+    .gc-back:hover { color: #2ec4b6; }
+  </style>
+</head>
+<body>
+  <div class="gc-page">
+    <a class="gc-back" href="../index.html">← 返回首页 / Back</a>
+    <div id="comments"></div>
+  </div>
+
+  <script>
+    // ===== 按需修改这两行 =====
+    window.COMMENTS_CONFIG = {
+      repo:  "greasebig/greasebig.github.io", // 你的仓库 owner/repo
+      issue: 1,                              // ← 改成你用来存留言的 Issue 编号
+      proxy: "http://localhost:7897",        // ← 改成代理地址（端口 7897）
+      max:   100
+    };
+  </script>
+  <script src="./comments.js"></script>
+</body>
+</html>
