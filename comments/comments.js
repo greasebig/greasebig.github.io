@@ -12,6 +12,7 @@
   var PROXY = CFG.proxy || 'http://localhost:7897';
   var MAX   = CFG.max   || 100;
   var TITLE = CFG.title || '留言墙 / Guestbook';
+  var BRANCH = CFG.branch || 'main';   // branch that hosts comments/data.json
   var API   = 'https://api.github.com';
 
   // Fallback samples so the scroll is visible before the issue is seeded.
@@ -105,14 +106,22 @@
     }
 
     function load() {
-      fetch(API + '/repos/' + REPO + '/issues/' + ISSUE + '/comments?per_page=' + MAX + '&sort=created&direction=asc')
+      // File-backed store: read comments/data.json straight from the repo
+      // (raw.githubusercontent serves it with CORS *, no token needed).
+      var url = 'https://raw.githubusercontent.com/' + REPO + '/' + BRANCH + '/comments/data.json';
+      fetch(url)
         .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
         .then(function (arr) {
-          if (arr && arr.length) { buildTrack(arr, scrollView); }
-          else { subEl.textContent = '示例数据 · 运行 seed 脚本后显示真实 GitHub 留言'; buildTrack(SAMPLES, scrollView); }
+          if (Array.isArray(arr) && arr.length) {
+            subEl.textContent = '由 GitHub 仓库留言文件提供支持 · Powered by repo file';
+            buildTrack(arr, scrollView);
+          } else {
+            subEl.textContent = '还没有留言，来抢沙发吧！ / No comments yet.';
+            buildTrack(SAMPLES, scrollView);
+          }
         })
         .catch(function () {
-          subEl.textContent = '示例数据（无法连接 GitHub）· 运行 seed 脚本后显示真实留言';
+          subEl.textContent = '示例数据（无法加载）· 运行代理后即可显示真实留言';
           buildTrack(SAMPLES, scrollView);
         });
     }
