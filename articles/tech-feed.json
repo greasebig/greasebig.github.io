@@ -1,5 +1,115 @@
 [
   {
+    "title": "I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day",
+    "url": "https://ericpardee.github.io/fire-hd-ownership/",
+    "source": "ericpardee.github.io",
+    "date": "2026-08-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from ericpardee.github.io. Hacker News score 622, 268 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49409073",
+    "fetched_at": "2026-08-24T02:40:51Z",
+    "title_zh": "我花了$ 266和四个AI模型来拥有我的平板电脑。GLM-5.3在一天内完成"
+  },
+  {
+    "title": "Predicting AI model release dates with stats",
+    "url": "https://releaseoracle.xyz/",
+    "source": "releaseoracle.xyz",
+    "date": "2026-08-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from releaseoracle.xyz. Hacker News score 27, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49410949",
+    "fetched_at": "2026-08-24T02:40:49Z",
+    "title_zh": "使用统计数据预测AI模型发布日期"
+  },
+  {
+    "title": "I turned Unix talk from 1983 into the interface for my AI",
+    "url": "https://en.andros.dev/blog/09a21bdd/i-turned-unix-talk-from-1983-into-the-interface-for-my-ai/",
+    "source": "en.andros.dev",
+    "date": "2026-08-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from en.andros.dev. Hacker News score 20, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49410936",
+    "fetched_at": "2026-08-24T02:40:47Z",
+    "title_zh": "我从1983年开始将Unix talk转变为我的人工智能界面"
+  },
+  {
+    "title": "Training AI to Paint with Code",
+    "url": "https://surya.website/rling-qwen-to-paint-with-code",
+    "source": "surya.website",
+    "date": "2026-08-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from surya.website. Hacker News score 20, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49411800",
+    "fetched_at": "2026-08-24T02:40:44Z",
+    "title_zh": "训练AI用代码绘画"
+  },
+  {
+    "title": "AI and Infrastructure Engineering",
+    "url": "https://omegion.dev/2026/08/ai-and-infrastructure-engineering/",
+    "source": "omegion.dev",
+    "date": "2026-08-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from omegion.dev. Hacker News score 46, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49411024",
+    "fetched_at": "2026-08-24T02:40:41Z",
+    "title_zh": "人工智能和基础设施工程"
+  },
+  {
+    "title": "AI Chip Architectures",
+    "url": "https://www.jepeake.com/ai-chip-architectures",
+    "source": "jepeake.com",
+    "date": "2026-08-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from jepeake.com. Hacker News score 51, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49405657",
+    "fetched_at": "2026-08-24T02:40:39Z",
+    "title_zh": "AI芯片架构"
+  },
+  {
+    "title": "Implementation of GPT-2 in pure CMake",
+    "url": "https://github.com/AlpinDale/gpt2.cmake",
+    "source": "github.com",
+    "date": "2026-08-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 38, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49412909",
+    "fetched_at": "2026-08-24T02:40:37Z",
+    "title_zh": "在纯CMake中实现GPT-2"
+  },
+  {
+    "title": "Google Workspace thinks my domain is an email provider (2025)",
+    "url": "https://blog.elis.cc/articles/google-workspace-thinks-my-domain-is-an-email-provider/",
+    "source": "blog.elis.cc",
+    "date": "2026-08-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.elis.cc. Hacker News score 191, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49411717",
+    "fetched_at": "2026-08-24T02:40:34Z",
+    "title_zh": "Google Workspace认为我的域名是电子邮件提供商(2025)"
+  },
+  {
+    "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+    "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+    "source": "ft.com",
+    "date": "2026-08-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from ft.com. Hacker News score 254, 221 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49411102",
+    "fetched_at": "2026-08-24T02:40:32Z",
+    "title_zh": "随着廉价工具的蓬勃发展， Anthropic最好的人工智能模型难以吸引用户"
+  },
+  {
+    "title": "Why your local LLM feels dumber than it is",
+    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+    "source": "forum.level1techs.com",
+    "date": "2026-08-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from forum.level1techs.com. Hacker News score 476, 198 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49402232",
+    "fetched_at": "2026-08-24T02:40:53Z",
+    "title_zh": "为什么您当地的法学硕士会觉得自己比现在更愚蠢"
+  },
+  {
     "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
     "url": "https://twitter.com/argofowl/status/2091150597374537729",
     "source": "twitter.com",
@@ -31,17 +141,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49398152",
     "fetched_at": "2026-08-23T02:40:18Z",
     "title_zh": "Munder Difflin –代理利用来运行您的克隆办公室"
-  },
-  {
-    "title": "Why your local LLM feels dumber than it is",
-    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
-    "source": "forum.level1techs.com",
-    "date": "2026-08-22",
-    "repost": true,
-    "summary": "转载 / Curated repost from forum.level1techs.com. Hacker News score 199, 68 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49402232",
-    "fetched_at": "2026-08-23T02:40:13Z",
-    "title_zh": "为什么您当地的法学硕士会觉得自己比现在更愚蠢"
   },
   {
     "title": "Rust Glancer: Rust LSP using 100x less RAM",
