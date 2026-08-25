@@ -1,5 +1,115 @@
 [
   {
+    "title": "What languages are agent skills written in?",
+    "url": "https://plicara.ai/research/agent-skill-languages/",
+    "source": "plicara.ai",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from plicara.ai. Hacker News score 11, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49427825",
+    "fetched_at": "2026-08-25T02:34:15Z",
+    "title_zh": "客服代表的技能是用什么语言书写的？"
+  },
+  {
+    "title": "Show HN: GlassBox – what the browser reveals, and how identifiable you are",
+    "url": "https://glassbox.codecanary.org",
+    "source": "glassbox.codecanary.org",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from glassbox.codecanary.org. Hacker News score 100, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49421948",
+    "fetched_at": "2026-08-25T02:34:17Z",
+    "title_zh": "显示HN ： GlassBox –浏览器显示的内容，以及您的可识别程度"
+  },
+  {
+    "title": "Coding expertise is going to collapse from AI reliance",
+    "url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+    "source": "larsfaye.com",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from larsfaye.com. Hacker News score 477, 468 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49421554",
+    "fetched_at": "2026-08-25T02:34:13Z",
+    "title_zh": "编码专业知识将因对人工智能的依赖而崩溃"
+  },
+  {
+    "title": "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
+    "url": "https://developers.openai.com/api/docs/pricing",
+    "source": "developers.openai.com",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from developers.openai.com. Hacker News score 301, 271 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49421074",
+    "fetched_at": "2026-08-25T02:34:11Z",
+    "title_zh": "OpenAI ： GPT 5.6 Sol降价（至少到11月21日）"
+  },
+  {
+    "title": "SeL4 security proofs now complete on AArch64",
+    "url": "https://proofcraft.systems/news-2026/#2026-08-21",
+    "source": "proofcraft.systems",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from proofcraft.systems. Hacker News score 172, 38 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49418255",
+    "fetched_at": "2026-08-25T02:34:09Z",
+    "title_zh": "SeL4安全证明现已在AArch64上完成"
+  },
+  {
+    "title": "Hot Chips 2026: CUDA Targets RISC-V – By Chester Lam",
+    "url": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc",
+    "source": "chipsandcheese.com",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from chipsandcheese.com. Hacker News score 80, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49422548",
+    "fetched_at": "2026-08-25T02:34:07Z",
+    "title_zh": "Hot Chips 2026 ： CUDA瞄准RISC-V – Chester Lam"
+  },
+  {
+    "title": "LLMs could control their host machines by exploiting inference engines",
+    "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
+    "source": "boydkane.com",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from boydkane.com. Hacker News score 97, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49424387",
+    "fetched_at": "2026-08-25T02:34:05Z",
+    "title_zh": "LLM可以通过利用推理引擎来控制其主机"
+  },
+  {
+    "title": "Vintage Artificial Intelligence: Before It Got Awkward",
+    "url": "https://blog.archive.org/2026/08/16/vintage-artificial-intelligence-before-it-got-awkward/",
+    "source": "blog.archive.org",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.archive.org. Hacker News score 56, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49425800",
+    "fetched_at": "2026-08-25T02:34:03Z",
+    "title_zh": "复古人工智能：在它变得尴尬之前"
+  },
+  {
+    "title": "Bookshelf – Self-hosted eBook library that runs on object storage",
+    "url": "https://github.com/murerkinn/bookshelf",
+    "source": "github.com",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 37, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49427001",
+    "fetched_at": "2026-08-25T02:34:01Z",
+    "title_zh": "Bookshelf –在对象存储上运行的自托管电子书库"
+  },
+  {
+    "title": "The entire city of San Francisco as a video game",
+    "url": "https://sf.thijs.gg/",
+    "source": "sf.thijs.gg",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from sf.thijs.gg. Hacker News score 359, 122 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49422784",
+    "fetched_at": "2026-08-25T02:33:59Z",
+    "title_zh": "旧金山全城视频游戏体验"
+  },
+  {
     "title": "I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day",
     "url": "https://ericpardee.github.io/fire-hd-ownership/",
     "source": "ericpardee.github.io",
