@@ -1,5 +1,115 @@
 [
   {
+    "title": "Warnock: Harnessing GPU geometry amplification for vector graphics",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3820012",
+    "source": "dl.acm.org",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from dl.acm.org. Hacker News score 38, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49435781",
+    "fetched_at": "2026-08-26T02:41:52Z",
+    "title_zh": "Warnock：利用 GPU 几何放大进行矢量图形"
+  },
+  {
+    "title": "Show HN: Lightweight system monitor for Linux VPS written in Go",
+    "url": "https://github.com/leodeim/vpsmon",
+    "source": "github.com",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 48, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49437361",
+    "fetched_at": "2026-08-26T02:41:50Z",
+    "title_zh": "Show HN：用 Go 编写的 Linux VPS 轻量级系统监视器"
+  },
+  {
+    "title": "One Go binary, one YAML file, one SQLite database: I wrote my monitoring tool",
+    "url": "https://rvier.fr/posts/why-i-wrote-my-own-monitoring-tool-EN",
+    "source": "rvier.fr",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from rvier.fr. Hacker News score 24, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49441101",
+    "fetched_at": "2026-08-26T02:41:49Z",
+    "title_zh": "一个 Go 二进制文件、一个 YAML 文件、一个 SQLite 数据库：我编写了我的监控工具"
+  },
+  {
+    "title": "Show HN: I made a Raspberry with Qwen my local car AI",
+    "url": "https://github.com/ThinkOffApp/CarWatch",
+    "source": "github.com",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 110, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49435675",
+    "fetched_at": "2026-08-26T02:41:48Z",
+    "title_zh": "Show HN：我用我本地的汽车 AI Qwen 制作了一个 Raspberry"
+  },
+  {
+    "title": "Nitter and XCancel receive cease and desist notices",
+    "url": "https://github.com/zedeus/nitter/issues/1442",
+    "source": "github.com",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 673, 578 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49437283",
+    "fetched_at": "2026-08-26T02:41:47Z",
+    "title_zh": "Nitter 和 XCancel 收到停止通知"
+  },
+  {
+    "title": "Show HN: LatticeDB – Like SQLite but for graph databases",
+    "url": "https://github.com/jeffhajewski/latticedb",
+    "source": "github.com",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 117, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49437049",
+    "fetched_at": "2026-08-26T02:41:47Z",
+    "title_zh": "Show HN：LatticeDB – 类似于 SQLite，但用于图形数据库"
+  },
+  {
+    "title": "When str.lower() is a security vulnerability in Python – Seth Larson",
+    "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+    "source": "sethmlarson.dev",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from sethmlarson.dev. Hacker News score 71, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49440410",
+    "fetched_at": "2026-08-26T02:41:46Z",
+    "title_zh": "当 str.lower() 是 Python 中的安全漏洞时 – Seth Larson"
+  },
+  {
+    "title": "Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others",
+    "url": "https://github.com/runetes/maiao",
+    "source": "github.com",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 31, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49441666",
+    "fetched_at": "2026-08-26T02:41:46Z",
+    "title_zh": "Maiao：适用于 GitHub、GitLab、Gitea 等的 Gerrit 风格代码审查工作流程"
+  },
+  {
+    "title": "Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
+    "url": "https://github.com/swimmingbrain/texbrain",
+    "source": "github.com",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 52, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49441375",
+    "fetched_at": "2026-08-26T02:41:46Z",
+    "title_zh": "Show HN：TeXbrain，一个通过 WASM 在浏览器中运行 pdfTeX 的 LaTeX 编辑器"
+  },
+  {
+    "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+    "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+    "source": "newsletter.semianalysis.com",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from newsletter.semianalysis.com. Hacker News score 350, 242 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49434378",
+    "fetched_at": "2026-08-26T02:41:45Z",
+    "title_zh": "OpenAI Jalapeo：比 Nvidia Blackwell 更好"
+  },
+  {
     "title": "What languages are agent skills written in?",
     "url": "https://plicara.ai/research/agent-skill-languages/",
     "source": "plicara.ai",
