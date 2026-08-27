@@ -1,5 +1,115 @@
 [
   {
+    "title": "Getting video models to learn better, faster",
+    "url": "https://www.linum.ai/field-notes/data-filtering-gen-video",
+    "source": "linum.ai",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from linum.ai. Hacker News score 30, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49458502",
+    "fetched_at": "2026-08-27T11:37:13Z",
+    "title_zh": "让视频模型更好、更快地学习"
+  },
+  {
+    "title": "Laion Big Video Dataset",
+    "url": "https://projects.laion.ai/bvd/",
+    "source": "projects.laion.ai",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from projects.laion.ai. Hacker News score 67, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49458478",
+    "fetched_at": "2026-08-27T11:37:01Z",
+    "title_zh": "Laion大型视频数据集"
+  },
+  {
+    "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
+    "url": "https://github.com/SenteLabsAI/OpenExecutive",
+    "source": "github.com",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 670, 438 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49458418",
+    "fetched_at": "2026-08-27T11:36:59Z",
+    "title_zh": "首席执行官解雇了开发人员，为人工智能腾出空间。开发人员创建开源AI首席执行官"
+  },
+  {
+    "title": "It’s so hard to finish an idea that is not yours and is just suggested by AI",
+    "url": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+    "source": "ssp.sh",
+    "date": "2026-08-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from ssp.sh. Hacker News score 229, 140 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49450898",
+    "fetched_at": "2026-08-27T11:37:11Z",
+    "title_zh": "很难完成一个不是你的创意，只是由人工智能建议的创意"
+  },
+  {
+    "title": "Actinide is first startup to produce high-assay low-enriched uranium (HALEU)",
+    "url": "https://www.actinideinc.com/press/actinide-becomes-first-startup-to-ever-enrich-natural-uranium-to-produce-haleu",
+    "source": "actinideinc.com",
+    "date": "2026-08-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from actinideinc.com. Hacker News score 163, 81 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49454419",
+    "fetched_at": "2026-08-27T11:37:09Z",
+    "title_zh": "Actinide是第一家生产高含量低浓缩铀（ HALEU ）的初创公司"
+  },
+  {
+    "title": "Serve Markdown to AI Agents with Accept Headers",
+    "url": "https://acceptmarkdown.com/",
+    "source": "acceptmarkdown.com",
+    "date": "2026-08-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from acceptmarkdown.com. Hacker News score 149, 87 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49454764",
+    "fetched_at": "2026-08-27T11:37:07Z",
+    "title_zh": "使用Accept Headers为AI代理提供Markdown"
+  },
+  {
+    "title": "The turbulent AI era is here",
+    "url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+    "source": "gatesnotes.com",
+    "date": "2026-08-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from gatesnotes.com. Hacker News score 274, 261 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49451313",
+    "fetched_at": "2026-08-27T11:37:04Z",
+    "title_zh": "动荡的人工智能时代已经到来"
+  },
+  {
+    "title": "The Hugging Face incident and the road ahead",
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "source": "openai.com",
+    "date": "2026-08-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 267, 353 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49454314",
+    "fetched_at": "2026-08-27T11:37:02Z",
+    "title_zh": "拥抱面孔事件和前方的道路"
+  },
+  {
+    "title": "Asahi Linux Progress Report: Linux 7.2",
+    "url": "https://asahilinux.org/2026/08/progress-report-7-2/",
+    "source": "asahilinux.org",
+    "date": "2026-08-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from asahilinux.org. Hacker News score 303, 130 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49456851",
+    "fetched_at": "2026-08-27T11:36:57Z",
+    "title_zh": "Asahi Linux进度报告： Linux 7.2"
+  },
+  {
+    "title": "Tailcat – Like netcat, but over Tailscale’s data plane",
+    "url": "https://github.com/tailscale/tailcat",
+    "source": "github.com",
+    "date": "2026-08-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 590, 106 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49452990",
+    "fetched_at": "2026-08-27T11:36:55Z",
+    "title_zh": "Tailcat –像netcat一样，但在Tailscale的数据平面上"
+  },
+  {
     "title": "Warnock: Harnessing GPU geometry amplification for vector graphics",
     "url": "https://dl.acm.org/doi/pdf/10.1145/3820012",
     "source": "dl.acm.org",
