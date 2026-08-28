@@ -1,5 +1,104 @@
 [
   {
+    "title": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
+    "url": "https://www.terminal-bench-science.ai/announcement",
+    "source": "terminal-bench-science.ai",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from terminal-bench-science.ai. Hacker News score 104, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49472820",
+    "fetched_at": "2026-08-28T13:01:48Z",
+    "title_zh": "Terminal-Bench-Science ：在科研工作流程中评估人工智能代理"
+  },
+  {
+    "title": "Luanti removed from Google Play due to baseless AI copyright notice",
+    "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
+    "source": "blog.luanti.org",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.luanti.org. Hacker News score 80, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49475079",
+    "fetched_at": "2026-08-28T13:01:40Z",
+    "title_zh": "由于毫无根据的人工智能版权声明， Luanti已从Google Play中删除"
+  },
+  {
+    "title": "Pentagon's blacklisting of Anthropic was unlawful, US judge rules",
+    "url": "https://www.reuters.com/legal/government/us-judge-blocks-pentagons-anthropic-blacklisting-2026-08-28/",
+    "source": "reuters.com",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from reuters.com. Hacker News score 82, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49477055",
+    "fetched_at": "2026-08-28T13:01:36Z",
+    "title_zh": "五角大楼将人类列入黑名单是非法的，美国法官裁定"
+  },
+  {
+    "title": "OpenAI: Migrating to HTTPX2",
+    "url": "https://github.com/openai/openai-python/blob/main/httpx2.md",
+    "source": "github.com",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 35, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49477212",
+    "fetched_at": "2026-08-28T13:01:35Z",
+    "title_zh": "OpenAI ：迁移到HTTPX2"
+  },
+  {
+    "title": "Show HN: We built open OpenRouter that turns usage into a better model",
+    "url": "https://github.com/experientiallabs/experiential",
+    "source": "github.com",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 196, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49471407",
+    "fetched_at": "2026-08-28T13:01:50Z",
+    "title_zh": "Show HN ：我们构建了开放的OpenRouter ，将使用转化为更好的模型"
+  },
+  {
+    "title": "Show HN: The load-bearing vocabulary of Claude",
+    "url": "https://louisabraham.github.io/load-bearing/",
+    "source": "louisabraham.github.io",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from louisabraham.github.io. Hacker News score 587, 285 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49461817",
+    "fetched_at": "2026-08-28T13:01:47Z",
+    "title_zh": "Show HN ： Claude的承重词汇"
+  },
+  {
+    "title": "Show HN: OpenTIE and OpenXWA, Modern Ports of Tie Fighter and X-Wing Alliance",
+    "url": "https://github.com/elyosh/OpenTIE/",
+    "source": "github.com",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 189, 47 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49471965",
+    "fetched_at": "2026-08-28T13:01:44Z",
+    "title_zh": "展示HN ： OpenTIE和OpenXWA ，现代TIE Fighter和X-Wing联盟的端口"
+  },
+  {
+    "title": "Small Models Have Arrived",
+    "url": "https://calv.info/small-models-have-arrived",
+    "source": "calv.info",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from calv.info. Hacker News score 703, 308 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49466917",
+    "fetched_at": "2026-08-28T13:01:42Z",
+    "title_zh": "小模特儿来了"
+  },
+  {
+    "title": "Saving 100 terabytes of memory by optimizing 1.1.1.1's DNS cache",
+    "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 815, 242 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49468083",
+    "fetched_at": "2026-08-28T13:01:38Z",
+    "title_zh": "通过优化1.1.1.1的DNS缓存节省100 TB的内存"
+  },
+  {
     "title": "Getting video models to learn better, faster",
     "url": "https://www.linum.ai/field-notes/data-filtering-gen-video",
     "source": "linum.ai",
@@ -33,6 +132,17 @@
     "title_zh": "首席执行官解雇了开发人员，为人工智能腾出空间。开发人员创建开源AI首席执行官"
   },
   {
+    "title": "The turbulent AI era is here",
+    "url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+    "source": "gatesnotes.com",
+    "date": "2026-08-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from gatesnotes.com. Hacker News score 329, 580 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49447057",
+    "fetched_at": "2026-08-28T13:01:53Z",
+    "title_zh": "动荡的人工智能时代已经到来"
+  },
+  {
     "title": "It’s so hard to finish an idea that is not yours and is just suggested by AI",
     "url": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
     "source": "ssp.sh",
@@ -64,17 +174,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49454764",
     "fetched_at": "2026-08-27T11:37:07Z",
     "title_zh": "使用Accept Headers为AI代理提供Markdown"
-  },
-  {
-    "title": "The turbulent AI era is here",
-    "url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
-    "source": "gatesnotes.com",
-    "date": "2026-08-26",
-    "repost": true,
-    "summary": "转载 / Curated repost from gatesnotes.com. Hacker News score 274, 261 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49451313",
-    "fetched_at": "2026-08-27T11:37:04Z",
-    "title_zh": "动荡的人工智能时代已经到来"
   },
   {
     "title": "The Hugging Face incident and the road ahead",
