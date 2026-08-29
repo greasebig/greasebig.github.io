@@ -1,5 +1,115 @@
 [
   {
+    "title": "Kumander Linux – A Linux Distro with a Windows 7 Desktop",
+    "url": "https://www.kumander.org/",
+    "source": "kumander.org",
+    "date": "2026-08-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from kumander.org. Hacker News score 41, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49486176",
+    "fetched_at": "2026-08-29T07:57:49Z",
+    "title_zh": "Kumander Linux –带有Windows 7桌面的Linux发行版"
+  },
+  {
+    "title": "Our decision on Cursor following its acquisition by SpaceX",
+    "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+    "source": "openai.com",
+    "date": "2026-08-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 458, 232 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49486172",
+    "fetched_at": "2026-08-29T07:57:47Z",
+    "title_zh": "在被SpaceX收购后，我们对Cursor的决定"
+  },
+  {
+    "title": "StemDeck, a free, open-source and local AI stem separator",
+    "url": "https://github.com/stemdeckapp/stemdeck",
+    "source": "github.com",
+    "date": "2026-08-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 80, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49486081",
+    "fetched_at": "2026-08-29T07:57:45Z",
+    "title_zh": "StemDeck ，一个免费、开源和本地的AI STEM分离器"
+  },
+  {
+    "title": "e is a customizable self-aware Emacs-like editor written in Chez Scheme",
+    "url": "https://github.com/paveluv/e",
+    "source": "github.com",
+    "date": "2026-08-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 10, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49487506",
+    "fetched_at": "2026-08-29T07:57:42Z",
+    "title_zh": "e是一个用Chez Scheme编写的可定制自我感知的类似Emacs的编辑器"
+  },
+  {
+    "title": "TurboKV: Insanely fast Rust key-value store",
+    "url": "https://github.com/kingroryg/turbokv",
+    "source": "github.com",
+    "date": "2026-08-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 78, 29 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49486334",
+    "fetched_at": "2026-08-29T07:57:40Z",
+    "title_zh": "TurboKV ：超快的Rust键值存储"
+  },
+  {
+    "title": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
+    "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+    "source": "nytimes.com",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from nytimes.com. Hacker News score 570, 413 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49473522",
+    "fetched_at": "2026-08-29T07:57:56Z",
+    "title_zh": "法官裁定特朗普政府将Anthropic列入黑名单是非法的"
+  },
+  {
+    "title": "Identifying fake cosmetics using AI",
+    "url": "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html",
+    "source": "groverlab.org",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from groverlab.org. Hacker News score 51, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49484925",
+    "fetched_at": "2026-08-29T07:57:54Z",
+    "title_zh": "使用人工智能识别假冒化妆品"
+  },
+  {
+    "title": "Migrating to HTTPX2",
+    "url": "https://github.com/openai/openai-python/blob/main/httpx2.md",
+    "source": "github.com",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 193, 82 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49477212",
+    "fetched_at": "2026-08-29T07:57:52Z",
+    "title_zh": "迁移到HTTPX2"
+  },
+  {
+    "title": "I accidentally turned LLM memory into program analysis",
+    "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+    "source": "pwning.systems",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from pwning.systems. Hacker News score 112, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49485416",
+    "fetched_at": "2026-08-29T07:57:43Z",
+    "title_zh": "我不小心将LLM内存转换为程序分析"
+  },
+  {
+    "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
+    "url": "https://github.com/Lakr233/vphone-cli",
+    "source": "github.com",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 237, 69 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49485267",
+    "fetched_at": "2026-08-29T07:57:38Z",
+    "title_zh": "通过Apple的Virtualization.framework启动虚拟iPhone"
+  },
+  {
     "title": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
     "url": "https://www.terminal-bench-science.ai/announcement",
     "source": "terminal-bench-science.ai",
@@ -31,17 +141,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49477055",
     "fetched_at": "2026-08-28T13:01:36Z",
     "title_zh": "五角大楼将人类列入黑名单是非法的，美国法官裁定"
-  },
-  {
-    "title": "OpenAI: Migrating to HTTPX2",
-    "url": "https://github.com/openai/openai-python/blob/main/httpx2.md",
-    "source": "github.com",
-    "date": "2026-08-28",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 35, 15 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49477212",
-    "fetched_at": "2026-08-28T13:01:35Z",
-    "title_zh": "OpenAI ：迁移到HTTPX2"
   },
   {
     "title": "Show HN: We built open OpenRouter that turns usage into a better model",
