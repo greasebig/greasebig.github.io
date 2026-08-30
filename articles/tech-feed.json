@@ -1,5 +1,49 @@
 [
   {
+    "title": "Open Oscar Server: open-source server compatible with AIM and ICQ clients",
+    "url": "https://github.com/mk6i/open-oscar-server",
+    "source": "github.com",
+    "date": "2026-08-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 24, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49494571",
+    "fetched_at": "2026-08-30T06:53:56Z",
+    "title_zh": "Open Oscar Server：兼容AIM和ICQ客户端的开源服务器"
+  },
+  {
+    "title": "California lawmakers unanimously pass Linux exemption from age-verification law",
+    "url": "https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt",
+    "source": "tomshardware.com",
+    "date": "2026-08-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from tomshardware.com. Hacker News score 120, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49495372",
+    "fetched_at": "2026-08-30T06:53:54Z",
+    "title_zh": "加州立法者一致通过 Linux 年龄验证法豁免"
+  },
+  {
+    "title": "The Rise and Fall of Agent Civilizations",
+    "url": "https://www.dwarkesh.com/p/openai-huggingface",
+    "source": "dwarkesh.com",
+    "date": "2026-08-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from dwarkesh.com. Hacker News score 48, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49494301",
+    "fetched_at": "2026-08-30T06:53:55Z",
+    "title_zh": "特工文明的兴衰"
+  },
+  {
+    "title": "Functional State Machines in Rust: Typestate and Newtype Patterns",
+    "url": "https://dl.acm.org/doi/10.1145/3830438.3830958",
+    "source": "dl.acm.org",
+    "date": "2026-08-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from dl.acm.org. Hacker News score 77, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49492368",
+    "fetched_at": "2026-08-30T06:53:55Z",
+    "title_zh": "Rust 中的函数状态机：Typestate 和 Newtype 模式"
+  },
+  {
     "title": "Kumander Linux – A Linux Distro with a Windows 7 Desktop",
     "url": "https://www.kumander.org/",
     "source": "kumander.org",
@@ -143,6 +187,17 @@
     "title_zh": "五角大楼将人类列入黑名单是非法的，美国法官裁定"
   },
   {
+    "title": "Benchmarking Pocket-Scale Inference",
+    "url": "https://artificialanalysis.ai/hardware-inference-stack/mobile-phones",
+    "source": "artificialanalysis.ai",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from artificialanalysis.ai. Hacker News score 31, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49469786",
+    "fetched_at": "2026-08-30T06:53:54Z",
+    "title_zh": "袖珍推理基准测试"
+  },
+  {
     "title": "Show HN: We built open OpenRouter that turns usage into a better model",
     "url": "https://github.com/experientiallabs/experiential",
     "source": "github.com",
@@ -231,6 +286,17 @@
     "title_zh": "首席执行官解雇了开发人员，为人工智能腾出空间。开发人员创建开源AI首席执行官"
   },
   {
+    "title": "Is it safe to call print in a Python signal handler?",
+    "url": "https://iafisher.com/2026/08/sigprint",
+    "source": "iafisher.com",
+    "date": "2026-08-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from iafisher.com. Hacker News score 37, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49450248",
+    "fetched_at": "2026-08-30T06:53:55Z",
+    "title_zh": "在 Python 信号处理程序中调用 print 是否安全？"
+  },
+  {
     "title": "The turbulent AI era is here",
     "url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
     "source": "gatesnotes.com",
@@ -306,6 +372,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49452990",
     "fetched_at": "2026-08-27T11:36:55Z",
     "title_zh": "Tailcat –像netcat一样，但在Tailscale的数据平面上"
+  },
+  {
+    "title": "EVE Online moves to Python 3",
+    "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
+    "source": "eveonline.com",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from eveonline.com. Hacker News score 333, 183 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49433328",
+    "fetched_at": "2026-08-30T06:53:55Z",
+    "title_zh": "EVE Online 迁移到 Python 3"
+  },
+  {
+    "title": "Creating Teensy ELF Executables for Linux (Or, \"Size Is Everything\")",
+    "url": "https://www.muppetlabs.com/~breadbox/software/tiny/teensy.html",
+    "source": "muppetlabs.com",
+    "date": "2026-08-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from muppetlabs.com. Hacker News score 31, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49433554",
+    "fetched_at": "2026-08-30T06:53:54Z",
+    "title_zh": "为 Linux 创建 Teensy ELF 可执行文件（或者“大小就是一切”）"
   },
   {
     "title": "Warnock: Harnessing GPU geometry amplification for vector graphics",
@@ -427,6 +515,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49427825",
     "fetched_at": "2026-08-25T02:34:15Z",
     "title_zh": "客服代表的技能是用什么语言书写的？"
+  },
+  {
+    "title": "SQLite as a Document Database (2020)",
+    "url": "https://dgl.cx/2020/06/sqlite-json-support",
+    "source": "dgl.cx",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from dgl.cx. Hacker News score 195, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49426995",
+    "fetched_at": "2026-08-30T06:53:55Z",
+    "title_zh": "SQLite 作为文档数据库 (2020)"
+  },
+  {
+    "title": "Tether: iMessage, SMS, etc. on Linux",
+    "url": "https://zackbartel.com/blog/2026/08/tether/",
+    "source": "zackbartel.com",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from zackbartel.com. Hacker News score 429, 168 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49415386",
+    "fetched_at": "2026-08-30T06:53:54Z",
+    "title_zh": "Tether：Linux 上的 iMessage、SMS 等"
   },
   {
     "title": "Show HN: GlassBox – what the browser reveals, and how identifiable you are",
