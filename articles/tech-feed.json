@@ -1,5 +1,71 @@
 [
   {
+    "title": "Show HN: Prove your code produced your claims without making reviewers rerun it",
+    "url": "https://github.com/27-GROUP/kveritas-go/",
+    "source": "github.com",
+    "date": "2026-08-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 9, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49505043",
+    "fetched_at": "2026-08-31T07:08:51Z",
+    "title_zh": "显示HN ：证明您的代码产生了您的声明，而无需让审阅者重新运行它"
+  },
+  {
+    "title": "California lawmakers unanimously pass Linux exemption from age-verification law",
+    "url": "https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt",
+    "source": "tomshardware.com",
+    "date": "2026-08-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from tomshardware.com. Hacker News score 736, 356 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49495372",
+    "fetched_at": "2026-08-31T07:08:54Z",
+    "title_zh": "加利福尼亚州立法者一致通过Linux免除年龄验证法"
+  },
+  {
+    "title": "Startup Anti-Patterns",
+    "url": "https://www.itamarnovick.com/intro-to-startup-anti-pattern-series/",
+    "source": "itamarnovick.com",
+    "date": "2026-08-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from itamarnovick.com. Hacker News score 142, 72 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49499831",
+    "fetched_at": "2026-08-31T07:08:49Z",
+    "title_zh": "启动反模式"
+  },
+  {
+    "title": "Why open source rocks – a new SM750 (Silicon Motion GPU) HDMI Driver",
+    "url": "https://github.com/KodeMunkie/sm750hdmifb",
+    "source": "github.com",
+    "date": "2026-08-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 98, 35 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49501611",
+    "fetched_at": "2026-08-31T07:08:47Z",
+    "title_zh": "为何选择开源ROCKS –全新SM750 （ Silicon Motion GPU ） HDMI驱动程序"
+  },
+  {
+    "title": "Continuous Diffusion Language Models (CDLM's)",
+    "url": "https://sander.ai/2026/08/24/continuous-dlms.html",
+    "source": "sander.ai",
+    "date": "2026-08-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from sander.ai. Hacker News score 83, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49502611",
+    "fetched_at": "2026-08-31T07:08:45Z",
+    "title_zh": "连续扩散语言模型（ CDLM ）"
+  },
+  {
+    "title": "How to build a diffusion language model",
+    "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/",
+    "source": "kuleshov-group.github.io",
+    "date": "2026-08-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from kuleshov-group.github.io. Hacker News score 58, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49503956",
+    "fetched_at": "2026-08-31T07:08:43Z",
+    "title_zh": "如何构建扩散语言模型"
+  },
+  {
     "title": "Open Oscar Server: open-source server compatible with AIM and ICQ clients",
     "url": "https://github.com/mk6i/open-oscar-server",
     "source": "github.com",
@@ -11,25 +77,14 @@
     "title_zh": "Open Oscar Server：兼容AIM和ICQ客户端的开源服务器"
   },
   {
-    "title": "California lawmakers unanimously pass Linux exemption from age-verification law",
-    "url": "https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt",
-    "source": "tomshardware.com",
-    "date": "2026-08-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from tomshardware.com. Hacker News score 120, 19 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49495372",
-    "fetched_at": "2026-08-30T06:53:54Z",
-    "title_zh": "加州立法者一致通过 Linux 年龄验证法豁免"
-  },
-  {
     "title": "The Rise and Fall of Agent Civilizations",
     "url": "https://www.dwarkesh.com/p/openai-huggingface",
     "source": "dwarkesh.com",
     "date": "2026-08-29",
     "repost": true,
-    "summary": "转载 / Curated repost from dwarkesh.com. Hacker News score 48, 6 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from dwarkesh.com. Hacker News score 235, 146 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=49494301",
-    "fetched_at": "2026-08-30T06:53:55Z",
+    "fetched_at": "2026-08-31T07:08:56Z",
     "title_zh": "特工文明的兴衰"
   },
   {
@@ -97,6 +152,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49486334",
     "fetched_at": "2026-08-29T07:57:40Z",
     "title_zh": "TurboKV ：超快的Rust键值存储"
+  },
+  {
+    "title": "It takes 5 cloud services to hear my doorbell",
+    "url": "https://blog.vghaisas.com/rube-goldberg-doorbell/",
+    "source": "blog.vghaisas.com",
+    "date": "2026-08-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.vghaisas.com. Hacker News score 112, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49480091",
+    "fetched_at": "2026-08-31T07:08:41Z",
+    "title_zh": "需要5个云服务才能听到我的门铃声"
   },
   {
     "title": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
@@ -185,6 +251,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49477055",
     "fetched_at": "2026-08-28T13:01:36Z",
     "title_zh": "五角大楼将人类列入黑名单是非法的，美国法官裁定"
+  },
+  {
+    "title": "Casey Muratori – The Root of the Root of All Evil – BSC 2026 [video]",
+    "url": "https://www.youtube.com/watch?v=hpj6r6CjJf8",
+    "source": "youtube.com",
+    "date": "2026-08-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 306, 185 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49463888",
+    "fetched_at": "2026-08-31T07:08:58Z",
+    "title_zh": "Casey Muratori –万恶之根– BSC 2026 [视频]"
   },
   {
     "title": "Benchmarking Pocket-Scale Inference",
@@ -515,6 +592,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49427825",
     "fetched_at": "2026-08-25T02:34:15Z",
     "title_zh": "客服代表的技能是用什么语言书写的？"
+  },
+  {
+    "title": "What my dad taught me about AI coding in the 90s",
+    "url": "https://askmike.org/articles/ai-coding-lessons-in-the-90s-from-my-dad/",
+    "source": "askmike.org",
+    "date": "2026-08-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from askmike.org. Hacker News score 137, 77 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49419381",
+    "fetched_at": "2026-08-31T07:08:59Z",
+    "title_zh": "我父亲在90年代教会了我关于人工智能编码的知识"
   },
   {
     "title": "SQLite as a Document Database (2020)",
