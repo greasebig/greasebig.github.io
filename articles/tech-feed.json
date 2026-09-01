@@ -1,5 +1,93 @@
 [
   {
+    "title": "RotaryCell: Making an unmodified rotary phone work over LTE with an ESP32-S3",
+    "url": "https://github.com/fregacmols/RotaryCell",
+    "source": "github.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 27, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49517297",
+    "fetched_at": "2026-09-01T06:21:19Z",
+    "title_zh": "RotaryCell：使用 ESP32-S3 让未经修改的旋转电话通过 LTE 工作"
+  },
+  {
+    "title": "DoltLite: A SQLite fork with Git-style version control, built with 2k agent PRs",
+    "url": "https://www.dolthub.com/blog/2026-08-31-doltlite-beta/",
+    "source": "dolthub.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from dolthub.com. Hacker News score 25, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49516848",
+    "fetched_at": "2026-09-01T06:21:19Z",
+    "title_zh": "DoltLite：具有 Git 风格版本控制的 SQLite 分支，使用 2k 代理 PR 构建"
+  },
+  {
+    "title": "Vermell – Minimal, dependency-free C++ web framework using epoll",
+    "url": "https://github.com/vermellcc/vermell",
+    "source": "github.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 13, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49518121",
+    "fetched_at": "2026-09-01T06:21:18Z",
+    "title_zh": "Vermell – 使用 epoll 的最小、无依赖的 C++ Web 框架"
+  },
+  {
+    "title": "GPU World",
+    "url": "https://www.gpuworld.org/",
+    "source": "gpuworld.org",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from gpuworld.org. Hacker News score 80, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49517584",
+    "fetched_at": "2026-09-01T06:21:16Z",
+    "title_zh": "GPU世界"
+  },
+  {
+    "title": "AI Can Make You Suck Faster Too",
+    "url": "https://www.hermit-tech.com/blog/ai-can-make-you-suck-faster-too",
+    "source": "hermit-tech.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from hermit-tech.com. Hacker News score 13, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49518316",
+    "fetched_at": "2026-09-01T06:21:16Z",
+    "title_zh": "人工智能也能让你吸得更快"
+  },
+  {
+    "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+    "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+    "source": "macrumors.com",
+    "date": "2026-08-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from macrumors.com. Hacker News score 377, 418 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49508982",
+    "fetched_at": "2026-09-01T06:21:18Z",
+    "title_zh": "Mac Mini 和 Mac Studio 的人工智能需求让苹果措手不及"
+  },
+  {
+    "title": "I turned my security cameras into an automatic bird identification system",
+    "url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/",
+    "source": "jasontucker.blog",
+    "date": "2026-08-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from jasontucker.blog. Hacker News score 443, 105 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49511856",
+    "fetched_at": "2026-09-01T06:21:17Z",
+    "title_zh": "我把我的安全摄像头变成了自动鸟类识别系统"
+  },
+  {
+    "title": "A walkable ASCII cyberpunk city in one HTML file [video]",
+    "url": "https://www.youtube.com/watch?v=3YtygAx_C6A",
+    "source": "youtube.com",
+    "date": "2026-08-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 292, 35 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49512975",
+    "fetched_at": "2026-09-01T06:21:17Z",
+    "title_zh": "一个 HTML 文件中的可步行 ASCII 赛博朋克城市 [视频]"
+  },
+  {
     "title": "Show HN: Prove your code produced your claims without making reviewers rerun it",
     "url": "https://github.com/27-GROUP/kveritas-go/",
     "source": "github.com",
@@ -9,6 +97,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49505043",
     "fetched_at": "2026-08-31T07:08:51Z",
     "title_zh": "显示HN ：证明您的代码产生了您的声明，而无需让审阅者重新运行它"
+  },
+  {
+    "title": "Smartphone LED detects hidden cameras with AI",
+    "url": "https://www.chosun.com/english/industry-en/2026/08/30/SBFXUIJQYZEARKP5T4FBAY25HQ/",
+    "source": "chosun.com",
+    "date": "2026-08-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from chosun.com. Hacker News score 191, 54 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49496292",
+    "fetched_at": "2026-09-01T06:21:19Z",
+    "title_zh": "智能手机 LED 通过 AI 检测隐藏摄像头"
+  },
+  {
+    "title": "Terence Tao explains 6 essential mathematical concepts [video]",
+    "url": "https://www.youtube.com/watch?v=OOMx2BHHWtE",
+    "source": "youtube.com",
+    "date": "2026-08-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 347, 41 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49503521",
+    "fetched_at": "2026-09-01T06:21:17Z",
+    "title_zh": "陶哲轩解释 6 个基本数学概念 [视频]"
   },
   {
     "title": "California lawmakers unanimously pass Linux exemption from age-verification law",
