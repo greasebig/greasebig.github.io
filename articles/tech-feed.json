@@ -1,5 +1,115 @@
 [
   {
+    "title": "AnkiDroid: Google Play no longer allowing Open Collective donation link",
+    "url": "https://github.com/ankidroid/Anki-Android/issues/21656",
+    "source": "github.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 864, 255 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49520022",
+    "fetched_at": "2026-09-02T06:00:51Z",
+    "title_zh": "AnkiDroid：Google Play 不再允许 Open Collective 捐赠链接"
+  },
+  {
+    "title": "Improving our alignment and security efforts",
+    "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+    "source": "anthropic.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 21, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49529567",
+    "fetched_at": "2026-09-02T06:00:51Z",
+    "title_zh": "改进我们的协调和安全工作"
+  },
+  {
+    "title": "Atlas: A World Model for Spatial Intelligence",
+    "url": "https://www.worldlabs.ai/blog/atlas",
+    "source": "worldlabs.ai",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from worldlabs.ai. Hacker News score 191, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49525160",
+    "fetched_at": "2026-09-02T06:00:50Z",
+    "title_zh": "Atlas：空间智能的世界模型"
+  },
+  {
+    "title": "Launch HN: Nori Robotics (YC S26) – A low-cost humanoid robot for development",
+    "url": "https://www.norirobotics.com/",
+    "source": "norirobotics.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from norirobotics.com. Hacker News score 128, 43 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49525153",
+    "fetched_at": "2026-09-02T06:00:49Z",
+    "title_zh": "推出 HN：Nori Robotics (YC S26) – 一款用于开发的低成本人形机器人"
+  },
+  {
+    "title": "Show HN: Running 104GB Qwen3.8-Flash-Next on 48GB Mac with at ~12 tok/s",
+    "url": "https://github.com/carloslfu/slotstream",
+    "source": "github.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 187, 92 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49524447",
+    "fetched_at": "2026-09-02T06:00:49Z",
+    "title_zh": "Show HN：在 48GB Mac 上运行 104GB Qwen3.8-Flash-Next，速度约为 12 tok/s"
+  },
+  {
+    "title": "Path to Astra: critical capabilities and frontier safeguards",
+    "url": "https://openai.com/index/path-to-astra/",
+    "source": "openai.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 117, 52 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49527595",
+    "fetched_at": "2026-09-02T06:00:48Z",
+    "title_zh": "通往阿斯特拉之路：关键能力和边境保障"
+  },
+  {
+    "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
+    "url": "https://danluu.com/zitron/",
+    "source": "danluu.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from danluu.com. Hacker News score 580, 657 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49526069",
+    "fetched_at": "2026-09-02T06:00:47Z",
+    "title_zh": "Ed Zitron 的人工智能怀疑论者预测有多准确？"
+  },
+  {
+    "title": "My local model setup on an M4 Pro Mac Mini",
+    "url": "https://lws.io/blog/my-local-model-setup/",
+    "source": "lws.io",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from lws.io. Hacker News score 132, 63 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49529132",
+    "fetched_at": "2026-09-02T06:00:47Z",
+    "title_zh": "我在 M4 Pro Mac Mini 上的本地模型设置"
+  },
+  {
+    "title": "The efficient frontier of LLM inference",
+    "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
+    "source": "baseten.co",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from baseten.co. Hacker News score 84, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49529898",
+    "fetched_at": "2026-09-02T06:00:47Z",
+    "title_zh": "LLM推理的有效前沿"
+  },
+  {
+    "title": "Claude Fable 5.1 and Claude Mythos 5.1",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    "source": "anthropic.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 1084, 1010 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49525378",
+    "fetched_at": "2026-09-02T06:00:46Z",
+    "title_zh": "克劳德寓言5.1和克劳德神话5.1"
+  },
+  {
     "title": "RotaryCell: Making an unmodified rotary phone work over LTE with an ESP32-S3",
     "url": "https://github.com/fregacmols/RotaryCell",
     "source": "github.com",
