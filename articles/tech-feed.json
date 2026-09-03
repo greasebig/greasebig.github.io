@@ -1,5 +1,115 @@
 [
   {
+    "title": "Six curl CVEs after OpenAI and Anthropic came back with zero",
+    "url": "https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero",
+    "source": "aisle.com",
+    "date": "2026-09-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from aisle.com. Hacker News score 163, 54 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49536114",
+    "fetched_at": "2026-09-03T05:59:29Z",
+    "title_zh": "OpenAI 和 Anthropic 归零后的 6 个curl CVE"
+  },
+  {
+    "title": "Async Rust vs RTOS showdown (2022)",
+    "url": "https://tweedegolf.nl/en/blog/65/async-rust-vs-rtos-showdown/",
+    "source": "tweedegolf.nl",
+    "date": "2026-09-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from tweedegolf.nl. Hacker News score 71, 39 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49540415",
+    "fetched_at": "2026-09-03T05:59:28Z",
+    "title_zh": "异步 Rust 与 RTOS 的对决 (2022)"
+  },
+  {
+    "title": "WebLLM: high-performance in-browser LLM inference engine",
+    "url": "https://github.com/mlc-ai/web-llm",
+    "source": "github.com",
+    "date": "2026-09-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 103, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49536411",
+    "fetched_at": "2026-09-03T05:59:28Z",
+    "title_zh": "WebLLM：高性能浏览器内LLM推理引擎"
+  },
+  {
+    "title": "Quasar 438B: Europe's Leading AI Model",
+    "url": "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
+    "source": "multiversecomputing.com",
+    "date": "2026-09-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from multiversecomputing.com. Hacker News score 167, 106 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49534132",
+    "fetched_at": "2026-09-03T05:59:28Z",
+    "title_zh": "Quasar 438B：欧洲领先的人工智能模型"
+  },
+  {
+    "title": "Fable 5.1 World Modeling",
+    "url": "https://github.com/PhiloLabs/fable51-worlds",
+    "source": "github.com",
+    "date": "2026-09-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 192, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49541458",
+    "fetched_at": "2026-09-03T05:59:27Z",
+    "title_zh": "寓言5.1世界建模"
+  },
+  {
+    "title": "Reasons robotics is hard",
+    "url": "https://secondthoughts.ai/p/14-reasons-robotics-is-hard",
+    "source": "secondthoughts.ai",
+    "date": "2026-09-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from secondthoughts.ai. Hacker News score 70, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49543191",
+    "fetched_at": "2026-09-03T05:59:27Z",
+    "title_zh": "机器人技术困难的原因"
+  },
+  {
+    "title": "Google avoids a breakup of its ad tech business",
+    "url": "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html",
+    "source": "nytimes.com",
+    "date": "2026-09-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from nytimes.com. Hacker News score 333, 244 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49537131",
+    "fetched_at": "2026-09-03T05:59:26Z",
+    "title_zh": "谷歌避免拆分其广告技术业务"
+  },
+  {
+    "title": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
+    "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
+    "source": "trellner.com",
+    "date": "2026-09-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from trellner.com. Hacker News score 359, 165 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49536375",
+    "fetched_at": "2026-09-03T05:59:26Z",
+    "title_zh": "三个网站制作了 215,128 个人工智能“最佳软件”页面。困惑引用了他们"
+  },
+  {
+    "title": "Can I opt out of my input or output data being used for training?",
+    "url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training",
+    "source": "help.mistral.ai",
+    "date": "2026-09-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from help.mistral.ai. Hacker News score 411, 176 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49535284",
+    "fetched_at": "2026-09-03T05:59:26Z",
+    "title_zh": "我可以选择不将我的输入或输出数据用于训练吗？"
+  },
+  {
+    "title": "We could save petabytes of cache storage with Zstandard and Pingora",
+    "url": "https://blog.cloudflare.com/cache-transcoding/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 91, 34 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49521909",
+    "fetched_at": "2026-09-03T05:59:28Z",
+    "title_zh": "我们可以使用 Zstandard 和 Pingora 节省 PB 级的缓存存储"
+  },
+  {
     "title": "AnkiDroid: Google Play no longer allowing Open Collective donation link",
     "url": "https://github.com/ankidroid/Anki-Android/issues/21656",
     "source": "github.com",
