@@ -1,5 +1,82 @@
 [
   {
+    "title": "Grep beats LSP? Why coding agents ignore your fancier tools",
+    "url": "https://www.agentconnect.md/blog/grep-beat-lsp-harness/",
+    "source": "agentconnect.md",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from agentconnect.md. Hacker News score 50, 24 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49560260",
+    "fetched_at": "2026-09-04T06:06:54Z",
+    "title_zh": "Grep胜过LSP ？为什么编码代理会忽略您更精致的工具"
+  },
+  {
+    "title": "The asteroid currently hitting front end web development",
+    "url": "https://nolanlawson.com/2026/08/23/the-asteroid-currently-hitting-frontend-web-development/",
+    "source": "nolanlawson.com",
+    "date": "2026-09-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from nolanlawson.com. Hacker News score 124, 132 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49555233",
+    "fetched_at": "2026-09-04T06:07:08Z",
+    "title_zh": "小行星目前正在撞击前端网络开发"
+  },
+  {
+    "title": "Go grandmaster Shin defeats AI KataGo with a two-stone handicap",
+    "url": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
+    "source": "kedglobal.com",
+    "date": "2026-09-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from kedglobal.com. Hacker News score 246, 70 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49544762",
+    "fetched_at": "2026-09-04T06:07:04Z",
+    "title_zh": "晋大师以两块石头击败AI KataGo"
+  },
+  {
+    "title": "K2 Horizon: A connected fleet of six open models",
+    "url": "https://ifm.ai/blog/k2/",
+    "source": "ifm.ai",
+    "date": "2026-09-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from ifm.ai. Hacker News score 280, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49551760",
+    "fetched_at": "2026-09-04T06:07:02Z",
+    "title_zh": "K2 Horizon ：由六个开放式车型组成的互联车队"
+  },
+  {
+    "title": "Which tools do Claude, Codex and Cursor choose? We measured 17k runs to find out",
+    "url": "https://armature.tech/blog/which-tools-coding-agents-install",
+    "source": "armature.tech",
+    "date": "2026-09-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from armature.tech. Hacker News score 160, 56 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49557206",
+    "fetched_at": "2026-09-04T06:07:00Z",
+    "title_zh": "Claude、Codex和Cursor选择了哪些工具？我们测量了17000次跑步来找出"
+  },
+  {
+    "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
+    "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/",
+    "source": "babyloniantwins.com",
+    "date": "2026-09-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from babyloniantwins.com. Hacker News score 245, 69 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49550375",
+    "fetched_at": "2026-09-04T06:06:59Z",
+    "title_zh": "将我的1993年Amiga游戏移植到Godot ， LLM读取68000组件"
+  },
+  {
+    "title": "GPT-6 Astra",
+    "url": "https://openai.com/index/gpt-6-astra/",
+    "source": "openai.com",
+    "date": "2026-09-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 1590, 1358 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49554643",
+    "fetched_at": "2026-09-04T06:06:51Z",
+    "title_zh": "GPT-6 Astra"
+  },
+  {
     "title": "Six curl CVEs after OpenAI and Anthropic came back with zero",
     "url": "https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero",
     "source": "aisle.com",
@@ -97,6 +174,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49535284",
     "fetched_at": "2026-09-03T05:59:26Z",
     "title_zh": "我可以选择不将我的输入或输出数据用于训练吗？"
+  },
+  {
+    "title": "Xanadu was waiting for agents",
+    "url": "https://zed.dev/blog/agentic-xanadu",
+    "source": "zed.dev",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from zed.dev. Hacker News score 106, 43 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49526298",
+    "fetched_at": "2026-09-04T06:07:06Z",
+    "title_zh": "世外桃源在等特工"
+  },
+  {
+    "title": "The largest electric aircraft just flew [video]",
+    "url": "https://www.youtube.com/watch?v=nM86DBOqgPM",
+    "source": "youtube.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 251, 183 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49526453",
+    "fetched_at": "2026-09-04T06:06:55Z",
+    "title_zh": "最大的电动飞机刚刚起飞[视频]"
   },
   {
     "title": "We could save petabytes of cache storage with Zstandard and Pingora",
@@ -273,6 +372,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49518316",
     "fetched_at": "2026-09-01T06:21:16Z",
     "title_zh": "人工智能也能让你吸得更快"
+  },
+  {
+    "title": "How an MIT research project became the Julia programming language",
+    "url": "https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831",
+    "source": "news.mit.edu",
+    "date": "2026-08-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from news.mit.edu. Hacker News score 61, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49507072",
+    "fetched_at": "2026-09-04T06:06:57Z",
+    "title_zh": "麻省理工学院的一个研究项目如何成为Julia编程语言"
   },
   {
     "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
