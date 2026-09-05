@@ -1,5 +1,104 @@
 [
   {
+    "title": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+    "url": "https://github.com/gioblu/NPC-Forge/blob/main/docs/development.md",
+    "source": "github.com",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 108, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49562219",
+    "fetched_at": "2026-09-05T05:56:05Z",
+    "title_zh": "Show HN: TERMy – 不使用法学硕士的快速终端助手"
+  },
+  {
+    "title": "“Next-token predictor” is the wrong mental model for LLMs",
+    "url": "https://gmcgoldr.github.io/2026/09/04/llm-next-token-predictors.html",
+    "source": "gmcgoldr.github.io",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from gmcgoldr.github.io. Hacker News score 99, 229 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49567310",
+    "fetched_at": "2026-09-05T05:56:05Z",
+    "title_zh": "“下一个代币预测器”对于法学硕士来说是错误的思维模式"
+  },
+  {
+    "title": "Fermat's Last Theorem in Lean 4",
+    "url": "https://github.com/anthropics/fermats-last-theorem",
+    "source": "github.com",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 83, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49568697",
+    "fetched_at": "2026-09-05T05:56:04Z",
+    "title_zh": "精益 4 中的费马大定理"
+  },
+  {
+    "title": "An open DNS recursive service for free security and high privacy",
+    "url": "https://quad9.net/",
+    "source": "quad9.net",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from quad9.net. Hacker News score 78, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49569663",
+    "fetched_at": "2026-09-05T05:56:04Z",
+    "title_zh": "开放的 DNS 递归服务，免费、安全、高隐私"
+  },
+  {
+    "title": "The Rust React Compiler is now native in Vite",
+    "url": "https://blog.master.dev/react-now-rusted-all-the-way-out/",
+    "source": "blog.master.dev",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.master.dev. Hacker News score 129, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49567873",
+    "fetched_at": "2026-09-05T05:56:04Z",
+    "title_zh": "Rust React 编译器现已在 Vite 中原生"
+  },
+  {
+    "title": "Can AI design circuit boards yet?",
+    "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+    "source": "eebench.org",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from eebench.org. Hacker News score 218, 134 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49569366",
+    "fetched_at": "2026-09-05T05:56:03Z",
+    "title_zh": "AI还能设计电路板吗？"
+  },
+  {
+    "title": "Portal by Spotify cut my Claude Code token usage by 90%",
+    "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+    "source": "engineering.atspotify.com",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from engineering.atspotify.com. Hacker News score 79, 39 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49571465",
+    "fetched_at": "2026-09-05T05:56:03Z",
+    "title_zh": "Portal by Spotify 将我的 Claude Code 代币使用量减少了 90%"
+  },
+  {
+    "title": "Discovery of a new OpenAI agent message board",
+    "url": "https://collusion.wiki/",
+    "source": "collusion.wiki",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from collusion.wiki. Hacker News score 1597, 1256 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49563355",
+    "fetched_at": "2026-09-05T05:56:02Z",
+    "title_zh": "发现新的 OpenAI 代理留言板"
+  },
+  {
+    "title": "Formalizing Fermat's Last Theorem",
+    "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+    "source": "anthropic.com",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 565, 350 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49568506",
+    "fetched_at": "2026-09-05T05:56:02Z",
+    "title_zh": "形式化费马大定理"
+  },
+  {
     "title": "Grep beats LSP? Why coding agents ignore your fancier tools",
     "url": "https://www.agentconnect.md/blog/grep-beat-lsp-harness/",
     "source": "agentconnect.md",
@@ -174,6 +273,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49535284",
     "fetched_at": "2026-09-03T05:59:26Z",
     "title_zh": "我可以选择不将我的输入或输出数据用于训练吗？"
+  },
+  {
+    "title": "ExactTex. A gradually-typed superset of LaTeX",
+    "url": "https://github.com/camilochs/exacttex",
+    "source": "github.com",
+    "date": "2026-09-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 25, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49521631",
+    "fetched_at": "2026-09-05T05:56:05Z",
+    "title_zh": "精确的特克斯。 LaTeX 的渐进式超集"
   },
   {
     "title": "Xanadu was waiting for agents",
