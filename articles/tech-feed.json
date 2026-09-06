@@ -1,5 +1,104 @@
 [
   {
+    "title": "AI, Tools and Transformation",
+    "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+    "source": "ben-evans.com",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from ben-evans.com. Hacker News score 17, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49582656",
+    "fetched_at": "2026-09-06T06:07:54Z",
+    "title_zh": "人工智能、工具和转型"
+  },
+  {
+    "title": "Cloud in a Bottle: making self-hosting accessible to everyone",
+    "url": "https://cloudinabottle.org/blog/launch-post",
+    "source": "cloudinabottle.org",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from cloudinabottle.org. Hacker News score 282, 124 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49582000",
+    "fetched_at": "2026-09-06T06:07:52Z",
+    "title_zh": "瓶中云：让每个人都可以使用自托管"
+  },
+  {
+    "title": "GPT-6 Astra on robot arms",
+    "url": "https://openai.robocurve.org/gpt-6-astra/",
+    "source": "openai.robocurve.org",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.robocurve.org. Hacker News score 132, 87 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49582582",
+    "fetched_at": "2026-09-06T06:07:52Z",
+    "title_zh": "机器人手臂上的 GPT-6 Astra"
+  },
+  {
+    "title": "Isar Aerospace launch into orbit [video]",
+    "url": "https://www.youtube.com/watch?v=Ss1DUqLjecc",
+    "source": "youtube.com",
+    "date": "2026-09-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 98, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49580325",
+    "fetched_at": "2026-09-06T06:07:56Z",
+    "title_zh": "伊萨尔航空航天公司发射进入轨道[视频]"
+  },
+  {
+    "title": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
+    "url": "https://github.com/okf-memory/okf-agent-memory",
+    "source": "github.com",
+    "date": "2026-09-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 58, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49581240",
+    "fetched_at": "2026-09-06T06:07:55Z",
+    "title_zh": "OKF Agent Memory – 用于 AI 编码代理的 Git 原生持久内存"
+  },
+  {
+    "title": "Chrome again exempts Google from user site data settings",
+    "url": "https://lapcatsoftware.com/articles/2026/9/1.html",
+    "source": "lapcatsoftware.com",
+    "date": "2026-09-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from lapcatsoftware.com. Hacker News score 250, 38 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49581870",
+    "fetched_at": "2026-09-06T06:07:52Z",
+    "title_zh": "Chrome再次免除谷歌用户网站数据设置的责任"
+  },
+  {
+    "title": "Learn Programming with OCaml",
+    "url": "https://usr.lmf.cnrs.fr/lpo/",
+    "source": "usr.lmf.cnrs.fr",
+    "date": "2026-09-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from usr.lmf.cnrs.fr. Hacker News score 223, 82 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49578280",
+    "fetched_at": "2026-09-06T06:07:52Z",
+    "title_zh": "使用 OCaml 学习编程"
+  },
+  {
+    "title": "Can AI design circuit boards yet?",
+    "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+    "source": "eebench.org",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from eebench.org. Hacker News score 400, 213 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49569366",
+    "fetched_at": "2026-09-06T06:07:55Z",
+    "title_zh": "AI还能设计电路板吗？"
+  },
+  {
+    "title": "Discovery of a new OpenAI agent message board",
+    "url": "https://collusion.wiki/",
+    "source": "collusion.wiki",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from collusion.wiki. Hacker News score 2157, 1530 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49563355",
+    "fetched_at": "2026-09-06T06:07:53Z",
+    "title_zh": "发现新的 OpenAI 代理留言板"
+  },
+  {
     "title": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "url": "https://github.com/gioblu/NPC-Forge/blob/main/docs/development.md",
     "source": "github.com",
@@ -55,17 +154,6 @@
     "title_zh": "Rust React 编译器现已在 Vite 中原生"
   },
   {
-    "title": "Can AI design circuit boards yet?",
-    "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
-    "source": "eebench.org",
-    "date": "2026-09-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from eebench.org. Hacker News score 218, 134 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49569366",
-    "fetched_at": "2026-09-05T05:56:03Z",
-    "title_zh": "AI还能设计电路板吗？"
-  },
-  {
     "title": "Portal by Spotify cut my Claude Code token usage by 90%",
     "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
     "source": "engineering.atspotify.com",
@@ -75,17 +163,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49571465",
     "fetched_at": "2026-09-05T05:56:03Z",
     "title_zh": "Portal by Spotify 将我的 Claude Code 代币使用量减少了 90%"
-  },
-  {
-    "title": "Discovery of a new OpenAI agent message board",
-    "url": "https://collusion.wiki/",
-    "source": "collusion.wiki",
-    "date": "2026-09-04",
-    "repost": true,
-    "summary": "转载 / Curated repost from collusion.wiki. Hacker News score 1597, 1256 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49563355",
-    "fetched_at": "2026-09-05T05:56:02Z",
-    "title_zh": "发现新的 OpenAI 代理留言板"
   },
   {
     "title": "Formalizing Fermat's Last Theorem",
@@ -108,6 +185,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49560260",
     "fetched_at": "2026-09-04T06:06:54Z",
     "title_zh": "Grep胜过LSP ？为什么编码代理会忽略您更精致的工具"
+  },
+  {
+    "title": "Balrogg: Demonically compacting (up to 15%) lossless Vorbis/Opus recompressor",
+    "url": "https://github.com/iczelia/balrogg",
+    "source": "github.com",
+    "date": "2026-09-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 75, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49549778",
+    "fetched_at": "2026-09-06T06:07:54Z",
+    "title_zh": "Balrogg：恶魔压缩（高达 15%）无损 Vorbis/Opus 再压缩器"
   },
   {
     "title": "The asteroid currently hitting front end web development",
