@@ -1,5 +1,104 @@
 [
   {
+    "title": "Coop – Isolated VM Environments for Running Claude Code and Codex",
+    "url": "https://github.com/trailofbits/coop",
+    "source": "github.com",
+    "date": "2026-09-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 5, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49593842",
+    "fetched_at": "2026-09-07T06:15:46Z",
+    "title_zh": "Coop – 用于运行 Claude 代码和 Codex 的隔离虚拟机环境"
+  },
+  {
+    "title": "MathKernel: An evidence-aware multi-engine mathematics kernel and MCP server",
+    "url": "https://github.com/Staatsgeheim/MathKernel",
+    "source": "github.com",
+    "date": "2026-09-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 29, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49592366",
+    "fetched_at": "2026-09-07T06:15:45Z",
+    "title_zh": "MathKernel：证据感知的多引擎数学内核和 MCP 服务器"
+  },
+  {
+    "title": "Show HN: Engrim – A universal, local-first SQLite memory engine for AI CLIs",
+    "url": "https://github.com/timgordontg/engrim",
+    "source": "github.com",
+    "date": "2026-09-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 6, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49594008",
+    "fetched_at": "2026-09-07T06:15:44Z",
+    "title_zh": "Show HN：Engrim – 用于 AI CLI 的通用、本地优先的 SQLite 内存引擎"
+  },
+  {
+    "title": "I refused to train the AI that could replace me",
+    "url": "https://restofworld.org/2026/ai-training-jobs-expert-replacement/",
+    "source": "restofworld.org",
+    "date": "2026-09-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from restofworld.org. Hacker News score 22, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49593959",
+    "fetched_at": "2026-09-07T06:15:42Z",
+    "title_zh": "我拒绝训练可以取代我的人工智能"
+  },
+  {
+    "title": "Has anybody seen my keys? A key-hierarchy strategy for rack-level security",
+    "url": "https://rfd.shared.oxide.computer/rfd/0301",
+    "source": "rfd.shared.oxide.computer",
+    "date": "2026-09-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from rfd.shared.oxide.computer. Hacker News score 15, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49593066",
+    "fetched_at": "2026-09-07T06:15:41Z",
+    "title_zh": "有人看到我的钥匙了吗？机架级安全的密钥层次策略"
+  },
+  {
+    "title": "Research acceleration: The view inside OpenAI",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "source": "openai.com",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 150, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49587217",
+    "fetched_at": "2026-09-07T06:15:45Z",
+    "title_zh": "研究加速：OpenAI 内部的观点"
+  },
+  {
+    "title": "Show HN: Mador – Make any DOM reactive with a tiny 80-line Proxy state tuple",
+    "url": "https://github.com/marsbos/mador",
+    "source": "github.com",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 84, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49590738",
+    "fetched_at": "2026-09-07T06:15:44Z",
+    "title_zh": "Show HN：Mador – 使用微小的 80 行代理状态元组使任何 DOM 具有反应性"
+  },
+  {
+    "title": "Nitter and XCancel resume service after legal advice",
+    "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+    "source": "github.com",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 616, 296 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49588988",
+    "fetched_at": "2026-09-07T06:15:43Z",
+    "title_zh": "Nitter 和 XCancel 在法律建议后恢复服务"
+  },
+  {
+    "title": "Making a Python interpreter in 1024 bytes",
+    "url": "https://austinhenley.com/blog/python1024.html",
+    "source": "austinhenley.com",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from austinhenley.com. Hacker News score 176, 65 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49591876",
+    "fetched_at": "2026-09-07T06:15:40Z",
+    "title_zh": "用 1024 字节制作一个 Python 解释器"
+  },
+  {
     "title": "AI, Tools and Transformation",
     "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
     "source": "ben-evans.com",
@@ -75,6 +174,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49578280",
     "fetched_at": "2026-09-06T06:07:52Z",
     "title_zh": "使用 OCaml 学习编程"
+  },
+  {
+    "title": "The NX bit is not just about security",
+    "url": "https://purplesyringa.moe/blog/guest/the-nx-bit-is-not-just-about-security/",
+    "source": "purplesyringa.moe",
+    "date": "2026-09-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from purplesyringa.moe. Hacker News score 51, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49564609",
+    "fetched_at": "2026-09-07T06:15:43Z",
+    "title_zh": "NX 位不仅仅是安全性"
   },
   {
     "title": "Can AI design circuit boards yet?",
