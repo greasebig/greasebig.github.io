@@ -1,5 +1,93 @@
 [
   {
+    "title": "There's a new \"Google Jail\" for independent wikis",
+    "url": "https://weirdgloop.org/blog/google-jail",
+    "source": "weirdgloop.org",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from weirdgloop.org. Hacker News score 25, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49604870",
+    "fetched_at": "2026-09-08T06:05:27Z",
+    "title_zh": "独立维基有一个新的“Google Jail”"
+  },
+  {
+    "title": "The VMs Powering Mobile Agents (Instinct, Claude Code)",
+    "url": "https://rohanadwankar.github.io/posts/platforms.html",
+    "source": "rohanadwankar.github.io",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from rohanadwankar.github.io. Hacker News score 9, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49605644",
+    "fetched_at": "2026-09-08T06:05:25Z",
+    "title_zh": "为移动代理提供支持的虚拟机（Instinct、Claude Code）"
+  },
+  {
+    "title": "How well do agents use test/verification techniques?",
+    "url": "https://danluu.com/agentic-testing/",
+    "source": "danluu.com",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from danluu.com. Hacker News score 45, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49605246",
+    "fetched_at": "2026-09-08T06:05:24Z",
+    "title_zh": "代理使用测试/验证技术的情况如何？"
+  },
+  {
+    "title": "Arm Mali G2-Ultra NX GPU: desktop-class mobile gameplay with AI-native graphics",
+    "url": "https://newsroom.arm.com/blog/arm-mali-g2-ultra-nx-ai-native-mobile-graphics",
+    "source": "newsroom.arm.com",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from newsroom.arm.com. Hacker News score 18, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49605511",
+    "fetched_at": "2026-09-08T06:05:24Z",
+    "title_zh": "Arm Mali G2-Ultra NX GPU：具有 AI 原生图形的桌面级移动游戏"
+  },
+  {
+    "title": "We have a year to fix security everywhere",
+    "url": "https://jyn.dev/a-year-to-fix-security/",
+    "source": "jyn.dev",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from jyn.dev. Hacker News score 75, 34 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49605691",
+    "fetched_at": "2026-09-08T06:05:23Z",
+    "title_zh": "我们有一年的时间来修复各地的安全问题"
+  },
+  {
+    "title": "Mistral raises €3B to make sovereign, open-weight AI the technology frontier",
+    "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+    "source": "mistral.ai",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from mistral.ai. Hacker News score 24, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49605767",
+    "fetched_at": "2026-09-08T06:05:23Z",
+    "title_zh": "Mistral 筹集了 30 亿欧元，使主权、开放权重人工智能成为技术前沿"
+  },
+  {
+    "title": "Show HN: Stuxnet – A reconstructed source code of the infamous cyber-weapon",
+    "url": "https://github.com/Sadpainy/Stuxnet",
+    "source": "github.com",
+    "date": "2026-09-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 144, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49603546",
+    "fetched_at": "2026-09-08T06:05:27Z",
+    "title_zh": "Show HN：Stuxnet – 臭名昭著的网络武器的重构源代码"
+  },
+  {
+    "title": "216M Spy TVs – The LG Smart TV Problem [video]",
+    "url": "https://www.youtube.com/watch?v=6IFVTcM28KA",
+    "source": "youtube.com",
+    "date": "2026-09-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 674, 862 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49592375",
+    "fetched_at": "2026-09-08T06:05:26Z",
+    "title_zh": "216M 间谍电视 – LG 智能电视问题 [视频]"
+  },
+  {
     "title": "Coop – Isolated VM Environments for Running Claude Code and Codex",
     "url": "https://github.com/trailofbits/coop",
     "source": "github.com",
@@ -130,6 +218,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49582582",
     "fetched_at": "2026-09-06T06:07:52Z",
     "title_zh": "机器人手臂上的 GPT-6 Astra"
+  },
+  {
+    "title": "Trusting-Trust Attack against an Entire Linux Distribution",
+    "url": "https://arxiv.org/abs/2607.24888",
+    "source": "arxiv.org",
+    "date": "2026-09-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 189, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49575515",
+    "fetched_at": "2026-09-08T06:05:26Z",
+    "title_zh": "针对整个 Linux 发行版的信任-信任攻击"
   },
   {
     "title": "Isar Aerospace launch into orbit [video]",
@@ -295,6 +394,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49560260",
     "fetched_at": "2026-09-04T06:06:54Z",
     "title_zh": "Grep胜过LSP ？为什么编码代理会忽略您更精致的工具"
+  },
+  {
+    "title": "WeatherNext 3",
+    "url": "https://deepmind.google/science/weathernext/",
+    "source": "deepmind.google",
+    "date": "2026-09-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 294, 68 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49552299",
+    "fetched_at": "2026-09-08T06:05:26Z",
+    "title_zh": "天气下一个 3"
   },
   {
     "title": "Balrogg: Demonically compacting (up to 15%) lossless Vorbis/Opus recompressor",
