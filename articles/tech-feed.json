@@ -1,5 +1,93 @@
 [
   {
+    "title": "I resigned from Anthropic today",
+    "url": "https://twitter.com/hilbertspaess/status/2097476196791709843#m",
+    "source": "twitter.com",
+    "date": "2026-09-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 346, 434 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49619227",
+    "fetched_at": "2026-09-09T06:09:50Z",
+    "title_zh": "我今天从 Anthropic 辞职了"
+  },
+  {
+    "title": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
+    "url": "https://github.com/argonautlabsai/deltafin",
+    "source": "github.com",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 248, 127 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49616257",
+    "fetched_at": "2026-09-09T06:09:54Z",
+    "title_zh": "Kimi K3 (2.8T) 在 MacBook Pro 上以 1 token/s 的速度从四个 SSD 进行流传输"
+  },
+  {
+    "title": "ChatGPT Images 2.5",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "source": "openai.com",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 312, 387 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49614720",
+    "fetched_at": "2026-09-09T06:09:53Z",
+    "title_zh": "ChatGPT 图像 2.5"
+  },
+  {
+    "title": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "source": "github.com",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 390, 286 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49610631",
+    "fetched_at": "2026-09-09T06:09:52Z",
+    "title_zh": "我患有注意力缺陷多动症：一种阻止编码代理埋葬答案的技能"
+  },
+  {
+    "title": "On the Navier–Stokes Millennium Prize Problem",
+    "url": "https://openai.com/index/navier-stokes-solution/",
+    "source": "openai.com",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 1216, 971 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49613262",
+    "fetched_at": "2026-09-09T06:09:51Z",
+    "title_zh": "论纳维-斯托克斯千年奖问题"
+  },
+  {
+    "title": "Tao: Open math problems being non-renewably mined by AI",
+    "url": "https://mathstodon.xyz/@tao/117237320796901560",
+    "source": "mathstodon.xyz",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from mathstodon.xyz. Hacker News score 293, 299 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49616968",
+    "fetched_at": "2026-09-09T06:09:51Z",
+    "title_zh": "陶：人工智能不可再生地挖掘开放数学问题"
+  },
+  {
+    "title": "Large language models develop novel social biases through adaptive exploration",
+    "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
+    "source": "openreview.net",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from openreview.net. Hacker News score 136, 69 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49617581",
+    "fetched_at": "2026-09-09T06:09:49Z",
+    "title_zh": "大型语言模型通过适应性探索形成新的社会偏见"
+  },
+  {
+    "title": "Muse – Meta’s personal AI agent",
+    "url": "https://ai.meta.com/muse/",
+    "source": "ai.meta.com",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from ai.meta.com. Hacker News score 440, 465 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49615537",
+    "fetched_at": "2026-09-09T06:09:48Z",
+    "title_zh": "Muse – Meta 的个人人工智能代理"
+  },
+  {
     "title": "There's a new \"Google Jail\" for independent wikis",
     "url": "https://weirdgloop.org/blog/google-jail",
     "source": "weirdgloop.org",
@@ -143,6 +231,17 @@
     "title_zh": "有人看到我的钥匙了吗？机架级安全的密钥层次策略"
   },
   {
+    "title": "The Microeconomics of Artificial Intelligence (2025)",
+    "url": "https://direct.mit.edu/books/oa-monograph/6067/The-Microeconomics-of-Artificial-Intelligence",
+    "source": "direct.mit.edu",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from direct.mit.edu. Hacker News score 45, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49591112",
+    "fetched_at": "2026-09-09T06:09:52Z",
+    "title_zh": "人工智能的微观经济学（2025）"
+  },
+  {
     "title": "Research acceleration: The view inside OpenAI",
     "url": "https://openai.com/index/research-acceleration-view-inside-openai",
     "source": "openai.com",
@@ -218,6 +317,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49582582",
     "fetched_at": "2026-09-06T06:07:52Z",
     "title_zh": "机器人手臂上的 GPT-6 Astra"
+  },
+  {
+    "title": "Replacing a Rust Enum with a 64-Bit Word Made My Interpreter 17% Faster",
+    "url": "https://pointersgonewild.com/2026-08-25-replacing-a-rust-enum-with-a-64-bit-word/",
+    "source": "pointersgonewild.com",
+    "date": "2026-09-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from pointersgonewild.com. Hacker News score 116, 44 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49575914",
+    "fetched_at": "2026-09-09T06:09:54Z",
+    "title_zh": "用 64 位字替换 Rust 枚举使我的解释器速度提高了 17%"
   },
   {
     "title": "Trusting-Trust Attack against an Entire Linux Distribution",
