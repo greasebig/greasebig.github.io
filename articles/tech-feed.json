@@ -1,5 +1,104 @@
 [
   {
+    "title": "OpenAI have no mathematicians capable of understanding what they put out",
+    "url": "https://mastodon.social/@tristanbuckmaster/117237555794407063",
+    "source": "mastodon.social",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from mastodon.social. Hacker News score 19, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49638622",
+    "fetched_at": "2026-09-10T06:08:59Z",
+    "title_zh": "OpenAI 没有数学家能够理解他们的成果"
+  },
+  {
+    "title": "OpenAI might have stolen another major proof",
+    "url": "https://twitter.com/ValerioCapraro/status/2097791836269977996",
+    "source": "twitter.com",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 70, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49638353",
+    "fetched_at": "2026-09-10T06:08:58Z",
+    "title_zh": "OpenAI 可能窃取了另一个重要证据"
+  },
+  {
+    "title": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
+    "url": "https://slimemoldtimemold.com/2026/08/05/a-stupid-idea-for-ai-alignment-we-came-up-with-by-looking-at-the-list-of-specification-gaming-behaviours/",
+    "source": "slimemoldtimemold.com",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from slimemoldtimemold.com. Hacker News score 45, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49637395",
+    "fetched_at": "2026-09-10T06:08:56Z",
+    "title_zh": "我们通过查看游戏规格得出了一个关于人工智能对齐的愚蠢想法"
+  },
+  {
+    "title": "Training a 3.8B LLM to 0.384 CORE for $998 – Hugo Vergnes",
+    "url": "https://hugovergnes.github.io/little-lm-3-8b/",
+    "source": "hugovergnes.github.io",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from hugovergnes.github.io. Hacker News score 39, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49637435",
+    "fetched_at": "2026-09-10T06:08:55Z",
+    "title_zh": "将 3.8B LLM 培训至 0.384 CORE，仅需 998 美元 – Hugo Vergnes"
+  },
+  {
+    "title": "What will our economic future look like?",
+    "url": "https://www.anthropic.com/institute/econ-scenarios",
+    "source": "anthropic.com",
+    "date": "2026-09-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 195, 377 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49626373",
+    "fetched_at": "2026-09-10T06:09:01Z",
+    "title_zh": "我们的经济未来会是什么样子？"
+  },
+  {
+    "title": "How I advertise malicious software on Google Ads",
+    "url": "https://xlii.space/eng/malicious-software-on-google-ads/",
+    "source": "xlii.space",
+    "date": "2026-09-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from xlii.space. Hacker News score 384, 232 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49624856",
+    "fetched_at": "2026-09-10T06:08:58Z",
+    "title_zh": "如何在 Google Ads 上宣传恶意软件"
+  },
+  {
+    "title": "Qwen 3.8 follows GPT-5.5 Pro reasoning prefills",
+    "url": "https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3",
+    "source": "gist.github.com",
+    "date": "2026-09-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 200, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49630026",
+    "fetched_at": "2026-09-10T06:08:57Z",
+    "title_zh": "Qwen 3.8 遵循 GPT-5.5 Pro 推理预填充"
+  },
+  {
+    "title": "Desert Ant Labs: local, fast models that run on device",
+    "url": "https://desertant.com/blog/introducing-desert-ant-labs/",
+    "source": "desertant.com",
+    "date": "2026-09-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from desertant.com. Hacker News score 428, 93 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49624823",
+    "fetched_at": "2026-09-10T06:08:57Z",
+    "title_zh": "Desert Ant Labs：在设备上运行的本地快速模型"
+  },
+  {
+    "title": "GNU Radio in the browser",
+    "url": "https://gnuradioworld.com/",
+    "source": "gnuradioworld.com",
+    "date": "2026-09-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from gnuradioworld.com. Hacker News score 191, 24 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49628576",
+    "fetched_at": "2026-09-10T06:08:57Z",
+    "title_zh": "浏览器中的 GNU 广播"
+  },
+  {
     "title": "I resigned from Anthropic today",
     "url": "https://twitter.com/hilbertspaess/status/2097476196791709843#m",
     "source": "twitter.com",
@@ -229,6 +328,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49593066",
     "fetched_at": "2026-09-07T06:15:41Z",
     "title_zh": "有人看到我的钥匙了吗？机架级安全的密钥层次策略"
+  },
+  {
+    "title": "Bespoke: A programming language for people who say please",
+    "url": "https://blog.hofstede.it/bespoke-a-programming-language-for-people-who-say-please/",
+    "source": "blog.hofstede.it",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.hofstede.it. Hacker News score 154, 39 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49584361",
+    "fetched_at": "2026-09-10T06:08:59Z",
+    "title_zh": "定制：一种为那些说“请”的人设计的编程语言"
   },
   {
     "title": "The Microeconomics of Artificial Intelligence (2025)",
