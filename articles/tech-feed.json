@@ -1,5 +1,82 @@
 [
   {
+    "title": "Google will buy half the electricity from one of Finland's nuclear power plants",
+    "url": "https://www.bbc.com/news/articles/c8r6y4me2g6o",
+    "source": "bbc.com",
+    "date": "2026-09-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from bbc.com. Hacker News score 180, 141 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49652105",
+    "fetched_at": "2026-09-11T06:11:59Z",
+    "title_zh": "谷歌将从芬兰一处核电站购买一半的电力"
+  },
+  {
+    "title": "Detecting and countering misuse of AI: September 2026",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "source": "anthropic.com",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 110, 182 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49647300",
+    "fetched_at": "2026-09-11T06:12:02Z",
+    "title_zh": "检测和打击 AI 滥用：2026 年 9 月"
+  },
+  {
+    "title": "Rust is tier-1 language at Microsoft",
+    "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+    "source": "rustfoundation.org",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from rustfoundation.org. Hacker News score 643, 370 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49643546",
+    "fetched_at": "2026-09-11T06:12:01Z",
+    "title_zh": "Rust 是 Microsoft 的一级语言"
+  },
+  {
+    "title": "More questions about whether researchers can trust OpenAI with unpublished math",
+    "url": "https://mathstodon.xyz/@andreasthom/117240535270608201",
+    "source": "mathstodon.xyz",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from mathstodon.xyz. Hacker News score 770, 709 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49639408",
+    "fetched_at": "2026-09-11T06:12:00Z",
+    "title_zh": "更多关于研究人员是否可以信任 OpenAI 未发表的数学的问题"
+  },
+  {
+    "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
+    "url": "https://system76.com/workstations/thelio-mira-ai",
+    "source": "system76.com",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from system76.com. Hacker News score 77, 52 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49651372",
+    "fetched_at": "2026-09-11T06:11:59Z",
+    "title_zh": "Thelio Mira AI Linux 工作站：192 GB GPU 内存"
+  },
+  {
+    "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+    "url": "https://cognition.com/blog/swe-2",
+    "source": "cognition.com",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from cognition.com. Hacker News score 397, 165 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49645443",
+    "fetched_at": "2026-09-11T06:11:58Z",
+    "title_zh": "Cognition 推出新的 SWE-2 模型，与 Fable 5.1 和 GPT-Astra 相媲美"
+  },
+  {
+    "title": "OpenAI Agents API",
+    "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+    "source": "developers.openai.com",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from developers.openai.com. Hacker News score 210, 126 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49649213",
+    "fetched_at": "2026-09-11T06:11:57Z",
+    "title_zh": "OpenAI 代理 API"
+  },
+  {
     "title": "OpenAI have no mathematicians capable of understanding what they put out",
     "url": "https://mastodon.social/@tristanbuckmaster/117237555794407063",
     "source": "mastodon.social",
@@ -108,6 +185,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49619227",
     "fetched_at": "2026-09-09T06:09:50Z",
     "title_zh": "我今天从 Anthropic 辞职了"
+  },
+  {
+    "title": "Python sets and dictionaries can have quadratic-time performance",
+    "url": "https://lemire.me/blog/2026/09/03/python-sets-and-dictionaries-can-have-quadratic-time-performance/",
+    "source": "lemire.me",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from lemire.me. Hacker News score 96, 55 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49612470",
+    "fetched_at": "2026-09-11T06:12:04Z",
+    "title_zh": "Python 集合和字典可以具有二次时间性能"
+  },
+  {
+    "title": "What happens when a GPU writes memory",
+    "url": "https://blog.doubleword.ai/what-happens-when-a-gpu-writes-memory",
+    "source": "blog.doubleword.ai",
+    "date": "2026-09-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.doubleword.ai. Hacker News score 61, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49615922",
+    "fetched_at": "2026-09-11T06:12:02Z",
+    "title_zh": "GPU写入内存时会发生什么"
   },
   {
     "title": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
@@ -328,6 +427,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49593066",
     "fetched_at": "2026-09-07T06:15:41Z",
     "title_zh": "有人看到我的钥匙了吗？机架级安全的密钥层次策略"
+  },
+  {
+    "title": "Douglas Hofstadter: Analogy as the Core of Cognition [video]",
+    "url": "https://www.youtube.com/watch?v=n8m7lFQ3njk",
+    "source": "youtube.com",
+    "date": "2026-09-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 165, 76 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49587121",
+    "fetched_at": "2026-09-11T06:12:02Z",
+    "title_zh": "道格拉斯·霍夫施塔特（Douglas Hofstadter）：类比作为认知的核心[视频]"
   },
   {
     "title": "Bespoke: A programming language for people who say please",
