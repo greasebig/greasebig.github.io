@@ -1,5 +1,115 @@
 [
   {
+    "title": "Show HN: Graphify C# – Compiler-accurate Find Usages for coding agents",
+    "url": "https://github.com/zachsaw/graphify-csharp",
+    "source": "github.com",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 28, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49667188",
+    "fetched_at": "2026-09-12T05:58:57Z",
+    "title_zh": "Show HN：Graphify C# – 编译器精确的查找编码代理的用法"
+  },
+  {
+    "title": "OpenAI agents attacked RubyGems back in May",
+    "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+    "source": "simonwillison.net",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from simonwillison.net. Hacker News score 10, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49668914",
+    "fetched_at": "2026-09-12T05:58:55Z",
+    "title_zh": "OpenAI 代理在 5 月份攻击了 RubyGems"
+  },
+  {
+    "title": "Google no longer provides direct URLs in search results",
+    "url": "https://www.autom.dev/blog/google-search-goto-links",
+    "source": "autom.dev",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from autom.dev. Hacker News score 240, 120 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49668386",
+    "fetched_at": "2026-09-12T05:58:54Z",
+    "title_zh": "Google 不再在搜索结果中提供直接网址"
+  },
+  {
+    "title": "AI researchers debate how close we are to recursive self-improvement",
+    "url": "https://www.dwarkesh.com/p/john-beren-charlie",
+    "source": "dwarkesh.com",
+    "date": "2026-09-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from dwarkesh.com. Hacker News score 85, 72 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49665711",
+    "fetched_at": "2026-09-12T05:58:57Z",
+    "title_zh": "人工智能研究人员争论我们离递归自我完善有多远"
+  },
+  {
+    "title": "Show HN: ResolveHQ – A Helpdesk Built on Cloudflare Workers, D1, R2 and Queues",
+    "url": "https://github.com/mirza-rizvi/ResolveHQ",
+    "source": "github.com",
+    "date": "2026-09-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 48, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49665864",
+    "fetched_at": "2026-09-12T05:58:57Z",
+    "title_zh": "Show HN：ResolveHQ – 基于 Cloudflare Workers、D1、R2 和队列构建的帮助台"
+  },
+  {
+    "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+    "url": "https://www.rubyhack.ai/",
+    "source": "rubyhack.ai",
+    "date": "2026-09-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from rubyhack.ai. Hacker News score 551, 318 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49666735",
+    "fetched_at": "2026-09-12T05:58:56Z",
+    "title_zh": "OpenAI 代理对 RubyGems 进行了一次未公开的攻击"
+  },
+  {
+    "title": "GrapheneOS' rewritten Messages app is released",
+    "url": "https://github.com/GrapheneOS/Messaging/releases/tag/13",
+    "source": "github.com",
+    "date": "2026-09-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 238, 157 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49663373",
+    "fetched_at": "2026-09-12T05:58:56Z",
+    "title_zh": "GrapheneOS 重写的消息应用程序发布"
+  },
+  {
+    "title": "Litelm: LiteLLM Without the Bloat",
+    "url": "https://github.com/kennethwolters/litelm",
+    "source": "github.com",
+    "date": "2026-09-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 118, 39 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49662767",
+    "fetched_at": "2026-09-12T05:58:56Z",
+    "title_zh": "Litelm：没有臃肿的 LiteLLM"
+  },
+  {
+    "title": "A misalignment of AI in mathematics",
+    "url": "https://mathandai.org/",
+    "source": "mathandai.org",
+    "date": "2026-09-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from mathandai.org. Hacker News score 800, 796 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49662371",
+    "fetched_at": "2026-09-12T05:58:55Z",
+    "title_zh": "人工智能在数学中的错位"
+  },
+  {
+    "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+    "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+    "source": "dayzlegame.com",
+    "date": "2026-09-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from dayzlegame.com. Hacker News score 427, 220 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49662990",
+    "fetched_at": "2026-09-12T05:58:55Z",
+    "title_zh": "我在 Google 应用广告上花费了 220 美元，60% 的安装是机器人"
+  },
+  {
     "title": "Google will buy half the electricity from one of Finland's nuclear power plants",
     "url": "https://www.bbc.com/news/articles/c8r6y4me2g6o",
     "source": "bbc.com",
