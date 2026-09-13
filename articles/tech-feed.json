@@ -1,5 +1,93 @@
 [
   {
+    "title": "Everyone should slow down AI development except for me",
+    "url": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/",
+    "source": "xeiaso.net",
+    "date": "2026-09-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from xeiaso.net. Hacker News score 343, 192 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49678683",
+    "fetched_at": "2026-09-13T06:23:07Z",
+    "title_zh": "除了我之外，每个人都应该放慢人工智能的发展速度"
+  },
+  {
+    "title": "Why are AI agents lying, cheating and coordinating?",
+    "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+    "source": "yoshuabengio.org",
+    "date": "2026-09-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from yoshuabengio.org. Hacker News score 72, 64 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49678969",
+    "fetched_at": "2026-09-13T06:23:05Z",
+    "title_zh": "为什么人工智能代理会撒谎、欺骗和协调？"
+  },
+  {
+    "title": "LG Says We're Fake News [video]",
+    "url": "https://www.youtube.com/watch?v=ToP9xfLDSME",
+    "source": "youtube.com",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 234, 110 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49676324",
+    "fetched_at": "2026-09-13T06:23:15Z",
+    "title_zh": "LG 称我们是假新闻 [视频]"
+  },
+  {
+    "title": "Linux Zoom client proactively reading everything written to X11 clipboard",
+    "url": "https://hachyderm.io/@simontatham/117201594980991062",
+    "source": "hachyderm.io",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from hachyderm.io. Hacker News score 254, 83 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49675902",
+    "fetched_at": "2026-09-13T06:23:14Z",
+    "title_zh": "Linux Zoom 客户端主动读取写入 X11 剪贴板的所有内容"
+  },
+  {
+    "title": "Microcode in Intel's 8087 floating-point chip: the scale instruction",
+    "url": "https://www.righto.com/2026/09/8087-microcode-reverse-engineering-fscale.html",
+    "source": "righto.com",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from righto.com. Hacker News score 101, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49673580",
+    "fetched_at": "2026-09-13T06:23:13Z",
+    "title_zh": "Intel 8087浮点芯片中的微代码：scale指令"
+  },
+  {
+    "title": "AgentsDock: An IDE designed for agentic AI research",
+    "url": "https://agentsdock.net/",
+    "source": "agentsdock.net",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from agentsdock.net. Hacker News score 34, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49678435",
+    "fetched_at": "2026-09-13T06:23:08Z",
+    "title_zh": "AgentsDock：专为代理人工智能研究而设计的 IDE"
+  },
+  {
+    "title": "Nvidia is the central bank of AI",
+    "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
+    "source": "economist.com",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from economist.com. Hacker News score 445, 313 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49673098",
+    "fetched_at": "2026-09-13T06:23:06Z",
+    "title_zh": "Nvidia是人工智能的中央银行"
+  },
+  {
+    "title": "Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases",
+    "url": "https://withspecific.com/benchmarks/real-swe",
+    "source": "withspecific.com",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from withspecific.com. Hacker News score 199, 105 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49676820",
+    "fetched_at": "2026-09-13T06:23:05Z",
+    "title_zh": "Real-SWE：在私人、现实世界、企业代码库上对人工智能模型进行基准测试"
+  },
+  {
     "title": "Show HN: Graphify C# – Compiler-accurate Find Usages for coding agents",
     "url": "https://github.com/zachsaw/graphify-csharp",
     "source": "github.com",
@@ -121,6 +209,17 @@
     "title_zh": "谷歌将从芬兰一处核电站购买一半的电力"
   },
   {
+    "title": "IKEA made a mod for Skyrim [video]",
+    "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
+    "source": "youtube.com",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 570, 157 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49639647",
+    "fetched_at": "2026-09-13T06:23:16Z",
+    "title_zh": "宜家为《天际》制作了一个模组 [视频]"
+  },
+  {
     "title": "Detecting and countering misuse of AI: September 2026",
     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
     "source": "anthropic.com",
@@ -229,6 +328,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49637435",
     "fetched_at": "2026-09-10T06:08:55Z",
     "title_zh": "将 3.8B LLM 培训至 0.384 CORE，仅需 998 美元 – Hugo Vergnes"
+  },
+  {
+    "title": "Vintage Scientific Papers with LaTeX",
+    "url": "https://github.com/Foadsf/vintage-latex",
+    "source": "github.com",
+    "date": "2026-09-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 50, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49629624",
+    "fetched_at": "2026-09-13T06:23:10Z",
+    "title_zh": "使用 LaTeX 制作复古科学论文"
   },
   {
     "title": "What will our economic future look like?",
