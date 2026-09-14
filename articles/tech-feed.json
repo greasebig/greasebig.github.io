@@ -1,5 +1,93 @@
 [
   {
+    "title": "“Chilling” warning or overreaction? AI bioweapons report divides experts",
+    "url": "https://www.science.org/content/article/chilling-warning-or-overreaction-ai-bioweapons-report-divides-experts",
+    "source": "science.org",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from science.org. Hacker News score 25, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49690139",
+    "fetched_at": "2026-09-14T06:33:19Z",
+    "title_zh": "“令人不寒而栗”的警告还是反应过度？人工智能生物武器报告专家意见不一"
+  },
+  {
+    "title": "Who gets to define the rules for AI?",
+    "url": "https://cohere.com/blog/who-gets-to-define-the-rules-for-ai",
+    "source": "cohere.com",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from cohere.com. Hacker News score 16, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49692118",
+    "fetched_at": "2026-09-14T06:33:18Z",
+    "title_zh": "谁来定义人工智能的规则？"
+  },
+  {
+    "title": "Open-source AI and open models reading list",
+    "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+    "source": "interconnects.ai",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from interconnects.ai. Hacker News score 83, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49690260",
+    "fetched_at": "2026-09-14T06:33:17Z",
+    "title_zh": "开源人工智能和开放模型阅读清单"
+  },
+  {
+    "title": "The Malicious Use of Artificial Intelligence",
+    "url": "https://arxiv.org/abs/1802.07228",
+    "source": "arxiv.org",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 43, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49690678",
+    "fetched_at": "2026-09-14T06:33:16Z",
+    "title_zh": "人工智能的恶意使用"
+  },
+  {
+    "title": "Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
+    "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+    "source": "techcrunch.com",
+    "date": "2026-09-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from techcrunch.com. Hacker News score 383, 212 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49685253",
+    "fetched_at": "2026-09-14T06:33:21Z",
+    "title_zh": "Garry Tan 希望美国开放式人工智能实验室也能“提炼”前沿模型"
+  },
+  {
+    "title": "Why is the x86 undefined instruction called ud2? Why 2?",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260910-00/?p=112689",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-09-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 242, 55 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49683262",
+    "fetched_at": "2026-09-14T06:33:18Z",
+    "title_zh": "为什么 x86 未定义指令称为 ud2？为什么是2？"
+  },
+  {
+    "title": "CUDA for AMD on Windows",
+    "url": "https://github.com/Speedstu/CUDA-for-AMD-Windows",
+    "source": "github.com",
+    "date": "2026-09-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 152, 79 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49684356",
+    "fetched_at": "2026-09-14T06:33:18Z",
+    "title_zh": "Windows 上适用于 AMD 的 CUDA"
+  },
+  {
+    "title": "Why is Google still serving dodgy ads?",
+    "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+    "source": "atomic14.com",
+    "date": "2026-09-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from atomic14.com. Hacker News score 749, 337 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49686445",
+    "fetched_at": "2026-09-14T06:33:17Z",
+    "title_zh": "为什么谷歌仍然提供不可靠的广告？"
+  },
+  {
     "title": "Everyone should slow down AI development except for me",
     "url": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/",
     "source": "xeiaso.net",
@@ -121,6 +209,17 @@
     "title_zh": "Google 不再在搜索结果中提供直接网址"
   },
   {
+    "title": "Reverse-Engineering Claude Web's MicroVM: Uncovering Anthropic's Hidden Antspace",
+    "url": "https://aprilnea.me/en/blog/reverse-engineering-claude-code-antspace",
+    "source": "aprilnea.me",
+    "date": "2026-09-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from aprilnea.me. Hacker News score 76, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49653311",
+    "fetched_at": "2026-09-14T06:33:20Z",
+    "title_zh": "对 Claude Web 的 MicroVM 进行逆向工程：揭示 Anthropic 的隐藏 Antspace"
+  },
+  {
     "title": "AI researchers debate how close we are to recursive self-improvement",
     "url": "https://www.dwarkesh.com/p/john-beren-charlie",
     "source": "dwarkesh.com",
@@ -207,6 +306,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49652105",
     "fetched_at": "2026-09-11T06:11:59Z",
     "title_zh": "谷歌将从芬兰一处核电站购买一半的电力"
+  },
+  {
+    "title": "Sean Carroll explains the biggest ideas in the universe – Full Interview [video] (2025)",
+    "url": "https://www.youtube.com/watch?v=_TBNJyztai0",
+    "source": "youtube.com",
+    "date": "2026-09-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 84, 24 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49651567",
+    "fetched_at": "2026-09-14T06:33:21Z",
+    "title_zh": "肖恩·卡罗尔解释了宇宙中最伟大的想法 – 完整采访 [视频] (2025)"
   },
   {
     "title": "IKEA made a mod for Skyrim [video]",
