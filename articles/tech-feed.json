@@ -1,5 +1,82 @@
 [
   {
+    "title": "Linux from Scratch",
+    "url": "https://www.linuxfromscratch.org/",
+    "source": "linuxfromscratch.org",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from linuxfromscratch.org. Hacker News score 46, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49707627",
+    "fetched_at": "2026-09-15T06:15:48Z",
+    "title_zh": "从零开始的 Linux"
+  },
+  {
+    "title": "Why don't machine learning research agents overfit?",
+    "url": "https://www.amazon.science/blog/why-dont-machine-learning-research-agents-overfit",
+    "source": "amazon.science",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from amazon.science. Hacker News score 119, 66 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49699648",
+    "fetched_at": "2026-09-15T06:15:53Z",
+    "title_zh": "为什么机器学习研究代理不会过度拟合？"
+  },
+  {
+    "title": "Cloudflare AKE cuts origin HelloRetryRequests from 52% to 3.7%",
+    "url": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 103, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49700255",
+    "fetched_at": "2026-09-15T06:15:52Z",
+    "title_zh": "Cloudflare AKE 将原始 HelloRetryRequests 从 52% 削减至 3.7%"
+  },
+  {
+    "title": "OpenAI bots knew about the RubyGems caching vulnerability",
+    "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
+    "source": "tenderlovemaking.com",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from tenderlovemaking.com. Hacker News score 424, 342 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49695876",
+    "fetched_at": "2026-09-15T06:15:50Z",
+    "title_zh": "OpenAI 机器人知道 RubyGems 缓存漏洞"
+  },
+  {
+    "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+    "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
+    "source": "nathannaveen.dev",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from nathannaveen.dev. Hacker News score 86, 24 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49697477",
+    "fetched_at": "2026-09-15T06:15:49Z",
+    "title_zh": "通过 Memoization（非 AI Gen）将 eBPF CPU 成本降低约 90%"
+  },
+  {
+    "title": "Show HN: Macros with a Behringer FCB1010 MIDI Pedalboard in macOS",
+    "url": "https://github.com/JamesRyanATX/fcbnerd",
+    "source": "github.com",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 54, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49705442",
+    "fetched_at": "2026-09-15T06:15:49Z",
+    "title_zh": "显示 HN：macOS 中使用 Behringer FCB1010 MIDI 踏板的宏"
+  },
+  {
+    "title": "Pion, an agent designed to run any company autonomously",
+    "url": "https://andonlabs.com/blog/why-we-built-pion",
+    "source": "andonlabs.com",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from andonlabs.com. Hacker News score 360, 407 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49700477",
+    "fetched_at": "2026-09-15T06:15:48Z",
+    "title_zh": "Pion，旨在自主运营任何公司的代理"
+  },
+  {
     "title": "“Chilling” warning or overreaction? AI bioweapons report divides experts",
     "url": "https://www.science.org/content/article/chilling-warning-or-overreaction-ai-bioweapons-report-divides-experts",
     "source": "science.org",
@@ -42,6 +119,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49690678",
     "fetched_at": "2026-09-14T06:33:16Z",
     "title_zh": "人工智能的恶意使用"
+  },
+  {
+    "title": "Every invoice in Brazil's economy runs on SOAP 1.2. We mapped it all",
+    "url": "https://github.com/stoix-dev/sefaz-webservices-postman",
+    "source": "github.com",
+    "date": "2026-09-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 53, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49679653",
+    "fetched_at": "2026-09-15T06:15:49Z",
+    "title_zh": "巴西经济中的每张发票都运行在 SOAP 1.2 上。我们绘制了这一切"
+  },
+  {
+    "title": "OpenArm: An open-source 7DOF humanoid arm",
+    "url": "https://github.com/enactic/OpenArm",
+    "source": "github.com",
+    "date": "2026-09-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 28, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49684289",
+    "fetched_at": "2026-09-15T06:15:48Z",
+    "title_zh": "OpenArm：开源 7DOF 人形手臂"
   },
   {
     "title": "Garry Tan wants US open-weight AI labs to 'distill' frontier models, too",
@@ -108,6 +207,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49678969",
     "fetched_at": "2026-09-13T06:23:05Z",
     "title_zh": "为什么人工智能代理会撒谎、欺骗和协调？"
+  },
+  {
+    "title": "Show HN: Redis City – Explore how Redis works in an interactive 3D model",
+    "url": "https://poltora.dev/redis",
+    "source": "poltora.dev",
+    "date": "2026-09-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from poltora.dev. Hacker News score 34, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49676425",
+    "fetched_at": "2026-09-15T06:15:50Z",
+    "title_zh": "Show HN：Redis City – 探索 Redis 如何在交互式 3D 模型中工作"
   },
   {
     "title": "LG Says We're Fake News [video]",
