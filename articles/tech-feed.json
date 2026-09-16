@@ -1,5 +1,104 @@
 [
   {
+    "title": "Stay discoverable in search while disallowing AI training",
+    "url": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 47, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49721435",
+    "fetched_at": "2026-09-16T06:14:41Z",
+    "title_zh": "在搜索中保持可发现性，同时禁止人工智能训练"
+  },
+  {
+    "title": "Datamimic – don't let your coding agent invent its own test world",
+    "url": "https://github.com/rapiddweller/datamimic",
+    "source": "github.com",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 13, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49722276",
+    "fetched_at": "2026-09-16T06:14:39Z",
+    "title_zh": "Datamimic – 不要让你的编码代理发明自己的测试世界"
+  },
+  {
+    "title": "Show HN: Pizza Bot – An inbox for AI agents that work in the background",
+    "url": "https://github.com/pizza-bot-app/pizza-bot",
+    "source": "github.com",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 44, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49713894",
+    "fetched_at": "2026-09-16T06:14:43Z",
+    "title_zh": "Show HN：Pizza Bot – 在后台工作的人工智能代理的收件箱"
+  },
+  {
+    "title": "The Inference Hardware Revolution of 2026",
+    "url": "https://spectrum.ieee.org/inference-hardware-revolution",
+    "source": "spectrum.ieee.org",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 136, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49713024",
+    "fetched_at": "2026-09-16T06:14:43Z",
+    "title_zh": "2026 年推理硬件革命"
+  },
+  {
+    "title": "WangNet – 1.8 MB, zero-dependency Numberwang adjudication in 11 languages",
+    "url": "https://github.com/GraafHenk/numberwang",
+    "source": "github.com",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 133, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49717605",
+    "fetched_at": "2026-09-16T06:14:42Z",
+    "title_zh": "WangNet – 1.8 MB，零依赖 Numberwang 裁决，支持 11 种语言"
+  },
+  {
+    "title": "Building a Linux GPU Driver for the M4 Mac Mini in One Month",
+    "url": "https://codyho.dev/blog/gpu-driver/",
+    "source": "codyho.dev",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from codyho.dev. Hacker News score 242, 151 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49717638",
+    "fetched_at": "2026-09-16T06:14:40Z",
+    "title_zh": "在一个月内为 M4 Mac Mini 构建 Linux GPU 驱动程序"
+  },
+  {
+    "title": "We got admin access to Baseten's production GitHub",
+    "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
+    "source": "strix.ai",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from strix.ai. Hacker News score 261, 142 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49716476",
+    "fetched_at": "2026-09-16T06:14:40Z",
+    "title_zh": "我们获得了 Baseten 生产 GitHub 的管理员访问权限"
+  },
+  {
+    "title": "Introducing System One Models and Jev",
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "source": "typesafe.ai",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from typesafe.ai. Hacker News score 1106, 331 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49717558",
+    "fetched_at": "2026-09-16T06:14:38Z",
+    "title_zh": "系统一模型和 Jev 简介"
+  },
+  {
+    "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+    "url": "https://github.com/arnegiacomo/fugleramme",
+    "source": "github.com",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 1489, 192 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49711544",
+    "fetched_at": "2026-09-16T06:14:38Z",
+    "title_zh": "Show HN：电子墨水框架，可以听到鸟鸣声并将它们绘制为 1800 年代的插图"
+  },
+  {
     "title": "Linux from Scratch",
     "url": "https://www.linuxfromscratch.org/",
     "source": "linuxfromscratch.org",
@@ -9,6 +108,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49707627",
     "fetched_at": "2026-09-15T06:15:48Z",
     "title_zh": "从零开始的 Linux"
+  },
+  {
+    "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
+    "url": "https://www.effort.news/irregular",
+    "source": "effort.news",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from effort.news. Hacker News score 574, 195 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49704132",
+    "fetched_at": "2026-09-16T06:14:41Z",
+    "title_zh": "一家公司是 OpenAI、Anthropic 和 Meta 黑客丑闻的幕后黑手"
   },
   {
     "title": "Why don't machine learning research agents overfit?",
