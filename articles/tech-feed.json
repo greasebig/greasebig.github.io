@@ -1,5 +1,82 @@
 [
   {
+    "title": "Jev Ultrafast: A browser agent with a dynamic, indexed action space",
+    "url": "https://github.com/browser-use/jev-ultrafast",
+    "source": "github.com",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 16, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49735979",
+    "fetched_at": "2026-09-17T06:16:13Z",
+    "title_zh": "Jev Ultrafast：具有动态索引操作空间的浏览器代理"
+  },
+  {
+    "title": "Reverse-engineered Jev-like model",
+    "url": "https://github.com/vinnylarouge/jevlike",
+    "source": "github.com",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 111, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49731282",
+    "fetched_at": "2026-09-17T06:16:13Z",
+    "title_zh": "逆向工程类 Jev 模型"
+  },
+  {
+    "title": "OpenSpec – A lightweight and configurable AI spec framework",
+    "url": "https://openspec.dev/",
+    "source": "openspec.dev",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from openspec.dev. Hacker News score 120, 47 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49734264",
+    "fetched_at": "2026-09-17T06:16:12Z",
+    "title_zh": "OpenSpec – 轻量级且可配置的 AI 规范框架"
+  },
+  {
+    "title": "HarnessTax: How Much Does the Harness Matter for Coding Agents?",
+    "url": "https://harnesstax.github.io/",
+    "source": "harnesstax.github.io",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from harnesstax.github.io. Hacker News score 95, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49733726",
+    "fetched_at": "2026-09-17T06:16:12Z",
+    "title_zh": "HarnessTax：Harness 对编码代理有多重要？"
+  },
+  {
+    "title": "Training a 4B model to produce 81% faster query plans than Postgres",
+    "url": "https://rohanbansal.com/qorl",
+    "source": "rohanbansal.com",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from rohanbansal.com. Hacker News score 488, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49731285",
+    "fetched_at": "2026-09-17T06:16:11Z",
+    "title_zh": "训练 4B 模型生成比 Postgres 快 81% 的查询计划"
+  },
+  {
+    "title": "Small programming tricks",
+    "url": "https://will-keleher.com/posts/small-programming-tricks-matter/",
+    "source": "will-keleher.com",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from will-keleher.com. Hacker News score 477, 206 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49729000",
+    "fetched_at": "2026-09-17T06:16:11Z",
+    "title_zh": "编程小技巧"
+  },
+  {
+    "title": "Nvidia announces native GPU programming in Rust",
+    "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
+    "source": "developer.nvidia.com",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from developer.nvidia.com. Hacker News score 524, 191 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49724881",
+    "fetched_at": "2026-09-17T06:16:10Z",
+    "title_zh": "Nvidia 宣布使用 Rust 进行原生 GPU 编程"
+  },
+  {
     "title": "Stay discoverable in search while disallowing AI training",
     "url": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
     "source": "blog.cloudflare.com",
@@ -20,6 +97,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49722276",
     "fetched_at": "2026-09-16T06:14:39Z",
     "title_zh": "Datamimic – 不要让你的编码代理发明自己的测试世界"
+  },
+  {
+    "title": "Performance Improvements in .NET 11",
+    "url": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-11/",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 246, 43 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49711424",
+    "fetched_at": "2026-09-17T06:16:12Z",
+    "title_zh": ".NET 11 中的性能改进"
+  },
+  {
+    "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+    "url": "https://github.com/arnegiacomo/fugleramme",
+    "source": "github.com",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 2130, 241 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49711544",
+    "fetched_at": "2026-09-17T06:16:12Z",
+    "title_zh": "Show HN：电子墨水框架，可以听到鸟鸣声并将它们绘制为 1800 年代的插图"
   },
   {
     "title": "Show HN: Pizza Bot – An inbox for AI agents that work in the background",
@@ -88,17 +187,6 @@
     "title_zh": "系统一模型和 Jev 简介"
   },
   {
-    "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
-    "url": "https://github.com/arnegiacomo/fugleramme",
-    "source": "github.com",
-    "date": "2026-09-15",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 1489, 192 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49711544",
-    "fetched_at": "2026-09-16T06:14:38Z",
-    "title_zh": "Show HN：电子墨水框架，可以听到鸟鸣声并将它们绘制为 1800 年代的插图"
-  },
-  {
     "title": "Linux from Scratch",
     "url": "https://www.linuxfromscratch.org/",
     "source": "linuxfromscratch.org",
@@ -108,6 +196,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49707627",
     "fetched_at": "2026-09-15T06:15:48Z",
     "title_zh": "从零开始的 Linux"
+  },
+  {
+    "title": "Developing provably correct Rust code with Verus",
+    "url": "https://www.amazon.science/blog/developing-provably-correct-rust-code-with-verus",
+    "source": "amazon.science",
+    "date": "2026-09-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from amazon.science. Hacker News score 80, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49700153",
+    "fetched_at": "2026-09-17T06:16:11Z",
+    "title_zh": "使用 Verus 开发可证明正确的 Rust 代码"
   },
   {
     "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
