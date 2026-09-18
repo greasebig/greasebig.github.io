@@ -1,5 +1,104 @@
 [
   {
+    "title": "Jemalloc 5.4.0",
+    "url": "https://github.com/jemalloc/jemalloc/releases/tag/5.4.0",
+    "source": "github.com",
+    "date": "2026-09-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 18, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49750152",
+    "fetched_at": "2026-09-18T06:06:24Z",
+    "title_zh": "Jemalloc 5.4.0"
+  },
+  {
+    "title": "Hacking OpenAI",
+    "url": "https://www.hacktron.ai/blog/hacking-openai",
+    "source": "hacktron.ai",
+    "date": "2026-09-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from hacktron.ai. Hacker News score 203, 55 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49749656",
+    "fetched_at": "2026-09-18T06:06:23Z",
+    "title_zh": "黑客 OpenAI"
+  },
+  {
+    "title": "LLM Classification Is Feature Engineering",
+    "url": "https://minimallysufficient.com/posts/llm-classification-is-feature-extraction/",
+    "source": "minimallysufficient.com",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from minimallysufficient.com. Hacker News score 97, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49742437",
+    "fetched_at": "2026-09-18T06:06:30Z",
+    "title_zh": "LLM分类是特征工程"
+  },
+  {
+    "title": "Show HN: Share your AI Setup, Learn from others",
+    "url": "https://mysetup.ai/",
+    "source": "mysetup.ai",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from mysetup.ai. Hacker News score 206, 118 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49740105",
+    "fetched_at": "2026-09-18T06:06:29Z",
+    "title_zh": "Show HN：分享您的 AI 设置，向他人学习"
+  },
+  {
+    "title": "Flet 1.0 – Build cross-platform apps in Python",
+    "url": "https://flet.dev/",
+    "source": "flet.dev",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from flet.dev. Hacker News score 88, 41 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49746290",
+    "fetched_at": "2026-09-18T06:06:26Z",
+    "title_zh": "Flet 1.0 – 使用 Python 构建跨平台应用程序"
+  },
+  {
+    "title": "How to Write with an LLM",
+    "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+    "source": "sockpuppet.org",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from sockpuppet.org. Hacker News score 90, 66 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49747070",
+    "fetched_at": "2026-09-18T06:06:25Z",
+    "title_zh": "法学硕士如何写作"
+  },
+  {
+    "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+    "url": "https://bend-lang.com/",
+    "source": "bend-lang.com",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from bend-lang.com. Hacker News score 396, 194 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49746163",
+    "fetched_at": "2026-09-18T06:06:24Z",
+    "title_zh": "Bend – 一种在 CPU 和 GPU 上通过证明阻止 AI 错误的语言"
+  },
+  {
+    "title": "Hister: A private search engine for the pages you visit and the files you keep",
+    "url": "https://github.com/asciimoo/hister",
+    "source": "github.com",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 546, 145 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49743097",
+    "fetched_at": "2026-09-18T06:06:24Z",
+    "title_zh": "Hister：一个私人搜索引擎，用于搜索您访问的页面和您保存的文件"
+  },
+  {
+    "title": "Astra for Law",
+    "url": "https://openai.com/index/astra-for-law/",
+    "source": "openai.com",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 425, 454 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49745940",
+    "fetched_at": "2026-09-18T06:06:23Z",
+    "title_zh": "法律阿斯特拉"
+  },
+  {
     "title": "Jev Ultrafast: A browser agent with a dynamic, indexed action space",
     "url": "https://github.com/browser-use/jev-ultrafast",
     "source": "github.com",
@@ -99,6 +198,17 @@
     "title_zh": "Datamimic – 不要让你的编码代理发明自己的测试世界"
   },
   {
+    "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+    "url": "https://github.com/arnegiacomo/fugleramme",
+    "source": "github.com",
+    "date": "2026-09-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 2278, 256 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49711544",
+    "fetched_at": "2026-09-18T06:06:29Z",
+    "title_zh": "Show HN：电子墨水框架，可以听到鸟鸣声并将它们绘制为 1800 年代的插图"
+  },
+  {
     "title": "Performance Improvements in .NET 11",
     "url": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-11/",
     "source": "devblogs.microsoft.com",
@@ -108,17 +218,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49711424",
     "fetched_at": "2026-09-17T06:16:12Z",
     "title_zh": ".NET 11 中的性能改进"
-  },
-  {
-    "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
-    "url": "https://github.com/arnegiacomo/fugleramme",
-    "source": "github.com",
-    "date": "2026-09-15",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 2130, 241 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49711544",
-    "fetched_at": "2026-09-17T06:16:12Z",
-    "title_zh": "Show HN：电子墨水框架，可以听到鸟鸣声并将它们绘制为 1800 年代的插图"
   },
   {
     "title": "Show HN: Pizza Bot – An inbox for AI agents that work in the background",
