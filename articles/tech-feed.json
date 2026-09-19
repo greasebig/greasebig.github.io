@@ -1,5 +1,82 @@
 [
   {
+    "title": "NASA-IBM Lunar Foundation open-Source Geospatial AI Model",
+    "url": "https://newsroom.usra.edu/usra-contributes-planetary-science-expertise-to-nasa-ibm-lunar-foundation-model/",
+    "source": "newsroom.usra.edu",
+    "date": "2026-09-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from newsroom.usra.edu. Hacker News score 8, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49763379",
+    "fetched_at": "2026-09-19T06:06:01Z",
+    "title_zh": "NASA-IBM月球基金会开源地理空间人工智能模型"
+  },
+  {
+    "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
+    "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+    "source": "med.stanford.edu",
+    "date": "2026-09-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from med.stanford.edu. Hacker News score 3, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49763697",
+    "fetched_at": "2026-09-19T06:05:55Z",
+    "title_zh": "斯坦福医学院主导的研究发现，人脑是两个独立的器官"
+  },
+  {
+    "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+    "url": "https://code.claude.com/docs/en/changelog",
+    "source": "code.claude.com",
+    "date": "2026-09-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from code.claude.com. Hacker News score 607, 214 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49760187",
+    "fetched_at": "2026-09-19T06:06:07Z",
+    "title_zh": "如果没有Claude.md ， Claude Code现在读取AGENTS.md"
+  },
+  {
+    "title": "Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
+    "url": "https://cactuscompute.com/needle",
+    "source": "cactuscompute.com",
+    "date": "2026-09-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from cactuscompute.com. Hacker News score 189, 83 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49748553",
+    "fetched_at": "2026-09-19T06:06:05Z",
+    "title_zh": "显示HN ： Cactus Needle 3 ： 8-29MB自动化型号可以匹配DeepSeek V4 Flash"
+  },
+  {
+    "title": "Saving another 100TB of RAM",
+    "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-09-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 306, 59 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49758580",
+    "fetched_at": "2026-09-19T06:05:59Z",
+    "title_zh": "再节省100TB内存"
+  },
+  {
+    "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+    "url": "https://spectrum.ieee.org/llms-for-chip-design",
+    "source": "spectrum.ieee.org",
+    "date": "2026-09-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 98, 74 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49761432",
+    "fetched_at": "2026-09-19T06:05:56Z",
+    "title_zh": "OpenAI如何使用自己的LLM设计其Jalapeño芯片"
+  },
+  {
+    "title": "Cloudflare Quick Tunnels",
+    "url": "https://try.cloudflare.com/",
+    "source": "try.cloudflare.com",
+    "date": "2026-09-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from try.cloudflare.com. Hacker News score 658, 272 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49754785",
+    "fetched_at": "2026-09-19T06:05:53Z",
+    "title_zh": "Cloudflare快速隧道"
+  },
+  {
     "title": "Jemalloc 5.4.0",
     "url": "https://github.com/jemalloc/jemalloc/releases/tag/5.4.0",
     "source": "github.com",
@@ -20,6 +97,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49749656",
     "fetched_at": "2026-09-18T06:06:23Z",
     "title_zh": "黑客 OpenAI"
+  },
+  {
+    "title": "How to Write with an LLM",
+    "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+    "source": "sockpuppet.org",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from sockpuppet.org. Hacker News score 459, 309 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49747070",
+    "fetched_at": "2026-09-19T06:06:03Z",
+    "title_zh": "如何与法学硕士一起写作"
   },
   {
     "title": "LLM Classification Is Feature Engineering",
@@ -53,17 +141,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49746290",
     "fetched_at": "2026-09-18T06:06:26Z",
     "title_zh": "Flet 1.0 – 使用 Python 构建跨平台应用程序"
-  },
-  {
-    "title": "How to Write with an LLM",
-    "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
-    "source": "sockpuppet.org",
-    "date": "2026-09-17",
-    "repost": true,
-    "summary": "转载 / Curated repost from sockpuppet.org. Hacker News score 90, 66 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49747070",
-    "fetched_at": "2026-09-18T06:06:25Z",
-    "title_zh": "法学硕士如何写作"
   },
   {
     "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
@@ -108,6 +185,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49735979",
     "fetched_at": "2026-09-17T06:16:13Z",
     "title_zh": "Jev Ultrafast：具有动态索引操作空间的浏览器代理"
+  },
+  {
+    "title": "Why building a Rust LSP is hard",
+    "url": "https://rust-glancer.github.io/blog/why-lsp-is-hard/",
+    "source": "rust-glancer.github.io",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from rust-glancer.github.io. Hacker News score 38, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49734131",
+    "fetched_at": "2026-09-19T06:05:58Z",
+    "title_zh": "为什么构建Rust LSP很难"
+  },
+  {
+    "title": "Typesafe-computer-use drives a Mac toward a goal for 1/50th of a cent per step",
+    "url": "https://github.com/awlevin/typesafe-computer-use",
+    "source": "github.com",
+    "date": "2026-09-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 39, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49733647",
+    "fetched_at": "2026-09-19T06:05:51Z",
+    "title_zh": "Typesafe-computer-use将Mac推向每步1/50美分的目标"
   },
   {
     "title": "Reverse-engineered Jev-like model",
@@ -4079,17 +4178,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49247477",
     "fetched_at": "2026-08-11T03:14:09Z",
     "title_zh": "GPU 上的 Rust SIMD"
-  },
-  {
-    "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
-    "url": "https://cactuscompute.com/needle",
-    "source": "cactuscompute.com",
-    "date": "2026-08-10",
-    "repost": true,
-    "summary": "转载 / Curated repost from cactuscompute.com. Hacker News score 209, 89 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49246804",
-    "fetched_at": "2026-08-11T03:14:08Z",
-    "title_zh": "Show HN：Needle2：14MB 代理法学硕士，适用于手机、可穿戴设备、智能家居和机器人"
   },
   {
     "title": "Blender MCP maintainer GitHub account hacked",
