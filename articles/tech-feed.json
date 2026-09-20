@@ -1,5 +1,93 @@
 [
   {
+    "title": "The quest for open PDKs (silicon foundry Process Development Kits) [video]",
+    "url": "https://www.youtube.com/watch?v=-7indiyU9nU",
+    "source": "youtube.com",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 6, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49772597",
+    "fetched_at": "2026-09-20T06:31:03Z",
+    "title_zh": "寻求开放式PDK （硅晶圆代工工艺开发套件） [视频]"
+  },
+  {
+    "title": "Google AI Studio fakes data deletion. VRP auto-banned me in 60s for reporting it",
+    "url": "https://medium.com/@istokovicsgyorgy79/google-ai-studio-fakes-data-deletion-vrp-auto-banned-me-in-60s-for-reporting-it-ea68e06f9bc2",
+    "source": "medium.com",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from medium.com. Hacker News score 20, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49772544",
+    "fetched_at": "2026-09-20T06:30:55Z",
+    "title_zh": "Google AI Studio伪造数据删除。VRP在60年代因举报而自动禁止我"
+  },
+  {
+    "title": "Microsoft director: AI scraping 'the largest theft of labor in human history'",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit",
+    "source": "tomshardware.com",
+    "date": "2026-09-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from tomshardware.com. Hacker News score 156, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49768921",
+    "fetched_at": "2026-09-20T06:31:07Z",
+    "title_zh": "微软总监：人工智能抓取“人类历史上最大的劳动力盗窃案”"
+  },
+  {
+    "title": "Qualcomm's Adreno X2 GPU",
+    "url": "https://chipsandcheese.com/p/qualcomms-adreno-x2-gpu",
+    "source": "chipsandcheese.com",
+    "date": "2026-09-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from chipsandcheese.com. Hacker News score 15, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49770018",
+    "fetched_at": "2026-09-20T06:31:05Z",
+    "title_zh": "高通的Adreno X2 GPU"
+  },
+  {
+    "title": "I think you should almost never use AI to write",
+    "url": "https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai",
+    "source": "erichgrunewald.substack.com",
+    "date": "2026-09-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from erichgrunewald.substack.com. Hacker News score 281, 137 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49767937",
+    "fetched_at": "2026-09-20T06:31:01Z",
+    "title_zh": "我认为你几乎不应该用人工智能来写作"
+  },
+  {
+    "title": "Show HN: CUA-S1 – A System One Model for Computer Use",
+    "url": "https://github.com/trycua/cua",
+    "source": "github.com",
+    "date": "2026-09-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 74, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49767564",
+    "fetched_at": "2026-09-20T06:30:59Z",
+    "title_zh": "显示HN ： CUA-S1 –计算机使用的系统一型号"
+  },
+  {
+    "title": "What Zig felt like, coming from Rust",
+    "url": "https://besok.github.io/posts/what-zig-felt-like-coming-from-rust/",
+    "source": "besok.github.io",
+    "date": "2026-09-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from besok.github.io. Hacker News score 200, 240 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49766637",
+    "fetched_at": "2026-09-20T06:30:52Z",
+    "title_zh": "来自Rust的Zig的感受"
+  },
+  {
+    "title": "I built non-autoregressive decision models with RL a year ago",
+    "url": "https://laya.convaiinnovations.com/",
+    "source": "laya.convaiinnovations.com",
+    "date": "2026-09-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from laya.convaiinnovations.com. Hacker News score 1174, 285 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49765348",
+    "fetched_at": "2026-09-20T06:30:48Z",
+    "title_zh": "一年前，我用强化学习构建了非自回归决策模型"
+  },
+  {
     "title": "NASA-IBM Lunar Foundation open-Source Geospatial AI Model",
     "url": "https://newsroom.usra.edu/usra-contributes-planetary-science-expertise-to-nasa-ibm-lunar-foundation-model/",
     "source": "newsroom.usra.edu",
@@ -104,10 +192,21 @@
     "source": "sockpuppet.org",
     "date": "2026-09-17",
     "repost": true,
-    "summary": "转载 / Curated repost from sockpuppet.org. Hacker News score 459, 309 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from sockpuppet.org. Hacker News score 662, 385 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=49747070",
-    "fetched_at": "2026-09-19T06:06:03Z",
+    "fetched_at": "2026-09-20T06:30:57Z",
     "title_zh": "如何与法学硕士一起写作"
+  },
+  {
+    "title": "Faster NumPy in the Browser",
+    "url": "https://notebook.link/blog/the-last-mile-faster-numpy/",
+    "source": "notebook.link",
+    "date": "2026-09-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from notebook.link. Hacker News score 24, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49737326",
+    "fetched_at": "2026-09-20T06:30:51Z",
+    "title_zh": "浏览器中更快的NumPy"
   },
   {
     "title": "LLM Classification Is Feature Engineering",
