@@ -1,5 +1,104 @@
 [
   {
+    "title": "Show HN: Gdocs-me-up: a high-fidelity Google Docs exporter",
+    "url": "https://github.com/behdad/gdocs-me-up",
+    "source": "github.com",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 7, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49781727",
+    "fetched_at": "2026-09-21T06:37:22Z",
+    "title_zh": "Show HN：Gdocs-me-up：高保真 Google 文档导出器"
+  },
+  {
+    "title": "AI chatbots give wrong answers to financial queries 'most of the time'",
+    "url": "https://www.ft.com/content/c0cd359d-df84-4208-a789-ffa864b43666",
+    "source": "ft.com",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from ft.com. Hacker News score 50, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49783062",
+    "fetched_at": "2026-09-21T06:37:16Z",
+    "title_zh": "人工智能聊天机器人“大多数时候”对财务查询给出错误答案"
+  },
+  {
+    "title": "Show HN: jevals – replacing LLM judges with typed Jev decisions",
+    "url": "https://github.com/openlayer-ai/jevals",
+    "source": "github.com",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 16, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49780849",
+    "fetched_at": "2026-09-21T06:37:21Z",
+    "title_zh": "Show HN：jevals – 用类型化的 Jev 决策取代 LLM 法官"
+  },
+  {
+    "title": "Laya on Mac M4 CoreML Offline",
+    "url": "https://gist.github.com/fordnox/e592d0f68b543fd044be8e6d040863a0",
+    "source": "gist.github.com",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 149, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49777106",
+    "fetched_at": "2026-09-21T06:37:20Z",
+    "title_zh": "Laya on Mac M4 CoreML 离线版"
+  },
+  {
+    "title": "DAPO: An Open-source RL System from ByteDance Seed and Tsinghua AIR",
+    "url": "https://github.com/BytedTsinghua-SIA/DAPO",
+    "source": "github.com",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 15, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49781138",
+    "fetched_at": "2026-09-21T06:37:20Z",
+    "title_zh": "DAPO：字节跳动Seed和清华AIR的开源强化学习系统"
+  },
+  {
+    "title": "I turned Jev into a (lousy) chatbot",
+    "url": "https://github.com/kyle-pena-nlp/jevchat/",
+    "source": "github.com",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 119, 38 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49778162",
+    "fetched_at": "2026-09-21T06:37:19Z",
+    "title_zh": "我把杰夫变成了一个（糟糕的）聊天机器人"
+  },
+  {
+    "title": "Resident Evil 4 (GameCube) – complete byte-identical decompilation to C/C++",
+    "url": "https://github.com/adonis-singh/re4",
+    "source": "github.com",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 109, 62 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49778022",
+    "fetched_at": "2026-09-21T06:37:19Z",
+    "title_zh": "Resident Evil 4 (GameCube) – 完整的字节相同反编译为 C/C++"
+  },
+  {
+    "title": "Ogre Battle 64 Recompiled Project at 99.05%",
+    "url": "https://github.com/lfarroco/ogre-battle-64-recomp",
+    "source": "github.com",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 61, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49780022",
+    "fetched_at": "2026-09-21T06:37:17Z",
+    "title_zh": "Ogre Battle 64 重新编译项目达到 99.05%"
+  },
+  {
+    "title": "Pirate Face Rescues LLM Models from Deletion",
+    "url": "https://pirateface.co/",
+    "source": "pirateface.co",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from pirateface.co. Hacker News score 512, 143 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49776699",
+    "fetched_at": "2026-09-21T06:37:16Z",
+    "title_zh": "海盗脸拯救了法学硕士模型免于被删除"
+  },
+  {
     "title": "The quest for open PDKs (silicon foundry Process Development Kits) [video]",
     "url": "https://www.youtube.com/watch?v=-7indiyU9nU",
     "source": "youtube.com",
@@ -192,10 +291,10 @@
     "source": "sockpuppet.org",
     "date": "2026-09-17",
     "repost": true,
-    "summary": "转载 / Curated repost from sockpuppet.org. Hacker News score 662, 385 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from sockpuppet.org. Hacker News score 726, 404 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=49747070",
-    "fetched_at": "2026-09-20T06:30:57Z",
-    "title_zh": "如何与法学硕士一起写作"
+    "fetched_at": "2026-09-21T06:37:22Z",
+    "title_zh": "法学硕士如何写作"
   },
   {
     "title": "Faster NumPy in the Browser",
