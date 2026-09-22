@@ -1,5 +1,104 @@
 [
   {
+    "title": "Claude Status – Elevated errors for multiple models",
+    "url": "https://status.claude.com/incidents/7g1qpkyz5gxh",
+    "source": "status.claude.com",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from status.claude.com. Hacker News score 91, 69 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49795579",
+    "fetched_at": "2026-09-22T06:25:37Z",
+    "title_zh": "Claude Status – 多个模型的错误增加"
+  },
+  {
+    "title": "Heretic removes restrictions from language models",
+    "url": "https://heretic-project.org/",
+    "source": "heretic-project.org",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from heretic-project.org. Hacker News score 249, 103 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49783101",
+    "fetched_at": "2026-09-22T06:25:40Z",
+    "title_zh": "Heretic 消除了语言模型的限制"
+  },
+  {
+    "title": "TXR: An Original, New Programming Language for Convenient Data Munging",
+    "url": "https://www.nongnu.org/txr/",
+    "source": "nongnu.org",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from nongnu.org. Hacker News score 29, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49783274",
+    "fetched_at": "2026-09-22T06:25:40Z",
+    "title_zh": "TXR：一种新颖的原创编程语言，方便数据修改"
+  },
+  {
+    "title": "Apple Copland D11E4 Booting in the Browser",
+    "url": "https://www.pagetable.com/300",
+    "source": "pagetable.com",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from pagetable.com. Hacker News score 121, 34 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49791125",
+    "fetched_at": "2026-09-22T06:25:39Z",
+    "title_zh": "Apple Copland D11E4 在浏览器中启动"
+  },
+  {
+    "title": "Roboharm: Do frontier robot policies refuse unsafe instructions?",
+    "url": "https://robocurve.org/roboharm/",
+    "source": "robocurve.org",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from robocurve.org. Hacker News score 44, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49791720",
+    "fetched_at": "2026-09-22T06:25:39Z",
+    "title_zh": "Roboharm：前沿机器人政策是否拒绝不安全指令？"
+  },
+  {
+    "title": "Frontier AI on Your Own Hardware",
+    "url": "https://timdettmers.com/2026/09/21/dlab-open-source-week/",
+    "source": "timdettmers.com",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from timdettmers.com. Hacker News score 138, 71 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49791647",
+    "fetched_at": "2026-09-22T06:25:38Z",
+    "title_zh": "您自己的硬件上的前沿人工智能"
+  },
+  {
+    "title": "Python Workers are now generally available",
+    "url": "https://blog.cloudflare.com/python-workers-ga/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 207, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49787142",
+    "fetched_at": "2026-09-22T06:25:38Z",
+    "title_zh": "Python Workers 现已普遍可用"
+  },
+  {
+    "title": "The Advisory Group on Mathematics and Artificial Intelligence",
+    "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/",
+    "source": "terrytao.wordpress.com",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from terrytao.wordpress.com. Hacker News score 118, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49791997",
+    "fetched_at": "2026-09-22T06:25:37Z",
+    "title_zh": "数学与人工智能咨询小组"
+  },
+  {
+    "title": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
+    "url": "https://linear.app/now/ci-bottleneck-reworked",
+    "source": "linear.app",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from linear.app. Hacker News score 203, 204 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49792067",
+    "fetched_at": "2026-09-22T06:25:36Z",
+    "title_zh": "AI 编码使 CI 成为瓶颈，因此我们重新设计了我们的编码以跟上"
+  },
+  {
     "title": "Show HN: Gdocs-me-up: a high-fidelity Google Docs exporter",
     "url": "https://github.com/behdad/gdocs-me-up",
     "source": "github.com",
@@ -20,6 +119,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49783062",
     "fetched_at": "2026-09-21T06:37:16Z",
     "title_zh": "人工智能聊天机器人“大多数时候”对财务查询给出错误答案"
+  },
+  {
+    "title": "Paper Models of Polyhedra",
+    "url": "https://www.polyhedra.net/en/",
+    "source": "polyhedra.net",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from polyhedra.net. Hacker News score 18, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49771389",
+    "fetched_at": "2026-09-22T06:25:38Z",
+    "title_zh": "多面体纸模型"
   },
   {
     "title": "Show HN: jevals – replacing LLM judges with typed Jev decisions",
