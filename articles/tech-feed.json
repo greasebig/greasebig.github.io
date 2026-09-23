@@ -1,5 +1,104 @@
 [
   {
+    "title": "OpenAI is well positioned to fast-follow Jev",
+    "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/",
+    "source": "arcturus-labs.com",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from arcturus-labs.com. Hacker News score 279, 202 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49802161",
+    "fetched_at": "2026-09-23T06:09:51Z",
+    "title_zh": "OpenAI 处于有利地位，可以快速追随 Jev"
+  },
+  {
+    "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
+    "url": "https://artificialanalysis.ai/models/claude-opus-5-5",
+    "source": "artificialanalysis.ai",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from artificialanalysis.ai. Hacker News score 268, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49804316",
+    "fetched_at": "2026-09-23T06:09:50Z",
+    "title_zh": "Claude Opus 5.5 情报、性能和价格分析（最大值）"
+  },
+  {
+    "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+    "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
+    "source": "bloomberg.com",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from bloomberg.com. Hacker News score 557, 269 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49806430",
+    "fetched_at": "2026-09-23T06:09:50Z",
+    "title_zh": "五角大楼称过度依赖人工智能导致导弹袭击伊朗学校"
+  },
+  {
+    "title": "Unreal Agent",
+    "url": "https://unreallabs.ai/blog/unreal-agent/",
+    "source": "unreallabs.ai",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from unreallabs.ai. Hacker News score 156, 94 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49805748",
+    "fetched_at": "2026-09-23T06:09:50Z",
+    "title_zh": "虚幻特工"
+  },
+  {
+    "title": "The current balance of power in open models",
+    "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+    "source": "interconnects.ai",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from interconnects.ai. Hacker News score 71, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49808816",
+    "fetched_at": "2026-09-23T06:09:50Z",
+    "title_zh": "开放模型中当前的力量平衡"
+  },
+  {
+    "title": "WordPress: Unauthenticated path traversal leading to conditional RCE",
+    "url": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp",
+    "source": "github.com",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 178, 92 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49803959",
+    "fetched_at": "2026-09-23T06:09:49Z",
+    "title_zh": "WordPress：未经身份验证的路径遍历导致条件 RCE"
+  },
+  {
+    "title": "GPT-6 Sol and Luna",
+    "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+    "source": "openai.com",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 1389, 677 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49805509",
+    "fetched_at": "2026-09-23T06:09:48Z",
+    "title_zh": "GPT-6 索尔和露娜"
+  },
+  {
+    "title": "Claude Opus 5.5",
+    "url": "https://www.anthropic.com/claude-opus-5-5",
+    "source": "anthropic.com",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 1405, 887 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49803892",
+    "fetched_at": "2026-09-23T06:09:48Z",
+    "title_zh": "克劳德作品 5.5"
+  },
+  {
+    "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+    "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+    "source": "cryptocellar.org",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from cryptocellar.org. Hacker News score 624, 379 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49801324",
+    "fetched_at": "2026-09-23T06:09:48Z",
+    "title_zh": "OpenAI GPT–6 Astra 打破了自 2005 年以来一直抵制解决方案的 Enigma 消息"
+  },
+  {
     "title": "Claude Status – Elevated errors for multiple models",
     "url": "https://status.claude.com/incidents/7g1qpkyz5gxh",
     "source": "status.claude.com",
@@ -9,6 +108,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49795579",
     "fetched_at": "2026-09-22T06:25:37Z",
     "title_zh": "Claude Status – 多个模型的错误增加"
+  },
+  {
+    "title": "ReBarUEFI: Resizable BAR for almost any UEFI system",
+    "url": "https://github.com/xCuri0/ReBarUEFI",
+    "source": "github.com",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 113, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49781862",
+    "fetched_at": "2026-09-23T06:09:49Z",
+    "title_zh": "ReBarUEFI：可调整大小的 BAR，适用于几乎所有 UEFI 系统"
   },
   {
     "title": "Heretic removes restrictions from language models",
