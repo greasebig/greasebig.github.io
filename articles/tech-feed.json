@@ -1,5 +1,115 @@
 [
   {
+    "title": "Australia says OpenAI agent hacked into government website",
+    "url": "https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411",
+    "source": "channelnewsasia.com",
+    "date": "2026-09-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from channelnewsasia.com. Hacker News score 100, 67 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49825024",
+    "fetched_at": "2026-09-24T06:19:28Z",
+    "title_zh": "澳大利亚称 OpenAI 代理入侵政府网站"
+  },
+  {
+    "title": "Contrastive Language Models",
+    "url": "https://contrastive-lm.notion.site/",
+    "source": "contrastive-lm.notion.site",
+    "date": "2026-09-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from contrastive-lm.notion.site. Hacker News score 11, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49826221",
+    "fetched_at": "2026-09-24T06:19:27Z",
+    "title_zh": "对比语言模型"
+  },
+  {
+    "title": "Six-year-old breaks women's world Rubik's Cube record [video]",
+    "url": "https://www.youtube.com/watch?v=UCMRgvyTm08",
+    "source": "youtube.com",
+    "date": "2026-09-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 24, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49826482",
+    "fetched_at": "2026-09-24T06:19:27Z",
+    "title_zh": "六岁女孩打破女子魔方世界纪录[视频]"
+  },
+  {
+    "title": "Virtio-nvgpu: Near-native Nvidia GPU access inside a KVM guest",
+    "url": "https://github.com/nestrilabs/virtio-nvgpu",
+    "source": "github.com",
+    "date": "2026-09-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 57, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49824864",
+    "fetched_at": "2026-09-24T06:19:26Z",
+    "title_zh": "Virtio-nvgpu：KVM 来宾内部近乎原生的 Nvidia GPU 访问"
+  },
+  {
+    "title": "Feds Target AI Critics as \"Foreign Agents\"",
+    "url": "https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign",
+    "source": "kenklippenstein.com",
+    "date": "2026-09-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from kenklippenstein.com. Hacker News score 210, 187 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49824686",
+    "fetched_at": "2026-09-24T06:19:25Z",
+    "title_zh": "美联储将人工智能批评者视为“外国代理人”"
+  },
+  {
+    "title": "Mercury 2.5 LLM hits 770 tokens per second",
+    "url": "https://artificialanalysis.ai/models/mercury-2-5",
+    "source": "artificialanalysis.ai",
+    "date": "2026-09-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from artificialanalysis.ai. Hacker News score 86, 53 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49823348",
+    "fetched_at": "2026-09-24T06:19:27Z",
+    "title_zh": "Mercury 2.5 LLM 达到每秒 770 个代币"
+  },
+  {
+    "title": "VSCode's SSH Agent Is Bananas (2025)",
+    "url": "https://fly.io/blog/vscode-ssh-wtf/",
+    "source": "fly.io",
+    "date": "2026-09-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from fly.io. Hacker News score 187, 116 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49822555",
+    "fetched_at": "2026-09-24T06:19:26Z",
+    "title_zh": "VSCode 的 SSH 代理是 Bananas (2025)"
+  },
+  {
+    "title": "Linux support is coming to Snapdragon X2 Series",
+    "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
+    "source": "qualcomm.com",
+    "date": "2026-09-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from qualcomm.com. Hacker News score 299, 133 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49823582",
+    "fetched_at": "2026-09-24T06:19:25Z",
+    "title_zh": "Snapdragon X2 系列即将支持 Linux"
+  },
+  {
+    "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+    "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+    "source": "anthropic.com",
+    "date": "2026-09-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 591, 603 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49820134",
+    "fetched_at": "2026-09-24T06:19:25Z",
+    "title_zh": "克劳德发现了一种具有类似 CRISPR 重复序列的新型酶系统"
+  },
+  {
+    "title": "Lazydraw: Terminal ASCII editor for drawing diagrams and sketches",
+    "url": "https://github.com/mpospirit/lazydraw",
+    "source": "github.com",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 8, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49800172",
+    "fetched_at": "2026-09-24T06:19:26Z",
+    "title_zh": "Lazydraw：用于绘制图表和草图的终端 ASCII 编辑器"
+  },
+  {
     "title": "OpenAI is well positioned to fast-follow Jev",
     "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/",
     "source": "arcturus-labs.com",
