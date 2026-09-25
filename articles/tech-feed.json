@@ -1,5 +1,49 @@
 [
   {
+    "title": "Goodbye Google",
+    "url": "https://robert.ocallahan.org/2026/09/goodbye-google.html",
+    "source": "robert.ocallahan.org",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from robert.ocallahan.org. Hacker News score 88, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49840314",
+    "fetched_at": "2026-09-25T06:14:48Z",
+    "title_zh": "再见谷歌"
+  },
+  {
+    "title": "Tutoring company tells parents to save their money and 'use AI instead'",
+    "url": "https://www.afr.com/policy/health-and-education/tutoring-company-tell-parents-to-save-their-money-and-use-ai-instead-20260923-p60z0r",
+    "source": "afr.com",
+    "date": "2026-09-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from afr.com. Hacker News score 101, 170 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49831690",
+    "fetched_at": "2026-09-25T06:14:51Z",
+    "title_zh": "辅导公司告诉家长省钱，“改用人工智能”"
+  },
+  {
+    "title": "'That's so AI ' What gen Alpha's biggest insult tells us",
+    "url": "https://www.theguardian.com/society/2026/sep/24/thats-so-ai-what-gen-alphas-biggest-insult-tells-us",
+    "source": "theguardian.com",
+    "date": "2026-09-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from theguardian.com. Hacker News score 137, 193 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49829650",
+    "fetched_at": "2026-09-25T06:14:51Z",
+    "title_zh": "“这就是人工智能”阿尔法一代最大的侮辱告诉我们什么"
+  },
+  {
+    "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+    "url": "https://github.com/devdotfast/whiteboard",
+    "source": "github.com",
+    "date": "2026-09-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 260, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49833867",
+    "fetched_at": "2026-09-25T06:14:48Z",
+    "title_zh": "Show HN：Whiteboard (YC W26) – 用于深思熟虑的软件设计的开源 IDE"
+  },
+  {
     "title": "Australia says OpenAI agent hacked into government website",
     "url": "https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411",
     "source": "channelnewsasia.com",
@@ -55,6 +99,39 @@
     "title_zh": "美联储将人工智能批评者视为“外国代理人”"
   },
   {
+    "title": "Show HN: AgentRun: DSL to turn agents into workflows",
+    "url": "https://github.com/Parcha-ai/agentrun",
+    "source": "github.com",
+    "date": "2026-09-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 41, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49821438",
+    "fetched_at": "2026-09-25T06:14:51Z",
+    "title_zh": "显示 HN: AgentRun: DSL 将代理转变为工作流程"
+  },
+  {
+    "title": "WaveDigger: Dig into wireless signals to discover their physical locations",
+    "url": "https://github.com/christianrowlands/wavedigger",
+    "source": "github.com",
+    "date": "2026-09-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 106, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49815370",
+    "fetched_at": "2026-09-25T06:14:50Z",
+    "title_zh": "WaveDigger：挖掘无线信号以发现其物理位置"
+  },
+  {
+    "title": "Rails World 2026 Opening Keynote [video]",
+    "url": "https://www.youtube.com/watch?v=vDjW_dRyKXY",
+    "source": "youtube.com",
+    "date": "2026-09-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 295, 318 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49817680",
+    "fetched_at": "2026-09-25T06:14:49Z",
+    "title_zh": "Rails World 2026 开幕主题演讲 [视频]"
+  },
+  {
     "title": "Mercury 2.5 LLM hits 770 tokens per second",
     "url": "https://artificialanalysis.ai/models/mercury-2-5",
     "source": "artificialanalysis.ai",
@@ -97,6 +174,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49820134",
     "fetched_at": "2026-09-24T06:19:25Z",
     "title_zh": "克劳德发现了一种具有类似 CRISPR 重复序列的新型酶系统"
+  },
+  {
+    "title": "My weird new hobby: Wandering around Tokyo on Google Maps",
+    "url": "https://ahmedhossamdev.com/writing/my-weird-new-hobby-wandering-around-tokyo/",
+    "source": "ahmedhossamdev.com",
+    "date": "2026-09-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from ahmedhossamdev.com. Hacker News score 282, 123 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49805344",
+    "fetched_at": "2026-09-25T06:14:49Z",
+    "title_zh": "我奇怪的新爱好：在 Google 地图上在东京闲逛"
   },
   {
     "title": "Lazydraw: Terminal ASCII editor for drawing diagrams and sketches",
@@ -218,6 +306,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49795579",
     "fetched_at": "2026-09-22T06:25:37Z",
     "title_zh": "Claude Status – 多个模型的错误增加"
+  },
+  {
+    "title": "Security auditing in the age of (good enough) AI",
+    "url": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/",
+    "source": "blog.trailofbits.com",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.trailofbits.com. Hacker News score 83, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49793957",
+    "fetched_at": "2026-09-25T06:14:50Z",
+    "title_zh": "（足够好的）人工智能时代的安全审计"
+  },
+  {
+    "title": "Book review: Is parallel programming hard, and, if so, what can you do about it?",
+    "url": "https://ahelwer.ca/post/2026-09-21-concurrency-textbook/",
+    "source": "ahelwer.ca",
+    "date": "2026-09-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from ahelwer.ca. Hacker News score 110, 34 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49787759",
+    "fetched_at": "2026-09-25T06:14:49Z",
+    "title_zh": "书评：并行编程很难吗？如果很难，你能做什么？"
   },
   {
     "title": "ReBarUEFI: Resizable BAR for almost any UEFI system",
