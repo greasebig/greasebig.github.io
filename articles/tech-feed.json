@@ -1,5 +1,93 @@
 [
   {
+    "title": "Can AI Shopping Agents Be Trusted?",
+    "url": "https://www.f-secure.com/en/partners/insights/can-ai-shopping-agents-be-trusted-we-built-one-to-find-out",
+    "source": "f-secure.com",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from f-secure.com. Hacker News score 5, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49853522",
+    "fetched_at": "2026-09-26T06:14:33Z",
+    "title_zh": "AI代购值得信赖吗？"
+  },
+  {
+    "title": "A single function Jev-like wrapper for LLMs, including vision models",
+    "url": "http://allanrbo.blogspot.com/2026/09/a-jev-like-wrapper-for-llms-including.html",
+    "source": "allanrbo.blogspot.com",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from allanrbo.blogspot.com. Hacker News score 24, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49853175",
+    "fetched_at": "2026-09-26T06:14:32Z",
+    "title_zh": "一个类似于 Jev 的单一功能 LLM 包装器，包括视觉模型"
+  },
+  {
+    "title": "Git-bug: Distributed, offline-first bug tracker embedded in Git",
+    "url": "https://github.com/git-bug/git-bug",
+    "source": "github.com",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 326, 107 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49843174",
+    "fetched_at": "2026-09-26T06:14:37Z",
+    "title_zh": "Git-bug：嵌入在 Git 中的分布式、离线优先的错误跟踪器"
+  },
+  {
+    "title": "Microsoft abandons personal AI chatbot race with Copilot reboot",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot",
+    "source": "bloomberg.com",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from bloomberg.com. Hacker News score 108, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49844896",
+    "fetched_at": "2026-09-26T06:14:36Z",
+    "title_zh": "微软放弃个人人工智能聊天机器人竞赛，重启 Copilot"
+  },
+  {
+    "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+    "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+    "source": "cnbc.com",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from cnbc.com. Hacker News score 427, 740 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49845977",
+    "fetched_at": "2026-09-26T06:14:35Z",
+    "title_zh": "美国上诉法院维持将 Anthropic 指定为供应链风险"
+  },
+  {
+    "title": "Excel now supports multiple values in a single cell",
+    "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/put-multiple-values-in-one-cell-with-lists-and-arrays-in-excel/4559395",
+    "source": "techcommunity.microsoft.com",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from techcommunity.microsoft.com. Hacker News score 146, 106 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49849832",
+    "fetched_at": "2026-09-26T06:14:34Z",
+    "title_zh": "Excel 现在支持单个单元格中的多个值"
+  },
+  {
+    "title": "Ollaya – Ollama for open-source, Jev-style decision models",
+    "url": "https://ollaya.dev/",
+    "source": "ollaya.dev",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from ollaya.dev. Hacker News score 396, 108 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49848269",
+    "fetched_at": "2026-09-26T06:14:33Z",
+    "title_zh": "Ollaya – Ollama 用于开源、Jev 风格的决策模型"
+  },
+  {
+    "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
+    "url": "https://swarmtraces.org/",
+    "source": "swarmtraces.org",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from swarmtraces.org. Hacker News score 367, 220 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49849985",
+    "fetched_at": "2026-09-26T06:14:32Z",
+    "title_zh": "揭示 OpenAI 代理如何破解 Hugging Face 的详细信息"
+  },
+  {
     "title": "Goodbye Google",
     "url": "https://robert.ocallahan.org/2026/09/goodbye-google.html",
     "source": "robert.ocallahan.org",
@@ -9,6 +97,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49840314",
     "fetched_at": "2026-09-25T06:14:48Z",
     "title_zh": "再见谷歌"
+  },
+  {
+    "title": "How I changed teaching after AI managed to do all my homework assignments",
+    "url": "https://thelastsoftwareengineer.substack.com/p/how-i-changed-teaching-after-ai-managed",
+    "source": "thelastsoftwareengineer.substack.com",
+    "date": "2026-09-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from thelastsoftwareengineer.substack.com. Hacker News score 23, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49836579",
+    "fetched_at": "2026-09-26T06:14:34Z",
+    "title_zh": "人工智能完成我所有的家庭作业后我如何改变教学"
   },
   {
     "title": "Tutoring company tells parents to save their money and 'use AI instead'",
@@ -449,6 +548,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49783062",
     "fetched_at": "2026-09-21T06:37:16Z",
     "title_zh": "人工智能聊天机器人“大多数时候”对财务查询给出错误答案"
+  },
+  {
+    "title": "How video games inspire great UX (2019)",
+    "url": "https://jenson.org/games/",
+    "source": "jenson.org",
+    "date": "2026-09-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from jenson.org. Hacker News score 117, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49777121",
+    "fetched_at": "2026-09-26T06:14:36Z",
+    "title_zh": "视频游戏如何激发出色的用户体验（2019）"
   },
   {
     "title": "Paper Models of Polyhedra",
