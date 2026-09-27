@@ -1,5 +1,82 @@
 [
   {
+    "title": "Generate fonts where every LLM token is the same width",
+    "url": "https://ampdot.mesh.host/token-space-fonts.html",
+    "source": "ampdot.mesh.host",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from ampdot.mesh.host. Hacker News score 48, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49851883",
+    "fetched_at": "2026-09-27T06:42:36Z",
+    "title_zh": "生成每个 LLM 令牌宽度相同的字体"
+  },
+  {
+    "title": "Breaking Up with Google Play: Why Conversations Is Now Free",
+    "url": "https://gultsch.de/posts/breaking-up-with-google-play/",
+    "source": "gultsch.de",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from gultsch.de. Hacker News score 658, 264 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49855315",
+    "fetched_at": "2026-09-27T06:42:36Z",
+    "title_zh": "与 Google Play 分手：为什么 Conversations 现在免费"
+  },
+  {
+    "title": "Turning GLM-5.3-Flash into a Jev-like decision model",
+    "url": "https://www.privatemode.ai/blog/system-one-from-glm-flash",
+    "source": "privatemode.ai",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from privatemode.ai. Hacker News score 78, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49857656",
+    "fetched_at": "2026-09-27T06:42:35Z",
+    "title_zh": "将 GLM-5.3-Flash 转变为类似 Jev 的决策模型"
+  },
+  {
+    "title": "How to keep enjoying programming in a world of LLMs",
+    "url": "https://discourse.haskell.org/t/how-to-keep-enjoying-programming-in-a-world-of-llms/14705",
+    "source": "discourse.haskell.org",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from discourse.haskell.org. Hacker News score 200, 247 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49854875",
+    "fetched_at": "2026-09-27T06:42:35Z",
+    "title_zh": "如何在法学硕士的世界里继续享受编程的乐趣"
+  },
+  {
+    "title": "An agent used DNS to reach an external chatbot",
+    "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
+    "source": "alignment.openai.com",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from alignment.openai.com. Hacker News score 66, 72 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49853137",
+    "fetched_at": "2026-09-27T06:42:34Z",
+    "title_zh": "代理使用 DNS 来访问外部聊天机器人"
+  },
+  {
+    "title": "Drawgent: Coding agent on a live Excalidraw canvas",
+    "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
+    "source": "tangled.org",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from tangled.org. Hacker News score 139, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49857729",
+    "fetched_at": "2026-09-27T06:42:34Z",
+    "title_zh": "Drawgent：实时 Excalidraw 画布上的编码代理"
+  },
+  {
+    "title": "Show HN: Reladraw – A diagram language where you decide where to place things",
+    "url": "https://github.com/reladraw/reladraw",
+    "source": "github.com",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 259, 75 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49858513",
+    "fetched_at": "2026-09-27T06:42:33Z",
+    "title_zh": "Show HN：Reladraw – 一种图表语言，您可以在其中决定放置东西的位置"
+  },
+  {
     "title": "Can AI Shopping Agents Be Trusted?",
     "url": "https://www.f-secure.com/en/partners/insights/can-ai-shopping-agents-be-trusted-we-built-one-to-find-out",
     "source": "f-secure.com",
@@ -20,6 +97,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49853175",
     "fetched_at": "2026-09-26T06:14:32Z",
     "title_zh": "一个类似于 Jev 的单一功能 LLM 包装器，包括视觉模型"
+  },
+  {
+    "title": "Evolving programming languages in the AI era",
+    "url": "https://dashbit.co/blog/evolving-ai-era",
+    "source": "dashbit.co",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from dashbit.co. Hacker News score 79, 48 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49839567",
+    "fetched_at": "2026-09-27T06:42:34Z",
+    "title_zh": "人工智能时代不断发展的编程语言"
+  },
+  {
+    "title": "PipePipe: NewPipe hard fork implementing SponsorBlock",
+    "url": "https://github.com/InfinityLoop1308/PipePipe",
+    "source": "github.com",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 380, 204 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49842764",
+    "fetched_at": "2026-09-27T06:42:33Z",
+    "title_zh": "PipePipe：NewPipe 硬分叉实现 SponsorBlock"
   },
   {
     "title": "Git-bug: Distributed, offline-first bug tracker embedded in Git",
@@ -104,10 +203,10 @@
     "source": "thelastsoftwareengineer.substack.com",
     "date": "2026-09-24",
     "repost": true,
-    "summary": "转载 / Curated repost from thelastsoftwareengineer.substack.com. Hacker News score 23, 2 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from thelastsoftwareengineer.substack.com. Hacker News score 177, 165 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=49836579",
-    "fetched_at": "2026-09-26T06:14:34Z",
-    "title_zh": "人工智能完成我所有的家庭作业后我如何改变教学"
+    "fetched_at": "2026-09-27T06:42:35Z",
+    "title_zh": "人工智能完成我所有的作业后我如何改变教学"
   },
   {
     "title": "Tutoring company tells parents to save their money and 'use AI instead'",
