@@ -1,5 +1,104 @@
 [
   {
+    "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
+    "url": "https://arxiv.org/abs/2110.01834",
+    "source": "arxiv.org",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 64, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49873241",
+    "fetched_at": "2026-09-28T07:07:44Z",
+    "title_zh": "人工智能中的快思考和慢思考：元认知的作用 (2021)"
+  },
+  {
+    "title": "Imp is a full port of DSPy to the BEAM",
+    "url": "https://github.com/deepfates/imp",
+    "source": "github.com",
+    "date": "2026-09-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 70, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49869995",
+    "fetched_at": "2026-09-28T07:07:47Z",
+    "title_zh": "Imp 是 DSPy 到 BEAM 的完整移植"
+  },
+  {
+    "title": "Oral history of John Chowning, inventor of FM synthesis [video]",
+    "url": "https://www.youtube.com/watch?v=e1Xn3030IvM",
+    "source": "youtube.com",
+    "date": "2026-09-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 70, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49869142",
+    "fetched_at": "2026-09-28T07:07:47Z",
+    "title_zh": "FM 合成发明者 John Chowning 的口述历史 [视频]"
+  },
+  {
+    "title": "Don't couple your Go code to GitHub",
+    "url": "https://iain.rocks/blog/dont-couple-your-go-code-to-github",
+    "source": "iain.rocks",
+    "date": "2026-09-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from iain.rocks. Hacker News score 216, 99 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49868404",
+    "fetched_at": "2026-09-28T07:07:46Z",
+    "title_zh": "不要将 Go 代码耦合到 GitHub"
+  },
+  {
+    "title": "When did Google get so weird?",
+    "url": "https://sancho.bearblog.dev/google-weird/",
+    "source": "sancho.bearblog.dev",
+    "date": "2026-09-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from sancho.bearblog.dev. Hacker News score 1114, 597 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49870367",
+    "fetched_at": "2026-09-28T07:07:45Z",
+    "title_zh": "谷歌什么时候变得这么奇怪了？"
+  },
+  {
+    "title": "Fakecloud: Local AWS cloud emulator for integration tests",
+    "url": "https://fakecloud.dev/",
+    "source": "fakecloud.dev",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from fakecloud.dev. Hacker News score 132, 64 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49856885",
+    "fetched_at": "2026-09-28T07:07:48Z",
+    "title_zh": "Fakecloud：用于集成测试的本地 AWS 云模拟器"
+  },
+  {
+    "title": "Deterministic Concurrency [video]",
+    "url": "https://www.youtube.com/watch?v=25x0UuSCKuU",
+    "source": "youtube.com",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 19, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49851795",
+    "fetched_at": "2026-09-28T07:07:46Z",
+    "title_zh": "确定性并发 [视频]"
+  },
+  {
+    "title": "Functional Mechanical Sympathy [video]",
+    "url": "https://www.youtube.com/watch?v=jSHmDnUZCm8",
+    "source": "youtube.com",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 5, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49852238",
+    "fetched_at": "2026-09-28T07:07:46Z",
+    "title_zh": "功能性机械同情[视频]"
+  },
+  {
+    "title": "Guitar amp and effects pedal built on the Waveshare ESP32-S3-Touch-AMOLED-2.06",
+    "url": "https://github.com/dashersw/coyopedal",
+    "source": "github.com",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 51, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49852600",
+    "fetched_at": "2026-09-28T07:07:45Z",
+    "title_zh": "基于 Waveshare ESP32-S3-Touch-AMOLED-2.06 构建的吉他放大器和效果踏板"
+  },
+  {
     "title": "Generate fonts where every LLM token is the same width",
     "url": "https://ampdot.mesh.host/token-space-fonts.html",
     "source": "ampdot.mesh.host",
@@ -97,6 +196,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49853175",
     "fetched_at": "2026-09-26T06:14:32Z",
     "title_zh": "一个类似于 Jev 的单一功能 LLM 包装器，包括视觉模型"
+  },
+  {
+    "title": "The state of SIMD in Rust in 2026",
+    "url": "https://shnatsel.github.io/state-of-simd-rust-2026/",
+    "source": "shnatsel.github.io",
+    "date": "2026-09-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from shnatsel.github.io. Hacker News score 130, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49844629",
+    "fetched_at": "2026-09-28T07:07:46Z",
+    "title_zh": "2026 年 Rust 中 SIMD 的状态"
   },
   {
     "title": "Evolving programming languages in the AI era",
