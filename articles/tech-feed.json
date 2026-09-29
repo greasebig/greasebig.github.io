@@ -1,5 +1,104 @@
 [
   {
+    "title": "Cf: The Agentic CLI for the Cloudflare API",
+    "url": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 149, 73 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49879577",
+    "fetched_at": "2026-09-29T07:05:11Z",
+    "title_zh": "Cf：Cloudflare API 的代理 CLI"
+  },
+  {
+    "title": "Nvidia wants to put a watchdog chip next to every AI agent",
+    "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+    "source": "cnbc.com",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from cnbc.com. Hacker News score 155, 181 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49879883",
+    "fetched_at": "2026-09-29T07:05:10Z",
+    "title_zh": "Nvidia 希望在每个人工智能代理旁边放置一个看门狗芯片"
+  },
+  {
+    "title": "Updated Google Maps shows destruction of the city of Rafah",
+    "url": "https://twitter.com/AliAbunimah/status/2103890594137309425",
+    "source": "twitter.com",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 442, 247 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49879645",
+    "fetched_at": "2026-09-29T07:05:10Z",
+    "title_zh": "更新后的谷歌地图显示拉法市遭到破坏"
+  },
+  {
+    "title": "It's Time to Investigate the AI Labs",
+    "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+    "source": "calnewport.com",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from calnewport.com. Hacker News score 435, 164 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49883471",
+    "fetched_at": "2026-09-29T07:05:10Z",
+    "title_zh": "是时候调查人工智能实验室了"
+  },
+  {
+    "title": "ESP32S3 cluster running 1.58-bit (BitNet) Language model",
+    "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
+    "source": "github.com",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 79, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49884625",
+    "fetched_at": "2026-09-29T07:05:09Z",
+    "title_zh": "ESP32S3集群运行1.58位（BitNet）语言模型"
+  },
+  {
+    "title": "Sonnet 5.5",
+    "url": "https://www.anthropic.com/claude-sonnet-5-5",
+    "source": "anthropic.com",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 727, 492 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49881850",
+    "fetched_at": "2026-09-29T07:05:09Z",
+    "title_zh": "十四行诗 5.5"
+  },
+  {
+    "title": "MicroLLM Lab – Try 7 tiny LLM's in the browser",
+    "url": "https://stateofutopia.com/experiments/microllmlab/",
+    "source": "stateofutopia.com",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from stateofutopia.com. Hacker News score 214, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49882781",
+    "fetched_at": "2026-09-29T07:05:08Z",
+    "title_zh": "MicroLLM Lab – 在浏览器中尝试 7 个微型 LLM"
+  },
+  {
+    "title": "Show HN: Pac-Bench – How well can models one-shot a Pac-Man game?",
+    "url": "https://jonclegg.github.io/pacman-bakeoff/",
+    "source": "jonclegg.github.io",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from jonclegg.github.io. Hacker News score 40, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49885493",
+    "fetched_at": "2026-09-29T07:05:08Z",
+    "title_zh": "Show HN：Pac-Bench – 对吃豆人游戏的一次性建模效果如何？"
+  },
+  {
+    "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
+    "url": "https://github.com/firelex/jeff",
+    "source": "github.com",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 453, 168 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49883844",
+    "fetched_at": "2026-09-29T07:05:08Z",
+    "title_zh": "Jeff – Jev 兼容的 0.8B 决策模型，在家训练，约 30 毫秒"
+  },
+  {
     "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
     "url": "https://arxiv.org/abs/2110.01834",
     "source": "arxiv.org",
@@ -53,6 +152,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49870367",
     "fetched_at": "2026-09-28T07:07:45Z",
     "title_zh": "谷歌什么时候变得这么奇怪了？"
+  },
+  {
+    "title": "What reversing, modernising old games tells us about the economic impact of AI",
+    "url": "https://this.os.isfine.org/blog/posts/what-reverse-engineering-and-modernising-an-old-war-game-tells-us-about-the-econ/",
+    "source": "this.os.isfine.org",
+    "date": "2026-09-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from this.os.isfine.org. Hacker News score 108, 52 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49861755",
+    "fetched_at": "2026-09-29T07:05:11Z",
+    "title_zh": "旧游戏的逆转和现代化告诉我们人工智能对经济的影响"
   },
   {
     "title": "Fakecloud: Local AWS cloud emulator for integration tests",
