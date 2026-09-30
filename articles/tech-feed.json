@@ -1,5 +1,115 @@
 [
   {
+    "title": "PSSA: A non-transformer language model written from scratch in Rust",
+    "url": "https://github.com/Sparticle62ops/pssa",
+    "source": "github.com",
+    "date": "2026-09-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 66, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49903993",
+    "fetched_at": "2026-09-30T06:55:22Z",
+    "title_zh": "PSSA ：用Rust从零开始编写的非Transformer语言模型"
+  },
+  {
+    "title": "Show HN: A working 3D model of an Enigma machine",
+    "url": "https://enigma.design",
+    "source": "enigma.design",
+    "date": "2026-09-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from enigma.design. Hacker News score 59, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49896757",
+    "fetched_at": "2026-09-30T06:55:38Z",
+    "title_zh": "Show HN ： Enigma机器的工作3D模型"
+  },
+  {
+    "title": "Show HN: NSL – WSL for Linux",
+    "url": "https://frostyard.github.io/nsl/",
+    "source": "frostyard.github.io",
+    "date": "2026-09-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from frostyard.github.io. Hacker News score 120, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49894351",
+    "fetched_at": "2026-09-30T06:55:36Z",
+    "title_zh": "显示HN ： NSL –适用于Linux的WSL"
+  },
+  {
+    "title": "PS5 Relapse Exploit",
+    "url": "https://github.com/ntfargo/Relapse-Exploit",
+    "source": "github.com",
+    "date": "2026-09-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 279, 167 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49895304",
+    "fetched_at": "2026-09-30T06:55:31Z",
+    "title_zh": "PS5复发利用"
+  },
+  {
+    "title": "Language models for text classification: From bag-of-words to Jev",
+    "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
+    "source": "magazine.sebastianraschka.com",
+    "date": "2026-09-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from magazine.sebastianraschka.com. Hacker News score 81, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49891203",
+    "fetched_at": "2026-09-30T06:55:29Z",
+    "title_zh": "文本分类的语言模型：从词袋到Jev"
+  },
+  {
+    "title": "Needed 1+1, built a functional programming language",
+    "url": "https://hereticpleb.vercel.app/blog/needed-one-plus-one/",
+    "source": "hereticpleb.vercel.app",
+    "date": "2026-09-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from hereticpleb.vercel.app. Hacker News score 78, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49895864",
+    "fetched_at": "2026-09-30T06:55:28Z",
+    "title_zh": "需要1 +1 ，构建函数式编程语言"
+  },
+  {
+    "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "source": "openai.com",
+    "date": "2026-09-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 881, 799 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49896586",
+    "fetched_at": "2026-09-30T06:55:26Z",
+    "title_zh": "GPT 6.1 SOL ：价格五分之一的近阿斯特拉智能"
+  },
+  {
+    "title": "Dots: Always-on agents",
+    "url": "https://openai.com/index/introducing-dots/",
+    "source": "openai.com",
+    "date": "2026-09-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 551, 413 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49896604",
+    "fetched_at": "2026-09-30T06:55:24Z",
+    "title_zh": "点：始终在线的客服代表"
+  },
+  {
+    "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+    "url": "https://github.com/ninjahawk/livenerf",
+    "source": "github.com",
+    "date": "2026-09-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 487, 206 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49901736",
+    "fetched_at": "2026-09-30T06:55:20Z",
+    "title_zh": "Livenerf ： Opus 5.5已经被削弱了吗？"
+  },
+  {
+    "title": "Show HN: Using 2D DFT, dithering, etc. to maximize eInk manga image quality",
+    "url": "https://github.com/ciromattia/kcc",
+    "source": "github.com",
+    "date": "2026-09-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 8, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49879758",
+    "fetched_at": "2026-09-30T06:55:34Z",
+    "title_zh": "显示HN ：使用2D DFT、抖动等来最大限度地提高eInk漫画图像质量"
+  },
+  {
     "title": "Cf: The Agentic CLI for the Cloudflare API",
     "url": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
     "source": "blog.cloudflare.com",
