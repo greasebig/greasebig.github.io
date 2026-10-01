@@ -1,5 +1,104 @@
 [
   {
+    "title": "AI borrowers face tough sell in risky corners of US credit market",
+    "url": "https://www.reuters.com/legal/transactional/ai-borrowers-face-tough-sell-risky-corners-us-credit-market-2026-09-30/",
+    "source": "reuters.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from reuters.com. Hacker News score 10, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49918147",
+    "fetched_at": "2026-10-01T07:20:20Z",
+    "title_zh": "人工智能借款人在美国信贷市场的风险角落面临艰难的抛售"
+  },
+  {
+    "title": "Show HN: Yantra – an LALR(1) parser generator for C++",
+    "url": "https://github.com/TantrixAuto/yantra",
+    "source": "github.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 23, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49916997",
+    "fetched_at": "2026-10-01T07:20:18Z",
+    "title_zh": "显示 HN：Yantra – 用于 C++ 的 LALR(1) 解析器生成器"
+  },
+  {
+    "title": "Is sandboxing sufficient to contain rogue agents?",
+    "url": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/",
+    "source": "blog.cryptographyengineering.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cryptographyengineering.com. Hacker News score 19, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49917378",
+    "fetched_at": "2026-10-01T07:20:17Z",
+    "title_zh": "沙箱足以遏制流氓代理吗？"
+  },
+  {
+    "title": "Fuck Android Developer Verification Program",
+    "url": "https://twitter.com/0xcrypto/status/2105515822643114182",
+    "source": "twitter.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 174, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49917761",
+    "fetched_at": "2026-10-01T07:20:16Z",
+    "title_zh": "他妈的Android开发者验证程序"
+  },
+  {
+    "title": "pldb: programming languages papers",
+    "url": "https://pldb.kirancodes.me/",
+    "source": "pldb.kirancodes.me",
+    "date": "2026-09-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from pldb.kirancodes.me. Hacker News score 27, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49914657",
+    "fetched_at": "2026-10-01T07:20:20Z",
+    "title_zh": "pldb：编程语言论文"
+  },
+  {
+    "title": "SDF vs. MSDF vs. Slug: GPU Text Rendering",
+    "url": "https://alphapixeldev.com/sdf-vs-msdf-vs-slug-vs-rive-gpu-text-rendering/",
+    "source": "alphapixeldev.com",
+    "date": "2026-09-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from alphapixeldev.com. Hacker News score 145, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49908962",
+    "fetched_at": "2026-10-01T07:20:19Z",
+    "title_zh": "SDF、MSDF 与 Slug：GPU 文本渲染"
+  },
+  {
+    "title": "Doing a Machine Learning PhD While Working in Japan",
+    "url": "https://www.tokyodev.com/articles/doing-a-machine-learning-phd-while-working-in-japan",
+    "source": "tokyodev.com",
+    "date": "2026-09-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from tokyodev.com. Hacker News score 85, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49905644",
+    "fetched_at": "2026-10-01T07:20:18Z",
+    "title_zh": "在日本工作期间攻读机器学习博士学位"
+  },
+  {
+    "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+    "url": "https://github.com/magnitudedev/magnitude",
+    "source": "github.com",
+    "date": "2026-09-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 150, 77 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49911995",
+    "fetched_at": "2026-10-01T07:20:16Z",
+    "title_zh": "推出 HN：Magnitude (YC S25) – 用于代理的自优化推理引擎"
+  },
+  {
+    "title": "EDG C++ front-end goes public",
+    "url": "https://edgcpp.org/#transition",
+    "source": "edgcpp.org",
+    "date": "2026-09-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from edgcpp.org. Hacker News score 205, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49913192",
+    "fetched_at": "2026-10-01T07:20:16Z",
+    "title_zh": "EDG C++前端上市"
+  },
+  {
     "title": "PSSA: A non-transformer language model written from scratch in Rust",
     "url": "https://github.com/Sparticle62ops/pssa",
     "source": "github.com",
@@ -9,6 +108,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49903993",
     "fetched_at": "2026-09-30T06:55:22Z",
     "title_zh": "PSSA ：用Rust从零开始编写的非Transformer语言模型"
+  },
+  {
+    "title": "PlayBook: A Programmable Paper Notebook [video]",
+    "url": "https://www.youtube.com/watch?v=GurWDZ8ENpA",
+    "source": "youtube.com",
+    "date": "2026-09-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 10, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49895221",
+    "fetched_at": "2026-10-01T07:20:19Z",
+    "title_zh": "PlayBook：可编程纸质笔记本 [视频]"
   },
   {
     "title": "Show HN: A working 3D model of an Enigma machine",
