@@ -1,5 +1,115 @@
 [
   {
+    "title": "Bez: Generating a browser engine from specs and tests",
+    "url": "https://tangled.org/burrito.space/bez",
+    "source": "tangled.org",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from tangled.org. Hacker News score 109, 45 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49925036",
+    "fetched_at": "2026-10-02T07:08:36Z",
+    "title_zh": "Bez：根据规范和测试生成浏览器引擎"
+  },
+  {
+    "title": "Context Language Models",
+    "url": "https://arxiv.org/abs/2609.37725",
+    "source": "arxiv.org",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 139, 29 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49922437",
+    "fetched_at": "2026-10-02T07:08:35Z",
+    "title_zh": "语境语言模型"
+  },
+  {
+    "title": "How to speed up the Rust compiler in September 2026",
+    "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html",
+    "source": "nnethercote.github.io",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from nnethercote.github.io. Hacker News score 245, 137 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49920896",
+    "fetched_at": "2026-10-02T07:08:35Z",
+    "title_zh": "2026 年 9 月如何加速 Rust 编译器"
+  },
+  {
+    "title": "Vote on which of Hacker News' challenges for AI have been met",
+    "url": "https://stoppels.ch/goalposts/",
+    "source": "stoppels.ch",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from stoppels.ch. Hacker News score 131, 128 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49924618",
+    "fetched_at": "2026-10-02T07:08:34Z",
+    "title_zh": "投票选出《黑客新闻》针对人工智能提出的哪些挑战已得到解决"
+  },
+  {
+    "title": "Cloudflare K2: serverless event streams",
+    "url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 228, 90 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49921923",
+    "fetched_at": "2026-10-02T07:08:34Z",
+    "title_zh": "Cloudflare K2：无服务器事件流"
+  },
+  {
+    "title": "RIP, vector database",
+    "url": "https://turbopuffer.com/blog/rip-vector-database",
+    "source": "turbopuffer.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from turbopuffer.com. Hacker News score 308, 83 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49923466",
+    "fetched_at": "2026-10-02T07:08:33Z",
+    "title_zh": "RIP，矢量数据库"
+  },
+  {
+    "title": "Show HN: Janus – Go binary that runs GGUF models via Vulkan on AMD/Intel/Nvidia",
+    "url": "https://github.com/Vibra-Ingenn/Janus",
+    "source": "github.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 67, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49926773",
+    "fetched_at": "2026-10-02T07:08:33Z",
+    "title_zh": "显示 HN：Janus – 在 AMD/Intel/Nvidia 上通过 Vulkan 运行 GGUF 模型的 Go 二进制文件"
+  },
+  {
+    "title": "Several vulnerabilities have been discovered in the Linux kernel",
+    "url": "https://lwn.net/Articles/1097401/",
+    "source": "lwn.net",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from lwn.net. Hacker News score 233, 159 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49928121",
+    "fetched_at": "2026-10-02T07:08:32Z",
+    "title_zh": "Linux内核中发现了多个漏洞"
+  },
+  {
+    "title": "StreetComplete on iOS is now in public beta",
+    "url": "https://github.com/streetcomplete/StreetComplete/issues/5421",
+    "source": "github.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 550, 147 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49920160",
+    "fetched_at": "2026-10-02T07:08:32Z",
+    "title_zh": "iOS 版 StreetComplete 现已推出公开测试版"
+  },
+  {
+    "title": "Clef: Open-weight decision models, and new RL fine-tuning platform",
+    "url": "https://blog.cloudflare.com/clef-decision-models/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 483, 173 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49923692",
+    "fetched_at": "2026-10-02T07:08:31Z",
+    "title_zh": "Clef：开放权重决策模型和新的 RL 微调平台"
+  },
+  {
     "title": "AI borrowers face tough sell in risky corners of US credit market",
     "url": "https://www.reuters.com/legal/transactional/ai-borrowers-face-tough-sell-risky-corners-us-credit-market-2026-09-30/",
     "source": "reuters.com",
