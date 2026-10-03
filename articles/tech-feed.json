@@ -1,5 +1,115 @@
 [
   {
+    "title": "An Update on Orion for Linux and Windows",
+    "url": "https://blog.kagi.com/update-orion-linux-windows",
+    "source": "blog.kagi.com",
+    "date": "2026-10-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.kagi.com. Hacker News score 11, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49941447",
+    "fetched_at": "2026-10-03T06:41:31Z",
+    "title_zh": "适用于 Linux 和 Windows 的 Orion 更新"
+  },
+  {
+    "title": "Cloudflare OHTTP gateway",
+    "url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-10-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 45, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49941091",
+    "fetched_at": "2026-10-03T06:41:29Z",
+    "title_zh": "Cloudflare OHTTP 网关"
+  },
+  {
+    "title": "Every SaaS business will become a harness around a model",
+    "url": "https://blog.sshh.io/p/the-harness-is-the-company",
+    "source": "blog.sshh.io",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.sshh.io. Hacker News score 124, 87 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49938616",
+    "fetched_at": "2026-10-03T06:41:33Z",
+    "title_zh": "每个 SaaS 业务都将成为围绕某个模型的工具"
+  },
+  {
+    "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+    "url": "https://allenai.org/blog/astabrief",
+    "source": "allenai.org",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from allenai.org. Hacker News score 25, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49938783",
+    "fetched_at": "2026-10-03T06:41:33Z",
+    "title_zh": "开源 AstaBrief，Asta 中的快速报告生成模型"
+  },
+  {
+    "title": "Show HN: Made an open-source Lego AI generator",
+    "url": "https://github.com/anteloc/ldraw-nova",
+    "source": "github.com",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 101, 44 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49937916",
+    "fetched_at": "2026-10-03T06:41:32Z",
+    "title_zh": "Show HN：制作了一个开源乐高人工智能生成器"
+  },
+  {
+    "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
+    "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+    "source": "youtube.com",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 221, 59 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49929391",
+    "fetched_at": "2026-10-03T06:41:31Z",
+    "title_zh": "Greg Kroah-Hartman – LLM 时代的安全 [视频]"
+  },
+  {
+    "title": "With most information hidden, the game Stratego had stumped AI until now",
+    "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+    "source": "arstechnica.com",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from arstechnica.com. Hacker News score 205, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49933740",
+    "fetched_at": "2026-10-03T06:41:30Z",
+    "title_zh": "由于隐藏了大部分信息，Stratego 游戏迄今为止一直困扰着 AI"
+  },
+  {
+    "title": "From the creator of Redis; run LLM locally with ds4",
+    "url": "https://dwarfstar.sh/",
+    "source": "dwarfstar.sh",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from dwarfstar.sh. Hacker News score 209, 56 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49936575",
+    "fetched_at": "2026-10-03T06:41:30Z",
+    "title_zh": "来自Redis的创建者；使用 ds4 在本地运行 LLM"
+  },
+  {
+    "title": "The Forgetful CPU (Linux on M4)",
+    "url": "https://yuka.dev/blog-2026-10-02-linux-m4.html",
+    "source": "yuka.dev",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from yuka.dev. Hacker News score 181, 102 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49933869",
+    "fetched_at": "2026-10-03T06:41:29Z",
+    "title_zh": "健忘的 CPU（M4 上的 Linux）"
+  },
+  {
+    "title": "Show HN: Pyxel – A Python retro game engine with built-in art and sound editors",
+    "url": "https://github.com/kitao/pyxel",
+    "source": "github.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 81, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49928215",
+    "fetched_at": "2026-10-03T06:41:32Z",
+    "title_zh": "Show HN：Pyxel – 带有内置艺术和声音编辑器的 Python 复古游戏引擎"
+  },
+  {
     "title": "Bez: Generating a browser engine from specs and tests",
     "url": "https://tangled.org/burrito.space/bez",
     "source": "tangled.org",
