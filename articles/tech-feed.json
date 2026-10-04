@@ -1,5 +1,71 @@
 [
   {
+    "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+    "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+    "source": "claude.dev",
+    "date": "2026-10-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from claude.dev. Hacker News score 207, 140 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49946567",
+    "fetched_at": "2026-10-04T07:04:59Z",
+    "title_zh": "在 Claude 和 Claude Code 中充分利用 Opus 5.5"
+  },
+  {
+    "title": "I quit OpenAI because its culture is broken",
+    "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=v5U_UzUTothfWXsPxtvNVAh7esWToMRD6XnbXmc5WgA",
+    "source": "theatlantic.com",
+    "date": "2026-10-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from theatlantic.com. Hacker News score 174, 430 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49944227",
+    "fetched_at": "2026-10-04T07:04:58Z",
+    "title_zh": "我退出 OpenAI 因为它的文化已经被打破"
+  },
+  {
+    "title": "Math's pedagogical curse – Grant Sanderson [video]",
+    "url": "https://www.youtube.com/watch?v=UOuxo6SA8Uc",
+    "source": "youtube.com",
+    "date": "2026-10-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 30, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49940482",
+    "fetched_at": "2026-10-04T07:04:57Z",
+    "title_zh": "数学的教学诅咒——格兰特·桑德森 [视频]"
+  },
+  {
+    "title": "Agents don't need memory, they need documentation",
+    "url": "https://liao.gg/blog/agents-dont-need-memory",
+    "source": "liao.gg",
+    "date": "2026-10-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from liao.gg. Hacker News score 135, 71 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49945933",
+    "fetched_at": "2026-10-04T07:04:56Z",
+    "title_zh": "代理不需要记忆，他们需要文档"
+  },
+  {
+    "title": "Kolibri: A Sovereign Open-Weight Model",
+    "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+    "source": "aleph-alpha.com",
+    "date": "2026-10-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from aleph-alpha.com. Hacker News score 582, 311 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49942706",
+    "fetched_at": "2026-10-04T07:04:56Z",
+    "title_zh": "Kolibri：主权开放权重模型"
+  },
+  {
+    "title": "The work by Valve's Timur Kristóf on improving old AMD GPUs on Linux",
+    "url": "https://www.phoronix.com/news/XDC-2026-Valve-Timur-AMDGPU",
+    "source": "phoronix.com",
+    "date": "2026-10-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from phoronix.com. Hacker News score 233, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49946895",
+    "fetched_at": "2026-10-04T07:04:55Z",
+    "title_zh": "Valve 的 Timur Kristóf 在 Linux 上改进旧的 AMD GPU 的工作"
+  },
+  {
     "title": "An Update on Orion for Linux and Windows",
     "url": "https://blog.kagi.com/update-orion-linux-windows",
     "source": "blog.kagi.com",
@@ -20,6 +86,39 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49941091",
     "fetched_at": "2026-10-03T06:41:29Z",
     "title_zh": "Cloudflare OHTTP 网关"
+  },
+  {
+    "title": "Show HN: Our space game has a built-in RISC-V emulator that runs Linux",
+    "url": "https://againstallodds.games/blog/2026/10/03/our-risc-v-emulator-pasriscv/",
+    "source": "againstallodds.games",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from againstallodds.games. Hacker News score 75, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49931993",
+    "fetched_at": "2026-10-04T07:05:00Z",
+    "title_zh": "Show HN：我们的太空游戏有一个运行 Linux 的内置 RISC-V 模拟器"
+  },
+  {
+    "title": "Show HN: Pi pod – Run your pi coding agent in sandboxes on your own server",
+    "url": "https://pipod.dev/",
+    "source": "pipod.dev",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from pipod.dev. Hacker News score 90, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49937304",
+    "fetched_at": "2026-10-04T07:04:58Z",
+    "title_zh": "Show HN：Pi pod – 在您自己的服务器上的沙箱中运行 pi 编码代理"
+  },
+  {
+    "title": "Three AI agents, two countries, and one uneven world wide web",
+    "url": "https://royapakzad.substack.com/p/multilingual-ai-agents",
+    "source": "royapakzad.substack.com",
+    "date": "2026-10-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from royapakzad.substack.com. Hacker News score 25, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49938326",
+    "fetched_at": "2026-10-04T07:04:57Z",
+    "title_zh": "三个人工智能代理、两个国家和一个不平坦的万维网"
   },
   {
     "title": "Every SaaS business will become a harness around a model",
@@ -97,6 +196,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49933869",
     "fetched_at": "2026-10-03T06:41:29Z",
     "title_zh": "健忘的 CPU（M4 上的 Linux）"
+  },
+  {
+    "title": "C++ Insights – See your source code with the eyes of a Compiler",
+    "url": "https://github.com/andreasfertig/cppinsights",
+    "source": "github.com",
+    "date": "2026-10-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 156, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49928361",
+    "fetched_at": "2026-10-04T07:04:59Z",
+    "title_zh": "C++ 见解 – 用编译器的视角查看源代码"
   },
   {
     "title": "Show HN: Pyxel – A Python retro game engine with built-in art and sound editors",
