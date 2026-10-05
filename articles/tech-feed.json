@@ -1,5 +1,115 @@
 [
   {
+    "title": "Emitting metadata early makes building/checking Rust up to twice as fast",
+    "url": "https://github.com/PowderworksCode/headstart",
+    "source": "github.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 136, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49951218",
+    "fetched_at": "2026-10-05T07:16:12Z",
+    "title_zh": "尽早发出元数据可以使 Rust 的构建/检查速度提高两倍"
+  },
+  {
+    "title": "Show HN: Build with Python – a beginner course where your code draws",
+    "url": "https://scimigo.com/en/learn/build-with-python/01-draw-with-python",
+    "source": "scimigo.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from scimigo.com. Hacker News score 35, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49956771",
+    "fetched_at": "2026-10-05T07:16:12Z",
+    "title_zh": "Show HN：使用 Python 构建 – 一个初学者课程，您可以在其中绘制代码"
+  },
+  {
+    "title": "Show HN: AI search for every photo and every frame of video on macOS",
+    "url": "https://github.com/allenv0/SCM",
+    "source": "github.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 151, 67 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49952111",
+    "fetched_at": "2026-10-05T07:16:11Z",
+    "title_zh": "Show HN：AI 搜索 macOS 上的每张照片和每一帧视频"
+  },
+  {
+    "title": "Incentives in Academic Research",
+    "url": "https://www.msoos.org/2026/10/incentives-in-academic-research/",
+    "source": "msoos.org",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from msoos.org. Hacker News score 48, 43 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49956035",
+    "fetched_at": "2026-10-05T07:16:11Z",
+    "title_zh": "学术研究的激励措施"
+  },
+  {
+    "title": "How to scale intent, quality, and artistry with AI [video]",
+    "url": "https://www.youtube.com/watch?v=GLvFTMtw4Jk",
+    "source": "youtube.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 76, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49951891",
+    "fetched_at": "2026-10-05T07:16:10Z",
+    "title_zh": "如何利用 AI 衡量意图、质量和艺术性 [视频]"
+  },
+  {
+    "title": "Homa: The end of TCP for AI clusters [video]",
+    "url": "https://www.youtube.com/watch?v=eZ8WWZzoaR0",
+    "source": "youtube.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 70, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49957117",
+    "fetched_at": "2026-10-05T07:16:10Z",
+    "title_zh": "Homa：AI 集群 TCP 的终结 [视频]"
+  },
+  {
+    "title": "Xray-core concealed a certificate verification bypass vulnerability",
+    "url": "https://github.com/net4people/bbs/issues/672",
+    "source": "github.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 76, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49956003",
+    "fetched_at": "2026-10-05T07:16:09Z",
+    "title_zh": "Xray-core隐藏了一个证书验证绕过漏洞"
+  },
+  {
+    "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
+    "url": "https://github.com/omlahore/RemoveMacAI",
+    "source": "github.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 521, 328 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49957116",
+    "fetched_at": "2026-10-05T07:16:07Z",
+    "title_zh": "在 macOS 27 上关闭 Apple Intelligence 并恢复其磁盘空间"
+  },
+  {
+    "title": "Improper redaction reveals Google Data Center water and electricity usage",
+    "url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/",
+    "source": "1011now.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from 1011now.com. Hacker News score 359, 464 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49957068",
+    "fetched_at": "2026-10-05T07:16:07Z",
+    "title_zh": "不当编辑暴露了 Google 数据中心的水电使用情况"
+  },
+  {
+    "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+    "url": "https://github.com/Niko1221/Strata",
+    "source": "github.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 742, 334 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49953495",
+    "fetched_at": "2026-10-05T07:16:05Z",
+    "title_zh": "在消费类硬件 (RTX 4090) 上以 100T/s 运行 Qwen 3.8 Flash Next (125B)"
+  },
+  {
     "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
     "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
     "source": "claude.dev",
