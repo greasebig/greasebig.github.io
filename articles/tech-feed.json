@@ -1,5 +1,104 @@
 [
   {
+    "title": "Resurrecting iChat Audio and Video Conferencing",
+    "url": "https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/",
+    "source": "blog.pipetogrep.org",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.pipetogrep.org. Hacker News score 40, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49973878",
+    "fetched_at": "2026-10-06T07:42:14Z",
+    "title_zh": "复兴 iChat 音频和视频会议"
+  },
+  {
+    "title": "Why Common Lisp is now the best programming language",
+    "url": "https://www.vivienhenz.com/common-lisp",
+    "source": "vivienhenz.com",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from vivienhenz.com. Hacker News score 134, 182 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49973598",
+    "fetched_at": "2026-10-06T07:42:14Z",
+    "title_zh": "为什么 Common Lisp 是现在最好的编程语言"
+  },
+  {
+    "title": "Linux containers in 500 lines of code (2016)",
+    "url": "https://blog.lizzie.io/linux-containers-in-500-loc.html",
+    "source": "blog.lizzie.io",
+    "date": "2026-10-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.lizzie.io. Hacker News score 121, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49965118",
+    "fetched_at": "2026-10-06T07:42:20Z",
+    "title_zh": "500 行代码的 Linux 容器 (2016)"
+  },
+  {
+    "title": "Qualcomm licenses patents on Huawei’s LogicFolding chip tech",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-05/qualcomm-licenses-patents-on-huawei-s-logicfolding-chip-tech",
+    "source": "bloomberg.com",
+    "date": "2026-10-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from bloomberg.com. Hacker News score 188, 124 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49961861",
+    "fetched_at": "2026-10-06T07:42:19Z",
+    "title_zh": "高通获得华为 LogicFolding 芯片技术专利授权"
+  },
+  {
+    "title": "Anthropic reported diary entry to police, woman faces felony charge",
+    "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
+    "source": "techspot.com",
+    "date": "2026-10-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from techspot.com. Hacker News score 700, 538 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49961057",
+    "fetched_at": "2026-10-06T07:42:15Z",
+    "title_zh": "人类向警方报告日记条目，女子面临重罪指控"
+  },
+  {
+    "title": "Web Search API",
+    "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+    "source": "developers.cloudflare.com",
+    "date": "2026-10-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from developers.cloudflare.com. Hacker News score 531, 240 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49963171",
+    "fetched_at": "2026-10-06T07:42:15Z",
+    "title_zh": "网页搜索API"
+  },
+  {
+    "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+    "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+    "source": "vals.ai",
+    "date": "2026-10-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from vals.ai. Hacker News score 326, 209 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49970667",
+    "fetched_at": "2026-10-06T07:42:13Z",
+    "title_zh": "Opus 5.5 特工发现两种室温磁性半导体候选物"
+  },
+  {
+    "title": "Beam: Reflection's 501B open-weight model",
+    "url": "https://reflection.ai/blog/introducing-beam",
+    "source": "reflection.ai",
+    "date": "2026-10-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from reflection.ai. Hacker News score 418, 131 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49969183",
+    "fetched_at": "2026-10-06T07:42:12Z",
+    "title_zh": "梁：Reflection 的 501B 开放式重量模型"
+  },
+  {
+    "title": "DEDA – Tracking Dots Extraction, Decoding and Anonymisation Toolkit",
+    "url": "https://github.com/dfd-tud/deda",
+    "source": "github.com",
+    "date": "2026-10-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 55, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49953195",
+    "fetched_at": "2026-10-06T07:42:17Z",
+    "title_zh": "DEDA – 跟踪点提取、解码和匿名化工具包"
+  },
+  {
     "title": "Emitting metadata early makes building/checking Rust up to twice as fast",
     "url": "https://github.com/PowderworksCode/headstart",
     "source": "github.com",
@@ -108,6 +207,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49953495",
     "fetched_at": "2026-10-05T07:16:05Z",
     "title_zh": "在消费类硬件 (RTX 4090) 上以 100T/s 运行 Qwen 3.8 Flash Next (125B)"
+  },
+  {
+    "title": "Show HN: Photoc – Command-line tools for photographers",
+    "url": "https://github.com/ahmetomerv/photoc",
+    "source": "github.com",
+    "date": "2026-10-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 28, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49944196",
+    "fetched_at": "2026-10-06T07:42:17Z",
+    "title_zh": "Show HN：Photoc – 摄影师的命令行工具"
   },
   {
     "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
