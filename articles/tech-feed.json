@@ -1,5 +1,115 @@
 [
   {
+    "title": "ESP32-C3 Adblock",
+    "url": "https://github.com/M-Abozaid/esp32-c3-adblock",
+    "source": "github.com",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 65, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49986862",
+    "fetched_at": "2026-10-07T07:22:52Z",
+    "title_zh": "ESP32-C3 广告拦截"
+  },
+  {
+    "title": "Shaders, WebGPU Components for React, Vue, Svelte, Solid, JavaScript and Framer",
+    "url": "https://github.com/shader-effects-inc/shaders",
+    "source": "github.com",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 12, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49988709",
+    "fetched_at": "2026-10-07T07:22:52Z",
+    "title_zh": "用于 React、Vue、Svelte、Solid、JavaScript 和 Framer 的着色器、WebGPU 组件"
+  },
+  {
+    "title": "Strands Decider 2B: a small, open-source, decision model",
+    "url": "https://strandsagents.com/blog/introducing-strands-decider/",
+    "source": "strandsagents.com",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from strandsagents.com. Hacker News score 136, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49987076",
+    "fetched_at": "2026-10-07T07:22:51Z",
+    "title_zh": "Strands Decider 2B：小型开源决策模型"
+  },
+  {
+    "title": "Treg (OpenRouter for Tools)",
+    "url": "https://github.com/superdesigndev/treg",
+    "source": "github.com",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 18, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49980790",
+    "fetched_at": "2026-10-07T07:22:55Z",
+    "title_zh": "Treg（OpenRouter 工具）"
+  },
+  {
+    "title": "AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)",
+    "url": "https://github.com/boykopovar/AnyPS5",
+    "source": "github.com",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 217, 169 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49985664",
+    "fetched_at": "2026-10-07T07:22:54Z",
+    "title_zh": "AnyPS5：将 PS5 二进制文件移植到 PC，无需仿真（映射 87% 的系统库）"
+  },
+  {
+    "title": "Claude Code’s suggested message feature: I think the real customer is the model",
+    "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+    "source": "zohaib.cc",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from zohaib.cc. Hacker News score 177, 91 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49981905",
+    "fetched_at": "2026-10-07T07:22:54Z",
+    "title_zh": "Claude Code建议的留言功能：我认为真正的顾客是模特"
+  },
+  {
+    "title": "Penguin Mail – open-source Rust email client for Linux with AI",
+    "url": "https://penguin-mail.com/",
+    "source": "penguin-mail.com",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from penguin-mail.com. Hacker News score 150, 82 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49984716",
+    "fetched_at": "2026-10-07T07:22:53Z",
+    "title_zh": "Penguin Mail – 适用于 Linux 且具有 AI 功能的开源 Rust 电子邮件客户端"
+  },
+  {
+    "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+    "source": "blog.google",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.google. Hacker News score 297, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49980487",
+    "fetched_at": "2026-10-07T07:22:53Z",
+    "title_zh": "EmbeddingGemma 2：开放、轻量级的多模态嵌入模型"
+  },
+  {
+    "title": "Decisions API is in public beta",
+    "url": "https://developers.openai.com/api/docs/guides/decisions",
+    "source": "developers.openai.com",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from developers.openai.com. Hacker News score 252, 113 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49984025",
+    "fetched_at": "2026-10-07T07:22:52Z",
+    "title_zh": "Decisions API 处于公开测试阶段"
+  },
+  {
+    "title": "Sharing AI progress in mathematics",
+    "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+    "source": "openai.com",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 790, 725 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49984923",
+    "fetched_at": "2026-10-07T07:22:51Z",
+    "title_zh": "分享AI数学进展"
+  },
+  {
     "title": "Resurrecting iChat Audio and Video Conferencing",
     "url": "https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/",
     "source": "blog.pipetogrep.org",
