@@ -1,5 +1,82 @@
 [
   {
+    "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+    "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
+    "source": "reddit.com",
+    "date": "2026-10-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from reddit.com. Hacker News score 9, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50002665",
+    "fetched_at": "2026-10-08T07:38:06Z",
+    "title_zh": "我想我发现了一颗没人知道存在的星球。我用克劳德代码找到了它"
+  },
+  {
+    "title": "Rust port of the TypeScript 7 compiler (tsc)",
+    "url": "https://github.com/pingdotgg/ts-rust",
+    "source": "github.com",
+    "date": "2026-10-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 46, 73 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50000676",
+    "fetched_at": "2026-10-08T07:38:05Z",
+    "title_zh": "TypeScript 7 编译器的 Rust 端口 (tsc)"
+  },
+  {
+    "title": "A 100x faster* alternative to homebrew",
+    "url": "https://github.com/zerobrewhq/zerobrew",
+    "source": "github.com",
+    "date": "2026-10-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 67, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50001580",
+    "fetched_at": "2026-10-08T07:38:03Z",
+    "title_zh": "比自制程序快 100 倍*的替代品"
+  },
+  {
+    "title": "Google Playground: Create and play custom games",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+    "source": "blog.google",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.google. Hacker News score 141, 217 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49991823",
+    "fetched_at": "2026-10-08T07:38:06Z",
+    "title_zh": "Google Playground：创建和玩自定义游戏"
+  },
+  {
+    "title": "Docker Agent",
+    "url": "https://github.com/docker/docker-agent",
+    "source": "github.com",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 221, 104 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49996259",
+    "fetched_at": "2026-10-08T07:38:04Z",
+    "title_zh": "Docker代理"
+  },
+  {
+    "title": "GPT‑6 and Intelligent UI for everyone",
+    "url": "https://openai.com/index/gpt-6-for-everyone/",
+    "source": "openai.com",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 598, 314 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49996425",
+    "fetched_at": "2026-10-08T07:38:02Z",
+    "title_zh": "适合所有人的 GPT‑6 和智能 UI"
+  },
+  {
+    "title": "Claude Haiku 5.5",
+    "url": "https://www.anthropic.com/claude-haiku-5-5",
+    "source": "anthropic.com",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 836, 409 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49996437",
+    "fetched_at": "2026-10-08T07:38:01Z",
+    "title_zh": "克劳德俳句 5.5"
+  },
+  {
     "title": "ESP32-C3 Adblock",
     "url": "https://github.com/M-Abozaid/esp32-c3-adblock",
     "source": "github.com",
@@ -31,6 +108,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49987076",
     "fetched_at": "2026-10-07T07:22:51Z",
     "title_zh": "Strands Decider 2B：小型开源决策模型"
+  },
+  {
+    "title": "If somebody tries to hot-patch an already-hot-patched function",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261005-00/?p=112755/",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 55, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49978315",
+    "fetched_at": "2026-10-08T07:38:06Z",
+    "title_zh": "如果有人尝试对已经热补丁的函数进行热补丁"
+  },
+  {
+    "title": "Sharing AI progress in mathematics",
+    "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+    "source": "openai.com",
+    "date": "2026-10-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 1273, 1443 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49984923",
+    "fetched_at": "2026-10-08T07:38:04Z",
+    "title_zh": "分享AI数学进展"
   },
   {
     "title": "Treg (OpenRouter for Tools)",
@@ -99,17 +198,6 @@
     "title_zh": "Decisions API 处于公开测试阶段"
   },
   {
-    "title": "Sharing AI progress in mathematics",
-    "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
-    "source": "openai.com",
-    "date": "2026-10-06",
-    "repost": true,
-    "summary": "转载 / Curated repost from openai.com. Hacker News score 790, 725 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=49984923",
-    "fetched_at": "2026-10-07T07:22:51Z",
-    "title_zh": "分享AI数学进展"
-  },
-  {
     "title": "Resurrecting iChat Audio and Video Conferencing",
     "url": "https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/",
     "source": "blog.pipetogrep.org",
@@ -130,6 +218,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=49973598",
     "fetched_at": "2026-10-06T07:42:14Z",
     "title_zh": "为什么 Common Lisp 是现在最好的编程语言"
+  },
+  {
+    "title": "Analog Computer Simulator in the Browser",
+    "url": "https://pavel-krivanek.github.io/The-Analog-Thing-Simulator/public/",
+    "source": "pavel-krivanek.github.io",
+    "date": "2026-10-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from pavel-krivanek.github.io. Hacker News score 13, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49966866",
+    "fetched_at": "2026-10-08T07:38:03Z",
+    "title_zh": "浏览器中的模拟计算机模拟器"
   },
   {
     "title": "Linux containers in 500 lines of code (2016)",
