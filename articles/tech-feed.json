@@ -1,14 +1,69 @@
 [
   {
+    "title": "Show HN: Quake ported to safe Rust, playable in browser",
+    "url": "https://quake-srp.pages.dev/",
+    "source": "quake-srp.pages.dev",
+    "date": "2026-10-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from quake-srp.pages.dev. Hacker News score 125, 107 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50016312",
+    "fetched_at": "2026-10-09T07:33:54Z",
+    "title_zh": "Show HN：Quake 移植到安全的 Rust，可在浏览器中播放"
+  },
+  {
+    "title": "Show HN: OldRoll, a free vintage photo editor for the browser",
+    "url": "https://www.oldroll.io/",
+    "source": "oldroll.io",
+    "date": "2026-10-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from oldroll.io. Hacker News score 3, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50016840",
+    "fetched_at": "2026-10-09T07:33:54Z",
+    "title_zh": "Show HN：OldRoll，适用于浏览器的免费复古照片编辑器"
+  },
+  {
+    "title": "Show HN: Jevman – AI decision models play Pac-Man",
+    "url": "https://opper.ai/jevman-benchmark/",
+    "source": "opper.ai",
+    "date": "2026-10-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from opper.ai. Hacker News score 60, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50007993",
+    "fetched_at": "2026-10-09T07:33:58Z",
+    "title_zh": "Show HN：Jevman – AI 决策模型玩吃豆人"
+  },
+  {
     "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
     "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
     "source": "reddit.com",
     "date": "2026-10-08",
     "repost": true,
-    "summary": "转载 / Curated repost from reddit.com. Hacker News score 9, 3 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from reddit.com. Hacker News score 157, 69 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=50002665",
-    "fetched_at": "2026-10-08T07:38:06Z",
+    "fetched_at": "2026-10-09T07:33:58Z",
     "title_zh": "我想我发现了一颗没人知道存在的星球。我用克劳德代码找到了它"
+  },
+  {
+    "title": "OpenAI withdraws three mathematical results",
+    "url": "https://twitter.com/danintheory/status/2108065033070789090",
+    "source": "twitter.com",
+    "date": "2026-10-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 293, 568 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50002650",
+    "fetched_at": "2026-10-09T07:33:57Z",
+    "title_zh": "OpenAI 撤回三项数学结果"
+  },
+  {
+    "title": "OpenAI, the Partition Principle, and Mathematics",
+    "url": "https://karagila.org/2026/openai-pp/",
+    "source": "karagila.org",
+    "date": "2026-10-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from karagila.org. Hacker News score 100, 142 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50013902",
+    "fetched_at": "2026-10-09T07:33:54Z",
+    "title_zh": "OpenAI、划分原理和数学"
   },
   {
     "title": "Rust port of the TypeScript 7 compiler (tsc)",
@@ -31,6 +86,50 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50001580",
     "fetched_at": "2026-10-08T07:38:03Z",
     "title_zh": "比自制程序快 100 倍*的替代品"
+  },
+  {
+    "title": "Show HN: Rgpu – a PyTorch device whose tensors live on a remote GPU",
+    "url": "https://github.com/ymcrcat/rgpu",
+    "source": "github.com",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 47, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49988516",
+    "fetched_at": "2026-10-09T07:33:59Z",
+    "title_zh": "Show HN：Rgpu – 一个 PyTorch 设备，其张量位于远程 GPU 上"
+  },
+  {
+    "title": "DuckDB Ducklake",
+    "url": "https://github.com/duckdb/ducklake",
+    "source": "github.com",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 167, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49996149",
+    "fetched_at": "2026-10-09T07:33:56Z",
+    "title_zh": "DuckDB 鸭湖"
+  },
+  {
+    "title": "ETH-68: Ethernet Audio Interface for Linux",
+    "url": "https://naturalsystems.io/eth68",
+    "source": "naturalsystems.io",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from naturalsystems.io. Hacker News score 142, 85 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49992994",
+    "fetched_at": "2026-10-09T07:33:55Z",
+    "title_zh": "ETH-68：Linux 以太网音频接口"
+  },
+  {
+    "title": "I hired an illustrator to draw my house. Now it's my Home Assistant dashboard",
+    "url": "https://antonfrolov.substack.com/p/i-hired-an-illustrator-to-draw-my",
+    "source": "antonfrolov.substack.com",
+    "date": "2026-10-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from antonfrolov.substack.com. Hacker News score 560, 99 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=49986882",
+    "fetched_at": "2026-10-09T07:33:53Z",
+    "title_zh": "我雇了一位插画家来画我的房子。现在是我的 Home Assistant 仪表板"
   },
   {
     "title": "Google Playground: Create and play custom games",
