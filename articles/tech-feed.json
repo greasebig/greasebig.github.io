@@ -1,5 +1,71 @@
 [
   {
+    "title": "500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter",
+    "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+    "source": "momo5502.com",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from momo5502.com. Hacker News score 78, 58 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50039092",
+    "fetched_at": "2026-10-11T07:25:52Z",
+    "title_zh": "500B代币：让AI智能体反编译第一人称射击游戏"
+  },
+  {
+    "title": "GameBoy on E-Paper ESP32 at 30FPS [video]",
+    "url": "https://www.youtube.com/watch?v=XiZmM6hwwAU",
+    "source": "youtube.com",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 56, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50039536",
+    "fetched_at": "2026-10-11T07:25:50Z",
+    "title_zh": "电子纸ESP32上的GameBoy ，每秒30帧[视频]"
+  },
+  {
+    "title": "PSPi 6 – Raspberry Pi in a PSP",
+    "url": "https://github.com/othermod/PSPi-Version-6",
+    "source": "github.com",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 66, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50038623",
+    "fetched_at": "2026-10-11T07:25:43Z",
+    "title_zh": "PSPi 6 – PSP中的Raspberry Pi"
+  },
+  {
+    "title": "AI agents in a stand-up call",
+    "url": "https://atoll92.github.io/agent-standup/",
+    "source": "atoll92.github.io",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from atoll92.github.io. Hacker News score 30, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50039630",
+    "fetched_at": "2026-10-11T07:25:41Z",
+    "title_zh": "待命通话中的人工智能代理"
+  },
+  {
+    "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+    "url": "https://github.com/rociiu/talorys",
+    "source": "github.com",
+    "date": "2026-10-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 280, 130 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50031614",
+    "fetched_at": "2026-10-11T07:25:47Z",
+    "title_zh": "Talorys – Cloudflare免费套餐上的自托管个人AI代理"
+  },
+  {
+    "title": "Build your own decision model",
+    "url": "https://nishtahir.com/build-your-own-decision-model/",
+    "source": "nishtahir.com",
+    "date": "2026-10-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from nishtahir.com. Hacker News score 233, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50037949",
+    "fetched_at": "2026-10-11T07:25:40Z",
+    "title_zh": "构建您自己的决策模型"
+  },
+  {
     "title": "Show HN: A simple to-do app for iPhone, Mac, and your agent",
     "url": "https://ilia.page/writing/introducing-nagare",
     "source": "ilia.page",
@@ -9,6 +75,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50029607",
     "fetched_at": "2026-10-10T07:20:53Z",
     "title_zh": "Show HN：一款适用于 iPhone、Mac 和您的代理的简单待办事项应用程序"
+  },
+  {
+    "title": "Rampart: Browser native on-device PII radaction",
+    "url": "https://ndstudio.gov/posts/say-hello-to-rampart",
+    "source": "ndstudio.gov",
+    "date": "2026-10-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from ndstudio.gov. Hacker News score 85, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50024242",
+    "fetched_at": "2026-10-11T07:25:55Z",
+    "title_zh": "Rampart ：浏览器本机设备上的PII辐射"
   },
   {
     "title": "Programming Isn't Special",
@@ -119,6 +196,39 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50016840",
     "fetched_at": "2026-10-09T07:33:54Z",
     "title_zh": "Show HN：OldRoll，适用于浏览器的免费复古照片编辑器"
+  },
+  {
+    "title": "C for Rust programmers",
+    "url": "https://bd103.dev/blog/2026-10-07-c-for-rust-programmers/",
+    "source": "bd103.dev",
+    "date": "2026-10-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from bd103.dev. Hacker News score 136, 121 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50005743",
+    "fetched_at": "2026-10-11T07:25:54Z",
+    "title_zh": "C for Rust程序员"
+  },
+  {
+    "title": "Show HN: Diffle, a keyboard-centric diff viewer with LSP support",
+    "url": "https://github.com/moritzwilksch/diffle",
+    "source": "github.com",
+    "date": "2026-10-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 32, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50006930",
+    "fetched_at": "2026-10-11T07:25:49Z",
+    "title_zh": "Show HN ： Diffle ，支持LSP的以键盘为中心的差异查看器"
+  },
+  {
+    "title": "Retrofitting language models to operate over bytes",
+    "url": "https://www.nature.com/articles/s41586-026-11111-4",
+    "source": "nature.com",
+    "date": "2026-10-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from nature.com. Hacker News score 43, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50001234",
+    "fetched_at": "2026-10-11T07:25:45Z",
+    "title_zh": "改造语言模型以通过字节进行操作"
   },
   {
     "title": "Show HN: Proton Drive for Linux",
