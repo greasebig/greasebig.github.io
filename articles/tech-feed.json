@@ -1,5 +1,104 @@
 [
   {
+    "title": "HashiCorp archives the Boundary open source repo",
+    "url": "https://github.com/hashicorp/boundary",
+    "source": "github.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 71, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50049498",
+    "fetched_at": "2026-10-12T07:34:10Z",
+    "title_zh": "HashiCorp归档Boundary开源存储库"
+  },
+  {
+    "title": "Crest – an Arc-inspired open-source browser for Mac",
+    "url": "https://crestbrowser.com/",
+    "source": "crestbrowser.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from crestbrowser.com. Hacker News score 9, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50051097",
+    "fetched_at": "2026-10-12T07:33:49Z",
+    "title_zh": "Crest –受Arc启发的Mac开源浏览器"
+  },
+  {
+    "title": "Doory – Open-Source Canva",
+    "url": "https://github.com/shaongitbd/doory",
+    "source": "github.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 89, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50049872",
+    "fetched_at": "2026-10-12T07:33:37Z",
+    "title_zh": "Doory –开源Canva"
+  },
+  {
+    "title": "Will Linux phones become a viable alternative to the Android/iOS duopoly?",
+    "url": "https://amosbbatto.wordpress.com/2026/10/05/linux-phones-alternative/",
+    "source": "amosbbatto.wordpress.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from amosbbatto.wordpress.com. Hacker News score 90, 90 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50051530",
+    "fetched_at": "2026-10-12T07:33:33Z",
+    "title_zh": "Linux手机会成为Android/iOS双头垄断的可行替代品吗？"
+  },
+  {
+    "title": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+    "url": "https://github.com/SaarthurR/atticus-mac",
+    "source": "github.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 9, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50049588",
+    "fetched_at": "2026-10-12T07:33:31Z",
+    "title_zh": "显示HN ： Atticus –在Claude -p上运行的macOS的Hold-to-talk语音助手"
+  },
+  {
+    "title": "apsw: Another Python SQLite Wrapper",
+    "url": "https://github.com/rogerbinns/apsw",
+    "source": "github.com",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 77, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50045273",
+    "fetched_at": "2026-10-12T07:34:02Z",
+    "title_zh": "apsw ：另一个Python SQLite包装器"
+  },
+  {
+    "title": "ClickHouse C – Talk to ClickHouse using its native binary protocol",
+    "url": "https://github.com/ClickHouse/clickhouse-c",
+    "source": "github.com",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 33, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50049003",
+    "fetched_at": "2026-10-12T07:33:58Z",
+    "title_zh": "ClickHouse C –使用其本机二进制协议与ClickHouse交谈"
+  },
+  {
+    "title": "Google is illegaly cutting forest to build data centers",
+    "url": "https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment",
+    "source": "theguardian.com",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from theguardian.com. Hacker News score 407, 115 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50048638",
+    "fetched_at": "2026-10-12T07:33:43Z",
+    "title_zh": "谷歌非法砍伐森林建设数据中心"
+  },
+  {
+    "title": "The gap in shared understanding of LLM capability is widening",
+    "url": "https://twitter.com/karpathy/status/2109361546505966046",
+    "source": "twitter.com",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 418, 588 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50047422",
+    "fetched_at": "2026-10-12T07:33:41Z",
+    "title_zh": "对法学硕士能力的共同理解的差距正在扩大"
+  },
+  {
     "title": "500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter",
     "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
     "source": "momo5502.com",
@@ -42,6 +141,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50039630",
     "fetched_at": "2026-10-11T07:25:41Z",
     "title_zh": "待命通话中的人工智能代理"
+  },
+  {
+    "title": "Every US Electrical Outlet Explained [video]",
+    "url": "https://www.youtube.com/watch?v=n_1wzYQwnts",
+    "source": "youtube.com",
+    "date": "2026-10-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 19, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50038088",
+    "fetched_at": "2026-10-12T07:33:46Z",
+    "title_zh": "每个美国电源插座说明[视频]"
   },
   {
     "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
