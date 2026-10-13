@@ -1,5 +1,104 @@
 [
   {
+    "title": "Show HN: SolidCraft – Open-Source Parametric CAD in Rust (With MCP Support)",
+    "url": "https://github.com/bherbruck/solidcraft",
+    "source": "github.com",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 48, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50064840",
+    "fetched_at": "2026-10-13T07:53:20Z",
+    "title_zh": "Show HN：SolidCraft – Rust 中的开源参数化 CAD（支持 MCP）"
+  },
+  {
+    "title": "AI models can provably hide arbitrary capabilities",
+    "url": "https://arxiv.org/abs/2610.13928",
+    "source": "arxiv.org",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 182, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50065692",
+    "fetched_at": "2026-10-13T07:53:19Z",
+    "title_zh": "人工智能模型可以证明隐藏任意功能"
+  },
+  {
+    "title": "A look at the math that OpenAI claims computes faster Fourier transforms",
+    "url": "https://www.argmin.net/p/faster-fourier-transforms",
+    "source": "argmin.net",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from argmin.net. Hacker News score 112, 73 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50065932",
+    "fetched_at": "2026-10-13T07:53:18Z",
+    "title_zh": "OpenAI 声称可以更快地计算傅立叶变换的数学原理"
+  },
+  {
+    "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
+    "url": "https://taylor.town/kk-ai-2026",
+    "source": "taylor.town",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from taylor.town. Hacker News score 181, 66 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50057668",
+    "fetched_at": "2026-10-13T07:53:21Z",
+    "title_zh": "凯文·凯利 10 年后的 2016 年人工智能预测"
+  },
+  {
+    "title": "Show HN: An experimental pattern-first DAW that supports MCP",
+    "url": "https://github.com/andrewfader/blokkily",
+    "source": "github.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 49, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50064438",
+    "fetched_at": "2026-10-13T07:53:20Z",
+    "title_zh": "Show HN：支持 MCP 的实验性模式优先 DAW"
+  },
+  {
+    "title": "AI is a tool and using it well takes skill",
+    "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+    "source": "yyhh.org",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from yyhh.org. Hacker News score 373, 294 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50063427",
+    "fetched_at": "2026-10-13T07:53:19Z",
+    "title_zh": "人工智能是一种工具，用好它需要技巧"
+  },
+  {
+    "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+    "url": "https://github.com/prabanta-dev/janas",
+    "source": "github.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 118, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50063717",
+    "fetched_at": "2026-10-13T07:53:18Z",
+    "title_zh": "Janas：由 SSD 的流媒体专家运行比 RAM 更大的 LLM"
+  },
+  {
+    "title": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
+    "url": "https://github.com/h0m3us3r/w1700k-sdr",
+    "source": "github.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 335, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50055593",
+    "fetched_at": "2026-10-13T07:53:18Z",
+    "title_zh": "将 WiFi 7 路由器变成 320Msps 软件定义无线电接收器"
+  },
+  {
+    "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+    "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+    "source": "intel.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from intel.com. Hacker News score 180, 80 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50063365",
+    "fetched_at": "2026-10-13T07:53:17Z",
+    "title_zh": "英特尔 D270 GPU AI 加速器 – 高达 480 GB LPDDR5X"
+  },
+  {
     "title": "HashiCorp archives the Boundary open source repo",
     "url": "https://github.com/hashicorp/boundary",
     "source": "github.com",
@@ -53,6 +152,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50049588",
     "fetched_at": "2026-10-12T07:33:31Z",
     "title_zh": "显示HN ： Atticus –在Claude -p上运行的macOS的Hold-to-talk语音助手"
+  },
+  {
+    "title": "Auto Research: Integer multiplication below n log n",
+    "url": "https://app.getsupers.com/auto-research",
+    "source": "app.getsupers.com",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from app.getsupers.com. Hacker News score 53, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50047664",
+    "fetched_at": "2026-10-13T07:53:19Z",
+    "title_zh": "汽车研究：n log n 以下的整数乘法"
   },
   {
     "title": "apsw: Another Python SQLite Wrapper",
