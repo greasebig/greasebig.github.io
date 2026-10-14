@@ -1,5 +1,104 @@
 [
   {
+    "title": "Anthropic conjures threat that doesn't exist yet to stoke fears of AI apocalypse",
+    "url": "https://www.theregister.com/ai-and-ml/2026/10/13/anthropic-conjures-another-threat-that-doesnt-exist-yet-to-stoke-fears-of-ai-apocalypse/5302866",
+    "source": "theregister.com",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from theregister.com. Hacker News score 16, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50082962",
+    "fetched_at": "2026-10-14T06:19:30Z",
+    "title_zh": "Anthropic召唤出尚不存在的威胁，引发人们对人工智能启示的恐惧"
+  },
+  {
+    "title": "I built a tool to track what AI leaders say and how their views change on video",
+    "url": "https://blumify.io/people",
+    "source": "blumify.io",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from blumify.io. Hacker News score 67, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50081151",
+    "fetched_at": "2026-10-14T06:19:28Z",
+    "title_zh": "我构建了一个工具来跟踪人工智能领导者所说的话以及他们对视频的看法如何变化"
+  },
+  {
+    "title": "11 year old unsoundness bugs found in Rust borrow checker",
+    "url": "https://github.com/rust-lang/rust/issues/164250",
+    "source": "github.com",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 706, 390 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50069499",
+    "fetched_at": "2026-10-14T06:19:39Z",
+    "title_zh": "在Rust借用检查器中发现了11年的不健康漏洞"
+  },
+  {
+    "title": "OpenAI engineer arrested in bugging of executive conference room",
+    "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+    "source": "sfstandard.com",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from sfstandard.com. Hacker News score 512, 436 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50078141",
+    "fetched_at": "2026-10-14T06:19:37Z",
+    "title_zh": "OpenAI工程师因窃听高管会议室而被捕"
+  },
+  {
+    "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+    "url": "https://pulseos.finance",
+    "source": "pulseos.finance",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from pulseos.finance. Hacker News score 96, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50080275",
+    "fetched_at": "2026-10-14T06:19:36Z",
+    "title_zh": "Show HN ： Pulse Local ，一款Mac预算应用程序，其AI模型在您的机器上运行"
+  },
+  {
+    "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+    "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
+    "source": "sammystraus.com",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from sammystraus.com. Hacker News score 310, 165 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50073221",
+    "fetched_at": "2026-10-14T06:19:34Z",
+    "title_zh": "我发布到HN ，然后我的网站充斥着AI机器人流量"
+  },
+  {
+    "title": "Recreational Programming",
+    "url": "https://www.cphiri.dev/presentations/recreational-programming",
+    "source": "cphiri.dev",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from cphiri.dev. Hacker News score 128, 52 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50079865",
+    "fetched_at": "2026-10-14T06:19:32Z",
+    "title_zh": "娱乐编程"
+  },
+  {
+    "title": "Redesigning source control at Anthropic",
+    "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+    "source": "anthropic.com",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 683, 652 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50073633",
+    "fetched_at": "2026-10-14T06:19:27Z",
+    "title_zh": "重新设计Anthropic的源代码控制"
+  },
+  {
+    "title": "Gemini 4 Argon",
+    "url": "https://deepmind.google/models/gemini/",
+    "source": "deepmind.google",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 1179, 838 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50073879",
+    "fetched_at": "2026-10-14T06:19:23Z",
+    "title_zh": "双子座4氩气"
+  },
+  {
     "title": "Show HN: SolidCraft – Open-Source Parametric CAD in Rust (With MCP Support)",
     "url": "https://github.com/bherbruck/solidcraft",
     "source": "github.com",
@@ -31,6 +130,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50065932",
     "fetched_at": "2026-10-13T07:53:18Z",
     "title_zh": "OpenAI 声称可以更快地计算傅立叶变换的数学原理"
+  },
+  {
+    "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
+    "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+    "source": "bleepingcomputer.com",
+    "date": "2026-10-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from bleepingcomputer.com. Hacker News score 599, 394 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50054092",
+    "fetched_at": "2026-10-14T06:19:25Z",
+    "title_zh": "Ledger确认钱包加密盗窃背后的间谍芯片植入"
   },
   {
     "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
