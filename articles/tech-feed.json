@@ -1,5 +1,93 @@
 [
   {
+    "title": "Show HN: Flipflop, iroh-powered persistent tunnels for filesharing",
+    "url": "https://github.com/andunieee/flipflop",
+    "source": "github.com",
+    "date": "2026-10-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 5, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50099136",
+    "fetched_at": "2026-10-15T06:00:58Z",
+    "title_zh": "Show HN：触发器、iroh 支持的文件共享持久隧道"
+  },
+  {
+    "title": "Nvidia's first GPU: GeForce 256",
+    "url": "https://dfarq.homeip.net/nvidias-first-gpu-geforce-256/",
+    "source": "dfarq.homeip.net",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from dfarq.homeip.net. Hacker News score 72, 45 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50086363",
+    "fetched_at": "2026-10-15T06:01:01Z",
+    "title_zh": "Nvidia 第一个 GPU：GeForce 256"
+  },
+  {
+    "title": "Google is silently linking your phone number across all signed-in accounts",
+    "url": "https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/",
+    "source": "androidauthority.com",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from androidauthority.com. Hacker News score 442, 119 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50090349",
+    "fetched_at": "2026-10-15T06:01:00Z",
+    "title_zh": "Google 会在所有登录帐户中悄悄关联您的电话号码"
+  },
+  {
+    "title": "Pg_vectorsearch: An index that is faster than pgvector's IVFFlat and HNSW",
+    "url": "https://github.com/timescale/pg_vectorsearch",
+    "source": "github.com",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 200, 52 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50086165",
+    "fetched_at": "2026-10-15T06:01:00Z",
+    "title_zh": "pg_vectorsearch：比pgvector的IVFFlat和HNSW更快的索引"
+  },
+  {
+    "title": "Yandex outage: data shows that instead of going dark, malicious bots moved",
+    "url": "https://blog.cloudflare.com/yandex-outage/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 246, 80 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50094673",
+    "fetched_at": "2026-10-15T06:01:00Z",
+    "title_zh": "Yandex 中断：数据显示，恶意机器人并没有消失，而是转移了"
+  },
+  {
+    "title": "Has AI tells",
+    "url": "https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1",
+    "source": "theconsensus.dev",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from theconsensus.dev. Hacker News score 105, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50090799",
+    "fetched_at": "2026-10-15T06:00:59Z",
+    "title_zh": "有人工智能告诉你"
+  },
+  {
+    "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+    "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+    "source": "csoonline.com",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from csoonline.com. Hacker News score 864, 498 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50091788",
+    "fetched_at": "2026-10-15T06:00:57Z",
+    "title_zh": "专家：遏制和监控失败是人工智能黑客报告的罪魁祸首"
+  },
+  {
+    "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+    "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+    "source": "liquid.ai",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from liquid.ai. Hacker News score 148, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50097369",
+    "fetched_at": "2026-10-15T06:00:56Z",
+    "title_zh": "LFM2.5-24B-A2B：专为快速设备上代理而构建"
+  },
+  {
     "title": "Anthropic conjures threat that doesn't exist yet to stoke fears of AI apocalypse",
     "url": "https://www.theregister.com/ai-and-ml/2026/10/13/anthropic-conjures-another-threat-that-doesnt-exist-yet-to-stoke-fears-of-ai-apocalypse/5302866",
     "source": "theregister.com",
@@ -20,6 +108,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50081151",
     "fetched_at": "2026-10-14T06:19:28Z",
     "title_zh": "我构建了一个工具来跟踪人工智能领导者所说的话以及他们对视频的看法如何变化"
+  },
+  {
+    "title": "Gemini 4 Argon",
+    "url": "https://deepmind.google/models/gemini/",
+    "source": "deepmind.google",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 1443, 1027 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50073879",
+    "fetched_at": "2026-10-15T06:01:01Z",
+    "title_zh": "双子座 4 氩"
   },
   {
     "title": "11 year old unsoundness bugs found in Rust borrow checker",
@@ -86,17 +185,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50073633",
     "fetched_at": "2026-10-14T06:19:27Z",
     "title_zh": "重新设计Anthropic的源代码控制"
-  },
-  {
-    "title": "Gemini 4 Argon",
-    "url": "https://deepmind.google/models/gemini/",
-    "source": "deepmind.google",
-    "date": "2026-10-13",
-    "repost": true,
-    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 1179, 838 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50073879",
-    "fetched_at": "2026-10-14T06:19:23Z",
-    "title_zh": "双子座4氩气"
   },
   {
     "title": "Show HN: SolidCraft – Open-Source Parametric CAD in Rust (With MCP Support)",
@@ -262,6 +350,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50049588",
     "fetched_at": "2026-10-12T07:33:31Z",
     "title_zh": "显示HN ： Atticus –在Claude -p上运行的macOS的Hold-to-talk语音助手"
+  },
+  {
+    "title": "How I manage persistent Claude Code loops: Spool",
+    "url": "https://github.com/enes-alatas/spool",
+    "source": "github.com",
+    "date": "2026-10-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 17, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50048193",
+    "fetched_at": "2026-10-15T06:01:01Z",
+    "title_zh": "我如何管理持久的克劳德代码循环：假脱机"
   },
   {
     "title": "Auto Research: Integer multiplication below n log n",
