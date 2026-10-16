@@ -1,5 +1,93 @@
 [
   {
+    "title": "Tesla makes cars that fly? [video]",
+    "url": "https://www.youtube.com/watch?v=7p5LxFdc-Qg",
+    "source": "youtube.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 33, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50114077",
+    "fetched_at": "2026-10-16T06:00:00Z",
+    "title_zh": "特斯拉生产会飞的汽车？ [视频]"
+  },
+  {
+    "title": "Comparing Chromium Development at Google and Igalia",
+    "url": "https://lwn.net/Articles/1094721/",
+    "source": "lwn.net",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from lwn.net. Hacker News score 29, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50112887",
+    "fetched_at": "2026-10-16T05:59:55Z",
+    "title_zh": "比较Google和Igalia的Chromium开发"
+  },
+  {
+    "title": "Any window from your Mac, on your iPhone and iPad",
+    "url": "https://github.com/Saffsanity/sill",
+    "source": "github.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 104, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50112739",
+    "fetched_at": "2026-10-16T05:59:48Z",
+    "title_zh": "Mac上的任何窗口， iPhone和iPad上的任何窗口"
+  },
+  {
+    "title": "Aidlc: Adaptive workflow steering rules for AI coding agents",
+    "url": "https://github.com/awslabs/aidlc-workflows",
+    "source": "github.com",
+    "date": "2026-10-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 22, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50100387",
+    "fetched_at": "2026-10-16T06:00:08Z",
+    "title_zh": "Aidlc ： AI编码代理的自适应工作流程引导规则"
+  },
+  {
+    "title": "Using AI to reverse engineer hardware",
+    "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+    "source": "blogs.gnome.org",
+    "date": "2026-10-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from blogs.gnome.org. Hacker News score 158, 138 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50104299",
+    "fetched_at": "2026-10-16T06:00:05Z",
+    "title_zh": "使用人工智能对硬件进行逆向工程"
+  },
+  {
+    "title": "BeBox is a Haiku application that emulates Be Inc.'s BeBox",
+    "url": "https://github.com/johnrash/bebox",
+    "source": "github.com",
+    "date": "2026-10-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 42, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50111742",
+    "fetched_at": "2026-10-16T05:59:59Z",
+    "title_zh": "BeBox是一个模拟Be Inc.的BeBox的Haiku应用程序"
+  },
+  {
+    "title": "Krea 3 – An image model built for editing at scale",
+    "url": "https://www.krea.ai/krea-3",
+    "source": "krea.ai",
+    "date": "2026-10-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from krea.ai. Hacker News score 285, 90 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50105648",
+    "fetched_at": "2026-10-16T05:59:57Z",
+    "title_zh": "Krea 3 –为大规模编辑而构建的图像模型"
+  },
+  {
+    "title": "Wayland desktop for Linux with skeuomorphic design",
+    "url": "https://github.com/fyzugx/DEsk",
+    "source": "github.com",
+    "date": "2026-10-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 563, 223 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50103338",
+    "fetched_at": "2026-10-16T05:59:52Z",
+    "title_zh": "适用于Linux的Wayland桌面，带有skeuomorphic设计"
+  },
+  {
     "title": "Show HN: Flipflop, iroh-powered persistent tunnels for filesharing",
     "url": "https://github.com/andunieee/flipflop",
     "source": "github.com",
@@ -108,6 +196,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50081151",
     "fetched_at": "2026-10-14T06:19:28Z",
     "title_zh": "我构建了一个工具来跟踪人工智能领导者所说的话以及他们对视频的看法如何变化"
+  },
+  {
+    "title": "Major ICQ security hole (1998)",
+    "url": "https://opennet.ru/base/maillist/169.txt.html",
+    "source": "opennet.ru",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from opennet.ru. Hacker News score 63, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50069439",
+    "fetched_at": "2026-10-16T06:00:03Z",
+    "title_zh": "主要ICQ安全漏洞（ 1998年）"
+  },
+  {
+    "title": "Woman who rescued injured crow keeps getting 'thank-you gifts' from birds [video]",
+    "url": "https://www.youtube.com/watch?v=sjNpfz4UzqU",
+    "source": "youtube.com",
+    "date": "2026-10-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 75, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50065859",
+    "fetched_at": "2026-10-16T05:59:51Z",
+    "title_zh": "营救受伤乌鸦的女性不断从鸟类那里获得“感谢礼物” [视频]"
   },
   {
     "title": "Gemini 4 Argon",
