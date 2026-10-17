@@ -1,5 +1,104 @@
 [
   {
+    "title": "I never authorized an integration that scans my secrets",
+    "url": "https://github.com/home-assistant/home-assistant.io/issues/49314",
+    "source": "github.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 210, 173 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50124251",
+    "fetched_at": "2026-10-17T05:45:34Z",
+    "title_zh": "我从未授权扫描我的秘密的集成"
+  },
+  {
+    "title": "Anthropic assigned highest junk credit rating in June",
+    "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
+    "source": "ft.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from ft.com. Hacker News score 238, 75 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50122112",
+    "fetched_at": "2026-10-17T05:45:33Z",
+    "title_zh": "Anthropic 授予 6 月​​份最高垃圾信用评级"
+  },
+  {
+    "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+    "source": "mercor.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from mercor.com. Hacker News score 456, 393 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50121179",
+    "fetched_at": "2026-10-17T05:45:31Z",
+    "title_zh": "美国 90% 的工作时间都花在了人工智能基准未涵盖的任务上"
+  },
+  {
+    "title": "How the Claude Code team does code review",
+    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+    "source": "claude.dev",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from claude.dev. Hacker News score 293, 273 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50122951",
+    "fetched_at": "2026-10-17T05:45:31Z",
+    "title_zh": "Claude Code 团队如何进行代码审查"
+  },
+  {
+    "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+    "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+    "source": "machinelearning.apple.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from machinelearning.apple.com. Hacker News score 295, 144 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50118320",
+    "fetched_at": "2026-10-17T05:45:30Z",
+    "title_zh": "Apple ML Research：在 Mac Studio 上使用 MLX 打开 Muse Spark"
+  },
+  {
+    "title": "A story of WiFi secrets, UART lockdowns and a damaged flash memory chip",
+    "url": "https://adepts.of0x.cc/eufy-homestation2-firmware/",
+    "source": "adepts.of0x.cc",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from adepts.of0x.cc. Hacker News score 29, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50119751",
+    "fetched_at": "2026-10-17T05:45:30Z",
+    "title_zh": "WiFi 秘密、UART 锁定和闪存芯片损坏的故事"
+  },
+  {
+    "title": "Designing more efficient quantum circuits with Claude",
+    "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+    "source": "anthropic.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 120, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50121939",
+    "fetched_at": "2026-10-17T05:45:30Z",
+    "title_zh": "与 Claude 一起设计更高效的量子电路"
+  },
+  {
+    "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+    "url": "https://github.com/cobanov/PS5LM",
+    "source": "github.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 244, 63 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50122431",
+    "fetched_at": "2026-10-17T05:45:29Z",
+    "title_zh": "越狱 PS5 上的 Llama.cpp：在控制台上本地运行任何 GGUF 模型"
+  },
+  {
+    "title": "Claude reveals ECDSA curve origins",
+    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+    "source": "anthropic.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 790, 299 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50122800",
+    "fetched_at": "2026-10-17T05:45:29Z",
+    "title_zh": "Claude 揭示 ECDSA 曲线起源"
+  },
+  {
     "title": "Tesla makes cars that fly? [video]",
     "url": "https://www.youtube.com/watch?v=7p5LxFdc-Qg",
     "source": "youtube.com",
@@ -31,6 +130,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50112739",
     "fetched_at": "2026-10-16T05:59:48Z",
     "title_zh": "Mac上的任何窗口， iPhone和iPad上的任何窗口"
+  },
+  {
+    "title": "Is Liquid Metal Killing Our PCs? Scientific Analysis and a 2-Year Test [video]",
+    "url": "https://www.youtube.com/watch?v=eF6bMSjPepM",
+    "source": "youtube.com",
+    "date": "2026-10-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 75, 51 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50111752",
+    "fetched_at": "2026-10-17T05:45:34Z",
+    "title_zh": "液态金属会杀死我们的电脑吗？科学分析和两年测试[视频]"
   },
   {
     "title": "Aidlc: Adaptive workflow steering rules for AI coding agents",
