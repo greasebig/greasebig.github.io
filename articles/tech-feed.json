@@ -1,5 +1,93 @@
 [
   {
+    "title": "The future of programming (1982)",
+    "url": "https://dl.acm.org/doi/10.1145/358453.358459",
+    "source": "dl.acm.org",
+    "date": "2026-10-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from dl.acm.org. Hacker News score 62, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50130079",
+    "fetched_at": "2026-10-18T06:08:39Z",
+    "title_zh": "编程的未来 (1982)"
+  },
+  {
+    "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+    "url": "https://llmspeed.dev/",
+    "source": "llmspeed.dev",
+    "date": "2026-10-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from llmspeed.dev. Hacker News score 272, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50127979",
+    "fetched_at": "2026-10-18T06:08:37Z",
+    "title_zh": "Show HN: Llmspeed – 在购买硬件之前感受本地法学硕士的运行速度"
+  },
+  {
+    "title": "Show HN: Esp32sim – Run ESP32 firmware in the browser",
+    "url": "https://github.com/mikroverk/esp32sim",
+    "source": "github.com",
+    "date": "2026-10-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 148, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50131189",
+    "fetched_at": "2026-10-18T06:08:37Z",
+    "title_zh": "Show HN: Esp32sim – 在浏览器中运行 ESP32 固件"
+  },
+  {
+    "title": "Interactive Linear Programming in the Browser",
+    "url": "https://lpviz.net/",
+    "source": "lpviz.net",
+    "date": "2026-10-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from lpviz.net. Hacker News score 6, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50130379",
+    "fetched_at": "2026-10-18T06:08:36Z",
+    "title_zh": "浏览器中的交互式线性规划"
+  },
+  {
+    "title": "Source code of the Estonian online voting system",
+    "url": "https://github.com/valimised/ivxv",
+    "source": "github.com",
+    "date": "2026-10-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 201, 161 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50127586",
+    "fetched_at": "2026-10-18T06:08:36Z",
+    "title_zh": "爱沙尼亚在线投票系统源代码"
+  },
+  {
+    "title": "Codex Desktop continuously generates Crashpad pending dumps",
+    "url": "https://github.com/openai/codex/issues/25921",
+    "source": "github.com",
+    "date": "2026-10-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 115, 41 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50133231",
+    "fetched_at": "2026-10-18T06:08:35Z",
+    "title_zh": "Codex Desktop 不断生成 Crashpad 待处理转储"
+  },
+  {
+    "title": "Claude reveals ECDSA curve origins",
+    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+    "source": "anthropic.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 1030, 380 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50122800",
+    "fetched_at": "2026-10-18T06:08:40Z",
+    "title_zh": "Claude 揭示 ECDSA 曲线起源"
+  },
+  {
+    "title": "Show HN: Parin – A 2D game engine between raylib and Godot, written in Dlang",
+    "url": "https://github.com/Kapendev/parin",
+    "source": "github.com",
+    "date": "2026-10-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 57, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50118098",
+    "fetched_at": "2026-10-18T06:08:38Z",
+    "title_zh": "Show HN：Parin – 介于 raylib 和 Godot 之间的 2D 游戏引擎，用 Dlang 编写"
+  },
+  {
     "title": "I never authorized an integration that scans my secrets",
     "url": "https://github.com/home-assistant/home-assistant.io/issues/49314",
     "source": "github.com",
@@ -88,17 +176,6 @@
     "title_zh": "越狱 PS5 上的 Llama.cpp：在控制台上本地运行任何 GGUF 模型"
   },
   {
-    "title": "Claude reveals ECDSA curve origins",
-    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-    "source": "anthropic.com",
-    "date": "2026-10-16",
-    "repost": true,
-    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 790, 299 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50122800",
-    "fetched_at": "2026-10-17T05:45:29Z",
-    "title_zh": "Claude 揭示 ECDSA 曲线起源"
-  },
-  {
     "title": "Tesla makes cars that fly? [video]",
     "url": "https://www.youtube.com/watch?v=7p5LxFdc-Qg",
     "source": "youtube.com",
@@ -130,6 +207,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50112739",
     "fetched_at": "2026-10-16T05:59:48Z",
     "title_zh": "Mac上的任何窗口， iPhone和iPad上的任何窗口"
+  },
+  {
+    "title": "The Commodore 64 hardware simulator: break chips and pins, see the results",
+    "url": "https://github.com/antirez/c64-hw-simulator",
+    "source": "github.com",
+    "date": "2026-10-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 169, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50100366",
+    "fetched_at": "2026-10-18T06:08:35Z",
+    "title_zh": "Commodore 64硬件模拟器：破坏芯片和引脚，查看结果"
   },
   {
     "title": "Is Liquid Metal Killing Our PCs? Scientific Analysis and a 2-Year Test [video]",
@@ -207,6 +295,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50099136",
     "fetched_at": "2026-10-15T06:00:58Z",
     "title_zh": "Show HN：触发器、iroh 支持的文件共享持久隧道"
+  },
+  {
+    "title": "Custom server to revive neato bots",
+    "url": "https://github.com/vacuula/vacuula",
+    "source": "github.com",
+    "date": "2026-10-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 24, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50097257",
+    "fetched_at": "2026-10-18T06:08:35Z",
+    "title_zh": "定制服务器以复兴 neato 机器人"
   },
   {
     "title": "Nvidia's first GPU: GeForce 256",
