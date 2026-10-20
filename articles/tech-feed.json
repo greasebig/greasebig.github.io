@@ -1,5 +1,82 @@
 [
   {
+    "title": "Go will reject certificate chains containing eight distrusted SPKIs",
+    "url": "https://github.com/golang/go/issues/82345",
+    "source": "github.com",
+    "date": "2026-10-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 46, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50160877",
+    "fetched_at": "2026-10-20T06:12:02Z",
+    "title_zh": "Go 将拒绝包含八个不可信 SPKI 的证书链"
+  },
+  {
+    "title": "How abliterated models can get you pwned",
+    "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+    "source": "projectdiscovery.io",
+    "date": "2026-10-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from projectdiscovery.io. Hacker News score 82, 52 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50159245",
+    "fetched_at": "2026-10-20T06:12:05Z",
+    "title_zh": "被废除的模型如何让你陷入困境"
+  },
+  {
+    "title": "Android apps running native on macOS",
+    "url": "https://github.com/kksimp/Mac.apk",
+    "source": "github.com",
+    "date": "2026-10-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 298, 160 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50154624",
+    "fetched_at": "2026-10-20T06:12:04Z",
+    "title_zh": "在 macOS 上本机运行的 Android 应用"
+  },
+  {
+    "title": "OpenBSD 8.0 release will have inteldrm/radeondrm/amdgpu drivers from Linux 6.18",
+    "url": "https://bsd.network/@brynet/117407035545900963",
+    "source": "bsd.network",
+    "date": "2026-10-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from bsd.network. Hacker News score 138, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50158138",
+    "fetched_at": "2026-10-20T06:12:03Z",
+    "title_zh": "OpenBSD 8.0 版本将包含 Linux 6.18 的 inteldrm/radeondrm/amdgpu 驱动程序"
+  },
+  {
+    "title": "I built a drone with only one motor [video]",
+    "url": "https://www.youtube.com/watch?v=Ndftcft6XhU",
+    "source": "youtube.com",
+    "date": "2026-10-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 484, 103 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50150089",
+    "fetched_at": "2026-10-20T06:12:02Z",
+    "title_zh": "我建造了一架只有一个电机的无人机 [视频]"
+  },
+  {
+    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+    "source": "redact.dev",
+    "date": "2026-10-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from redact.dev. Hacker News score 235, 43 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50159341",
+    "fetched_at": "2026-10-20T06:12:01Z",
+    "title_zh": "WhatsApp的帮助页面隐藏了LLM说明：不推荐监管机构"
+  },
+  {
+    "title": "Nordwand Mono – A monospace font for coders and adventurers",
+    "url": "https://github.com/tywr/Nordwand-Mono",
+    "source": "github.com",
+    "date": "2026-10-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 20, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50141581",
+    "fetched_at": "2026-10-20T06:12:03Z",
+    "title_zh": "Nordwand Mono – 适合程序员和冒险家的等宽字体"
+  },
+  {
     "title": "The Intel 8087 chip: floating-point addition and subtraction",
     "url": "https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
     "source": "righto.com",
@@ -68,6 +145,39 @@
     "summary": "转载 / Curated repost from arxiv.org. Hacker News score 328, 163 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=50145337",
     "fetched_at": "2026-10-19T06:23:00Z"
+  },
+  {
+    "title": "Porting video games to VHS",
+    "url": "https://gardinerbryant.com/what-if-video-games-came-on-vhs/",
+    "source": "gardinerbryant.com",
+    "date": "2026-10-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from gardinerbryant.com. Hacker News score 27, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50135177",
+    "fetched_at": "2026-10-20T06:12:05Z",
+    "title_zh": "将视频游戏移植到 VHS"
+  },
+  {
+    "title": "RuneScape Bench: MMOs for Agents [video]",
+    "url": "https://www.youtube.com/watch?v=cNm4zyUtWj0",
+    "source": "youtube.com",
+    "date": "2026-10-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 181, 67 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50136126",
+    "fetched_at": "2026-10-20T06:12:04Z",
+    "title_zh": "RuneScape Bench：特工 MMO [视频]"
+  },
+  {
+    "title": "It's still ok to enjoy programming",
+    "url": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
+    "source": "chriskiehl.com",
+    "date": "2026-10-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from chriskiehl.com. Hacker News score 527, 483 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50134472",
+    "fetched_at": "2026-10-20T06:12:03Z",
+    "title_zh": "享受编程的乐趣还是可以的"
   },
   {
     "title": "I built a programming language that LLMs can't use",
