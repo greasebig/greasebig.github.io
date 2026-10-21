@@ -1,5 +1,93 @@
 [
   {
+    "title": "Using Claude to reduce the attack surface of code",
+    "url": "https://www.anthropic.com/research/attack-surface-reduction",
+    "source": "anthropic.com",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 7, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50175779",
+    "fetched_at": "2026-10-21T06:10:05Z",
+    "title_zh": "使用 Claude 减少代码的攻击面"
+  },
+  {
+    "title": "Nexus-CLI – Pure Go Bridge to DeepSeek R1/V3 with Claude Code and Ollama Support",
+    "url": "https://github.com/xamrayev/nexus-cli",
+    "source": "github.com",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 7, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50176129",
+    "fetched_at": "2026-10-21T06:10:04Z",
+    "title_zh": "Nexus-CLI – 到 DeepSeek R1/V3 的 Pure Go 桥接器，具有 Claude 代码和 Ollama 支持"
+  },
+  {
+    "title": "Battlezone Online: BZFlag in the Browser",
+    "url": "https://github.com/timriker/bzo",
+    "source": "github.com",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 10, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50176298",
+    "fetched_at": "2026-10-21T06:10:02Z",
+    "title_zh": "Battlezone Online：浏览器中的 BZFlag"
+  },
+  {
+    "title": "Tsrs: A Port of TypeScript to Rust",
+    "url": "https://blog.cloudflare.com/typescript-rust-port/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-10-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 383, 185 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50165953",
+    "fetched_at": "2026-10-21T06:10:05Z",
+    "title_zh": "Tsrs：TypeScript 到 Rust 的端口"
+  },
+  {
+    "title": "Upcoming critical PHP security release",
+    "url": "https://news-web.php.net/php.announce/509",
+    "source": "news-web.php.net",
+    "date": "2026-10-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from news-web.php.net. Hacker News score 421, 156 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50172041",
+    "fetched_at": "2026-10-21T06:10:05Z",
+    "title_zh": "即将发布的关键 PHP 安全版本"
+  },
+  {
+    "title": "Google Cloud outage affects almost all banking and other operations in Europe",
+    "url": "https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more/",
+    "source": "neowin.net",
+    "date": "2026-10-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from neowin.net. Hacker News score 373, 186 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50163961",
+    "fetched_at": "2026-10-21T06:10:05Z",
+    "title_zh": "Google Cloud 中断影响了欧洲几乎所有银行和其他业务"
+  },
+  {
+    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+    "url": "https://github.com/deepseek-ai/DeepInfer",
+    "source": "github.com",
+    "date": "2026-10-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 2200, 849 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50163277",
+    "fetched_at": "2026-10-21T06:10:04Z",
+    "title_zh": "DeepInfer：DeepSeek 模型的高性能推理框架"
+  },
+  {
+    "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+    "url": "https://github.com/google-pytorch/torch_tpu",
+    "source": "github.com",
+    "date": "2026-10-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 310, 68 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50169053",
+    "fetched_at": "2026-10-21T06:10:03Z",
+    "title_zh": "Google 开源 TorchTPU，这是 TPU 的原生 PyTorch 后端"
+  },
+  {
     "title": "Go will reject certificate chains containing eight distrusted SPKIs",
     "url": "https://github.com/golang/go/issues/82345",
     "source": "github.com",
@@ -64,6 +152,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50159341",
     "fetched_at": "2026-10-20T06:12:01Z",
     "title_zh": "WhatsApp的帮助页面隐藏了LLM说明：不推荐监管机构"
+  },
+  {
+    "title": "To Make, or to Buy: The Economics of Decision Models",
+    "url": "https://pncnmnp.github.io/blogs/economics-decision-models.html",
+    "source": "pncnmnp.github.io",
+    "date": "2026-10-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from pncnmnp.github.io. Hacker News score 31, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50143360",
+    "fetched_at": "2026-10-21T06:10:04Z",
+    "title_zh": "制造还是购买：决策模型的经济学"
   },
   {
     "title": "Nordwand Mono – A monospace font for coders and adventurers",
@@ -417,6 +516,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50112739",
     "fetched_at": "2026-10-16T05:59:48Z",
     "title_zh": "Mac上的任何窗口， iPhone和iPad上的任何窗口"
+  },
+  {
+    "title": "SlopCodeBench 10/2026 – Opus 5.5, Astra wins overall, xhigh considered harmful",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-new-models-on-slop-code-bench.md",
+    "source": "github.com",
+    "date": "2026-10-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 231, 88 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50108717",
+    "fetched_at": "2026-10-21T06:10:03Z",
+    "title_zh": "SlopCodeBench 10/2026 – Opus 5.5，Astra 总体获胜，xhigh 被认为有害"
   },
   {
     "title": "The Commodore 64 hardware simulator: break chips and pins, see the results",
