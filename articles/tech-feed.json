@@ -1,5 +1,115 @@
 [
   {
+    "title": "LLM agents play Pokemon showdown",
+    "url": "https://olivergrabner.com/research/pokemon/",
+    "source": "olivergrabner.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from olivergrabner.com. Hacker News score 26, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50190334",
+    "fetched_at": "2026-10-22T06:13:53Z",
+    "title_zh": "LLM特工玩神奇宝贝对决"
+  },
+  {
+    "title": "OpenAI CLI",
+    "url": "https://github.com/openai/openai-cli",
+    "source": "github.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 9, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50191507",
+    "fetched_at": "2026-10-22T06:13:51Z",
+    "title_zh": "OpenAI CLI"
+  },
+  {
+    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+    "source": "simedw.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from simedw.com. Hacker News score 55, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50190363",
+    "fetched_at": "2026-10-22T06:13:50Z",
+    "title_zh": "WorldTUI：我训练了一个360M模型来冒充终端"
+  },
+  {
+    "title": "OpenAI models are coming to Google Cloud",
+    "url": "https://openai.com/index/openai-models-google-cloud/",
+    "source": "openai.com",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 275, 112 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50180079",
+    "fetched_at": "2026-10-22T06:13:53Z",
+    "title_zh": "OpenAI 模型即将登陆 Google Cloud"
+  },
+  {
+    "title": "Today's PHP security release, and how we're strengthening security",
+    "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+    "source": "thephp.foundation",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from thephp.foundation. Hacker News score 708, 348 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50182987",
+    "fetched_at": "2026-10-22T06:13:53Z",
+    "title_zh": "今天的 PHP 安全版本以及我们如何加强安全性"
+  },
+  {
+    "title": "mitmproxy adds --emudhra option",
+    "url": "https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b",
+    "source": "github.com",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 379, 95 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50189232",
+    "fetched_at": "2026-10-22T06:13:52Z",
+    "title_zh": "mitmproxy 添加 --emudhra 选项"
+  },
+  {
+    "title": "Show HN: Omnara – Open-source alternative to Claude Managed Agents",
+    "url": "https://github.com/omnara-ai/omnara",
+    "source": "github.com",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 58, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50183892",
+    "fetched_at": "2026-10-22T06:13:52Z",
+    "title_zh": "Show HN：Omnara – Claude Managed Agents 的开源替代方案"
+  },
+  {
+    "title": "Rust Style Guide",
+    "url": "https://google.github.io/styleguide/rustguide.html",
+    "source": "google.github.io",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from google.github.io. Hacker News score 268, 147 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50186010",
+    "fetched_at": "2026-10-22T06:13:51Z",
+    "title_zh": "Rust 风格指南"
+  },
+  {
+    "title": "Using LLM for confidence scoring is a bad idea",
+    "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
+    "source": "rumple.github.io",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from rumple.github.io. Hacker News score 48, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50176082",
+    "fetched_at": "2026-10-22T06:13:51Z",
+    "title_zh": "使用 LLM 进行置信度评分是一个坏主意"
+  },
+  {
+    "title": "Security Disclosure",
+    "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+    "source": "blog.railway.com",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.railway.com. Hacker News score 401, 232 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50188228",
+    "fetched_at": "2026-10-22T06:13:50Z",
+    "title_zh": "安全披露"
+  },
+  {
     "title": "Using Claude to reduce the attack surface of code",
     "url": "https://www.anthropic.com/research/attack-surface-reduction",
     "source": "anthropic.com",
