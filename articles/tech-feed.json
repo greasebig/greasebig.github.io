@@ -1,5 +1,93 @@
 [
   {
+    "title": "The foolishness of \"natural language programming\" (1978)",
+    "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+    "source": "cs.utexas.edu",
+    "date": "2026-10-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from cs.utexas.edu. Hacker News score 97, 62 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50203161",
+    "fetched_at": "2026-10-23T06:08:21Z",
+    "title_zh": "“自然语言编程”的愚蠢（1978）"
+  },
+  {
+    "title": "A farewell to Arc browser",
+    "url": "https://arc.net/",
+    "source": "arc.net",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from arc.net. Hacker News score 257, 221 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50197601",
+    "fetched_at": "2026-10-23T06:08:23Z",
+    "title_zh": "告别 Arc 浏览器"
+  },
+  {
+    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+    "source": "simedw.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from simedw.com. Hacker News score 516, 161 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50190363",
+    "fetched_at": "2026-10-23T06:08:22Z",
+    "title_zh": "WorldTUI：我训练了一个360M模型来冒充终端"
+  },
+  {
+    "title": "Hedra is a 3D open world game I wrote from scratch while in highschool",
+    "url": "https://github.com/maxilevi/project-hedra/tree/pre-ai",
+    "source": "github.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 173, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50199389",
+    "fetched_at": "2026-10-23T06:08:22Z",
+    "title_zh": "Hedra 是一款 3D 开放世界游戏，我在高中时从头开始编写"
+  },
+  {
+    "title": "Every AI model has the same \"controversial\" take on humans",
+    "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+    "source": "modelcompare.ai",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from modelcompare.ai. Hacker News score 325, 361 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50197313",
+    "fetched_at": "2026-10-23T06:08:21Z",
+    "title_zh": "每个人工智能模型对人类都有相同的“有争议”的看法"
+  },
+  {
+    "title": "Run full iOS 16.5 firmware on Android Devices",
+    "url": "https://github.com/oosexgang/hackios-xnu-kernel",
+    "source": "github.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 376, 137 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50196718",
+    "fetched_at": "2026-10-23T06:08:21Z",
+    "title_zh": "在 Android 设备上运行完整的 iOS 16.5 固件"
+  },
+  {
+    "title": "LLMs are making formal software verification feasible at a much larger scale",
+    "url": "https://www.anthropic.com/research/formal-verification",
+    "source": "anthropic.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 248, 136 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50202217",
+    "fetched_at": "2026-10-23T06:08:20Z",
+    "title_zh": "法学硕士正在使正式软件验证在更大范围内变得可行"
+  },
+  {
+    "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+    "url": "https://github.com/NVIDIA/OpenShell",
+    "source": "github.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 354, 185 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50198675",
+    "fetched_at": "2026-10-23T06:08:20Z",
+    "title_zh": "OpenShell – 为自主 AI 代理团队提供安全、私密的运行时"
+  },
+  {
     "title": "LLM agents play Pokemon showdown",
     "url": "https://olivergrabner.com/research/pokemon/",
     "source": "olivergrabner.com",
@@ -22,15 +110,15 @@
     "title_zh": "OpenAI CLI"
   },
   {
-    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-    "source": "simedw.com",
-    "date": "2026-10-22",
+    "title": "Using LLM for confidence scoring is a bad idea",
+    "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
+    "source": "rumple.github.io",
+    "date": "2026-10-21",
     "repost": true,
-    "summary": "转载 / Curated repost from simedw.com. Hacker News score 55, 18 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50190363",
-    "fetched_at": "2026-10-22T06:13:50Z",
-    "title_zh": "WorldTUI：我训练了一个360M模型来冒充终端"
+    "summary": "转载 / Curated repost from rumple.github.io. Hacker News score 205, 100 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50176082",
+    "fetched_at": "2026-10-23T06:08:24Z",
+    "title_zh": "使用 LLM 进行置信度评分是一个坏主意"
   },
   {
     "title": "OpenAI models are coming to Google Cloud",
@@ -86,17 +174,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50186010",
     "fetched_at": "2026-10-22T06:13:51Z",
     "title_zh": "Rust 风格指南"
-  },
-  {
-    "title": "Using LLM for confidence scoring is a bad idea",
-    "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
-    "source": "rumple.github.io",
-    "date": "2026-10-21",
-    "repost": true,
-    "summary": "转载 / Curated repost from rumple.github.io. Hacker News score 48, 30 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50176082",
-    "fetched_at": "2026-10-22T06:13:51Z",
-    "title_zh": "使用 LLM 进行置信度评分是一个坏主意"
   },
   {
     "title": "Security Disclosure",
@@ -207,6 +284,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50160877",
     "fetched_at": "2026-10-20T06:12:02Z",
     "title_zh": "Go 将拒绝包含八个不可信 SPKI 的证书链"
+  },
+  {
+    "title": "Startup taps underwater volcano as energy source in “proof point” test",
+    "url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/",
+    "source": "arstechnica.com",
+    "date": "2026-10-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from arstechnica.com. Hacker News score 132, 58 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50157456",
+    "fetched_at": "2026-10-23T06:08:23Z",
+    "title_zh": "初创公司在“证据点”测试中利用水下火山作为能源"
   },
   {
     "title": "How abliterated models can get you pwned",
