@@ -1,5 +1,82 @@
 [
   {
+    "title": "How close can pure functional programming get to C?",
+    "url": "https://rtfeldman.com/fp-vs-c",
+    "source": "rtfeldman.com",
+    "date": "2026-10-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from rtfeldman.com. Hacker News score 38, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50218195",
+    "fetched_at": "2026-10-24T06:03:43Z",
+    "title_zh": "纯函数式编程与 C 语言有多接近？"
+  },
+  {
+    "title": "German court calls Google aerial imagery 'spying'",
+    "url": "https://www.courthousenews.com/german-court-calls-google-aerial-imagery-spying/",
+    "source": "courthousenews.com",
+    "date": "2026-10-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from courthousenews.com. Hacker News score 49, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50216142",
+    "fetched_at": "2026-10-24T06:03:49Z",
+    "title_zh": "德国法院称谷歌航空图像“间谍”"
+  },
+  {
+    "title": "Securing our frontier model training environment",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+    "source": "openai.com",
+    "date": "2026-10-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 99, 103 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50214416",
+    "fetched_at": "2026-10-24T06:03:48Z",
+    "title_zh": "确保我们的前沿模型训练环境的安全"
+  },
+  {
+    "title": "Evolving Threat: http2shell is an RCE in Node, Python, and more",
+    "url": "https://nitter.click/AikidoSecurity/status/2113759110625906950?__galadriel=lPmlGl9id4oAd5UeBwMhlYKArHyr6lR2IDGujPwB5HV2kQ1aLoPWFd5A9sGuzNcmrp8fUso8qygmHcKTDZ8MNHWqQ3bDJcycV87xp_0VypzQLYj6O_RRHlZuQqj33oASGY2YLSoAiMjeOZN40h7Stf8AG7DPrGZbAPVKUXy36HoMudRbvwF3_r2uYNmfJMhpKzywQDM6Ab8",
+    "source": "nitter.click",
+    "date": "2026-10-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from nitter.click. Hacker News score 141, 75 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50216791",
+    "fetched_at": "2026-10-24T06:03:46Z",
+    "title_zh": "不断演变的威胁：http2shell 是 Node、Python 等中的 RCE"
+  },
+  {
+    "title": "One Man's Pan Am 747 Replica [video]",
+    "url": "https://www.youtube.com/watch?v=vAFwHGGfPz4",
+    "source": "youtube.com",
+    "date": "2026-10-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 15, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50215828",
+    "fetched_at": "2026-10-24T06:03:45Z",
+    "title_zh": "一个人的泛美 747 复制品 [视频]"
+  },
+  {
+    "title": "Show HN: Corgi, a helpful {agent, terminal} multiplexer",
+    "url": "https://corgi.computer/",
+    "source": "corgi.computer",
+    "date": "2026-10-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from corgi.computer. Hacker News score 65, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50214373",
+    "fetched_at": "2026-10-24T06:03:45Z",
+    "title_zh": "Show HN：Corgi，一个有用的{代理，终端}多路复用器"
+  },
+  {
+    "title": "Dessa: Conversation Model trained only on speech",
+    "url": "https://block.xyz/dessa",
+    "source": "block.xyz",
+    "date": "2026-10-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from block.xyz. Hacker News score 330, 127 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50213925",
+    "fetched_at": "2026-10-24T06:03:44Z",
+    "title_zh": "Dessa：仅针对语音进行训练的对话模型"
+  },
+  {
     "title": "The foolishness of \"natural language programming\" (1978)",
     "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
     "source": "cs.utexas.edu",
@@ -11,6 +88,17 @@
     "title_zh": "“自然语言编程”的愚蠢（1978）"
   },
   {
+    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+    "source": "simedw.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from simedw.com. Hacker News score 620, 186 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50190363",
+    "fetched_at": "2026-10-24T06:03:47Z",
+    "title_zh": "WorldTUI：我训练了一个360M模型来冒充终端"
+  },
+  {
     "title": "A farewell to Arc browser",
     "url": "https://arc.net/",
     "source": "arc.net",
@@ -20,17 +108,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50197601",
     "fetched_at": "2026-10-23T06:08:23Z",
     "title_zh": "告别 Arc 浏览器"
-  },
-  {
-    "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-    "source": "simedw.com",
-    "date": "2026-10-22",
-    "repost": true,
-    "summary": "转载 / Curated repost from simedw.com. Hacker News score 516, 161 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50190363",
-    "fetched_at": "2026-10-23T06:08:22Z",
-    "title_zh": "WorldTUI：我训练了一个360M模型来冒充终端"
   },
   {
     "title": "Hedra is a 3D open world game I wrote from scratch while in highschool",
@@ -108,6 +185,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50191507",
     "fetched_at": "2026-10-22T06:13:51Z",
     "title_zh": "OpenAI CLI"
+  },
+  {
+    "title": "The Best Monopoly Strategy, Tested on 300M Games [video]",
+    "url": "https://www.youtube.com/watch?v=S_2eVAaw1UM",
+    "source": "youtube.com",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 5, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50175732",
+    "fetched_at": "2026-10-24T06:03:44Z",
+    "title_zh": "最佳垄断策略，经过 300M 游戏测试 [视频]"
   },
   {
     "title": "Using LLM for confidence scoring is a bad idea",
@@ -218,6 +306,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50176298",
     "fetched_at": "2026-10-21T06:10:02Z",
     "title_zh": "Battlezone Online：浏览器中的 BZFlag"
+  },
+  {
+    "title": "A practical guide to AI image generation, from diffusion to agents",
+    "url": "https://danielball.com/notes/ai_image_generation.html",
+    "source": "danielball.com",
+    "date": "2026-10-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from danielball.com. Hacker News score 20, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50171379",
+    "fetched_at": "2026-10-24T06:03:44Z",
+    "title_zh": "AI图像生成实用指南，从扩散到代理"
   },
   {
     "title": "Tsrs: A Port of TypeScript to Rust",
