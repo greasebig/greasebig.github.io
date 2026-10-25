@@ -1,5 +1,82 @@
 [
   {
+    "title": "Cerebras Deploys Trillion-Parameter AI Models",
+    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+    "source": "cerebras.ai",
+    "date": "2026-10-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from cerebras.ai. Hacker News score 84, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50227356",
+    "fetched_at": "2026-10-25T06:22:48Z",
+    "title_zh": "Cerebras部署万亿参数人工智能模型"
+  },
+  {
+    "title": "Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
+    "url": "https://github.com/slee-persis/GVS5H",
+    "source": "github.com",
+    "date": "2026-10-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 114, 35 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50228167",
+    "fetched_at": "2026-10-25T06:22:46Z",
+    "title_zh": "五款Qwen3.8-27B型号搭配寓言5使用GVS5H线束"
+  },
+  {
+    "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+    "url": "https://github.com/Zagitta/gpu-unlock",
+    "source": "github.com",
+    "date": "2026-10-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 218, 68 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50219700",
+    "fetched_at": "2026-10-25T06:23:00Z",
+    "title_zh": "GPU解锁： Nvidia 3000卡上的FP/BF16指令发出率"
+  },
+  {
+    "title": "Roku developer repositories moved from GitHub to GitLab",
+    "url": "https://blog.roku.com/developer/gitlab-move",
+    "source": "blog.roku.com",
+    "date": "2026-10-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.roku.com. Hacker News score 279, 191 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50222622",
+    "fetched_at": "2026-10-25T06:22:59Z",
+    "title_zh": "Roku开发者仓库从GitHub迁移到GitLab"
+  },
+  {
+    "title": "Neural chip decodes interactions between brain regions",
+    "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+    "source": "actu.epfl.ch",
+    "date": "2026-10-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from actu.epfl.ch. Hacker News score 101, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50222525",
+    "fetched_at": "2026-10-25T06:22:57Z",
+    "title_zh": "神经芯片解码大脑区域之间的相互作用"
+  },
+  {
+    "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+    "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+    "source": "apricitas.io",
+    "date": "2026-10-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from apricitas.io. Hacker News score 289, 295 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50226419",
+    "fetched_at": "2026-10-25T06:22:53Z",
+    "title_zh": "美国在媒体、电影和艺术领域失去了20万个工作岗位。人工智能有多少钱？"
+  },
+  {
+    "title": "The Goose Programming Language",
+    "url": "https://aardappel.github.io/goose/",
+    "source": "aardappel.github.io",
+    "date": "2026-10-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from aardappel.github.io. Hacker News score 329, 221 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50224100",
+    "fetched_at": "2026-10-25T06:22:50Z",
+    "title_zh": "Goose编程语言"
+  },
+  {
     "title": "How close can pure functional programming get to C?",
     "url": "https://rtfeldman.com/fp-vs-c",
     "source": "rtfeldman.com",
@@ -86,6 +163,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50203161",
     "fetched_at": "2026-10-23T06:08:21Z",
     "title_zh": "“自然语言编程”的愚蠢（1978）"
+  },
+  {
+    "title": "Picasa Photo Viewer Rebuilt for Linux, Project Named Licasa",
+    "url": "https://github.com/sanxchep/licasa",
+    "source": "github.com",
+    "date": "2026-10-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 9, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50193612",
+    "fetched_at": "2026-10-25T06:22:51Z",
+    "title_zh": "Picasa照片查看器为Linux重新构建，项目命名为Licasa"
   },
   {
     "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
@@ -185,6 +273,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50191507",
     "fetched_at": "2026-10-22T06:13:51Z",
     "title_zh": "OpenAI CLI"
+  },
+  {
+    "title": "Reactive Optimizers: rewrite the optimizer's source code during training",
+    "url": "https://xingjianbai.com/reactive-optimizers/",
+    "source": "xingjianbai.com",
+    "date": "2026-10-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from xingjianbai.com. Hacker News score 24, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50188440",
+    "fetched_at": "2026-10-25T06:23:02Z",
+    "title_zh": "反应式优化器：在培训期间重写优化器的源代码"
   },
   {
     "title": "The Best Monopoly Strategy, Tested on 300M Games [video]",
@@ -306,6 +405,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50176298",
     "fetched_at": "2026-10-21T06:10:02Z",
     "title_zh": "Battlezone Online：浏览器中的 BZFlag"
+  },
+  {
+    "title": "I Built a Stereo Vision Board for Hardware Hackers",
+    "url": "https://rootkitlabs.com/2026/10/06/i-built-a-stereo-vision-board-for-hardware-hackers/",
+    "source": "rootkitlabs.com",
+    "date": "2026-10-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from rootkitlabs.com. Hacker News score 57, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50172432",
+    "fetched_at": "2026-10-25T06:22:55Z",
+    "title_zh": "我为硬件黑客构建了一个立体视觉板"
   },
   {
     "title": "A practical guide to AI image generation, from diffusion to agents",
