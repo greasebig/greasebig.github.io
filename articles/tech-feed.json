@@ -1,5 +1,104 @@
 [
   {
+    "title": "Steal My Bitcoin CTF PoC",
+    "url": "https://github.com/KillaBoi/StealMyBitcoin-PoC",
+    "source": "github.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 69, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50237379",
+    "fetched_at": "2026-10-26T06:32:42Z",
+    "title_zh": "窃取我的比特币 CTF PoC"
+  },
+  {
+    "title": "Microsoft Decision-1: 9B Qwen Model Launch Explained",
+    "url": "https://shattered.io/microsoft-decision-1-qwen3-5-9b-model-2026/",
+    "source": "shattered.io",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from shattered.io. Hacker News score 29, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50238620",
+    "fetched_at": "2026-10-26T06:32:41Z",
+    "title_zh": "Microsoft Decision-1：9B Qwen 模型发布说明"
+  },
+  {
+    "title": "IBM CEO says open weight models are now good and cheap on-prem",
+    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+    "source": "theregister.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from theregister.com. Hacker News score 148, 84 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50238088",
+    "fetched_at": "2026-10-26T06:32:40Z",
+    "title_zh": "IBM 首席执行官表示开放权重模型现在在本地部署既好又便宜"
+  },
+  {
+    "title": "Cognitive Mercantilism: AI panic resembles fears of early capitalism",
+    "url": "https://contraptions.venkateshrao.com/p/cognitive-mercantilism",
+    "source": "contraptions.venkateshrao.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from contraptions.venkateshrao.com. Hacker News score 32, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50239027",
+    "fetched_at": "2026-10-26T06:32:39Z",
+    "title_zh": "认知重商主义：人工智能恐慌类似于对早期资本主义的恐惧"
+  },
+  {
+    "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
+    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+    "source": "github.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 66, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50238739",
+    "fetched_at": "2026-10-26T06:32:38Z",
+    "title_zh": "PaperPilot – 具有 WASM 和 MCP 的零云、纯 Rust PDF 引擎"
+  },
+  {
+    "title": "AI didn't cause the tech jobs bust, but it explains why there's no recovery",
+    "url": "https://vithushansylvester.com/writing/the-real-impact-of-ai-on-tech-jobs",
+    "source": "vithushansylvester.com",
+    "date": "2026-10-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from vithushansylvester.com. Hacker News score 41, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50234699",
+    "fetched_at": "2026-10-26T06:32:44Z",
+    "title_zh": "人工智能并没有导致科技行业就业岗位的崩溃，但它解释了为什么没有复苏"
+  },
+  {
+    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+    "url": "https://minimaxir.com/2026/10/cheap-llms/",
+    "source": "minimaxir.com",
+    "date": "2026-10-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from minimaxir.com. Hacker News score 245, 268 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50236102",
+    "fetched_at": "2026-10-26T06:32:43Z",
+    "title_zh": "OpenAI 和 Anthropic 在几个月内将其 LLM 价格削减了高达 80%。为什么？"
+  },
+  {
+    "title": "Show HN: ADRs for AI – Deliberation records for human–AI work, versioned in Git",
+    "url": "https://adrs.systems",
+    "source": "adrs.systems",
+    "date": "2026-10-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from adrs.systems. Hacker News score 26, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50227041",
+    "fetched_at": "2026-10-26T06:32:42Z",
+    "title_zh": "Show HN：AI 的 ADR – 人类与人工智能工作的审议记录，在 Git 中版本化"
+  },
+  {
+    "title": "Show HN: A Truly Modular Keyboard",
+    "url": "https://github.com/notaroomba/keybytes",
+    "source": "github.com",
+    "date": "2026-10-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 81, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50228115",
+    "fetched_at": "2026-10-26T06:32:39Z",
+    "title_zh": "Show HN：真正的模块化键盘"
+  },
+  {
     "title": "Cerebras Deploys Trillion-Parameter AI Models",
     "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
     "source": "cerebras.ai",
@@ -86,6 +185,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50218195",
     "fetched_at": "2026-10-24T06:03:43Z",
     "title_zh": "纯函数式编程与 C 语言有多接近？"
+  },
+  {
+    "title": "Who Cares Whether Academics Use AI to Write?",
+    "url": "https://www.chronicle.com/article/who-cares-whether-academics-use-ai-to-write",
+    "source": "chronicle.com",
+    "date": "2026-10-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from chronicle.com. Hacker News score 11, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50210696",
+    "fetched_at": "2026-10-26T06:32:41Z",
+    "title_zh": "谁在乎学者是否使用人工智能写作？"
   },
   {
     "title": "German court calls Google aerial imagery 'spying'",
