@@ -1,5 +1,115 @@
 [
   {
+    "title": "There are now 5 inference providers for abliterated DeepSeek",
+    "url": "https://allmodels.io/llm/abliterated",
+    "source": "allmodels.io",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from allmodels.io. Hacker News score 50, 43 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50254836",
+    "fetched_at": "2026-10-27T06:28:51Z",
+    "title_zh": "现在有 5 个用于废除 DeepSeek 的推理提供程序"
+  },
+  {
+    "title": "16-bit Windows (Windows 1.x, 2.x, 3.0, 3.1, etc.) on 64-bit Windows",
+    "url": "https://github.com/otya128/winevdm",
+    "source": "github.com",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 64, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50253529",
+    "fetched_at": "2026-10-27T06:28:49Z",
+    "title_zh": "64 位 Windows 上的 16 位 Windows（Windows 1.x、2.x、3.0、3.1 等）"
+  },
+  {
+    "title": "GPT-6.1 Terra",
+    "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "source": "openai.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 568, 354 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50248124",
+    "fetched_at": "2026-10-27T06:28:52Z",
+    "title_zh": "GPT-6.1 泰拉"
+  },
+  {
+    "title": "Anthropic S-1",
+    "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+    "source": "sec.gov",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from sec.gov. Hacker News score 1565, 1505 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50242939",
+    "fetched_at": "2026-10-27T06:28:51Z",
+    "title_zh": "人择S-1"
+  },
+  {
+    "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 116, 38 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50252159",
+    "fetched_at": "2026-10-27T06:28:50Z",
+    "title_zh": "GLM-5.3 Workers AI 模型中的交叉请求 KV 缓存暴露（155 个响应）"
+  },
+  {
+    "title": "Nietzschian Debugger",
+    "url": "https://github.com/DilawarShafiq/nietzschian-debugger",
+    "source": "github.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 155, 50 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50247493",
+    "fetched_at": "2026-10-27T06:28:50Z",
+    "title_zh": "尼采调试器"
+  },
+  {
+    "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+    "source": "magazine.sebastianraschka.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from magazine.sebastianraschka.com. Hacker News score 649, 91 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50245138",
+    "fetched_at": "2026-10-27T06:28:49Z",
+    "title_zh": "Sebastian Raschka 关于构建推理模型的从头开始视频课程"
+  },
+  {
+    "title": "Type Server Protocol",
+    "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+    "source": "github.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 225, 146 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50248371",
+    "fetched_at": "2026-10-27T06:28:49Z",
+    "title_zh": "类型 服务器协议"
+  },
+  {
+    "title": "Three new discoveries in mathematics, computer science, and physics",
+    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+    "source": "openai.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 738, 324 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50251344",
+    "fetched_at": "2026-10-27T06:28:48Z",
+    "title_zh": "数学、计算机科学和物理学的三项新发现"
+  },
+  {
+    "title": "The Exponential Time Hypothesis Is False [pdf]",
+    "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+    "source": "github.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 512, 187 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50251661",
+    "fetched_at": "2026-10-27T06:28:48Z",
+    "title_zh": "指数时间假说是错误的 [pdf]"
+  },
+  {
     "title": "Steal My Bitcoin CTF PoC",
     "url": "https://github.com/KillaBoi/StealMyBitcoin-PoC",
     "source": "github.com",
