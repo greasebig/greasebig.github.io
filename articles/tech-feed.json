@@ -1,5 +1,115 @@
 [
   {
+    "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+    "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+    "source": "stanforddaily.com",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from stanforddaily.com. Hacker News score 506, 270 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50260814",
+    "fetched_at": "2026-10-28T06:57:55Z",
+    "title_zh": "人类训练克劳德学习非法获得的斯坦福大学教授的书籍"
+  },
+  {
+    "title": "Here be monsters: What do you still need to know when agents do the work?",
+    "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+    "source": "blog.adrq.dev",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.adrq.dev. Hacker News score 166, 91 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50258868",
+    "fetched_at": "2026-10-28T06:57:54Z",
+    "title_zh": "怪物来了：当代理进行工作时，您还需要知道什么？"
+  },
+  {
+    "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
+    "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+    "source": "futurism.com",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from futurism.com. Hacker News score 304, 232 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50261589",
+    "fetched_at": "2026-10-28T06:57:54Z",
+    "title_zh": "亚马逊在持续失败后正在剥离其人工智能部门"
+  },
+  {
+    "title": "Discord will soon let anyone find public server messages through Google",
+    "url": "https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover",
+    "source": "discord.com",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from discord.com. Hacker News score 292, 151 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50263854",
+    "fetched_at": "2026-10-28T06:57:54Z",
+    "title_zh": "Discord 很快将允许任何人通过 Google 查找公共服务器消息"
+  },
+  {
+    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+    "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+    "source": "anthropic.com",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 37, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50266701",
+    "fetched_at": "2026-10-28T06:57:53Z",
+    "title_zh": "扩大我们与 GSA 的合作伙伴关系，将 Claude 带到各级政府"
+  },
+  {
+    "title": "Moxnox 1.0: NT-Like, POSIX-Compatible OS Running Atop Btrfs",
+    "url": "https://github.com/maharmstone/moxnox",
+    "source": "github.com",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 51, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50267569",
+    "fetched_at": "2026-10-28T06:57:52Z",
+    "title_zh": "Moxnox 1.0：在 Btrfs 上运行的类似 NT、POSIX 兼容的操作系统"
+  },
+  {
+    "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+    "url": "https://www.brangus.io/survival-llm",
+    "source": "brangus.io",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from brangus.io. Hacker News score 291, 125 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50264853",
+    "fetched_at": "2026-10-28T06:57:50Z",
+    "title_zh": "Survival LLM：在您自己的计算机上运行的人工智能助手和应急库"
+  },
+  {
+    "title": "Early progress on accelerating drug development with Claude",
+    "url": "https://www.anthropic.com/research/early-progress-drug-development",
+    "source": "anthropic.com",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 200, 178 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50265609",
+    "fetched_at": "2026-10-28T06:57:50Z",
+    "title_zh": "与克劳德一起加速药物开发的早期进展"
+  },
+  {
+    "title": "Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees",
+    "url": "https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/",
+    "source": "bret.dk",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from bret.dk. Hacker News score 144, 69 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50265594",
+    "fetched_at": "2026-10-28T06:57:50Z",
+    "title_zh": "设备树中发现了 Raspberry Pi Zero 3W 和 Pi 4 Model A"
+  },
+  {
+    "title": "Genie 4",
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "source": "deepmind.google",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 831, 495 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50261319",
+    "fetched_at": "2026-10-28T06:57:49Z",
+    "title_zh": "精灵4"
+  },
+  {
     "title": "There are now 5 inference providers for abliterated DeepSeek",
     "url": "https://allmodels.io/llm/abliterated",
     "source": "allmodels.io",
