@@ -1,5 +1,71 @@
 [
   {
+    "title": "Claude Code regularly sends each background agent’s transcript to its model",
+    "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+    "source": "gist.github.com",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 270, 81 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50284255",
+    "fetched_at": "2026-10-29T07:18:49Z",
+    "title_zh": "Claude Code 定期将每个后台特工的成绩单发送给其模型"
+  },
+  {
+    "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
+    "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
+    "source": "religionnews.com",
+    "date": "2026-10-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from religionnews.com. Hacker News score 453, 500 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50273396",
+    "fetched_at": "2026-10-29T07:18:53Z",
+    "title_zh": "肯塔基州男子成为第一位获得人工智能宗教豁免的人文主义者"
+  },
+  {
+    "title": "The Agent SDK",
+    "url": "https://cursor.com/blog/agent-sdk",
+    "source": "cursor.com",
+    "date": "2026-10-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from cursor.com. Hacker News score 115, 118 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50273731",
+    "fetched_at": "2026-10-29T07:18:52Z",
+    "title_zh": "代理SDK"
+  },
+  {
+    "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+    "url": "https://surgehq.ai/blog/dayjob-tax",
+    "source": "surgehq.ai",
+    "date": "2026-10-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from surgehq.ai. Hacker News score 224, 145 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50275626",
+    "fetched_at": "2026-10-29T07:18:51Z",
+    "title_zh": "Dayjob：税务——评估人工智能代理的 50 项专业税务任务"
+  },
+  {
+    "title": "GitLab Security Incident: Attempted Exploitation of CVE-2026-97229",
+    "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+    "source": "alpinelinux.org",
+    "date": "2026-10-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from alpinelinux.org. Hacker News score 151, 65 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50282544",
+    "fetched_at": "2026-10-29T07:18:48Z",
+    "title_zh": "GitLab 安全事件：尝试利用 CVE-2026-97229"
+  },
+  {
+    "title": "Genie 4",
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "source": "deepmind.google",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 1027, 582 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50261319",
+    "fetched_at": "2026-10-29T07:18:52Z",
+    "title_zh": "精灵4"
+  },
+  {
     "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
     "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
     "source": "stanforddaily.com",
@@ -99,17 +165,6 @@
     "title_zh": "设备树中发现了 Raspberry Pi Zero 3W 和 Pi 4 Model A"
   },
   {
-    "title": "Genie 4",
-    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-    "source": "deepmind.google",
-    "date": "2026-10-27",
-    "repost": true,
-    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 831, 495 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50261319",
-    "fetched_at": "2026-10-28T06:57:49Z",
-    "title_zh": "精灵4"
-  },
-  {
     "title": "There are now 5 inference providers for abliterated DeepSeek",
     "url": "https://allmodels.io/llm/abliterated",
     "source": "allmodels.io",
@@ -130,6 +185,39 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50253529",
     "fetched_at": "2026-10-27T06:28:49Z",
     "title_zh": "64 位 Windows 上的 16 位 Windows（Windows 1.x、2.x、3.0、3.1 等）"
+  },
+  {
+    "title": "Nixpkgs for the Front End Impaired",
+    "url": "https://fzakaria.com/2026/10/12/nixpkgs-for-the-frontend-impaired",
+    "source": "fzakaria.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from fzakaria.com. Hacker News score 44, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50244929",
+    "fetched_at": "2026-10-29T07:18:50Z",
+    "title_zh": "前端受损的 Nixpkgs"
+  },
+  {
+    "title": "OpenAI's agents talked to each other through the CPU Cache",
+    "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+    "source": "the-decoder.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from the-decoder.com. Hacker News score 71, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50251200",
+    "fetched_at": "2026-10-29T07:18:49Z",
+    "title_zh": "OpenAI 的代理通过 CPU 缓存相互通信"
+  },
+  {
+    "title": "The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand",
+    "url": "https://www.circuithub.com/post/unveiling-the-grid",
+    "source": "circuithub.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from circuithub.com. Hacker News score 488, 217 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50243060",
+    "fetched_at": "2026-10-29T07:18:49Z",
+    "title_zh": "The Grid，马萨诸塞州的工厂规模机器人，可按需构建 PCB"
   },
   {
     "title": "GPT-6.1 Terra",
@@ -273,6 +361,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50238739",
     "fetched_at": "2026-10-26T06:32:38Z",
     "title_zh": "PaperPilot – 具有 WASM 和 MCP 的零云、纯 Rust PDF 引擎"
+  },
+  {
+    "title": "The 'else' keyword is probably a literal translation from German (2020)",
+    "url": "https://github.com/e-n-f/if-then-else/blob/master/if-then-else.md",
+    "source": "github.com",
+    "date": "2026-10-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 87, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50233059",
+    "fetched_at": "2026-10-29T07:18:50Z",
+    "title_zh": "“else”关键字可能是德语 (2020) 的直译"
   },
   {
     "title": "AI didn't cause the tech jobs bust, but it explains why there's no recovery",
