@@ -1,5 +1,82 @@
 [
   {
+    "title": "Pico CSS is no longer maintained",
+    "url": "https://github.com/picocss/pico/discussions/754",
+    "source": "github.com",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 101, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50298964",
+    "fetched_at": "2026-10-30T07:21:44Z",
+    "title_zh": "Pico CSS 不再维护"
+  },
+  {
+    "title": "Herdr has released native app",
+    "url": "https://github.com/herdrdev/herdr-app",
+    "source": "github.com",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 138, 83 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50298436",
+    "fetched_at": "2026-10-30T07:21:42Z",
+    "title_zh": "Herdr 发布了原生应用"
+  },
+  {
+    "title": "Show HN: Auto Dismiss Mac OS \"Allow <app> to find devices on local networks?\"",
+    "url": "https://github.com/johncassil/dontallow",
+    "source": "github.com",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 123, 94 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50294506",
+    "fetched_at": "2026-10-30T07:21:45Z",
+    "title_zh": "显示 HN：自动关闭 Mac OS“允许 <app> 查找本地网络上的设备？”"
+  },
+  {
+    "title": "LLM Voice",
+    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+    "source": "martinfowler.com",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from martinfowler.com. Hacker News score 435, 227 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50290177",
+    "fetched_at": "2026-10-30T07:21:43Z",
+    "title_zh": "法学硕士语音"
+  },
+  {
+    "title": "Show HN: I Turned DOOM into a Transformer",
+    "url": "https://github.com/mottopanikeiku/doomformer",
+    "source": "github.com",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 72, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50297697",
+    "fetched_at": "2026-10-30T07:21:43Z",
+    "title_zh": "Show HN：我把《DOOM》变成了变形金刚"
+  },
+  {
+    "title": "We ran AI agent swarms in Minecraft and Mindustry",
+    "url": "https://labs.ycombinator.com/projects/games/index.html",
+    "source": "labs.ycombinator.com",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from labs.ycombinator.com. Hacker News score 250, 82 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50296486",
+    "fetched_at": "2026-10-30T07:21:42Z",
+    "title_zh": "我们在 Minecraft 和 Mindustry 中运行 AI 代理群"
+  },
+  {
+    "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+    "url": "https://github.com/SheepSeb/tinyworldformer",
+    "source": "github.com",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 190, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50295450",
+    "fetched_at": "2026-10-30T07:21:42Z",
+    "title_zh": "在 Raspberry Pi Pico 2 W 上运行游戏的微型世界模型"
+  },
+  {
     "title": "Claude Code regularly sends each background agent’s transcript to its model",
     "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
     "source": "gist.github.com",
@@ -9,6 +86,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50284255",
     "fetched_at": "2026-10-29T07:18:49Z",
     "title_zh": "Claude Code 定期将每个后台特工的成绩单发送给其模型"
+  },
+  {
+    "title": "Astroterm: A Planetarium for Your Terminal",
+    "url": "https://github.com/da-luce/astroterm",
+    "source": "github.com",
+    "date": "2026-10-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 89, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50270651",
+    "fetched_at": "2026-10-30T07:21:41Z",
+    "title_zh": "Astroterm：终端的天文馆"
+  },
+  {
+    "title": "I'm so bad at billiards that I ended up in the hyperbolic plane [video]",
+    "url": "https://www.youtube.com/watch?v=kL9BTbIGxLg",
+    "source": "youtube.com",
+    "date": "2026-10-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 81, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50273104",
+    "fetched_at": "2026-10-30T07:21:41Z",
+    "title_zh": "我台球打得很差，结果我进入了双曲平面 [视频]"
   },
   {
     "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
@@ -53,6 +152,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50282544",
     "fetched_at": "2026-10-29T07:18:48Z",
     "title_zh": "GitLab 安全事件：尝试利用 CVE-2026-97229"
+  },
+  {
+    "title": "Python on My Wrist",
+    "url": "https://tildeweb.nl/~michiel/python-on-my-wrist.html",
+    "source": "tildeweb.nl",
+    "date": "2026-10-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from tildeweb.nl. Hacker News score 31, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50255573",
+    "fetched_at": "2026-10-30T07:21:43Z",
+    "title_zh": "我手腕上的蟒蛇"
   },
   {
     "title": "Genie 4",
