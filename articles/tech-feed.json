@@ -1,5 +1,71 @@
 [
   {
+    "title": "AI isn't replacing SREs, it's deskilling them",
+    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+    "source": "newsletter.signoz.io",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from newsletter.signoz.io. Hacker News score 567, 413 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50305693",
+    "fetched_at": "2026-10-31T07:09:38Z",
+    "title_zh": "人工智能并没有取代 SRE，而是降低了他们的技能"
+  },
+  {
+    "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+    "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+    "source": "fortune.com",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from fortune.com. Hacker News score 158, 194 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50304122",
+    "fetched_at": "2026-10-31T07:09:36Z",
+    "title_zh": "思科为工程师提供无限的人工智能代币来重写遗留代码"
+  },
+  {
+    "title": "Sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust",
+    "url": "https://www.firezone.dev/blog/introducing-sanstun",
+    "source": "firezone.dev",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from firezone.dev. Hacker News score 113, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50310398",
+    "fetched_at": "2026-10-31T07:09:35Z",
+    "title_zh": "Sanstun：Rust 中的无 IO、并行友好的 WireGuard 实现"
+  },
+  {
+    "title": "Florilegium: Procedural Flowers in LaTeX",
+    "url": "https://github.com/kevinraymond/florilegium",
+    "source": "github.com",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 248, 44 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50305637",
+    "fetched_at": "2026-10-31T07:09:35Z",
+    "title_zh": "Florilegium：LaTeX 中的程序花"
+  },
+  {
+    "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+    "source": "phorion.io",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from phorion.io. Hacker News score 871, 513 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50300683",
+    "fetched_at": "2026-10-31T07:09:35Z",
+    "title_zh": "Cursor Marketplace 上用于 VS Code 扩展的 Claude Code 中的后门"
+  },
+  {
+    "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+    "url": "https://github.com/dbreunig/nesformer",
+    "source": "github.com",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 234, 119 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50306442",
+    "fetched_at": "2026-10-31T07:09:34Z",
+    "title_zh": "Show HN：一台可用的任天堂，重量约为 1GB Qwen"
+  },
+  {
     "title": "Pico CSS is no longer maintained",
     "url": "https://github.com/picocss/pico/discussions/754",
     "source": "github.com",
@@ -20,6 +86,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50298436",
     "fetched_at": "2026-10-30T07:21:42Z",
     "title_zh": "Herdr 发布了原生应用"
+  },
+  {
+    "title": "We ran AI agent swarms in Minecraft and Mindustry",
+    "url": "https://labs.ycombinator.com/projects/games/index.html",
+    "source": "labs.ycombinator.com",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from labs.ycombinator.com. Hacker News score 401, 165 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50296486",
+    "fetched_at": "2026-10-31T07:09:38Z",
+    "title_zh": "我们在 Minecraft 和 Mindustry 中运行 AI 代理群"
+  },
+  {
+    "title": "Configure a UPS on Linux with NUT",
+    "url": "https://linuxjunkies.org/guides/configure-a-ups-with-nut",
+    "source": "linuxjunkies.org",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from linuxjunkies.org. Hacker News score 9, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50289991",
+    "fetched_at": "2026-10-31T07:09:37Z",
+    "title_zh": "使用 NUT 在 Linux 上配置 UPS"
   },
   {
     "title": "Show HN: Auto Dismiss Mac OS \"Allow <app> to find devices on local networks?\"",
@@ -55,17 +143,6 @@
     "title_zh": "Show HN：我把《DOOM》变成了变形金刚"
   },
   {
-    "title": "We ran AI agent swarms in Minecraft and Mindustry",
-    "url": "https://labs.ycombinator.com/projects/games/index.html",
-    "source": "labs.ycombinator.com",
-    "date": "2026-10-29",
-    "repost": true,
-    "summary": "转载 / Curated repost from labs.ycombinator.com. Hacker News score 250, 82 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50296486",
-    "fetched_at": "2026-10-30T07:21:42Z",
-    "title_zh": "我们在 Minecraft 和 Mindustry 中运行 AI 代理群"
-  },
-  {
     "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
     "url": "https://github.com/SheepSeb/tinyworldformer",
     "source": "github.com",
@@ -86,6 +163,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50284255",
     "fetched_at": "2026-10-29T07:18:49Z",
     "title_zh": "Claude Code 定期将每个后台特工的成绩单发送给其模型"
+  },
+  {
+    "title": "Cloudflare Turnstile solver library (no headless browser required)",
+    "url": "https://github.com/chris124567/cfsolve",
+    "source": "github.com",
+    "date": "2026-10-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 161, 47 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50277379",
+    "fetched_at": "2026-10-31T07:09:34Z",
+    "title_zh": "Cloudflare Turnstile 解算器库（无需无头浏览器）"
   },
   {
     "title": "Astroterm: A Planetarium for Your Terminal",
@@ -295,6 +383,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50253529",
     "fetched_at": "2026-10-27T06:28:49Z",
     "title_zh": "64 位 Windows 上的 16 位 Windows（Windows 1.x、2.x、3.0、3.1 等）"
+  },
+  {
+    "title": "Why a program doesn't work when run from a batch file, but works when clicked",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261026-00/?p=112797/",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-10-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 129, 73 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50251070",
+    "fetched_at": "2026-10-31T07:09:38Z",
+    "title_zh": "为什么程序在从批处理文件运行时不起作用，但在单击时起作用"
   },
   {
     "title": "Nixpkgs for the Front End Impaired",
