@@ -1,5 +1,93 @@
 [
   {
+    "title": "The AI cost of JavaScript frameworks",
+    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+    "source": "nolanlawson.com",
+    "date": "2026-11-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from nolanlawson.com. Hacker News score 6, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50323088",
+    "fetched_at": "2026-11-01T07:42:59Z",
+    "title_zh": "JavaScript框架的人工智能成本"
+  },
+  {
+    "title": "AI text watermarking and quality loss",
+    "url": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality",
+    "source": "blog.keyvan.net",
+    "date": "2026-10-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.keyvan.net. Hacker News score 46, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50320599",
+    "fetched_at": "2026-11-01T07:43:08Z",
+    "title_zh": "AI文本水印和质量损失"
+  },
+  {
+    "title": "Show HN: A language model that lives in a boot sector",
+    "url": "https://github.com/kerlenton/bootgpt",
+    "source": "github.com",
+    "date": "2026-10-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 80, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50315782",
+    "fetched_at": "2026-11-01T07:43:06Z",
+    "title_zh": "Show HN ：一种存在于引导扇区的语言模型"
+  },
+  {
+    "title": "Anthropic blocks users for anything touching training larger models",
+    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+    "source": "twitter.com",
+    "date": "2026-10-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 319, 180 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50319358",
+    "fetched_at": "2026-11-01T07:43:03Z",
+    "title_zh": "Anthropic阻止用户进行任何触摸训练大型模型"
+  },
+  {
+    "title": "ChatGPT and Codex usage limits merging",
+    "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+    "source": "help.openai.com",
+    "date": "2026-10-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from help.openai.com. Hacker News score 83, 31 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50320588",
+    "fetched_at": "2026-11-01T07:43:01Z",
+    "title_zh": "ChatGPT和Codex使用限制合并"
+  },
+  {
+    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+    "source": "github.com",
+    "date": "2026-10-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 194, 95 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50320995",
+    "fetched_at": "2026-11-01T07:42:57Z",
+    "title_zh": "Memdoor ：由5名Qwen3.8-27B型号组成的团队在LiveCodeBench Hard上击败Fable 5"
+  },
+  {
+    "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+    "source": "phorion.io",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from phorion.io. Hacker News score 974, 547 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50300683",
+    "fetched_at": "2026-11-01T07:43:14Z",
+    "title_zh": "Claude Code中的后门，用于Cursor Marketplace上的VS Code扩展"
+  },
+  {
+    "title": "Decode kernel panic from QR Code photo",
+    "url": "https://gist.github.com/skorotkiewicz/c59e591c26661cb52b06afc42d8ac546",
+    "source": "gist.github.com",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from gist.github.com. Hacker News score 25, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50302686",
+    "fetched_at": "2026-11-01T07:43:05Z",
+    "title_zh": "从二维码照片解码内核崩溃"
+  },
+  {
     "title": "AI isn't replacing SREs, it's deskilling them",
     "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
     "source": "newsletter.signoz.io",
@@ -44,17 +132,6 @@
     "title_zh": "Florilegium：LaTeX 中的程序花"
   },
   {
-    "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
-    "source": "phorion.io",
-    "date": "2026-10-30",
-    "repost": true,
-    "summary": "转载 / Curated repost from phorion.io. Hacker News score 871, 513 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50300683",
-    "fetched_at": "2026-10-31T07:09:35Z",
-    "title_zh": "Cursor Marketplace 上用于 VS Code 扩展的 Claude Code 中的后门"
-  },
-  {
     "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
     "url": "https://github.com/dbreunig/nesformer",
     "source": "github.com",
@@ -86,6 +163,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50298436",
     "fetched_at": "2026-10-30T07:21:42Z",
     "title_zh": "Herdr 发布了原生应用"
+  },
+  {
+    "title": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
+    "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
+    "source": "thedataexchange.media",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from thedataexchange.media. Hacker News score 202, 47 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50290652",
+    "fetched_at": "2026-11-01T07:43:12Z",
+    "title_zh": "人工智能、精益和正式验证的未来，与精益创作者Leo de Moura合作"
+  },
+  {
+    "title": "Much Ado About None: Sentinel Values in Python",
+    "url": "https://florianwilhelm.info/2026/10/sentinel_values/",
+    "source": "florianwilhelm.info",
+    "date": "2026-10-29",
+    "repost": true,
+    "summary": "转载 / Curated repost from florianwilhelm.info. Hacker News score 63, 44 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50297068",
+    "fetched_at": "2026-11-01T07:43:10Z",
+    "title_zh": "Much Ado About None ： Python中的Sentinel值"
   },
   {
     "title": "We ran AI agent swarms in Minecraft and Mindustry",
