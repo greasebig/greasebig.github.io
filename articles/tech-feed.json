@@ -1,14 +1,80 @@
 [
   {
+    "title": "Asking my AI teacher how to spell seventeen",
+    "url": "https://twitter.com/huskirl/status/2116941001335947635",
+    "source": "twitter.com",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 11, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50333262",
+    "fetched_at": "2026-11-02T07:50:14Z",
+    "title_zh": "问我的人工智能老师如何拼写十七"
+  },
+  {
+    "title": "AI fan wikis riddled with errors are muddying the waters of games culture",
+    "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture",
+    "source": "eurogamer.net",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from eurogamer.net. Hacker News score 78, 66 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50332086",
+    "fetched_at": "2026-11-02T07:50:11Z",
+    "title_zh": "充满错误的AI粉丝维基正在混淆游戏文化的水域"
+  },
+  {
+    "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+    "source": "tomshardware.com",
+    "date": "2026-11-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from tomshardware.com. Hacker News score 166, 78 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50325662",
+    "fetched_at": "2026-11-02T07:50:21Z",
+    "title_zh": "《我的世界》中的人工智能特工群未能构建文明，淹没在官僚主义中"
+  },
+  {
+    "title": "I Am the Reason OpenAI Is Killing Unlimited Chats",
+    "url": "https://chaosmanage.github.io/i-killed-unlimited-chatgpt/",
+    "source": "chaosmanage.github.io",
+    "date": "2026-11-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from chaosmanage.github.io. Hacker News score 50, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50327416",
+    "fetched_at": "2026-11-02T07:50:13Z",
+    "title_zh": "我就是OpenAI杀死无限聊天的原因"
+  },
+  {
     "title": "The AI cost of JavaScript frameworks",
     "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
     "source": "nolanlawson.com",
     "date": "2026-11-01",
     "repost": true,
-    "summary": "转载 / Curated repost from nolanlawson.com. Hacker News score 6, 2 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from nolanlawson.com. Hacker News score 355, 280 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=50323088",
-    "fetched_at": "2026-11-01T07:42:59Z",
+    "fetched_at": "2026-11-02T07:50:05Z",
     "title_zh": "JavaScript框架的人工智能成本"
+  },
+  {
+    "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+    "url": "https://github.com/ivankovic/omnidiff",
+    "source": "github.com",
+    "date": "2026-11-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 222, 54 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50325253",
+    "fetched_at": "2026-11-02T07:50:02Z",
+    "title_zh": "Show HN: OmniDiff -开源，超级快，内容感知Git diffftool ，在Rust中"
+  },
+  {
+    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+    "source": "github.com",
+    "date": "2026-10-31",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 435, 213 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50320995",
+    "fetched_at": "2026-11-02T07:50:17Z",
+    "title_zh": "Memdoor ：由5名Qwen3.8-27B型号组成的团队在LiveCodeBench Hard上击败Fable 5"
   },
   {
     "title": "AI text watermarking and quality loss",
@@ -55,26 +121,37 @@
     "title_zh": "ChatGPT和Codex使用限制合并"
   },
   {
-    "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-    "source": "github.com",
-    "date": "2026-10-31",
-    "repost": true,
-    "summary": "转载 / Curated repost from github.com. Hacker News score 194, 95 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50320995",
-    "fetched_at": "2026-11-01T07:42:57Z",
-    "title_zh": "Memdoor ：由5名Qwen3.8-27B型号组成的团队在LiveCodeBench Hard上击败Fable 5"
-  },
-  {
     "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
     "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
     "source": "phorion.io",
     "date": "2026-10-30",
     "repost": true,
-    "summary": "转载 / Curated repost from phorion.io. Hacker News score 974, 547 comments. Click through to read the original article.",
+    "summary": "转载 / Curated repost from phorion.io. Hacker News score 995, 553 comments. Click through to read the original article.",
     "discussion_url": "https://news.ycombinator.com/item?id=50300683",
-    "fetched_at": "2026-11-01T07:43:14Z",
+    "fetched_at": "2026-11-02T07:50:19Z",
     "title_zh": "Claude Code中的后门，用于Cursor Marketplace上的VS Code扩展"
+  },
+  {
+    "title": "Copper – A minimal low-level programming language with OOP and generics",
+    "url": "https://tibleiz.net/copper/",
+    "source": "tibleiz.net",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from tibleiz.net. Hacker News score 156, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50308754",
+    "fetched_at": "2026-11-02T07:50:04Z",
+    "title_zh": "铜–具有OOP和泛型的最小低级编程语言"
+  },
+  {
+    "title": "Nibnib: Image compression with extreme decompression speed",
+    "url": "https://github.com/raphlinus/nibnib",
+    "source": "github.com",
+    "date": "2026-10-30",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 131, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50299811",
+    "fetched_at": "2026-11-02T07:50:00Z",
+    "title_zh": "Nibnib ：具有极高解压缩速度的图像压缩"
   },
   {
     "title": "Decode kernel panic from QR Code photo",
