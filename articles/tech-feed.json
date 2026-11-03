@@ -1,5 +1,115 @@
 [
   {
+    "title": "Show HN: I built a little browser game to practice Vim commands",
+    "url": "https://hjkl.duy.run",
+    "source": "hjkl.duy.run",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from hjkl.duy.run. Hacker News score 21, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50347552",
+    "fetched_at": "2026-11-03T08:05:52Z",
+    "title_zh": "Show HN：我构建了一个小浏览器游戏来练习 Vim 命令"
+  },
+  {
+    "title": "Show HN: ReBirth 338 in Browser",
+    "url": "https://margeux.com/rb338.html",
+    "source": "margeux.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from margeux.com. Hacker News score 15, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50348740",
+    "fetched_at": "2026-11-03T08:05:51Z",
+    "title_zh": "在浏览器中显示 HN: ReBirth 338"
+  },
+  {
+    "title": "DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs",
+    "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+    "source": "github.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 160, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50346849",
+    "fetched_at": "2026-11-03T08:05:49Z",
+    "title_zh": "DiscImageStudio：将可见的艺术作品刻录到 CD、DVD 和蓝光光盘上"
+  },
+  {
+    "title": "Nvidia – open-source auto-ontology",
+    "url": "https://github.com/NVIDIA/auto-ontology",
+    "source": "github.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 10, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50348962",
+    "fetched_at": "2026-11-03T08:05:49Z",
+    "title_zh": "Nvidia – 开源自动本体"
+  },
+  {
+    "title": "V100 SXM2 pinout and NVLink reference",
+    "url": "https://github.com/pigeon-labs-stack/v100-sxm2-reference",
+    "source": "github.com",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 34, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50344912",
+    "fetched_at": "2026-11-03T08:05:53Z",
+    "title_zh": "V100 SXM2 引脚分配和 NVLink 参考"
+  },
+  {
+    "title": "Sneaking into the auditorium for the Windows 2000 launch rehearsal",
+    "url": "https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 129, 47 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50341028",
+    "fetched_at": "2026-11-03T08:05:53Z",
+    "title_zh": "潜入礼堂进行 Windows 2000 发布彩排"
+  },
+  {
+    "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+    "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+    "source": "freenode.net",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from freenode.net. Hacker News score 457, 128 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50341462",
+    "fetched_at": "2026-11-03T08:05:52Z",
+    "title_zh": "Ubuntu 近 3 周仍未发布 Linux 0day RCE 补丁"
+  },
+  {
+    "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+    "url": "https://momentic.ai/",
+    "source": "momentic.ai",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from momentic.ai. Hacker News score 142, 94 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50339913",
+    "fetched_at": "2026-11-03T08:05:51Z",
+    "title_zh": "启动 HN：Momentic (YC W24) – 使用您的应用程序捕获错误的代理"
+  },
+  {
+    "title": "Egoless Mathematics in the AI Era",
+    "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+    "source": "terrytao.wordpress.com",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from terrytao.wordpress.com. Hacker News score 155, 106 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50341736",
+    "fetched_at": "2026-11-03T08:05:51Z",
+    "title_zh": "AI时代的无我数学"
+  },
+  {
+    "title": "Scaling Git at OpenAI",
+    "url": "https://openai.com/index/scaling-git-at-openai/",
+    "source": "openai.com",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 195, 108 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50345924",
+    "fetched_at": "2026-11-03T08:05:50Z",
+    "title_zh": "在 OpenAI 上扩展 Git"
+  },
+  {
     "title": "Asking my AI teacher how to spell seventeen",
     "url": "https://twitter.com/huskirl/status/2116941001335947635",
     "source": "twitter.com",
