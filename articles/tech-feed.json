@@ -1,5 +1,93 @@
 [
   {
+    "title": "Why Clip Art Was Everywhere Until It Wasn't [video]",
+    "url": "https://www.youtube.com/watch?v=XfLlpxE6AYM",
+    "source": "youtube.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 33, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50351298",
+    "fetched_at": "2026-11-04T07:39:03Z",
+    "title_zh": "为什么剪贴画无处不在，直到它消失[视频]"
+  },
+  {
+    "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+    "url": "https://arxiv.org/abs/2605.29713",
+    "source": "arxiv.org",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 321, 50 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50358582",
+    "fetched_at": "2026-11-04T07:39:03Z",
+    "title_zh": "生成式人工智能基础小书：直观的数学入门"
+  },
+  {
+    "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
+    "url": "https://github.com/finic-ai/kairos",
+    "source": "github.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 85, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50358314",
+    "fetched_at": "2026-11-04T07:39:03Z",
+    "title_zh": "Show HN：Kairos – 开源风险和欺诈决策平台"
+  },
+  {
+    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+    "source": "simonwillison.net",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from simonwillison.net. Hacker News score 584, 172 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50355251",
+    "fetched_at": "2026-11-04T07:39:02Z",
+    "title_zh": "我的笔记本电脑上的 Qwen 3.8 27B 也可以解释模型重量"
+  },
+  {
+    "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+    "source": "github.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 1198, 392 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50354960",
+    "fetched_at": "2026-11-04T07:39:02Z",
+    "title_zh": "Postman 默默地自动安装 AI 插件并尝试共享所有 API 数据"
+  },
+  {
+    "title": "How I use AI (Oct 2026)",
+    "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+    "source": "ben.stolovitz.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from ben.stolovitz.com. Hacker News score 146, 130 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50355767",
+    "fetched_at": "2026-11-04T07:39:02Z",
+    "title_zh": "我如何使用人工智能（2026 年 10 月）"
+  },
+  {
+    "title": "Stringman, an $800 open-source room scale gripper robot",
+    "url": "https://neufangled.com/",
+    "source": "neufangled.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from neufangled.com. Hacker News score 535, 182 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50354358",
+    "fetched_at": "2026-11-04T07:39:01Z",
+    "title_zh": "Stringman，一款价值 800 美元的开源房间规模抓取机器人"
+  },
+  {
+    "title": "Show HN: Uncracked City, detective game where you question LLM suspects that lie",
+    "url": "https://uncracked.city",
+    "source": "uncracked.city",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from uncracked.city. Hacker News score 33, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50358352",
+    "fetched_at": "2026-11-04T07:39:01Z",
+    "title_zh": "Show HN: Uncracked City，侦探游戏，您可以在其中质疑法学硕士怀疑的谎言"
+  },
+  {
     "title": "Show HN: I built a little browser game to practice Vim commands",
     "url": "https://hjkl.duy.run",
     "source": "hjkl.duy.run",
@@ -42,6 +130,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50348962",
     "fetched_at": "2026-11-03T08:05:49Z",
     "title_zh": "Nvidia – 开源自动本体"
+  },
+  {
+    "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+    "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+    "source": "arstechnica.com",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from arstechnica.com. Hacker News score 450, 189 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50336918",
+    "fetched_at": "2026-11-04T07:39:01Z",
+    "title_zh": "人工智能推动归档需求，富士胶片将磁带产量提高 5 倍"
   },
   {
     "title": "V100 SXM2 pinout and NVLink reference",
@@ -130,6 +229,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50332086",
     "fetched_at": "2026-11-02T07:50:11Z",
     "title_zh": "充满错误的AI粉丝维基正在混淆游戏文化的水域"
+  },
+  {
+    "title": "We're training a Figma-fluent editing model",
+    "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
+    "source": "figma.com",
+    "date": "2026-11-01",
+    "repost": true,
+    "summary": "转载 / Curated repost from figma.com. Hacker News score 109, 47 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50322603",
+    "fetched_at": "2026-11-04T07:39:02Z",
+    "title_zh": "我们正在训练 Figma 流畅的编辑模型"
   },
   {
     "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
