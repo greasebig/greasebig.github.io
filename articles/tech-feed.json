@@ -1,5 +1,104 @@
 [
   {
+    "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+    "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+    "source": "mindstudio.ai",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from mindstudio.ai. Hacker News score 599, 277 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50362905",
+    "fetched_at": "2026-11-05T08:00:29Z",
+    "title_zh": "Nvidia RTX Spark 加密固件在 Linux 上将推理速度降低至 35%"
+  },
+  {
+    "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+    "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+    "source": "techcrunch.com",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from techcrunch.com. Hacker News score 81, 107 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50366971",
+    "fetched_at": "2026-11-05T08:00:29Z",
+    "title_zh": "YC 的 Garry Tan 大量使用人工智能代理，他每年在代币上的花费高达 20 万美元"
+  },
+  {
+    "title": "OpenAI to acquire Pierre Computer Company",
+    "url": "https://openai.com/index/openai-to-acquire-pierre/",
+    "source": "openai.com",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 230, 70 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50366863",
+    "fetched_at": "2026-11-05T08:00:27Z",
+    "title_zh": "OpenAI 将收购 Pierre 计算机公司"
+  },
+  {
+    "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
+    "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+    "source": "qualcomm.com",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from qualcomm.com. Hacker News score 140, 54 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50370654",
+    "fetched_at": "2026-11-05T08:00:26Z",
+    "title_zh": "Qualcomm Cloud AI 100 Ultra – 150W AI 加速卡，128GB，548GB/s"
+  },
+  {
+    "title": "Progress on provable inference for large language models",
+    "url": "https://www.anthropic.com/research/provable-inference",
+    "source": "anthropic.com",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 210, 98 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50368626",
+    "fetched_at": "2026-11-05T08:00:26Z",
+    "title_zh": "大型语言模型可证明推理的进展"
+  },
+  {
+    "title": "AI is forcing us to pay off 40 years of technical debt",
+    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+    "source": "spectrum.ieee.org",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from spectrum.ieee.org. Hacker News score 1165, 670 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50364336",
+    "fetched_at": "2026-11-05T08:00:25Z",
+    "title_zh": "人工智能正在迫使我们偿还 40 年的技术债务"
+  },
+  {
+    "title": "Images 2.6",
+    "url": "https://openai.com/index/introducing-images-2-6/",
+    "source": "openai.com",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 248, 161 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50372945",
+    "fetched_at": "2026-11-05T08:00:24Z",
+    "title_zh": "图片2.6"
+  },
+  {
+    "title": "A thousand fewer paths to root",
+    "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+    "source": "openai.com",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 291, 187 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50372929",
+    "fetched_at": "2026-11-05T08:00:24Z",
+    "title_zh": "减少一千条通往根的路径"
+  },
+  {
+    "title": "Kimi K3.1 Pro model weights are out",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+    "source": "huggingface.co",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from huggingface.co. Hacker News score 499, 141 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50366999",
+    "fetched_at": "2026-11-05T08:00:24Z",
+    "title_zh": "Kimi K3.1 Pro型号重量已出"
+  },
+  {
     "title": "Why Clip Art Was Everywhere Until It Wasn't [video]",
     "url": "https://www.youtube.com/watch?v=XfLlpxE6AYM",
     "source": "youtube.com",
@@ -130,6 +229,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50348962",
     "fetched_at": "2026-11-03T08:05:49Z",
     "title_zh": "Nvidia – 开源自动本体"
+  },
+  {
+    "title": "Basically no one is using AI agents for their DoorDash orders",
+    "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+    "source": "arstechnica.com",
+    "date": "2026-11-02",
+    "repost": true,
+    "summary": "转载 / Curated repost from arstechnica.com. Hacker News score 124, 219 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50338474",
+    "fetched_at": "2026-11-05T08:00:28Z",
+    "title_zh": "基本上没有人使用人工智能代理来处理 DoorDash 订单"
   },
   {
     "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
