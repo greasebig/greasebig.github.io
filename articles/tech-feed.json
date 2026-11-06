@@ -1,5 +1,115 @@
 [
   {
+    "title": "MoofTCP – A modern replacement for MacTCP on 68k Macs",
+    "url": "https://github.com/matthewmrichter/mooftcp",
+    "source": "github.com",
+    "date": "2026-11-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 39, 20 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50386789",
+    "fetched_at": "2026-11-06T08:05:08Z",
+    "title_zh": "MoofTCP – 68k Mac 上 MacTCP 的现代替代品"
+  },
+  {
+    "title": "Nvidia Kubernetes Engine (NVKE)",
+    "url": "https://github.com/dsx-ai-factory/nvke",
+    "source": "github.com",
+    "date": "2026-11-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 67, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50387738",
+    "fetched_at": "2026-11-06T08:05:06Z",
+    "title_zh": "Nvidia Kubernetes 引擎 (NVKE)"
+  },
+  {
+    "title": "I struggle to believe that AI R&D is ingenious",
+    "url": "https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL",
+    "source": "lesswrong.com",
+    "date": "2026-11-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from lesswrong.com. Hacker News score 54, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50388513",
+    "fetched_at": "2026-11-06T08:05:06Z",
+    "title_zh": "我很难相信人工智能研发是巧妙的"
+  },
+  {
+    "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
+    "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
+    "source": "thereader.mitpress.mit.edu",
+    "date": "2026-11-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from thereader.mitpress.mit.edu. Hacker News score 48, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50388122",
+    "fetched_at": "2026-11-06T08:05:06Z",
+    "title_zh": "从 Linux 到维基百科：志愿者如何构建互联网"
+  },
+  {
+    "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+    "source": "finance.yahoo.com",
+    "date": "2026-11-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from finance.yahoo.com. Hacker News score 286, 131 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50385870",
+    "fetched_at": "2026-11-06T08:05:08Z",
+    "title_zh": "库班：Facebook 故意投放人工智能深度伪造诈骗广告；文档称欺诈收入为 $16B"
+  },
+  {
+    "title": "Window Sweaters",
+    "url": "https://github.com/saragordic/window-sweaters",
+    "source": "github.com",
+    "date": "2026-11-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 319, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50381383",
+    "fetched_at": "2026-11-06T08:05:07Z",
+    "title_zh": "窗户毛衣"
+  },
+  {
+    "title": "Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM",
+    "url": "https://firenook.dev/",
+    "source": "firenook.dev",
+    "date": "2026-11-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from firenook.dev. Hacker News score 105, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50378643",
+    "fetched_at": "2026-11-06T08:05:07Z",
+    "title_zh": "Show HN：Firenook – Rust 中的 Firebase 模拟器：写入速度提高 40 倍，RAM 减少 10 倍"
+  },
+  {
+    "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
+    "url": "https://github.com/rivet-dev/rivet",
+    "source": "github.com",
+    "date": "2026-11-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 93, 50 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50381687",
+    "fetched_at": "2026-11-06T08:05:07Z",
+    "title_zh": "启动 HN：Rivet (YC W23) – 在 S3 上扩展和编排代理"
+  },
+  {
+    "title": "Claude Code sends your email address to websites",
+    "url": "https://github.com/anthropics/claude-code/issues/107757",
+    "source": "github.com",
+    "date": "2026-11-05",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 986, 320 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50385272",
+    "fetched_at": "2026-11-06T08:05:05Z",
+    "title_zh": "克劳德·代码将您的电子邮件地址发送到网站"
+  },
+  {
+    "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+    "url": "https://www.linum.ai/field-notes/pjit-21k",
+    "source": "linum.ai",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from linum.ai. Hacker News score 210, 19 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50368208",
+    "fetched_at": "2026-11-06T08:05:08Z",
+    "title_zh": "Show HN：一个不错的文本到图像模型，训练成本约为 2 万美元（Apache 2.0 权重）"
+  },
+  {
     "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
     "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
     "source": "mindstudio.ai",
