@@ -1,5 +1,82 @@
 [
   {
+    "title": "The Components of Agent Memory",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory",
+    "source": "anthropic.com",
+    "date": "2026-11-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 4, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50402212",
+    "fetched_at": "2026-11-07T07:25:35Z",
+    "title_zh": "代理内存的组成部分"
+  },
+  {
+    "title": "Asahi Linux Progress Linux 7.3",
+    "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+    "source": "asahilinux.org",
+    "date": "2026-11-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from asahilinux.org. Hacker News score 82, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50401867",
+    "fetched_at": "2026-11-07T07:25:30Z",
+    "title_zh": "Asahi Linux Progress Linux 7.3"
+  },
+  {
+    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+    "source": "bloomberg.com",
+    "date": "2026-11-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from bloomberg.com. Hacker News score 270, 541 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50394906",
+    "fetched_at": "2026-11-07T07:25:50Z",
+    "title_zh": "Anthropic IPO买家认为估值低至1.1万亿$"
+  },
+  {
+    "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
+    "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
+    "source": "thereader.mitpress.mit.edu",
+    "date": "2026-11-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from thereader.mitpress.mit.edu. Hacker News score 317, 123 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50388122",
+    "fetched_at": "2026-11-07T07:25:48Z",
+    "title_zh": "从Linux到维基百科：志愿者如何构建互联网"
+  },
+  {
+    "title": "Google has acquired Crusoe's data center site in southeast Wyoming",
+    "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+    "source": "crusoe.ai",
+    "date": "2026-11-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from crusoe.ai. Hacker News score 65, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50397711",
+    "fetched_at": "2026-11-07T07:25:42Z",
+    "title_zh": "谷歌收购了Crusoe在怀俄明州东南部的数据中心"
+  },
+  {
+    "title": "First steps in bare-metal programming using UEFI",
+    "url": "https://kevinboone.me/efitest_index.html",
+    "source": "kevinboone.me",
+    "date": "2026-11-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from kevinboone.me. Hacker News score 215, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50394855",
+    "fetched_at": "2026-11-07T07:25:37Z",
+    "title_zh": "使用UEFI进行裸机编程的第一步"
+  },
+  {
+    "title": "AI is dramatically accelerating AI research",
+    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+    "source": "planned-obsolescence.org",
+    "date": "2026-11-06",
+    "repost": true,
+    "summary": "转载 / Curated repost from planned-obsolescence.org. Hacker News score 278, 213 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50397994",
+    "fetched_at": "2026-11-07T07:25:33Z",
+    "title_zh": "人工智能正在大大加速人工智能研究"
+  },
+  {
     "title": "MoofTCP – A modern replacement for MacTCP on 68k Macs",
     "url": "https://github.com/matthewmrichter/mooftcp",
     "source": "github.com",
@@ -33,15 +110,15 @@
     "title_zh": "我很难相信人工智能研发是巧妙的"
   },
   {
-    "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
-    "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
-    "source": "thereader.mitpress.mit.edu",
-    "date": "2026-11-06",
+    "title": "Show HN: Waymark – A workflow engine that compiles jobs instead of replaying",
+    "url": "https://github.com/piercefreeman/waymark",
+    "source": "github.com",
+    "date": "2026-11-05",
     "repost": true,
-    "summary": "转载 / Curated repost from thereader.mitpress.mit.edu. Hacker News score 48, 21 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50388122",
-    "fetched_at": "2026-11-06T08:05:06Z",
-    "title_zh": "从 Linux 到维基百科：志愿者如何构建互联网"
+    "summary": "转载 / Curated repost from github.com. Hacker News score 61, 18 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50379221",
+    "fetched_at": "2026-11-07T07:25:46Z",
+    "title_zh": "显示HN ： Waymark –编译作业而不是重播的工作流引擎"
   },
   {
     "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
@@ -207,6 +284,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50366999",
     "fetched_at": "2026-11-05T08:00:24Z",
     "title_zh": "Kimi K3.1 Pro型号重量已出"
+  },
+  {
+    "title": "Show HN: Tmux-restore saves tmux windows and agent sessions across reboots",
+    "url": "https://github.com/andrewboldi/tmux-restore",
+    "source": "github.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 28, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50355009",
+    "fetched_at": "2026-11-07T07:25:44Z",
+    "title_zh": "显示HN ： Tmux-restore在重启期间保存tmux窗口和代理会话"
+  },
+  {
+    "title": "Panthera: Ampere's CPU Performance Model",
+    "url": "https://github.com/AmpereComputing/panthera",
+    "source": "github.com",
+    "date": "2026-11-03",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 28, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50356722",
+    "fetched_at": "2026-11-07T07:25:39Z",
+    "title_zh": "Panthera ： Ampere的CPU性能模型"
   },
   {
     "title": "Why Clip Art Was Everywhere Until It Wasn't [video]",
