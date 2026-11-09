@@ -1,5 +1,82 @@
 [
   {
+    "title": "Show HN: Flide: Make Jev-like decision models up to 9.5x faster",
+    "url": "https://github.com/OmniJev/Flide",
+    "source": "github.com",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 15, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50421155",
+    "fetched_at": "2026-11-09T08:12:37Z",
+    "title_zh": "Show HN：Flide：使类似 Jev 的决策模型速度提高 9.5 倍"
+  },
+  {
+    "title": "How I Fight AI Brain Fry",
+    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+    "source": "sergeykuhne.com",
+    "date": "2026-11-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from sergeykuhne.com. Hacker News score 229, 164 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50416363",
+    "fetched_at": "2026-11-09T08:12:40Z",
+    "title_zh": "我如何对抗人工智能脑残"
+  },
+  {
+    "title": "Goodbye Claude, hello Pi",
+    "url": "https://caleb.software/posts/claude-to-pi.html",
+    "source": "caleb.software",
+    "date": "2026-11-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from caleb.software. Hacker News score 754, 460 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50410107",
+    "fetched_at": "2026-11-09T08:12:40Z",
+    "title_zh": "再见克劳德，你好皮"
+  },
+  {
+    "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+    "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+    "source": "thestateofai.com",
+    "date": "2026-11-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from thestateofai.com. Hacker News score 739, 400 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50415628",
+    "fetched_at": "2026-11-09T08:12:38Z",
+    "title_zh": "高盛 (Goldman Sachs) 正在从其银行家和交易员手中撤回克劳德·科德 (Claude Code)"
+  },
+  {
+    "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+    "url": "https://github.com/synchopate/llama-modchip",
+    "source": "github.com",
+    "date": "2026-11-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 412, 185 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50411961",
+    "fetched_at": "2026-11-09T08:12:37Z",
+    "title_zh": "Llama-modchip：64GB RAM 上的 284B DeepSeek，无 GPU"
+  },
+  {
+    "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+    "url": "https://ketchup3d.github.io/app/",
+    "source": "ketchup3d.github.io",
+    "date": "2026-11-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from ketchup3d.github.io. Hacker News score 429, 120 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50418176",
+    "fetched_at": "2026-11-09T08:12:35Z",
+    "title_zh": "KetchUp – 使用 Rust 和 WebGPU 构建的开源 SketchUp 替代品"
+  },
+  {
+    "title": "I'm not convinced the AI bubble exists",
+    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+    "source": "matteoraso.github.io",
+    "date": "2026-11-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from matteoraso.github.io. Hacker News score 221, 324 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50418975",
+    "fetched_at": "2026-11-09T08:12:35Z",
+    "title_zh": "我不相信人工智能泡沫存在"
+  },
+  {
     "title": "ISponsorBlockTV: SponsorBlock client for all YouTube TV clients",
     "url": "https://github.com/dmunozv04/isponsorblocktv",
     "source": "github.com",
@@ -22,15 +99,26 @@
     "title_zh": "ZapFast ： Rust和egui中的快速原生WhatsApp客户端"
   },
   {
-    "title": "Goodbye Claude, Hello Pi",
-    "url": "https://caleb.software/posts/claude-to-pi.html",
-    "source": "caleb.software",
-    "date": "2026-11-08",
+    "title": "Show HN: JavaScript web apps with WASM layout and GPU rendering in 280 KB",
+    "url": "https://github.com/rkaehn/uniform",
+    "source": "github.com",
+    "date": "2026-11-07",
     "repost": true,
-    "summary": "转载 / Curated repost from caleb.software. Hacker News score 176, 98 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50410107",
-    "fetched_at": "2026-11-08T07:35:23Z",
-    "title_zh": "再见， Claude ， Hello Pi"
+    "summary": "转载 / Curated repost from github.com. Hacker News score 26, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50401844",
+    "fetched_at": "2026-11-09T08:12:39Z",
+    "title_zh": "显示 HN：具有 WASM 布局和 GPU 渲染的 JavaScript Web 应用程序（280 KB）"
+  },
+  {
+    "title": "SultanC – an Arabic-first systems programming language",
+    "url": "https://github.com/sultan-language/sultanc",
+    "source": "github.com",
+    "date": "2026-11-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 8, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50402428",
+    "fetched_at": "2026-11-09T08:12:38Z",
+    "title_zh": "SultanC – 阿拉伯优先的系统编程语言"
   },
   {
     "title": "Five memorable books about programming (2008)",
@@ -284,6 +372,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50385272",
     "fetched_at": "2026-11-06T08:05:05Z",
     "title_zh": "克劳德·代码将您的电子邮件地址发送到网站"
+  },
+  {
+    "title": "Show HN: My compact, bio inspired distributed edge detection algorithm",
+    "url": "https://github.com/RenderBear/haci",
+    "source": "github.com",
+    "date": "2026-11-04",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 12, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50371886",
+    "fetched_at": "2026-11-09T08:12:39Z",
+    "title_zh": "Show HN：我的紧凑型、受生物启发的分布式边缘检测算法"
   },
   {
     "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
