@@ -1,5 +1,104 @@
 [
   {
+    "title": "Fireworks AI security breach impacts Notion and their customers",
+    "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+    "source": "notion.com",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from notion.com. Hacker News score 5, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50437106",
+    "fetched_at": "2026-11-10T08:32:13Z",
+    "title_zh": "烟花AI安全漏洞影响Notion及其客户"
+  },
+  {
+    "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
+    "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+    "source": "cnbc.com",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from cnbc.com. Hacker News score 133, 82 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50435660",
+    "fetched_at": "2026-11-10T08:32:12Z",
+    "title_zh": "随着人工智能信贷压力上升， CoreWeave债券收益率高达16%"
+  },
+  {
+    "title": "DeepX claims inference up to 100B parameters at less than 5 W",
+    "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+    "source": "eetimes.com",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from eetimes.com. Hacker News score 152, 24 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50429545",
+    "fetched_at": "2026-11-10T08:32:28Z",
+    "title_zh": "DeepX声称在低于5 W的情况下可推断高达100B的参数"
+  },
+  {
+    "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
+    "url": "https://github.com/Dodaios/ste80-humanizer",
+    "source": "github.com",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 84, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50429144",
+    "fetched_at": "2026-11-10T08:32:26Z",
+    "title_zh": "显示HN ： STE80人性化器–通过将80 ％的方式写入ASD-STE100来消除AI文本"
+  },
+  {
+    "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+    "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+    "source": "artificialanalysis.ai",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from artificialanalysis.ai. Hacker News score 343, 244 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50431144",
+    "fetched_at": "2026-11-10T08:32:24Z",
+    "title_zh": "克劳德寓言人工分析5.2分65分，迄今为止最高"
+  },
+  {
+    "title": "Exact – a new cross platform UI framework",
+    "url": "https://github.com/expo/exact",
+    "source": "github.com",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 116, 77 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50433541",
+    "fetched_at": "2026-11-10T08:32:19Z",
+    "title_zh": "EXACT –新的跨平台UI框架"
+  },
+  {
+    "title": "Google Gemini routes personal Drive files and emails to human annotators",
+    "url": "https://github.com/thisisme6598/gemini_files/",
+    "source": "github.com",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 575, 127 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50429426",
+    "fetched_at": "2026-11-10T08:32:18Z",
+    "title_zh": "Google Gemini将个人云端硬盘文件和电子邮件路由到人工注释器"
+  },
+  {
+    "title": "Muse Ember: Our smallest, most efficient model",
+    "url": "https://research.meta.ai/blog/muse-ember",
+    "source": "research.meta.ai",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from research.meta.ai. Hacker News score 294, 118 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50429024",
+    "fetched_at": "2026-11-10T08:32:16Z",
+    "title_zh": "Muse Ember ：我们最小、最有效的模型"
+  },
+  {
+    "title": "Claude Fable 5.2 and Mythos 5.2",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "source": "anthropic.com",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 526, 762 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50429068",
+    "fetched_at": "2026-11-10T08:32:08Z",
+    "title_zh": "Claude Fable 5.2和Mythos 5.2"
+  },
+  {
     "title": "Show HN: Flide: Make Jev-like decision models up to 9.5x faster",
     "url": "https://github.com/OmniJev/Flide",
     "source": "github.com",
@@ -97,6 +196,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50409855",
     "fetched_at": "2026-11-08T07:35:27Z",
     "title_zh": "ZapFast ： Rust和egui中的快速原生WhatsApp客户端"
+  },
+  {
+    "title": "China drafts lifetime ID codes for every robot it makes, not just humanoids",
+    "url": "https://asia-tech-news.ghost.io/china-drafts-lifetime-id-codes-for-every-robot-it-makes-not-just-humanoids/",
+    "source": "asia-tech-news.ghost.io",
+    "date": "2026-11-07",
+    "repost": true,
+    "summary": "转载 / Curated repost from asia-tech-news.ghost.io. Hacker News score 11, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50406482",
+    "fetched_at": "2026-11-10T08:32:22Z",
+    "title_zh": "中国为其制造的每个机器人起草终身身份代码，而不仅仅是人形机器人"
   },
   {
     "title": "Show HN: JavaScript web apps with WASM layout and GPU rendering in 280 KB",
