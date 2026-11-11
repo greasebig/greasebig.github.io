@@ -1,5 +1,93 @@
 [
   {
+    "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
+    "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+    "source": "niemanlab.org",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from niemanlab.org. Hacker News score 52, 33 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50448174",
+    "fetched_at": "2026-11-11T07:53:48Z",
+    "title_zh": "人工智能正在成为信息门户。观众仍然不希望它成为新闻"
+  },
+  {
+    "title": "Greg Kurtzer's Ginux is now a userspace kernel",
+    "url": "https://github.com/gmkurtzer/ginux",
+    "source": "github.com",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 46, 22 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50450007",
+    "fetched_at": "2026-11-11T07:53:45Z",
+    "title_zh": "Greg Kurtzer 的 Ginux 现在是用户空间内核"
+  },
+  {
+    "title": "AI usage generates a fragile codebase",
+    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+    "source": "evanxmerz.com",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from evanxmerz.com. Hacker News score 508, 482 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50438318",
+    "fetched_at": "2026-11-11T07:53:49Z",
+    "title_zh": "人工智能的使用会产生脆弱的代码库"
+  },
+  {
+    "title": "Announcing .NET 11",
+    "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+    "source": "devblogs.microsoft.com",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from devblogs.microsoft.com. Hacker News score 164, 219 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50442225",
+    "fetched_at": "2026-11-11T07:53:48Z",
+    "title_zh": "宣布 .NET 11"
+  },
+  {
+    "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+    "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+    "source": "claude.com",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from claude.com. Hacker News score 194, 146 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50443716",
+    "fetched_at": "2026-11-11T07:53:48Z",
+    "title_zh": "克劳德白板、克劳德表格和克劳德数据"
+  },
+  {
+    "title": "AlphaProof Code",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "source": "deepmind.google",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from deepmind.google. Hacker News score 615, 182 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50439193",
+    "fetched_at": "2026-11-11T07:53:47Z",
+    "title_zh": "AlphaProof 代码"
+  },
+  {
+    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance",
+    "source": "github.com",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 347, 103 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50443812",
+    "fetched_at": "2026-11-11T07:53:47Z",
+    "title_zh": "Show HN：让您的编码代理脱离 ~2019 JavaScript，进入现代 Web 原语"
+  },
+  {
+    "title": "Apple has new Mac app coming to make running local AI models easy",
+    "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+    "source": "9to5mac.com",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from 9to5mac.com. Hacker News score 181, 141 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50446520",
+    "fetched_at": "2026-11-11T07:53:46Z",
+    "title_zh": "苹果推出新的 Mac 应用程序，让运行本地人工智能模型变得更容易"
+  },
+  {
     "title": "Fireworks AI security breach impacts Notion and their customers",
     "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
     "source": "notion.com",
@@ -20,6 +108,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50435660",
     "fetched_at": "2026-11-10T08:32:12Z",
     "title_zh": "随着人工智能信贷压力上升， CoreWeave债券收益率高达16%"
+  },
+  {
+    "title": "Process Explorer for macOS",
+    "url": "https://github.com/microsoft/Procexp-Mac",
+    "source": "github.com",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 190, 59 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50433216",
+    "fetched_at": "2026-11-11T07:53:49Z",
+    "title_zh": "适用于 macOS 的进程资源管理器"
+  },
+  {
+    "title": "A ZIP-style Prolog VM for trilog",
+    "url": "https://github.com/no382001/zipc",
+    "source": "github.com",
+    "date": "2026-11-09",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 7, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50429210",
+    "fetched_at": "2026-11-11T07:53:46Z",
+    "title_zh": "用于 trilog 的 ZIP 式 Prolog VM"
   },
   {
     "title": "DeepX claims inference up to 100B parameters at less than 5 W",
