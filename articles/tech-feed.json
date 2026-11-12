@@ -1,5 +1,93 @@
 [
   {
+    "title": "I'm Working on a FOSS Linux Pinbal Simulation Engine",
+    "url": "https://www.getlazarus.org/forums/topic/17/",
+    "source": "getlazarus.org",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from getlazarus.org. Hacker News score 26, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50463540",
+    "fetched_at": "2026-11-12T08:31:12Z",
+    "title_zh": "我正在开发 FOSS Linux Pinbal 模拟引擎"
+  },
+  {
+    "title": "Humble Bundle just killed most of their security through vibecoding",
+    "url": "https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/",
+    "source": "forums.spacebattles.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from forums.spacebattles.com. Hacker News score 156, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50463899",
+    "fetched_at": "2026-11-12T08:31:09Z",
+    "title_zh": "Humble Bundle 刚刚通过 vivicoding 破坏了大部分安全性"
+  },
+  {
+    "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+    "url": "https://github.com/FrigadeHQ/yogurt",
+    "source": "github.com",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 232, 94 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50454625",
+    "fetched_at": "2026-11-12T08:31:14Z",
+    "title_zh": "Show HN：酸奶——格兰诺拉麦片的免费、私有、开源替代品"
+  },
+  {
+    "title": "A general purpose Apple Silicon layer for x86-64 PCs",
+    "url": "https://github.com/tylertms/Stela",
+    "source": "github.com",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 99, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50460154",
+    "fetched_at": "2026-11-12T08:31:13Z",
+    "title_zh": "适用于 x86-64 PC 的通用 Apple Silicon 层"
+  },
+  {
+    "title": "My AI agents found an unmapped Maya site?",
+    "url": "https://pietromiotti.com/latest/maya-site",
+    "source": "pietromiotti.com",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from pietromiotti.com. Hacker News score 978, 357 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50452455",
+    "fetched_at": "2026-11-12T08:31:13Z",
+    "title_zh": "我的 AI 代理发现了未映射的 Maya 站点？"
+  },
+  {
+    "title": "Lock Your GitHub Actions",
+    "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
+    "source": "hugovk.dev",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from hugovk.dev. Hacker News score 234, 47 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50459485",
+    "fetched_at": "2026-11-12T08:31:12Z",
+    "title_zh": "锁定您的 GitHub 操作"
+  },
+  {
+    "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+    "source": "cbsnews.com",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from cbsnews.com. Hacker News score 532, 519 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50458900",
+    "fetched_at": "2026-11-12T08:31:11Z",
+    "title_zh": "联合航空禁止人工智能代理代表旅客预订航班"
+  },
+  {
+    "title": "AWS emulator",
+    "url": "https://github.com/aws/aws-emulator",
+    "source": "github.com",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 819, 232 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50456631",
+    "fetched_at": "2026-11-12T08:31:10Z",
+    "title_zh": "AWS模拟器"
+  },
+  {
     "title": "AI is becoming an information gateway. Audiences still don’t want it making news",
     "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
     "source": "niemanlab.org",
@@ -20,6 +108,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50450007",
     "fetched_at": "2026-11-11T07:53:45Z",
     "title_zh": "Greg Kurtzer 的 Ginux 现在是用户空间内核"
+  },
+  {
+    "title": "Jane Street: Socratic Tutor",
+    "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+    "source": "github.com",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 75, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50438261",
+    "fetched_at": "2026-11-12T08:31:10Z",
+    "title_zh": "简·街：苏格拉底导师"
   },
   {
     "title": "AI usage generates a fragile codebase",
@@ -218,6 +317,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50421155",
     "fetched_at": "2026-11-09T08:12:37Z",
     "title_zh": "Show HN：Flide：使类似 Jev 的决策模型速度提高 9.5 倍"
+  },
+  {
+    "title": "I gave an agent a lakehouse and control of my garden",
+    "url": "https://jatorre.github.io/garden/",
+    "source": "jatorre.github.io",
+    "date": "2026-11-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from jatorre.github.io. Hacker News score 47, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50415162",
+    "fetched_at": "2026-11-12T08:31:11Z",
+    "title_zh": "我给了代理人一座湖边小屋和我花园的控制权"
   },
   {
     "title": "How I Fight AI Brain Fry",
