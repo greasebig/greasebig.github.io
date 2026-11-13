@@ -1,5 +1,93 @@
 [
   {
+    "title": "Anthropic IPO",
+    "url": "https://ipo.anthropic.com/us/",
+    "source": "ipo.anthropic.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from ipo.anthropic.com. Hacker News score 910, 855 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50465829",
+    "fetched_at": "2026-11-13T08:16:06Z",
+    "title_zh": "Anthropic IPO"
+  },
+  {
+    "title": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
+    "url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
+    "source": "github.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 98, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50471650",
+    "fetched_at": "2026-11-13T08:16:04Z",
+    "title_zh": "Show HN：AgentRun – 开源、自我改进的托管代理"
+  },
+  {
+    "title": "Show HN: RealtimeVAD – trading false positives for 110ms earlier end-of-speech",
+    "url": "https://github.com/KoljaB/RealtimeVAD",
+    "source": "github.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 22, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50474586",
+    "fetched_at": "2026-11-13T08:16:02Z",
+    "title_zh": "Show HN：RealtimeVAD——以110毫秒更早的语音结束时间换取误报"
+  },
+  {
+    "title": "I'm making LLMs work on small and old devices",
+    "url": "https://github.com/hyperionaidev/smolmaxxing/",
+    "source": "github.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 347, 127 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50468888",
+    "fetched_at": "2026-11-13T08:15:58Z",
+    "title_zh": "我正在让 LLM 在小型和旧款设备上运行"
+  },
+  {
+    "title": "Foundation Models framework",
+    "url": "https://developer.apple.com/foundation-models-framework/",
+    "source": "developer.apple.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from developer.apple.com. Hacker News score 198, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50474361",
+    "fetched_at": "2026-11-13T08:15:56Z",
+    "title_zh": "基础模型框架"
+  },
+  {
+    "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
+    "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+    "source": "edge0.ai",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from edge0.ai. Hacker News score 221, 60 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50475713",
+    "fetched_at": "2026-11-13T08:15:54Z",
+    "title_zh": "Edge0-145B：在您自己的计算机上使用尖端人工智能功能"
+  },
+  {
+    "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
+    "url": "https://github.com/simpsoka/zigzag",
+    "source": "github.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 487, 177 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50470488",
+    "fetched_at": "2026-11-13T08:15:52Z",
+    "title_zh": "Show HN：我的300美元刺绣机需要订阅，所以我自己开发了一款应用"
+  },
+  {
+    "title": "Rust 1.100",
+    "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+    "source": "blog.rust-lang.org",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.rust-lang.org. Hacker News score 632, 241 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50472038",
+    "fetched_at": "2026-11-13T08:15:50Z",
+    "title_zh": "Rust 1.100"
+  },
+  {
     "title": "I'm Working on a FOSS Linux Pinbal Simulation Engine",
     "url": "https://www.getlazarus.org/forums/topic/17/",
     "source": "getlazarus.org",
@@ -20,6 +108,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50463899",
     "fetched_at": "2026-11-12T08:31:09Z",
     "title_zh": "Humble Bundle 刚刚通过 vivicoding 破坏了大部分安全性"
+  },
+  {
+    "title": "Sift: LSP, Lint, Format Lisp, Scheme and Emacs Lisp",
+    "url": "https://github.com/jjba23/sift",
+    "source": "github.com",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 48, 6 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50460263",
+    "fetched_at": "2026-11-13T08:16:08Z",
+    "title_zh": "Sift：LSP、Lint、Format Lisp、Scheme 和 Emacs Lisp"
+  },
+  {
+    "title": "Relax: JIT compiler for Rust to reduce build times",
+    "url": "https://makepad.github.io/relax/",
+    "source": "makepad.github.io",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from makepad.github.io. Hacker News score 151, 69 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50458849",
+    "fetched_at": "2026-11-13T08:16:00Z",
+    "title_zh": "Relax：用于 Rust 的 JIT 编译器，可缩短编译时间"
   },
   {
     "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
