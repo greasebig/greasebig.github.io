@@ -1,5 +1,104 @@
 [
   {
+    "title": "Security Agencies Worldwide Found to Use Ad-Based Surveillance System",
+    "url": "https://citizenlab.ca/security-agencies-worldwide-found-to-use-ad-based-surveillance-system/",
+    "source": "citizenlab.ca",
+    "date": "2026-11-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from citizenlab.ca. Hacker News score 74, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50492950",
+    "fetched_at": "2026-11-14T07:43:25Z",
+    "title_zh": "世界各地的安全机构被发现使用基于广告的监控系统"
+  },
+  {
+    "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+    "source": "techpowerup.com",
+    "date": "2026-11-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from techpowerup.com. Hacker News score 414, 216 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50493251",
+    "fetched_at": "2026-11-14T07:43:22Z",
+    "title_zh": "据称，英伟达通过资助人工智能初创公司购买其 GPU 来制造稀缺性"
+  },
+  {
+    "title": "Ggml v1.0.0",
+    "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+    "source": "github.com",
+    "date": "2026-11-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 196, 32 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50493062",
+    "fetched_at": "2026-11-14T07:43:21Z",
+    "title_zh": "ggml v1.0.0"
+  },
+  {
+    "title": "Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures",
+    "url": "https://toninoble.com/post/ctrlc-ctrlv-ctrlcve",
+    "source": "toninoble.com",
+    "date": "2026-11-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from toninoble.com. Hacker News score 81, 37 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50487605",
+    "fetched_at": "2026-11-14T07:43:25Z",
+    "title_zh": "Ctrl+C、Ctrl+v、Ctrl+cve：绕过 Android 的剪贴板读取安全措施"
+  },
+  {
+    "title": "Perplexity Decider v1.3: Training, eval, and use cases",
+    "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+    "source": "perplexity.ai",
+    "date": "2026-11-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from perplexity.ai. Hacker News score 121, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50488464",
+    "fetched_at": "2026-11-14T07:43:24Z",
+    "title_zh": "Perplexity Decider v1.3：训练、评估和用例"
+  },
+  {
+    "title": "A technical vision for the Haskell ecosystem",
+    "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
+    "source": "discourse.haskell.org",
+    "date": "2026-11-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from discourse.haskell.org. Hacker News score 198, 107 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50484235",
+    "fetched_at": "2026-11-14T07:43:24Z",
+    "title_zh": "Haskell 生态系统的技术愿景"
+  },
+  {
+    "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+    "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+    "source": "youtube.com",
+    "date": "2026-11-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 255, 261 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50484658",
+    "fetched_at": "2026-11-14T07:43:23Z",
+    "title_zh": "Jonathan Blow – 如果人工智能解决了编码问题，为什么我的软件还是一样？ [视频]"
+  },
+  {
+    "title": "After 600 experiments, here's what I discovered about JEPA world models",
+    "url": "https://haddyalchaer.com/jepa",
+    "source": "haddyalchaer.com",
+    "date": "2026-11-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from haddyalchaer.com. Hacker News score 247, 40 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50487185",
+    "fetched_at": "2026-11-14T07:43:23Z",
+    "title_zh": "经过 600 次实验，以下是我对 JEPA 世界模型的发现"
+  },
+  {
+    "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+    "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+    "source": "scottjg.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from scottjg.com. Hacker News score 736, 211 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50474959",
+    "fetched_at": "2026-11-14T07:43:25Z",
+    "title_zh": "对我的 Coway 空气净化器进行逆向工程以消除云"
+  },
+  {
     "title": "Anthropic IPO",
     "url": "https://ipo.anthropic.com/us/",
     "source": "ipo.anthropic.com",
@@ -108,6 +207,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50463899",
     "fetched_at": "2026-11-12T08:31:09Z",
     "title_zh": "Humble Bundle 刚刚通过 vivicoding 破坏了大部分安全性"
+  },
+  {
+    "title": "Easy-Lang: Evangel Quiwa's Programming Language",
+    "url": "https://github.com/jjuliano/easy-lang",
+    "source": "github.com",
+    "date": "2026-11-11",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 5, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50452998",
+    "fetched_at": "2026-11-14T07:43:25Z",
+    "title_zh": "Easy-Lang：Evangel Quiwa 的编程语言"
   },
   {
     "title": "Sift: LSP, Lint, Format Lisp, Scheme and Emacs Lisp",
