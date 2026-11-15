@@ -1,5 +1,71 @@
 [
   {
+    "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
+    "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+    "source": "github.com",
+    "date": "2026-11-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 29, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50503930",
+    "fetched_at": "2026-11-15T07:59:30Z",
+    "title_zh": "显示 HN：Turbo-Browser-MCP – 批量表单、DOM 增量和 MCP 提交防护"
+  },
+  {
+    "title": "Show HN: Gawain – Require type hints on all Python variables",
+    "url": "https://github.com/matheuzgomes/gawain",
+    "source": "github.com",
+    "date": "2026-11-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 37, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50504072",
+    "fetched_at": "2026-11-15T07:59:29Z",
+    "title_zh": "Show HN: Gawain – 需要所有 Python 变量的类型提示"
+  },
+  {
+    "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+    "url": "https://gitlab.com/snipedbywifi/terminactory",
+    "source": "gitlab.com",
+    "date": "2026-11-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from gitlab.com. Hacker News score 155, 38 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50497132",
+    "fetched_at": "2026-11-15T07:59:32Z",
+    "title_zh": "Show HN：一款终端原生闲置工厂游戏，用 Rust 和ratatui 编写"
+  },
+  {
+    "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+    "source": "github.com",
+    "date": "2026-11-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 224, 21 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50497589",
+    "fetched_at": "2026-11-15T07:59:31Z",
+    "title_zh": "以约 200 行纯 Jax 代码显示 HN：DeepSeek V3"
+  },
+  {
+    "title": "PyPI's redesigned project pages with clearer security signals are now live",
+    "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+    "source": "blog.pypi.org",
+    "date": "2026-11-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.pypi.org. Hacker News score 232, 99 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50497892",
+    "fetched_at": "2026-11-15T07:59:30Z",
+    "title_zh": "PyPI 重新设计的项目页面现已上线，具有更清晰的安全信号"
+  },
+  {
+    "title": "KDE: The documentary [video]",
+    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+    "source": "tube.kockatoo.org",
+    "date": "2026-11-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from tube.kockatoo.org. Hacker News score 445, 98 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50496976",
+    "fetched_at": "2026-11-15T07:59:29Z",
+    "title_zh": "KDE：纪录片 [视频]"
+  },
+  {
     "title": "Security Agencies Worldwide Found to Use Ad-Based Surveillance System",
     "url": "https://citizenlab.ca/security-agencies-worldwide-found-to-use-ad-based-surveillance-system/",
     "source": "citizenlab.ca",
@@ -31,6 +97,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50493062",
     "fetched_at": "2026-11-14T07:43:21Z",
     "title_zh": "ggml v1.0.0"
+  },
+  {
+    "title": "Memory Safety Bugs in Rust Standard Library",
+    "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
+    "source": "forge-blog.github.io",
+    "date": "2026-11-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from forge-blog.github.io. Hacker News score 83, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50478701",
+    "fetched_at": "2026-11-15T07:59:28Z",
+    "title_zh": "Rust 标准库中的内存安全错误"
   },
   {
     "title": "Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures",
@@ -86,6 +163,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50487185",
     "fetched_at": "2026-11-14T07:43:23Z",
     "title_zh": "经过 600 次实验，以下是我对 JEPA 世界模型的发现"
+  },
+  {
+    "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+    "url": "https://unemploymentlabs.com/checkpoint-forensics",
+    "source": "unemploymentlabs.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from unemploymentlabs.com. Hacker News score 397, 169 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50474883",
+    "fetched_at": "2026-11-15T07:59:33Z",
+    "title_zh": "中国前沿人工智能模型带有出口管制GPU的指纹"
   },
   {
     "title": "Reverse engineering my Coway air purifier to ditch the cloud",
@@ -330,6 +418,17 @@
     "title_zh": "Greg Kurtzer 的 Ginux 现在是用户空间内核"
   },
   {
+    "title": "Generative AI uses more energy on non-English text",
+    "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+    "source": "news.umich.edu",
+    "date": "2026-11-10",
+    "repost": true,
+    "summary": "转载 / Curated repost from news.umich.edu. Hacker News score 203, 104 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50441444",
+    "fetched_at": "2026-11-15T07:59:31Z",
+    "title_zh": "生成式人工智能在非英语文本上使用更多能量"
+  },
+  {
     "title": "Jane Street: Socratic Tutor",
     "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
     "source": "github.com",
@@ -537,6 +636,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50421155",
     "fetched_at": "2026-11-09T08:12:37Z",
     "title_zh": "Show HN：Flide：使类似 Jev 的决策模型速度提高 9.5 倍"
+  },
+  {
+    "title": "Reverse engineering a vintage diode-transistor logic chip",
+    "url": "https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
+    "source": "righto.com",
+    "date": "2026-11-08",
+    "repost": true,
+    "summary": "转载 / Curated repost from righto.com. Hacker News score 106, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50416011",
+    "fetched_at": "2026-11-15T07:59:32Z",
+    "title_zh": "对老式二极管晶体管逻辑芯片进行逆向工程"
   },
   {
     "title": "I gave an agent a lakehouse and control of my garden",
