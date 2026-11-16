@@ -1,5 +1,71 @@
 [
   {
+    "title": "Nvidia's Days as an Open Checkbook for the AI Economy Are Numbered",
+    "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388",
+    "source": "wsj.com",
+    "date": "2026-11-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from wsj.com. Hacker News score 16, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50513876",
+    "fetched_at": "2026-11-16T08:08:29Z",
+    "title_zh": "Nvidia 作为人工智能经济开放支票簿的日子已经屈指可数了"
+  },
+  {
+    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
+    "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+    "source": "nytimes.com",
+    "date": "2026-11-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from nytimes.com. Hacker News score 492, 226 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50506180",
+    "fetched_at": "2026-11-16T08:08:29Z",
+    "title_zh": "卢特尼克敦促削弱与其家族企业重叠的芯片规则"
+  },
+  {
+    "title": "Eclipse Mosquitto – An open source MQTT broker",
+    "url": "https://github.com/eclipse-mosquitto/mosquitto",
+    "source": "github.com",
+    "date": "2026-11-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 88, 30 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50509416",
+    "fetched_at": "2026-11-16T08:08:27Z",
+    "title_zh": "Eclipse Mosquitto – 开源 MQTT 代理"
+  },
+  {
+    "title": "Emacs Is My Browser",
+    "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+    "source": "joshblais.com",
+    "date": "2026-11-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from joshblais.com. Hacker News score 203, 116 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50507553",
+    "fetched_at": "2026-11-16T08:08:27Z",
+    "title_zh": "Emacs 是我的浏览器"
+  },
+  {
+    "title": "Parcel: A desktop mail client for Linux, built with Zig",
+    "url": "https://tangled.org/rockorager.dev/parcel",
+    "source": "tangled.org",
+    "date": "2026-11-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from tangled.org. Hacker News score 26, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50512218",
+    "fetched_at": "2026-11-16T08:08:27Z",
+    "title_zh": "Parcel：Linux 桌面邮件客户端，使用 Zig 构建"
+  },
+  {
+    "title": "A short explainer on how El Niño works [video]",
+    "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+    "source": "youtube.com",
+    "date": "2026-11-15",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 226, 97 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50509308",
+    "fetched_at": "2026-11-16T08:08:25Z",
+    "title_zh": "关于厄尔尼诺现象如何运作的简短解释[视频]"
+  },
+  {
     "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
     "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
     "source": "github.com",
@@ -99,6 +165,28 @@
     "title_zh": "ggml v1.0.0"
   },
   {
+    "title": "What thousands of conversations look like inside a language model",
+    "url": "https://operator0x.com/field-notes/qwen-conversation-state-space/",
+    "source": "operator0x.com",
+    "date": "2026-11-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from operator0x.com. Hacker News score 121, 29 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50481321",
+    "fetched_at": "2026-11-16T08:08:28Z",
+    "title_zh": "语言模型中的数千个对话是什么样子的"
+  },
+  {
+    "title": "Artificial Intelligence for the Z80",
+    "url": "https://www.dfsantos.com/en/libro-ia-z80",
+    "source": "dfsantos.com",
+    "date": "2026-11-13",
+    "repost": true,
+    "summary": "转载 / Curated repost from dfsantos.com. Hacker News score 31, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50485275",
+    "fetched_at": "2026-11-16T08:08:26Z",
+    "title_zh": "Z80 的人工智能"
+  },
+  {
     "title": "Memory Safety Bugs in Rust Standard Library",
     "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
     "source": "forge-blog.github.io",
@@ -163,6 +251,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50487185",
     "fetched_at": "2026-11-14T07:43:23Z",
     "title_zh": "经过 600 次实验，以下是我对 JEPA 世界模型的发现"
+  },
+  {
+    "title": "What happens if you write a TCP stack in Python? (2014)",
+    "url": "https://jvns.ca/blog/2014/08/12/what-happens-if-you-write-a-tcp-stack-in-python/",
+    "source": "jvns.ca",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from jvns.ca. Hacker News score 14, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50469342",
+    "fetched_at": "2026-11-16T08:08:29Z",
+    "title_zh": "如果用 Python 编写 TCP 堆栈会发生什么？ (2014)"
+  },
+  {
+    "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+    "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+    "source": "youtube.com",
+    "date": "2026-11-12",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 423, 197 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50463399",
+    "fetched_at": "2026-11-16T08:08:28Z",
+    "title_zh": "Claude Code 和 Codex 通过 3 美元的 Arduino 对我 1994 年吉普车的 ECU 进行了逆向工程 [视频]"
   },
   {
     "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
