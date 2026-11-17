@@ -1,5 +1,104 @@
 [
   {
+    "title": "Show HN: Pulsar – cross-harness agent to agent communication and messaging",
+    "url": "https://github.com/yocontra/pulsar",
+    "source": "github.com",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 15, 0 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50526967",
+    "fetched_at": "2026-11-17T09:23:32Z",
+    "title_zh": "Show HN：Pulsar – 代理之间的跨线束通信和消息传递"
+  },
+  {
+    "title": "Tokendoctor – See what your Claude Code use overpays",
+    "url": "https://github.com/localixai/tokendoctor",
+    "source": "github.com",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 25, 12 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50526584",
+    "fetched_at": "2026-11-17T09:23:31Z",
+    "title_zh": "Tokendoctor – 查看您的 Claude Code 使用的超额费用"
+  },
+  {
+    "title": "Running coding agents without handing them my credentials",
+    "url": "https://blog.antonio.cx/running-agents-with-lend",
+    "source": "blog.antonio.cx",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.antonio.cx. Hacker News score 113, 74 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50526152",
+    "fetched_at": "2026-11-17T09:23:30Z",
+    "title_zh": "运行编码代理而不向他们提供我的凭据"
+  },
+  {
+    "title": "Rust changed me as a developer",
+    "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
+    "source": "blog.startifact.com",
+    "date": "2026-11-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.startifact.com. Hacker News score 255, 162 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50522563",
+    "fetched_at": "2026-11-17T09:23:33Z",
+    "title_zh": "Rust 改变了我作为一名开发人员"
+  },
+  {
+    "title": "Aristotle Expands into Rust",
+    "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
+    "source": "harmonic.fun",
+    "date": "2026-11-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from harmonic.fun. Hacker News score 116, 61 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50520270",
+    "fetched_at": "2026-11-17T09:23:33Z",
+    "title_zh": "亚里士多德扩展到 Rust"
+  },
+  {
+    "title": "How to Break into Security, Ptacek Edition (2012)",
+    "url": "https://krebsonsecurity.com/2012/06/how-to-break-into-security-ptacek-edition/",
+    "source": "krebsonsecurity.com",
+    "date": "2026-11-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from krebsonsecurity.com. Hacker News score 106, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50524225",
+    "fetched_at": "2026-11-17T09:23:32Z",
+    "title_zh": "如何闯入安全，Ptacek 版 (2012)"
+  },
+  {
+    "title": "Show HN: Sutra-OS – A self-hosted ontology platform",
+    "url": "https://github.com/0nelight/sutra-os",
+    "source": "github.com",
+    "date": "2026-11-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 56, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50525052",
+    "fetched_at": "2026-11-17T09:23:32Z",
+    "title_zh": "Show HN：Sutra-OS – 自托管本体平台"
+  },
+  {
+    "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+    "source": "xusheng.dev",
+    "date": "2026-11-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from xusheng.dev. Hacker News score 588, 421 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50524736",
+    "fetched_at": "2026-11-17T09:23:29Z",
+    "title_zh": "Windows 11 正在收集有关您使用的编码代理和开发人员工具的数据"
+  },
+  {
+    "title": "Jiff 1.0: A datetime library for Rust",
+    "url": "https://burntsushi.net/jiff/",
+    "source": "burntsushi.net",
+    "date": "2026-11-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from burntsushi.net. Hacker News score 376, 83 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50519744",
+    "fetched_at": "2026-11-17T09:23:29Z",
+    "title_zh": "Jiff 1.0：Rust 的日期时间库"
+  },
+  {
     "title": "Nvidia's Days as an Open Checkbook for the AI Economy Are Numbered",
     "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388",
     "source": "wsj.com",
@@ -86,6 +185,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50504072",
     "fetched_at": "2026-11-15T07:59:29Z",
     "title_zh": "Show HN: Gawain – 需要所有 Python 变量的类型提示"
+  },
+  {
+    "title": "Show HN: Zigzag, a native Mac browser for people leaving Arc",
+    "url": "https://github.com/ZigaoWang/zigzag",
+    "source": "github.com",
+    "date": "2026-11-14",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 46, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50496787",
+    "fetched_at": "2026-11-17T09:23:28Z",
+    "title_zh": "Show HN：Zigzag，一款专为离开 Arc 的人设计的原生 Mac 浏览器"
   },
   {
     "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
