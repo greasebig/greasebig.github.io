@@ -1,5 +1,115 @@
 [
   {
+    "title": "Claude was trained on protein sequences at scale",
+    "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+    "source": "xinmingtu.cn",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from xinmingtu.cn. Hacker News score 40, 16 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50541619",
+    "fetched_at": "2026-11-18T08:42:20Z",
+    "title_zh": "Claude接受了大规模蛋白质序列的训练"
+  },
+  {
+    "title": "AI is killing All About Berlin",
+    "url": "https://nicolasbouliane.com/blog/death-by-ai",
+    "source": "nicolasbouliane.com",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from nicolasbouliane.com. Hacker News score 226, 178 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50542705",
+    "fetched_at": "2026-11-18T08:42:13Z",
+    "title_zh": "人工智能正在扼杀《柏林万象》"
+  },
+  {
+    "title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
+    "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/",
+    "source": "reddit.com",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from reddit.com. Hacker News score 325, 69 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50542135",
+    "fetched_at": "2026-11-18T08:42:09Z",
+    "title_zh": "在一家YC孵化的初创公司面试时，我发现他们未经许可就使用了我的LinkedIn。"
+  },
+  {
+    "title": "Google's AI answers reducing search traffic by 40%",
+    "url": "https://revscope.co/blog/search-seo-geo-2026/",
+    "source": "revscope.co",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from revscope.co. Hacker News score 346, 263 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50540178",
+    "fetched_at": "2026-11-18T08:42:07Z",
+    "title_zh": "谷歌的AI答案使搜索流量减少了40%"
+  },
+  {
+    "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+    "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+    "source": "complexdiscovery.com",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from complexdiscovery.com. Hacker News score 169, 225 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50538303",
+    "fetched_at": "2026-11-18T08:42:23Z",
+    "title_zh": "哈佛大学研究人员发现，人工智能编码代理将瓶颈转移到了代码审查上"
+  },
+  {
+    "title": "jQuery 4.1.0",
+    "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+    "source": "github.com",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 317, 163 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50537156",
+    "fetched_at": "2026-11-18T08:42:18Z",
+    "title_zh": "jQuery 4.1.0"
+  },
+  {
+    "title": "Highly classified US national security communications network goes down",
+    "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+    "source": "cnn.com",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from cnn.com. Hacker News score 565, 652 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50532849",
+    "fetched_at": "2026-11-18T08:42:16Z",
+    "title_zh": "美国高度机密的国家安全通信网络瘫痪"
+  },
+  {
+    "title": "Microsoft's ONNX Runtime has disappeared from GitHub",
+    "url": "https://github.com/microsoft/onnxruntime",
+    "source": "github.com",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 301, 66 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50539610",
+    "fetched_at": "2026-11-18T08:42:11Z",
+    "title_zh": "微软的 ONNX Runtime 已从 GitHub 上消失"
+  },
+  {
+    "title": "Quad9's withdrawal from France: A canary in the coal mine",
+    "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+    "source": "blog.cloudflare.com",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.cloudflare.com. Hacker News score 543, 167 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50538994",
+    "fetched_at": "2026-11-18T08:42:05Z",
+    "title_zh": "Quad9退出法国：煤矿中的金丝雀"
+  },
+  {
+    "title": "GPT‑6.2 Astra and Sol",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+    "source": "openai.com",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 1251, 774 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50535230",
+    "fetched_at": "2026-11-18T08:42:02Z",
+    "title_zh": "GPT‑6.2 Astra 和 Sol"
+  },
+  {
     "title": "Show HN: Pulsar – cross-harness agent to agent communication and messaging",
     "url": "https://github.com/yocontra/pulsar",
     "source": "github.com",
