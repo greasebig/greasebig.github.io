@@ -1,5 +1,93 @@
 [
   {
+    "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
+    "url": "https://arxiv.org/abs/2607.29378",
+    "source": "arxiv.org",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 45, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50554908",
+    "fetched_at": "2026-11-19T08:57:58Z",
+    "title_zh": "基于前一个标记预测的LLM反演，用于提示重建"
+  },
+  {
+    "title": "Unreal Tournament 2004 in the Browser",
+    "url": "https://ut2004.dev/",
+    "source": "ut2004.dev",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from ut2004.dev. Hacker News score 152, 73 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50554935",
+    "fetched_at": "2026-11-19T08:57:48Z",
+    "title_zh": "在浏览器中玩《虚幻竞技场2004》"
+  },
+  {
+    "title": "AI agents ask better questions than KPMG accountants in audit trial",
+    "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+    "source": "europeanbusinessmagazine.com",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from europeanbusinessmagazine.com. Hacker News score 450, 205 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50547777",
+    "fetched_at": "2026-11-19T08:57:54Z",
+    "title_zh": "在审计测试中，人工智能代理提出的问题比毕马威会计师提出的问题更好"
+  },
+  {
+    "title": "Advancing chip design with OpenAI models",
+    "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+    "source": "openai.com",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 203, 136 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50549493",
+    "fetched_at": "2026-11-19T08:57:52Z",
+    "title_zh": "利用 OpenAI 模型推进芯片设计"
+  },
+  {
+    "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+    "url": "https://rshekhar.com/voyager/",
+    "source": "rshekhar.com",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from rshekhar.com. Hacker News score 194, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50548161",
+    "fetched_at": "2026-11-19T08:57:45Z",
+    "title_zh": "Show HN：将“旅行者1号”拆解至单个内存芯片"
+  },
+  {
+    "title": "LLM assisted reverse engineering",
+    "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+    "source": "slowchronicle.com",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from slowchronicle.com. Hacker News score 194, 46 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50553225",
+    "fetched_at": "2026-11-19T08:57:39Z",
+    "title_zh": "LLM 辅助逆向工程"
+  },
+  {
+    "title": "Anthropic prices initial public offering",
+    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+    "source": "anthropic.com",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 194, 251 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50553843",
+    "fetched_at": "2026-11-19T08:57:37Z",
+    "title_zh": "Anthropic首次公开募股价格"
+  },
+  {
+    "title": "Seven new models at scalable price-performance",
+    "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+    "source": "microsoft.ai",
+    "date": "2026-11-18",
+    "repost": true,
+    "summary": "转载 / Curated repost from microsoft.ai. Hacker News score 534, 347 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50548021",
+    "fetched_at": "2026-11-19T08:57:35Z",
+    "title_zh": "七款新机型，具备可扩展的性价比"
+  },
+  {
     "title": "Claude was trained on protein sequences at scale",
     "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
     "source": "xinmingtu.cn",
@@ -141,6 +229,28 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50526152",
     "fetched_at": "2026-11-17T09:23:30Z",
     "title_zh": "运行编码代理而不向他们提供我的凭据"
+  },
+  {
+    "title": "Show HN: Open-source, real-time object tracking for live video feeds",
+    "url": "https://github.com/aryamandarda/tamserve",
+    "source": "github.com",
+    "date": "2026-11-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 86, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50523377",
+    "fetched_at": "2026-11-19T08:57:50Z",
+    "title_zh": "Show HN：用于直播视频源的开源实时物体跟踪"
+  },
+  {
+    "title": "Logitech Harmony IR code online database archive",
+    "url": "https://github.com/pickysysadmin/logitech-harmony-ir-archive",
+    "source": "github.com",
+    "date": "2026-11-16",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 16, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50519778",
+    "fetched_at": "2026-11-19T08:57:42Z",
+    "title_zh": "罗技 Harmony 红外码在线数据库存档"
   },
   {
     "title": "Rust changed me as a developer",
