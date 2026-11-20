@@ -1,5 +1,104 @@
 [
   {
+    "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+    "url": "https://github.com/openssl/openssl/pull/33652",
+    "source": "github.com",
+    "date": "2026-11-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 208, 153 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50569226",
+    "fetched_at": "2026-11-20T08:44:20Z",
+    "title_zh": "OpenSSL：EVP_EncodeBlock() 中的缓冲区溢出（CVE-2026-121481，CVSS 9.8）"
+  },
+  {
+    "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
+    "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
+    "source": "krthr.co",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from krthr.co. Hacker News score 290, 61 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50559719",
+    "fetched_at": "2026-11-20T08:44:42Z",
+    "title_zh": "在浏览器中用一张A4纸制作8页折叠式小册子"
+  },
+  {
+    "title": "Rebuilding my local voice assistant pipeline",
+    "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
+    "source": "blog.platypush.tech",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from blog.platypush.tech. Hacker News score 106, 17 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50566261",
+    "fetched_at": "2026-11-20T08:44:39Z",
+    "title_zh": "重建我的本地语音助手管道"
+  },
+  {
+    "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+    "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+    "source": "youtube.com",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from youtube.com. Hacker News score 102, 203 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50564366",
+    "fetched_at": "2026-11-20T08:44:37Z",
+    "title_zh": "政府是否应该放缓尖端人工智能的发展？Jacob Coxon和Robin Hanson的辩论[视频]"
+  },
+  {
+    "title": "Someone reported java4shell bug in September 2026",
+    "url": "https://github.com/openjdk/jdk/pull/32781",
+    "source": "github.com",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 421, 115 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50558906",
+    "fetched_at": "2026-11-20T08:44:34Z",
+    "title_zh": "有人在2026年9月报告了java4shell漏洞"
+  },
+  {
+    "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+    "url": "https://github.com/onlook-dev/onlook/",
+    "source": "github.com",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 116, 81 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50562320",
+    "fetched_at": "2026-11-20T08:44:32Z",
+    "title_zh": "HN发布：Onlook（YC W25）——面向设计师的开源开发者工具"
+  },
+  {
+    "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+    "url": "https://thedataexchange.media/pete-warden-moonshine/",
+    "source": "thedataexchange.media",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from thedataexchange.media. Hacker News score 234, 211 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50561508",
+    "fetched_at": "2026-11-20T08:44:30Z",
+    "title_zh": "Pete Warden谈本地人工智能、开源模型、语音界面、硬件的未来"
+  },
+  {
+    "title": "Synology Security Advisory",
+    "url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
+    "source": "synology.com",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from synology.com. Hacker News score 138, 108 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50567209",
+    "fetched_at": "2026-11-20T08:44:25Z",
+    "title_zh": "Synology 安全公告"
+  },
+  {
+    "title": "Claude solves two open problems in the physics of black holes",
+    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+    "source": "anthropic.com",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from anthropic.com. Hacker News score 488, 222 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50563148",
+    "fetched_at": "2026-11-20T08:44:23Z",
+    "title_zh": "Claude解决了黑洞物理学中的两个未决问题"
+  },
+  {
     "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
     "url": "https://arxiv.org/abs/2607.29378",
     "source": "arxiv.org",
@@ -130,6 +229,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50540178",
     "fetched_at": "2026-11-18T08:42:07Z",
     "title_zh": "谷歌的AI答案使搜索流量减少了40%"
+  },
+  {
+    "title": "Weight-Space Programming builds neural networks like a 1990s researcher",
+    "url": "https://notesbylex.com/weight-space-programming-1990s",
+    "source": "notesbylex.com",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from notesbylex.com. Hacker News score 79, 5 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50538977",
+    "fetched_at": "2026-11-20T08:44:28Z",
+    "title_zh": "权重空间编程像 20 世纪 90 年代的研究人员一样构建神经网络"
   },
   {
     "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
