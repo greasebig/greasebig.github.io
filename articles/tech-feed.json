@@ -1,5 +1,93 @@
 [
   {
+    "title": "ClawDOS – An AI coding agent for DOS",
+    "url": "http://ricapar.net/ClawDOS/",
+    "source": "ricapar.net",
+    "date": "2026-11-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from ricapar.net. Hacker News score 40, 9 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50586292",
+    "fetched_at": "2026-11-21T08:25:55Z",
+    "title_zh": "ClawDOS – DOS 的人工智能编码代理"
+  },
+  {
+    "title": "Clojure will affect the way you think about programming (2017)",
+    "url": "https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/",
+    "source": "eli.thegreenplace.net",
+    "date": "2026-11-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from eli.thegreenplace.net. Hacker News score 68, 24 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50585376",
+    "fetched_at": "2026-11-21T08:25:55Z",
+    "title_zh": "Clojure 将影响你对编程的思考方式 (2017)"
+  },
+  {
+    "title": "Show HN: OpenComputer – an open source alternative to Devin",
+    "url": "https://github.com/diggerhq/opencomputer",
+    "source": "github.com",
+    "date": "2026-11-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 104, 28 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50581403",
+    "fetched_at": "2026-11-21T08:25:59Z",
+    "title_zh": "Show HN：OpenComputer – Devin 的开源替代方案"
+  },
+  {
+    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+    "url": "https://architectlabs.com/blog/frostbite",
+    "source": "architectlabs.com",
+    "date": "2026-11-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from architectlabs.com. Hacker News score 642, 333 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50572503",
+    "fetched_at": "2026-11-21T08:25:59Z",
+    "title_zh": "Frostbite：由 AI 发现、设计和验证的新 CPU 架构"
+  },
+  {
+    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+    "source": "theguardian.com",
+    "date": "2026-11-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from theguardian.com. Hacker News score 276, 546 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50574383",
+    "fetched_at": "2026-11-21T08:25:57Z",
+    "title_zh": "由于人工智能抛售抑制了 Anthropic 的第二天，纳斯达克指数抹去了 2026 年的全部涨幅"
+  },
+  {
+    "title": "Vibecoding an inference chip",
+    "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
+    "source": "ankitg.me",
+    "date": "2026-11-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from ankitg.me. Hacker News score 139, 58 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50579297",
+    "fetched_at": "2026-11-21T08:25:57Z",
+    "title_zh": "对推理芯片进行 Vibecoding"
+  },
+  {
+    "title": "Language Models Can Rewrite Their Own Weights",
+    "url": "https://arxiv.org/abs/2611.21885",
+    "source": "arxiv.org",
+    "date": "2026-11-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from arxiv.org. Hacker News score 395, 117 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50577265",
+    "fetched_at": "2026-11-21T08:25:56Z",
+    "title_zh": "语言模型可以重写自己的权重"
+  },
+  {
+    "title": "Finite-time blow-up for the Navier–Stokes equations",
+    "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+    "source": "github.com",
+    "date": "2026-11-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 279, 88 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50576232",
+    "fetched_at": "2026-11-21T08:25:56Z",
+    "title_zh": "纳维-斯托克斯方程的有限时间爆炸"
+  },
+  {
     "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
     "url": "https://github.com/openssl/openssl/pull/33652",
     "source": "github.com",
@@ -9,6 +97,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50569226",
     "fetched_at": "2026-11-20T08:44:20Z",
     "title_zh": "OpenSSL：EVP_EncodeBlock() 中的缓冲区溢出（CVE-2026-121481，CVSS 9.8）"
+  },
+  {
+    "title": "Show HN: LZ0 -An asymmetric LZ compressor with ultra minimal, 0-alloc decoder",
+    "url": "https://github.com/seb3773/lz0",
+    "source": "github.com",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 10, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50564684",
+    "fetched_at": "2026-11-21T08:26:00Z",
+    "title_zh": "显示 HN：LZ0 - 具有超小型、0 分配解码器的非对称 LZ 压缩器"
   },
   {
     "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
@@ -229,6 +328,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50540178",
     "fetched_at": "2026-11-18T08:42:07Z",
     "title_zh": "谷歌的AI答案使搜索流量减少了40%"
+  },
+  {
+    "title": "Show HN: I made an audio-to-MIDI model 60x more efficient",
+    "url": "https://kobi.music/research/dettato",
+    "source": "kobi.music",
+    "date": "2026-11-17",
+    "repost": true,
+    "summary": "转载 / Curated repost from kobi.music. Hacker News score 274, 57 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50526023",
+    "fetched_at": "2026-11-21T08:25:58Z",
+    "title_zh": "Show HN：我将音频转 MIDI 模型的效率提高了 60 倍"
   },
   {
     "title": "Weight-Space Programming builds neural networks like a 1990s researcher",
