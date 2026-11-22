@@ -1,5 +1,115 @@
 [
   {
+    "title": "Leonida – PC Recompilation of the Xbox Version of GTA 6",
+    "url": "https://github.com/ItsNotRexed/Leonida",
+    "source": "github.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 141, 107 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50595168",
+    "fetched_at": "2026-11-22T08:18:46Z",
+    "title_zh": "Leonida – GTA 6 Xbox版本的PC重制版"
+  },
+  {
+    "title": "The Mythology of Conscious AI",
+    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+    "source": "noemamag.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from noemamag.com. Hacker News score 48, 89 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50595537",
+    "fetched_at": "2026-11-22T08:18:37Z",
+    "title_zh": "有意识人工智能的神话"
+  },
+  {
+    "title": "Data Processing Incidents on Inference Providers",
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+    "source": "openrouter.ai",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from openrouter.ai. Hacker News score 119, 47 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50595554",
+    "fetched_at": "2026-11-22T08:18:33Z",
+    "title_zh": "推理提供商的数据处理事件"
+  },
+  {
+    "title": "Show HN: The Riemann Proof Handbook",
+    "url": "https://github.com/tamnd/riemann-handbook",
+    "source": "github.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 28, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50596664",
+    "fetched_at": "2026-11-22T08:18:30Z",
+    "title_zh": "Show HN：黎曼猜想证明手册"
+  },
+  {
+    "title": "AI Supply Chain Security: What Canary Tokens Found",
+    "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+    "source": "dragos.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from dragos.com. Hacker News score 72, 10 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50596511",
+    "fetched_at": "2026-11-22T08:18:28Z",
+    "title_zh": "人工智能供应链安全：金丝雀令牌的发现"
+  },
+  {
+    "title": "GnuPG Security Advisory for GPGME",
+    "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+    "source": "lists.gnupg.org",
+    "date": "2026-11-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from lists.gnupg.org. Hacker News score 250, 99 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50587208",
+    "fetched_at": "2026-11-22T08:18:43Z",
+    "title_zh": "GPGME的GnuPG安全公告"
+  },
+  {
+    "title": "Pandex – Official European Law for AI Agents, over MCP",
+    "url": "https://www.pandex.io",
+    "source": "pandex.io",
+    "date": "2026-11-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from pandex.io. Hacker News score 78, 14 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50593481",
+    "fetched_at": "2026-11-22T08:18:41Z",
+    "title_zh": "Pandex – 关于 AI 代理的欧洲官方法律，通过 MCP"
+  },
+  {
+    "title": "Advice for the next 100 Rust GUIs",
+    "url": "https://linebender.org/blog/next-100-guis/",
+    "source": "linebender.org",
+    "date": "2026-11-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from linebender.org. Hacker News score 152, 50 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50593737",
+    "fetched_at": "2026-11-22T08:18:39Z",
+    "title_zh": "关于未来100个Rust GUI的建议"
+  },
+  {
+    "title": "PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors",
+    "url": "https://github.com/sebaandrada-cell/PcapAnalyzer",
+    "source": "github.com",
+    "date": "2026-11-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 106, 11 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50594132",
+    "fetched_at": "2026-11-22T08:18:35Z",
+    "title_zh": "PcapAnalyzer – 自托管pcap分析器，配备27个问题检测器"
+  },
+  {
+    "title": "Inkling-2-Mini in 5.4 GB Memory",
+    "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+    "source": "github.com",
+    "date": "2026-11-21",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 442, 110 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50591853",
+    "fetched_at": "2026-11-22T08:18:32Z",
+    "title_zh": "Inkling-2-Mini，5.4 GB 内存"
+  },
+  {
     "title": "ClawDOS – An AI coding agent for DOS",
     "url": "http://ricapar.net/ClawDOS/",
     "source": "ricapar.net",
