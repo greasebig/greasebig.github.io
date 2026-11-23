@@ -1,5 +1,93 @@
 [
   {
+    "title": "XNU Linux: Full OS X GUI Userspace on Linux",
+    "url": "https://github.com/AFK-surf/xnulinux",
+    "source": "github.com",
+    "date": "2026-11-23",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 267, 121 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50607261",
+    "fetched_at": "2026-11-23T09:18:00Z",
+    "title_zh": "XNU Linux：Linux上的完整OS X GUI用户空间"
+  },
+  {
+    "title": "Harvard CS 2881R AI Safety",
+    "url": "https://boazbk.github.io/mltheoryseminar/",
+    "source": "boazbk.github.io",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from boazbk.github.io. Hacker News score 66, 8 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50602153",
+    "fetched_at": "2026-11-23T09:18:20Z",
+    "title_zh": "哈佛大学 CS 2881R 人工智能安全"
+  },
+  {
+    "title": "Localcode, open source agentic coding on your Mac with one command",
+    "url": "https://github.com/mjwsolo/localcode",
+    "source": "github.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 59, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50604540",
+    "fetched_at": "2026-11-23T09:18:17Z",
+    "title_zh": "LocalCode，在您的 Mac 上使用一条命令进行开源代理式编码"
+  },
+  {
+    "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
+    "url": "https://0rwx.com/",
+    "source": "0rwx.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from 0rwx.com. Hacker News score 52, 13 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50605445",
+    "fetched_at": "2026-11-23T09:18:15Z",
+    "title_zh": "0rwx – 一种简单的人工智能使用模型，灵感源自 Unix 权限"
+  },
+  {
+    "title": "Show HN: I built a game where you are an LLM's subagent",
+    "url": "https://github.com/gulivan/worker755",
+    "source": "github.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 314, 77 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50599762",
+    "fetched_at": "2026-11-23T09:18:11Z",
+    "title_zh": "Show HN：我开发了一款游戏，在游戏中您是LLM的子代理"
+  },
+  {
+    "title": "GL.iNet Security Notice 2026-11-20",
+    "url": "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20",
+    "source": "gl-inet.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from gl-inet.com. Hacker News score 194, 95 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50604988",
+    "fetched_at": "2026-11-23T09:18:06Z",
+    "title_zh": "GL.iNet 安全公告 2026-11-20"
+  },
+  {
+    "title": "Perplexity and Intelligence",
+    "url": "https://openai.com/index/perplexity-and-intelligence/",
+    "source": "openai.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 582, 396 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50601525",
+    "fetched_at": "2026-11-23T09:18:04Z",
+    "title_zh": "困惑度和智能"
+  },
+  {
+    "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+    "source": "gpupartner.com",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from gpupartner.com. Hacker News score 487, 201 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50603845",
+    "fetched_at": "2026-11-23T09:18:02Z",
+    "title_zh": "Inkling、Qwen 和 Unsloth 本地 AI 新手指南"
+  },
+  {
     "title": "Leonida – PC Recompilation of the Xbox Version of GTA 6",
     "url": "https://github.com/ItsNotRexed/Leonida",
     "source": "github.com",
@@ -132,6 +220,17 @@
     "title_zh": "Clojure 将影响你对编程的思考方式 (2017)"
   },
   {
+    "title": "Verifying formal models of Raft implementations",
+    "url": "https://antithesis.com/blog/2026/verifying-formal-models/",
+    "source": "antithesis.com",
+    "date": "2026-11-20",
+    "repost": true,
+    "summary": "转载 / Curated repost from antithesis.com. Hacker News score 40, 1 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50577353",
+    "fetched_at": "2026-11-23T09:18:13Z",
+    "title_zh": "验证 Raft 实现的正式模型"
+  },
+  {
     "title": "Show HN: OpenComputer – an open source alternative to Devin",
     "url": "https://github.com/diggerhq/opencomputer",
     "source": "github.com",
@@ -207,6 +306,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50569226",
     "fetched_at": "2026-11-20T08:44:20Z",
     "title_zh": "OpenSSL：EVP_EncodeBlock() 中的缓冲区溢出（CVE-2026-121481，CVSS 9.8）"
+  },
+  {
+    "title": "De-fanging dangerous triggers in GitHub Actions across an organization",
+    "url": "https://alpha-omega.dev/blog/de-fanging-dangerous-triggers-in-github-actions-across-an-organization/",
+    "source": "alpha-omega.dev",
+    "date": "2026-11-19",
+    "repost": true,
+    "summary": "转载 / Curated repost from alpha-omega.dev. Hacker News score 11, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50560120",
+    "fetched_at": "2026-11-23T09:18:09Z",
+    "title_zh": "在整个组织中消除GitHub Actions中的危险触发因素"
   },
   {
     "title": "Show HN: LZ0 -An asymmetric LZ compressor with ultra minimal, 0-alloc decoder",
