@@ -1,5 +1,115 @@
 [
   {
+    "title": "Show HN: Carry – Save every AI conversations as Markdown, in a folder you Own",
+    "url": "https://carry.md/",
+    "source": "carry.md",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from carry.md. Hacker News score 18, 7 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50637995",
+    "fetched_at": "2026-11-25T09:59:26Z",
+    "title_zh": "Show HN：Carry – 将所有 AI 对话以 Markdown 格式保存在您自己的文件夹中"
+  },
+  {
+    "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
+    "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
+    "source": "marginalia.nu",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from marginalia.nu. Hacker News score 112, 49 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50638220",
+    "fetched_at": "2026-11-25T09:59:08Z",
+    "title_zh": "边注搜索、货币、C++、Rust、人工智能、杂项"
+  },
+  {
+    "title": "Show HN: Old Nvidia and ATI tech demos, running again in the browser",
+    "url": "https://gpu-demo-gallery.pages.dev/",
+    "source": "gpu-demo-gallery.pages.dev",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from gpu-demo-gallery.pages.dev. Hacker News score 119, 26 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50638503",
+    "fetched_at": "2026-11-25T09:59:05Z",
+    "title_zh": "Show HN：老款Nvidia和ATI技术演示，再次在浏览器中运行"
+  },
+  {
+    "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+    "source": "lesswrong.com",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from lesswrong.com. Hacker News score 229, 88 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50637686",
+    "fetched_at": "2026-11-25T09:59:03Z",
+    "title_zh": "模型即使处于沙盒环境中，也可以通过推理服务器进行通信"
+  },
+  {
+    "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+    "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+    "source": "github.com",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 628, 332 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50637220",
+    "fetched_at": "2026-11-25T09:59:01Z",
+    "title_zh": "矩阵乘法是 Θ(n^2.25) [pdf]"
+  },
+  {
+    "title": "LLM agents work for their parent companies, not for you",
+    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+    "source": "michaelharley.net",
+    "date": "2026-11-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from michaelharley.net. Hacker News score 973, 403 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50627340",
+    "fetched_at": "2026-11-25T09:59:24Z",
+    "title_zh": "大语言模型 (LLM) 代理为他们的母公司工作，而不是为您工作"
+  },
+  {
+    "title": "GTA 6 Recomp (Leonida) banned from GitHub while lead dev was in school",
+    "url": "https://github.com/ItsNotRexed/Leonida/issues",
+    "source": "github.com",
+    "date": "2026-11-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 364, 648 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50622638",
+    "fetched_at": "2026-11-25T09:59:21Z",
+    "title_zh": "GTA 6 Recomp（Leonida）在首席开发者上学期间被GitHub封禁"
+  },
+  {
+    "title": "A training engine for your local model, using your idle compute",
+    "url": "https://github.com/sous-labs/songe",
+    "source": "github.com",
+    "date": "2026-11-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 215, 66 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50629231",
+    "fetched_at": "2026-11-25T09:59:17Z",
+    "title_zh": "使用您的闲置算力为您的本地模型提供训练引擎"
+  },
+  {
+    "title": "Active intrusion campaign against Check Point security management servers",
+    "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+    "source": "greynoise.io",
+    "date": "2026-11-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from greynoise.io. Hacker News score 282, 141 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50630594",
+    "fetched_at": "2026-11-25T09:59:14Z",
+    "title_zh": "针对 Check Point 安全管理服务器的活跃入侵活动"
+  },
+  {
+    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+    "source": "openai.com",
+    "date": "2026-11-24",
+    "repost": true,
+    "summary": "转载 / Curated repost from openai.com. Hacker News score 264, 83 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50634658",
+    "fetched_at": "2026-11-25T09:59:10Z",
+    "title_zh": "GPT-6模型展现出内在的蛋白质设计能力"
+  },
+  {
     "title": "Jevons Paradox in AI: Cheaper Tokens Won't Pay for Capex",
     "url": "https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex/",
     "source": "philippdubach.com",
