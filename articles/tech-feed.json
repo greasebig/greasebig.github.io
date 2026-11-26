@@ -1,5 +1,95 @@
 [
   {
+    "title": "Unconditional Integer Factorization in Subexponential Time",
+    "url": "https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization",
+    "source": "github.com",
+    "date": "2026-11-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 30, 4 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50651627",
+    "fetched_at": "2026-11-26T09:43:14Z"
+  },
+  {
+    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+    "source": "twitter.com",
+    "date": "2026-11-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 238, 118 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50651117",
+    "fetched_at": "2026-11-26T09:43:09Z"
+  },
+  {
+    "title": "The polynomial Hirsch conjecture is false [pdf]",
+    "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
+    "source": "github.com",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 153, 42 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50644980",
+    "fetched_at": "2026-11-26T09:43:16Z"
+  },
+  {
+    "title": "Bare Metal Qwen",
+    "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+    "source": "github.com",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 146, 36 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50648365",
+    "fetched_at": "2026-11-26T09:43:12Z"
+  },
+  {
+    "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
+    "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+    "source": "opensec.in",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from opensec.in. Hacker News score 141, 56 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50647161",
+    "fetched_at": "2026-11-26T09:43:10Z"
+  },
+  {
+    "title": "Slow Ubuntu security response times",
+    "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+    "source": "openwall.com",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from openwall.com. Hacker News score 285, 136 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50647181",
+    "fetched_at": "2026-11-26T09:43:07Z"
+  },
+  {
+    "title": "The New York Times warns photographers not to update Photoshop over AI features",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+    "source": "theverge.com",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from theverge.com. Hacker News score 385, 322 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50647673",
+    "fetched_at": "2026-11-26T09:43:02Z"
+  },
+  {
+    "title": "Much shorter version of GRH Lean verification from Anthropic",
+    "url": "https://github.com/lsernau/grh-lean",
+    "source": "github.com",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 453, 230 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50648050",
+    "fetched_at": "2026-11-26T09:43:01Z"
+  },
+  {
+    "title": "1Password Security Incident",
+    "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+    "source": "1password.com",
+    "date": "2026-11-25",
+    "repost": true,
+    "summary": "转载 / Curated repost from 1password.com. Hacker News score 1416, 606 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50644817",
+    "fetched_at": "2026-11-26T09:42:58Z"
+  },
+  {
     "title": "Show HN: Carry – Save every AI conversations as Markdown, in a folder you Own",
     "url": "https://carry.md/",
     "source": "carry.md",
@@ -218,6 +308,16 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50607261",
     "fetched_at": "2026-11-23T09:18:00Z",
     "title_zh": "XNU Linux：Linux上的完整OS X GUI用户空间"
+  },
+  {
+    "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
+    "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+    "source": "bjin.github.io",
+    "date": "2026-11-22",
+    "repost": true,
+    "summary": "转载 / Curated repost from bjin.github.io. Hacker News score 371, 105 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50601280",
+    "fetched_at": "2026-11-26T09:43:05Z"
   },
   {
     "title": "Show HN: Type-C – variants, options, generics and pattern matching for C",
