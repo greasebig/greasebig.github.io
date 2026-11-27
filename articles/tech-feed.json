@@ -1,5 +1,115 @@
 [
   {
+    "title": "European Commission Declares Browser Competition a Digital Markets Act Priority",
+    "url": "https://open-web-advocacy.org/es/blog/commission-responds-declares-browser-competition-a-dma-priority/",
+    "source": "open-web-advocacy.org",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from open-web-advocacy.org. Hacker News score 20, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50664191",
+    "fetched_at": "2026-11-27T09:48:42Z",
+    "title_zh": "欧盟委员会宣布浏览器竞争为《数字市场法案》的优先事项"
+  },
+  {
+    "title": "Claude sabotaging SOTA ML research tasks",
+    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+    "source": "twitter.com",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 36, 15 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50664325",
+    "fetched_at": "2026-11-27T09:48:33Z",
+    "title_zh": "Claude 破坏 SOTA 机器学习研究任务"
+  },
+  {
+    "title": "The need for a formally verifiable mainstream programming language",
+    "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+    "source": "blainehansen.me",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from blainehansen.me. Hacker News score 147, 123 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50663089",
+    "fetched_at": "2026-11-27T09:48:30Z",
+    "title_zh": "对正式可验证的主流编程语言的需求"
+  },
+  {
+    "title": "The group chat where your AI talks behind your back",
+    "url": "https://construct22.com/",
+    "source": "construct22.com",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from construct22.com. Hacker News score 221, 90 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50663595",
+    "fetched_at": "2026-11-27T09:48:24Z",
+    "title_zh": "您的AI在背后议论您的群聊"
+  },
+  {
+    "title": "Rvoip: VoIP stack in Rust",
+    "url": "https://github.com/eisenzopf/rvoip",
+    "source": "github.com",
+    "date": "2026-11-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 129, 27 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50658632",
+    "fetched_at": "2026-11-27T09:48:44Z",
+    "title_zh": "Rvoip：Rust中的VoIP堆栈"
+  },
+  {
+    "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+    "source": "techstackups.com",
+    "date": "2026-11-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from techstackups.com. Hacker News score 328, 295 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50653477",
+    "fetched_at": "2026-11-27T09:48:40Z",
+    "title_zh": "Google 将让 AI 代理使用其 MCP 服务器。Gmail 版代理无法发送电子邮件"
+  },
+  {
+    "title": "An introduction to uncertainty in machine learning",
+    "url": "https://chrhenning.com/blog/2026/introduction-to-uncertainty/",
+    "source": "chrhenning.com",
+    "date": "2026-11-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from chrhenning.com. Hacker News score 80, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50658498",
+    "fetched_at": "2026-11-27T09:48:37Z",
+    "title_zh": "机器学习中的不确定性简介"
+  },
+  {
+    "title": "Intel One Mono font (2023)",
+    "url": "https://github.com/intel/intel-one-mono",
+    "source": "github.com",
+    "date": "2026-11-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 521, 252 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50653667",
+    "fetched_at": "2026-11-27T09:48:35Z",
+    "title_zh": "英特尔 One Mono 字体（2023 年）"
+  },
+  {
+    "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+    "url": "https://github.com/antonpictures/youtube-punisher",
+    "source": "github.com",
+    "date": "2026-11-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 398, 465 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50657530",
+    "fetched_at": "2026-11-27T09:48:28Z",
+    "title_zh": "YouTube Ad Punisher – 在播放广告时自动重新加载 YouTube 页面"
+  },
+  {
+    "title": "AI made self-hosting fun again",
+    "url": "https://janlukas.blog/posts/ai-self-hosting",
+    "source": "janlukas.blog",
+    "date": "2026-11-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from janlukas.blog. Hacker News score 681, 341 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50660180",
+    "fetched_at": "2026-11-27T09:48:26Z",
+    "title_zh": "人工智能让自助托管再次变得有趣"
+  },
+  {
     "title": "Unconditional Integer Factorization in Subexponential Time",
     "url": "https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization",
     "source": "github.com",
