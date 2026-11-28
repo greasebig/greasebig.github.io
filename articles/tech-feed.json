@@ -1,5 +1,104 @@
 [
   {
+    "title": "Show HN: A 52 KB WebAssembly engine that runs Qwen3.5-2B in a browser tab",
+    "url": "https://tesseracted.com/experiments-llm-os/",
+    "source": "tesseracted.com",
+    "date": "2026-11-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from tesseracted.com. Hacker News score 16, 2 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50673018",
+    "fetched_at": "2026-11-28T09:00:43Z",
+    "title_zh": "Show HN：一款 52 KB 的 WebAssembly 引擎，可在浏览器标签页中运行 Qwen3.5-2B"
+  },
+  {
+    "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+    "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+    "source": "drmahfouz.substack.com",
+    "date": "2026-11-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from drmahfouz.substack.com. Hacker News score 167, 122 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50673521",
+    "fetched_at": "2026-11-28T09:00:41Z",
+    "title_zh": "房东的AI助手告知租户可以延迟支付租金，结果租户被驱逐"
+  },
+  {
+    "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+    "url": "https://unkernel.dev",
+    "source": "unkernel.dev",
+    "date": "2026-11-28",
+    "repost": true,
+    "summary": "转载 / Curated repost from unkernel.dev. Hacker News score 257, 50 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50674218",
+    "fetched_at": "2026-11-28T09:00:22Z",
+    "title_zh": "Unkernel：真正的Linux内核，编译为WebAssembly"
+  },
+  {
+    "title": "Claude sabotaging ML research tasks?",
+    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+    "source": "twitter.com",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from twitter.com. Hacker News score 697, 309 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50664325",
+    "fetched_at": "2026-11-28T09:00:39Z",
+    "title_zh": "Claude 在破坏机器学习研究任务？"
+  },
+  {
+    "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+    "url": "https://sessiongraph.ai/",
+    "source": "sessiongraph.ai",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from sessiongraph.ai. Hacker News score 52, 25 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50671651",
+    "fetched_at": "2026-11-28T09:00:36Z",
+    "title_zh": "SessionGraph：在一个交互式图表中可视化您的所有编码代理会话"
+  },
+  {
+    "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+    "url": "https://github.com/skeeto/prospero",
+    "source": "github.com",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 67, 23 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50671275",
+    "fetched_at": "2026-11-28T09:00:31Z",
+    "title_zh": "Prospero：使用ImGui的无臃肿原生AI编码工具"
+  },
+  {
+    "title": "Tabernetes: A Kubernetes cluster whose nodes are browser tabs",
+    "url": "https://tabernet.es/",
+    "source": "tabernet.es",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from tabernet.es. Hacker News score 117, 39 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50672521",
+    "fetched_at": "2026-11-28T09:00:29Z",
+    "title_zh": "Tabernetes：其节点为浏览器标签页的Kubernetes集群"
+  },
+  {
+    "title": "Convex skills send the user's app idea to a remote server without telling them",
+    "url": "https://github.com/convex/convex-backend-skill/issues/64",
+    "source": "github.com",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 297, 95 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50669765",
+    "fetched_at": "2026-11-28T09:00:27Z",
+    "title_zh": "Convex 技能会在不告知用户的情况下，将用户的应用创意发送到远程服务器"
+  },
+  {
+    "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+    "source": "research.google",
+    "date": "2026-11-27",
+    "repost": true,
+    "summary": "转载 / Curated repost from research.google. Hacker News score 361, 138 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50672565",
+    "fetched_at": "2026-11-28T09:00:24Z",
+    "title_zh": "Google 的 DeepCrossAttention 能以快达 3 倍的速度实现相当的模型质量"
+  },
+  {
     "title": "European Commission Declares Browser Competition a Digital Markets Act Priority",
     "url": "https://open-web-advocacy.org/es/blog/commission-responds-declares-browser-competition-a-dma-priority/",
     "source": "open-web-advocacy.org",
@@ -9,17 +108,6 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50664191",
     "fetched_at": "2026-11-27T09:48:42Z",
     "title_zh": "欧盟委员会宣布浏览器竞争为《数字市场法案》的优先事项"
-  },
-  {
-    "title": "Claude sabotaging SOTA ML research tasks",
-    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
-    "source": "twitter.com",
-    "date": "2026-11-27",
-    "repost": true,
-    "summary": "转载 / Curated repost from twitter.com. Hacker News score 36, 15 comments. Click through to read the original article.",
-    "discussion_url": "https://news.ycombinator.com/item?id=50664325",
-    "fetched_at": "2026-11-27T09:48:33Z",
-    "title_zh": "Claude 破坏 SOTA 机器学习研究任务"
   },
   {
     "title": "The need for a formally verifiable mainstream programming language",
@@ -42,6 +130,17 @@
     "discussion_url": "https://news.ycombinator.com/item?id=50663595",
     "fetched_at": "2026-11-27T09:48:24Z",
     "title_zh": "您的AI在背后议论您的群聊"
+  },
+  {
+    "title": "fplotlib – Fortran Plotting Library",
+    "url": "https://github.com/fortran-lang/fplotlib",
+    "source": "github.com",
+    "date": "2026-11-26",
+    "repost": true,
+    "summary": "转载 / Curated repost from github.com. Hacker News score 15, 3 comments. Click through to read the original article.",
+    "discussion_url": "https://news.ycombinator.com/item?id=50657300",
+    "fetched_at": "2026-11-28T09:00:34Z",
+    "title_zh": "fplotlib – Fortran 绘图库"
   },
   {
     "title": "Rvoip: VoIP stack in Rust",
